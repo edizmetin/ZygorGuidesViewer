@@ -5,7 +5,7 @@ if UnitFactionGroup("player")~="Alliance" then return end
 
 ZygorGuidesViewer:RegisterGuide("TUGs\\23-24 Stockades",[[
 	author TUGs
-	next TUGs\\19-22RR+Ashenvale
+	next TUGs\\23-25 Redridge Mountains
 	startlevel 23
 step //1
 ..accept Quell The Uprising##387

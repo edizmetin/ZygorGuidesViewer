@@ -6,7 +6,7 @@ if UnitFactionGroup("player")~="Alliance" then return end
 
 ZygorGuidesViewer:RegisterGuide("TUGs\\15-17 RR+Loch",[[
 	author TUGs
-	next TUGs\\17-19 DarkshoreII
+	next TUGs\\17-20 DarkshoreII
 	startlevel 15
 step //1
 ..accept The Defias Brotherhood##65

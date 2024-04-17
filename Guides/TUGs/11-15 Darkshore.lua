@@ -3,7 +3,6 @@ if not ZygorGuidesViewer then return end
 --TRIAL if ZygorGuidesViewer.AllianceInstalled then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 
-
 ZygorGuidesViewer:RegisterGuide("TUGs\\11-15 Darkshore",[[
 	author TUGs
 	next TUGs\\15-17 RR+Loch
