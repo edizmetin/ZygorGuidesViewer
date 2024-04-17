@@ -25,55 +25,18 @@
 	<Script file="TUGs\10-11 DunMorogh+LochModan.lua"/>
 	<Script file="TUGs\11-15 Darkshore.lua"/>
 	<Script file="TUGs\15-17 RR+Loch.lua"/>
-	<Script file="TUGs\17-19 DarkshoreII.lua"/>
-	<Script file="TUGs\19-22 RR+Ashenvale.lua"/>
+	<Script file="TUGs\17-20 DarkshoreII.lua"/>
+	<Script file="TUGs\20-21 Redridge Mountains.lua"/>
+	<Script file="TUGs\21-23 Ashenvale.lua"/>
+	<Script file="TUGs\23-24 Stockades.lua"/>
+	<Script file="TUGs\23-25 Redridge Mountains.lua"/>
+	<Script file="TUGs\25-26 Ashenvale+WetlandsI.lua"/>
+	
+	
 	<Script file="TUGs\22-23 Duskwood.lua"/>
 	<Script file="TUGs\23-24 Stockades.lua"/>
 	<Script file="TUGs\23-24 Redridge.lua"/>
 	<Script file="TUGs\24-25 Ashenvale.lua"/>
 	
-	
-	
-	
-	
-	
-	<Script file="Guide03.lua"/>
-	<Script file="Guide04.lua"/>
-	<Script file="Guide05.lua"/>
-	<Script file="Guide06.lua"/>
-	<Script file="Guide07.lua"/>
-	<Script file="Guide08.lua"/>
-	<Script file="Guide09.lua"/>
-	<Script file="Guide10.lua"/>
-	<Script file="Guide11.lua"/>
-	<Script file="Guide12.lua"/>
-	<Script file="Guide13.lua"/>
-	<Script file="Guide14.lua"/>
-	<Script file="Guide15.lua"/>
-	<Script file="Guide16.lua"/>
-	<Script file="Guide17.lua"/>
-	<Script file="Guide18.lua"/>
-	<Script file="Guide19.lua"/>
-	<Script file="Guide20.lua"/>
-	<Script file="Guide21.lua"/>
-	<Script file="Guide22.lua"/>
-	<Script file="Guide23.lua"/>
-	<Script file="Guide24.lua"/>
-	<Script file="Guide25.lua"/>
-	<Script file="Guide26.lua"/>
-	<Script file="Guide27.lua"/>
-	<Script file="Guide28.lua"/>
-	<Script file="Guide29.lua"/>
-	<Script file="Guide30.lua"/>
-	<Script file="Guide31.lua"/>
-	<Script file="Guide32.lua"/>
-	<Script file="Guide33.lua"/>
-	<Script file="Guide34.lua"/>
-	<Script file="Guide35.lua"/>
-	<Script file="Guide36.lua"/>
-	<Script file="Guide37.lua"/>
-	<Script file="Guide38.lua"/>
-	<Script file="Guide39.lua"/>
-	<Script file="Guide40.lua"/>
 
 </Ui>
