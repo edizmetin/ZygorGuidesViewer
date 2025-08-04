@@ -126,54 +126,56 @@ turnin Report to Thomas##71
 step //57
 accept Deliver Thomas' Report##39
 step //58
-This can be done solo by most classes by so called "Fence hopping". You Attack/Frostbolt/Shadowbolt, you jump the fence and repeat. Its pretty hard and you can learn it by killing defias/bears/boars first. Doing it vs Princes and her 2 escorts is even harder,MOST PEOPLE wont be able to do this!!! Otherwise: skip it as mentioned.
+Do (Optional): Princess Must Die!
 step //59
-Run to [G84.4, 76.5Elwynn Forest] for Ridgepoint Tower exploring experience.
+This can be done solo by most classes by so called "Fence hopping". You Attack/Frostbolt/Shadowbolt, you jump the fence and repeat. Its pretty hard and you can learn it by killing defias/bears/boars first. Doing it vs Princes and her 2 escorts is even harder,MOST PEOPLE wont be able to do this!!! Otherwise: skip it as mentioned.
 step //60
-Run to [G9.8, 75.6Redridge Mountains] and die to the spiders and rezz up in Redridge.
+Run to [G84.4, 76.5Elwynn Forest] for Ridgepoint Tower exploring experience.
 step //61
+Run to [G9.8, 75.6Redridge Mountains] and die to the spiders and rezz up in Redridge.
+step //62
 Turn on your Aura.
 |only if Paladin
-step //62
-Run to [G25.1,57.0Redridge Mountains] for Lake Everstill exploring experience.
 step //63
-fpath Redridge Mountains |goto Redridge Mountains 30.6, 59.4
+Run to [G25.1,57.0Redridge Mountains] for Lake Everstill exploring experience.
 step //64
-use Hearthstone##6948
+fpath Redridge Mountains |goto Redridge Mountains 30.6, 59.4
 step //65
+use Hearthstone##6948
+step //66
 Get your level 8 spells at your trainer
 |only if Mage,Warlock,Priest,Rogue
-step //66
-turnin Collecting Kelp##112
 step //67
-accept The Escape##114
+turnin Collecting Kelp##112
 step //68
-turnin The Jasperlode Mine##76
+accept The Escape##114
 step //69
-turnin Deliver Thomas' Report##39
+turnin The Jasperlode Mine##76
 step //70
-The next quest "Elmore's Task" is shown in Redridge Mountains. Just enter the Blacksmith in Goldshire. It's there instead.
+turnin Deliver Thomas' Report##39
 step //71
-accept Elmore's Task##1097
+The next quest "Elmore's Task" is shown in Redridge Mountains. Just enter the Blacksmith in Goldshire. It's there instead.
 step //72
+accept Elmore's Task##1097
+step //73
 Get your level 8 spells at your trainer
 |only if Paladin,Warrior
-step //73
-turnin The Escape##114
 step //74
-turnin Princess Must Die!##88
+turnin The Escape##114
 step //75
-turnin Goldtooth##87
+turnin Princess Must Die!##88
 step //76
-turnin Shipment to Stormwind##61
+turnin Goldtooth##87
 step //77
-turnin Elmore's Task##1097
+turnin Shipment to Stormwind##61
 step //78
-accept Stormpike's Delivery##353
+turnin Elmore's Task##1097
 step //79
-Take the Tram to Ironforge
+accept Stormpike's Delivery##353
 step //80
-fpath Ironforge |goto Ironforge 55.5,47.8
+Take the Tram to Ironforge
 step //81
+fpath Ironforge |goto Ironforge 55.5,47.8
+step //82
 home Ironforge
 ]]

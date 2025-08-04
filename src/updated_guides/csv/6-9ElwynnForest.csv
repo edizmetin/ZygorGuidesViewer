@@ -85,7 +85,7 @@ Series: '' [str]
 61,TurnIn,52,Protect the Frontier,Elwynn Forest,,,,,https://classic.wowhead.com/quest=52,,,,,,,"","",,turnin Protect the Frontier##52
 62,TurnIn,71,Report to Thomas,Elwynn Forest,,,,,https://classic.wowhead.com/quest=71,,,,,,,"","",,turnin Report to Thomas##71
 63,Accept,39,Deliver Thomas' Report,Elwynn Forest,,,,,https://classic.wowhead.com/quest=39,,,,,,,"","",,accept Deliver Thomas' Report##39
-64,DoOptional,88,Princess Must Die!,Elwynn Forest,,,,,https://classic.wowhead.com/quest=88,,,,,,,"","",,
+64,DoOptional,88,Princess Must Die!,Elwynn Forest,,,,,https://classic.wowhead.com/quest=88,,,,,,,"","",,Do (Optional): Princess Must Die!
 65,Text,,,,,,,"This can be done solo by most classes by so called ""Fence hopping"". You Attack/Frostbolt/Shadowbolt, you jump the fence and repeat. Its pretty hard and you can learn it by killing defias/bears/boars first. Doing it vs Princes and her 2 escorts is even harder,MOST PEOPLE wont be able to do this!!! Otherwise: skip it as mentioned.",https://classic.wowhead.com/quest=,,,,,,,"","",,"This can be done solo by most classes by so called ""Fence hopping"". You Attack/Frostbolt/Shadowbolt, you jump the fence and repeat. Its pretty hard and you can learn it by killing defias/bears/boars first. Doing it vs Princes and her 2 escorts is even harder,MOST PEOPLE wont be able to do this!!! Otherwise: skip it as mentioned."
 66,Text,,,Elwynn Forest,"84.4, 76.5",,,"Run to [G84.4, 76.5Elwynn Forest] for Ridgepoint Tower exploring experience.",https://classic.wowhead.com/quest=,,,,"shape: (2,)
 Series: '' [str]

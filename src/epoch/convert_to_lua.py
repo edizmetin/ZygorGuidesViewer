@@ -69,7 +69,7 @@ def do_case():
 def do_optional_case():
     return (
         col(GuideSchema.ACTION) == ActionType.DO_OPTIONAL,
-        pl.concat_str(lit("Do (Optional): "), col(GuideSchema.TEXT)),
+        pl.concat_str(lit("Do (Optional): "), col(GuideSchema.QUEST_NAME)),
     )
 
 
