@@ -50,22 +50,6 @@ class GuideSchema(AutoStrEnum):
     Y = "Y"
 
 
-class ZygorTag(AutoStrEnum):
-    QA = "[QA"
-    QT = "[QT"
-    QC = "[QC"
-    O = "[O]"
-    CI = "[CI "
-    XP = "[XP "
-    A = "[A "
-    G = "[G "
-    F = "[F "
-    S = "[S]"
-    H = "[H]"
-    P = "[P]"
-    T = "[T]"
-
-
 def convert_lists_to_strings(df: pl.DataFrame):
     list_cols = [col for col in df.columns if df.schema[col] in [pl.List]]
 

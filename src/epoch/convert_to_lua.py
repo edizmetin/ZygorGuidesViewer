@@ -2,7 +2,7 @@ import logging
 import polars as pl
 from polars import col, lit
 
-from epoch.utils import ActionType, GuideSchema, ZygorTag
+from epoch.utils import ActionType, GuideSchema
 
 logger = logging.getLogger("convert")
 EB = lit("]")
