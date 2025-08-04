@@ -3,22 +3,26 @@ import polars as pl
 
 
 def write_guide_to_lua(
-    name: str, guide: pl.DataFrame, path: Path, next_guide: str, faction: str, default_for=None
+    name: str,
+    guide: pl.DataFrame,
+    path: Path,
+    faction: str,
+    next_guide: str | None = None,
+    default_for: str | None = None,
 ):
     header = "local ZygorGuidesViewer=ZygorGuidesViewer\nif not ZygorGuidesViewer then return end\n"
     check_faction = f'if UnitFactionGroup("player")~="{faction}" then return end\n'
 
-    head_guide = f"""ZygorGuidesViewer:RegisterGuide("GENERATED\\\\{name}",[[
-    
-	author TUGs"""
+    head_guide = f'ZygorGuidesViewer:RegisterGuide("GENERATED\\\\{name}",[[\nauthor TUGs'
     if default_for:
         head_guide += "\ndefaultfor " + default_for
 
     start_level = name.split("-")[0]
-    head_guide += f"""
-	next GENERATED\\{next}
-	startlevel {start_level}
-    """
+    if next_guide:
+        head_guide += f"\nnext GENERATED\\\\{next_guide}"
+
+    head_guide += f"\nstartlevel {start_level}"
+
     Path.mkdir(path.parent, parents=True, exist_ok=True)
 
     with path.open("w") as f:

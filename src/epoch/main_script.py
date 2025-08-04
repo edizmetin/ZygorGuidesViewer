@@ -33,11 +33,11 @@ def convert_all_guides():
     for row in guide_structure.iter_rows(named=True):
         logger.debug(row)
         write_guide_to_lua(
-            row["Name"],
+            row["Name_raw"],
             df_set[row["Name"]],
             Path(lua_path) / (row["Name_raw"] + ".lua"),
-            row["Next"],
             row["Faction"],
+            row["Next"],
         )
 
 

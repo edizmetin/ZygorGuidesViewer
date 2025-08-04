@@ -1,12 +1,10 @@
 local ZygorGuidesViewer=ZygorGuidesViewer
 if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
-ZygorGuidesViewer:RegisterGuide("GENERATED\\1-6Northshire.csv",[[
-    
-	author TUGs
-	next GENERATED\<built-in function next>
-	startlevel 1
-    
+ZygorGuidesViewer:RegisterGuide("GENERATED\\1-6Northshire",[[
+author TUGs
+next GENERATED\\1-9ElwynnForest
+startlevel 1
 step //1
 accept A Threat Within##783
 step //2
