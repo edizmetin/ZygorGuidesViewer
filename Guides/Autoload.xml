@@ -21,6 +21,9 @@
 	<Script file="ZygorGoldAllianceTrial.lua"/>
 	<Script file="ZygorGoldHordeTrial.lua"/>
 
+  <Script file="GENERATED\1-6Northshire.lua"\>
+  <Script file="GENERATED\6-9ElwynnForest.lua"\>
+
 	<Script file="TUGs\01-10 Elwynn Forest.lua"/>
 	<Script file="TUGs\10-11 DunMorogh+LochModan.lua"/>
 	<Script file="TUGs\11-15 Darkshore.lua"/>
