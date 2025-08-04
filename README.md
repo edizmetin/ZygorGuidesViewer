@@ -20,6 +20,8 @@ In order to contribute :
   (eg. you can include multiple quest change in 1 zone if they relate to each other in the route. Changes across multiple zones should be split in general).
 - If you would like to directly implement the change in the code base, create a pull request (TODO : Add link) linking to an issue.
 
+Please read the guide format [here](./guide_format.html) on how to write Zygor formatted guides (open in your browser).
+
 ## Notes
 
 I have very little LUA experience, contributions regarding bugs in the addon itself are very much appreciated !
