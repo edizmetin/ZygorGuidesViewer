@@ -1,4 +1,5 @@
 from enum import Enum
+import polars as pl
 
 
 class AutoStrEnum(str, Enum):
@@ -41,6 +42,12 @@ class GuideSchema(AutoStrEnum):
     LOCATION = "Location"
     CLASS = "Class"
     COORDS = "Coords"
+    NPC_NAME = "NpcName"
+    NPC_ID = "NpcId"
+    QUEST_NAME = "QuestName"
+    # NOTE : These are not present in the current files and are generated
+    X = "X"
+    Y = "Y"
 
 
 class ZygorTag(AutoStrEnum):
@@ -57,3 +64,19 @@ class ZygorTag(AutoStrEnum):
     H = "[H]"
     P = "[P]"
     T = "[T]"
+
+
+def convert_lists_to_strings(df: pl.DataFrame):
+    list_cols = [col for col in df.columns if df.schema[col] in [pl.List]]
+
+    if not list_cols:
+        return df
+
+    return df.with_columns(
+        [
+            pl.col(col)
+            .map_elements(lambda x: str(x) if not None else None, return_dtype=pl.String)
+            .alias(col)
+            for col in list_cols
+        ]
+    )

@@ -1,216 +1,339 @@
+import logging
 import polars as pl
+from polars import col, lit
 
 from epoch.utils import ActionType, GuideSchema, ZygorTag
 
-
-def create_name_col(df: pl.DataFrame):
-    """Create a new column named "Name" in the Zygor format based on other columns."""
-    df = df.with_columns(build_action_expression())
-    return df
+logger = logging.getLogger("convert")
+EB = lit("]")
 
 
-def optional_part(col: str, label: str = ""):
-    return pl.when(pl.col(col) != "").then(f"[{label}{pl.col(col)}]").otherwise("")
-
-
-def optional_a() -> pl.Expr:
+def accept_case():
     return (
-        pl.when(pl.col(GuideSchema.CLASS) != "")
-        .then(pl.concat_str(pl.lit(ZygorTag.A), pl.col(GuideSchema.CLASS), pl.lit("]")))
-        .otherwise(pl.lit(""))
+        col(GuideSchema.ACTION) == ActionType.ACCEPT,
+        pl.concat_str(
+            # TODO : Currently no NPC set, only quests
+            # lit("talk "),
+            # col(GuideSchema.NPC_NAME),
+            # lit("##"),
+            # col(GuideSchema.NPC_ID),
+            # lit("\n"),
+            lit("accept "),
+            col(GuideSchema.QUEST_NAME),
+            lit("##"),
+            col(GuideSchema.QUEST_ID),
+            # TODO : Location not set for the quest giver
+            # lit(" |goto "),
+            # col(GuideSchema.LOCATION),
+            # lit(" "),
+            # col(GuideSchema.X),
+            # lit(","),
+            # col(GuideSchema.Y),
+        ),
     )
 
 
-def optional_g() -> pl.Expr:
+def accept_optional_case():
     return (
-        pl.when(pl.col(GuideSchema.LOCATION) != "")
-        .then(pl.concat_str(pl.lit(ZygorTag.G), pl.col(GuideSchema.COORDS), pl.lit("]")))
-        .otherwise(pl.lit(""))
+        col(GuideSchema.ACTION) == ActionType.ACCEPT_OPTIONAL,
+        pl.concat_str(
+            # TODO : Currently no NPC set, only quests
+            # lit("talk "),
+            # col(GuideSchema.NPC_NAME),
+            # lit("##"),
+            # col(GuideSchema.NPC_ID),
+            # lit("\n"),
+            lit("accept "),
+            col(GuideSchema.QUEST_NAME),
+            lit("##"),
+            col(GuideSchema.QUEST_ID),
+            lit(" |goto "),
+            col(GuideSchema.LOCATION),
+            lit(" "),
+            col(GuideSchema.X),
+            lit(","),
+            col(GuideSchema.Y),
+            lit(" |optional"),
+        ),
+    )
+
+
+def do_case():
+    return (
+        col(GuideSchema.ACTION) == ActionType.DO,
+        # TODO : Improve this by specifying what we need to do
+        pl.concat_str(lit("Do: "), col(GuideSchema.QUEST_NAME)),
+    )
+
+
+def do_optional_case():
+    return (
+        col(GuideSchema.ACTION) == ActionType.DO_OPTIONAL,
+        pl.concat_str(lit("Do (Optional): "), col(GuideSchema.TEXT)),
+    )
+
+
+def do_optional_elite_case():
+    return (
+        col(GuideSchema.ACTION) == ActionType.DO_OPTIONAL_ELITE,
+        pl.concat_str(lit("Do (Elite - Optional, group recommended): "), col(GuideSchema.TEXT)),
+    )
+
+
+def turn_in_case():
+    return (
+        col(GuideSchema.ACTION) == ActionType.TURN_IN,
+        pl.concat_str(
+            # TODO : Currently no NPC set, only quests
+            # lit("talk "),
+            # col(GuideSchema.NPC_NAME),
+            # lit("##"),
+            # col(GuideSchema.NPC_ID),
+            # lit("\n"),
+            lit("turnin "),
+            col(GuideSchema.QUEST_NAME),
+            lit("##"),
+            col(GuideSchema.QUEST_ID),
+            # TODO : Currently no location for quest givers
+            # lit(" |goto "),
+            # col(GuideSchema.LOCATION),
+            # lit(" "),
+            # col(GuideSchema.X),
+            # lit(","),
+            # col(GuideSchema.Y),
+        ),
+    )
+
+
+def turn_in_optional_case():
+    return (
+        col(GuideSchema.ACTION) == ActionType.TURN_IN_OPTIONAL,
+        pl.concat_str(
+            # TODO : Currently no NPC set, only quests
+            # lit("talk "),
+            # col(GuideSchema.NPC_NAME),
+            # lit("##"),
+            # col(GuideSchema.NPC_ID),
+            # lit("\n"),
+            lit("turnin "),
+            col(GuideSchema.QUEST_NAME),
+            lit("##"),
+            col(GuideSchema.QUEST_ID),
+            lit(" |goto "),
+            col(GuideSchema.LOCATION),
+            lit(" "),
+            col(GuideSchema.X),
+            lit(","),
+            col(GuideSchema.Y),
+            lit(" |optional"),
+        ),
+    )
+
+
+def buy_case():
+    return (
+        col(GuideSchema.ACTION) == ActionType.BUY,
+        pl.concat_str(
+            lit("talk "),
+            col(GuideSchema.NPC_NAME),
+            lit("##"),
+            col(GuideSchema.NPC_ID),
+            lit("\n"),
+            lit("buy "),
+            col(GuideSchema.ITEM_NAME),
+            lit("##"),
+            col(GuideSchema.ITEM_ID),
+            lit(" |goto "),
+            col(GuideSchema.LOCATION),
+            lit(" "),
+            col(GuideSchema.X),
+            lit(","),
+            col(GuideSchema.Y),
+        ),
+    )
+
+
+def learn_case():
+    return (
+        col(GuideSchema.ACTION) == ActionType.LEARN,
+        pl.concat_str(
+            lit("Get your level "),
+            col(GuideSchema.LEVEL),
+            lit(" spells at your trainer"),
+        ),
+    )
+
+
+# TODO : This is not currently used
+def collect_case():
+    return (
+        col(GuideSchema.ACTION) == ActionType.COLLECT,
+        pl.concat_str(
+            lit("collect "),
+            col(GuideSchema.ITEM_AMOUNT),
+            lit(" "),
+            col(GuideSchema.ITEM_NAME),
+            lit("##"),
+            col(GuideSchema.ITEM_ID),
+            lit(" |q "),
+            col(GuideSchema.QUEST_ID),
+            lit("/"),
+            # TODO : Implement this
+            # col(GuideSchema.OBJECTIVE_NUM),
+            lit("1"),
+            lit(" |goto "),
+            col(GuideSchema.LOCATION),
+            lit(" "),
+            col(GuideSchema.X),
+            lit(","),
+            col(GuideSchema.Y),
+        ),
+    )
+
+
+def fly_case():
+    return (
+        col(GuideSchema.ACTION) == ActionType.FLY,
+        pl.concat_str(
+            lit("fpath "),
+            col(GuideSchema.LOCATION),
+            # TODO : LOCATION is used for the destination, there are no coords for the flight master
+            #     lit(" |goto "),
+            #     col(GuideSchema.LOCATION),
+            #     lit(" "),
+            #     col(GuideSchema.X),
+            #     lit(","),
+            #     col(GuideSchema.Y),
+        ),
+    )
+
+
+def grind_case():
+    return (
+        col(GuideSchema.ACTION) == ActionType.GRIND,
+        pl.concat_str(
+            lit("Grind until level"),
+            col(GuideSchema.LEVEL),
+            lit("\n|ding "),
+            col(GuideSchema.LEVEL),
+        ),
+    )
+
+
+def grind_optional_case():
+    return (
+        col(GuideSchema.ACTION) == ActionType.GRIND_OPTIONAL,
+        pl.concat_str(
+            lit("Kill enemies around this area\n"),
+            lit("ding "),
+            col(GuideSchema.LEVEL),
+            lit(" |goto "),
+            col(GuideSchema.LOCATION),
+            lit(" "),
+            col(GuideSchema.X),
+            lit(","),
+            col(GuideSchema.Y),
+            lit(" |optional"),
+        ),
+    )
+
+
+def hearthstone_case():
+    return (
+        col(GuideSchema.ACTION) == ActionType.HEARTHSTONE,
+        pl.concat_str(
+            lit("home "),
+            col(GuideSchema.LOCATION),
+            # TODO : Currently no location for the hearthstone setter in the CSV
+            # lit(" |goto "),
+            # col(GuideSchema.LOCATION),
+            # lit(" "),
+            # col(GuideSchema.X),
+            # lit(","),
+            # col(GuideSchema.Y),
+        ),
+    )
+
+
+def use_hearthstone_case():
+    return (col(GuideSchema.ACTION) == ActionType.USE_HEARTHSTONE, pl.lit("use Hearthstone##6948"))
+
+
+def run_case():
+    return (
+        col(GuideSchema.ACTION) == ActionType.RUN,
+        pl.concat_str(
+            lit("Run to "),
+            col(GuideSchema.X),
+            lit(","),
+            col(GuideSchema.Y),
+            lit(" |goto "),
+            col(GuideSchema.LOCATION),
+            lit(" "),
+            col(GuideSchema.X),
+            lit(","),
+            col(GuideSchema.Y),
+        ),
+    )
+
+
+def flightpath_case():
+    return (
+        col(GuideSchema.ACTION) == ActionType.FLIGHTPATH,
+        pl.concat_str(
+            # TODO : Check what to do for the flightpath
+            lit("fpath "),
+            col(GuideSchema.LOCATION),
+            lit(" |goto "),
+            col(GuideSchema.LOCATION),
+            lit(" "),
+            col(GuideSchema.X),
+            lit(","),
+            col(GuideSchema.Y),
+        ),
+    )
+
+
+def text_case():
+    return (
+        col(GuideSchema.ACTION) == ActionType.TEXT,
+        col(GuideSchema.TEXT),
     )
 
 
 def build_action_expression():
-    lit = lambda field: pl.lit(str(field))
+    cases = [
+        accept_case(),
+        accept_optional_case(),
+        do_case(),
+        do_optional_case(),
+        do_optional_elite_case(),
+        turn_in_case(),
+        turn_in_optional_case(),
+        buy_case(),
+        learn_case(),
+        collect_case(),
+        fly_case(),
+        grind_case(),
+        grind_optional_case(),
+        hearthstone_case(),
+        use_hearthstone_case(),
+        run_case(),
+        flightpath_case(),
+        text_case(),
+    ]
 
-    EB = lit("]")
+    expr: pl.Expr = pl.when(cases[0][0]).then(cases[0][1])
 
+    for condition, then_expr in cases[1:]:
+        expr = expr.when(condition).then(then_expr)
+
+    return expr.otherwise(lit("")).alias("formatted_text")
+
+
+def add_conditional():
     return (
-        pl.when(pl.col(GuideSchema.ACTION) == ActionType.ACCEPT)
-        .then(
-            pl.concat_str(
-                lit("Accept: "),
-                optional_g(),
-                lit(ZygorTag.QA),
-                pl.col(GuideSchema.QUEST_ID),
-                EB,
-                optional_a(),
-            )
-        )
-        .when(pl.col(GuideSchema.ACTION) == ActionType.ACCEPT_OPTIONAL)
-        .then(
-            pl.concat_str(
-                lit("Accept: "),
-                optional_g(),
-                lit(ZygorTag.QA),
-                pl.col(GuideSchema.QUEST_ID),
-                EB,
-                lit(ZygorTag.O),
-                optional_a(),
-            )
-        )
-        .when(pl.col(GuideSchema.ACTION) == ActionType.DO)
-        .then(
-            pl.concat_str(
-                lit("Do: "),
-                optional_g(),
-                lit(ZygorTag.QC),
-                pl.col(GuideSchema.QUEST_ID),
-                EB,
-                optional_a(),
-            )
-        )
-        .when(pl.col(GuideSchema.ACTION) == ActionType.DO_OPTIONAL)
-        .then(
-            pl.concat_str(
-                lit("Do(this is an optional quest!): "),
-                lit(ZygorTag.QC),
-                pl.col(GuideSchema.QUEST_ID),
-                EB,
-                optional_a(),
-            )
-        )
-        .when(pl.col(GuideSchema.ACTION) == ActionType.DO_OPTIONAL_ELITE)
-        .then(
-            pl.concat_str(
-                lit(
-                    "Do(This is an OPTIONAL ELITE quest, do it if you can or find a group, if you cant->skip it): "
-                ),
-                lit(ZygorTag.QC),
-                pl.col(GuideSchema.QUEST_ID),
-                EB,
-                optional_a(),
-            )
-        )
-        .when(pl.col(GuideSchema.ACTION) == ActionType.TURN_IN)
-        .then(
-            pl.concat_str(
-                lit("TurnIn: "),
-                optional_g(),
-                lit(ZygorTag.QT),
-                pl.col(GuideSchema.QUEST_ID),
-                EB,
-                optional_a(),
-            )
-        )
-        .when(pl.col(GuideSchema.ACTION) == ActionType.TURN_IN_OPTIONAL)
-        .then(
-            pl.concat_str(
-                lit("TurnIn: "),
-                optional_g(),
-                lit(ZygorTag.QT),
-                pl.col(GuideSchema.QUEST_ID),
-                EB,
-                lit(ZygorTag.O),
-                optional_a(),
-            )
-        )
-        .when(pl.col(GuideSchema.ACTION) == ActionType.BUY)
-        .then(
-            pl.concat_str(
-                lit("Buy: "),
-                lit(ZygorTag.CI),
-                pl.col(GuideSchema.ITEM_ID),
-                lit(","),
-                pl.col(GuideSchema.ITEM_AMOUNT),
-                lit(" "),
-                pl.col(GuideSchema.ITEM_NAME),
-                EB,
-                lit(" "),
-                pl.col(GuideSchema.TEXT),
-                optional_a(),
-            )
-        )
-        .when(pl.col(GuideSchema.ACTION) == ActionType.LEARN)
-        .then(
-            pl.concat_str(
-                lit(ZygorTag.T),
-                lit(" Get your Level "),
-                pl.col(GuideSchema.LEVEL),
-                lit(" skills at your trainer."),
-                optional_a(),
-            )
-        )
-        .when(pl.col(GuideSchema.ACTION) == ActionType.COLLECT)
-        .then(
-            pl.concat_str(
-                lit("Collect: "),
-                lit(ZygorTag.CI),
-                pl.col(GuideSchema.ITEM_ID),
-                lit(","),
-                pl.col(GuideSchema.ITEM_AMOUNT),
-                lit(" "),
-                pl.col(GuideSchema.ITEM_NAME),
-                EB,
-                lit(" "),
-                pl.col(GuideSchema.TEXT),
-                optional_a(),
-            )
-        )
-        .when(pl.col(GuideSchema.ACTION) == ActionType.FLY)
-        .then(pl.concat_str(lit("Fly to "), lit(ZygorTag.F), pl.col(GuideSchema.LOCATION), EB, optional_a()))
-        .when(pl.col(GuideSchema.ACTION) == ActionType.GRIND)
-        .then(
-            pl.concat_str(
-                lit("Grind "),
-                pl.col(GuideSchema.TEXT),
-                lit(" "),
-                pl.col(GuideSchema.LOCATION),
-                lit(" till level "),
-                lit(ZygorTag.XP),
-                pl.col(GuideSchema.LEVEL),
-                lit(" "),
-                pl.col(GuideSchema.LEVEL),
-                EB,
-            )
-        )
-        .when(pl.col(GuideSchema.ACTION) == ActionType.GRIND_OPTIONAL)
-        .then(
-            pl.concat_str(
-                lit("Grind "),
-                pl.col(GuideSchema.TEXT),
-                lit(" "),
-                pl.col(GuideSchema.LOCATION),
-                lit(" till level"),
-                lit(ZygorTag.XP),
-                pl.col(GuideSchema.LEVEL),
-                EB,
-                lit(ZygorTag.O),
-            )
-        )
-        .when(pl.col(GuideSchema.ACTION) == ActionType.HEARTHSTONE)
-        .then(
-            pl.concat_str(
-                lit("Set your"),
-                lit(ZygorTag.S),
-                lit("to "),
-                pl.col(GuideSchema.LOCATION),
-                lit(" at "),
-                optional_g(),
-                optional_a(),
-            )
-        )
-        .when(pl.col(GuideSchema.ACTION) == ActionType.USE_HEARTHSTONE)
-        .then(pl.concat_str(lit("Use your "), lit(ZygorTag.H), lit("Hearthstone."), optional_a()))
-        .when(pl.col(GuideSchema.ACTION) == ActionType.RUN)
-        .then(pl.concat_str(lit("Run to "), optional_g(), optional_a()))
-        .when(pl.col(GuideSchema.ACTION) == ActionType.FLIGHTPATH)
-        .then(
-            pl.concat_str(
-                lit("Get the "), lit(ZygorTag.P), lit("flightpath at: "), optional_g(), optional_a()
-            )
-        )
-        .when(pl.col(GuideSchema.ACTION) == ActionType.TEXT)
-        .then(pl.col(GuideSchema.TEXT))
-        .otherwise(lit(""))
-        .alias("formatted_text")
+        pl.when(col(GuideSchema.CLASS).is_not_null())
+        .then(pl.concat_str(col("formatted_text"), lit("\n|only if "), col(GuideSchema.CLASS)))
+        .otherwise("formatted_text")
     )
