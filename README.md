@@ -4,7 +4,7 @@
 
 This is a port of Zygor 3.3.5 addon to Project Epoch, with the following guides :
 
-- Zygor Leveling Guide : Integrated within the addon when ported. This is the most complete leveling guide as it was made specifically for this Addon.
+- (Recommended) Zygor Leveling Guide : Integrated within the addon when ported. This is the most complete leveling guide as it was made specifically for this Addon.
   - All credits go to the original author Zygor !
 - Auto generated TUG : Automated port of TUG guide from his google sheet to this addon in the Zygor format. This port is experimental and has not been tested yet.
   - This guide is entirely open source and free (compared to Zygor which is usually paid), all credits go to TUG !
