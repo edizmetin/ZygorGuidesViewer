@@ -3,110 +3,110 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 ZygorGuidesViewer:RegisterGuide("GENERATED\\1-6Northshire",[[
 author TUGs
-next GENERATED\\1-9ElwynnForest
+next GENERATED\\6-9ElwynnForest
 startlevel 1
-step //1
+step
 accept A Threat Within##783
-step //2
+step
 turnin A Threat Within##783
-step //3
+step
 accept Kobold Camp Cleanup##7
-step //4
+step
 accept Eagan Peltskinner##5261
-step //5
+step
 turnin Eagan Peltskinner##5261
-step //6
+step
 accept Wolves Across the Border##33
-step //7
+step
 Do [QC33- ][QC7]
-step //8
+step
 turnin Wolves Across the Border##33
-step //9
+step
 Sell your items at Brother Danil [G47.6, 41.6 Elwynn Forest].
-step //10
+step
 [A Warlock,Mage] Buy 10 Water
-step //11
+step
 turnin Kobold Camp Cleanup##7
-step //12
+step
 accept Investigate Echo Ridge##15
-step //13
+step
 accept Simple Letter##3100
 |only if Warrior
-step //14
+step
 accept Consecrated Letter##3101
 |only if Paladin
-step //15
+step
 accept Tainted Letter##3105
 |only if Warlock
-step //16
+step
 accept Glyphic Letter##3104
 |only if Mage
-step //17
+step
 accept Brotherhood of Thieves##18
-step //18
+step
 accept The Stolen Tome##1598
 |only if Warlock
-step //19
+step
 turnin Tainted Letter##3105
 |only if Warlock
-step //20
-Do: The Stolen Tome
+step
+Do: The Stolen Tome |q 1598
 |only if Warlock
-step //21
-Do: Brotherhood of Thieves
-step //22
+step
+Do: Brotherhood of Thieves |q 18
+step
 turnin Brotherhood of Thieves##18
-step //23
+step
 accept Milly Osworth##3903
-step //24
+step
 accept Bounty on Garrick Padfoot##6
-step //25
+step
 Sell your items at Brother Danil [G47.6, 41.6 Elwynn Forest].
-step //26
+step
 turnin Consecrated Letter##3101
 |only if Paladin
-step //27
+step
 turnin The Stolen Tome##1598
 |only if Warlock
-step //28
+step
 turnin Glyphic Letter##3104
 |only if Mage
-step //29
+step
 turnin Simple Letter##3100
 |only if Warrior
-step //30
+step
 Get your level 4 spells at your trainer
-step //31
-Do: Investigate Echo Ridge
-step //32
+step
+Do: Investigate Echo Ridge |q 15
+step
 turnin Milly Osworth##3903
-step //33
+step
 accept Milly's Harvest##3904
-step //34
+step
 Do [QC3904- ][QC6]
-step //35
+step
 Grind until level5
 |ding 5
-step //36
+step
 use Hearthstone##6948
-step //37
+step
 turnin Bounty on Garrick Padfoot##6
-step //38
+step
 turnin Investigate Echo Ridge##15
-step //39
+step
 accept Skirmish at Echo Ridge##21
-step //40
-Do: Skirmish at Echo Ridge
-step //41
+step
+Do: Skirmish at Echo Ridge |q 21
+step
 turnin Milly's Harvest##3904
-step //42
+step
 accept Grape Manifest##3905
-step //43
+step
 turnin Skirmish at Echo Ridge##21
-step //44
+step
 accept Report to Goldshire##54
-step //45
+step
 turnin Grape Manifest##3905
-step //46
+step
 accept Rest and Relaxation##2158
 ]]
