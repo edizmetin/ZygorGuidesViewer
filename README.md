@@ -16,6 +16,13 @@ The goal of this project is to have a strong leveling base with Zygor / TUG guid
 
 Important : This is very WIP as Epoch hasn't released yet and this repository is quite new !
 
+## Installing
+
+Either :
+
+- (Recommended) Clone the repository in your `Addon` folder with name `ZygorGuideViewer`
+- (Not recommended as you will not get updates) Download the Addon as a zip file, unzip it in your Addon folder, rename the extrated folder to `ZygorGuideViewer`
+
 ## Contributing
 
 Overall, the plan is to make this project community-based since there is a massive amount of new quests / items added with Project Epoch,
