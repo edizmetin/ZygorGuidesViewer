@@ -1,0 +1,38 @@
+,Name,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead
+,[GA Alliance],,,,,,,,,,
+,"[N38-39Dustwallow Marsh,STV]",,,,,,,,,,
+,"[NX40-43Badlands,Uldaman]",,,,,,,,,,
+"[1] = { str = "39-39 Stranglethorn Valley" },","[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,,,,,,
+"[2] = { str = "This guide was written by TUGs and is totally free, but if you want to support my work use:  https://www.paypal.me/Tugstv1337" },","This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",,,,,,,,,,
+"[3] = { str = "Every Level you should grind 2-5 experience bars, this will make sure that this guide works properly!" },","Every Level you should grind 2-5 experience bars, this will make sure that this guide works properly!",,,,,,,,,,
+"[4] = { str = "Accept: #ACCEPTThe Bloodsail Buccaneers#" },",Accept: [QA595],Accept,595,The Bloodsail Buccaneers,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=595
+"[5] = { str = "Accept: #ACCEPTScaring Shaky#" },",Accept: [QA606],Accept,606,Scaring Shaky,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=606
+"[6] = { str = "Set your [H] to Stranglethorn Vale at [G27,77Stranglethorn Vale]" },","Set your [H] to Stranglethorn Vale at [G27,77Stranglethorn Vale]",Hearthstone,,,Stranglethorn Vale,"27,77",,,,,https://classic.wowhead.com/quest=
+"[7] = { str = "TurnIn: #TURNINThe Rumormonger# " },",TurnIn: [QT1115],Turnin,1115,The Rumormonger,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=1115
+"[8] = { str = "Accept: #ACCEPTDream Dust in the Swamp#" },",Accept: [QA1116],Accept,1116,Dream Dust in the Swamp,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=1116
+"[9] = { str = "Accept: #ACCEPTWater Elementals#" },",Accept: [QA601],Accept,601,Water Elementals,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=601
+"[10] = { str = "Accept: #ACCEPTSome Assembly Required#" },",Accept: [QA577],Accept,577,Some Assembly Required,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=577
+"[11] = { str = "TurnIn: #TURNINThe Bloodsail Buccaneers# " },",TurnIn: [QT595],Turnin,595,The Bloodsail Buccaneers,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=595
+"[12] = { str = "Accept: #ACCEPTThe Bloodsail Buccaneers#" },",Accept: [QA597],Accept,597,The Bloodsail Buccaneers,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=597
+"[13] = { str = "DoQuest: #DOQUESTScaring Shaky# " },",Do: [QC606],Do,606,Scaring Shaky,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=606
+"[14] = { str = "Run to [G30.5,53.9Stranglethorn Vale]" },","Run to [G30.5,53.9Stranglethorn Vale]",Run,,,Stranglethorn Vale,"30.5,53.9",,,,,https://classic.wowhead.com/quest=
+"[15] = { str = "DoQuest: #DOQUESTPanther Mastery# " },",Do: [QC192],Do,192,Panther Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=192
+"[16] = { str = "Grind till [XP39] at [G42.9,36Stranglethorn Vale]" },","Grind till [XP39] at [G42.9,36Stranglethorn Vale]",Text,,,Stranglethorn Vale,,,,,"Grind till [XP39] at [G42.9,36Stranglethorn Vale]",https://classic.wowhead.com/quest=
+"[17] = { str = "DoQuest: #DOQUESTRaptor Mastery# " },",Do: [QC196],Do,196,Raptor Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=196
+"[18] = { str = "DoQuest: #DOQUESTSome Assembly Required# " },",Do: [QC577],Do,577,Some Assembly Required,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=577
+"[19] = { str = "TurnIn: #TURNINPanther Mastery# " },",TurnIn: [QT192],Turnin,192,Panther Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=192
+"[20] = { str = "TurnIn: #TURNINRaptor Mastery# " },",TurnIn: [QT196],Turnin,196,Raptor Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=196
+"[21] = { str = "Accept(this is an optional quest! Do it if you can) #ACCEPTRaptor Mastery#" },",Accept: [QA197][O],AcceptOptional,197,Raptor Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=197
+"[22] = { str = "Accept(this is an optional quest! Do it if you can) #ACCEPTPanther Mastery#" },",Accept: [QA193][O],AcceptOptional,193,Panther Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=193
+"[23] = { str = "DoQuest: #DOQUESTWater Elementals# " },",Do: [QC601],Do,601,Water Elementals,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=601
+"[24] = { str = "Use your [H] Hearthstone." },",Use your [H] Hearthstone.,UseHearthstone,,,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=
+"[25] = { str = "TurnIn: #TURNINScaring Shaky# " },",TurnIn: [QT606],Turnin,606,Scaring Shaky,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=606
+"[26] = { str = "Accept: #ACCEPT#" },",Accept: [QA609],Accept,609,,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=609
+"[27] = { str = "TurnIn: #TURNINThe Bloodsail Buccaneers# " },",TurnIn: [QT597],Turnin,597,The Bloodsail Buccaneers,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=597
+"[28] = { str = "Accept: #ACCEPTThe Bloodsail Buccaneers#" },",Accept: [QA599],Accept,599,The Bloodsail Buccaneers,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=599
+"[29] = { str = "TurnIn: #TURNIN# " },",TurnIn: [QT609],Turnin,609,,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=609
+"[30] = { str = "TurnIn: #TURNINSome Assembly Required# " },",TurnIn: [QT577],Turnin,577,Some Assembly Required,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=577
+"[31] = { str = "Accept: #ACCEPT#" },",Accept: [QA628],Accept,628,,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=628
+"[32] = { str = "TurnIn: #TURNINThe Bloodsail Buccaneers# " },",TurnIn: [QT599],Turnin,599,The Bloodsail Buccaneers,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=599
+"[33] = { str = "TurnIn: #TURNINWater Elementals# " },",TurnIn: [QT601],Turnin,601,Water Elementals,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=601
+"[34] = { str = "Fly to Stormwind City" },",Fly to [F Stormwind City],Fly,,,Stormwind City,,,,,,https://classic.wowhead.com/quest=

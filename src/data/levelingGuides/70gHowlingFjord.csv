@@ -1,0 +1,72 @@
+Name,Action,ID,Location,Coords,XP,Level,Class,Text,Wowhead
+[GA Alliance],,,,,,,,,
+[N70g Howling Fjord - Alliance],,,,,,,,,
+[NX72a Dragonblight - Alliance],,,,,,,,,
+"[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,,,,,
+"This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",Text,,,,,,,,
+I am marking EVERY Elite quest and dungeons as optional in this guide. Especially on release you should do them!!! You'll easily find groups for elite quests and dungeons.,Text,,,,,,,,
+Fly to [F Westguard Keep],Fly,,Westguard Keep,,,,,,https://wotlk.wowhead.com/quest=
+TurnIn: [QT11317],TurnIn,11317,,,,,,,https://wotlk.wowhead.com/quest=11317
+Accept: [QA11323],Accept,11323,,,,,,,https://wotlk.wowhead.com/quest=11323
+Do: [QC11323],Do,11323,,,,,,,https://wotlk.wowhead.com/quest=11323
+TurnIn: [QT11323],TurnIn,11323,,,,,,,https://wotlk.wowhead.com/quest=11323
+Accept: [QA11415],Accept,11415,,,,,,,https://wotlk.wowhead.com/quest=11415
+"Do: [QC11415,1]",Do,"11415,1",,,,,,,"https://wotlk.wowhead.com/quest=11415,1"
+"Do: [QC11415,2]",Do,"11415,2",,,,,,,"https://wotlk.wowhead.com/quest=11415,2"
+TurnIn: [QT11415],TurnIn,11415,,,,,,,https://wotlk.wowhead.com/quest=11415
+Accept: [QA11417],Accept,11417,,,,,,,https://wotlk.wowhead.com/quest=11417
+Do: [QC11248],Do,11248,,,,,,,https://wotlk.wowhead.com/quest=11248
+TurnIn: [QT11248],TurnIn,11248,,,,,,,https://wotlk.wowhead.com/quest=11248
+Accept: [QA11245],Accept,11245,,,,,,,https://wotlk.wowhead.com/quest=11245
+Accept: [QA11246],Accept,11246,,,,,,,https://wotlk.wowhead.com/quest=11246
+Accept: [QA11247],Accept,11247,,,,,,,https://wotlk.wowhead.com/quest=11247
+Do: [QC11246],Do,11246,,,,,,,https://wotlk.wowhead.com/quest=11246
+"Do: [QC11247,1]",Do,"11247,1",,,,,,,"https://wotlk.wowhead.com/quest=11247,1"
+"Do: [QC11245,1]",Do,"11245,1",,,,,,,"https://wotlk.wowhead.com/quest=11245,1"
+"Do: [QC11247,2]",Do,"11247,2",,,,,,,"https://wotlk.wowhead.com/quest=11247,2"
+"Do: [QC11247,3]",Do,"11247,3",,,,,,,"https://wotlk.wowhead.com/quest=11247,3"
+"Do: [QC11245,2]",Do,"11245,2",,,,,,,"https://wotlk.wowhead.com/quest=11245,2"
+"Do: [QC11245,4]",Do,"11245,4",,,,,,,"https://wotlk.wowhead.com/quest=11245,4"
+You should have gotten the Quest Item "Vrykul Scroll of Ascension" by now. Accept it.,Text,,,,,,,You should have gotten the Quest Item "Vrykul Scroll of Ascension" by now. Accept it.,https://wotlk.wowhead.com/quest=
+Accept: [QA11249],Accept,11249,,,,,,,https://wotlk.wowhead.com/quest=11249
+Do: [QC11249],Do,11249,,,,,,,https://wotlk.wowhead.com/quest=11249
+"Do: [QC11245,3]",Do,"11245,3",,,,,,,"https://wotlk.wowhead.com/quest=11245,3"
+TurnIn: [QT11245],TurnIn,11245,,,,,,,https://wotlk.wowhead.com/quest=11245
+TurnIn: [QT11246],TurnIn,11246,,,,,,,https://wotlk.wowhead.com/quest=11246
+TurnIn: [QT11247],TurnIn,11247,,,,,,,https://wotlk.wowhead.com/quest=11247
+Accept: [QA11250],Accept,11250,,,,,,,https://wotlk.wowhead.com/quest=11250
+Do: [QC11417],Do,11417,,,,,,,https://wotlk.wowhead.com/quest=11417
+TurnIn: [QT11249],TurnIn,11249,,,,,,,https://wotlk.wowhead.com/quest=11249
+TurnIn: [QT11250],TurnIn,11250,,,,,,,https://wotlk.wowhead.com/quest=11250
+Accept: [QA11235],Accept,11235,,,,,,,https://wotlk.wowhead.com/quest=11235
+Accept: [QA11231],Accept,11231,,,,,,,https://wotlk.wowhead.com/quest=11231
+Do: [QC11154],Do,11154,,,,,,,https://wotlk.wowhead.com/quest=11154
+Do: [QC11235],Do,11235,,,,,,,https://wotlk.wowhead.com/quest=11235
+Do: [QC11231],Do,11231,,,,,,,https://wotlk.wowhead.com/quest=11231
+You should have gotten the Quest Item "Gjalerbron Attack Plans" by now. Accept it.,Text,,,,,,,You should have gotten the Quest Item "Gjalerbron Attack Plans" by now. Accept it.,https://wotlk.wowhead.com/quest=
+Accept: [QA11237],Accept,11237,,,,,,,https://wotlk.wowhead.com/quest=11237
+TurnIn: [QT11417],TurnIn,11417,,,,,,,https://wotlk.wowhead.com/quest=11417
+Accept: [QA11324],Accept,11324,,,,,,,https://wotlk.wowhead.com/quest=11324
+Do: [QC11324],Do,11324,,,,,,,https://wotlk.wowhead.com/quest=11324
+TurnIn: [QT11154],TurnIn,11154,,,,,,,https://wotlk.wowhead.com/quest=11154
+TurnIn: [QT11324],TurnIn,11324,,,,,,,https://wotlk.wowhead.com/quest=11324
+TurnIn: [QT11235],TurnIn,11235,,,,,,,https://wotlk.wowhead.com/quest=11235
+Accept: [QA11236],Accept,11236,,,,,,,https://wotlk.wowhead.com/quest=11236
+TurnIn: [QT11231],TurnIn,11231,,,,,,,https://wotlk.wowhead.com/quest=11231
+Accept: [QA11239],Accept,11239,,,,,,,https://wotlk.wowhead.com/quest=11239
+TurnIn: [QT11237],TurnIn,11237,,,,,,,https://wotlk.wowhead.com/quest=11237
+Accept: [QA11238],Accept,11238,,,,,,,https://wotlk.wowhead.com/quest=11238
+Accept: [QA11433],Accept,11433,,,,,,,https://wotlk.wowhead.com/quest=11433
+Do: [QC11433],Do,11433,,,,,,,https://wotlk.wowhead.com/quest=11433
+"Do: [QC11239,2]",Do,"11239,2",,,,,,,"https://wotlk.wowhead.com/quest=11239,2"
+Do: [QC11239],Do,11239,,,,,,,https://wotlk.wowhead.com/quest=11239
+Do: [QC11236],Do,11236,,,,,,,https://wotlk.wowhead.com/quest=11236
+"Loot Mezhen's Writings, which starts the quest The Slumbering King. ",Text,,,,,,,"Loot Mezhen's Writings, which starts the quest The Slumbering King. ",https://wotlk.wowhead.com/quest=
+Accept: [QA11453],Accept,11453,,,,,,,https://wotlk.wowhead.com/quest=11453
+Do: [QC11238],Do,11238,,,,,,,https://wotlk.wowhead.com/quest=11238
+Do: [QC11240],Do,11240,,,,,,,https://wotlk.wowhead.com/quest=11240
+TurnIn: [QT11240],TurnIn,11240,,,,,,,https://wotlk.wowhead.com/quest=11240
+TurnIn: [QT11239],TurnIn,11239,,,,,,,https://wotlk.wowhead.com/quest=11239
+TurnIn: [QT11236],TurnIn,11236,,,,,,,https://wotlk.wowhead.com/quest=11236
+TurnIn: [QT11433],TurnIn,11433,,,,,,,https://wotlk.wowhead.com/quest=11433
+TurnIn: [QT11238],TurnIn,11238,,,,,,,https://wotlk.wowhead.com/quest=11238

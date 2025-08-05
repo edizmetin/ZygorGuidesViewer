@@ -1,0 +1,87 @@
+Name,Action,ID,Location,Coords,XP,Level,Class,Text,Wowhead
+[GA Alliance],,,,,,,,,
+[N75a Grizzly Hills - Alliance],,,,,,,,,
+[NX75b Grizzly Hills - Alliance],,,,,,,,,
+"[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,,,,,
+"This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",Text,,,,,,,,
+I am marking EVERY Elite quest and dungeons as optional in this guide. Especially on release you should do them!!! You'll easily find groups for elite quests and dungeons.,Text,,,,,,,,
+"Get the [P] flightpath at: [G31.2, 59.2Grizzly Hills]",Flightpath,,Grizzly Hills,"31.2, 59.2",,,,,
+"Set your [H] to Grizzly Hills at [G32.0, 60.2Grizzly Hills]",Hearthstone,,Grizzly Hills,"32.0, 60.2",,,,,
+Accept: [QA12225],Accept,12225,,,,,,,https://wotlk.wowhead.com/quest=12225
+TurnIn: [QT12225],TurnIn,12225,,,,,,,https://wotlk.wowhead.com/quest=12225
+Accept: [QA12226],Accept,12226,,,,,,,https://wotlk.wowhead.com/quest=12226
+Accept: [QA12292],Accept,12292,,,,,,,https://wotlk.wowhead.com/quest=12292
+Accept: [QA12212],Accept,12212,,,,,,,https://wotlk.wowhead.com/quest=12212
+Accept: [QA12215],Accept,12215,,,,,,,https://wotlk.wowhead.com/quest=12215
+Kill all Stags you see whilst continuing the quests.,Text,,,,,,,Kill all Stags you see whilst continuing the quests.,https://wotlk.wowhead.com/quest=
+Do: [QC12226],Do,12226,,,,,,,https://wotlk.wowhead.com/quest=12226
+Do: [QC12215],Do,12215,,,,,,,https://wotlk.wowhead.com/quest=12215
+Do: [QC12212],Do,12212,,,,,,,https://wotlk.wowhead.com/quest=12212
+Do: [QC12292],Do,12292,,,,,,,https://wotlk.wowhead.com/quest=12292
+Use your [H] Hearthstone.,UseHearthstone,,,,,,,,https://wotlk.wowhead.com/quest=
+TurnIn: [QT12226],TurnIn,12226,,,,,,,https://wotlk.wowhead.com/quest=12226
+Accept: [QA12227],Accept,12227,,,,,,,https://wotlk.wowhead.com/quest=12227
+Do: [QC12227],Do,12227,,,,,,,https://wotlk.wowhead.com/quest=12227
+TurnIn: [QT12227],TurnIn,12227,,,,,,,https://wotlk.wowhead.com/quest=12227
+TurnIn: [QT12292],TurnIn,12292,,,,,,,https://wotlk.wowhead.com/quest=12292
+Accept: [QA12293],Accept,12293,,,,,,,https://wotlk.wowhead.com/quest=12293
+TurnIn: [QT12212],TurnIn,12212,,,,,,,https://wotlk.wowhead.com/quest=12212
+Accept: [QA12216],Accept,12216,,,,,,,https://wotlk.wowhead.com/quest=12216
+TurnIn: [QT12215],TurnIn,12215,,,,,,,https://wotlk.wowhead.com/quest=12215
+Accept: [QA12217],Accept,12217,,,,,,,https://wotlk.wowhead.com/quest=12217
+Accept: [QA12210],Accept,12210,,,,,,,https://wotlk.wowhead.com/quest=12210
+TurnIn: [QT12293],TurnIn,12293,,,,,,,https://wotlk.wowhead.com/quest=12293
+Accept: [QA12294],Accept,12294,,,,,,,https://wotlk.wowhead.com/quest=12294
+Do: [QC12217],Do,12217,,,,,,,https://wotlk.wowhead.com/quest=12217
+Do: [QC12216],Do,12216,,,,,,,https://wotlk.wowhead.com/quest=12216
+TurnIn: [QT12294],TurnIn,12294,,,,,,,https://wotlk.wowhead.com/quest=12294
+Accept: [QA12295],Accept,12295,,,,,,,https://wotlk.wowhead.com/quest=12295
+TurnIn: [QT12217],TurnIn,12217,,,,,,,https://wotlk.wowhead.com/quest=12217
+TurnIn: [QT12216],TurnIn,12216,,,,,,,https://wotlk.wowhead.com/quest=12216
+Accept: [QA12222],Accept,12222,,,,,,,https://wotlk.wowhead.com/quest=12222
+Accept: [QA12223],Accept,12223,,,,,,,https://wotlk.wowhead.com/quest=12223
+Do: [QC12223],Do,12223,,,,,,,https://wotlk.wowhead.com/quest=12223
+Do: [QC12222],Do,12222,,,,,,,https://wotlk.wowhead.com/quest=12222
+TurnIn: [QT12222],TurnIn,12222,,,,,,,https://wotlk.wowhead.com/quest=12222
+TurnIn: [QT12223],TurnIn,12223,,,,,,,https://wotlk.wowhead.com/quest=12223
+Accept: [QA12255],Accept,12255,,,,,,,https://wotlk.wowhead.com/quest=12255
+"Run to [G26.6, 77.8Grizzly Hills]",Run,,Grizzly Hills,"26.6, 77.8",,,,,https://wotlk.wowhead.com/quest=
+Mount Flamebringer.,Text,,,,,,,Mount Flamebringer.,https://wotlk.wowhead.com/quest=
+Do: [QC12255],Do,12255,,,,,,,https://wotlk.wowhead.com/quest=12255
+TurnIn: [QT12255],TurnIn,12255,,,,,,,https://wotlk.wowhead.com/quest=12255
+Accept: [QA12444],Accept,12444,,,,,,,https://wotlk.wowhead.com/quest=12444
+Do: [QC12444],Do,12444,,,,,,,https://wotlk.wowhead.com/quest=12444
+TurnIn: [QT12444],TurnIn,12444,,,,,,,https://wotlk.wowhead.com/quest=12444
+TurnIn: [QT12210],TurnIn,12210,,,,,,,https://wotlk.wowhead.com/quest=12210
+Accept: [QA11984],Accept,11984,,,,,,,https://wotlk.wowhead.com/quest=11984
+"Run to [G16.2, 48.0Grizzly Hills]",Run,,Grizzly Hills,"16.2, 48.0",,,,,https://wotlk.wowhead.com/quest=
+Talk to Budd so he follows you.,Text,,,,,,,Talk to Budd so he follows you.,https://wotlk.wowhead.com/quest=
+Do: [QC11984],Do,11984,,,,,,,https://wotlk.wowhead.com/quest=11984
+TurnIn: [QT11984],TurnIn,11984,,,,,,,https://wotlk.wowhead.com/quest=11984
+Accept: [QA11989],Accept,11989,,,,,,,https://wotlk.wowhead.com/quest=11989
+TurnIn: [QT11989],TurnIn,11989,,,,,,,https://wotlk.wowhead.com/quest=11989
+Accept: [QA11990],Accept,11990,,,,,,,https://wotlk.wowhead.com/quest=11990
+"Run to [G16.0, 47.8Grizzly Hills]",Run,,Grizzly Hills,"16.0, 47.8",,,,,https://wotlk.wowhead.com/quest=
+Buy an Imbued Vial from Ameenah in camp.,Text,,,,,,,Buy an Imbued Vial from Ameenah in camp.,https://wotlk.wowhead.com/quest=
+Do: [QC11990],Do,11990,,,,,,,https://wotlk.wowhead.com/quest=11990
+TurnIn: [QT11990],TurnIn,11990,,,,,,,https://wotlk.wowhead.com/quest=11990
+Accept: [QA11991],Accept,11991,,,,,,,https://wotlk.wowhead.com/quest=11991
+Accept: [QA12484],Accept,12484,,,,,,,https://wotlk.wowhead.com/quest=12484
+Do: [QC12484],Do,12484,,,,,,,https://wotlk.wowhead.com/quest=12484
+TurnIn: [QT12484],TurnIn,12484,,,,,,,https://wotlk.wowhead.com/quest=12484
+Accept: [QA12029],Accept,12029,,,,,,,https://wotlk.wowhead.com/quest=12029
+Accept: [QA12483],Accept,12483,,,,,,,https://wotlk.wowhead.com/quest=12483
+Do: [QC11991],Do,11991,,,,,,,https://wotlk.wowhead.com/quest=11991
+TurnIn: [QT11991],TurnIn,11991,,,,,,,https://wotlk.wowhead.com/quest=11991
+Accept: [QA12007],Accept,12007,,,,,,,https://wotlk.wowhead.com/quest=12007
+"Do: [QC12483,1]",Do,"12483,1",,,,,,,"https://wotlk.wowhead.com/quest=12483,1"
+"Do: [QC12483,2]",Do,"12483,2",,,,,,,"https://wotlk.wowhead.com/quest=12483,2"
+Do: [QC12029],Do,12029,,,,,,,https://wotlk.wowhead.com/quest=12029
+"Do: [QC12483,3]",Do,"12483,3",,,,,,,"https://wotlk.wowhead.com/quest=12483,3"
+Do: [QC12007],Do,12007,,,,,,,https://wotlk.wowhead.com/quest=12007
+TurnIn: [QT12007],TurnIn,12007,,,,,,,https://wotlk.wowhead.com/quest=12007
+Accept: [QA12042],Accept,12042,,,,,,,https://wotlk.wowhead.com/quest=12042
+TurnIn: [QT12029],TurnIn,12029,,,,,,,https://wotlk.wowhead.com/quest=12029
+Accept: [QA12037],Accept,12037,,,,,,,https://wotlk.wowhead.com/quest=12037
+TurnIn: [QT12483],TurnIn,12483,,,,,,,https://wotlk.wowhead.com/quest=12483
+Accept: [QA12190],Accept,12190,,,,,,,https://wotlk.wowhead.com/quest=12190

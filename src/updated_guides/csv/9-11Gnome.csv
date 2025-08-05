@@ -1,0 +1,192 @@
+row_id,Action,ID,Questname,Location,Coords,XP,Level,Text,WowHead,ItemID,ItemName,ItemAmount,QuestName,coords_split,X,Y,NpcName,NpcId,Class,formatted_text
+0,,,,,,,,,,,,,"",,,,"","",,""
+1,,,,,,,,,,,,,"",,,,"","",,""
+2,,,,,,,,,,,,,"",,,,"","",,""
+3,,,,,,,,,,,,,"",,,,"","",,""
+4,Text,,,,,,,,,,,,"",,,,"","",,
+5,AcceptOptional,314,Protecting the Herd,Dun Morogh,,,,,https://classic.wowhead.com/quest=314,,,,"",,,,"","",,
+6,DoOptional,314,Protecting the Herd,Dun Morogh,,,,,https://classic.wowhead.com/quest=314,,,,"",,,,"","",,Do (Optional): 
+7,TurnInOptional,314,Protecting the Herd,Dun Morogh,,,,,https://classic.wowhead.com/quest=314,,,,"",,,,"","",,
+8,Accept,433,The Public Servant,Dun Morogh,,,,,https://classic.wowhead.com/quest=433,,,,"",,,,"","",,accept ##433
+9,Accept,432,Those Blasted Troggs!,Dun Morogh,,,,,https://classic.wowhead.com/quest=432,,,,"",,,,"","",,accept ##432
+10,Text,433,The Public Servant,Dun Morogh,,,,Do [QC433- ][QC432],https://classic.wowhead.com/quest=433,,,,"",,,,"","",,Do [QC433- ][QC432]
+11,Text,,,Dun Morogh,,,,Farm till youre level[XP9+4500],https://classic.wowhead.com/quest=,,,,"",,,,"","",,Farm till youre level[XP9+4500]
+12,TurnIn,432,Those Blasted Troggs!,Dun Morogh,,,,,https://classic.wowhead.com/quest=432,,,,"",,,,"","",,turnin ##432
+13,TurnIn,433,The Public Servant,Dun Morogh,,,,,https://classic.wowhead.com/quest=433,,,,"",,,,"","",,turnin ##433
+14,Accept,419,The Lost Pilot,Dun Morogh,,,,,https://classic.wowhead.com/quest=419,,,,"",,,,"","",,accept ##419
+15,TurnIn,419,The Lost Pilot,Dun Morogh,,,,,https://classic.wowhead.com/quest=419,,,,"",,,,"","",,turnin ##419
+16,Accept,417,A Pilot's Revenge,Dun Morogh,,,,,https://classic.wowhead.com/quest=417,,,,"",,,,"","",,accept ##417
+17,Do,417,A Pilot's Revenge,Dun Morogh,,,,,https://classic.wowhead.com/quest=417,,,,"",,,,"","",,Do: 
+18,TurnIn,417,A Pilot's Revenge,Dun Morogh,,,,,https://classic.wowhead.com/quest=417,,,,"",,,,"","",,turnin ##417
+19,Run,,,Dun Morogh,"79.4, 49.9",,,,https://classic.wowhead.com/quest=,,,,"","shape: (2,)
+Series: '' [str]
+[
+	""79.4""
+	"" 49.9""
+]",79.4, 49.9,"","",,"Run to 79.4, 49.9 |goto Dun Morogh 79.4, 49.9"
+20,Run,,,Dun Morogh,"80.4, 49.7",,,,https://classic.wowhead.com/quest=,,,,"","shape: (2,)
+Series: '' [str]
+[
+	""80.4""
+	"" 49.7""
+]",80.4, 49.7,"","",,"Run to 80.4, 49.7 |goto Dun Morogh 80.4, 49.7"
+21,Run,,,Dun Morogh,"81.5, 50.1",,,,https://classic.wowhead.com/quest=,,,,"","shape: (2,)
+Series: '' [str]
+[
+	""81.5""
+	"" 50.1""
+]",81.5, 50.1,"","",,"Run to 81.5, 50.1 |goto Dun Morogh 81.5, 50.1"
+22,Run,,,Dun Morogh,"83.1, 49.5",,,,https://classic.wowhead.com/quest=,,,,"","shape: (2,)
+Series: '' [str]
+[
+	""83.1""
+	"" 49.5""
+]",83.1, 49.5,"","",,"Run to 83.1, 49.5 |goto Dun Morogh 83.1, 49.5"
+23,Text,,,,,,,"Slowly fall to the ledge infront of you, and then to the ground. Pass the Bunker on the left and kill the 2-3 boars on the way.",https://classic.wowhead.com/quest=,,,,"",,,,"","",,"Slowly fall to the ledge infront of you, and then to the ground. Pass the Bunker on the left and kill the 2-3 boars on the way."
+24,Accept,224,In Defense of the King's Lands,Loch Modan,,,,,https://classic.wowhead.com/quest=224,,,,"",,,,"","",,accept ##224
+25,Accept,267,The Trogg Threat,Loch Modan,,,,,https://classic.wowhead.com/quest=267,,,,"",,,,"","",,accept ##267
+26,Flightpath,,,Loch Modan,"33.9,51",,,,https://classic.wowhead.com/quest=,,,,"","shape: (2,)
+Series: '' [str]
+[
+	""33.9""
+	""51""
+]",33.9,51,"","",Hunter,"fpath Loch Modan |goto Loch Modan 33.9,51
+|only if Hunter"
+27,Fly,,,Ironforge,,,,,https://classic.wowhead.com/quest=,,,,"",,,,"","",Hunter,"fpath Ironforge
+|only if Hunter"
+28,Accept,6064,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6064,,,,"",,,,"","",Hunter,"accept ##6064
+|only if Hunter"
+29,Do,6064,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6064,,,,"",,,,"","",Hunter,"Do: 
+|only if Hunter"
+30,TurnIn,6064,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6064,,,,"",,,,"","",Hunter,"turnin ##6064
+|only if Hunter"
+31,Accept,6084,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6084,,,,"",,,,"","",Hunter,"accept ##6084
+|only if Hunter"
+32,Do,6084,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6084,,,,"",,,,"","",Hunter,"Do: 
+|only if Hunter"
+33,TurnIn,6084,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6084,,,,"",,,,"","",Hunter,"turnin ##6084
+|only if Hunter"
+34,Accept,6085,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6085,,,,"",,,,"","",Hunter,"accept ##6085
+|only if Hunter"
+35,Do,6085,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6085,,,,"",,,,"","",Hunter,"Do: 
+|only if Hunter"
+36,TurnIn,6085,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6085,,,,"",,,,"","",Hunter,"turnin ##6085
+|only if Hunter"
+37,Accept,6086,Training the Beast,,,,,,https://classic.wowhead.com/quest=6086,,,,"",,,,"","",Hunter,"accept ##6086
+|only if Hunter"
+38,Text,,,,,,,[A Hunter]Tame a pet you like.I highly recommend a boar. Charge that deals more dmg and roots and as its a charge it can attack earlier->More aggro!,https://classic.wowhead.com/quest=,,,,"",,,,"","",Hunter,"[A Hunter]Tame a pet you like.I highly recommend a boar. Charge that deals more dmg and roots and as its a charge it can attack earlier->More aggro!
+|only if Hunter"
+39,TurnIn,6086,Training the Beast,,,,,,https://classic.wowhead.com/quest=6086,,,,"",,,,"","",Hunter,"turnin ##6086
+|only if Hunter"
+40,Text,,,,,,,[A Hunter]Feed your pet and [T] Train your own and your pets skills.,https://classic.wowhead.com/quest=,,,,"",,,,"","",Hunter,"[A Hunter]Feed your pet and [T] Train your own and your pets skills.
+|only if Hunter"
+41,Fly,,,Loch Modan,,,,,https://classic.wowhead.com/quest=,,,,"",,,,"","",Hunter,"fpath Loch Modan
+|only if Hunter"
+42,Do,224,In Defense of the King's Lands,Loch Modan,,,,,https://classic.wowhead.com/quest=224,,,,"",,,,"","",,Do: 
+43,Do,267,The Trogg Threat,Loch Modan,,,,,https://classic.wowhead.com/quest=267,,,,"",,,,"","",,Do: 
+44,TurnIn,224,In Defense of the King's Lands,Loch Modan,,,,,https://classic.wowhead.com/quest=224,,,,"",,,,"","",,turnin ##224
+45,Accept,237,In Defense of the King's Lands,Loch Modan,,,,,https://classic.wowhead.com/quest=237,,,,"",,,,"","",,accept ##237
+46,TurnIn,267,The Trogg Threat,Loch Modan,,,,,https://classic.wowhead.com/quest=267,,,,"",,,,"","",,turnin ##267
+47,Flightpath,,,Loch Modan,"33.9,51",,,,https://classic.wowhead.com/quest=,,,,"","shape: (2,)
+Series: '' [str]
+[
+	""33.9""
+	""51""
+]",33.9,51,"","",,"fpath Loch Modan |goto Loch Modan 33.9,51"
+48,Hearthstone,,,Loch Modan,"35.4,48.4",,,,https://classic.wowhead.com/quest=,,,,"","shape: (2,)
+Series: '' [str]
+[
+	""35.4""
+	""48.4""
+]",35.4,48.4,"","",Dwarf,"home Loch Modan
+|only if Dwarf"
+49,Accept,6387,Honor Students,Loch Modan,,,,,https://classic.wowhead.com/quest=6387,,,,"",,,,"","","Dwarf, Gnome","accept ##6387
+|only if Dwarf, Gnome"
+50,Accept,1339,Mountaineer Stormpike's Task,Loch Modan,,,,,https://classic.wowhead.com/quest=1339,,,,"",,,,"","",,accept ##1339
+51,TurnIn,353,Stormpike's Delivery,Loch Modan,,,,,https://classic.wowhead.com/quest=353,,,,"",,,,"","",Human,"turnin ##353
+|only if Human"
+52,TurnIn,1339,Mountaineer Stormpike's Task,Loch Modan,,,,,https://classic.wowhead.com/quest=1339,,,,"",,,,"","",,turnin ##1339
+53,Accept,307,Filthy Paws,Loch Modan,,,,,https://classic.wowhead.com/quest=307,,,,"",,,,"","",,accept ##307
+54,Do,307,Filthy Paws,Loch Modan,,,,,https://classic.wowhead.com/quest=307,,,,"",,,,"","",,Do: 
+55,Buy,,,Loch Modan,,,,"from [G42.8,10Loch Modan]Nillen Andemar - Its a limited supply weapon,so it might not be available",https://classic.wowhead.com/quest=,4778,Heavy Spiked Mace,1,"",,,,"","","Warrior,Paladin",
+56,TurnIn,307,Filthy Paws,Loch Modan,,,,,https://classic.wowhead.com/quest=307,,,,"",,,,"","",,turnin ##307
+57,Accept,1338,Stormpike's Order,Loch Modan,,,,,https://classic.wowhead.com/quest=1338,,,,"",,,,"","",,accept ##1338
+58,Usehearthstone,,,Loch Modan,,,,,https://classic.wowhead.com/quest=,,,,"",,,,"","",,""
+59,TurnIn,6387,Honor Students,Loch Modan,,,,,https://classic.wowhead.com/quest=6387,,,,"",,,,"","","Dwarf, Gnome","turnin ##6387
+|only if Dwarf, Gnome"
+60,Accept,6391,Ride to Ironforge,Loch Modan,,,,,https://classic.wowhead.com/quest=6391,,,,"",,,,"","","Dwarf, Gnome","accept ##6391
+|only if Dwarf, Gnome"
+61,Fly,,,Ironforge,,,,,https://classic.wowhead.com/quest=,,,,"",,,,"","","Dwarf, Gnome","fpath Ironforge
+|only if Dwarf, Gnome"
+62,TurnIn,6391,Ride to Ironforge,Loch Modan,,,,,https://classic.wowhead.com/quest=6391,,,,"",,,,"","","Dwarf, Gnome","turnin ##6391
+|only if Dwarf, Gnome"
+63,Accept,6388,Gryth Thurden,Ironforge,,,,,https://classic.wowhead.com/quest=6388,,,,"",,,,"","","Dwarf, Gnome","accept ##6388
+|only if Dwarf, Gnome"
+64,Text,,,Ironforge,,,,"[A Warlock,Warrior,Hunter,Mage,Rogue] [T] Get your Level 10 skills at your trainer.",https://classic.wowhead.com/quest=,,,,"",,,,"","",Warlock,"[A Warlock,Warrior,Hunter,Mage,Rogue] [T] Get your Level 10 skills at your trainer.
+|only if Warlock"
+65,Text,,,Ironforge,,,,"[A Paladin] [T] Get your Level 10 skills at your trainer. Run to [G24.6,4.5Ironforge]",https://classic.wowhead.com/quest=,,,,"",,,,"","",Paladin,"[A Paladin] [T] Get your Level 10 skills at your trainer. Run to [G24.6,4.5Ironforge]
+|only if Paladin"
+66,Accept,1715,The Slaughtered Lamb,,,,,,https://classic.wowhead.com/quest=1715,,,,"",,,,"","",Warlock,"accept ##1715
+|only if Warlock"
+67,Hearthstone,,,Ironforge,"18.6,51.6",,,,https://classic.wowhead.com/quest=,,,,"","shape: (2,)
+Series: '' [str]
+[
+	""18.6""
+	""51.6""
+]",18.6,51.6,"","","Dwarf, Gnome","home Ironforge
+|only if Dwarf, Gnome"
+68,Run,,,Dun Morogh,"30.9,36.5",,,,https://classic.wowhead.com/quest=,,,,"","shape: (2,)
+Series: '' [str]
+[
+	""30.9""
+	""36.5""
+]",30.9,36.5,"","",Human,"Run to 30.9,36.5 |goto Dun Morogh 30.9,36.5
+|only if Human"
+69,Run,,,Dun Morogh,"31.1,31.2",,,,https://classic.wowhead.com/quest=,,,,"","shape: (2,)
+Series: '' [str]
+[
+	""31.1""
+	""31.2""
+]",31.1,31.2,"","",Human,"Run to 31.1,31.2 |goto Dun Morogh 31.1,31.2
+|only if Human"
+70,Run,,,Dun Morogh,"32.8,29.1",,,,https://classic.wowhead.com/quest=,,,,"","shape: (2,)
+Series: '' [str]
+[
+	""32.8""
+	""29.1""
+]",32.8,29.1,"","",Human,"Run to 32.8,29.1 |goto Dun Morogh 32.8,29.1
+|only if Human"
+71,Run,,,Dun Morogh,"32.9, 27.5",,,,https://classic.wowhead.com/quest=,,,,"","shape: (2,)
+Series: '' [str]
+[
+	""32.9""
+	"" 27.5""
+]",32.9, 27.5,"","",Human,"Run to 32.9, 27.5 |goto Dun Morogh 32.9, 27.5
+|only if Human"
+72,Text,,,,,,,"[A Human] There is a hill infront of you, that gets you into The Great Sea (Above your minimap). Go ontop of that.",https://classic.wowhead.com/quest=,,,,"",,,,"","",Human,"[A Human] There is a hill infront of you, that gets you into The Great Sea (Above your minimap). Go ontop of that.
+|only if Human"
+73,Text,,,Wetlands,,,,"[A Human] Jump to your death towards north, Rezz up at the Spirit Healer.",https://classic.wowhead.com/quest=,,,,"",,,,"","",Human,"[A Human] Jump to your death towards north, Rezz up at the Spirit Healer.
+|only if Human"
+74,Text,,,,,,,Turn on your Aura.,https://classic.wowhead.com/quest=,,,,"",,,,"","",Paladin,"Turn on your Aura.
+|only if Paladin"
+75,Text,,,Wetlands,"10.5, 55.7",,,"Run to [G10.5, 55.7Wetlands][A Human] for Menethil Keep exploring experience.",https://classic.wowhead.com/quest=,,,,"","shape: (2,)
+Series: '' [str]
+[
+	""10.5""
+	"" 55.7""
+]",10.5, 55.7,"","",Human,"Run to [G10.5, 55.7Wetlands][A Human] for Menethil Keep exploring experience.
+|only if Human"
+76,TurnIn,6388,Gryth Thurden,Ironforge,,,,,https://classic.wowhead.com/quest=6388,,,,"",,,,"","","Dwarf, Gnome","turnin ##6388
+|only if Dwarf, Gnome"
+77,Fly,,,Wetlands,,,,,https://classic.wowhead.com/quest=,,,,"",,,,"","","Dwarf, Gnome","fpath Wetlands
+|only if Dwarf, Gnome"
+78,FlightPath,,,Wetlands,"9.6,59.6",,,,https://classic.wowhead.com/quest=,,,,"","shape: (2,)
+Series: '' [str]
+[
+	""9.6""
+	""59.6""
+]",9.6,59.6,"","",Human,"
+|only if Human"
+79,Text,,,Wetlands,,,,Take the ship to Darkshore,https://classic.wowhead.com/quest=,,,,"",,,,"","",,Take the ship to Darkshore
+80,Text,,,Wetlands,,,,,https://classic.wowhead.com/quest=,,,,"",,,,"","",,
+81,,,,,,,,,https://classic.wowhead.com/quest=,,,,"",,,,"","",,""

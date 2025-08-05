@@ -1,0 +1,73 @@
+Name,Action,ID,Location,Coords,XP,Level,Class,Text,Wowhead
+[GA Alliance],,,,,,,,,
+[N73a Dragonblight - Alliance],,,,,,,,,
+[NX73b Dragonblight - Alliance],,,,,,,,,
+"[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,,,,,
+"This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",Text,,,,,,,,
+I am marking EVERY Elite quest and dungeons as optional in this guide. Especially on release you should do them!!! You'll easily find groups for elite quests and dungeons.,Text,,,,,,,,
+TurnIn: [QT12119],TurnIn,12119,,,,,,,https://www.wowhead.com/wotlk/quest=12119
+Accept: [QA12766],Accept,12766,,,,,,,https://www.wowhead.com/wotlk/quest=12766
+TurnIn: [QT12766],TurnIn,12766,,,,,,,https://www.wowhead.com/wotlk/quest=12766
+"Run to [G57.9, 54.2Dragonblight]",Run,,Dragonblight,"57.9, 54.2",,,,,https://www.wowhead.com/wotlk/quest=
+Fly to [F the top.],Fly,,the top.,,,,,,https://www.wowhead.com/wotlk/quest=
+Accept: [QA12458],Accept,12458,,,,,,,https://www.wowhead.com/wotlk/quest=12458
+Accept: [QA12447],Accept,12447,,,,,,,https://www.wowhead.com/wotlk/quest=12447
+Accept: [QA12470],Accept,12470,,,,,,,https://www.wowhead.com/wotlk/quest=12470
+Fly to [F the bottom.],Fly,,the bottom.,,,,,,https://www.wowhead.com/wotlk/quest=
+Accept: [QA12454],Accept,12454,,,,,,,https://www.wowhead.com/wotlk/quest=12454
+Do: [QC12458],Do,12458,,,,,,,https://www.wowhead.com/wotlk/quest=12458
+Do: [QC12454],Do,12454,,,,,,,https://www.wowhead.com/wotlk/quest=12454
+TurnIn: [QT12454],TurnIn,12454,,,,,,,https://www.wowhead.com/wotlk/quest=12454
+Accept: [QA12456],Accept,12456,,,,,,,https://www.wowhead.com/wotlk/quest=12456
+"This is an elite quest. Try to find someone to do it with(2 people should be enough), if not do it later.",Text,,,,,,,"This is an elite quest. Try to find someone to do it with(2 people should be enough), if not do it later.",https://www.wowhead.com/wotlk/quest=
+TurnIn: [QT12456],TurnIn,12456,,,,,,,https://www.wowhead.com/wotlk/quest=12456
+Accept: [QA12460],Accept,12460,,,,,,,https://www.wowhead.com/wotlk/quest=12460
+"Get the [P] flightpath at: [G60.2, 51.6Dragonblight]",Flightpath,,Dragonblight,"60.2, 51.6",,,,,https://www.wowhead.com/wotlk/quest=
+Do: [QC12470],Do,12470,,,,,,,https://www.wowhead.com/wotlk/quest=12470
+"Do: [QC12459,1]",Do,"12459,1",,,,,,,"https://www.wowhead.com/wotlk/quest=12459,1"
+TurnIn: [QT12466],TurnIn,12466,,,,,,,https://www.wowhead.com/wotlk/quest=12466
+Accept: [QA12467],Accept,12467,,,,,,,https://www.wowhead.com/wotlk/quest=12467
+Accept: [QA12144],Accept,12144,,,,,,,https://www.wowhead.com/wotlk/quest=12144
+Do: [QC12467],Do,12467,,,,,,,https://www.wowhead.com/wotlk/quest=12467
+Do: [QC12144],Do,12144,,,,,,,https://www.wowhead.com/wotlk/quest=12144
+TurnIn: [QT12144],TurnIn,12144,,,,,,,https://www.wowhead.com/wotlk/quest=12144
+Accept: [QA12145],Accept,12145,,,,,,,https://www.wowhead.com/wotlk/quest=12145
+You should have gotten the Quest Item "Emblazoned Battle Horn" by now. Accept it.,Text,,,,,,,You should have gotten the Quest Item "Emblazoned Battle Horn" by now. Accept it.,https://www.wowhead.com/wotlk/quest=
+Accept: [QA12147],Accept,12147,,,,,,,https://www.wowhead.com/wotlk/quest=12147
+TurnIn: [QT12467],TurnIn,12467,,,,,,,https://www.wowhead.com/wotlk/quest=12467
+Accept: [QA12472],Accept,12472,,,,,,,https://www.wowhead.com/wotlk/quest=12472
+"Set your [H] to Dragonblight at [G77.4, 51.6Dragonblight]",Hearthstone,,Dragonblight,"77.4, 51.6",,,,,https://www.wowhead.com/wotlk/quest=
+TurnIn: [QT12472],TurnIn,12472,,,,,,,https://www.wowhead.com/wotlk/quest=12472
+Accept: [QA12473],Accept,12473,,,,,,,https://www.wowhead.com/wotlk/quest=12473
+Do: [QC12473],Do,12473,,,,,,,https://www.wowhead.com/wotlk/quest=12473
+TurnIn: [QT12473],TurnIn,12473,,,,,,,https://www.wowhead.com/wotlk/quest=12473
+Accept: [QA12474],Accept,12474,,,,,,,https://www.wowhead.com/wotlk/quest=12474
+Fly to [F Wyrmrest Temple],Fly,,Wyrmrest Temple,,,,,,https://www.wowhead.com/wotlk/quest=
+Accept: [QA12469],Accept,12469,,,,,,,https://www.wowhead.com/wotlk/quest=12469
+"Get the [P] flightpath at: [G39.6, 25.8Dragonblight]",Flightpath,,Dragonblight,"39.6, 25.8",,,,,https://www.wowhead.com/wotlk/quest=
+TurnIn: [QT12474],TurnIn,12474,,,,,,,https://www.wowhead.com/wotlk/quest=12474
+Accept: [QA12495],Accept,12495,,,,,,,https://www.wowhead.com/wotlk/quest=12495
+Fly to [F Wyrmrest Temple],Fly,,Wyrmrest Temple,,,,,,https://www.wowhead.com/wotlk/quest=
+TurnIn: [QT12147],TurnIn,12147,,,,,,,https://www.wowhead.com/wotlk/quest=12147
+Accept: [QA12148],Accept,12148,,,,,,,https://www.wowhead.com/wotlk/quest=12148
+Fly to [F the top.],Fly,,the top.,,,,,,https://www.wowhead.com/wotlk/quest=
+TurnIn: [QT12470],TurnIn,12470,,,,,,,https://www.wowhead.com/wotlk/quest=12470
+TurnIn: [QT12495],TurnIn,12495,,,,,,,https://www.wowhead.com/wotlk/quest=12495
+Accept: [QA12497],Accept,12497,,,,,,,https://www.wowhead.com/wotlk/quest=12497
+TurnIn: [QT12497],TurnIn,12497,,,,,,,https://www.wowhead.com/wotlk/quest=12497
+Accept: [QA12498],Accept,12498,,,,,,,https://www.wowhead.com/wotlk/quest=12498
+"You will get a Ruby Beacon of the Dragon Queen. this can be used as a mount, so we dont turn in this quest for quite a while. Use it as often as you can.",Text,,,,,,,"You will get a Ruby Beacon of the Dragon Queen. this can be used as a mount, so we dont turn in this quest for quite a while. Use it as often as you can.",https://www.wowhead.com/wotlk/quest=
+"The next steps make use of said Flying-Mount and are GROUP ELITE QUESTS, so I mark them as optional, yet you should do them! If you wanna/have to skip them,go to the next guide.",Text,,,,,,,"The next steps make use of said Flying-Mount and are GROUP ELITE QUESTS, so I mark them as optional, yet you should do them! If you wanna/have to skip them,go to the next guide.",https://www.wowhead.com/wotlk/quest=
+(Whenever you can)Do: [QC12148],DoOptional,12148,,,,,,,https://www.wowhead.com/wotlk/quest=12148
+TurnIn: [QT12148][O],TurnInOptional,12148,,,,,,,https://www.wowhead.com/wotlk/quest=12148
+Accept: [QA12149][O],AcceptOptional,12149,,,,,,,https://www.wowhead.com/wotlk/quest=12149
+"(Whenever you can)Do: [QC12149,2]",DoOptional,"12149,2",,,,,,,"https://www.wowhead.com/wotlk/quest=12149,2"
+"(Whenever you can)Do: [QC12149,1]",DoOptional,"12149,1",,,,,,,"https://www.wowhead.com/wotlk/quest=12149,1"
+"(Whenever you can)Do: [QC12149,3]",DoOptional,"12149,3",,,,,,,"https://www.wowhead.com/wotlk/quest=12149,3"
+TurnIn: [QT12149][O],TurnInOptional,12149,,,,,,,https://www.wowhead.com/wotlk/quest=12149
+Accept: [QA12150][O],AcceptOptional,12150,,,,,,,https://www.wowhead.com/wotlk/quest=12150
+(Whenever you can)Do: [QC12150],DoOptional,12150,,,,,,,https://www.wowhead.com/wotlk/quest=12150
+TurnIn: [QT12150][O],TurnInOptional,12150,,,,,,,https://www.wowhead.com/wotlk/quest=12150
+Accept: [QA12151][O],AcceptOptional,12151,,,,,,,https://www.wowhead.com/wotlk/quest=12151
+(Whenever you can)Do: [QC12151],DoOptional,12151,,,,,,,https://www.wowhead.com/wotlk/quest=12151
+TurnIn: [QT12151][O],TurnInOptional,12151,,,,,,,https://www.wowhead.com/wotlk/quest=12151

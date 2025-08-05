@@ -1,0 +1,84 @@
+row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,ItemName,ItemAmount,coords_split,X,Y,NpcName,NpcId,formatted_text
+0,,,,,,,,,,,,,,,,,"","",""
+1,,,,,,,,,,,,,,,,,"","",""
+2,,,,,,,,,,,,,,,,,"","",""
+3,,,,,,,,,,,,,,,,,"","",""
+4,Text,,,,,,,,,,,,,,,,"","",
+5,,,,,,,,,,,,,,,,,"","",""
+6,Fly,,,Feralas,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Feralas
+7,Accept,2821,The Mark of Quality,Feralas,,,,,,https://classic.wowhead.com/quest=2821,,,,,,,"","",accept The Mark of Quality##2821
+8,Hearthstone,,,Feralas,"31,43.2",,,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""31""
+	""43.2""
+]",31,43.2,"","",home Feralas
+9,Accept,3787,Jonespyre's Request,Feralas,,,,,,https://classic.wowhead.com/quest=3787,,,,,,,"","",accept Jonespyre's Request##3787
+10,Accept,2866,The Ruins of Solarsal,Feralas,,,,,,https://classic.wowhead.com/quest=2866,,,,,,,"","",accept The Ruins of Solarsal##2866
+11,Accept,4124,The Missing Courier,Feralas,,,,,,https://classic.wowhead.com/quest=4124,,,,,,,"","",accept The Missing Courier##4124
+12,Accept,2939,In Search of Knowledge,Feralas,,,,,,https://classic.wowhead.com/quest=2939,,,,,,,"","",accept In Search of Knowledge##2939
+13,Accept,2982,The High Wilderness,Feralas,,,,,,https://classic.wowhead.com/quest=2982,,,,,,,"","",accept The High Wilderness##2982
+14,Turnin,4124,The Missing Courier,Feralas,,,,,,https://classic.wowhead.com/quest=4124,,,,,,,"","",""
+15,Accept,4125,The Missing Courier,Feralas,,,,,,https://classic.wowhead.com/quest=4125,,,,,,,"","",accept The Missing Courier##4125
+16,Turnin,2866,The Ruins of Solarsal,Feralas,,,,,,https://classic.wowhead.com/quest=2866,,,,,,,"","",""
+17,Accept,2867,Return to Feathermoon Stronghold,Feralas,,,,,,https://classic.wowhead.com/quest=2867,,,,,,,"","",accept Return to Feathermoon Stronghold##2867
+18,Turnin,2867,Return to Feathermoon Stronghold,Feralas,,,,,,https://classic.wowhead.com/quest=2867,,,,,,,"","",""
+19,Accept,3130,Against the Hatecrest,Feralas,,,,,,https://classic.wowhead.com/quest=3130,,,,,,,"","",accept Against the Hatecrest##3130
+20,Turnin,3130,Against the Hatecrest,Feralas,,,,,,https://classic.wowhead.com/quest=3130,,,,,,,"","",""
+21,Accept,2869,Against the Hatecrest,Feralas,,,,,,https://classic.wowhead.com/quest=2869,,,,,,,"","",accept Against the Hatecrest##2869
+22,Turnin,2869,Against the Hatecrest,Feralas,,,,,,https://classic.wowhead.com/quest=2869,,,,,,,"","",""
+23,Accept,2870,Against Lord Shalzaru,Feralas,,,,,,https://classic.wowhead.com/quest=2870,,,,,,,"","",accept Against Lord Shalzaru##2870
+24,Do,2870,Against Lord Shalzaru,Feralas,,,,,,https://classic.wowhead.com/quest=2870,,,,,,,"","",Do: Against Lord Shalzaru
+25,Turnin,4125,The Missing Courier,Feralas,,,,,,https://classic.wowhead.com/quest=4125,,,,,,,"","",""
+26,Accept,4127,Boat Wreckage,Feralas,,,,,,https://classic.wowhead.com/quest=4127,,,,,,,"","",accept Boat Wreckage##4127
+27,Do,3520,Screecher Spirits,Feralas,,,,,,https://classic.wowhead.com/quest=3520,,,,,,,"","",Do: Screecher Spirits
+28,UseHearthstone,,,Feralas,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",use Hearthstone##6948
+29,Turnin,4127,Boat Wreckage,Feralas,,,,,,https://classic.wowhead.com/quest=4127,,,,,,,"","",""
+30,Accept,4129,The Knife Revealed,Feralas,,,,,,https://classic.wowhead.com/quest=4129,,,,,,,"","",accept The Knife Revealed##4129
+31,Turnin,4129,The Knife Revealed,Feralas,,,,,,https://classic.wowhead.com/quest=4129,,,,,,,"","",""
+32,Turnin,3787,Jonespyre's Request,Feralas,,,,,,https://classic.wowhead.com/quest=3787,,,,,,,"","",""
+33,Accept,4130,Psychometric Reading,Feralas,,,,,,https://classic.wowhead.com/quest=4130,,,,,,,"","",accept Psychometric Reading##4130
+34,Turnin,4130,Psychometric Reading,Feralas,,,,,,https://classic.wowhead.com/quest=4130,,,,,,,"","",""
+35,Accept,4131,The Woodpaw Gnolls,Feralas,,,,,,https://classic.wowhead.com/quest=4131,,,,,,,"","",accept The Woodpaw Gnolls##4131
+36,Do,2821,The Mark of Quality,Feralas,,,,,,https://classic.wowhead.com/quest=2821,,,,,,,"","",Do: The Mark of Quality
+37,Do,2982,The High Wilderness,Feralas,,,,,,https://classic.wowhead.com/quest=2982,,,,,,,"","",Do: The High Wilderness
+38,Accept,2969,Freedom for All Creatures,Feralas,,,,,,https://classic.wowhead.com/quest=2969,,,,,,,"","",accept Freedom for All Creatures##2969
+39,Do,2969,Freedom for All Creatures,Feralas,,,,,,https://classic.wowhead.com/quest=2969,,,,,,,"","",Do: Freedom for All Creatures
+40,Turnin,2969,Freedom for All Creatures,Feralas,,,,,,https://classic.wowhead.com/quest=2969,,,,,,,"","",""
+41,Accept,2970,Doling Justice,Feralas,,,,,,https://classic.wowhead.com/quest=2970,,,,,,,"","",accept Doling Justice##2970
+42,Do,2970,Doling Justice,Feralas,,,,,,https://classic.wowhead.com/quest=2970,,,,,,,"","",Do: Doling Justice
+43,Turnin,2970,Doling Justice,Feralas,,,,,,https://classic.wowhead.com/quest=2970,,,,,,,"","",""
+44,Accept,2972,Doling Justice,Feralas,,,,,,https://classic.wowhead.com/quest=2972,,,,,,,"","",accept Doling Justice##2972
+45,Turnin,4131,The Woodpaw Gnolls,Feralas,,,,,,https://classic.wowhead.com/quest=4131,,,,,,,"","",""
+46,Accept,4135,The Writhing Deep,Feralas,,,,,,https://classic.wowhead.com/quest=4135,,,,,,,"","",accept The Writhing Deep##4135
+47,Text,,,Feralas,,,,,You got a questitem in your inventory:,https://classic.wowhead.com/quest=,,,,,,,"","",You got a questitem in your inventory:
+48,Run,,,Feralas,"73.2,63.9",,,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""73.2""
+	""63.9""
+]",73.2,63.9,"","","Run to 73.2,63.9 |goto Feralas 73.2,63.9"
+49,Run,,,Feralas,"72.3,64.2",,,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""72.3""
+	""64.2""
+]",72.3,64.2,"","","Run to 72.3,64.2 |goto Feralas 72.3,64.2"
+50,Turnin,4135,The Writhing Deep,Feralas,,,,,,https://classic.wowhead.com/quest=4135,,,,,,,"","",""
+51,Accept,4265,Freed from the Hive,Feralas,,,,,,https://classic.wowhead.com/quest=4265,,,,,,,"","",accept Freed from the Hive##4265
+52,Do,4265,Freed from the Hive,Feralas,,,,,,https://classic.wowhead.com/quest=4265,,,,,,,"","",Do: Freed from the Hive
+53,Text,,,Feralas,,,,,"You should have found the Chicken quest by now, Accept it now",https://classic.wowhead.com/quest=,,,,,,,"","","You should have found the Chicken quest by now, Accept it now"
+54,Accept,2766,Find OOX-22/FE!,Feralas,,,,,,https://classic.wowhead.com/quest=2766,,,,,,,"","",accept Find OOX-22/FE!##2766
+55,Turnin,2766,Find OOX-22/FE!,Feralas,,,,,,https://classic.wowhead.com/quest=2766,,,,,,,"","",""
+56,Accept,2767,Rescue OOX-22/FE!,Feralas,,,,,,https://classic.wowhead.com/quest=2767,,,,,,,"","",accept Rescue OOX-22/FE!##2767
+57,Do,2767,Rescue OOX-22/FE!,Feralas,,,,,,https://classic.wowhead.com/quest=2767,,,,,,,"","",Do: Rescue OOX-22/FE!
+58,Turnin,2982,The High Wilderness,Feralas,,,,,,https://classic.wowhead.com/quest=2982,,,,,,,"","",""
+59,Turnin,4265,Freed from the Hive,Feralas,,,,,,https://classic.wowhead.com/quest=4265,,,,,,,"","",""
+60,Accept,4266,A Hero's Welcome,Feralas,,,,,,https://classic.wowhead.com/quest=4266,,,,,,,"","",accept A Hero's Welcome##4266
+61,Turnin,4266,A Hero's Welcome,Feralas,,,,,,https://classic.wowhead.com/quest=4266,,,,,,,"","",""
+62,Accept,4267,Rise of the Silithid,Feralas,,,,,,https://classic.wowhead.com/quest=4267,,,,,,,"","",accept Rise of the Silithid##4267
+63,Turnin,2870,Against Lord Shalzaru,Feralas,,,,,,https://classic.wowhead.com/quest=2870,,,,,,,"","",""
+64,Accept,2871,Delivering the Relic,Feralas,,,,,,https://classic.wowhead.com/quest=2871,,,,,,,"","",accept Delivering the Relic##2871
+65,Turnin,2871,Delivering the Relic,Feralas,,,,,,https://classic.wowhead.com/quest=2871,,,,,,,"","",""
+66,Turnin,2821,The Mark of Quality,Feralas,,,,,,https://classic.wowhead.com/quest=2821,,,,,,,"","",""
+67,Fly,,,Darnassus,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Darnassus

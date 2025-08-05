@@ -1,0 +1,56 @@
+Name,Action,ID,Location,Coords,XP,Level,Class,Text,Wowhead
+[GA Alliance],,,,,,,,,
+[N76b2 Zul Drak - Alliance],,,,,,,,,
+[NX76b3 Zul Drak - Alliance],,,,,,,,,
+"[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,,,,,
+"This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",Text,,,,,,,,
+I am marking EVERY Elite quest and dungeons as optional in this guide. Especially on release you should do them!!! You'll easily find groups for elite quests and dungeons.,Text,,,,,,,,
+Use your disguise and use the teleporter for the next quest step. This will need to be done often now.,Text,,,,,,,Use your disguise and use the teleporter for the next quest step. This will need to be done often now.,https://wotlk.wowhead.com/quest=
+Do: [QC12661],Do,12661,,,,,,,https://wotlk.wowhead.com/quest=12661
+Accept: [QA12664],Accept,12664,,,,,,,https://wotlk.wowhead.com/quest=12664
+Do: [QC12664],Do,12664,,,,,,,https://wotlk.wowhead.com/quest=12664
+TurnIn: [QT12664],TurnIn,12664,,,,,,,https://wotlk.wowhead.com/quest=12664
+"Get out of the necropolis via the green platform, use the Horn-quest-item to summon Stefan",Text,,,,,,,"Get out of the necropolis via the green platform, use the Horn-quest-item to summon Stefan",https://wotlk.wowhead.com/quest=
+TurnIn: [QT12661],TurnIn,12661,,,,,,,https://wotlk.wowhead.com/quest=12661
+Accept: [QA12669],Accept,12669,,,,,,,https://wotlk.wowhead.com/quest=12669
+Disguise->Up the teleporter.,Text,,,,,,,Disguise->Up the teleporter.,https://wotlk.wowhead.com/quest=
+Accept: [QA12673],Accept,12673,,,,,,,https://wotlk.wowhead.com/quest=12673
+Leave the necropolis again.,Text,,,,,,,Leave the necropolis again.,https://wotlk.wowhead.com/quest=
+Do: [QC12673],Do,12673,,,,,,,https://wotlk.wowhead.com/quest=12673
+Do: [QC12669],Do,12669,,,,,,,https://wotlk.wowhead.com/quest=12669
+Disguise->Up the teleporter.,Text,,,,,,,Disguise->Up the teleporter.,https://wotlk.wowhead.com/quest=
+TurnIn: [QT12673],TurnIn,12673,,,,,,,https://wotlk.wowhead.com/quest=12673
+Leave the necropolis again.,Text,,,,,,,Leave the necropolis again.,https://wotlk.wowhead.com/quest=
+TurnIn: [QT12669],TurnIn,12669,,,,,,,https://wotlk.wowhead.com/quest=12669
+Accept: [QA12677],Accept,12677,,,,,,,https://wotlk.wowhead.com/quest=12677
+Disguise->Up the teleporter.,Text,,,,,,,Disguise->Up the teleporter.,https://wotlk.wowhead.com/quest=
+Accept: [QA12686],Accept,12686,,,,,,,https://wotlk.wowhead.com/quest=12686
+"For the next part: You may lose your disguise whilst looting the crates, make sure to put it on again.",Text,,,,,,,"For the next part: You may lose your disguise whilst looting the crates, make sure to put it on again.",https://wotlk.wowhead.com/quest=
+Do: [QC12677],Do,12677,,,,,,,https://wotlk.wowhead.com/quest=12677
+Leave the necropolis again.,Text,,,,,,,Leave the necropolis again.,https://wotlk.wowhead.com/quest=
+Do: [QC12686],Do,12686,,,,,,,https://wotlk.wowhead.com/quest=12686
+Disguise->Up the teleporter.,Text,,,,,,,Disguise->Up the teleporter.,https://wotlk.wowhead.com/quest=
+TurnIn: [QT12686],TurnIn,12686,,,,,,,https://wotlk.wowhead.com/quest=12686
+"Get out of the necropolis via the green platform, use the Horn-quest-item to summon Stefan",Text,,,,,,,"Get out of the necropolis via the green platform, use the Horn-quest-item to summon Stefan",https://wotlk.wowhead.com/quest=
+TurnIn: [QT12677],TurnIn,12677,,,,,,,https://wotlk.wowhead.com/quest=12677
+Accept: [QA12676],Accept,12676,,,,,,,https://wotlk.wowhead.com/quest=12676
+Disguise->Up the teleporter.,Text,,,,,,,Disguise->Up the teleporter.,https://wotlk.wowhead.com/quest=
+Accept: [QA12690],Accept,12690,,,,,,,https://wotlk.wowhead.com/quest=12690
+Leave the necropolis again.,Text,,,,,,,Leave the necropolis again.,https://wotlk.wowhead.com/quest=
+"Do: [QC12676,1]",Do,"12676,1",,,,,,,"https://wotlk.wowhead.com/quest=12676,1"
+Do: [QC12690],Do,12690,,,,,,,https://wotlk.wowhead.com/quest=12690
+Disguise->Up the teleporter.,Text,,,,,,,Disguise->Up the teleporter.,https://wotlk.wowhead.com/quest=
+TurnIn: [QT12690],TurnIn,12690,,,,,,,https://wotlk.wowhead.com/quest=12690
+Accept: [QA12710],Accept,12710,,,,,,,https://wotlk.wowhead.com/quest=12710
+Take the BLUE teleporter to get upstairs.,Text,,,,,,,Take the BLUE teleporter to get upstairs.,https://wotlk.wowhead.com/quest=
+Do: [QC12710],Do,12710,,,,,,,https://wotlk.wowhead.com/quest=12710
+Teleport down to the "middle" of the necropolis,Text,,,,,,,Teleport down to the "middle" of the necropolis,https://wotlk.wowhead.com/quest=
+TurnIn: [QT12710],TurnIn,12710,,,,,,,https://wotlk.wowhead.com/quest=12710
+"Get out of the necropolis via the green platform, use the Horn-quest-item to summon Stefan",Text,,,,,,,"Get out of the necropolis via the green platform, use the Horn-quest-item to summon Stefan",https://wotlk.wowhead.com/quest=
+TurnIn: [QT12676],TurnIn,12676,,,,,,,https://wotlk.wowhead.com/quest=12676
+Accept: [QA12713],Accept,12713,,,,,,,https://wotlk.wowhead.com/quest=12713
+"Put the quest item Scepter of Domination into your skillbar,you will need it.",Text,,,,,,,"Put the quest item Scepter of Domination into your skillbar,you will need it.",https://wotlk.wowhead.com/quest=
+Disguise->Up the teleporter.,Text,,,,,,,Disguise->Up the teleporter.,https://wotlk.wowhead.com/quest=
+Do: [QC12713],Do,12713,,,,,,,https://wotlk.wowhead.com/quest=12713
+Use the Last wish item to teleport out.,Text,,,,,,,Use the Last wish item to teleport out.,https://wotlk.wowhead.com/quest=
+TurnIn: [QT12713],TurnIn,12713,,,,,,Use the Horn-quest-item to summon Stefan,https://wotlk.wowhead.com/quest=12713

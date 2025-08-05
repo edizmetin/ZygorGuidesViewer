@@ -1,0 +1,34 @@
+Name,Action,Text,,,
+[N First Aid Shopping List],,,Classic,,
+[NX First Aid],,,,,
+"[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,
+"This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",Text,,,,
+Shopping List:,Text,Shopping List:,ItemID,ItemName,Amount
+"Buy [CI2589, 170 Linen Cloth]",Text,"Buy [CI2589, 170 Linen Cloth]",2589,Linen Cloth,170
+"Buy [CI2592, 180 Wool Cloth]",Text,"Buy [CI2592, 180 Wool Cloth]",2592,Wool Cloth,180
+"Buy [CI4306, 150 Silk Cloth]",Text,"Buy [CI4306, 150 Silk Cloth]",4306,Silk Cloth,150
+"Buy [CI4338, 120 Mageweave Cloth]",Text,"Buy [CI4338, 120 Mageweave Cloth]",4338,Mageweave Cloth,120
+"Buy [CI14047, 80 Runecloth]",Text,"Buy [CI14047, 80 Runecloth]",14047,Runecloth,80
+"Buy [CI,  ]",Text,"Buy [CI,  ]",,,
+"Buy [CI,  ]",Text,"Buy [CI,  ]",,,
+"Buy [CI,  ]",Text,"Buy [CI,  ]",,,
+"Buy [CI,  ]",Text,"Buy [CI,  ]",,,
+"Buy [CI,  ]",Text,"Buy [CI,  ]",,,
+"Buy [CI,  ]",Text,"Buy [CI,  ]",,,
+"Buy [CI,  ]",Text,"Buy [CI,  ]",,,
+"Buy [CI,  ]",Text,"Buy [CI,  ]",,,
+"Buy [CI,  ]",Text,"Buy [CI,  ]",,,
+,Text,,,,
+,Text,,,,
+,Text,,,,
+,Text,,,,
+,Text,,,,
+,Text,,,,
+,Text,,,,
+,Text,,,,
+,Text,,,,
+,,,WOTLK,,
+[N Alchemy Shopping List Classic],,,,,
+[NX Alchemy],,,,,
+"[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,
+"This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",,,,,

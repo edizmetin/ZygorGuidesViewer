@@ -1,0 +1,73 @@
+,Name,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead
+,[GA Alliance],,,,,,,,,,
+,"[N40-43Badlands,Uldaman]",,,,,,,,,,
+,"[NX41-44Tanaris,STV]",,,,,,,,,,
+"[1] = { str = "41-41 Uldaman" },","[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",Text,,,,,,,,,
+"[2] = { str = "This guide was written by TUGs and is totally free, but if you want to support my work use:  https://www.paypal.me/Tugstv1337" },","This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",,,,,,,,,,
+"[3] = { str = "Every Level you should grind 2-5 experience bars, this will make sure that this guide works properly!" },","Every Level you should grind 2-5 experience bars, this will make sure that this guide works properly!",Text,,,,,,,,,
+"[4] = { str = "Now do Uldaman quests, this will require MULTIPLE travels from Uldaman to IF and back I will explain this in the next couple of steps, the loot quest markers will be all OUTSIDE of Uldaman allthough some stuff is inside!" },","Now do Uldaman quests, this will require MULTIPLE travels from Uldaman to IF and back I will explain this in the next couple of steps, the loot quest markers will be all OUTSIDE of Uldaman allthough some stuff is inside!",Text,,,Uldaman,,,,,"Now do Uldaman quests, this will require MULTIPLE travels from Uldaman to IF and back I will explain this in the next couple of steps, the loot quest markers will be all OUTSIDE of Uldaman allthough some stuff is inside!",https://classic.wowhead.com/quest=
+"[5] = { str = "DoQuest: #DOQUESTPower Stones# " },",Do: [QC2418],Do,2418,Power Stones,Uldaman,,,,,,https://classic.wowhead.com/quest=2418
+"[6] = { str = "DoQuest: #DOQUESTUldaman Reagent Run# " },",Do: [QC17],Do,17,Uldaman Reagent Run,Uldaman,,,,,,https://classic.wowhead.com/quest=17
+"[7] = { str = "TurnIn: #TURNINA Sign of Hope# " },",TurnIn: [QT721],TurnIn,721,A Sign of Hope,Uldaman,,,,,,https://classic.wowhead.com/quest=721
+"[8] = { str = "Accept: #ACCEPTAmulet of Secrets#" },",Accept: [QA722],Accept,722,Amulet of Secrets,Uldaman,,,,,,https://classic.wowhead.com/quest=722
+"[9] = { str = "Go further into Uldaman whilst keeping left, go up the small ramp and take the FIRST to the rest.The Room is round-ish and kill Magregan Deepshadow, down in the pit loot Ancient Chest->Go Back and take the first to the left(Area is filled with Troggs) At the end there is a chest to loot." },","Go further into Uldaman whilst keeping left, go up the small ramp and take the FIRST to the rest.The Room is round-ish and kill Magregan Deepshadow, down in the pit loot Ancient Chest->Go Back and take the first to the left(Area is filled with Troggs) At the end there is a chest to loot.",Text,,,Uldaman,,,,,"Go further into Uldaman whilst keeping left, go up the small ramp and take the FIRST to the rest.The Room is round-ish and kill Magregan Deepshadow, down in the pit loot Ancient Chest->Go Back and take the first to the left(Area is filled with Troggs) At the end there is a chest to loot.",https://classic.wowhead.com/quest=
+"[10] = { str = "DoQuest: #DOQUESTAmulet of Secrets# " },",Do: [QC722],Do,722,Amulet of Secrets,Uldaman,,,,,,https://classic.wowhead.com/quest=722
+"[11] = { str = "DoQuest: #DOQUESTSolution to Doom# " },",Do: [QC709],Do,709,Solution to Doom,Uldaman,,,,,,https://classic.wowhead.com/quest=709
+"[12] = { str = "DoQuest: #DOQUESTReclaimed Treasures# " },",Do: [QC1360],Do,1360,Reclaimed Treasures,Uldaman,,,,,,https://classic.wowhead.com/quest=1360
+"[13] = { str = "TurnIn: #TURNINAmulet of Secrets# " },",TurnIn: [QT722],TurnIn,722,Amulet of Secrets,Uldaman,,,,,,https://classic.wowhead.com/quest=722
+"[14] = { str = "Accept: #ACCEPTProspect of Faith#" },",Accept: [QA724],Accept,724,Prospect of Faith,Uldaman,,,,,,https://classic.wowhead.com/quest=724
+"[15] = { str = "If you havent found Shattered Necklace yet, go into the dungeon and grind Troggs untill you do so. Run outside" },","If you havent found Shattered Necklace yet, go into the dungeon and grind Troggs untill you do so. Run outside",Text,,,Uldaman,,,,,"If you havent found Shattered Necklace yet, go into the dungeon and grind Troggs untill you do so. Run outside",https://classic.wowhead.com/quest=
+"[16] = { str = "TurnIn: #TURNINPower Stones# " },",TurnIn: [QT2418],TurnIn,2418,Power Stones,Uldaman,,,,,,https://classic.wowhead.com/quest=2418
+"[17] = { str = "TurnIn: #TURNINSolution to Doom# " },",TurnIn: [QT709],TurnIn,709,Solution to Doom,Uldaman,,,,,,https://classic.wowhead.com/quest=709
+"[18] = { str = "Accept: #ACCEPTTo Ironforge for Yagyin's Digest#" },",Accept: [QA727],Accept,727,To Ironforge for Yagyin's Digest,Uldaman,,,,,,https://classic.wowhead.com/quest=727
+"[19] = { str = "TurnIn: #TURNINProspect of Faith# " },",TurnIn: [QT724],TurnIn,724,Prospect of Faith,Uldaman,,,,,,https://classic.wowhead.com/quest=724
+"[20] = { str = "Accept: #ACCEPTProspect of Faith#" },",Accept: [QA723],Accept,723,Prospect of Faith,Uldaman,,,,,,https://classic.wowhead.com/quest=723
+"[21] = { str = "TurnIn: #TURNINAgmond's Fate# " },",TurnIn: [QT704],TurnIn,704,Agmond's Fate,Loch Modan,,,,,,https://classic.wowhead.com/quest=704
+"[22] = { str = "TurnIn: #TURNINUldaman Reagent Run# " },",TurnIn: [QT17],TurnIn,17,Uldaman Reagent Run,Loch Modan,,,,,,https://classic.wowhead.com/quest=17
+"[23] = { str = "Fly to Ironforge" },",Fly to [F Ironforge],Fly,,,Ironforge,,,,,,https://classic.wowhead.com/quest=
+"[24] = { str = "BUY: 5 Silver Bars" },",BUY: 5 Silver Bars,Text,,,Ironforge,,,,,BUY: 5 Silver Bars,https://classic.wowhead.com/quest=
+"[25] = { str = "Set your [H] to Ironforge at [G18.6,51.6Ironforge]" },","Set your [H] to Ironforge at [G18.6,51.6Ironforge]",Hearthstone,,,Ironforge,"18.6,51.6",,,,,https://classic.wowhead.com/quest=
+"[26] = { str = "Accept: #ACCEPTThe Shattered Necklace#" },",Accept: [QA2198],Accept,2198,The Shattered Necklace,Ironforge,,,,,,https://classic.wowhead.com/quest=2198
+"[27] = { str = "TurnIn: #TURNINThe Shattered Necklace# " },",TurnIn: [QT2198],TurnIn,2198,The Shattered Necklace,Ironforge,,,,,,https://classic.wowhead.com/quest=2198
+"[28] = { str = "Accept: #ACCEPTLore for a Price#" },",Accept: [QA2199],Accept,2199,Lore for a Price,Ironforge,,,,,,https://classic.wowhead.com/quest=2199
+"[29] = { str = "TurnIn: #TURNINLore for a Price# " },",TurnIn: [QT2199],TurnIn,2199,Lore for a Price,Ironforge,,,,,,https://classic.wowhead.com/quest=2199
+"[30] = { str = "Accept: #ACCEPTBack to Uldaman#" },",Accept: [QA2200],Accept,2200,Back to Uldaman,Ironforge,,,,,,https://classic.wowhead.com/quest=2200
+"[31] = { str = "TurnIn: #TURNINTo Ironforge for Yagyin's Digest# " },",TurnIn: [QT727],TurnIn,727,To Ironforge for Yagyin's Digest,Ironforge,,,,,,https://classic.wowhead.com/quest=727
+"[32] = { str = "TurnIn: #TURNINReclaimed Treasures# " },",TurnIn: [QT1360],TurnIn,1360,Reclaimed Treasures,Ironforge,,,,,,https://classic.wowhead.com/quest=1360
+"[33] = { str = "TurnIn: #TURNINProspect of Faith# " },",TurnIn: [QT723],TurnIn,723,Prospect of Faith,Ironforge,,,,,,https://classic.wowhead.com/quest=723
+"[34] = { str = "Accept: #ACCEPTPassing Word of a Threat#" },",Accept: [QA725],Accept,725,Passing Word of a Threat,Ironforge,,,,,,https://classic.wowhead.com/quest=725
+"[35] = { str = "TurnIn: #TURNINPassing Word of a Threat# " },",TurnIn: [QT725],TurnIn,725,Passing Word of a Threat,Ironforge,,,,,,https://classic.wowhead.com/quest=725
+"[36] = { str = "Accept: #ACCEPTPassing Word of a Threat#" },",Accept: [QA726],Accept,726,Passing Word of a Threat,Ironforge,,,,,,https://classic.wowhead.com/quest=726
+"[37] = { str = "TurnIn: #TURNINPassing Word of a Threat# " },",TurnIn: [QT726],TurnIn,726,Passing Word of a Threat,Ironforge,,,,,,https://classic.wowhead.com/quest=726
+"[38] = { str = "Accept: #ACCEPTAn Ambassador of Evil#" },",Accept: [QA762],Accept,762,An Ambassador of Evil,Ironforge,,,,,,https://classic.wowhead.com/quest=762
+"[39] = { str = "Fly to Loch Modan" },",Fly to [F Loch Modan],Fly,,,Loch Modan,,,,,,https://classic.wowhead.com/quest=
+"[40] = { str = "DoQuest: #DOQUESTAn Ambassador of Evil# " },",Do: [QC762],Do,762,An Ambassador of Evil,Badlands,,,,,,https://classic.wowhead.com/quest=762
+"[41] = { str = "Use your [H] Hearthstone." },",Use your [H] Hearthstone.,UseHearthstone,,,Badlands,,,,,,https://classic.wowhead.com/quest=
+"[42] = { str = "TurnIn: #TURNINAn Ambassador of Evil# " },",TurnIn: [QT762],TurnIn,762,An Ambassador of Evil,Ironforge,,,,,,https://classic.wowhead.com/quest=762
+"[43] = { str = "Accept: #ACCEPTThe Lost Tablets of Will#" },",Accept: [QA1139],Accept,1139,The Lost Tablets of Will,Loch Modan,,,,,,https://classic.wowhead.com/quest=1139
+"[44] = { str = "Fly to Loch Modan" },",Fly to [F Loch Modan],Fly,,,Loch Modan,,,,,,https://classic.wowhead.com/quest=
+"[45] = { str = "Do a full run of Uldaman up to Grimlok" },",Do a full run of Uldaman up to Grimlok,Text,,,Uldaman,,,,,Do a full run of Uldaman up to Grimlok,https://classic.wowhead.com/quest=
+"[46] = { str = "TurnIn: #TURNINBack to Uldaman# " },",TurnIn: [QT2200],TurnIn,2200,Back to Uldaman,Uldaman,,,,,,https://classic.wowhead.com/quest=2200
+"[47] = { str = "Accept: #ACCEPTFind the Gems#" },",Accept: [QA2201],Accept,2201,Find the Gems,Uldaman,,,,,,https://classic.wowhead.com/quest=2201
+"[48] = { str = "TurnIn: #TURNINThe Lost Dwarves# " },",TurnIn: [QT2398],TurnIn,2398,The Lost Dwarves,Uldaman,,,,,,https://classic.wowhead.com/quest=2398
+"[49] = { str = "Accept: #ACCEPTThe Hidden Chamber#" },",Accept: [QA2240],Accept,2240,The Hidden Chamber,Uldaman,,,,,,https://classic.wowhead.com/quest=2240
+"[50] = { str = "Take the Gni'kiv Medallion from the chest on the table" },",Take the Gni'kiv Medallion from the chest on the table,Text,,,Uldaman,,,,,Take the Gni'kiv Medallion from the chest on the table,https://classic.wowhead.com/quest=
+"[51] = { str = "In the same Room as the dwarves there is an Urn for the Topaz" },",In the same Room as the dwarves there is an Urn for the Topaz,Text,,,Uldaman,,,,,In the same Room as the dwarves there is an Urn for the Topaz,https://classic.wowhead.com/quest=
+"[52] = { str = "Run into the room with Ironaya to finish The Hidden Chamber" },",Run into the room with Ironaya to finish The Hidden Chamber,Text,,,Uldaman,,,,,Run into the room with Ironaya to finish The Hidden Chamber,https://classic.wowhead.com/quest=
+"[53] = { str = "In the Room with Galgann Firehammer open the cache to get the Ruby and Tablet of Will from the Tablet" },",In the Room with Galgann Firehammer open the cache to get the Ruby and Tablet of Will from the Tablet,Text,,,Uldaman,,,,,In the Room with Galgann Firehammer open the cache to get the Ruby and Tablet of Will from the Tablet,https://classic.wowhead.com/quest=
+"[54] = { str = "Kill Grimlok, loot the Sapphire and use [Talvash's Phial of Scrying] to turnin" },","Kill Grimlok, loot the Sapphire and use [Talvash's Phial of Scrying] to turnin",Text,,,Uldaman,,,,,"Kill Grimlok, loot the Sapphire and use [Talvash's Phial of Scrying] to turnin",https://classic.wowhead.com/quest=
+"[55] = { str = "TurnIn: #TURNINFind the Gems# " },",TurnIn: [QT2201],TurnIn,2201,Find the Gems,Uldaman,,,,,,https://classic.wowhead.com/quest=2201
+"[56] = { str = "Accept: #ACCEPTRestoring the Necklace#" },",Accept: [QA2204],Accept,2204,Restoring the Necklace,Uldaman,,,,,,https://classic.wowhead.com/quest=2204
+"[57] = { str = "Accept: #ACCEPTThe Platinum Discs#" },",Accept: [QA2278],Accept,2278,The Platinum Discs,Uldaman,,,,,,https://classic.wowhead.com/quest=2278
+"[58] = { str = "TurnIn: #TURNINThe Platinum Discs# " },",TurnIn: [QT2278],TurnIn,2278,The Platinum Discs,Uldaman,,,,,,https://classic.wowhead.com/quest=2278
+"[59] = { str = "Accept: #ACCEPTThe Platinum Discs#" },",Accept: [QA2279],Accept,2279,The Platinum Discs,Uldaman,,,,,,https://classic.wowhead.com/quest=2279
+"[60] = { str = "Use your [H] Hearthstone." },",Use your [H] Hearthstone.,UseHearthstone,,,Uldaman,,,,,,https://classic.wowhead.com/quest=
+"[61] = { str = "If the Hearthstone isnt ready....Run to Loch Modan and Fly to IF" },",If the Hearthstone isnt ready....Run to Loch Modan and Fly to IF,Text,,,Uldaman,,,,,If the Hearthstone isnt ready....Run to Loch Modan and Fly to IF,https://classic.wowhead.com/quest=
+"[62] = { str = "TurnIn: #TURNINThe Platinum Discs# " },",TurnIn: [QT2279],TurnIn,2279,The Platinum Discs,Ironforge,,,,,,https://classic.wowhead.com/quest=2279
+"[63] = { str = "Accept: #ACCEPTThe Platinum Discs#" },",Accept: [QA2439],Accept,2439,The Platinum Discs,Ironforge,,,,,,https://classic.wowhead.com/quest=2439
+"[64] = { str = "TurnIn: #TURNINThe Hidden Chamber# " },",TurnIn: [QT2240],TurnIn,2240,The Hidden Chamber,Ironforge,,,,,,https://classic.wowhead.com/quest=2240
+"[65] = { str = "TurnIn: #TURNINThe Lost Tablets of Will# " },",TurnIn: [QT1139],TurnIn,1139,The Lost Tablets of Will,Ironforge,,,,,,https://classic.wowhead.com/quest=1139
+"[66] = { str = "TurnIn: #TURNINRestoring the Necklace# " },",TurnIn: [QT2204],TurnIn,2204,Restoring the Necklace,Ironforge,,,,,,https://classic.wowhead.com/quest=2204
+"[67] = { str = "Accept: #ACCEPTRestoring the Necklace#" },",Accept: [QA2361],Accept,2361,Restoring the Necklace,Ironforge,,,,,,https://classic.wowhead.com/quest=2361
+"[68] = { str = "TurnIn: #TURNINRestoring the Necklace# " },",TurnIn: [QT2361],TurnIn,2361,Restoring the Necklace,Ironforge,,,,,,https://classic.wowhead.com/quest=2361
+"[69] = { str = "TurnIn: #TURNINThe Platinum Discs# " },",TurnIn: [QT2439],TurnIn,2439,The Platinum Discs,Ironforge,,,,,,https://classic.wowhead.com/quest=2439

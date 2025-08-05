@@ -1,0 +1,48 @@
+row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,ItemName,ItemAmount,coords_split,X,Y,NpcName,NpcId,formatted_text
+0,,,,,,,,,,,,,,,,,"","",""
+1,,,,,,,,,,,,,,,,,"","",""
+2,,,,,,,,,,,,,,,,,"","",""
+3,,,,,,,,,,,,,,,,,"","",""
+4,,,,,,,,,,,,,,,,,"","",""
+5,,,,,,,,,,,,,,,,,"","",""
+6,Accept,595,The Bloodsail Buccaneers,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=595,,,,,,,"","",accept The Bloodsail Buccaneers##595
+7,Accept,606,Scaring Shaky,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=606,,,,,,,"","",accept Scaring Shaky##606
+8,Hearthstone,,,Stranglethorn Vale,"27,77",,,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""27""
+	""77""
+]",27,77,"","",home Stranglethorn Vale
+9,Turnin,1115,The Rumormonger,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=1115,,,,,,,"","",""
+10,Accept,1116,Dream Dust in the Swamp,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=1116,,,,,,,"","",accept Dream Dust in the Swamp##1116
+11,Accept,601,Water Elementals,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=601,,,,,,,"","",accept Water Elementals##601
+12,Accept,577,Some Assembly Required,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=577,,,,,,,"","",accept Some Assembly Required##577
+13,Turnin,595,The Bloodsail Buccaneers,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=595,,,,,,,"","",""
+14,Accept,597,The Bloodsail Buccaneers,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=597,,,,,,,"","",accept The Bloodsail Buccaneers##597
+15,Do,606,Scaring Shaky,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=606,,,,,,,"","",Do: Scaring Shaky
+16,Run,,,Stranglethorn Vale,"30.5,53.9",,,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""30.5""
+	""53.9""
+]",30.5,53.9,"","","Run to 30.5,53.9 |goto Stranglethorn Vale 30.5,53.9"
+17,Do,192,Panther Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=192,,,,,,,"","",Do: Panther Mastery
+18,Text,,,Stranglethorn Vale,,,,,"Grind till [XP39] at [G42.9,36Stranglethorn Vale]",https://classic.wowhead.com/quest=,,,,,,,"","","Grind till [XP39] at [G42.9,36Stranglethorn Vale]"
+19,Do,196,Raptor Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=196,,,,,,,"","",Do: Raptor Mastery
+20,Do,577,Some Assembly Required,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=577,,,,,,,"","",Do: Some Assembly Required
+21,Turnin,192,Panther Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=192,,,,,,,"","",""
+22,Turnin,196,Raptor Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=196,,,,,,,"","",""
+23,AcceptOptional,197,Raptor Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=197,,,,,,,"","",
+24,AcceptOptional,193,Panther Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=193,,,,,,,"","",
+25,Do,601,Water Elementals,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=601,,,,,,,"","",Do: Water Elementals
+26,UseHearthstone,,,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",use Hearthstone##6948
+27,Turnin,606,Scaring Shaky,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=606,,,,,,,"","",""
+28,Accept,609,,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=609,,,,,,,"","",
+29,Turnin,597,The Bloodsail Buccaneers,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=597,,,,,,,"","",""
+30,Accept,599,The Bloodsail Buccaneers,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=599,,,,,,,"","",accept The Bloodsail Buccaneers##599
+31,Turnin,609,,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=609,,,,,,,"","",""
+32,Turnin,577,Some Assembly Required,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=577,,,,,,,"","",""
+33,Accept,628,,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=628,,,,,,,"","",
+34,Turnin,599,The Bloodsail Buccaneers,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=599,,,,,,,"","",""
+35,Turnin,601,Water Elementals,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=601,,,,,,,"","",""
+36,Fly,,,Stormwind City,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Stormwind City

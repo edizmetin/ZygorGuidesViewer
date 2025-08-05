@@ -1,0 +1,58 @@
+,Name,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead
+,[GA Alliance],,,,,,,,,,
+,[N36-37Arathi],,,,,,,,,,
+,"[NX38-39Dustwallow Marsh,STV]",,,,,,,,,,
+"[1] = { str = "36-37 Arathi Highlands" },","[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,,,,,,
+"[2] = { str = "This guide was written by TUGs and is totally free, but if you want to support my work use:  https://www.paypal.me/Tugstv1337" },","This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",Text,,,,,,,,,
+"[3] = { str = "Every Level you should grind 2-5 experience bars, this will make sure that this guide works properly!" },","Every Level you should grind 2-5 experience bars, this will make sure that this guide works properly!",,,,,,,,,,
+"[4] = { str = "Fly to Arathi Highlands" },",Fly to [F Arathi Highlands],Fly,,,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=
+"[5] = { str = "Accept: #ACCEPTNorthfold Manor#" },",Accept: [QA681],Accept,681,Northfold Manor,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=681
+"[6] = { str = "Accept(this is an optional quest! Do it if you can) #ACCEPTWanted! Marez Cowl#" },",Accept: [QA684][O],AcceptOptional,684,Wanted! Marez Cowl,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=684
+"[7] = { str = "Accept(this is an optional quest! Do it if you can) #ACCEPTWanted! Otto and Falconcrest#" },",Accept: [QA685][O],AcceptOptional,685,Wanted! Otto and Falconcrest,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=685
+"[8] = { str = "TurnIn: #TURNINMalin's Request# " },",TurnIn: [QT690],Turnin,690,Malin's Request,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=690
+"[9] = { str = "Accept: #ACCEPTWorth Its Weight in Gold#" },",Accept: [QA691],Accept,691,Worth Its Weight in Gold,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=691
+"[10] = { str = "Accept: #ACCEPTThe Princess Trapped#" },",Accept: [QA642],Accept,642,The Princess Trapped,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=642
+"[11] = { str = "DoQuest: #DOQUESTThe Princess Trapped# " },",Do: [QC642],Do,642,The Princess Trapped,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=642
+"[12] = { str = "TurnIn: #TURNINThe Princess Trapped# " },",TurnIn: [QT642],Turnin,642,The Princess Trapped,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=642
+"[13] = { str = "Grind till youre 36 and 3/4" },",Grind till youre 36 and 3/4,Text,,,Arathi Highlands,,,,,Grind till youre 36 and 3/4,https://classic.wowhead.com/quest=
+"[14] = { str = "Accept: #ACCEPTStones of Binding#" },",Accept: [QA651],Accept,651,Stones of Binding,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=651
+"[15] = { str = "DoQuest: #DOQUESTStones of Binding# " },",Do: [QC651],Do,651,Stones of Binding,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=651
+"[16] = { str = "TurnIn: #TURNINHints of a New Plague?# " },",TurnIn: [QT659],Turnin,659,Hints of a New Plague?,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=659
+"[17] = { str = "Accept: #ACCEPTHints of a New Plague?#" },",Accept: [QA658],Accept,658,Hints of a New Plague?,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=658
+"[18] = { str = "Keep an eye out for the Forsaken Courier" },",Keep an eye out for the Forsaken Courier,Text,,,Arathi Highlands,,,,,Keep an eye out for the Forsaken Courier,https://classic.wowhead.com/quest=
+"[19] = { str = "DoQuest: #DOQUESTWorth Its Weight in Gold# " },",Do: [QC691],Do,691,Worth Its Weight in Gold,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=691
+"[20] = { str = "DoQuest: #DOQUESTStones of Binding# " },",Do: [QC651],Do,651,Stones of Binding,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=651
+"[21] = { str = "TurnIn: #TURNINWorth Its Weight in Gold# " },",TurnIn: [QT691],Turnin,691,Worth Its Weight in Gold,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=691
+"[22] = { str = "Accept: #ACCEPTWand over Fist#" },",Accept: [QA693],Accept,693,Wand over Fist,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=693
+"[23] = { str = "DoQuest: #DOQUESTWand over Fist# " },",Do: [QC693],Do,693,Wand over Fist,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=693
+"[24] = { str = "Grind till [XP37]" },",Grind till [XP37],Text,,,Arathi Highlands,,,,,Grind till [XP37],https://classic.wowhead.com/quest=
+"[25] = { str = "TurnIn: #TURNINWand over Fist# " },",TurnIn: [QT693],Turnin,693,Wand over Fist,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=693
+"[26] = { str = "Accept(this is an optional quest! Do it if you can) #ACCEPTTrelane's Defenses#" },",Accept: [QA694][O],AcceptOptional,694,Trelane's Defenses,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=694
+"[27] = { str = "DoQuest: #DOQUESTStones of Binding# " },",Do: [QC651],Do,651,Stones of Binding,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=651
+"[28] = { str = "DoQuest: #DOQUESTNorthfold Manor# " },",Do: [QC681],Do,681,Northfold Manor,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=681
+"[29] = { str = "TurnIn: #TURNINNorthfold Manor# " },",TurnIn: [QT681],Turnin,681,Northfold Manor,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=681
+"[30] = { str = "Accept(this is an optional quest! Do it if you can) #ACCEPTStromgarde Badges#" },",Accept: [QA682][O],AcceptOptional,682,Stromgarde Badges,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=682
+"[31] = { str = "TurnIn: #TURNINStones of Binding# " },",TurnIn: [QT651],Turnin,651,Stones of Binding,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=651
+"[32] = { str = "Do(this is an optional quest!)#DOQUESTWanted! Marez Cowl# " },",(Whenever you can)Do: [QC684],DoOptional,684,Wanted! Marez Cowl,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=684
+"[33] = { str = "Do(this is an optional quest!)#DOQUESTWanted! Otto and Falconcrest# " },",(Whenever you can)Do: [QC685],DoOptional,685,Wanted! Otto and Falconcrest,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=685
+"[34] = { str = "Do(this is an optional quest!)#DOQUESTStromgarde Badges# " },",(Whenever you can)Do: [QC682],DoOptional,682,Stromgarde Badges,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=682
+"[35] = { str = "Do(this is an optional quest!)#DOQUESTTrelane's Defenses# " },",(Whenever you can)Do: [QC694],DoOptional,694,Trelane's Defenses,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=694
+"[36] = { str = "TurnIn: #TURNINWanted! Marez Cowl# " },",TurnIn: [QT684][O],TurninOptional,684,Wanted! Marez Cowl,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=684
+"[37] = { str = "TurnIn: #TURNINWanted! Otto and Falconcrest# " },",TurnIn: [QT685][O],TurninOptional,685,Wanted! Otto and Falconcrest,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=685
+"[38] = { str = "TurnIn: #TURNINStromgarde Badges# " },",TurnIn: [QT682][O],TurninOptional,682,Stromgarde Badges,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=682
+"[39] = { str = "TurnIn: #TURNINTrelane's Defenses# " },",TurnIn: [QT694][O],TurninOptional,694,Trelane's Defenses,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=694
+"[40] = { str = "Accept(this is an optional quest! Do it if you can) #ACCEPTAn Apprentice's Enchantment#" },",Accept: [QA695][O],AcceptOptional,695,An Apprentice's Enchantment,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=695
+"[41] = { str = "TurnIn: #TURNINAn Apprentice's Enchantment# " },",TurnIn: [QT695][O],TurninOptional,695,An Apprentice's Enchantment,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=695
+"[42] = { str = "Accept(this is an optional quest! Do it if you can) #ACCEPTAttack on the Tower#" },",Accept: [QA696][O],AcceptOptional,696,Attack on the Tower,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=696
+"[43] = { str = "TurnIn: #TURNINHints of a New Plague?# " },",TurnIn: [QT658],Turnin,658,Hints of a New Plague?,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=658
+"[44] = { str = "Accept: #ACCEPTDangerous!#" },",Accept: [QA567],Accept,567,Dangerous!,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=567
+"[45] = { str = "TurnIn: #TURNINDangerous!# " },",TurnIn: [QT567],Turnin,567,Dangerous!,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=567
+"[46] = { str = "Accept: #ACCEPTHints of a New Plague?#" },",Accept: [QA660],Accept,660,Hints of a New Plague?,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=660
+"[47] = { str = "DoQuest: #DOQUESTHints of a New Plague?# " },",Do: [QC660],Do,660,Hints of a New Plague?,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=660
+"[48] = { str = "TurnIn: #TURNINHints of a New Plague?# " },",TurnIn: [QT660],Turnin,660,Hints of a New Plague?,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=660
+"[49] = { str = "Accept: #ACCEPTHints of a New Plague?#" },",Accept: [QA661],Accept,661,Hints of a New Plague?,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=661
+"[50] = { str = "Do(this is an optional quest!)#DOQUESTAttack on the Tower# " },",(Whenever you can)Do: [QC696],DoOptional,696,Attack on the Tower,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=696
+"[51] = { str = "TurnIn: #TURNINAttack on the Tower# " },",TurnIn: [QT696][O],TurninOptional,696,Attack on the Tower,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=696
+"[52] = { str = "Accept(this is an optional quest! Do it if you can) #ACCEPT#" },",Accept: [QA697][O],AcceptOptional,697,,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=697
+"[53] = { str = "Use your [H] Hearthstone." },",Use your [H] Hearthstone.,UseHearthstone,,,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=
+"[54] = { str = "TurnIn: #TURNINHints of a New Plague?# " },",TurnIn: [QT661],Turnin,661,Hints of a New Plague?,Hillsbrad Foothills,,,,,,https://classic.wowhead.com/quest=661

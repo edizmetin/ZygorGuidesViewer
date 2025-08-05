@@ -29,3 +29,11 @@ I have very little LUA experience, contributions regarding bugs in the addon its
 ## Credits
 
 Credits for the original route (and initial port) all go to TUG !
+
+## Current TODO
+
+- [ ] Put all the guides from lua to the Guide folder of the Addon so the Addon is usable
+- [ ] Edit the guides to follow the Zygor format, many steps are incorrect / missing right now
+  - [ ] Example : `Do` steps should be linked to their original quests + should be `kill` / `collect` / `talk` steps instead
+  - [ ] Remove lines like `[QA 1235]` which are not used in Zygor format
+- [ ] Add custom quests + routes as leveling goes !

@@ -1,0 +1,55 @@
+Name,Action,ID,Location,Coords,XP,Level,Class,Text,Wowhead
+[N56-57 Deathknight],,,,,,,,,
+[NX57-58 Deathknight],,,,,,,,,
+"[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,,,,,
+"This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",,,,,,,,,
+I am marking EVERY Elite quest and dungeons as optional in this guide. Especially on release you should do them!!! You'll easily find groups for elite quests and dungeons.,,,,,,,,,
+Accept: [QA12697],Accept,12697,,,,,,,https://wotlk.wowhead.com/quest=12697
+TurnIn: [QT12697],TurnIn,12697,,,,,,,https://wotlk.wowhead.com/quest=12697
+Accept: [QA12698],Accept,12698,,,,,,,https://wotlk.wowhead.com/quest=12698
+Do: [QC12698],Do,12698,,,,,,,https://wotlk.wowhead.com/quest=12698
+TurnIn: [QT12698],TurnIn,12698,,,,,,,https://wotlk.wowhead.com/quest=12698
+Accept: [QA12700],Accept,12700,,,,,,,https://wotlk.wowhead.com/quest=12700
+TurnIn: [QT12700],TurnIn,12700,,,,,,,https://wotlk.wowhead.com/quest=12700
+Accept: [QA12701],Accept,12701,,,,,,,https://wotlk.wowhead.com/quest=12701
+"Run to [G58.5,33The Scarlet Enclave]",Run,,The Scarlet Enclave,"58.5,33",,,,,https://wotlk.wowhead.com/quest=
+Use the Mine Car,Text,,,,,,,Use the Mine Car,https://wotlk.wowhead.com/quest=
+Do: [QC12701],Do,12701,,,,,,,https://wotlk.wowhead.com/quest=12701
+Hit 5 to take the gryphon back.,Text,,,,,,,Hit 5 to take the gryphon back.,https://wotlk.wowhead.com/quest=
+TurnIn: [QT12701],TurnIn,12701,,,,,,,https://wotlk.wowhead.com/quest=12701
+Accept: [QA12706],Accept,12706,,,,,,,https://wotlk.wowhead.com/quest=12706
+Use your [H] Hearthstone.,UseHearthstone,,,,,,,,https://wotlk.wowhead.com/quest=
+Use the Teleporter to get to the lower area of Ebon Hold.,Text,,,,,,,Use the Teleporter to get to the lower area of Ebon Hold.,https://wotlk.wowhead.com/quest=
+TurnIn: [QT12706],TurnIn,12706,,,,,,,https://wotlk.wowhead.com/quest=12706
+Accept: [QA12714],Accept,12714,,,,,,,https://wotlk.wowhead.com/quest=12714
+"Run to [G51,36.2The Scarlet Enclave]",Run,,The Scarlet Enclave,"51,36.2",,,,,https://wotlk.wowhead.com/quest=
+Take the gryphon back to the ground.,Text,,,,,,,Take the gryphon back to the ground.,https://wotlk.wowhead.com/quest=
+TurnIn: [QT12714],TurnIn,12714,,,,,,,https://wotlk.wowhead.com/quest=12714
+Accept: [QA12715],Accept,12715,,,,,,,https://wotlk.wowhead.com/quest=12715
+Accept: [QA12716],Accept,12716,,,,,,,https://wotlk.wowhead.com/quest=12716
+TurnIn: [QT12715],TurnIn,12715,,,,,,,https://wotlk.wowhead.com/quest=12715
+Accept: [QA12719],Accept,12719,,,,,,,https://wotlk.wowhead.com/quest=12719
+Accept: [QA12722],Accept,12722,,,,,,,https://wotlk.wowhead.com/quest=12722
+"Run to [G57.7,64.2The Scarlet Enclave]",Run,,The Scarlet Enclave,"57.7,64.2",,,,,https://wotlk.wowhead.com/quest=
+"Do: [QC12716,1]",Do,"12716,1",,,,,,,"https://wotlk.wowhead.com/quest=12716,1"
+Do: [QC12719],Do,12719,,,,,,,https://wotlk.wowhead.com/quest=12719
+TurnIn: [QT12719],TurnIn,12719,,,,,,,https://wotlk.wowhead.com/quest=12719
+Accept: [QA12720],Accept,12720,,,,,,,https://wotlk.wowhead.com/quest=12720
+You received a QuestItem-Box. Open it and dual wield the weapons inside.,Text,,,,,,,You received a QuestItem-Box. Open it and dual wield the weapons inside.,https://wotlk.wowhead.com/quest=
+Kill NPCs now without any spells(auto attack) until they tell you what the Crimson Dawn is. This usually takes 5-6 NPCs. EQUIP YOUR WEAPON AFTERWARDS AGAIN!!!,Text,,,,,,,Kill NPCs now without any spells(auto attack) until they tell you what the Crimson Dawn is. This usually takes 5-6 NPCs. EQUIP YOUR WEAPON AFTERWARDS AGAIN!!!,https://wotlk.wowhead.com/quest=
+"Do [QC12720- ][QC12716,2][QC12716][QC12722]",Text,12720,,,,,,"Do [QC12720- ][QC12716,2][QC12716][QC12722]",https://wotlk.wowhead.com/quest=12720
+TurnIn: [QT12716],TurnIn,12716,,,,,,,https://wotlk.wowhead.com/quest=12716
+Accept: [QA12717],Accept,12717,,,,,,,https://wotlk.wowhead.com/quest=12717
+TurnIn: [QT12717],TurnIn,12717,,,,,,,https://wotlk.wowhead.com/quest=12717
+TurnIn: [QT12722],TurnIn,12722,,,,,,,https://wotlk.wowhead.com/quest=12722
+TurnIn: [QT12720],TurnIn,12720,,,,,,,https://wotlk.wowhead.com/quest=12720
+Accept: [QA12723],Accept,12723,,,,,,,https://wotlk.wowhead.com/quest=12723
+TurnIn: [QT12723],TurnIn,12723,,,,,,,https://wotlk.wowhead.com/quest=12723
+Accept: [QA12724],Accept,12724,,,,,,,https://wotlk.wowhead.com/quest=12724
+Accept: [QA12725],Accept,12725,,,,,,,https://wotlk.wowhead.com/quest=12725
+Do: [QC12724],Do,12724,,,,,,,https://wotlk.wowhead.com/quest=12724
+TurnIn: [QT12725],TurnIn,12725,,,,,,,https://wotlk.wowhead.com/quest=12725
+Accept: [QA12727],Accept,12727,,,,,,,https://wotlk.wowhead.com/quest=12727
+Do: [QC12727],Do,12727,,,,,,,https://wotlk.wowhead.com/quest=12727
+TurnIn: [QT12727],TurnIn,12727,,,,,,,https://wotlk.wowhead.com/quest=12727
+TurnIn: [QT12724],TurnIn,12724,,,,,,,https://wotlk.wowhead.com/quest=12724

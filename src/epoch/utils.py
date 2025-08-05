@@ -1,4 +1,6 @@
+import warnings
 from enum import Enum
+
 import polars as pl
 
 
@@ -49,6 +51,9 @@ class GuideSchema(AutoStrEnum):
     X = "X"
     Y = "Y"
 
+
+    
+warnings.filterwarnings("ignore", category=pl.exceptions.PolarsInefficientMapWarning) 
 
 def convert_lists_to_strings(df: pl.DataFrame):
     list_cols = [col for col in df.columns if df.schema[col] in [pl.List]]

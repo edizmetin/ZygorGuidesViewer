@@ -1,0 +1,76 @@
+,Name,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead
+,[GA Alliance],,,,,,,,,,
+,"[N38-39Dustwallow Marsh,STV]",,,,,,,,,,
+,"[NX40-43Badlands,Uldaman]",,,,,,,,,,
+"[1] = { str = "38-38 Dustwallow Marsh" },","[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,,,,,,
+"[2] = { str = "This guide was written by TUGs and is totally free, but if you want to support my work use:  https://www.paypal.me/Tugstv1337" },","This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",,,,,,,,,,
+"[3] = { str = "Every Level you should grind 2-5 experience bars, this will make sure that this guide works properly!" },","Every Level you should grind 2-5 experience bars, this will make sure that this guide works properly!",Text,,,,,,,,,
+"[4] = { str = "TurnIn: #TURNINMythology of the Titans# " },",TurnIn: [QT1050][O],TurninOptional,1050,Mythology of the Titans,Hillsbrad Foothills,,,,,,https://classic.wowhead.com/quest=1050
+"[5] = { str = "Fly to Wetlands" },",Fly to [F Wetlands],Fly,,,Wetlands,,,,,,https://classic.wowhead.com/quest=
+"[6] = { str = "Take the Boat to Theramore" },",Take the Boat to Theramore,Text,,,Arathi Highlands,,,,,Take the Boat to Theramore,https://classic.wowhead.com/quest=
+"[7] = { str = "Get the Flightpath in Dustwallow Marsh" },","Get the [P] flightpath at: [G67,51Dustwallow Marsh]",Flightpath,,,Dustwallow Marsh,"67,51",,,,,https://classic.wowhead.com/quest=
+"[8] = { str = "Fly to Tanaris" },",Fly to [F Tanaris],Fly,,,Tanaris,,,,,,https://classic.wowhead.com/quest=
+"[9] = { str = "TurnIn: #TURNINParts for Kravel# " },",TurnIn: [QT1112],Turnin,1112,Parts for Kravel,Thousand Needles,,,,,,https://classic.wowhead.com/quest=1112
+"[10] = { str = "Accept: #ACCEPTDelivery to the Gnomes#" },",Accept: [QA1114],Accept,1114,Delivery to the Gnomes,Thousand Needles,,,,,,https://classic.wowhead.com/quest=1114
+"[11] = { str = "TurnIn: #TURNINDelivery to the Gnomes# " },",TurnIn: [QT1114],Turnin,1114,Delivery to the Gnomes,Thousand Needles,,,,,,https://classic.wowhead.com/quest=1114
+"[12] = { str = "Accept: #ACCEPTMartek the Exiled#" },",Accept: [QA1106],Accept,1106,Martek the Exiled,Thousand Needles,,,,,,https://classic.wowhead.com/quest=1106
+"[13] = { str = "Accept: #ACCEPTThe Rumormonger#" },",Accept: [QA1115],Accept,1115,The Rumormonger,Thousand Needles,,,,,,https://classic.wowhead.com/quest=1115
+"[14] = { str = "TurnIn: #TURNINGoblin Sponsorship# " },",TurnIn: [QT1183],Turnin,1183,Goblin Sponsorship,Thousand Needles,,,,,,https://classic.wowhead.com/quest=1183
+"[15] = { str = "Accept: #ACCEPTThe Eighteenth Pilot#" },",Accept: [QA1186],Accept,1186,The Eighteenth Pilot,Thousand Needles,,,,,,https://classic.wowhead.com/quest=1186
+"[16] = { str = "TurnIn: #TURNINThe Eighteenth Pilot# " },",TurnIn: [QT1186],Turnin,1186,The Eighteenth Pilot,Thousand Needles,,,,,,https://classic.wowhead.com/quest=1186
+"[17] = { str = "Accept: #ACCEPTRazzeric's Tweaking#" },",Accept: [QA1187],Accept,1187,Razzeric's Tweaking,Thousand Needles,,,,,,https://classic.wowhead.com/quest=1187
+"[18] = { str = "Run to [G51,29Tanaris]" },","Run to [G51,29Tanaris]",Run,,,Tanaris,"51,29",,,,,https://classic.wowhead.com/quest=
+"[19] = { str = "Fly to Dustwallow Marsh" },",Fly to [F Dustwallow Marsh],Fly,,,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=
+"[20] = { str = "Buy 3 Soothing Spices at [G 66,51Dustwallow Marsh]" },","Buy 3 Soothing Spices at [G 66,51Dustwallow Marsh]",Text,,,Dustwallow Marsh,,,,,"Buy 3 Soothing Spices at [G 66,51Dustwallow Marsh]",https://classic.wowhead.com/quest=
+"[21] = { str = "Accept: #ACCEPTThey Call Him Smiling Jim#" },",Accept: [QA1282],Accept,1282,They Call Him Smiling Jim,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1282
+"[22] = { str = "TurnIn: #TURNINThey Call Him Smiling Jim# " },",TurnIn: [QT1282],Turnin,1282,They Call Him Smiling Jim,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1282
+"[23] = { str = "TurnIn: #TURNINThe Missing Diplomat# " },",TurnIn: [QT1264],Turnin,1264,The Missing Diplomat,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1264
+"[24] = { str = "Accept: #ACCEPTThe Missing Diplomat#" },",Accept: [QA1265],Accept,1265,The Missing Diplomat,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1265
+"[25] = { str = "Set your [H] to Dustwallow Marsh at [G66.6,45.2Dustwallow Marsh]" },","Set your [H] to Dustwallow Marsh at [G66.6,45.2Dustwallow Marsh]",Hearthstone,,,Dustwallow Marsh,"66.6,45.2",,,,,https://classic.wowhead.com/quest=
+"[26] = { str = "Run to [G60.1,40.7Dustwallow Marsh]" },","Run to [G60.1,40.7Dustwallow Marsh]",Run,,,Dustwallow Marsh,"60.1,40.7",,,,,https://classic.wowhead.com/quest=
+"[27] = { str = "TurnIn: #TURNINThe Missing Diplomat# " },",TurnIn: [QT1265],Turnin,1265,The Missing Diplomat,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1265
+"[28] = { str = "Accept: #ACCEPTThe Missing Diplomat#" },",Accept: [QA1266],Accept,1266,The Missing Diplomat,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1266
+"[29] = { str = "Accept: #ACCEPTSoothing Spices#" },",Accept: [QA1218],Accept,1218,Soothing Spices,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1218
+"[30] = { str = "TurnIn: #TURNINSoothing Spices# " },",TurnIn: [QT1218],Turnin,1218,Soothing Spices,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1218
+"[31] = { str = "Accept: #ACCEPTJarl Needs Eyes#" },",Accept: [QA1206],Accept,1206,Jarl Needs Eyes,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1206
+"[32] = { str = "Accept: #ACCEPTThe Orc Report#" },",Accept: [QA1219],Accept,1219,The Orc Report,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1219
+"[33] = { str = "Accept: #ACCEPTStinky's Escape#" },",Accept: [QA1222],Accept,1222,Stinky's Escape,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1222
+"[34] = { str = "DoQuest: #DOQUESTStinky's Escape# " },",Do: [QC1222],Do,1222,Stinky's Escape,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1222
+"[35] = { str = "TurnIn: #TURNINThe Missing Diplomat# " },",TurnIn: [QT1266],Turnin,1266,The Missing Diplomat,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1266
+"[36] = { str = "Accept: #ACCEPTThe Missing Diplomat#" },",Accept: [QA1324],Accept,1324,The Missing Diplomat,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1324
+"[37] = { str = "DoQuest: #DOQUESTThe Missing Diplomat# " },",Do: [QC1324],Do,1324,The Missing Diplomat,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1324
+"[38] = { str = "TurnIn: #TURNINThe Missing Diplomat# " },",TurnIn: [QT1324],Turnin,1324,The Missing Diplomat,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1324
+"[39] = { str = "Accept: #ACCEPTThe Missing Diplomat#" },",Accept: [QA1267],Accept,1267,The Missing Diplomat,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1267
+"[40] = { str = "TurnIn: #TURNINThe Missing Diplomat# " },",TurnIn: [QT1267],Turnin,1267,The Missing Diplomat,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1267
+"[41] = { str = "DoQuest: #DOQUESTJarl Needs Eyes# " },",Do: [QC1206],Do,1206,Jarl Needs Eyes,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1206
+"[42] = { str = "Grind till [XP38]" },",Grind till [XP38],Text,,,Dustwallow Marsh,,,,,Grind till [XP38],https://classic.wowhead.com/quest=
+"[43] = { str = "Accept: #ACCEPTHungry!#" },",Accept: [QA1177],Accept,1177,Hungry!,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1177
+"[44] = { str = "Accept: #ACCEPTSuspicious Hoofprints#" },",Accept: [QA1284],Accept,1284,Suspicious Hoofprints,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1284
+"[45] = { str = "Accept: #ACCEPTLieutenant Paval Reethe#" },",Accept: [QA1252],Accept,1252,Lieutenant Paval Reethe,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1252
+"[46] = { str = "Accept: #ACCEPTThe Black Shield#" },",Accept: [QA1253],Accept,1253,The Black Shield,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1253
+"[47] = { str = "DoQuest: #DOQUESTRazzeric's Tweaking# " },",Do: [QC1187],Do,1187,Razzeric's Tweaking,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1187
+"[48] = { str = "Use your [H] Hearthstone." },",Use your [H] Hearthstone.,UseHearthstone,,,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=
+"[49] = { str = "TurnIn: #TURNINStinky's Escape# " },",TurnIn: [QT1222],Turnin,1222,Stinky's Escape,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1222
+"[50] = { str = "TurnIn: #TURNINThe Orc Report# " },",TurnIn: [QT1219],Turnin,1219,The Orc Report,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1219
+"[51] = { str = "Accept: #ACCEPTCaptain Vimes#" },",Accept: [QA1220],Accept,1220,Captain Vimes,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1220
+"[52] = { str = "TurnIn: #TURNINCaptain Vimes# " },",TurnIn: [QT1220],Turnin,1220,Captain Vimes,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1220
+"[53] = { str = "TurnIn: #TURNINLieutenant Paval Reethe# " },",TurnIn: [QT1252],Turnin,1252,Lieutenant Paval Reethe,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1252
+"[54] = { str = "TurnIn: #TURNINThe Black Shield# " },",TurnIn: [QT1253],Turnin,1253,The Black Shield,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1253
+"[55] = { str = "TurnIn: #TURNINSuspicious Hoofprints# " },",TurnIn: [QT1284],Turnin,1284,Suspicious Hoofprints,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1284
+"[56] = { str = "Accept: #ACCEPTThe Black Shield#" },",Accept: [QA1319],Accept,1319,The Black Shield,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1319
+"[57] = { str = "Accept: #ACCEPTLieutenant Paval Reethe#" },",Accept: [QA1259],Accept,1259,Lieutenant Paval Reethe,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1259
+"[58] = { str = "TurnIn: #TURNINLieutenant Paval Reethe# " },",TurnIn: [QT1259],Turnin,1259,Lieutenant Paval Reethe,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1259
+"[59] = { str = "Accept: #ACCEPTDaelin's Men#" },",Accept: [QA1285],Accept,1285,Daelin's Men,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1285
+"[60] = { str = "TurnIn: #TURNINDaelin's Men# " },",TurnIn: [QT1285],Turnin,1285,Daelin's Men,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1285
+"[61] = { str = "Accept: #ACCEPTThe Deserters#" },",Accept: [QA1286],Accept,1286,The Deserters,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1286
+"[62] = { str = "TurnIn: #TURNINThe Black Shield# " },",TurnIn: [QT1319],Turnin,1319,The Black Shield,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1319
+"[63] = { str = "Accept: #ACCEPTThe Black Shield#" },",Accept: [QA1320],Accept,1320,The Black Shield,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1320
+"[64] = { str = "DoQuest: #DOQUESTHungry!# " },",Do: [QC1177],Do,1177,Hungry!,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1177
+"[65] = { str = "TurnIn: #TURNINJarl Needs Eyes# " },",TurnIn: [QT1206],Turnin,1206,Jarl Needs Eyes,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1206
+"[66] = { str = "TurnIn: #TURNINHungry!# " },",TurnIn: [QT1177],Turnin,1177,Hungry!,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1177
+"[67] = { str = "TurnIn: #TURNINThe Deserters# " },",TurnIn: [QT1286],Turnin,1286,The Deserters,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1286
+"[68] = { str = "Accept: #ACCEPTThe Deserters#" },",Accept: [QA1287],Accept,1287,The Deserters,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1287
+"[69] = { str = "TurnIn: #TURNINThe Deserters# " },",TurnIn: [QT1287],Turnin,1287,The Deserters,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1287
+"[70] = { str = "TurnIn: #TURNINThe Black Shield# " },",TurnIn: [QT1320],Turnin,1320,The Black Shield,Dustwallow Marsh,,,,,,https://classic.wowhead.com/quest=1320
+"[71] = { str = "Fly to Ratchet" },",Fly to [F Ratchet],Fly,,,Ratchet,,,,,,https://classic.wowhead.com/quest=
+"[72] = { str = "Take the boat to Booty bay" },",Take the boat to Booty bay,Text,,,Ratchet,,,,,Take the boat to Booty bay,https://classic.wowhead.com/quest=

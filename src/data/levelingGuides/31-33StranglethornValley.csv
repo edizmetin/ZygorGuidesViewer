@@ -1,0 +1,81 @@
+Name,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead
+[GA Alliance],,,,,,,,,,
+"[N31-36STV,Desolace]",,,,,,,,,,
+[NX36-37Arathi],,,,,,,,,,
+"[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,,,,,,
+"This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",,,,,,,,,,
+"Every Level you should grind 2-5 experience bars, this will make sure that this guide works properly!",,,,,,,,,,
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+TurnIn: [QT191],Turnin,191,Panther Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=191
+Accept: [QA192],Accept,192,Panther Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=192
+TurnIn: [QT187],Turnin,187,Tiger Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=187
+Accept: [QA188],Accept,188,Tiger Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=188
+TurnIn: [QT194],Turnin,194,Raptor Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=194
+Accept: [QA195],Accept,195,Raptor Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=195
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+#N/A,,,,,,,,,,https://classic.wowhead.com/quest=
+TurnIn: [QT1110],Turnin,1110,Rocket Car Parts,Thousand Needles,,,,,,https://classic.wowhead.com/quest=1110
+TurnIn: [QT1104],Turnin,1104,Salt Flat Venom,Thousand Needles,,,,,,https://classic.wowhead.com/quest=1104
+TurnIn: [QT1105],Turnin,1105,Hardened Shells,Thousand Needles,,,,,,https://classic.wowhead.com/quest=1105
+TurnIn: [QT1176],Turnin,1176,Load Lightening,Thousand Needles,,,,,,https://classic.wowhead.com/quest=1176
+Accept: [QA1178],Accept,1178,Goblin Sponsorship,Thousand Needles,,,,,,https://classic.wowhead.com/quest=1178
+TurnIn: [QT1175],Turnin,1175,A Bump in the Road,Thousand Needles,,,,,,https://classic.wowhead.com/quest=1175
+"Get the [P] flightpath at: [G51,29Tanaris]",Flightpath,,,Tanaris,"51,29",,,,,https://classic.wowhead.com/quest=
+Use your [H] Hearthstone.,UseHearthstone,,,Tanaris,,,,,,https://classic.wowhead.com/quest=
+Fly to [F Wetlands],Fly,,,Wetlands,,,,,,https://classic.wowhead.com/quest=
+Take the boat to Auberdine and fly to Stonetalon Mountains and run south into Desolace,Text,,,Wetlands,,,,,Take the boat to Auberdine and fly to Stonetalon Mountains and run south into Desolace,https://classic.wowhead.com/quest=

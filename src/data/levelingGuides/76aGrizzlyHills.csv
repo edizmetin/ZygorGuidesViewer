@@ -1,0 +1,57 @@
+Name,Action,ID,Location,Coords,XP,Level,Class,Text,Wowhead
+[GA Alliance],,,,,,,,,
+[N76a1 Grizzly Hills - Alliance],,,,,,,,,
+[NX76a2 Grizzly Hills - Alliance],,,,,,,,,
+"[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,,,,,
+"This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",Text,,,,,,,,
+I am marking EVERY Elite quest and dungeons as optional in this guide. Especially on release you should do them!!! You'll easily find groups for elite quests and dungeons.,Text,,,,,,,,
+Do: [QC12003],Do,12003,,,,,,,https://wotlk.wowhead.com/quest=12003
+Do: [QC11988],Do,11988,,,,,,,https://wotlk.wowhead.com/quest=11988
+TurnIn: [QT11988],TurnIn,11988,,,,,,,https://wotlk.wowhead.com/quest=11988
+Accept: [QA11993],Accept,11993,,,,,,,https://wotlk.wowhead.com/quest=11993
+TurnIn: [QT12003],TurnIn,12003,,,,,,,https://wotlk.wowhead.com/quest=12003
+Accept: [QA12010],Accept,12010,,,,,,,https://wotlk.wowhead.com/quest=12010
+TurnIn: [QT11981],TurnIn,11981,,,,,,,https://wotlk.wowhead.com/quest=11981
+Accept: [QA11982],Accept,11982,,,,,,,https://wotlk.wowhead.com/quest=11982
+Do: [QC11982],Do,11982,,,,,,,https://wotlk.wowhead.com/quest=11982
+TurnIn: [QT11982],TurnIn,11982,,,,,,,https://wotlk.wowhead.com/quest=11982
+Accept: [QA12070],Accept,12070,,,,,,,https://wotlk.wowhead.com/quest=12070
+Do: [QC12070],Do,12070,,,,,,,https://wotlk.wowhead.com/quest=12070
+TurnIn: [QT12070],TurnIn,12070,,,,,,,https://wotlk.wowhead.com/quest=12070
+Accept: [QA11985],Accept,11985,,,,,,,https://wotlk.wowhead.com/quest=11985
+TurnIn: [QT12010],TurnIn,12010,,,,,,,https://wotlk.wowhead.com/quest=12010
+Accept: [QA12014],Accept,12014,,,,,,,https://wotlk.wowhead.com/quest=12014
+"Do: [QC12014,1]",Do,"12014,1",,,,,,,"https://wotlk.wowhead.com/quest=12014,1"
+"Do: [QC11993,3]",Do,"11993,3",,,,,,,"https://wotlk.wowhead.com/quest=11993,3"
+"Do: [QC11993,1]",Do,"11993,1",,,,,,,"https://wotlk.wowhead.com/quest=11993,1"
+"Do: [QC11993,2]",Do,"11993,2",,,,,,,"https://wotlk.wowhead.com/quest=11993,2"
+Do: [QC11985],Do,11985,,,,,,,https://wotlk.wowhead.com/quest=11985
+"Do: [QC12014,2]",Do,"12014,2",,,,,,,"https://wotlk.wowhead.com/quest=12014,2"
+NOTE FROM TUGS: Need to check QUESTID here! Kill Iron Dwarf defenders,Text,,,,,,,NOTE FROM TUGS: Need to check QUESTID here! Kill Iron Dwarf defenders,https://wotlk.wowhead.com/quest=
+TurnIn: [QT11985],TurnIn,11985,,,,,,,https://wotlk.wowhead.com/quest=11985
+Accept: [QA12081],Accept,12081,,,,,,,https://wotlk.wowhead.com/quest=12081
+TurnIn: [QT12014],TurnIn,12014,,,,,,,https://wotlk.wowhead.com/quest=12014
+Accept: [QA12128],Accept,12128,,,,,,,https://wotlk.wowhead.com/quest=12128
+TurnIn: [QT11993],TurnIn,11993,,,,,,,https://wotlk.wowhead.com/quest=11993
+TurnIn: [QT12190],TurnIn,12190,,,,,,,https://wotlk.wowhead.com/quest=12190
+Accept: [QA12116],Accept,12116,,,,,,,https://wotlk.wowhead.com/quest=12116
+Accept: [QA12113],Accept,12113,,,,,,,https://wotlk.wowhead.com/quest=12113
+Accept: [QA12114],Accept,12114,,,,,,,https://wotlk.wowhead.com/quest=12114
+Do: [QC12279],Do,12279,,,,,,,https://wotlk.wowhead.com/quest=12279
+TurnIn: [QT12081],TurnIn,12081,,,,,,,https://wotlk.wowhead.com/quest=12081
+Accept: [QA12093],Accept,12093,,,,,,,https://wotlk.wowhead.com/quest=12093
+"Do: [QC12093,1]",Do,"12093,1",,,,,,,"https://wotlk.wowhead.com/quest=12093,1"
+"Do: [QC12093,2]",Do,"12093,2",,,,,,,"https://wotlk.wowhead.com/quest=12093,2"
+"Do: [QC12093,3]",Do,"12093,3",,,,,,,"https://wotlk.wowhead.com/quest=12093,3"
+"Do: [QC12093,4]",Do,"12093,4",,,,,,,"https://wotlk.wowhead.com/quest=12093,4"
+TurnIn: [QT12093],TurnIn,12093,,,,,,,https://wotlk.wowhead.com/quest=12093
+Accept: [QA12094],Accept,12094,,,,,,,https://wotlk.wowhead.com/quest=12094
+"Do: [QC12094,1]",Do,"12094,1",,,,,,,"https://wotlk.wowhead.com/quest=12094,1"
+"Do: [QC12094,3]",Do,"12094,3",,,,,,,"https://wotlk.wowhead.com/quest=12094,3"
+"Do: [QC12094,2]",Do,"12094,2",,,,,,,"https://wotlk.wowhead.com/quest=12094,2"
+TurnIn: [QT12094],TurnIn,12094,,,,,,,https://wotlk.wowhead.com/quest=12094
+Accept: [QA12099],Accept,12099,,,,,,,https://wotlk.wowhead.com/quest=12099
+Do: [QC12099],Do,12099,,,,,,,https://wotlk.wowhead.com/quest=12099
+Do: [QC12113],Do,12113,,,,,,,https://wotlk.wowhead.com/quest=12113
+TurnIn: [QT12279],TurnIn,12279,,,,,,,https://wotlk.wowhead.com/quest=12279
+TurnIn: [QT12099],TurnIn,12099,,,,,,,https://wotlk.wowhead.com/quest=12099

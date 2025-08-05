@@ -1,0 +1,135 @@
+Name,Action,ID,Location,Coords,XP,Level,Class,Text,Wowhead
+[GA Alliance],,,,,,,,,
+[N64-64Terokkar Forest Part II],,,,,,,,,
+[NX64-65Nagrand Part I],,,,,,,,,
+#REF!,,,,,,,,#REF!,
+#REF!,Text,,,,,,,#REF!,
+,Text,,,,,,,,
+Do: [QC9992],Do,9992,,,,,,,https://tbc.wowhead.com/quest=9992
+Do: [QC9998],Do,9998,,,,,,,https://tbc.wowhead.com/quest=9998
+Do: [QC10026],Do,10026,,,,,,,https://tbc.wowhead.com/quest=10026
+Do: [QC10016],Do,10016,,,,,,,https://tbc.wowhead.com/quest=10016
+TurnIn: [QT9998],TurnIn,9998,,,,,,,https://tbc.wowhead.com/quest=9998
+Accept: [QA10002],Accept,10002,,,,,,,https://tbc.wowhead.com/quest=10002
+Accept: [QA10007],Accept,10007,,,,,,,https://tbc.wowhead.com/quest=10007
+Do: [QC10007],Do,10007,,,,,,,https://tbc.wowhead.com/quest=10007
+Do: [QC10002],Do,10002,,,,,,,https://tbc.wowhead.com/quest=10002
+Accept: [QA10012],Accept,10012,,,,,,,https://tbc.wowhead.com/quest=10012
+TurnIn: [QT10002],TurnIn,10002,,,,,,,https://tbc.wowhead.com/quest=10002
+TurnIn: [QT10012],TurnIn,10012,,,,,,,https://tbc.wowhead.com/quest=10012
+Do: [QC9986],Do,9986,,,,,,,https://tbc.wowhead.com/quest=9986
+Do: [QC10869],Do,10869,,,,,,,https://tbc.wowhead.com/quest=10869
+Do: [QC9990],Do,9990,,,,,,,https://tbc.wowhead.com/quest=9990
+Do: [QC9986],Do,9986,,,,,,,https://tbc.wowhead.com/quest=9986
+Do: [QC10869],Do,10869,,,,,,,https://tbc.wowhead.com/quest=10869
+TurnIn: [QT9990],TurnIn,9990,,,,,,,https://tbc.wowhead.com/quest=9990
+Accept: [QA9994],Accept,9994,,,,,,,https://tbc.wowhead.com/quest=9994
+TurnIn: [QT10038],TurnIn,10038,,,,,,,https://tbc.wowhead.com/quest=10038
+Accept: [QA10040],Accept,10040,,,,,,,https://tbc.wowhead.com/quest=10040
+"Put on your disguise and do the quest, the NPCs with the eye on them CAN SEE YOU and ruin it, avoid them. If you failed,go back to the quest giver and get a new one(dont abandon the quest,you continue with your progress)",Text,,,,,,,"Put on your disguise and do the quest, the NPCs with the eye on them CAN SEE YOU and ruin it, avoid them. If you failed,go back to the quest giver and get a new one(dont abandon the quest,you continue with your progress)",https://tbc.wowhead.com/quest=
+Do: [QC10040],Do,10040,,,,,,,https://tbc.wowhead.com/quest=10040
+TurnIn: [QT10040],TurnIn,10040,,,,,,,https://tbc.wowhead.com/quest=10040
+Accept: [QA10042],Accept,10042,,,,,,,https://tbc.wowhead.com/quest=10042
+Do: [QC10042],Do,10042,,,,,,,https://tbc.wowhead.com/quest=10042
+Do: [QC9986],Do,9986,,,,,,,https://tbc.wowhead.com/quest=9986
+Do: [QC10033],Do,10033,,,,,,,https://tbc.wowhead.com/quest=10033
+TurnIn: [QT9994],TurnIn,9994,,,,,,,https://tbc.wowhead.com/quest=9994
+Accept: [QA10444],Accept,10444,,,,,,,https://tbc.wowhead.com/quest=10444
+TurnIn: [QT9992],TurnIn,9992,,,,,,,https://tbc.wowhead.com/quest=9992
+Accept: [QA10028],Accept,10028,,,,,,,https://tbc.wowhead.com/quest=10028
+TurnIn: [QT10042],TurnIn,10042,,,,,,,https://tbc.wowhead.com/quest=10042
+TurnIn: [QT10869],TurnIn,10869,,,,,,,https://tbc.wowhead.com/quest=10869
+TurnIn: [QT9986],TurnIn,9986,,,,,,,https://tbc.wowhead.com/quest=9986
+TurnIn: [QT10012],TurnIn,10012,,,,,,,https://tbc.wowhead.com/quest=10012
+TurnIn: [QT10016],TurnIn,10016,,,,,,,https://tbc.wowhead.com/quest=10016
+Accept: [QA10022],Accept,10022,,,,,,,https://tbc.wowhead.com/quest=10022
+TurnIn: [QT10033],TurnIn,10033,,,,,,,https://tbc.wowhead.com/quest=10033
+TurnIn: [QT10026],TurnIn,10026,,,,,,,https://tbc.wowhead.com/quest=10026
+TurnIn: [QT10444],TurnIn,10444,,,,,,,https://tbc.wowhead.com/quest=10444
+Accept: [QA9996],Accept,9996,,,,,,,https://tbc.wowhead.com/quest=9996
+Do: [QC10022],Do,10022,,,,,,,https://tbc.wowhead.com/quest=10022
+Do: [QC9996],Do,9996,,,,,,,https://tbc.wowhead.com/quest=9996
+Accept: [QA10051],Accept,10051,,,,,,,https://tbc.wowhead.com/quest=10051
+Do: [QC10028],Do,10028,,,,,,,https://tbc.wowhead.com/quest=10028
+TurnIn: [QT10028],TurnIn,10028,,,,,,,https://tbc.wowhead.com/quest=10028
+TurnIn: [QT10051],TurnIn,10051,,,,,,,https://tbc.wowhead.com/quest=10051
+TurnIn: [QT10022],TurnIn,10022,,,,,,,https://tbc.wowhead.com/quest=10022
+TurnIn: [QT9996],TurnIn,9996,,,,,,,https://tbc.wowhead.com/quest=9996
+Accept: [QA10446],Accept,10446,,,,,,,https://tbc.wowhead.com/quest=10446
+Use the orb of translocation at XX then kill the Named YY use the code at XX.,Text,,,,,,,Use the orb of translocation at XX then kill the Named YY use the code at XX.,https://tbc.wowhead.com/quest=
+Do: [QC10446],Do,10446,,,,,,,https://tbc.wowhead.com/quest=10446
+"Use Hearthstone,die or ride back to Allerian Storonghold.",Text,,,,,,,"Use Hearthstone,die or ride back to Allerian Storonghold.",https://tbc.wowhead.com/quest=
+TurnIn: [QT10446],TurnIn,10446,,,,,,,https://tbc.wowhead.com/quest=10446
+Fly to [F Shattrath],Fly,,Shattrath,,,,,,https://tbc.wowhead.com/quest=
+Accept: [QA10005],Accept,10005,,,,,,,https://tbc.wowhead.com/quest=10005
+TurnIn: [QT10005],TurnIn,10005,,,,,,,https://tbc.wowhead.com/quest=10005
+TurnIn: [A Scryers][QT10412],ScryerTurnIn,10412,,,,,,,https://tbc.wowhead.com/quest=10412
+Accept: [QA9792],Accept,9792,,,,,,,https://tbc.wowhead.com/quest=9792
+Fly to [F Telredor],Fly,,Telredor,,,,,,https://tbc.wowhead.com/quest=
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+You should be lvl 64 now. If this guide has helped you and you want to donate some money for the hundreds of hours of work put into the guide use: https://paypal.me/Tugstv1337,Text,,,,,,,You should be lvl 64 now. If this guide has helped you and you want to donate some money for the hundreds of hours of work put into the guide use: https://paypal.me/Tugstv1337,

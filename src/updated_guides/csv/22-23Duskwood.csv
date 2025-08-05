@@ -1,0 +1,70 @@
+row_id,Action,ID,QuestName,Location,Coords,XP,Level,Text,WowHead,ItemID,ItemName,ItemAmount,coords_split,X,Y,NpcName,NpcId,Class,formatted_text
+0,,,,,,,,,,,,,,,,"","",,""
+1,,,,,,,,,,,,,,,,"","",,""
+2,,,,,,,,,,,,,,,,"","",,""
+3,,,,,,,,,,,,,,,,"","",,""
+4,Text,,,,,,,,,,,,,,,"","",,
+5,Text,,,,,,,"On your way through Duskwood kill spiders for some Gooey Spider legs. It doesnt matter how many you get,even 0 is ok.",https://classic.wowhead.com/quest=,,,,,,,"","",,"On your way through Duskwood kill spiders for some Gooey Spider legs. It doesnt matter how many you get,even 0 is ok."
+6,Accept,66,The Legend of Stalvan,Duskwood,,,,,https://classic.wowhead.com/quest=66,,,,,,,"","",,accept The Legend of Stalvan##66
+7,Accept,101,The Totem of Infliction,Duskwood,,,,,https://classic.wowhead.com/quest=101,,,,,,,"","",,accept The Totem of Infliction##101
+8,TurnIn,66,The Legend of Stalvan,Duskwood,,,,,https://classic.wowhead.com/quest=66,,,,,,,"","",,turnin The Legend of Stalvan##66
+9,Accept,67,The Legend of Stalvan,Duskwood,,,,,https://classic.wowhead.com/quest=67,,,,,,,"","",,accept The Legend of Stalvan##67
+10,Accept,56,The Night Watch,Duskwood,,,,,https://classic.wowhead.com/quest=56,,,,,,,"","",,accept The Night Watch##56
+11,Accept,163,Raven Hill,Duskwood,,,,,https://classic.wowhead.com/quest=163,,,,,,,"","",,accept Raven Hill##163
+12,Accept,164,Deliveries to Sven,Duskwood,,,,,https://classic.wowhead.com/quest=164,,,,,,,"","",,accept Deliveries to Sven##164
+13,Accept,165,The Hermit,Duskwood,,,,,https://classic.wowhead.com/quest=165,,,,,,,"","",,accept The Hermit##165
+14,Flightpath,,,Duskwood,"77.12,44.17",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""77.12""
+	""44.17""
+]",77.12,44.17,"","",,"fpath Duskwood |goto Duskwood 77.12,44.17"
+15,Text,,,Duskwood,,,,"If it is in stock - and you dont have one yet-: Buy a Bronzetube at [G78,48.3Duskwood]",https://classic.wowhead.com/quest=,,,,,,,"","",,"If it is in stock - and you dont have one yet-: Buy a Bronzetube at [G78,48.3Duskwood]"
+16,Do,56,The Night Watch,Duskwood,,,,,https://classic.wowhead.com/quest=56,,,,,,,"","",,Do: The Night Watch
+17,Accept,245,Eight-Legged Menaces,Duskwood,,,,,https://classic.wowhead.com/quest=245,,,,,,,"","",,accept Eight-Legged Menaces##245
+18,TurnIn,163,Raven Hill,Duskwood,,,,,https://classic.wowhead.com/quest=163,,,,,,,"","",,turnin Raven Hill##163
+19,Accept,5,Jitters' Growling Gut,Duskwood,,,,,https://classic.wowhead.com/quest=5,,,,,,,"","",,accept Jitters' Growling Gut##5
+20,TurnIn,164,Deliveries to Sven,Duskwood,,,,,https://classic.wowhead.com/quest=164,,,,,,,"","",,turnin Deliveries to Sven##164
+21,Accept,95,Sven's Revenge,Duskwood,,,,,https://classic.wowhead.com/quest=95,,,,,,,"","",,accept Sven's Revenge##95
+22,Accept,226,Wolves at Our Heels,Duskwood,,,,,https://classic.wowhead.com/quest=226,,,,,,,"","",,accept Wolves at Our Heels##226
+23,Text,,,Duskwood,,,,KEEP YOUR Gooey Spider Legs.Whilst grinding east for the spider and wolf quests do the next 2steps (TurnIn The Hermit and Accept Supplies from Darkshire),https://classic.wowhead.com/quest=,,,,,,,"","",,KEEP YOUR Gooey Spider Legs.Whilst grinding east for the spider and wolf quests do the next 2steps (TurnIn The Hermit and Accept Supplies from Darkshire)
+24,Text,,"Eight-Legged Menaces, Wolves at Our Heels",Duskwood,,,,Do [QC226- ][QC245],https://classic.wowhead.com/quest=,,,,,,,"","",,Do [QC226- ][QC245]
+25,TurnIn,165,The Hermit,Duskwood,,,,,https://classic.wowhead.com/quest=165,,,,,,,"","",,turnin The Hermit##165
+26,Accept,148,Supplies from Darkshire,Duskwood,,,,,https://classic.wowhead.com/quest=148,,,,,,,"","",,accept Supplies from Darkshire##148
+27,TurnIn,226,Wolves at Our Heels,,,,,,https://classic.wowhead.com/quest=226,,,,,,,"","",,turnin Wolves at Our Heels##226
+28,TurnIn,143,Messenger to Westfall,,,,,,https://classic.wowhead.com/quest=143,,,,,,,"","",,turnin Messenger to Westfall##143
+29,Accept,144,Messenger to Westfall,,,,,,https://classic.wowhead.com/quest=144,,,,,,,"","",,accept Messenger to Westfall##144
+30,Accept,65,The Defias Brotherhood,,,,,,https://classic.wowhead.com/quest=65,,,,,,,"","",,accept The Defias Brotherhood##65
+31,TurnIn,67,The Legend of Stalvan,Westfall,,,,,https://classic.wowhead.com/quest=67,,,,,,,"","",,turnin The Legend of Stalvan##67
+32,Accept,68,The Legend of Stalvan,Westfall,,,,,https://classic.wowhead.com/quest=68,,,,,,,"","",,accept The Legend of Stalvan##68
+33,Fly,,,Duskwood,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",,fpath Duskwood
+34,TurnIn,148,Supplies from Darkshire,Duskwood,,,,,https://classic.wowhead.com/quest=148,,,,,,,"","",,turnin Supplies from Darkshire##148
+35,Accept,149,Ghost Hair Thread,Duskwood,,,,,https://classic.wowhead.com/quest=149,,,,,,,"","",,accept Ghost Hair Thread##149
+36,TurnIn,5,Jitters' Growling Gut,Duskwood,,,,,https://classic.wowhead.com/quest=5,,,,,,,"","",,turnin Jitters' Growling Gut##5
+37,Accept,93,Dusky Crab Cakes,Duskwood,,,,,https://classic.wowhead.com/quest=93,,,,,,,"","",,accept Dusky Crab Cakes##93
+38,TurnIn,56,The Night Watch,Duskwood,,,,,https://classic.wowhead.com/quest=56,,,,,,,"","",,turnin The Night Watch##56
+39,TurnIn,68,The Legend of Stalvan,Duskwood,,,,,https://classic.wowhead.com/quest=68,,,,,,,"","",,turnin The Legend of Stalvan##68
+40,Accept,69,The Legend of Stalvan,Duskwood,,,,,https://classic.wowhead.com/quest=69,,,,,,,"","",,accept The Legend of Stalvan##69
+41,TurnIn,149,Ghost Hair Thread,Duskwood,,,,,https://classic.wowhead.com/quest=149,,,,,,,"","",,turnin Ghost Hair Thread##149
+42,Accept,154,Return the Comb,Duskwood,,,,,https://classic.wowhead.com/quest=154,,,,,,,"","",,accept Return the Comb##154
+43,TurnIn,154,Return the Comb,Duskwood,,,,,https://classic.wowhead.com/quest=154,,,,,,,"","",,turnin Return the Comb##154
+44,Accept,157,Deliver the Thread,Duskwood,,,,,https://classic.wowhead.com/quest=157,,,,,,,"","",,accept Deliver the Thread##157
+45,Text,,,Duskwood,,,,"If it is in stock - and you dont have one yet-: Buy a Bronzetube at [G78,48.3Duskwood]. If you dont get it here, we will buy it on the auctionhouse now.",https://classic.wowhead.com/quest=,,,,,,,"","",,"If it is in stock - and you dont have one yet-: Buy a Bronzetube at [G78,48.3Duskwood]. If you dont get it here, we will buy it on the auctionhouse now."
+46,Fly,,,Stormwind City,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",,fpath Stormwind City
+47,TurnIn,69,The Legend of Stalvan,Elwynn Forest,,,,,https://classic.wowhead.com/quest=69,,,,,,,"","",,turnin The Legend of Stalvan##69
+48,Accept,70,The Legend of Stalvan,Duskwood,,,,,https://classic.wowhead.com/quest=70,,,,,,,"","",,accept The Legend of Stalvan##70
+49,Text,,,Duskwood,,,,Go upstairs and loot the Box.,https://classic.wowhead.com/quest=,,,,,,,"","",,Go upstairs and loot the Box.
+50,Text,,,Stormwind City,,,,"Buy at the auction house now: 1 Bronze tube. Gooey Spider Legs (you need 6 total), 5 Great Goretuks Snout, 5 Tough Condor Meat, 5 Crisp Spider Meat and 8 Murloc Fin.",https://classic.wowhead.com/quest=,,,,,,,"","",,"Buy at the auction house now: 1 Bronze tube. Gooey Spider Legs (you need 6 total), 5 Great Goretuks Snout, 5 Tough Condor Meat, 5 Crisp Spider Meat and 8 Murloc Fin."
+51,Buy,,,Stormwind City,,,,,https://classic.wowhead.com/quest=,4371,Bronze Tube,1,,,,"","",,
+52,Buy,,,Stormwind City,,,,,https://classic.wowhead.com/quest=,2251,Gooey Spider Leg,6,,,,"","",,
+53,Buy,,,Stormwind City,,,,,https://classic.wowhead.com/quest=,1468,Murloc Fin,8,,,,"","",,
+54,Buy,,,Stormwind City,,,,,https://classic.wowhead.com/quest=,2296,Great Goretusk Snout,5,,,,"","",,
+55,Buy,,,Stormwind City,,,,,https://classic.wowhead.com/quest=,1080,Tough Condor Meat,5,,,,"","",,
+56,Buy,,,Stormwind City,,,,,https://classic.wowhead.com/quest=,1081,Crisp Spider Meat,5,,,,"","",,
+57,Learn,,,Stormwind City,,,22,,https://classic.wowhead.com/quest=,,,,,,,"","",,Get your level 22 spells at your trainer
+58,TurnIn,70,The Legend of Stalvan,Stormwind City,,,,,https://classic.wowhead.com/quest=70,,,,,,,"","",,turnin The Legend of Stalvan##70
+59,Accept,72,The Legend of Stalvan,Stormwind City,,,,,https://classic.wowhead.com/quest=72,,,,,,,"","",,accept The Legend of Stalvan##72
+60,TurnIn,72,The Legend of Stalvan,Stormwind City,,,,,https://classic.wowhead.com/quest=72,,,,,,,"","",,turnin The Legend of Stalvan##72
+61,Accept,74,The Legend of Stalvan,Stormwind City,,,,,https://classic.wowhead.com/quest=74,,,,,,,"","",,accept The Legend of Stalvan##74
+62,Text,,,,,,,The next guide is 23-24 Redridge Mountains. There is another 23-24 guide if you want to do stockades(what I would suggest doing now).,https://classic.wowhead.com/quest=,,,,,,,"","",,The next guide is 23-24 Redridge Mountains. There is another 23-24 guide if you want to do stockades(what I would suggest doing now).
+63,Text,,,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",,

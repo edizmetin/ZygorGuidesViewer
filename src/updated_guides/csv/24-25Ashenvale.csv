@@ -1,0 +1,97 @@
+row_id,Action,ID,QuestName,Location,Coords,XP,Level,Text,WowHead,ItemID,ItemName,ItemAmount,coords_split,X,Y,NpcName,NpcId,Class,formatted_text
+0,,,,,,,,,,,,,,,,"","",,""
+1,,,,,,,,,,,,,,,,"","",,""
+2,,,,,,,,,,,,,,,,"","",,""
+3,,,,,,,,,,,,,,,,"","",,""
+4,,,,,,,,,,,,,,,,"","",,""
+5,TurnIn,994,Escape Through Force,Darkshore,,,,,https://classic.wowhead.com/quest=994,,,,,,,"","",,turnin Escape Through Force##994
+6,TurnIn,731,The Absent Minded Prospector,Darkshore,,,,,https://classic.wowhead.com/quest=731,,,,,,,"","",,turnin The Absent Minded Prospector##731
+7,Accept,741,The Absent Minded Prospector,Darkshore,,,,,https://classic.wowhead.com/quest=741,,,,,,,"","",,accept The Absent Minded Prospector##741
+8,KLOCKMORTS?,,,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",,""
+9,TurnIn,7792,A Donation of Wool,Darnassus,,,,,https://classic.wowhead.com/quest=7792,,,,,,,"","",,turnin A Donation of Wool##7792
+10,Fly,,,Darnassus,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",,fpath Darnassus
+11,TurnIn,741,The Absent Minded Prospector,Teldrassil,,,,,https://classic.wowhead.com/quest=741,,,,,,,"","",,turnin The Absent Minded Prospector##741
+12,Accept,942,The Absent Minded Prospector,Teldrassil,,,,,https://classic.wowhead.com/quest=942,,,,,,,"","",,accept The Absent Minded Prospector##942
+13,Fly,,,Ashenvale,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",,fpath Ashenvale
+14,Accept,1056,Journey to Stonetalon Peak,,,,,,https://classic.wowhead.com/quest=1056,,,,,,,"","",,accept Journey to Stonetalon Peak##1056
+15,Accept,1024,Raene's Cleansing,Ashenvale,,,,,https://classic.wowhead.com/quest=1024,,,,,,,"","",,accept Raene's Cleansing##1024
+16,Accept,1025,An Aggressive Defense,Ashenvale,,,,,https://classic.wowhead.com/quest=1025,,,,,,,"","",,accept An Aggressive Defense##1025
+17,Text,,,,,,,"Buy water/food (I usually stock up to 40 level 15 here, as well as 20 level 25).",https://classic.wowhead.com/quest=,,,,,,,"","",,"Buy water/food (I usually stock up to 40 level 15 here, as well as 20 level 25)."
+18,Run,,,Ashenvale,"41.7, 49.9",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""41.7""
+	"" 49.9""
+]",41.7, 49.9,"","",,"Run to 41.7, 49.9 |goto Ashenvale 41.7, 49.9"
+19,Do,1033,Elune's Tear,Ashenvale,,,,,https://classic.wowhead.com/quest=1033,,,,,,,"","",,Do: Elune's Tear
+20,Run,,,Ashenvale,"46.8, 49.1",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""46.8""
+	"" 49.1""
+]",46.8, 49.1,"","",,"Run to 46.8, 49.1 |goto Ashenvale 46.8, 49.1"
+21,Run,,,Ashenvale,"48.8, 49.3",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""48.8""
+	"" 49.3""
+]",48.8, 49.3,"","",,"Run to 48.8, 49.3 |goto Ashenvale 48.8, 49.3"
+22,TurnIn,1024,Raene's Cleansing,Ashenvale,,,,,https://classic.wowhead.com/quest=1024,,,,,,,"","",,turnin Raene's Cleansing##1024
+23,Accept,1026,Raene's Cleansing,Ashenvale,,,,,https://classic.wowhead.com/quest=1026,,,,,,,"","",,accept Raene's Cleansing##1026
+24,TurnIn,1033,Elune's Tear,Ashenvale,,,,,https://classic.wowhead.com/quest=1033,,,,,,,"","",,turnin Elune's Tear##1033
+25,Accept,1034,The Ruins of Stardust,Astranaar,,,,,https://classic.wowhead.com/quest=1034,,,,,,,"","",,accept The Ruins of Stardust##1034
+26,Do,973,The Tower of Althalaxx,Ashenvale,,,,,https://classic.wowhead.com/quest=973,,,,,,,"","",,Do: The Tower of Althalaxx
+27,Do,1034,The Ruins of Stardust,Ashenvale,,,,,https://classic.wowhead.com/quest=1034,,,,,,,"","",,Do: The Ruins of Stardust
+28,Do,1025,An Aggressive Defense,Ashenvale,,,,,https://classic.wowhead.com/quest=1025,,,,,,,"","",,Do: An Aggressive Defense
+29,Run,,,Ashenvale,"50.0, 66.6",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""50.0""
+	"" 66.6""
+]",50.0, 66.6,"","",,"Run to 50.0, 66.6 |goto Ashenvale 50.0, 66.6"
+30,Text,,,,,,,"Sell everything, repair your gear and buy Food.",https://classic.wowhead.com/quest=,,,,,,,"","",,"Sell everything, repair your gear and buy Food."
+31,Run,,,Ashenvale,"42.3, 71.0",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""42.3""
+	"" 71.0""
+]",42.3, 71.0,"","",,"Run to 42.3, 71.0 |goto Ashenvale 42.3, 71.0"
+32,Text,,,Ashenvale,,,,Go through the cave into Stonetalon Mountains.,https://classic.wowhead.com/quest=,,,,,,,"","",,Go through the cave into Stonetalon Mountains.
+33,TurnIn,1070,On Guard in Stonetalon,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1070,,,,,,,"","",,turnin On Guard in Stonetalon##1070
+34,Accept,1085,On Guard in Stonetalon,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1085,,,,,,,"","",,accept On Guard in Stonetalon##1085
+35,TurnIn,1085,On Guard in Stonetalon,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1085,,,,,,,"","",,turnin On Guard in Stonetalon##1085
+36,Accept,1071,A Gnome's Respite,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1071,,,,,,,"","",,accept A Gnome's Respite##1071
+37,Accept,1093,Super Reaper 6000,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1093,,,,,,,"","",,accept Super Reaper 6000##1093
+38,Do,1093,Super Reaper 6000,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1093,,,,,,,"","",,Do: Super Reaper 6000
+39,Do,1071,A Gnome's Respite,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1071,,,,,,,"","",,Do: A Gnome's Respite
+40,TurnIn,1093,Super Reaper 6000,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1093,,,,,,,"","",,turnin Super Reaper 6000##1093
+41,TurnIn,1071,A Gnome's Respite,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1071,,,,,,,"","",,turnin A Gnome's Respite##1071
+42,Accept,1072,An Old Colleague,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1072,,,,,,,"","",,accept An Old Colleague##1072
+43,Accept,1075,A Scroll from Mauren,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1075,,,,,,,"","",,accept A Scroll from Mauren##1075
+44,Do,1134,Pridewings of Stonetalon,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1134,,,,,,,"","",,Do: Pridewings of Stonetalon
+45,TurnIn,1056,Journey to Stonetalon Peak,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1056,,,,,,,"","",,turnin Journey to Stonetalon Peak##1056
+46,Flightpath,,,Stonetalon Mountains,"36.45,7.07",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""36.45""
+	""7.07""
+]",36.45,7.07,"","",,"fpath Stonetalon Mountains |goto Stonetalon Mountains 36.45,7.07"
+47,Fly,,,Ashenvale,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",,fpath Ashenvale
+48,TurnIn,1134,Pridewings of Stonetalon,Astranaar,,,,,https://classic.wowhead.com/quest=1134,,,,,,,"","",,turnin Pridewings of Stonetalon##1134
+49,Accept,4581,Kayneth Stillwind,Ashenvale,,,,,https://classic.wowhead.com/quest=4581,,,,,,,"","",,accept Kayneth Stillwind##4581
+50,TurnIn,1025,An Aggressive Defense,Astranaar,,,,,https://classic.wowhead.com/quest=1025,,,,,,,"","",,turnin An Aggressive Defense##1025
+51,Accept,1054,Culling the Threat,Ashenvale,,,,,https://classic.wowhead.com/quest=1054,,,,,,,"","",,accept Culling the Threat##1054
+52,TurnIn,1034,The Ruins of Stardust,Astranaar,,,,,https://classic.wowhead.com/quest=1034,,,,,,,"","",,turnin The Ruins of Stardust##1034
+53,TurnIn,973,The Tower of Althalaxx,Astranaar,,,,,https://classic.wowhead.com/quest=973,,,,,,,"","",,turnin The Tower of Althalaxx##973
+54,Accept,1140,The Tower of Althalaxx,Ashenvale,,,,,https://classic.wowhead.com/quest=1140,,,,,,,"","",,accept The Tower of Althalaxx##1140
+55,Run,,,Ashenvale,"31.3,46.9",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""31.3""
+	""46.9""
+]",31.3,46.9,"","",,"Run to 31.3,46.9 |goto Ashenvale 31.3,46.9"
+56,Do,1054,Culling the Threat,Ashenvale,,,,,https://classic.wowhead.com/quest=1054,,,,,,,"","",,Do: Culling the Threat
+57,Grind,,,here,,,25+16000,the furbolgs,https://classic.wowhead.com/quest=,,,,,,,"","",,"Grind until level25+16000
+|ding 25+16000"
+58,TurnIn,1054,Culling the Threat,Ashenvale,,,,,https://classic.wowhead.com/quest=1054,,,,,,,"","",,turnin Culling the Threat##1054
+59,UseHearthstone,,,Ashenvale,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",,use Hearthstone##6948

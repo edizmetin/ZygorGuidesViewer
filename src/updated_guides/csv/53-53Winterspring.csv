@@ -1,0 +1,76 @@
+row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,ItemName,ItemAmount,coords_split,X,Y,NpcName,NpcId,formatted_text
+0,,,,,,,,,,,,,,,,,"","",""
+1,,,,,,,,,,,,,,,,,"","",""
+2,,,,,,,,,,,,,,,,,"","",""
+3,,,,,,,,,,,,,,,,,"","",""
+4,,,,,,,,,,,,,,,,,"","",""
+5,,,,,,,,,,,,,,,,,"","",""
+6,Fly,,,Winterspring,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Winterspring
+7,Do,5082,Threat of the Winterfall,Winterspring,,,,,,https://classic.wowhead.com/quest=5082,,,,,,,"","",Do: Threat of the Winterfall
+8,Do,6241,Winterfall Activity,Winterspring,,,,,,https://classic.wowhead.com/quest=6241,,,,,,,"","",Do: Winterfall Activity
+9,Text,,,Winterspring,,,,,Farm on the furbolgs to the north till [XP54],https://classic.wowhead.com/quest=,,,,,,,"","",Farm on the furbolgs to the north till [XP54]
+10,Do,5082,Threat of the Winterfall,Winterspring,,,,,,https://classic.wowhead.com/quest=5082,,,,,,,"","",Do: Threat of the Winterfall
+11,Do,6241,Winterfall Activity,Winterspring,,,,,,https://classic.wowhead.com/quest=6241,,,,,,,"","",Do: Winterfall Activity
+12,Do,5082,Threat of the Winterfall,Winterspring,,,,,,https://classic.wowhead.com/quest=5082,,,,,,,"","",Do: Threat of the Winterfall
+13,Accept,5083,Winterfall Firewater,Winterspring,,,,,,https://classic.wowhead.com/quest=5083,,,,,,,"","",accept Winterfall Firewater##5083
+14,TurnIn,5082,Threat of the Winterfall,Winterspring,,,,,,https://classic.wowhead.com/quest=5082,,,,,,,"","",turnin Threat of the Winterfall##5082
+15,TurnIn,5083,Winterfall Firewater,Winterspring,,,,,,https://classic.wowhead.com/quest=5083,,,,,,,"","",turnin Winterfall Firewater##5083
+16,TurnIn,980,The New Springs,Winterspring,,,,,,https://classic.wowhead.com/quest=980,,,,,,,"","",turnin The New Springs##980
+17,Accept,5084,Falling to Corruption,Winterspring,,,,,,https://classic.wowhead.com/quest=5084,,,,,,,"","",accept Falling to Corruption##5084
+18,Accept,4842,Strange Sources,Winterspring,,,,,,https://classic.wowhead.com/quest=4842,,,,,,,"","",accept Strange Sources##4842
+19,Do,978,Moontouched Wildkin,Winterspring,,,,,,https://classic.wowhead.com/quest=978,,,,,,,"","",Do: Moontouched Wildkin
+20,TurnIn,6241,Winterfall Activity,Winterspring,,,,,,https://classic.wowhead.com/quest=6241,,,,,,,"","",turnin Winterfall Activity##6241
+21,TurnIn,5084,Falling to Corruption,Felwood,,,,,,https://classic.wowhead.com/quest=5084,,,,,,,"","",turnin Falling to Corruption##5084
+22,Accept,5085,Mystery Goo,Felwood,,,,,,https://classic.wowhead.com/quest=5085,,,,,,,"","",accept Mystery Goo##5085
+23,Do,4084,Silver Heart,Felwood,,,,,,https://classic.wowhead.com/quest=4084,,,,,,,"","",Do: Silver Heart
+24,TurnIn,4084,Silver Heart,Felwood,,,,,,https://classic.wowhead.com/quest=4084,,,,,,,"","",turnin Silver Heart##4084
+25,UseHearthstone,,,Felwood,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",use Hearthstone##6948
+26,Fly,,,Ruth'Theran,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Ruth'Theran
+27,TurnIn,978,Moontouched Wildkin,Ruth'Theran,,,,,,https://classic.wowhead.com/quest=978,,,,,,,"","",turnin Moontouched Wildkin##978
+28,Accept,979,Find Ranshalla,Ruth'Theran,,,,,,https://classic.wowhead.com/quest=979,,,,,,,"","",accept Find Ranshalla##979
+29,Fly,,,Winterspring,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Winterspring
+30,Accept,6604,Enraged Wildkin,Winterspring,,,,,,https://classic.wowhead.com/quest=6604,,,,,,,"","",accept Enraged Wildkin##6604
+31,TurnIn,5250,Starfall,Winterspring,,,,,,https://classic.wowhead.com/quest=5250,,,,,,,"","",turnin Starfall##5250
+32,Accept,5244,The Ruins of Kel'Theril,Winterspring,,,,,,https://classic.wowhead.com/quest=5244,,,,,,,"","",accept The Ruins of Kel'Theril##5244
+33,TurnIn,6604,Enraged Wildkin,Winterspring,,,,,,https://classic.wowhead.com/quest=6604,,,,,,,"","",turnin Enraged Wildkin##6604
+34,TurnIn,5244,The Ruins of Kel'Theril,Winterspring,,,,,,https://classic.wowhead.com/quest=5244,,,,,,,"","",turnin The Ruins of Kel'Theril##5244
+35,Accept,5245,Troubled Spirits of Kel'Theril,Winterspring,,,,,,https://classic.wowhead.com/quest=5245,,,,,,,"","",accept Troubled Spirits of Kel'Theril##5245
+36,Accept,4861,Enraged Wildkin,Winterspring,,,,,,https://classic.wowhead.com/quest=4861,,,,,,,"","",accept Enraged Wildkin##4861
+37,Do,5245,Troubled Spirits of Kel'Theril,Winterspring,,,,,,https://classic.wowhead.com/quest=5245,,,,,,,"","",Do: Troubled Spirits of Kel'Theril
+38,Do,5245,TODO: Add specific questparts,Winterspring,,,,,,https://classic.wowhead.com/quest=5245,,,,,,,"","",Do: TODO: Add specific questparts
+39,Do,5245,TODO: Add specific questparts,Winterspring,,,,,,https://classic.wowhead.com/quest=5245,,,,,,,"","",Do: TODO: Add specific questparts
+40,Do,5245,TODO: Add specific questparts,Winterspring,,,,,,https://classic.wowhead.com/quest=5245,,,,,,,"","",Do: TODO: Add specific questparts
+41,TurnIn,5085,Mystery Goo,Winterspring,,,,,,https://classic.wowhead.com/quest=5085,,,,,,,"","",turnin Mystery Goo##5085
+42,TurnIn,4861,Enraged Wildkin,Winterspring,,,,,,https://classic.wowhead.com/quest=4861,,,,,,,"","",turnin Enraged Wildkin##4861
+43,Accept,4863,Enraged Wildkin,Winterspring,,,,,,https://classic.wowhead.com/quest=4863,,,,,,,"","",accept Enraged Wildkin##4863
+44,TurnIn,4863,Enraged Wildkin,Winterspring,,,,,,https://classic.wowhead.com/quest=4863,,,,,,,"","",turnin Enraged Wildkin##4863
+45,Accept,4864,Enraged Wildkin,Winterspring,,,,,,https://classic.wowhead.com/quest=4864,,,,,,,"","",accept Enraged Wildkin##4864
+46,Do,4864,Enraged Wildkin,Winterspring,,,,,,https://classic.wowhead.com/quest=4864,,,,,,,"","",Do: Enraged Wildkin
+47,Do,4864,Enraged Wildkin,Winterspring,,,,,,https://classic.wowhead.com/quest=4864,,,,,,,"","",Do: Enraged Wildkin
+48,TurnIn,979,Find Ranshalla,Winterspring,,,,,,https://classic.wowhead.com/quest=979,,,,,,,"","",turnin Find Ranshalla##979
+49,Accept,4901,Guardians of the Altar,Winterspring,,,,,,https://classic.wowhead.com/quest=4901,,,,,,,"","",accept Guardians of the Altar##4901
+50,Do,4901,Guardians of the Altar,Winterspring,,,,,,https://classic.wowhead.com/quest=4901,,,,,,,"","",Do: Guardians of the Altar
+51,Run,,,Winterspring,"60,73.3",,,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""60""
+	""73.3""
+]",60,73.3,"","","Run to 60,73.3 |goto Winterspring 60,73.3"
+52,TurnIn,4864,Enraged Wildkin,Winterspring,,,,,,https://classic.wowhead.com/quest=4864,,,,,,,"","",turnin Enraged Wildkin##4864
+53,TurnIn,4842,Strange Sources,Winterspring,,,,,,https://classic.wowhead.com/quest=4842,,,,,,,"","",turnin Strange Sources##4842
+54,UseHearthstone,,,,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",use Hearthstone##6948
+55,Fly,,,Ruth'Theran,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Ruth'Theran
+56,TurnIn,4901,Guardians of the Altar,Darnassus,,,,,,https://classic.wowhead.com/quest=4901,,,,,,,"","",turnin Guardians of the Altar##4901
+57,Accept,4902,Wildkin of Elune,Darnassus,,,,,,https://classic.wowhead.com/quest=4902,,,,,,,"","",accept Wildkin of Elune##4902
+58,TurnIn,4902,Wildkin of Elune,Darnassus,,,,,,https://classic.wowhead.com/quest=4902,,,,,,,"","",turnin Wildkin of Elune##4902
+59,Fly,,,Darkshore,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Darkshore
+60,Text,,,Darkshore,,,,,Take the boat to Wetlands,https://classic.wowhead.com/quest=,,,,,,,"","",Take the boat to Wetlands
+61,Fly,,,Ironforge,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Ironforge
+62,TurnInOptional,2977,Return to Ironforge,Ironforge,,,,,,https://classic.wowhead.com/quest=2977,,,,,,,"","",
+63,AcceptOptional,2964,A Future Task,Ironforge,,,,,,https://classic.wowhead.com/quest=2964,,,,,,,"","",
+64,TurnInOptional,2964,A Future Task,Ironforge,,,,,,https://classic.wowhead.com/quest=2964,,,,,,,"","",
+65,Accept,3702,The Smoldering Ruins of Thaurissan,Ironforge,,,,,,https://classic.wowhead.com/quest=3702,,,,,,,"","",accept The Smoldering Ruins of Thaurissan##3702
+66,Do,3702,The Smoldering Ruins of Thaurissan,Ironforge,,,,,,https://classic.wowhead.com/quest=3702,,,,,,,"","",Do: The Smoldering Ruins of Thaurissan
+67,TurnIn,3702,The Smoldering Ruins of Thaurissan,Ironforge,,,,,,https://classic.wowhead.com/quest=3702,,,,,,,"","",turnin The Smoldering Ruins of Thaurissan##3702
+68,Accept,3701,The Smoldering Ruins of Thaurissan,Ironforge,,,,,,https://classic.wowhead.com/quest=3701,,,,,,,"","",accept The Smoldering Ruins of Thaurissan##3701
+69,Fly,,,Redridge,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Redridge

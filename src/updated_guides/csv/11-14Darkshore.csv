@@ -1,0 +1,145 @@
+row_id,Action,ID,QuestName,Location,Coords,XP,Level,Text,WowHead,ItemID,ItemName,ItemAmount,coords_split,X,Y,NpcName,NpcId,Class,formatted_text
+0,,,,,,,,,,,,,,,,"","",,""
+1,,,,,,,,,,,,,,,,"","",,""
+2,,,,,,,,,,,,,,,,"","",,""
+3,,,,,,,,,,,,,,,,"","",,""
+4,Text,,,,,,,,,,,,,,,"","",,
+5,TurnIn,6342,Flight to Auberdine,,,,,,https://classic.wowhead.com/quest=6342,,,,,,,"","",Nightelf,"turnin Flight to Auberdine##6342
+|only if Nightelf"
+6,Accept,6343,Return to Nessa,,,,,,https://classic.wowhead.com/quest=6343,,,,,,,"","",Nightelf,"accept Return to Nessa##6343
+|only if Nightelf"
+7,Accept,983,Buzzbox 827,Darkshore,,,,,https://classic.wowhead.com/quest=983,,,,,,,"","",,accept Buzzbox 827##983
+8,Accept,3524,Washed Ashore,Darkshore,,,,,https://classic.wowhead.com/quest=3524,,,,,,,"","",,accept Washed Ashore##3524
+9,Flightpath,,,Darkshore,"36.3,45.6",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""36.3""
+	""45.6""
+]",36.3,45.6,"","","Dwarf,Gnome,Human","fpath Darkshore |goto Darkshore 36.3,45.6
+|only if Dwarf,Gnome,Human"
+10,Do,983,Buzzbox 827,Darkshore,,,,,https://classic.wowhead.com/quest=983,,,,,,,"","",,Do: Buzzbox 827
+11,Do,3524,Washed Ashore,Darkshore,,,,,https://classic.wowhead.com/quest=3524,,,,,,,"","",,Do: Washed Ashore
+12,Text,,,,,,,Farm till youre level[XP12+1300] on the crabs/murlocs,https://classic.wowhead.com/quest=,,,,,,,"","",,Farm till youre level[XP12+1300] on the crabs/murlocs
+13,TurnIn,983,Buzzbox 827,Darkshore,,,,,https://classic.wowhead.com/quest=983,,,,,,,"","",,turnin Buzzbox 827##983
+14,Accept,1001,Buzzbox 411,,,,,,https://classic.wowhead.com/quest=1001,,,,,,,"","",,accept Buzzbox 411##1001
+15,TurnIn,3524,Washed Ashore,Darkshore,,,,,https://classic.wowhead.com/quest=3524,,,,,,,"","",,turnin Washed Ashore##3524
+16,Accept,4681,Washed Ashore,Darkshore,,,,,https://classic.wowhead.com/quest=4681,,,,,,,"","",,accept Washed Ashore##4681
+17,Accept,963,For Love Eternal,Darkshore,,,,,https://classic.wowhead.com/quest=963,,,,,,,"","",,accept For Love Eternal##963
+18,Do,4681,Washed Ashore,Darkshore,,,,,https://classic.wowhead.com/quest=4681,,,,,,,"","",,Do: Washed Ashore
+19,Do,1001,Buzzbox 411,Darkshore,,,,,https://classic.wowhead.com/quest=1001,,,,,,,"","",,Do: Buzzbox 411
+20,Run,,,Darkshore,"37, 41",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""37""
+	"" 41""
+]",37, 41,"","",,"Run to 37, 41 |goto Darkshore 37, 41"
+21,Accept,954,Bashal'Aran,Darkshore,,,,,https://classic.wowhead.com/quest=954,,,,,,,"","",,accept Bashal'Aran##954
+22,Accept,958,Tools of the Highborne,Darkshore,,,,,https://classic.wowhead.com/quest=958,,,,,,,"","",,accept Tools of the Highborne##958
+23,Accept,2118,Plagued Lands,Darkshore,,,,,https://classic.wowhead.com/quest=2118,,,,,,,"","",,accept Plagued Lands##2118
+24,Accept,984,How Big a Threat?,Darkshore,,,,,https://classic.wowhead.com/quest=984,,,,,,,"","",,accept How Big a Threat?##984
+25,Run,,,Darkshore,"46.2, 31",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""46.2""
+	"" 31""
+]",46.2, 31,"","",,"Run to 46.2, 31 |goto Darkshore 46.2, 31"
+26,Do,2118,Plagued Lands,Darkshore,,,,,https://classic.wowhead.com/quest=2118,,,,,,,"","",,Do: Plagued Lands
+27,Do,6001,Body and Heart,,,,,,https://classic.wowhead.com/quest=6001,,,,,,,"","",Druid,"Do: Body and Heart
+|only if Druid"
+28,TurnIn,954,Bashal'Aran,Darkshore,,,,,https://classic.wowhead.com/quest=954,,,,,,,"","",,turnin Bashal'Aran##954
+29,Accept,955,Bashal'Aran,Darkshore,,,,,https://classic.wowhead.com/quest=955,,,,,,,"","",,accept Bashal'Aran##955
+30,Do,955,Bashal'Aran,Darkshore,,,,,https://classic.wowhead.com/quest=955,,,,,,,"","",,Do: Bashal'Aran
+31,TurnIn,955,Bashal'Aran,Darkshore,,,,,https://classic.wowhead.com/quest=955,,,,,,,"","",,turnin Bashal'Aran##955
+32,Accept,956,Bashal'Aran,Darkshore,,,,,https://classic.wowhead.com/quest=956,,,,,,,"","",,accept Bashal'Aran##956
+33,Do,956,Bashal'Aran,Darkshore,,,,,https://classic.wowhead.com/quest=956,,,,,,,"","",,Do: Bashal'Aran
+34,TurnIn,956,Bashal'Aran,Darkshore,,,,,https://classic.wowhead.com/quest=956,,,,,,,"","",,turnin Bashal'Aran##956
+35,Accept,957,Bashal'Aran,Darkshore,,,,,https://classic.wowhead.com/quest=957,,,,,,,"","",,accept Bashal'Aran##957
+36,TurnIn,2118,Plagued Lands,Darkshore,,,,,https://classic.wowhead.com/quest=2118,,,,,,,"","",,turnin Plagued Lands##2118
+37,Accept,2138,Cleansing of the Infected,Darkshore,,,,,https://classic.wowhead.com/quest=2138,,,,,,,"","",,accept Cleansing of the Infected##2138
+38,Accept,4811,The Red Crystal,Darkshore,,,,,https://classic.wowhead.com/quest=4811,,,,,,,"","",,accept The Red Crystal##4811
+39,Accept,947,Cave Mushrooms,Darkshore,,,,,https://classic.wowhead.com/quest=947,,,,,,,"","",,accept Cave Mushrooms##947
+40,TurnIn,4681,Washed Ashore,Darkshore,,,,,https://classic.wowhead.com/quest=4681,,,,,,,"","",,turnin Washed Ashore##4681
+41,Text,4811,The Red Crystal,Darkshore,,,,"Do: [QC4811] at [G47.3,48.7Darkshore]",https://classic.wowhead.com/quest=4811,,,,,,,"","",,"Do: [QC4811] at [G47.3,48.7Darkshore]"
+42,Accept,953,The Fall of Ameth'Aran,Darkshore,,,,,https://classic.wowhead.com/quest=953,,,,,,,"","",,accept The Fall of Ameth'Aran##953
+43,Text,953,"For Love Eternal, Tools of the Highborne, Bashal'Aran, The Fall of Ameth'Aran",Darkshore,,,,Do [QC953- ][QC963- ][QC958- ][QC957],https://classic.wowhead.com/quest=953,,,,,,,"","",,Do [QC953- ][QC963- ][QC958- ][QC957]
+44,Grind,,,this area,,,13,,https://classic.wowhead.com/quest=,,,,,,,"","",,"Grind until level13
+|ding 13"
+45,TurnIn,953,The Fall of Ameth'Aran,Darkshore,,,,,https://classic.wowhead.com/quest=953,,,,,,,"","",,turnin The Fall of Ameth'Aran##953
+46,Text,,,Darkshore,,,,"Go South of Ameth 'Aran and kill as many Rabid Thistle Bears as possible, afterwards go to around [G38,60]. You should find 6-10 to kill, that will do for now.",https://classic.wowhead.com/quest=,,,,,,,"","",,"Go South of Ameth 'Aran and kill as many Rabid Thistle Bears as possible, afterwards go to around [G38,60]. You should find 6-10 to kill, that will do for now."
+47,Accept,4722,Beached Sea Turtle,Darkshore,,,,,https://classic.wowhead.com/quest=4722,,,,,,,"","",,accept Beached Sea Turtle##4722
+48,Text,984,How Big a Threat?,Darkshore,,,,"Do: [QC984] at [G39, 54.1Darkshore]",https://classic.wowhead.com/quest=984,,,,,,,"","",,"Do: [QC984] at [G39, 54.1Darkshore]"
+49,TurnIn,4722,Beached Sea Turtle,Darkshore,,,,,https://classic.wowhead.com/quest=4722,,,,,,,"","",,turnin Beached Sea Turtle##4722
+50,TurnIn,963,For Love Eternal,Darkshore,,,,,https://classic.wowhead.com/quest=963,,,,,,,"","",,turnin For Love Eternal##963
+51,TurnIn,4811,The Red Crystal,Darkshore,,,,,https://classic.wowhead.com/quest=4811,,,,,,,"","",,turnin The Red Crystal##4811
+52,Accept,4812,As Water Cascades,Darkshore,,,,,https://classic.wowhead.com/quest=4812,,,,,,,"","",,accept As Water Cascades##4812
+53,Text,,,Darkshore,,,,Fill the water tube at the nearby moonwell,https://classic.wowhead.com/quest=,,,,,,,"","",,Fill the water tube at the nearby moonwell
+54,TurnIn,984,How Big a Threat?,Darkshore,,,,,https://classic.wowhead.com/quest=984,,,,,,,"","",,turnin How Big a Threat?##984
+55,Accept,985,How Big a Threat?,Darkshore,,,,,https://classic.wowhead.com/quest=985,,,,,,,"","",,accept How Big a Threat?##985
+56,Accept,4761,Thundris Windweaver,Darkshore,,,,,https://classic.wowhead.com/quest=4761,,,,,,,"","",,accept Thundris Windweaver##4761
+57,Accept,965,The Tower of Althalaxx,Darkshore,,,,,https://classic.wowhead.com/quest=965,,,,,,,"","",,accept The Tower of Althalaxx##965
+58,Accept,982,"Deep Ocean, Vast Sea",Darkshore,,,,,https://classic.wowhead.com/quest=982,,,,,,,"","",,"accept Deep Ocean, Vast Sea##982"
+59,TurnIn,958,Tools of the Highborne,Darkshore,,,,,https://classic.wowhead.com/quest=958,,,,,,,"","",,turnin Tools of the Highborne##958
+60,TurnIn,4761,Thundris Windweaver,Darkshore,,,,,https://classic.wowhead.com/quest=4761,,,,,,,"","",,turnin Thundris Windweaver##4761
+61,Accept,4762,The Cliffspring River,Darkshore,,,,,https://classic.wowhead.com/quest=4762,,,,,,,"","",,accept The Cliffspring River##4762
+62,Do,985,How Big a Threat?,Darkshore,,,,,https://classic.wowhead.com/quest=985,,,,,,,"","",,Do: How Big a Threat?
+63,Grind,,,this area ,,,14,,https://classic.wowhead.com/quest=,,,,,,,"","",,"Grind until level14
+|ding 14"
+64,TurnIn,4812,As Water Cascades,Darkshore,,,,,https://classic.wowhead.com/quest=4812,,,,,,,"","",,turnin As Water Cascades##4812
+65,Accept,4813,The Fragments Within,Darkshore,,,,,https://classic.wowhead.com/quest=4813,,,,,,,"","",,accept The Fragments Within##4813
+66,TurnIn,957,Bashal'Aran,Darkshore,,,,,https://classic.wowhead.com/quest=957,,,,,,,"","",,turnin Bashal'Aran##957
+67,Accept,4723,Beached Sea Creature,Darkshore,,,,,https://classic.wowhead.com/quest=4723,,,,,,,"","",,accept Beached Sea Creature##4723
+68,Do,982,"Deep Ocean, Vast Sea",Darkshore,,,,,https://classic.wowhead.com/quest=982,,,,,,,"","",,"Do: Deep Ocean, Vast Sea"
+69,TurnIn,1001,Buzzbox 411,Darkshore,,,,,https://classic.wowhead.com/quest=1001,,,,,,,"","",,turnin Buzzbox 411##1001
+70,Accept,1002,Buzzbox 323,Darkshore,,,,,https://classic.wowhead.com/quest=1002,,,,,,,"","",,accept Buzzbox 323##1002
+71,Accept,4725,Beached Sea Turtle,Darkshore,,,,,https://classic.wowhead.com/quest=4725,,,,,,,"","",,accept Beached Sea Turtle##4725
+72,Text,,,Darkshore,,,,Start killing all Moonstalkers and Rabid Thistle Bears you see!,https://classic.wowhead.com/quest=,,,,,,,"","",,Start killing all Moonstalkers and Rabid Thistle Bears you see!
+73,Run,,,Darkshore,"50.7,24.8",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""50.7""
+	""24.8""
+]",50.7,24.8,"","",,"Run to 50.7,24.8 |goto Darkshore 50.7,24.8"
+74,Text,,,,,,,Jump into the water.,https://classic.wowhead.com/quest=,,,,,,,"","",,Jump into the water.
+75,Run,,,Darkshore,"50.8, 25.3",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""50.8""
+	"" 25.3""
+]",50.8, 25.3,"","",,"Run to 50.8, 25.3 |goto Darkshore 50.8, 25.3"
+76,Do,4762,The Cliffspring River,Darkshore,,,,"Do: [QC4762] at [G50.82,25.5Darkshore]",https://classic.wowhead.com/quest=4762,,,,,,,"","",,Do: The Cliffspring River
+77,Accept,4727,Beached Sea Turtle,Darkshore,,,,,https://classic.wowhead.com/quest=4727,,,,,,,"","",,accept Beached Sea Turtle##4727
+78,TurnIn,965,The Tower of Althalaxx,Darkshore,,,,,https://classic.wowhead.com/quest=965,,,,,,,"","",,turnin The Tower of Althalaxx##965
+79,Accept,966,The Tower of Althalaxx,Darkshore,,,,,https://classic.wowhead.com/quest=966,,,,,,,"","",,accept The Tower of Althalaxx##966
+80,Text,,,,,,,"Many classes CAN NOT do this quest properly(Warriors especially) if you cant, DONT WORRY, you can do it later!!!(just cancel it, I will make you accept it again)",https://classic.wowhead.com/quest=,,,,,,,"","",,"Many classes CAN NOT do this quest properly(Warriors especially) if you cant, DONT WORRY, you can do it later!!!(just cancel it, I will make you accept it again)"
+81,Do,966,The Tower of Althalaxx,Darkshore,,,,,https://classic.wowhead.com/quest=966,,,,,,,"","",,Do: The Tower of Althalaxx
+82,TurnIn,966,The Tower of Althalaxx,Darkshore,,,,,https://classic.wowhead.com/quest=966,,,,,,,"","",,turnin The Tower of Althalaxx##966
+83,Accept,967,The Tower of Althalaxx,Darkshore,,,,,https://classic.wowhead.com/quest=967,,,,,,,"","",,accept The Tower of Althalaxx##967
+84,Do,2138,Cleansing of the Infected,Darkshore,,,,,https://classic.wowhead.com/quest=2138,,,,,,,"","",,Do: Cleansing of the Infected
+85,Do,947,Cave Mushrooms,Darkshore,,,,,https://classic.wowhead.com/quest=947,,,,,,,"","",,Do: Cave Mushrooms
+86,Do,1002,Buzzbox 323,,,,,,https://classic.wowhead.com/quest=1002,,,,,,,"","",,Do: Buzzbox 323
+87,TurnIn,1002,Buzzbox 323,,,,,,https://classic.wowhead.com/quest=1002,,,,,,,"","",,turnin Buzzbox 323##1002
+88,Accept,1003,Buzzbox 525,,,,,,https://classic.wowhead.com/quest=1003,,,,,,,"","",,accept Buzzbox 525##1003
+89,Text,,,Darkshore,,,,"Die on Purpose and rezz at the spirit healer. Yes this gives a 5min debuff, but it wont matter.",https://classic.wowhead.com/quest=,,,,,,,"","",,"Die on Purpose and rezz at the spirit healer. Yes this gives a 5min debuff, but it wont matter."
+90,TurnIn,2138,Cleansing of the Infected,Darkshore,,,,,https://classic.wowhead.com/quest=2138,,,,,,,"","",,turnin Cleansing of the Infected##2138
+91,TurnIn,985,How Big a Threat?,Darkshore,,,,,https://classic.wowhead.com/quest=985,,,,,,,"","",,turnin How Big a Threat?##985
+92,Accept,986,A Lost Master,,,,,,https://classic.wowhead.com/quest=986,,,,,,,"","",,accept A Lost Master##986
+93,TurnIn,982,"Deep Ocean, Vast Sea",Darkshore,,,,,https://classic.wowhead.com/quest=982,,,,,,,"","",,"turnin Deep Ocean, Vast Sea##982"
+94,TurnIn,4762,The Cliffspring River,Darkshore,,,,,https://classic.wowhead.com/quest=4762,,,,,,,"","",,turnin The Cliffspring River##4762
+95,TurnIn,4813,The Fragments Within,Darkshore,,,,,https://classic.wowhead.com/quest=4813,,,,,,,"","",,turnin The Fragments Within##4813
+96,TurnIn,947,Cave Mushrooms,Darkshore,,,,,https://classic.wowhead.com/quest=947,,,,,,,"","",,turnin Cave Mushrooms##947
+97,Accept,948,Onu,,,,,,https://classic.wowhead.com/quest=948,,,,,,,"","",,accept Onu##948
+98,TurnIn,4727,Beached Sea Turtle,Darkshore,,,,,https://classic.wowhead.com/quest=4727,,,,,,,"","",,turnin Beached Sea Turtle##4727
+99,TurnIn,4725,Beached Sea Turtle,Darkshore,,,,,https://classic.wowhead.com/quest=4725,,,,,,,"","",,turnin Beached Sea Turtle##4725
+100,TurnIn,4723,Beached Sea Creature,Darkshore,,,,,https://classic.wowhead.com/quest=4723,,,,,,,"","",,turnin Beached Sea Creature##4723
+101,Text,,,Darkshore,,,,"[A Nightelf]As a Nightelf you have to do the Wetlands run now all the way to Ironforge, Get the Flightpaths in Wetlands,Loch Modan and Ironforge itself",https://classic.wowhead.com/quest=,,,,,,,"","",,"[A Nightelf]As a Nightelf you have to do the Wetlands run now all the way to Ironforge, Get the Flightpaths in Wetlands,Loch Modan and Ironforge itself"
+102,Hearthstone,,,Ironforge,"18.6, 51.6",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""18.6""
+	"" 51.6""
+]",18.6, 51.6,"","",Nightelf,"home Ironforge
+|only if Nightelf"
+103,UseHearthstone,,,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","","Dwarf,Gnome,Human","use Hearthstone##6948
+|only if Dwarf,Gnome,Human"
+104,Text,,,,,,,Buy lvl 15 Food/Water (I recommend 30-40 each),https://classic.wowhead.com/quest=,,,,,,,"","",,Buy lvl 15 Food/Water (I recommend 30-40 each)
+105,,,,,,,,,,,,,,,,"","",,""

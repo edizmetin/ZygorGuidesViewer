@@ -1,0 +1,61 @@
+Name,Action,ID,Location,Coords,XP,Level,Class,Text,Wowhead
+[GA Alliance],,,,,,,,,
+[N70a Howling Fjord - Alliance],,,,,,,,,
+[NX70b Howling Fjord - Alliance],,,,,,,,,
+"[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,,,,,
+"This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",,,,,,,,,
+I am marking EVERY Elite quest and dungeons as optional in this guide. Especially on release you should do them!!! You'll easily find groups for elite quests and dungeons.,,,,,,,,,
+"I assume you know how to get to Valgarde Keep, but here a short info: Fly to Menethil Harbor, Wetlands. Take the boat on the northern pier to arrive at Valgarde Keep.",Text,,,,,,,"I assume you know how to get to Valgarde Keep, but here a short info: Fly to Menethil Harbor, Wetlands. Take the boat on the northern pier to arrive at Valgarde Keep.",https://wotlk.wowhead.com/quest=
+Accept: [QA11228],Accept,11228,,,,,,,https://wotlk.wowhead.com/quest=11228
+TurnIn: [QT11228],TurnIn,11228,,,,,,,https://wotlk.wowhead.com/quest=11228
+Accept: [QA11243],Accept,11243,,,,,,,https://wotlk.wowhead.com/quest=11243
+Do: [QC11243],Do,11243,,,,,,,https://wotlk.wowhead.com/quest=11243
+TurnIn: [QT11243],TurnIn,11243,,,,,,,https://wotlk.wowhead.com/quest=11243
+Accept: [QA11244],Accept,11244,,,,,,,https://wotlk.wowhead.com/quest=11244
+Do: [QC11244],Do,11244,,,,,,,https://wotlk.wowhead.com/quest=11244
+Accept: [QA11251],Accept,11251,,,,,,,https://wotlk.wowhead.com/quest=11251
+TurnIn: [QT11244],TurnIn,11244,,,,,,,https://wotlk.wowhead.com/quest=11244
+Accept: [QA11255],Accept,11255,,,,,,,https://wotlk.wowhead.com/quest=11255
+Accept: [QA11273],Accept,11273,,,,,,,https://wotlk.wowhead.com/quest=11273
+Accept: [QA11333],Accept,11333,,,,,,,https://wotlk.wowhead.com/quest=11333
+Accept: [QA11420],Accept,11420,,,,,,,https://wotlk.wowhead.com/quest=11420
+Accept: [QA11443],Accept,11443,,,,,,,https://wotlk.wowhead.com/quest=11443
+Do: [QC11443],Do,11443,,,,,,,https://wotlk.wowhead.com/quest=11443
+Do: [QC11333],Do,11333,,,,,,,https://wotlk.wowhead.com/quest=11333
+TurnIn: [QT11443],TurnIn,11443,,,,,,,https://wotlk.wowhead.com/quest=11443
+TurnIn: [QT11333],TurnIn,11333,,,,,,,https://wotlk.wowhead.com/quest=11333
+Accept: [QA11343],Accept,11343,,,,,,,https://wotlk.wowhead.com/quest=11343
+TurnIn: [QT11273],TurnIn,11273,,,,,,,https://wotlk.wowhead.com/quest=11273
+Accept: [QA11274],Accept,11274,,,,,,,https://wotlk.wowhead.com/quest=11274
+Do: [QC11255],Do,11255,,,,,,,https://wotlk.wowhead.com/quest=11255
+TurnIn: [QT11255],TurnIn,11255,,,,,,,https://wotlk.wowhead.com/quest=11255
+Accept: [QA11290],Accept,11290,,,,,,,https://wotlk.wowhead.com/quest=11290
+TurnIn: [QT11274],TurnIn,11274,,,,,,,https://wotlk.wowhead.com/quest=11274
+Accept: [QA11276],Accept,11276,,,,,,,https://wotlk.wowhead.com/quest=11276
+Do: [QC11290],Do,11290,,,,,,,https://wotlk.wowhead.com/quest=11290
+"Run to [G56.6, 49.4Howling Fjord]",Run,,Howling Fjord,"56.6, 49.4",,,,,https://wotlk.wowhead.com/quest=
+TurnIn: [QT11276],TurnIn,11276,,,,,,,https://wotlk.wowhead.com/quest=11276
+Accept: [QA11277],Accept,11277,,,,,,,https://wotlk.wowhead.com/quest=11277
+Do: [QC11277],Do,11277,,,,,,,https://wotlk.wowhead.com/quest=11277
+"Run to [G59.3, 55.5Howling Fjord]",Run,,Howling Fjord,"59.3, 55.5",,,,,https://wotlk.wowhead.com/quest=
+Do: [QC11420],Do,11420,,,,,,,https://wotlk.wowhead.com/quest=11420
+Accept: [QA11288],Accept,11288,,,,,,,https://wotlk.wowhead.com/quest=11288
+TurnIn: [QT11277],TurnIn,11277,,,,,,,https://wotlk.wowhead.com/quest=11277
+Accept: [QA11299],Accept,11299,,,,,,,https://wotlk.wowhead.com/quest=11299
+TurnIn: [QT11299],TurnIn,11299,,,,,,,https://wotlk.wowhead.com/quest=11299
+Accept: [QA11300],Accept,11300,,,,,,,https://wotlk.wowhead.com/quest=11300
+Do: [QC11300],Do,11300,,,,,,,https://wotlk.wowhead.com/quest=11300
+Take the stairs to the bottom.,Text,,,,,,,Take the stairs to the bottom.,https://wotlk.wowhead.com/quest=
+Do: [QC11288],Do,11288,,,,,,,https://wotlk.wowhead.com/quest=11288
+TurnIn: [QT11288],TurnIn,11288,,,,,,,https://wotlk.wowhead.com/quest=11288
+Accept: [QA11289],Accept,11289,,,,,,,https://wotlk.wowhead.com/quest=11289
+TurnIn: [QT11300],TurnIn,11300,,,,,,,https://wotlk.wowhead.com/quest=11300
+Accept: [QA11278],Accept,11278,,,,,,,https://wotlk.wowhead.com/quest=11278
+Leave the catacombs.,Text,,,,,,,Leave the catacombs.,https://wotlk.wowhead.com/quest=
+TurnIn: [QT11290],TurnIn,11290,,,,,,,https://wotlk.wowhead.com/quest=11290
+Accept: [QA11291],Accept,11291,,,,,,,https://wotlk.wowhead.com/quest=11291
+TurnIn: [QT11278],TurnIn,11278,,,,,,,https://wotlk.wowhead.com/quest=11278
+Accept: [QA11448],Accept,11448,,,,,,,https://wotlk.wowhead.com/quest=11448
+TurnIn: [QT11420],TurnIn,11420,,,,,,,https://wotlk.wowhead.com/quest=11420
+Accept: [QA11426],Accept,11426,,,,,,,https://wotlk.wowhead.com/quest=11426
+TurnIn: [QT11289],TurnIn,11289,,,,,,,https://wotlk.wowhead.com/quest=11289

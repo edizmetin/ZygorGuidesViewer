@@ -1,0 +1,85 @@
+Name,Action,ID,Location,Coords,XP,Level,Class,Text,Wowhead
+[GA Alliance],,,,,,,,,
+[N69-69Netherstorm II],,,,,,,,,
+[NX69-70Shadowmoon Valley],,,,,,,,,
+#REF!,,,,,,,,#REF!,
+#REF!,Text,,,,,,,#REF!,
+,Text,,,,,,,,
+Do: [QC10427],Do,10427,,,,,,,https://tbc.wowhead.com/quest=10427
+TurnIn: [QT10427],TurnIn,10427,,,,,,,https://tbc.wowhead.com/quest=10427
+Accept: [QA10429],Accept,10429,,,,,,,https://tbc.wowhead.com/quest=10429
+Do: [QC10429],Do,10429,,,,,,,https://tbc.wowhead.com/quest=10429
+TurnIn: [QT10429],TurnIn,10429,,,,,,,https://tbc.wowhead.com/quest=10429
+TurnIn: [A Aldor][QT10380],AldorTurnIn,10380,,,,,,,https://tbc.wowhead.com/quest=10380
+Accept: [A Aldor][QA10381],AldorAccept,10381,,,,,,,https://tbc.wowhead.com/quest=10381
+TurnIn: [QT10318],TurnIn,10318,,,,,,,https://tbc.wowhead.com/quest=10318
+TurnIn: [QT10315],TurnIn,10315,,,,,,,https://tbc.wowhead.com/quest=10315
+Do: [QC10856],Do,10856,,,,,,,https://tbc.wowhead.com/quest=10856
+TurnIn: [QT10430],TurnIn,10430,,,,,,,https://tbc.wowhead.com/quest=10430
+Accept: [QA10436],Accept,10436,,,,,,,https://tbc.wowhead.com/quest=10436
+Do: [QC10436],Do,10436,,,,,,,https://tbc.wowhead.com/quest=10436
+Do: [QC10435],Do,10435,,,,,,,https://tbc.wowhead.com/quest=10435
+TurnIn: [QT10436],TurnIn,10436,,,,,,,https://tbc.wowhead.com/quest=10436
+Accept: [QA10440],Accept,10440,,,,,,,https://tbc.wowhead.com/quest=10440
+TurnIn: [QT10440],TurnIn,10440,,,,,,,https://tbc.wowhead.com/quest=10440
+TurnIn: [QT10856],TurnIn,10856,,,,,,,https://tbc.wowhead.com/quest=10856
+Accept: [QA10857],Accept,10857,,,,,,,https://tbc.wowhead.com/quest=10857
+TurnIn: [QT10435],TurnIn,10435,,,,,,,https://tbc.wowhead.com/quest=10435
+Do: [QC10857],Do,10857,,,,,,,https://tbc.wowhead.com/quest=10857
+TurnIn: [QT10857],TurnIn,10857,,,,,,,https://tbc.wowhead.com/quest=10857
+TurnIn: [A Aldor][QT10381],AldorTurnIn,10381,,,,,,,https://tbc.wowhead.com/quest=10381
+Accept: [QA10270],Accept,10270,,,,,,,https://tbc.wowhead.com/quest=10270
+Accept: [QA10411],Accept,10411,,,,,,,https://tbc.wowhead.com/quest=10411
+Accept: [QA10339],Accept,10339,,,,,,,https://tbc.wowhead.com/quest=10339
+Accept: [QA10437],Accept,10437,,,,,,,https://tbc.wowhead.com/quest=10437
+Accept: [QA10422],Accept,10422,,,,,,,https://tbc.wowhead.com/quest=10422
+Do: [QC10411],Do,10411,,,,,,,https://tbc.wowhead.com/quest=10411
+Do: [QC10339],Do,10339,,,,,,,https://tbc.wowhead.com/quest=10339
+"Run to [G56, 38Netherstorm]",Run,,Netherstorm,"56, 38",,,,,https://tbc.wowhead.com/quest=
+Use the transponder.,Text,,,,,,,Use the transponder.,https://tbc.wowhead.com/quest=
+TurnIn: [QT10339],TurnIn,10339,,,,,,,https://tbc.wowhead.com/quest=10339
+Accept: [QA10384],Accept,10384,,,,,,,https://tbc.wowhead.com/quest=10384
+Do: [QC10384],Do,10384,,,,,,,https://tbc.wowhead.com/quest=10384
+TurnIn: [QT10384],TurnIn,10384,,,,,,,https://tbc.wowhead.com/quest=10384
+Accept: [QA10385],Accept,10385,,,,,,,https://tbc.wowhead.com/quest=10385
+Do: [QC10385],Do,10385,,,,,,,https://tbc.wowhead.com/quest=10385
+TurnIn: [QT10385],TurnIn,10385,,,,,,,https://tbc.wowhead.com/quest=10385
+Accept: [QA10405],Accept,10405,,,,,,,https://tbc.wowhead.com/quest=10405
+Do: [QC10405],Do,10405,,,,,,,https://tbc.wowhead.com/quest=10405
+TurnIn: [QT10405],TurnIn,10405,,,,,,,https://tbc.wowhead.com/quest=10405
+Accept: [QA10406],Accept,10406,,,,,,,https://tbc.wowhead.com/quest=10406
+Do: [QC10406],Do,10406,,,,,,,https://tbc.wowhead.com/quest=10406
+TurnIn: [QT10406],TurnIn,10406,,,,,,,https://tbc.wowhead.com/quest=10406
+Do: [QC10422],Do,10422,,,,,,,https://tbc.wowhead.com/quest=10422
+Accept: [QA10345],Accept,10345,,,,,,,https://tbc.wowhead.com/quest=10345
+Accept: [QA10353],Accept,10353,,,,,,,https://tbc.wowhead.com/quest=10353
+Do: [QC10270],Do,10270,,,,,,,https://tbc.wowhead.com/quest=10270
+Do: [QC10345],Do,10345,,,,,,,https://tbc.wowhead.com/quest=10345
+TurnIn: [QT10345],TurnIn,10345,,,,,,,https://tbc.wowhead.com/quest=10345
+Do: [QC10411],Do,10411,,,,,,,https://tbc.wowhead.com/quest=10411
+Do: [QC10437],Do,10437,,,,,,,https://tbc.wowhead.com/quest=10437
+Do: [QC10269],Do,10269,,,,,,,https://tbc.wowhead.com/quest=10269
+TurnIn: [QT10270],TurnIn,10270,,,,,,,https://tbc.wowhead.com/quest=10270
+Accept: [QA10271],Accept,10271,,,,,,,https://tbc.wowhead.com/quest=10271
+Do: [QC10271],Do,10271,,,,,,,https://tbc.wowhead.com/quest=10271
+TurnIn: [QT10271],TurnIn,10271,,,,,,,https://tbc.wowhead.com/quest=10271
+Accept: [QA10281],Accept,10281,,,,,,,https://tbc.wowhead.com/quest=10281
+TurnIn: [QT10281],TurnIn,10281,,,,,,,https://tbc.wowhead.com/quest=10281
+Accept: [QA10272],Accept,10272,,,,,,,https://tbc.wowhead.com/quest=10272
+Do: [QC10272],Do,10272,,,,,,,https://tbc.wowhead.com/quest=10272
+TurnIn: [QT10272],TurnIn,10272,,,,,,,https://tbc.wowhead.com/quest=10272
+Accept: [QA10273],Accept,10273,,,,,,,https://tbc.wowhead.com/quest=10273
+TurnIn: [QT10437],TurnIn,10437,,,,,,,https://tbc.wowhead.com/quest=10437
+Accept: [QA10438],Accept,10438,,,,,,,https://tbc.wowhead.com/quest=10438
+TurnIn: [QT10422],TurnIn,10422,,,,,,,https://tbc.wowhead.com/quest=10422
+TurnIn: [QT10411],TurnIn,10411,,,,,,,https://tbc.wowhead.com/quest=10411
+TurnIn: [QT10353],TurnIn,10353,,,,,,,https://tbc.wowhead.com/quest=10353
+TurnIn: [QT10269],TurnIn,10269,,,,,,,https://tbc.wowhead.com/quest=10269
+Accept: [QA10275],Accept,10275,,,,,,,https://tbc.wowhead.com/quest=10275
+Do: [QC10273],Do,10273,,,,,,,https://tbc.wowhead.com/quest=10273
+Do: [QC10438],Do,10438,,,,,,,https://tbc.wowhead.com/quest=10438
+TurnIn: [QT10273],TurnIn,10273,,,,,,,https://tbc.wowhead.com/quest=10273
+Use your [H] Hearthstone.,UseHearthstone,,,,,,,,https://tbc.wowhead.com/quest=
+Do: [QC10275],Do,10275,,,,,,,https://tbc.wowhead.com/quest=10275
+TurnIn: [QT10275],TurnIn,10275,,,,,,,https://tbc.wowhead.com/quest=10275
+TurnIn: [A Scryers][QT10432],ScryerTurnIn,10432,,,,,,,https://tbc.wowhead.com/quest=10432

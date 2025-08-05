@@ -1,0 +1,96 @@
+row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,ItemName,ItemAmount,coords_split,X,Y,NpcName,NpcId,formatted_text
+0,,,,,,,,,,,,,,,,,"","",""
+1,,,,,,,,,,,,,,,,,"","",""
+2,,,,,,,,,,,,,,,,,"","",""
+3,,,,,,,,,,,,,,,,,"","",""
+4,,,,,,,,,,,,,,,,,"","",""
+5,,,,,,,,,,,,,,,,,"","",""
+6,Turnin,3022,Handle With Care,Darnassus,,,,,,https://classic.wowhead.com/quest=3022,,,,,,,"","",""
+7,Accept,3661,Favored of Elune?,Darnassus,,,,,,https://classic.wowhead.com/quest=3661,,,,,,,"","",accept Favored of Elune?##3661
+8,Turnin,2939,In Search of Knowledge,Darnassus,,,,,,https://classic.wowhead.com/quest=2939,,,,,,,"","",""
+9,Accept,2940,Feralas: A History,Darnassus,,,,,,https://classic.wowhead.com/quest=2940,,,,,,,"","",accept Feralas: A History##2940
+10,Turnin,2940,Feralas: A History,Darnassus,,,,,,https://classic.wowhead.com/quest=2940,,,,,,,"","",""
+11,Accept,2941,The Borrower,Darnassus,,,,,,https://classic.wowhead.com/quest=2941,,,,,,,"","",accept The Borrower##2941
+12,Turnin,4267,Rise of the Silithid,Dalaran,,,,,,https://classic.wowhead.com/quest=4267,,,,,,,"","",""
+13,Turnin,2972,Doling Justice,Dalaran,,,,,,https://classic.wowhead.com/quest=2972,,,,,,,"","",""
+14,UseHearthstone,,,,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",use Hearthstone##6948
+15,Fly,,,Tanaris,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Tanaris
+16,Turnin,2941,The Borrower,Tanaris,,,,,,https://classic.wowhead.com/quest=2941,,,,,,,"","",""
+17,Accept,2944,The Super Snapper FX,Tanaris,,,,,,https://classic.wowhead.com/quest=2944,,,,,,,"","",accept The Super Snapper FX##2944
+18,Turnin,3520,Screecher Spirits,Tanaris,,,,,,https://classic.wowhead.com/quest=3520,,,,,,,"","",""
+19,AcceptOptional,3527,The Prophecy of Mosh'aru,Tanaris,,,,,,https://classic.wowhead.com/quest=3527,,,,,,,"","",
+20,AcceptOptional,2865,Scarab Shells,Tanaris,,,,,,https://classic.wowhead.com/quest=2865,,,,,,,"","",
+21,AcceptOptional,2768,Divino-matic Rod,Tanaris,,,,,,https://classic.wowhead.com/quest=2768,,,,,,,"","",
+22,AcceptOptional,3042,Troll Temper,Tanaris,,,,,,https://classic.wowhead.com/quest=3042,,,,,,,"","",
+23,Accept,992,Gadgetzan Water Survey,Tanaris,,,,,,https://classic.wowhead.com/quest=992,,,,,,,"","",accept Gadgetzan Water Survey##992
+24,Do,992,Gadgetzan Water Survey,Tanaris,,,,,,https://classic.wowhead.com/quest=992,,,,,,,"","",Do: Gadgetzan Water Survey
+25,Grind,,,Zul'Farrak,,,48,,,https://classic.wowhead.com/quest=,,,,,,,"","","Grind until level48
+|ding 48"
+26,UseHearthstone,,,Feralas,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",use Hearthstone##6948
+27,Accept,3445,The Sunken Temple,Feralas,,,,,,https://classic.wowhead.com/quest=3445,,,,,,,"","",accept The Sunken Temple##3445
+28,Fly,,,Tanaris,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Tanaris
+29,TurnInOptional,3042,Troll Temper,Tanaris,,,,,,https://classic.wowhead.com/quest=3042,,,,,,,"","",
+30,Accept,2605,The Thirsty Goblin,Tanaris,,,,,,https://classic.wowhead.com/quest=2605,,,,,,,"","",accept The Thirsty Goblin##2605
+31,TurnInOptional,2768,Divino-matic Rod,Tanaris,,,,,,https://classic.wowhead.com/quest=2768,,,,,,,"","",
+32,Accept,5863,The Dunemaul Compound,Tanaris,,,,,,https://classic.wowhead.com/quest=5863,,,,,,,"","",accept The Dunemaul Compound##5863
+33,TurnInOptional,2865,Scarab Shells,Tanaris,,,,,,https://classic.wowhead.com/quest=2865,,,,,,,"","",
+34,Accept,3362,Thistleshrub Valley,Tanaris,,,,,,https://classic.wowhead.com/quest=3362,,,,,,,"","",accept Thistleshrub Valley##3362
+35,TurnIn,992,Gadgetzan Water Survey,Tanaris,,,,,,https://classic.wowhead.com/quest=992,,,,,,,"","",turnin Gadgetzan Water Survey##992
+36,Accept,82,Noxious Lair Investigation,Tanaris,,,,,,https://classic.wowhead.com/quest=82,,,,,,,"","",accept Noxious Lair Investigation##82
+37,TurnIn,3445,The Sunken Temple,Tanaris,,,,,,https://classic.wowhead.com/quest=3445,,,,,,,"","",turnin The Sunken Temple##3445
+38,Accept,3444,The Stone Circle,Tanaris,,,,,,https://classic.wowhead.com/quest=3444,,,,,,,"","",accept The Stone Circle##3444
+39,Accept,3161,Gahz'ridian,Tanaris,,,,,,https://classic.wowhead.com/quest=3161,,,,,,,"","",accept Gahz'ridian##3161
+40,Do,5863,The Dunemaul Compound,Tanaris,,,,,,https://classic.wowhead.com/quest=5863,,,,,,,"","",Do: The Dunemaul Compound
+41,Do,82,Noxious Lair Investigation,Tanaris,,,,,,https://classic.wowhead.com/quest=82,,,,,,,"","",Do: Noxious Lair Investigation
+42,Do,3161,Gahz'ridian,Tanaris,,,,,,https://classic.wowhead.com/quest=3161,,,,,,,"","",Do: Gahz'ridian
+43,Do,2605,The Thirsty Goblin,Tanaris,,,,,,https://classic.wowhead.com/quest=2605,,,,,,,"","",Do: The Thirsty Goblin
+44,Do,3362,Thistleshrub Valley,Tanaris,,,,,,https://classic.wowhead.com/quest=3362,,,,,,,"","",Do: Thistleshrub Valley
+45,Text,,,Tanaris,,,,,You should have found the chicken beacon quest by now,https://classic.wowhead.com/quest=,,,,,,,"","",You should have found the chicken beacon quest by now
+46,Accept,351,Find OOX-17/TN!,Tanaris,,,,,,https://classic.wowhead.com/quest=351,,,,,,,"","",accept Find OOX-17/TN!##351
+47,Accept,1560,Tooga's Quest,Tanaris,,,,,,https://classic.wowhead.com/quest=1560,,,,,,,"","",accept Tooga's Quest##1560
+48,Text,,,Tanaris,,,,,"Escort quest inv,if youre in a group, dont accept the follow before everyone has turned in!",https://classic.wowhead.com/quest=,,,,,,,"","","Escort quest inv,if youre in a group, dont accept the follow before everyone has turned in!"
+49,TurnIn,351,Find OOX-17/TN!,Tanaris,,,,,,https://classic.wowhead.com/quest=351,,,,,,,"","",turnin Find OOX-17/TN!##351
+50,Accept,648,Rescue OOX-17/TN!,Tanaris,,,,,,https://classic.wowhead.com/quest=648,,,,,,,"","",accept Rescue OOX-17/TN!##648
+51,Do,648,Rescue OOX-17/TN!,Tanaris,,,,,,https://classic.wowhead.com/quest=648,,,,,,,"","",Do: Rescue OOX-17/TN!
+52,TurnIn,1560,Tooga's Quest,Tanaris,,,,,,https://classic.wowhead.com/quest=1560,,,,,,,"","",turnin Tooga's Quest##1560
+53,TurnInOptional,3527,The Prophecy of Mosh'aru,Tanaris,,,,,,https://classic.wowhead.com/quest=3527,,,,,,,"","",
+54,TurnIn,5863,The Dunemaul Compound,Tanaris,,,,,,https://classic.wowhead.com/quest=5863,,,,,,,"","",turnin The Dunemaul Compound##5863
+55,TurnIn,2605,The Thirsty Goblin,Tanaris,,,,,,https://classic.wowhead.com/quest=2605,,,,,,,"","",turnin The Thirsty Goblin##2605
+56,Accept,2606,In Good Taste,Tanaris,,,,,,https://classic.wowhead.com/quest=2606,,,,,,,"","",accept In Good Taste##2606
+57,TurnIn,2606,In Good Taste,Tanaris,,,,,,https://classic.wowhead.com/quest=2606,,,,,,,"","",turnin In Good Taste##2606
+58,Accept,2641,Sprinkle's Secret Ingredient,Tanaris,,,,,,https://classic.wowhead.com/quest=2641,,,,,,,"","",accept Sprinkle's Secret Ingredient##2641
+59,TurnIn,82,Noxious Lair Investigation,Tanaris,,,,,,https://classic.wowhead.com/quest=82,,,,,,,"","",turnin Noxious Lair Investigation##82
+60,Accept,10,The Scrimshank Redemption,Tanaris,,,,,,https://classic.wowhead.com/quest=10,,,,,,,"","",accept The Scrimshank Redemption##10
+61,TurnIn,3362,Thistleshrub Valley,Tanaris,,,,,,https://classic.wowhead.com/quest=3362,,,,,,,"","",turnin Thistleshrub Valley##3362
+62,TurnIn,3161,Gahz'ridian,Tanaris,,,,,,https://classic.wowhead.com/quest=3161,,,,,,,"","",turnin Gahz'ridian##3161
+63,Run,,,Tanaris,"55,70",,,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""55""
+	""70""
+]",55,70,"","","Run to 55,70 |goto Tanaris 55,70"
+64,Run,,,Tanaris,"54.2,72.9",,,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""54.2""
+	""72.9""
+]",54.2,72.9,"","","Run to 54.2,72.9 |goto Tanaris 54.2,72.9"
+65,Run,,,Tanaris,"56.3,72.2",,,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""56.3""
+	""72.2""
+]",56.3,72.2,"","","Run to 56.3,72.2 |goto Tanaris 56.3,72.2"
+66,Do,10,The Scrimshank Redemption,Tanaris,,,,,,https://classic.wowhead.com/quest=10,,,,,,,"","",Do: The Scrimshank Redemption
+67,TurnIn,10,The Scrimshank Redemption,Tanaris,,,,,,https://classic.wowhead.com/quest=10,,,,,,,"","",turnin The Scrimshank Redemption##10
+68,Accept,110,Insect Part Analysis,Tanaris,,,,,,https://classic.wowhead.com/quest=110,,,,,,,"","",accept Insect Part Analysis##110
+69,TurnIn,110,Insect Part Analysis,Tanaris,,,,,,https://classic.wowhead.com/quest=110,,,,,,,"","",turnin Insect Part Analysis##110
+70,Accept,113,Insect Part Analysis,Tanaris,,,,,,https://classic.wowhead.com/quest=113,,,,,,,"","",accept Insect Part Analysis##113
+71,TurnIn,113,Insect Part Analysis,Tanaris,,,,,,https://classic.wowhead.com/quest=113,,,,,,,"","",turnin Insect Part Analysis##113
+72,Accept,162,Rise of the Silithid,Tanaris,,,,,,https://classic.wowhead.com/quest=162,,,,,,,"","",accept Rise of the Silithid##162
+73,Fly,,,Duskwallow Marsh,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Duskwallow Marsh
+74,Text,,,Duskwallow Marsh,,,,,Take the Boat to Wetlands,https://classic.wowhead.com/quest=,,,,,,,"","",Take the Boat to Wetlands
+75,Fly,,,Stormwind City,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Stormwind City
+76,TurnIn,1448,In Search of The Temple,Stormwind City,,,,,,https://classic.wowhead.com/quest=1448,,,,,,,"","",turnin In Search of The Temple##1448
+77,Accept,1449,To The Hinterlands,Stormwind City,,,,,,https://classic.wowhead.com/quest=1449,,,,,,,"","",accept To The Hinterlands##1449
+78,Fly,,,Hillsbrad Foothills,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Hillsbrad Foothills

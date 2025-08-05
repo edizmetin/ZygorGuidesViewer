@@ -31,7 +31,6 @@ def convert_all_guides():
     )
     lua_path = data_path.parent / "updated_guides" / "lua"
     for row in guide_structure.iter_rows(named=True):
-        logger.debug(row)
         write_guide_to_lua(
             row["Name_raw"],
             df_set[row["Name"]],
@@ -65,16 +64,24 @@ def parse_class(df: pl.DataFrame):
 
 
 def sanitize_df(df: pl.DataFrame):
+    if "ItemID" not in df.columns:
+        df = df.with_columns(pl.lit(None).alias(GuideSchema.ITEM_ID))
+    if GuideSchema.ITEM_NAME not in df.columns:
+        df = df.with_columns(pl.lit(None).alias(GuideSchema.ITEM_NAME))
+    if GuideSchema.ITEM_AMOUNT not in df.columns:
+         df = df.with_columns(pl.lit(None).alias(GuideSchema.ITEM_AMOUNT))
+    if GuideSchema.QUEST_NAME not in df.columns:
+        # TODO : This only happens in the 6-9 Gnome guide which is missing Quest names
+        df = df.with_columns(pl.lit("").alias(GuideSchema.QUEST_NAME ))
     return df.pipe(parse_coords).pipe(parse_class)
-
 
 def convert_guide(df: pl.DataFrame):
     df = df.pipe(sanitize_df)
     df = df.with_columns(build_action_expression())
     df = df.with_columns(add_conditional())
 
-    logger.debug(df)
     return df
+
 
 
 def write_guide_to_csv(name: str, df: pl.DataFrame, path: Path):

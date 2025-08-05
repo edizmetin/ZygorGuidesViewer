@@ -1,0 +1,56 @@
+row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,ItemName,ItemAmount,coords_split,X,Y,NpcName,NpcId,formatted_text
+0,,,,,,,,,,,,,,,,,"","",""
+1,,,,,,,,,,,,,,,,,"","",""
+2,,,,,,,,,,,,,,,,,"","",""
+3,,,,,,,,,,,,,,,,,"","",""
+4,,,,,,,,,,,,,,,,,"","",""
+5,,,,,,,,,,,,,,,,,"","",""
+6,TurnInOptional,697,Malin's Request,Stormwind City,,,,,,https://classic.wowhead.com/quest=697,,,,,,,"","",
+7,TurnInOptional,543,The Perenolde Tiara,Stormwind City,,,,,,https://classic.wowhead.com/quest=543,,,,,,,"","",
+8,Fly,,,Loch Modan,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Loch Modan
+9,Accept,2500,Badlands Reagent Run,Loch Modan,,,,,,https://classic.wowhead.com/quest=2500,,,,,,,"","",accept Badlands Reagent Run##2500
+10,TurnIn,707,Ironband Wants You!,Loch Modan,,,,,,https://classic.wowhead.com/quest=707,,,,,,,"","",turnin Ironband Wants You!##707
+11,Accept,738,Find Agmond,Loch Modan,,,,,,https://classic.wowhead.com/quest=738,,,,,,,"","",accept Find Agmond##738
+12,Text,,,Badlands,,,,,Kill all Vultures & wolves from now on,https://classic.wowhead.com/quest=,,,,,,,"","",Kill all Vultures & wolves from now on
+13,Accept,719,A Dwarf and His Tools,Badlands,,,,,,https://classic.wowhead.com/quest=719,,,,,,,"","",accept A Dwarf and His Tools##719
+14,Accept,718,Mirages,Badlands,,,,,,https://classic.wowhead.com/quest=718,,,,,,,"","",accept Mirages##718
+15,TurnIn,1106,Martek the Exiled,Badlands,,,,,,https://classic.wowhead.com/quest=1106,,,,,,,"","",turnin Martek the Exiled##1106
+16,Accept,1108,Indurium,Badlands,,,,,,https://classic.wowhead.com/quest=1108,,,,,,,"","",accept Indurium##1108
+17,Accept,703,Barbecued Buzzard Wings,Badlands,,,,,,https://classic.wowhead.com/quest=703,,,,,,,"","",accept Barbecued Buzzard Wings##703
+18,Accept,710,Study of the Elements: Rock,Badlands,,,,,,https://classic.wowhead.com/quest=710,,,,,,,"","",accept Study of the Elements: Rock##710
+19,Do,710,Study of the Elements: Rock,Badlands,,,,,,https://classic.wowhead.com/quest=710,,,,,,,"","",Do: Study of the Elements: Rock
+20,Text,,,Badlands,,,,,Grind on the elementals for 6-10 bars,https://classic.wowhead.com/quest=,,,,,,,"","",Grind on the elementals for 6-10 bars
+21,TurnIn,710,Study of the Elements: Rock,Badlands,,,,,,https://classic.wowhead.com/quest=710,,,,,,,"","",turnin Study of the Elements: Rock##710
+22,Accept,711,Study of the Elements: Rock,Badlands,,,,,,https://classic.wowhead.com/quest=711,,,,,,,"","",accept Study of the Elements: Rock##711
+23,Do,711,Study of the Elements: Rock,Badlands,,,,,,https://classic.wowhead.com/quest=711,,,,,,,"","",Do: Study of the Elements: Rock
+24,TurnIn,711,Study of the Elements: Rock,Badlands,,,,,,https://classic.wowhead.com/quest=711,,,,,,,"","",turnin Study of the Elements: Rock##711
+25,Accept,712,Study of the Elements: Rock,Badlands,,,,,,https://classic.wowhead.com/quest=712,,,,,,,"","",accept Study of the Elements: Rock##712
+26,Do,718,Mirages,Badlands,,,,,,https://classic.wowhead.com/quest=718,,,,,,,"","",Do: Mirages
+27,Do,719,A Dwarf and His Tools,Badlands,,,,,,https://classic.wowhead.com/quest=719,,,,,,,"","",Do: A Dwarf and His Tools
+28,Accept,720,A Sign of Hope,Badlands,,,,,,https://classic.wowhead.com/quest=720,,,,,,,"","",accept A Sign of Hope##720
+29,TurnIn,719,A Dwarf and His Tools,Badlands,,,,,,https://classic.wowhead.com/quest=719,,,,,,,"","",turnin A Dwarf and His Tools##719
+30,TurnIn,720,A Sign of Hope,Badlands,,,,,,https://classic.wowhead.com/quest=720,,,,,,,"","",turnin A Sign of Hope##720
+31,TurnIn,718,Mirages,Badlands,,,,,,https://classic.wowhead.com/quest=718,,,,,,,"","",turnin Mirages##718
+32,Accept,733,Scrounging,Badlands,,,,,,https://classic.wowhead.com/quest=733,,,,,,,"","",accept Scrounging##733
+33,Text,,,Badlands,,,,,Farm more if youre not [XP40] yet,https://classic.wowhead.com/quest=,,,,,,,"","",Farm more if youre not [XP40] yet
+34,Accept,732,Tremors of the Earth,Badlands,,,,,,https://classic.wowhead.com/quest=732,,,,,,,"","",accept Tremors of the Earth##732
+35,Text,,,Badlands,,,,,Keep an eye out for Boss Tho'grun,https://classic.wowhead.com/quest=,,,,,,,"","",Keep an eye out for Boss Tho'grun
+36,TurnIn,738,Find Agmond,Badlands,,,,,,https://classic.wowhead.com/quest=738,,,,,,,"","",turnin Find Agmond##738
+37,Accept,739,Murdaloc,Badlands,,,,,,https://classic.wowhead.com/quest=739,,,,,,,"","",accept Murdaloc##739
+38,Do,739,Murdaloc,Badlands,,,,,,https://classic.wowhead.com/quest=739,,,,,,,"","",Do: Murdaloc
+39,Do,1108,Indurium,Badlands,,,,,,https://classic.wowhead.com/quest=1108,,,,,,,"","",Do: Indurium
+40,Text,,,Badlands,,,,,"The next quest can be hard for melees, do it later if necessary",https://classic.wowhead.com/quest=,,,,,,,"","","The next quest can be hard for melees, do it later if necessary"
+41,Do,712,Study of the Elements: Rock,Badlands,,,,,,https://classic.wowhead.com/quest=712,,,,,,,"","",Do: Study of the Elements: Rock
+42,Do,732,Tremors of the Earth,Badlands,,,,,,https://classic.wowhead.com/quest=732,,,,,,,"","",Do: Tremors of the Earth
+43,Do,733,Scrounging,Badlands,,,,,,https://classic.wowhead.com/quest=733,,,,,,,"","",Do: Scrounging
+44,TurnIn,712,Study of the Elements: Rock,Badlands,,,,,,https://classic.wowhead.com/quest=712,,,,,,,"","",turnin Study of the Elements: Rock##712
+45,Text,,,Badlands,,,,,Grind on the elementals for 6-10 bars,https://classic.wowhead.com/quest=,,,,,,,"","",Grind on the elementals for 6-10 bars
+46,Do,2500,Badlands Reagent Run,Badlands,,,,,,https://classic.wowhead.com/quest=2500,,,,,,,"","",Do: Badlands Reagent Run
+47,TurnIn,703,Barbecued Buzzard Wings,Badlands,,,,,,https://classic.wowhead.com/quest=703,,,,,,,"","",turnin Barbecued Buzzard Wings##703
+48,TurnIn,1108,Indurium,Badlands,,,,,,https://classic.wowhead.com/quest=1108,,,,,,,"","",turnin Indurium##1108
+49,Accept,1137,News for Fizzle,Badlands,,,,,,https://classic.wowhead.com/quest=1137,,,,,,,"","",accept News for Fizzle##1137
+50,TurnIn,732,Tremors of the Earth,Badlands,,,,,,https://classic.wowhead.com/quest=732,,,,,,,"","",turnin Tremors of the Earth##732
+51,TurnIn,733,Scrounging,Badlands,,,,,,https://classic.wowhead.com/quest=733,,,,,,,"","",turnin Scrounging##733
+52,TurnIn,739,Murdaloc,Badlands,,,,,,https://classic.wowhead.com/quest=739,,,,,,,"","",turnin Murdaloc##739
+53,TurnIn,2500,Badlands Reagent Run,Badlands,,,,,,https://classic.wowhead.com/quest=2500,,,,,,,"","",turnin Badlands Reagent Run##2500
+54,Text,,,Badlands,,,,,"If you dont intent to do Uldaman, Grind till 41 and skip to the next guide after",https://classic.wowhead.com/quest=,,,,,,,"","","If you dont intent to do Uldaman, Grind till 41 and skip to the next guide after"

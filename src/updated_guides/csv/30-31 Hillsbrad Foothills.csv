@@ -1,0 +1,60 @@
+row_id,Action,ID,QuestName,Location,Coords,XP,Level,Text,WowHead,ItemID,ItemName,ItemAmount,coords_split,X,Y,NpcName,NpcId,Class,formatted_text
+0,,,,,,,,,,,,,,,,"","",,""
+1,,,,,,,,,,,,,,,,"","",,""
+2,,,,,,,,,,,,,,,,"","",,""
+3,,,,,,,,,,,,,,,,"","",,""
+4,,,,,,,,,,,,,,,,"","",,""
+5,Flightpath,,,Hillsbrad Foothills,"49.4,52.4",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""49.4""
+	""52.4""
+]",49.4,52.4,"","",,"fpath Hillsbrad Foothills |goto Hillsbrad Foothills 49.4,52.4"
+6,Accept,659,Hints of a New Plague?,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=659,,,,,,,"","",,accept Hints of a New Plague?##659
+7,Accept,536,Down the Coast,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=536,,,,,,,"","",,accept Down the Coast##536
+8,Do,536,Down the Coast,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=536,,,,,,,"","",,Do: Down the Coast
+9,Text,,,Hillsbrad Foothills,,,,Grind on the Murlocs till [XP30+25000],https://classic.wowhead.com/quest=,,,,,,,"","",,Grind on the Murlocs till [XP30+25000]
+10,Turnin,536,Down the Coast,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=536,,,,,,,"","",,""
+11,Accept,559,Farren's Proof,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=559,,,,,,,"","",,accept Farren's Proof##559
+12,Do,559,Farren's Proof,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=559,,,,,,,"","",,Do: Farren's Proof
+13,Text,,,Hillsbrad Foothills,,,,Grind on the Murlocs till [XP30+35000],https://classic.wowhead.com/quest=,,,,,,,"","",,Grind on the Murlocs till [XP30+35000]
+14,Turnin,559,Farren's Proof,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=559,,,,,,,"","",,""
+15,Accept,560,Farren's Proof,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=560,,,,,,,"","",,accept Farren's Proof##560
+16,Turnin,560,Farren's Proof,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=560,,,,,,,"","",,""
+17,Accept,561,Farren's Proof,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=561,,,,,,,"","",,accept Farren's Proof##561
+18,Turnin,561,Farren's Proof,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=561,,,,,,,"","",,""
+19,Accept,562,Stormwind Ho!,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=562,,,,,,,"","",,accept Stormwind Ho!##562
+20,Do,562,Stormwind Ho!,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=562,,,,,,,"","",,Do: Stormwind Ho!
+21,Text,,,Hillsbrad Foothills,,,,Grind on the Murlocs till [XP30+45500],https://classic.wowhead.com/quest=,,,,,,,"","",,Grind on the Murlocs till [XP30+45500]
+22,Turnin,562,Stormwind Ho!,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=562,,,,,,,"","",,""
+23,Accept,563,Reassignment,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=563,,,,,,,"","",,accept Reassignment##563
+24,UseHearthstone,,,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",,use Hearthstone##6948
+25,Turnin,292,The Eye of Paleth,Wetlands,,,,,https://classic.wowhead.com/quest=292,,,,,,,"","",,""
+26,Accept,293,Cleansing the Eye,Wetlands,,,,,https://classic.wowhead.com/quest=293,,,,,,,"","",,accept Cleansing the Eye##293
+27,TurninOptional,474,Defeat Nek'rosh,Wetlands,,,,,https://classic.wowhead.com/quest=474,,,,,,,"","",,""
+28,Fly,,,Ironforge,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",,fpath Ironforge
+29,TurnIn,637,Sully Balloo's Letter,Ironforge,,,,,https://classic.wowhead.com/quest=637,,,,,,,"","",,turnin Sully Balloo's Letter##637
+30,Accept,683,Sara Balloo's Plea,Ironforge,,,,,https://classic.wowhead.com/quest=683,,,,,,,"","",,accept Sara Balloo's Plea##683
+31,TurnIn,683,Sara Balloo's Plea,Ironforge,,,,,https://classic.wowhead.com/quest=683,,,,,,,"","",,turnin Sara Balloo's Plea##683
+32,Accept,686,A King's Tribute,Ironforge,,,,,https://classic.wowhead.com/quest=686,,,,,,,"","",,accept A King's Tribute##686
+33,TurnIn,686,A King's Tribute,Ironforge,,,,,https://classic.wowhead.com/quest=686,,,,,,,"","",,turnin A King's Tribute##686
+34,Accept,689,A King's Tribute,Ironforge,,,,,https://classic.wowhead.com/quest=689,,,,,,,"","",,accept A King's Tribute##689
+35,Accept,1179,The Brassbolts Brothers,Ironforge,,,,,https://classic.wowhead.com/quest=1179,,,,,,,"","",,accept The Brassbolts Brothers##1179
+36,Learn,,,Ironforge,,,30,,https://classic.wowhead.com/quest=,,,,,,,"","","Warrior,Hunter","Get your level 30 spells at your trainer
+|only if Warrior,Hunter"
+37,TurnIn,2923,Tinkmaster Overspark,Ironforge,,,,,https://classic.wowhead.com/quest=2923,,,,,,,"","",,turnin Tinkmaster Overspark##2923
+38,TurnIn,2925,Klockmort's Essentials,Ironforge,,,,,https://classic.wowhead.com/quest=2925,,,,,,,"","",,turnin Klockmort's Essentials##2925
+39,TurnIn,7807,A Donation of Wool,Ironforge,,,,,https://classic.wowhead.com/quest=7807,,,,,,,"","",,turnin A Donation of Wool##7807
+40,TurnIn,1072,An Old Colleague,Ironforge,,,,,https://classic.wowhead.com/quest=1072,,,,,,,"","",,turnin An Old Colleague##1072
+41,Text,,,Ironforge,,,,Take the train to stormwind.,https://classic.wowhead.com/quest=,,,,,,,"","",,Take the train to stormwind.
+42,TurnIn,322,Blessed Arm,Stormwind,,,,,https://classic.wowhead.com/quest=322,,,,,,,"","",,turnin Blessed Arm##322
+43,Accept,325,Armed and Ready,Stormwind,,,,,https://classic.wowhead.com/quest=325,,,,,,,"","",,accept Armed and Ready##325
+44,TurnIn,293,Cleansing the Eye,Stormwind,,,,,https://classic.wowhead.com/quest=293,,,,,,,"","",,turnin Cleansing the Eye##293
+45,Learn,,,Stormwind,,,30,,https://classic.wowhead.com/quest=,,,,,,,"","","Paladin,Priest","Get your level 30 spells at your trainer
+|only if Paladin,Priest"
+46,TurnIn,335,A Noble Brew,Stormwind,,,,,https://classic.wowhead.com/quest=335,,,,,,,"","",,turnin A Noble Brew##335
+47,Accept,336,A Noble Brew,Stormwind,,,,,https://classic.wowhead.com/quest=336,,,,,,,"","",,accept A Noble Brew##336
+48,Learn,,,Stormwind,,,30,,https://classic.wowhead.com/quest=,,,,,,,"","","Warlock,Mage,Warrior","Get your level 30 spells at your trainer
+|only if Warlock,Mage,Warrior"
+49,Text,,,,,,,"If you have 60 silk already: TurnIn: [QT7793] A Donation of silk at: [G44.3, 73.9 Stormwind City]",https://classic.wowhead.com/quest=,,,,,,,"","",,"If you have 60 silk already: TurnIn: [QT7793] A Donation of silk at: [G44.3, 73.9 Stormwind City]"
+50,,,,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",,""

@@ -1,0 +1,45 @@
+Name,Action,ID,Location,Coords,XP,Level,Class,Text,Wowhead
+[GA Alliance],,,,,,,,,
+[N77c Zul Drak - Alliance],,,,,,,,,
+[NX78a Sholazar Basin - Alliance],,,,,,,,,
+"[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,,,,,
+"This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",Text,,,,,,,,
+I am marking EVERY Elite quest and dungeons as optional in this guide. Especially on release you should do them!!! You'll easily find groups for elite quests and dungeons.,Text,,,,,,,,
+TurnIn: [QT12675],TurnIn,12675,,,,,,,https://wotlk.wowhead.com/quest=12675
+Accept: [QA12684],Accept,12684,,,,,,,https://wotlk.wowhead.com/quest=12684
+Do: [QC12659],Do,12659,,,,,,,https://wotlk.wowhead.com/quest=12659
+Do: [QC12662],Do,12662,,,,,,,https://wotlk.wowhead.com/quest=12662
+Do: [QC12684],Do,12684,,,,,,,https://wotlk.wowhead.com/quest=12684
+TurnIn: [QT12684],TurnIn,12684,,,,,,,https://wotlk.wowhead.com/quest=12684
+Accept: [QA12685],Accept,12685,,,,,,,https://wotlk.wowhead.com/quest=12685
+Do: [QC12685],Do,12685,,,,,,,https://wotlk.wowhead.com/quest=12685
+TurnIn: [QT12662],TurnIn,12662,,,,,,,https://wotlk.wowhead.com/quest=12662
+TurnIn: [QT12659],TurnIn,12659,,,,,,,https://wotlk.wowhead.com/quest=12659
+TurnIn: [QT12685],TurnIn,12685,,,,,,,https://wotlk.wowhead.com/quest=12685
+TurnIn: [QT13549],TurnIn,13549,,,,,,,https://wotlk.wowhead.com/quest=13549
+Accept: [QA12708],Accept,12708,,,,,,,https://wotlk.wowhead.com/quest=12708
+Accept: [QA12709],Accept,12709,,,,,,,https://wotlk.wowhead.com/quest=12709
+Accept: [QA12712],Accept,12712,,,,,,,https://wotlk.wowhead.com/quest=12712
+Accept: [QA12707],Accept,12707,,,,,,,https://wotlk.wowhead.com/quest=12707
+Do: [QC12707],Do,12707,,,,,,,https://wotlk.wowhead.com/quest=12707
+Do: [QC12712],Do,12712,,,,,,,https://wotlk.wowhead.com/quest=12712
+Do: [QC12709],Do,12709,,,,,,,https://wotlk.wowhead.com/quest=12709
+Do: [QC12708],Do,12708,,,,,,,https://wotlk.wowhead.com/quest=12708
+TurnIn: [QT12708],TurnIn,12708,,,,,,,https://wotlk.wowhead.com/quest=12708
+TurnIn: [QT12709],TurnIn,12709,,,,,,,https://wotlk.wowhead.com/quest=12709
+TurnIn: [QT12712],TurnIn,12712,,,,,,,https://wotlk.wowhead.com/quest=12712
+Accept: [QA12721],Accept,12721,,,,,,,https://wotlk.wowhead.com/quest=12721
+TurnIn: [QT12707],TurnIn,12707,,,,,,,https://wotlk.wowhead.com/quest=12707
+Do: [QC12721],Do,12721,,,,,,,https://wotlk.wowhead.com/quest=12721
+"Get the [P] flightpath at: [G70.4, 23.2Zul'Drak]",Flightpath,,Zul'Drak,"70.4, 23.2",,,,,https://wotlk.wowhead.com/quest=
+TurnIn: [QT29836],TurnIn,29836,,,,,,,https://wotlk.wowhead.com/quest=29836
+If you intend to do Gun'Drak accept the next 2 quests(For Prosperity&One of a Kind). if not continue with "Eggs for Dubra'Jin",Text,,,,,,,If you intend to do Gun'Drak accept the next 2 quests(For Prosperity&One of a Kind). if not continue with "Eggs for Dubra'Jin",https://wotlk.wowhead.com/quest=
+Accept: [QA13098],Accept,13098,,,,,,,https://wotlk.wowhead.com/quest=13098
+Accept: [QA13111],Accept,13111,,,,,,,https://wotlk.wowhead.com/quest=13111
+Accept: [QA13556],Accept,13556,,,,,,,https://wotlk.wowhead.com/quest=13556
+Do: [QC13556],Do,13556,,,,,,,https://wotlk.wowhead.com/quest=13556
+TurnIn: [QT13556],TurnIn,13556,,,,,,,https://wotlk.wowhead.com/quest=13556
+Fly to [F Zim'Torga],Fly,,Zim'Torga,,,,,,https://wotlk.wowhead.com/quest=
+TurnIn: [QT12721],TurnIn,12721,,,,,,,https://wotlk.wowhead.com/quest=12721
+Accept: [QA12729],Accept,12729,,,,,,,https://wotlk.wowhead.com/quest=12729
+"This quest is an Elite quest and a pre-quest for the last missing Gun'Drak quest. On release you should be able to find people to do this with, later on not so much. Either way you should do Gun'Drak anyway as you got all quests for it now whilst we are moving over to Sholazar Basin now. Your last chance to find people for the missing other elite quests too. If you cant find anyone...Abandon them.",Text,,,,,,,"This quest is an Elite quest and a pre-quest for the last missing Gun'Drak quest. On release you should be able to find people to do this with, later on not so much. Either way you should do Gun'Drak anyway as you got all quests for it now whilst we are moving over to Sholazar Basin now. Your last chance to find people for the missing other elite quests too. If you cant find anyone...Abandon them.",https://wotlk.wowhead.com/quest=

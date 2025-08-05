@@ -1,0 +1,56 @@
+Name,Action,ID,Location,Coords,XP,Level,Class,Text,Wowhead
+[N55-56 Deathknight],,,,,,,,,
+[NX56-57 Deathknight],,,,,,,,,
+"[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,,,,,
+"This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",,,,,,,,,
+I am marking EVERY Elite quest and dungeons as optional in this guide. Especially on release you should do them!!! You'll easily find groups for elite quests and dungeons.,,,,,,,,,
+Accept: [QA12593],Accept,12593,,,,,,,https://wotlk.wowhead.com/quest=12593
+TurnIn: [QT12593],TurnIn,12593,,,,,,,https://wotlk.wowhead.com/quest=12593
+Accept: [QA12619],Accept,12619,,,,,,,https://wotlk.wowhead.com/quest=12619
+Do: [QC12619],Do,12619,,,,,,,https://wotlk.wowhead.com/quest=12619
+TurnIn: [QT12619],TurnIn,12619,,,,,,,https://wotlk.wowhead.com/quest=12619
+Accept: [QA12842],Accept,12842,,,,,,,https://wotlk.wowhead.com/quest=12842
+Do: [QC12842],Do,12842,,,,,,,https://wotlk.wowhead.com/quest=12842
+TurnIn: [QT12842],TurnIn,12842,,,,,,,https://wotlk.wowhead.com/quest=12842
+Accept: [QA12848],Accept,12848,,,,,,,https://wotlk.wowhead.com/quest=12848
+Do: [QC12848],Do,12848,,,,,,,https://wotlk.wowhead.com/quest=12848
+TurnIn: [QT12848],TurnIn,12848,,,,,,,https://wotlk.wowhead.com/quest=12848
+Accept: [QA12636],Accept,12636,,,,,,,https://wotlk.wowhead.com/quest=12636
+TurnIn: [QT12636],TurnIn,12636,,,,,,,https://wotlk.wowhead.com/quest=12636
+Accept: [QA12641],Accept,12641,,,,,,,https://wotlk.wowhead.com/quest=12641
+"Run to [G51.0,36.3The Scarlet Enclave]",Run,,The Scarlet Enclave,"51.0,36.3",,,,,https://wotlk.wowhead.com/quest=
+"Do: [QC12641,1]",Do,"12641,1",,,,,,,"https://wotlk.wowhead.com/quest=12641,1"
+"Do: [QC12641,3]",Do,"12641,3",,,,,,,"https://wotlk.wowhead.com/quest=12641,3"
+"Do: [QC12641,4]",Do,"12641,4",,,,,,,"https://wotlk.wowhead.com/quest=12641,4"
+"Do: [QC12641,2]",Do,"12641,2",,,,,,,"https://wotlk.wowhead.com/quest=12641,2"
+Hit 5 to return to Ebon Hold,Text,,,,,,,Hit 5 to return to Ebon Hold,https://wotlk.wowhead.com/quest=
+TurnIn: [QT12641],TurnIn,12641,,,,,,,https://wotlk.wowhead.com/quest=12641
+Accept: [QA12657],Accept,12657,,,,,,,https://wotlk.wowhead.com/quest=12657
+"Run to [G50.4,33.2The Scarlet Enclave]",Run,,The Scarlet Enclave,"50.4,33.2",,,,,https://wotlk.wowhead.com/quest=
+Use the Teleporter to get to the lower area of Ebon Hold.,Text,,,,,,,Use the Teleporter to get to the lower area of Ebon Hold.,https://wotlk.wowhead.com/quest=
+TurnIn: [QT12657],TurnIn,12657,,,,,,,https://wotlk.wowhead.com/quest=12657
+Accept: [QA12850],Accept,12850,,,,,,,https://wotlk.wowhead.com/quest=12850
+Accept: [QA12849],Accept,12849,,,,,,,https://wotlk.wowhead.com/quest=12849
+TurnIn: [QT12849],TurnIn,12849,,,,,,,https://wotlk.wowhead.com/quest=12849
+TurnIn: [QT12850],TurnIn,12850,,,,,,,https://wotlk.wowhead.com/quest=12850
+Accept: [QA12670],Accept,12670,,,,,,,https://wotlk.wowhead.com/quest=12670
+"Run to [G51,36.2The Scarlet Enclave]",Run,,The Scarlet Enclave,"51,36.2",,,,,https://wotlk.wowhead.com/quest=
+Fly down with the undead Gryphon,Text,,,,,,,Fly down with the undead Gryphon,https://wotlk.wowhead.com/quest=
+TurnIn: [QT12670],TurnIn,12670,,,,,,,https://wotlk.wowhead.com/quest=12670
+Accept: [QA12678],Accept,12678,,,,,,,https://wotlk.wowhead.com/quest=12678
+Accept: [QA12680],Accept,12680,,,,,,,https://wotlk.wowhead.com/quest=12680
+Accept: [QA12679],Accept,12679,,,,,,,https://wotlk.wowhead.com/quest=12679
+Accept: [QA12733],Accept,12733,,,,,,,https://wotlk.wowhead.com/quest=12733
+Do: [QC12733],Do,12733,,,,,,,https://wotlk.wowhead.com/quest=12733
+TurnIn: [QT12733],TurnIn,12733,,,,,,,https://wotlk.wowhead.com/quest=12733
+Do [QC12678- ][QC12679],Text,,,,,,,Do [QC12678- ][QC12679],https://wotlk.wowhead.com/quest=
+Accept: [QA12711],Accept,12711,,,,,,,https://wotlk.wowhead.com/quest=12711
+TurnIn: [QT12711],TurnIn,12711,,,,,,,https://wotlk.wowhead.com/quest=12711
+Do: [QC12680],Do,12680,,,,,,,https://wotlk.wowhead.com/quest=12680
+"Run to [G52.1,34.8The Scarlet Enclave]",Run,,The Scarlet Enclave,"52.1,34.8",,,,,https://wotlk.wowhead.com/quest=
+TurnIn: [QT12680],TurnIn,12680,,,,,,,https://wotlk.wowhead.com/quest=12680
+TurnIn: [QT12678],TurnIn,12678,,,,,,,https://wotlk.wowhead.com/quest=12678
+TurnIn: [QT12679],TurnIn,12679,,,,,,,https://wotlk.wowhead.com/quest=12679
+Accept: [QA12687],Accept,12687,,,,,,,https://wotlk.wowhead.com/quest=12687
+Do: [QC12687],Do,12687,,,,,,,https://wotlk.wowhead.com/quest=12687
+TurnIn: [QT12687],TurnIn,12687,,,,,,,https://wotlk.wowhead.com/quest=12687

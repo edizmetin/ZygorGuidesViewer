@@ -1,0 +1,57 @@
+Name,Action,ID,Location,Coords,XP,Level,Class,Text,Wowhead
+[GA Alliance],,,,,,,,,Do [QC12627- ][QC12622]
+[N80b Icecrown - Alliance],,,,,,,,,
+[NX80c Icecrown - Alliance],,,,,,,,,
+"[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,,,,,
+"This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",,,,,,,,,
+I am marking EVERY Elite quest and dungeons as optional in this guide. Especially on release you should do them!!! You'll easily find groups for elite quests and dungeons.,,,,,,,,,
+Accept: [QA13068],Accept,13068,,,,,,,https://wotlk.wowhead.com/quest=13068
+Accept: [QA13225],Accept,13225,,,,,,,https://wotlk.wowhead.com/quest=13225
+TurnIn: [QT13225],TurnIn,13225,,,,,,,https://wotlk.wowhead.com/quest=13225
+TurnIn: [QT13418],TurnIn,13418,,,,,,,https://wotlk.wowhead.com/quest=13418
+Accept: [QA13231],Accept,13231,,,,,,,https://wotlk.wowhead.com/quest=13231
+Accept: [QA12887],Accept,12887,,,,,,,https://wotlk.wowhead.com/quest=12887
+Accept: [QA13296],Accept,13296,,,,,,,https://wotlk.wowhead.com/quest=13296
+Accept: [QA13336],Accept,13336,,,,,,,https://wotlk.wowhead.com/quest=13336
+Accept: [QA13341],Accept,13341,,,,,,,https://wotlk.wowhead.com/quest=13341
+Do: [QC12887],Do,12887,,,,,,,https://wotlk.wowhead.com/quest=12887
+TurnIn: [QT12887],TurnIn,12887,,,,,,,https://wotlk.wowhead.com/quest=12887
+Accept: [QA12891],Accept,12891,,,,,,,https://wotlk.wowhead.com/quest=12891
+Do: [QC12891],Do,12891,,,,,,,https://wotlk.wowhead.com/quest=12891
+TurnIn: [QT12891],TurnIn,12891,,,,,,,https://wotlk.wowhead.com/quest=12891
+Accept: [QA12893],Accept,12893,,,,,,,https://wotlk.wowhead.com/quest=12893
+Do: [QC12893],Do,12893,,,,,,,https://wotlk.wowhead.com/quest=12893
+TurnIn: [QT12893],TurnIn,12893,,,,,,,https://wotlk.wowhead.com/quest=12893
+Accept: [QA12896],Accept,12896,,,,,,,https://wotlk.wowhead.com/quest=12896
+Do: [QC12896],Do,12896,,,,,,,https://wotlk.wowhead.com/quest=12896
+TurnIn: [QT13068],TurnIn,13068,,,,,,,https://wotlk.wowhead.com/quest=13068
+Accept: [QA13072],Accept,13072,,,,,,,https://wotlk.wowhead.com/quest=13072
+TurnIn: [QT12896],TurnIn,12896,,,,,,,https://wotlk.wowhead.com/quest=12896
+Accept: [QA12898],Accept,12898,,,,,,,https://wotlk.wowhead.com/quest=12898
+Accept: [QA13300],Accept,13300,,,,,,,https://wotlk.wowhead.com/quest=13300
+TurnIn: [QT13341],TurnIn,13341,,,,,,,https://wotlk.wowhead.com/quest=13341
+Accept: [QA13284],Accept,13284,,,,,,,https://wotlk.wowhead.com/quest=13284
+Do: [QC13284],Do,13284,,,,,,,https://wotlk.wowhead.com/quest=13284
+Do: [QC13336],Do,13336,,,,,,,https://wotlk.wowhead.com/quest=13336
+Do: [QC13300],Do,13300,,,,,,,https://wotlk.wowhead.com/quest=13300
+Accept: [QA13308][O],AcceptOptional,13308,,,,,,,https://wotlk.wowhead.com/quest=13308
+(Whenever you can)Do: [QC13308][O],DoOptional,13308,,,,,,,https://wotlk.wowhead.com/quest=13308
+TurnIn: [QT13308][O],TurnInOptional,13308,,,,,,,https://wotlk.wowhead.com/quest=13308
+TurnIn: [QT13296],TurnIn,13296,,,,,,,https://wotlk.wowhead.com/quest=13296
+Accept: [QA13280],Accept,13280,,,,,,,https://wotlk.wowhead.com/quest=13280
+Do: [QC13280],Do,13280,,,,,,,https://wotlk.wowhead.com/quest=13280
+TurnIn: [QT13280],TurnIn,13280,,,,,,,https://wotlk.wowhead.com/quest=13280
+Do: [QC13231],Do,13231,,,,,,,https://wotlk.wowhead.com/quest=13231
+Accept: [QA13232],Accept,13232,,,,,,,https://wotlk.wowhead.com/quest=13232
+Do: [QC13232],Do,13232,,,,,,,https://wotlk.wowhead.com/quest=13232
+TurnIn: [QT13072],TurnIn,13072,,,,,,,https://wotlk.wowhead.com/quest=13072
+Accept: [QA13073],Accept,13073,,,,,,,https://wotlk.wowhead.com/quest=13073
+"Run to [G87, 77Icecrown]",Run,,Icecrown,"87, 77",,,,,https://wotlk.wowhead.com/quest=
+Talk to "Arch Druid Lilliandra" and get her to open a portal.,Text,,,,,,,Talk to "Arch Druid Lilliandra" and get her to open a portal.,https://wotlk.wowhead.com/quest=
+TurnIn: [QT13073],TurnIn,13073,,,,,,,https://wotlk.wowhead.com/quest=13073
+Accept: [QA13074],Accept,13074,,,,,,,https://wotlk.wowhead.com/quest=13074
+Do: [QC13074],Do,13074,,,,,,,https://wotlk.wowhead.com/quest=13074
+Right-click the buff you got to go back to "the normal world".,Text,,,,,,,Right-click the buff you got to go back to "the normal world".,https://wotlk.wowhead.com/quest=
+TurnIn: [QT13074],TurnIn,13074,,,,,,,https://wotlk.wowhead.com/quest=13074
+Accept: [QA13075],Accept,13075,,,,,,,https://wotlk.wowhead.com/quest=13075
+Take the portal back to Icecrown.,Text,,,,,,,Take the portal back to Icecrown.,https://wotlk.wowhead.com/quest=

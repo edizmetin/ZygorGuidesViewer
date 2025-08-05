@@ -1,0 +1,46 @@
+Name,Action,ID,Location,Coords,XP,Level,Class,Text,Wowhead
+[GA Alliance],,,,,,,,,
+[N64-65Nagrand Part I],,,,,,,,,
+[NX65-66Nagrand Part II],,,,,,,,,
+#REF!,,,,,,,,#REF!,
+#REF!,Text,,,,,,,#REF!,
+,Text,,,,,,,,
+Accept: [QA9854],Accept,9854,,,,,,,https://classic.wowhead.com/quest=9854
+Accept: [QA9789],Accept,9789,,,,,,,https://classic.wowhead.com/quest=9789
+Accept: [QA9857],Accept,9857,,,,,,,https://classic.wowhead.com/quest=9857
+"Kill any elek as well as Wind Elementals you see from now on, the more the better.(You need a minimum of 3 tusks though, the wind Elemental drops a -not guaranteed- quest item)",Text,,,,,,,"Kill any elek as well as Wind Elementals you see from now on, the more the better.(You need a minimum of 3 tusks though, the wind Elemental drops a -not guaranteed- quest item)",https://classic.wowhead.com/quest=
+Do: [QC9854],Do,9854,,,,,,,https://classic.wowhead.com/quest=9854
+Do: [QC9789],Do,9789,,,,,,,https://classic.wowhead.com/quest=9789
+Do: [QC9857],Do,9857,,,,,,,https://classic.wowhead.com/quest=9857
+Accept: [QA9861],Accept,9861,,,,,,,https://classic.wowhead.com/quest=9861
+TurnIn: [QT9854],TurnIn,9854,,,,,,,https://classic.wowhead.com/quest=9854
+TurnIn: [QT9789],TurnIn,9789,,,,,,,https://classic.wowhead.com/quest=9789
+TurnIn: [QT9857],TurnIn,9857,,,,,,,https://classic.wowhead.com/quest=9857
+Accept: [QA9855],Accept,9855,,,,,,,https://classic.wowhead.com/quest=9855
+Accept: [QA9850],Accept,9850,,,,,,,https://classic.wowhead.com/quest=9850
+Accept: [QA9858],Accept,9858,,,,,,,https://classic.wowhead.com/quest=9858
+TurnIn: [QT9861],TurnIn,9861,,,,,,,https://classic.wowhead.com/quest=9861
+Accept: [QA9862],Accept,9862,,,,,,,https://classic.wowhead.com/quest=9862
+Accept: [QA9818],Accept,9818,,,,,,,https://classic.wowhead.com/quest=9818
+Accept: [QA9800],Accept,9800,,,,,,,https://classic.wowhead.com/quest=9800
+Accept: [QA9815],Accept,9815,,,,,,,https://classic.wowhead.com/quest=9815
+TurnIn: [QT9818],TurnIn,9818,,,,,,,https://classic.wowhead.com/quest=9818
+Accept: [QA9819],Accept,9819,,,,,,,https://classic.wowhead.com/quest=9819
+Do: [QC9858],Do,9858,,,,,,,https://classic.wowhead.com/quest=9858
+Do: [QC9800],Do,9800,,,,,,,https://classic.wowhead.com/quest=9800
+Do: [QC9850],Do,9850,,,,,,,https://classic.wowhead.com/quest=9850
+"If Halaa is owned by the Alliance do the next step, if not, do it whenever its Alliance controlled and convenient to do so.",Text,,,,,,,"If Halaa is owned by the Alliance do the next step, if not, do it whenever its Alliance controlled and convenient to do so.",https://classic.wowhead.com/quest=
+Accept: [QA10076],Accept,10076,,,,,,,https://classic.wowhead.com/quest=10076
+TurnIn: [QT10076],TurnIn,10076,,,,,,,https://classic.wowhead.com/quest=10076
+Do: [QC9815],Do,9815,,,,,,,https://classic.wowhead.com/quest=9815
+Do: [QC9862],Do,9862,,,,,,,https://classic.wowhead.com/quest=9862
+Accept: [QA9925],Accept,9925,,,,,,,https://classic.wowhead.com/quest=9925
+Accept: [QA9882],Accept,9882,,,,,,,https://classic.wowhead.com/quest=9882
+Accept: [QA9914],Accept,9914,,,,,,,https://classic.wowhead.com/quest=9914
+TurnIn: [QT9914],TurnIn,9914,,,,,,,https://classic.wowhead.com/quest=9914
+Do: [QC9925],Do,9925,,,,,,,https://classic.wowhead.com/quest=9925
+Do: [QC9882],Do,9882,,,,,,,https://classic.wowhead.com/quest=9882
+TurnIn: [QT9882],TurnIn,9882,,,,,,,https://classic.wowhead.com/quest=9882
+TurnIn: [QT9925],TurnIn,9925,,,,,,,https://classic.wowhead.com/quest=9925
+Accept: [QA9900],Accept,9900,,,,,,,https://classic.wowhead.com/quest=9900
+Do: [QC9900],Do,9900,,,,,,,https://classic.wowhead.com/quest=9900

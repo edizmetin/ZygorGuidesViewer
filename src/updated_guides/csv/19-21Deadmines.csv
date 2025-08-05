@@ -1,0 +1,39 @@
+row_id,Action,ID,QuestName,Location,Coords,XP,Level,Text,WowHead,ItemID,ItemName,ItemAmount,coords_split,X,Y,NpcName,NpcId,Class,formatted_text
+0,,,,,,,,,,,,,,,,"","",,""
+1,,,,,,,,,,,,,,,,"","",,""
+2,,,,,,,,,,,,,,,,"","",,""
+3,,,,,,,,,,,,,,,,"","",,""
+4,,,,,,,,,,,,,,,,"","",,""
+5,Text,,,,,,,"If you do not intent to do deadmines, skip to the next guide!",https://classic.wowhead.com/quest=,,,,,,,"","",,"If you do not intent to do deadmines, skip to the next guide!"
+6,Accept,2040,Underground Assault,Stormwind City,,,,,https://classic.wowhead.com/quest=2040,,,,,,,"","",,accept Underground Assault##2040
+7,TurnIn,1338,Stormpike's Order,Stormwind City,,,,,https://classic.wowhead.com/quest=1338,,,,,,,"","",,turnin Stormpike's Order##1338
+8,Accept,167,Oh Brother. . .,Stormwind City,,,,,https://classic.wowhead.com/quest=167,,,,,,,"","",,accept Oh Brother. . .##167
+9,Accept,168,Collecting Memories,Stormwind City,,,,,https://classic.wowhead.com/quest=168,,,,,,,"","",,accept Collecting Memories##168
+10,Hearthstone,,,Stormwind City,"52.6,65.7",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""52.6""
+	""65.7""
+]",52.6,65.7,"","",,home Stormwind City
+11,Flightpath,,,Westfall,"56.6, 52.6",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
+Series: '' [str]
+[
+	""56.6""
+	"" 52.6""
+]",56.6, 52.6,"","",,"fpath Westfall |goto Westfall 56.6, 52.6"
+12,Text,,,,,,,"There is a long questchain for the endboss of deadmines wich gives nice blue gear, but it is not worth it time wise, so I will ONLY include the Accept step for the FIRST quest of the chain. If you dont intend to do it, skip the next Accept-step.",https://classic.wowhead.com/quest=,,,,,,,"","",,"There is a long questchain for the endboss of deadmines wich gives nice blue gear, but it is not worth it time wise, so I will ONLY include the Accept step for the FIRST quest of the chain. If you dont intend to do it, skip the next Accept-step."
+13,Accept,65,The Defias Brotherhood,,,,,,https://classic.wowhead.com/quest=65,,,,,,,"","",,accept The Defias Brotherhood##65
+14,Text,,,,,,,The first 2 quests are in the cave but before the dungeon.,https://classic.wowhead.com/quest=,,,,,,,"","",,The first 2 quests are in the cave but before the dungeon.
+15,Do,167,Oh Brother. . .,,,,,,https://classic.wowhead.com/quest=167,,,,,,,"","",,Do: Oh Brother. . .
+16,Do,168,Collecting Memories,,,,,,https://classic.wowhead.com/quest=168,,,,,,,"","",,Do: Collecting Memories
+17,Text,,,,,,,Do the dungeon now. The endboss drops a QuestItem. Accept it.,https://classic.wowhead.com/quest=,,,,,,,"","",,Do the dungeon now. The endboss drops a QuestItem. Accept it.
+18,Do,2040,Underground Assault,,,,,,https://classic.wowhead.com/quest=2040,,,,,,,"","",,Do: Underground Assault
+19,Accept,373,The Unsent Letter,Stormwind City,,,,,https://classic.wowhead.com/quest=373,,,,,,,"","",,accept The Unsent Letter##373
+20,UseHearthstone,,,Stormwind City,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",,use Hearthstone##6948
+21,TurnIn,167,Oh Brother. . .,Stormwind City,,,,,https://classic.wowhead.com/quest=167,,,,,,,"","",,turnin Oh Brother. . .##167
+22,TurnIn,168,Collecting Memories,Stormwind City,,,,,https://classic.wowhead.com/quest=168,,,,,,,"","",,turnin Collecting Memories##168
+23,TurnIn,2040,Underground Assault,Stormwind City,,,,,https://classic.wowhead.com/quest=2040,,,,,,,"","",,turnin Underground Assault##2040
+24,TurnIn,373,The Unsent Letter,Stormwind City,,,,,https://classic.wowhead.com/quest=373,,,,,,,"","",,turnin The Unsent Letter##373
+25,Accept,389,Bazil Thredd,Stormwind City,,,,,https://classic.wowhead.com/quest=389,,,,,,,"","",,accept Bazil Thredd##389
+26,TurnIn,389,Bazil Thredd,Stormwind City,,,,,https://classic.wowhead.com/quest=389,,,,,,,"","",,turnin Bazil Thredd##389
+27,,,,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",,""

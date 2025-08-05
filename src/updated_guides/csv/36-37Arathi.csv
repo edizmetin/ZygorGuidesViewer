@@ -1,0 +1,58 @@
+row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,ItemName,ItemAmount,coords_split,X,Y,NpcName,NpcId,formatted_text
+0,,,,,,,,,,,,,,,,,"","",""
+1,,,,,,,,,,,,,,,,,"","",""
+2,,,,,,,,,,,,,,,,,"","",""
+3,,,,,,,,,,,,,,,,,"","",""
+4,Text,,,,,,,,,,,,,,,,"","",
+5,,,,,,,,,,,,,,,,,"","",""
+6,Fly,,,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Arathi Highlands
+7,Accept,681,Northfold Manor,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=681,,,,,,,"","",accept Northfold Manor##681
+8,AcceptOptional,684,Wanted! Marez Cowl,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=684,,,,,,,"","",
+9,AcceptOptional,685,Wanted! Otto and Falconcrest,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=685,,,,,,,"","",
+10,Turnin,690,Malin's Request,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=690,,,,,,,"","",""
+11,Accept,691,Worth Its Weight in Gold,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=691,,,,,,,"","",accept Worth Its Weight in Gold##691
+12,Accept,642,The Princess Trapped,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=642,,,,,,,"","",accept The Princess Trapped##642
+13,Do,642,The Princess Trapped,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=642,,,,,,,"","",Do: The Princess Trapped
+14,Turnin,642,The Princess Trapped,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=642,,,,,,,"","",""
+15,Text,,,Arathi Highlands,,,,,Grind till youre 36 and 3/4,https://classic.wowhead.com/quest=,,,,,,,"","",Grind till youre 36 and 3/4
+16,Accept,651,Stones of Binding,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=651,,,,,,,"","",accept Stones of Binding##651
+17,Do,651,Stones of Binding,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=651,,,,,,,"","",Do: Stones of Binding
+18,Turnin,659,Hints of a New Plague?,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=659,,,,,,,"","",""
+19,Accept,658,Hints of a New Plague?,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=658,,,,,,,"","",accept Hints of a New Plague?##658
+20,Text,,,Arathi Highlands,,,,,Keep an eye out for the Forsaken Courier,https://classic.wowhead.com/quest=,,,,,,,"","",Keep an eye out for the Forsaken Courier
+21,Do,691,Worth Its Weight in Gold,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=691,,,,,,,"","",Do: Worth Its Weight in Gold
+22,Do,651,Stones of Binding,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=651,,,,,,,"","",Do: Stones of Binding
+23,Turnin,691,Worth Its Weight in Gold,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=691,,,,,,,"","",""
+24,Accept,693,Wand over Fist,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=693,,,,,,,"","",accept Wand over Fist##693
+25,Do,693,Wand over Fist,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=693,,,,,,,"","",Do: Wand over Fist
+26,Text,,,Arathi Highlands,,,,,Grind till [XP37],https://classic.wowhead.com/quest=,,,,,,,"","",Grind till [XP37]
+27,Turnin,693,Wand over Fist,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=693,,,,,,,"","",""
+28,AcceptOptional,694,Trelane's Defenses,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=694,,,,,,,"","",
+29,Do,651,Stones of Binding,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=651,,,,,,,"","",Do: Stones of Binding
+30,Do,681,Northfold Manor,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=681,,,,,,,"","",Do: Northfold Manor
+31,Turnin,681,Northfold Manor,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=681,,,,,,,"","",""
+32,AcceptOptional,682,Stromgarde Badges,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=682,,,,,,,"","",
+33,Turnin,651,Stones of Binding,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=651,,,,,,,"","",""
+34,DoOptional,684,Wanted! Marez Cowl,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=684,,,,,,,"","",Do (Optional): Wanted! Marez Cowl
+35,DoOptional,685,Wanted! Otto and Falconcrest,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=685,,,,,,,"","",Do (Optional): Wanted! Otto and Falconcrest
+36,DoOptional,682,Stromgarde Badges,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=682,,,,,,,"","",Do (Optional): Stromgarde Badges
+37,DoOptional,694,Trelane's Defenses,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=694,,,,,,,"","",Do (Optional): Trelane's Defenses
+38,TurninOptional,684,Wanted! Marez Cowl,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=684,,,,,,,"","",""
+39,TurninOptional,685,Wanted! Otto and Falconcrest,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=685,,,,,,,"","",""
+40,TurninOptional,682,Stromgarde Badges,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=682,,,,,,,"","",""
+41,TurninOptional,694,Trelane's Defenses,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=694,,,,,,,"","",""
+42,AcceptOptional,695,An Apprentice's Enchantment,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=695,,,,,,,"","",
+43,TurninOptional,695,An Apprentice's Enchantment,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=695,,,,,,,"","",""
+44,AcceptOptional,696,Attack on the Tower,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=696,,,,,,,"","",
+45,Turnin,658,Hints of a New Plague?,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=658,,,,,,,"","",""
+46,Accept,567,Dangerous!,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=567,,,,,,,"","",accept Dangerous!##567
+47,Turnin,567,Dangerous!,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=567,,,,,,,"","",""
+48,Accept,660,Hints of a New Plague?,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=660,,,,,,,"","",accept Hints of a New Plague?##660
+49,Do,660,Hints of a New Plague?,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=660,,,,,,,"","",Do: Hints of a New Plague?
+50,Turnin,660,Hints of a New Plague?,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=660,,,,,,,"","",""
+51,Accept,661,Hints of a New Plague?,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=661,,,,,,,"","",accept Hints of a New Plague?##661
+52,DoOptional,696,Attack on the Tower,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=696,,,,,,,"","",Do (Optional): Attack on the Tower
+53,TurninOptional,696,Attack on the Tower,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=696,,,,,,,"","",""
+54,AcceptOptional,697,,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=697,,,,,,,"","",
+55,UseHearthstone,,,Arathi Highlands,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",use Hearthstone##6948
+56,Turnin,661,Hints of a New Plague?,Hillsbrad Foothills,,,,,,https://classic.wowhead.com/quest=661,,,,,,,"","",""

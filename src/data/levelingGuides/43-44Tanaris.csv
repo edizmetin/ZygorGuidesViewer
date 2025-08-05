@@ -1,0 +1,39 @@
+,Name,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead
+,[GA Alliance],,,,,,,,,,
+,"[N41-44Tanaris,STV]",,,,,,,,,,
+,[NX44-45Feralas],,,,,,,,,,
+"[1] = { str = "43-44 Tanaris" },","[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,,,,,,
+"[2] = { str = "This guide was written by TUGs and is totally free, but if you want to support my work use:  https://www.paypal.me/Tugstv1337" },","This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",,,,,,,,,,
+"[3] = { str = "Every Level you should grind 2-5 experience bars, this will make sure that this guide works properly!" },","Every Level you should grind 2-5 experience bars, this will make sure that this guide works properly!",,,,,,,,,,
+"[4] = { str = "TurnIn: #TURNINTran'rek# " },",TurnIn: [QT2864],Turnin,2864,Tran'rek,Tanaris,,,,,,https://classic.wowhead.com/quest=2864
+"[5] = { str = "TurnIn: #TURNINSafety First# " },",TurnIn: [QT1188],Turnin,1188,Safety First,Tanaris,,,,,,https://classic.wowhead.com/quest=1188
+"[6] = { str = "Accept: #ACCEPTSafety First#" },",Accept: [QA1189],Accept,1189,Safety First,Tanaris,,,,,,https://classic.wowhead.com/quest=1189
+"[7] = { str = "Accept: #ACCEPTWANTED: Caliph Scorpidsting#" },",Accept: [QA2781],Accept,2781,WANTED: Caliph Scorpidsting,Tanaris,,,,,,https://classic.wowhead.com/quest=2781
+"[8] = { str = "Accept: #ACCEPTWANTED: Andre Firebeard#" },",Accept: [QA2875],Accept,2875,WANTED: Andre Firebeard,Tanaris,,,,,,https://classic.wowhead.com/quest=2875
+"[9] = { str = "Accept: #ACCEPTWater Pouch Bounty#" },",Accept: [QA1707],Accept,1707,Water Pouch Bounty,Tanaris,,,,,,https://classic.wowhead.com/quest=1707
+"[10] = { str = "Accept: #ACCEPTWastewander Justice#" },",Accept: [QA1690],Accept,1690,Wastewander Justice,Tanaris,,,,,,https://classic.wowhead.com/quest=1690
+"[11] = { str = "DoQuest: #DOQUESTWastewander Justice# " },",Do: [QC1690],Do,1690,Wastewander Justice,Tanaris,,,,,,https://classic.wowhead.com/quest=1690
+"[12] = { str = "Grind till [XP44]" },",Grind till [XP44],Text,,,Tanaris,,,,,Grind till [XP44],https://classic.wowhead.com/quest=
+"[13] = { str = "Accept: #ACCEPTPirate Hats Ahoy!#" },",Accept: [QA8365],Accept,8365,Pirate Hats Ahoy!,Tanaris,,,,,,https://classic.wowhead.com/quest=8365
+"[14] = { str = "Accept: #ACCEPTScreecher Spirits#" },",Accept: [QA3520],Accept,3520,Screecher Spirits,Tanaris,,,,,,https://classic.wowhead.com/quest=3520
+"[15] = { str = "Accept: #ACCEPTDancing for Marzipan#" },",Accept: [QA8360],Accept,8360,Dancing for Marzipan,Tanaris,,,,,,https://classic.wowhead.com/quest=8360
+"[16] = { str = "TurnIn: #TURNINStoley's Debt# " },",TurnIn: [QT2872],Turnin,2872,Stoley's Debt,Tanaris,,,,,,https://classic.wowhead.com/quest=2872
+"[17] = { str = "Accept: #ACCEPTStoley's Shipment#" },",Accept: [QA2873],Accept,2873,Stoley's Shipment,Tanaris,,,,,,https://classic.wowhead.com/quest=2873
+"[18] = { str = "DoQuest: #DOQUESTWANTED: Andre Firebeard# " },",Do: [QC2875],Do,2875,WANTED: Andre Firebeard,Tanaris,,,,,,https://classic.wowhead.com/quest=2875
+"[19] = { str = "DoQuest: #DOQUESTPirate Hats Ahoy!# " },",Do: [QC8365],Do,8365,Pirate Hats Ahoy!,Tanaris,,,,,,https://classic.wowhead.com/quest=8365
+"[20] = { str = "DoQuest: #DOQUESTDancing for Marzipan# " },",Do: [QC8360],Do,8360,Dancing for Marzipan,Tanaris,,,,,,https://classic.wowhead.com/quest=8360
+"[21] = { str = "DoQuest: #DOQUESTStoley's Shipment# " },",Do: [QC2873],Do,2873,Stoley's Shipment,Tanaris,,,,,,https://classic.wowhead.com/quest=2873
+"[22] = { str = "Grind 4-10 Bars unless those pesky AoE farming mages are here :D" },",Grind 4-10 Bars unless those pesky AoE farming mages are here :D,Text,,,Tanaris,,,,,Grind 4-10 Bars unless those pesky AoE farming mages are here :D,https://classic.wowhead.com/quest=
+"[23] = { str = "TurnIn: #TURNINWastewander Justice# " },",TurnIn: [QT1690],Turnin,1690,Wastewander Justice,Tanaris,,,,,,https://classic.wowhead.com/quest=1690
+"[24] = { str = "Accept: #ACCEPTMore Wastewander Justice#" },",Accept: [QA1691],Accept,1691,More Wastewander Justice,Tanaris,,,,,,https://classic.wowhead.com/quest=1691
+"[25] = { str = "TurnIn: #TURNINWater Pouch Bounty# " },",TurnIn: [QT1707],Turnin,1707,Water Pouch Bounty,Tanaris,,,,,,https://classic.wowhead.com/quest=1707
+"[26] = { str = "DoQuest: #DOQUESTMore Wastewander Justice# " },",Do: [QC1691],Do,1691,More Wastewander Justice,Tanaris,,,,,,https://classic.wowhead.com/quest=1691
+"[27] = { str = "DoQuest: #DOQUESTWANTED: Caliph Scorpidsting# " },",Do: [QC2781],Do,2781,WANTED: Caliph Scorpidsting,Tanaris,,,,,,https://classic.wowhead.com/quest=2781
+"[28] = { str = "TurnIn: #TURNINStoley's Shipment# " },",TurnIn: [QT2873],Turnin,2873,Stoley's Shipment,Tanaris,,,,,,https://classic.wowhead.com/quest=2873
+"[29] = { str = "Accept: #ACCEPTDeliver to MacKinley#" },",Accept: [QA2874],Accept,2874,Deliver to MacKinley,Tanaris,,,,,,https://classic.wowhead.com/quest=2874
+"[30] = { str = "TurnIn: #TURNINWANTED: Andre Firebeard# " },",TurnIn: [QT2875],Turnin,2875,WANTED: Andre Firebeard,Tanaris,,,,,,https://classic.wowhead.com/quest=2875
+"[31] = { str = "TurnIn: #TURNINDancing for Marzipan# " },",TurnIn: [QT8360],Turnin,8360,Dancing for Marzipan,Tanaris,,,,,,https://classic.wowhead.com/quest=8360
+"[32] = { str = "TurnIn: #TURNINPirate Hats Ahoy!# " },",TurnIn: [QT8365],Turnin,8365,Pirate Hats Ahoy!,Tanaris,,,,,,https://classic.wowhead.com/quest=8365
+"[33] = { str = "TurnIn: #TURNINMore Wastewander Justice# " },",TurnIn: [QT1691],Turnin,1691,More Wastewander Justice,Tanaris,,,,,,https://classic.wowhead.com/quest=1691
+"[34] = { str = "TurnIn: #TURNINWANTED: Caliph Scorpidsting# " },",TurnIn: [QT2781],Turnin,2781,WANTED: Caliph Scorpidsting,Tanaris,,,,,,https://classic.wowhead.com/quest=2781
+"[35] = { str = "Accept: #ACCEPTHandle With Care#" },",Accept: [QA3022],Accept,3022,Handle With Care,Tanaris,,,,,,https://classic.wowhead.com/quest=3022

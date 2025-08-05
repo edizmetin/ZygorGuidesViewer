@@ -1,0 +1,44 @@
+Name,Action,Text,,,
+[N Alchemy Shopping List],,,Classic,,
+[NX Alchemy],,,,,
+"[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,
+"This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",Text,,,,
+Shopping List:,Text,Shopping List:,ItemID,ItemName,Amount
+"Buy [CI2447, 65 Peacebloom]",Text,"Buy [CI2447, 65 Peacebloom]",2447,Peacebloom,65
+"Buy [CI765, 65 Silverleaf]",Text,"Buy [CI765, 65 Silverleaf]",765,Silverleaf,65
+"Buy [CI3371, 85 Empty Vial]",Text,"Buy [CI3371, 85 Empty Vial]",3371,Empty Vial,85
+"Buy [CI2450, 100 Briarthorn]",Text,"Buy [CI2450, 100 Briarthorn]",2450,Briarthorn,100
+"Buy [CI2453, 35 Bruiseweed]",Text,"Buy [CI2453, 35 Bruiseweed]",2453,Bruiseweed,35
+"Buy [CI3372, 85 Leaded Vial]",Text,"Buy [CI3372, 85 Leaded Vial]",3372,Leaded Vial,85
+"Buy [CI785, 20 Mageroyal]",Text,"Buy [CI785, 20 Mageroyal]",785,Mageroyal,20
+"Buy [CI3820, 50 Stranglekelp]",Text,"Buy [CI3820, 50 Stranglekelp]",3820,Stranglekelp,50
+"Buy [CI3357, 35 Liferoot]",Text,"Buy [CI3357, 35 Liferoot]",3357,Liferoot,35
+"Buy [CI3356, 35 Kingsblood]",Text,"Buy [CI3356, 35 Kingsblood]",3356,Kingsblood,35
+"Buy [CI3821, 30 Goldthorn]",Text,"Buy [CI3821, 30 Goldthorn]",3821,Goldthorn,30
+"Buy [CI3355, 5 Wild Steelbloom]",Text,"Buy [CI3355, 5 Wild Steelbloom]",3355,Wild Steelbloom,5
+"Buy [CI8838, 75 Sungrass]",Text,"Buy [CI8838, 75 Sungrass]",8838,Sungrass,75
+"Buy [CI3358, 15 Khadgar's Whisker]",Text,"Buy [CI3358, 15 Khadgar's Whisker]",3358,Khadgar's Whisker,15
+"Buy [CI8925, 120 Crystal Vial]",Text,"Buy [CI8925, 120 Crystal Vial]",8925,Crystal Vial,120
+"Buy [CI8836, 45 Arthas' Tears]",Text,"Buy [CI8836, 45 Arthas' Tears]",8836,Arthas' Tears,45
+"Buy [CI8839, 60 Blindweed]",Text,"Buy [CI8839, 60 Blindweed]",8839,Blindweed,60
+"Buy [CI13464, 75 Golden Sansam]",Text,"Buy [CI13464, 75 Golden Sansam]",13464,Golden Sansam,75
+"Buy [CI13465, 40 Mountain Silversage]",Text,"Buy [CI13465, 40 Mountain Silversage]",13465,Mountain Silversage,40
+,,,TBC,,
+"Buy [CI13501, 1 Major Mana Potion] from Magnus Frostwake at Caer Darrow in the Western Plaguelands.",Text,"Buy [CI13501, 1 Major Mana Potion] from Magnus Frostwake at Caer Darrow in the Western Plaguelands.",13501,Recipe: Major Mana Potion,1
+"Buy [CI13464, 15 Golden Sansam]",Text,"Buy [CI13464, 15 Golden Sansam]",13464,Golden Sansam,15
+"Buy [CI13465, 10 Mountain Silversage]",Text,"Buy [CI13465, 10 Mountain Silversage]",13465,Mountain Silversage,10
+"Buy [CI13463, 15 Dreamfoil]",Text,"Buy [CI13463, 15 Dreamfoil]",13463,Dreamfoil,15
+"Buy [CI13467, 10 Icecap]",Text,"Buy [CI13467, 10 Icecap]",13467,Icecap,10
+"Buy [CI22785, 50 Felweed]",Text,"Buy [CI22785, 50 Felweed]",22785,Felweed,50
+"Buy [CI22786, 30 Dreaming Glory]",Text,"Buy [CI22786, 30 Dreaming Glory]",22786,Dreaming Glory,30
+"Buy [CI22791, 30 Netherbloom]",Text,"Buy [CI22791, 30 Netherbloom]",22791,Netherbloom,30
+"Buy [CI22792, 10 Nightmare Vine]",Text,"Buy [CI22792, 10 Nightmare Vine]",22792,Nightmare Vine,10
+,,,WOTLK,,
+"Buy [CI36901, 85 Goldclover]",Text,"Buy [CI36901, 85 Goldclover]",36901,Goldclover,85
+"Buy [CI36904, 35 Tiger Lily]",Text,"Buy [CI36904, 35 Tiger Lily]",36904,Tiger Lily,35
+"Buy [CI36907, 20 Talandra's Rose]",Text,"Buy [CI36907, 20 Talandra's Rose]",36907,Talandra's Rose,20
+"Buy [CI36903, 25 Adder's Tongue]",Text,"Buy [CI36903, 25 Adder's Tongue]",36903,Adder's Tongue,25
+"Buy [CI36906, 10 Icethorn]",Text,"Buy [CI36906, 10 Icethorn]",36906,Icethorn,10
+"Buy [CI36905, 40 Lichbloom]",Text,"Buy [CI36905, 40 Lichbloom]",36905,Lichbloom,40
+You will be 425 with this list.,Text,You will be 425 with this list.,,,
+Afterwards you either Transmute or make flasks. The required resources are NOT part of this guide as they vary depending on what you chose.,Text,Afterwards you either Transmute or make flasks. The required resources are NOT part of this guide as they vary depending on what you chose.,,,

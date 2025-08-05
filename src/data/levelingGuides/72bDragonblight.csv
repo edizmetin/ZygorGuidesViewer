@@ -1,0 +1,57 @@
+Name,Action,ID,Location,Coords,XP,Level,Class,Text,Wowhead
+[GA Alliance],,,,,,,,,
+[N72b Dragonblight - Alliance],,,,,,,,,
+[NX72c Dragonblight - Alliance],,,,,,,,,
+"[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,,,,,
+"This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",Text,,,,,,,,
+I am marking EVERY Elite quest and dungeons as optional in this guide. Especially on release you should do them!!! You'll easily find groups for elite quests and dungeons.,Text,,,,,,,,
+Accept: [QA12440],Accept,12440,,,,,,,https://www.wowhead.com/wotlk/quest=12440
+TurnIn: [QT12440],TurnIn,12440,,,,,,,https://www.wowhead.com/wotlk/quest=12440
+Accept: [QA12000],Accept,12000,,,,,,,https://www.wowhead.com/wotlk/quest=12000
+Accept: [QA12166],Accept,12166,,,,,,,https://www.wowhead.com/wotlk/quest=12166
+Do: [QC12166],Do,12166,,,,,,,https://www.wowhead.com/wotlk/quest=12166
+TurnIn: [QT12166],TurnIn,12166,,,,,,,https://www.wowhead.com/wotlk/quest=12166
+Accept: [QA12167],Accept,12167,,,,,,,https://www.wowhead.com/wotlk/quest=12167
+Do: [QC12167],Do,12167,,,,,,,https://www.wowhead.com/wotlk/quest=12167
+You should have gotten the Quest Item "The Favor of Zangus" by now. Accept it.,Text,,,,,,,You should have gotten the Quest Item "The Favor of Zangus" by now. Accept it.,https://www.wowhead.com/wotlk/quest=
+Accept: [QA12168],Accept,12168,,,,,,,https://www.wowhead.com/wotlk/quest=12168
+TurnIn: [QT12167],TurnIn,12167,,,,,,,https://www.wowhead.com/wotlk/quest=12167
+TurnIn: [QT12168],TurnIn,12168,,,,,,,https://www.wowhead.com/wotlk/quest=12168
+Accept: [QA12169],Accept,12169,,,,,,,https://www.wowhead.com/wotlk/quest=12169
+The next 3 quests are for The 2 dungeons AZjol Nerub and the Old Kingdom: Ahn'Kahet. Do them as soon as you find a group for it.,Text,,,,,,,The next 3 quests are for The 2 dungeons AZjol Nerub and the Old Kingdom: Ahn'Kahet. Do them as soon as you find a group for it.,https://www.wowhead.com/wotlk/quest=
+Accept: [QA13167],Accept,13167,,,,,,,https://www.wowhead.com/wotlk/quest=13167
+Accept: [QA13182],Accept,13182,,,,,,,https://www.wowhead.com/wotlk/quest=13182
+Accept: [QA13187],Accept,13187,,,,,,,https://www.wowhead.com/wotlk/quest=13187
+Do: [QC12169],Do,12169,,,,,,,https://www.wowhead.com/wotlk/quest=12169
+TurnIn: [QT12169],TurnIn,12169,,,,,,,https://www.wowhead.com/wotlk/quest=12169
+Accept: [QA12006],Accept,12006,,,,,,,https://www.wowhead.com/wotlk/quest=12006
+Do: [QC12000],Do,12000,,,,,,,https://www.wowhead.com/wotlk/quest=12000
+TurnIn: [QT12000],TurnIn,12000,,,,,,,https://www.wowhead.com/wotlk/quest=12000
+Accept: [QA12004],Accept,12004,,,,,,,https://www.wowhead.com/wotlk/quest=12004
+Do: [QC12006],Do,12006,,,,,,,https://www.wowhead.com/wotlk/quest=12006
+"Do: [QC12004,1]",Do,"12004,1",,,,,,,"https://www.wowhead.com/wotlk/quest=12004,1"
+"Do: [QC12004,2]",Do,"12004,2",,,,,,,"https://www.wowhead.com/wotlk/quest=12004,2"
+You should have gotten the Quest Item "Goramosh's Strange Device" by now. Accept it.,Text,,,,,,,You should have gotten the Quest Item "Goramosh's Strange Device" by now. Accept it.,https://www.wowhead.com/wotlk/quest=
+Accept: [QA12055],Accept,12055,,,,,,,https://www.wowhead.com/wotlk/quest=12055
+TurnIn: [QT12006],TurnIn,12006,,,,,,,https://www.wowhead.com/wotlk/quest=12006
+Accept: [QA12013],Accept,12013,,,,,,,https://www.wowhead.com/wotlk/quest=12013
+TurnIn: [QT12055],TurnIn,12055,,,,,,,https://www.wowhead.com/wotlk/quest=12055
+Accept: [QA12060],Accept,12060,,,,,,,https://www.wowhead.com/wotlk/quest=12060
+TurnIn: [QT12004],TurnIn,12004,,,,,,,https://www.wowhead.com/wotlk/quest=12004
+Do: [QC12013],Do,12013,,,,,,,https://www.wowhead.com/wotlk/quest=12013
+Do: [QC12060],Do,12060,,,,,,,https://www.wowhead.com/wotlk/quest=12060
+TurnIn: [QT12013],TurnIn,12013,,,,,,,https://www.wowhead.com/wotlk/quest=12013
+TurnIn: [QT12060],TurnIn,12060,,,,,,,https://www.wowhead.com/wotlk/quest=12060
+Accept: [QA12065],Accept,12065,,,,,,,https://www.wowhead.com/wotlk/quest=12065
+Do: [QC12065],Do,12065,,,,,,,https://www.wowhead.com/wotlk/quest=12065
+You should have gotten the Quest Item "Captain Malin's Letter" by now. Accept it.,Text,,,,,,,You should have gotten the Quest Item "Captain Malin's Letter" by now. Accept it.,https://www.wowhead.com/wotlk/quest=
+Accept: [QA12067],Accept,12067,,,,,,,https://www.wowhead.com/wotlk/quest=12067
+TurnIn: [QT12067],TurnIn,12067,,,,,,,https://www.wowhead.com/wotlk/quest=12067
+TurnIn: [QT12065],TurnIn,12065,,,,,,,https://www.wowhead.com/wotlk/quest=12065
+Accept: [QA12083],Accept,12083,,,,,,,https://www.wowhead.com/wotlk/quest=12083
+Accept: [QA12092],Accept,12092,,,,,,,https://www.wowhead.com/wotlk/quest=12092
+Do: [QC12092],Do,12092,,,,,,,https://www.wowhead.com/wotlk/quest=12092
+Do: [QC12083],Do,12083,,,,,,,https://www.wowhead.com/wotlk/quest=12083
+TurnIn: [QT12092],TurnIn,12092,,,,,,,https://www.wowhead.com/wotlk/quest=12092
+TurnIn: [QT12083],TurnIn,12083,,,,,,,https://www.wowhead.com/wotlk/quest=12083
+Accept: [QA12098],Accept,12098,,,,,,,https://www.wowhead.com/wotlk/quest=12098

@@ -1,0 +1,47 @@
+Name,Action,ID,Location,Coords,XP,Level,Class,Text,Wowhead
+[GA Alliance],,,,,,,,,
+[N75c Grizzly Hills - Alliance],,,,,,,,,
+[NX76a Grizzly Hills - Alliance],,,,,,,,,
+"[D This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV]",,,,,,,,,
+"This guide was written by TUGs and is totally free, but if you want to support my work use: https://www.youtube.com/user/HydroxXTV",Text,,,,,,,,
+I am marking EVERY Elite quest and dungeons as optional in this guide. Especially on release you should do them!!! You'll easily find groups for elite quests and dungeons.,Text,,,,,,,,
+Do: [QC12414],Do,12414,,,,,,,https://wotlk.wowhead.com/quest=12414
+TurnIn: [QT12414],TurnIn,12414,,,,,,,https://wotlk.wowhead.com/quest=12414
+TurnIn: [QT12158],TurnIn,12158,,,,,,,https://wotlk.wowhead.com/quest=12158
+Accept: [QA12159],Accept,12159,,,,,,,https://wotlk.wowhead.com/quest=12159
+Do: [QC12159],Do,12159,,,,,,,https://wotlk.wowhead.com/quest=12159
+TurnIn: [QT12159],TurnIn,12159,,,,,,,https://wotlk.wowhead.com/quest=12159
+Accept: [QA12160],Accept,12160,,,,,,,https://wotlk.wowhead.com/quest=12160
+TurnIn: [QT12160],TurnIn,12160,,,,,,,https://wotlk.wowhead.com/quest=12160
+Accept: [QA12161],Accept,12161,,,,,,,https://wotlk.wowhead.com/quest=12161
+TurnIn: [QT12161],TurnIn,12161,,,,,,,https://wotlk.wowhead.com/quest=12161
+Accept: [QA12328],Accept,12328,,,,,,,https://wotlk.wowhead.com/quest=12328
+Do: [QC12328],Do,12328,,,,,,,https://wotlk.wowhead.com/quest=12328
+TurnIn: [QT12328],TurnIn,12328,,,,,,,https://wotlk.wowhead.com/quest=12328
+Accept: [QA12327],Accept,12327,,,,,,,https://wotlk.wowhead.com/quest=12327
+Do: [QC12327],Do,12327,,,,,,,https://wotlk.wowhead.com/quest=12327
+TurnIn: [QT12327],TurnIn,12327,,,,,,,https://wotlk.wowhead.com/quest=12327
+Accept: [QA12329],Accept,12329,,,,,,,https://wotlk.wowhead.com/quest=12329
+TurnIn: [QT12329],TurnIn,12329,,,,,,,https://wotlk.wowhead.com/quest=12329
+Accept: [QA12134],Accept,12134,,,,,,,https://wotlk.wowhead.com/quest=12134
+Accept: [QA12330],Accept,12330,,,,,,,https://wotlk.wowhead.com/quest=12330
+Do: [QC12134],Do,12134,,,,,,,https://wotlk.wowhead.com/quest=12134
+Do: [QC12330],Do,12330,,,,,,,https://wotlk.wowhead.com/quest=12330
+TurnIn: [QT12134],TurnIn,12134,,,,,,,https://wotlk.wowhead.com/quest=12134
+TurnIn: [QT12330],TurnIn,12330,,,,,,,https://wotlk.wowhead.com/quest=12330
+Accept: [QA12411],Accept,12411,,,,,,,https://wotlk.wowhead.com/quest=12411
+TurnIn: [QT12411],TurnIn,12411,,,,,,,https://wotlk.wowhead.com/quest=12411
+"The next quest is an Elite quest, Ive marked it as optional, do it as soon as you find a group for it.",Text,,,,,,,"The next quest is an Elite quest, Ive marked it as optional, do it as soon as you find a group for it.",https://wotlk.wowhead.com/quest=
+Accept: [QA12164][O],AcceptOptional,12164,,,,,,,https://wotlk.wowhead.com/quest=12164
+Accept: [QA12279],Accept,12279,,,,,,,https://wotlk.wowhead.com/quest=12279
+Buy a "Howlin' Good Moonshine" from Hugh Glass.,Text,,,,,,,Buy a "Howlin' Good Moonshine" from Hugh Glass.,https://wotlk.wowhead.com/quest=
+TurnIn: [QT11998],TurnIn,11998,,,,,,,https://wotlk.wowhead.com/quest=11998
+Accept: [QA12002],Accept,12002,,,,,,,https://wotlk.wowhead.com/quest=12002
+Accept: [QA11981],Accept,11981,,,,,,,https://wotlk.wowhead.com/quest=11981
+Accept: [QA11986],Accept,11986,,,,,,,https://wotlk.wowhead.com/quest=11986
+Do: [QC11986],Do,11986,,,,,,,https://wotlk.wowhead.com/quest=11986
+Do: [QC12002],Do,12002,,,,,,,https://wotlk.wowhead.com/quest=12002
+TurnIn: [QT12002],TurnIn,12002,,,,,,,https://wotlk.wowhead.com/quest=12002
+TurnIn: [QT11986],TurnIn,11986,,,,,,,https://wotlk.wowhead.com/quest=11986
+Accept: [QA11988],Accept,11988,,,,,,,https://wotlk.wowhead.com/quest=11988
+Accept: [QA12003],Accept,12003,,,,,,,https://wotlk.wowhead.com/quest=12003

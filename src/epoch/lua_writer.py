@@ -1,4 +1,5 @@
 from pathlib import Path
+
 import polars as pl
 
 
@@ -31,7 +32,7 @@ def write_guide_to_lua(
         for row in guide.iter_rows(named=True):
             step: str | None = row["formatted_text"]
             if step:
-                f.write(f"\nstep //{step_id}\n")
+                f.write("\nstep\n") # TODO : Do we need step id ?
                 f.write(row["formatted_text"])
                 step_id += 1
         f.write("\n]]")
