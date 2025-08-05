@@ -771,6 +771,7 @@ ZygorGuidesViewer:RegisterGuide(
 		'Go southwest to Westfall|goto Westfall|noway|c
 ]]
 )
+
 ZygorGuidesViewer:RegisterGuide(
 	"Zygor's Alliance Leveling Guides\\Night Elf (1-13)",
 	[[
@@ -1622,6 +1623,7 @@ ZygorGuidesViewer:RegisterGuide(
 		'Go southwest to Westfall|goto Westfall|noway|c
 ]]
 )
+
 ZygorGuidesViewer:RegisterGuide(
 	"Zygor's Alliance Leveling Guides\\Gnome (1-13)",
 	[[
@@ -2253,6 +2255,7 @@ ZygorGuidesViewer:RegisterGuide(
 		'Go southwest to Westfall|goto Westfall|noway|c
 ]]
 )
+
 ZygorGuidesViewer:RegisterGuide(
 	"Zygor's Alliance Leveling Guides\\Dwarf (1-13)",
 	[[
@@ -3803,6 +3806,7 @@ ZygorGuidesViewer:RegisterGuide(
 		ding 20
 ]]
 )
+
 ZygorGuidesViewer:RegisterGuide(
 	"Zygor's Alliance Leveling Guides\\Levels (20-25)",
 	[[
