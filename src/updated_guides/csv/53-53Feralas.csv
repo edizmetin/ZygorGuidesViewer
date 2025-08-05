@@ -11,18 +11,18 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,It
 9,TurnIn,2943,Return to Troyas,Feralas,,,,,,https://classic.wowhead.com/quest=2943,,,,,,,"","",turnin Return to Troyas##2943
 10,TurnIn,4142,A Visit to Gregan,Feralas,,,,,,https://classic.wowhead.com/quest=4142,,,,,,,"","",turnin A Visit to Gregan##4142
 11,Accept,2844,The Giant Guardian,Feralas,,,,,,https://classic.wowhead.com/quest=2844,,,,,,,"","",accept The Giant Guardian##2844
-12,Do,3909,The Videre Elixir,Feralas,,,,,,https://classic.wowhead.com/quest=3909,,,,,,,"","",Do: The Videre Elixir
+12,Do,3909,The Videre Elixir,Feralas,,,,,,https://classic.wowhead.com/quest=3909,,,,,,,"","",Do: The Videre Elixir |q 3909
 13,Text,,,Feralas,,,,,You can actually trick-jump in the back.,https://classic.wowhead.com/quest=,,,,,,,"","",You can actually trick-jump in the back.
-14,Do,2879,The Stave of Equinex,Feralas,,,,,,https://classic.wowhead.com/quest=2879,,,,,,,"","",Do: The Stave of Equinex
-15,Do,2879,The Stave of Equinex,Feralas,,,,,,https://classic.wowhead.com/quest=2879,,,,,,,"","",Do: The Stave of Equinex
+14,Do,2879,The Stave of Equinex,Feralas,,,,,,https://classic.wowhead.com/quest=2879,,,,,,,"","",Do: The Stave of Equinex |q 2879
+15,Do,2879,The Stave of Equinex,Feralas,,,,,,https://classic.wowhead.com/quest=2879,,,,,,,"","",Do: The Stave of Equinex |q 2879
 16,TurnIn,2844,The Giant Guardian,Feralas,,,,,,https://classic.wowhead.com/quest=2844,,,,,,,"","",turnin The Giant Guardian##2844
 17,Text,,,Feralas,,,,,"The follow quest is a really annoying escort, I skip it usually.",https://classic.wowhead.com/quest=,,,,,,,"","","The follow quest is a really annoying escort, I skip it usually."
-18,Do,2879,The Stave of Equinex,Feralas,,,,,,https://classic.wowhead.com/quest=2879,,,,,,,"","",Do: The Stave of Equinex
+18,Do,2879,The Stave of Equinex,Feralas,,,,,,https://classic.wowhead.com/quest=2879,,,,,,,"","",Do: The Stave of Equinex |q 2879
 19,Text,2879,The Stave of Equinex,Feralas,,,,,Use the Stave in your Inventory,https://classic.wowhead.com/quest=2879,,,,,,,"","",Use the Stave in your Inventory
 20,TurnIn,2879,The Stave of Equinex,Feralas,,,,,,https://classic.wowhead.com/quest=2879,,,,,,,"","",turnin The Stave of Equinex##2879
 21,Accept,2942,The Morrow Stone,Feralas,,,,,,https://classic.wowhead.com/quest=2942,,,,,,,"","",accept The Morrow Stone##2942
 22,TurnIn,3909,The Videre Elixir,Feralas,,,,,,https://classic.wowhead.com/quest=3909,,,,,,,"","",turnin The Videre Elixir##3909
-23,Do,7733,Improved Quality,Feralas,,,,,,https://classic.wowhead.com/quest=7733,,,,,,,"","",Do: Improved Quality
+23,Do,7733,Improved Quality,Feralas,,,,,,https://classic.wowhead.com/quest=7733,,,,,,,"","",Do: Improved Quality |q 7733
 24,TurnIn,7733,Improved Quality,Feralas,,,,,,https://classic.wowhead.com/quest=7733,,,,,,,"","",turnin Improved Quality##7733
 25,Text,,,Feralas,,,,,"If you found [Pristine Yeti Hide] on the yeti quest, Accept it now.",https://classic.wowhead.com/quest=,,,,,,,"","","If you found [Pristine Yeti Hide] on the yeti quest, Accept it now."
 26,TurnIn,7735,Pristine Yeti Hide,Feralas,,,,,,https://classic.wowhead.com/quest=7735,,,,,,,"","",turnin Pristine Yeti Hide##7735
@@ -63,11 +63,11 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,It
 61,Accept,3942,Linken's Memory,Un'Goro,,,,,,https://classic.wowhead.com/quest=3942,,,,,,,"","",accept Linken's Memory##3942
 62,Accept,4492,Lost!,Un'Goro,,,,,,https://classic.wowhead.com/quest=4492,,,,,,,"","",accept Lost!##4492
 63,Accept,4243,Chasing A-Me 01,Un'Goro,,,,,,https://classic.wowhead.com/quest=4243,,,,,,,"","",accept Chasing A-Me 01##4243
-64,Do,4504,Super Sticky,Un'Goro Crater,,,,,,https://classic.wowhead.com/quest=4504,,,,,,,"","",Do: Super Sticky
+64,Do,4504,Super Sticky,Un'Goro Crater,,,,,,https://classic.wowhead.com/quest=4504,,,,,,,"","",Do: Super Sticky |q 4504
 65,Accept,974,Finding the Source,Un'Goro Crater,,,,,,https://classic.wowhead.com/quest=974,,,,,,,"","",accept Finding the Source##974
-66,Do,4502,Volcanic Activity,Un'Goro Crater,,,,,,https://classic.wowhead.com/quest=4502,,,,,,,"","",Do: Volcanic Activity
-67,Do,974,Finding the Source,Un'Goro Crater,,,,,,https://classic.wowhead.com/quest=974,,,,,,,"","",Do: Finding the Source
-68,Do,4496,Bungle in the Jungle,Un'Goro Crater,,,,,,https://classic.wowhead.com/quest=4496,,,,,,,"","",Do: Bungle in the Jungle
+66,Do,4502,Volcanic Activity,Un'Goro Crater,,,,,,https://classic.wowhead.com/quest=4502,,,,,,,"","",Do: Volcanic Activity |q 4502
+67,Do,974,Finding the Source,Un'Goro Crater,,,,,,https://classic.wowhead.com/quest=974,,,,,,,"","",Do: Finding the Source |q 974
+68,Do,4496,Bungle in the Jungle,Un'Goro Crater,,,,,,https://classic.wowhead.com/quest=4496,,,,,,,"","",Do: Bungle in the Jungle |q 4496
 69,Accept,4301,The Mighty U'cha,Un'Goro Crater,,,,,,https://classic.wowhead.com/quest=4301,,,,,,,"","",accept The Mighty U'cha##4301
 70,TurnIn,974,Finding the Source,Un'Goro,,,,,,https://classic.wowhead.com/quest=974,,,,,,,"","",turnin Finding the Source##974
 71,Accept,980,The New Springs,Un'Goro,,,,,,https://classic.wowhead.com/quest=980,,,,,,,"","",accept The New Springs##980
@@ -78,7 +78,7 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,It
 76,TurnIn,4243,Chasing A-Me 01,Un'Goro,,,,,,https://classic.wowhead.com/quest=4243,,,,,,,"","",turnin Chasing A-Me 01##4243
 77,Accept,4244,Chasing A-Me 01,Un'Goro,,,,,,https://classic.wowhead.com/quest=4244,,,,,,,"","",accept Chasing A-Me 01##4244
 78,TurnIn,4244,Chasing A-Me 01,Un'Goro,,,,,,https://classic.wowhead.com/quest=4244,,,,,,,"","",turnin Chasing A-Me 01##4244
-79,Do,4301,The Mighty U'cha,Un'Goro,,,,,,https://classic.wowhead.com/quest=4301,,,,,,,"","",Do: The Mighty U'cha
+79,Do,4301,The Mighty U'cha,Un'Goro,,,,,,https://classic.wowhead.com/quest=4301,,,,,,,"","",Do: The Mighty U'cha |q 4301
 80,Accept,4245,Chasing A-Me 01,Un'Goro,,,,,,https://classic.wowhead.com/quest=4245,,,,,,,"","",accept Chasing A-Me 01##4245
 81,TurnIn,4245,Chasing A-Me 01,Un'Goro,,,,,,https://classic.wowhead.com/quest=4245,,,,,,,"","",turnin Chasing A-Me 01##4245
 82,TurnIn,4301,The Mighty U'cha,Un'Goro,,,,,,https://classic.wowhead.com/quest=4301,,,,,,,"","",turnin The Mighty U'cha##4301
@@ -97,7 +97,7 @@ Series: '' [str]
 ]",37,40,"","",home Darkshore
 91,Fly,,,Ruth'Theran,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Ruth'Theran
 92,Accept,978,Moontouched Wildkin,Ruth'Theran,,,,,,https://classic.wowhead.com/quest=978,,,,,,,"","",accept Moontouched Wildkin##978
-93,Do,4441,Felbound Ancients,Darnassus,,,,,,https://classic.wowhead.com/quest=4441,,,,,,,"","",Do: Felbound Ancients
+93,Do,4441,Felbound Ancients,Darnassus,,,,,,https://classic.wowhead.com/quest=4441,,,,,,,"","",Do: Felbound Ancients |q 4441
 94,Fly,,,Ashenvale,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Ashenvale
 95,TurnIn,5159,Cleansed Water Returns to Felwood,Felwood,,,,,,https://classic.wowhead.com/quest=5159,,,,,,,"","",turnin Cleansed Water Returns to Felwood##5159
 96,TurnIn,4441,Felbound Ancients,Felwood,,,,,,https://classic.wowhead.com/quest=4441,,,,,,,"","",turnin Felbound Ancients##4441

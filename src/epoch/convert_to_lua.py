@@ -1,4 +1,5 @@
 import logging
+
 import polars as pl
 from polars import col, lit
 
@@ -62,7 +63,7 @@ def do_case():
     return (
         col(GuideSchema.ACTION) == ActionType.DO,
         # TODO : Improve this by specifying what we need to do
-        pl.concat_str(lit("Do: "), col(GuideSchema.QUEST_NAME)),
+        pl.concat_str(lit("Do: "), col(GuideSchema.QUEST_NAME), lit(" |q "), col(GuideSchema.QUEST_ID)),
     )
 
 

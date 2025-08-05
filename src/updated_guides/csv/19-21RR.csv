@@ -37,19 +37,19 @@ Series: '' [str]
 17,Accept,120,Messenger to Stormwind,Redridge Mountains,,,,,https://classic.wowhead.com/quest=120,,,,,,,"","",,accept Messenger to Stormwind##120
 18,Accept,3741,Hilary's Necklace,Redridge Mountains,,,,,https://classic.wowhead.com/quest=3741,,,,,,,"","",,accept Hilary's Necklace##3741
 19,Accept,129,A Free Lunch,Redridge Mountains,,,,,https://classic.wowhead.com/quest=129,,,,,,,"","",,accept A Free Lunch##129
-20,Do,3741,Hilary's Necklace,Redridge Mountains,,,,,https://classic.wowhead.com/quest=3741,,,,,,,"","",,Do: Hilary's Necklace
+20,Do,3741,Hilary's Necklace,Redridge Mountains,,,,,https://classic.wowhead.com/quest=3741,,,,,,,"","",,Do: Hilary's Necklace |q 3741
 21,Text,,,Redridge Mountains,,,,"Kill as many Mongrels as you can at [G17,65]",https://classic.wowhead.com/quest=,,,,,,,"","",,"Kill as many Mongrels as you can at [G17,65]"
 22,TurnIn,129,A Free Lunch,Redridge Mountains,,,,,https://classic.wowhead.com/quest=129,,,,,,,"","",,turnin A Free Lunch##129
 23,Accept,130,Visit the Herbalist,Redridge Mountains,,,,,https://classic.wowhead.com/quest=130,,,,,,,"","",,accept Visit the Herbalist##130
-24,Do,246,Assessing the Threat,Redridge Mountains,,,,,https://classic.wowhead.com/quest=246,,,,,,,"","",,Do: Assessing the Threat
-25,Do,125,The Lost Tools,Redridge Mountains,,,,,https://classic.wowhead.com/quest=125,,,,,,,"","",,Do: The Lost Tools
+24,Do,246,Assessing the Threat,Redridge Mountains,,,,,https://classic.wowhead.com/quest=246,,,,,,,"","",,Do: Assessing the Threat |q 246
+25,Do,125,The Lost Tools,Redridge Mountains,,,,,https://classic.wowhead.com/quest=125,,,,,,,"","",,Do: The Lost Tools |q 125
 26,Run,,,Redridge Mountains,"70.6, 79.1",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
 Series: '' [str]
 [
 	""70.6""
 	"" 79.1""
 ]",70.6, 79.1,"","",,"Run to 70.6, 79.1 |goto Redridge Mountains 70.6, 79.1"
-27,Do,20,Blackrock Menace,Redridge Mountains,,,,,https://classic.wowhead.com/quest=20,,,,,,,"","",,Do: Blackrock Menace
+27,Do,20,Blackrock Menace,Redridge Mountains,,,,,https://classic.wowhead.com/quest=20,,,,,,,"","",,Do: Blackrock Menace |q 20
 28,Grind,,,the Orcs,,,20,,https://classic.wowhead.com/quest=,,,,,,,"","",,"Grind until level20
 |ding 20"
 29,UseHearthstone,,,Redridge Mountains,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",,use Hearthstone##6948

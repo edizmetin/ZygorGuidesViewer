@@ -10,10 +10,10 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,It
 8,AcceptOptional,4182,Dragonkin Menace,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4182,,,,,,,"","",
 9,Accept,4726,Broodling Essence,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4726,,,,,,,"","",accept Broodling Essence##4726
 10,Accept,4296,Tablet of the Seven,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4296,,,,,,,"","",accept Tablet of the Seven##4296
-11,Do,3701,The Smoldering Ruins of Thaurissan,Burning Steppes,,,,,,https://classic.wowhead.com/quest=3701,,,,,,,"","",Do: The Smoldering Ruins of Thaurissan
-12,Do,4296,Tablet of the Seven,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4296,,,,,,,"","",Do: Tablet of the Seven
-13,Do,3823,Extinguish the Firegut,Burning Steppes,,,,,,https://classic.wowhead.com/quest=3823,,,,,,,"","",Do: Extinguish the Firegut
-14,Do,4726,Broodling Essence,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4726,,,,,,,"","",Do: Broodling Essence
+11,Do,3701,The Smoldering Ruins of Thaurissan,Burning Steppes,,,,,,https://classic.wowhead.com/quest=3701,,,,,,,"","",Do: The Smoldering Ruins of Thaurissan |q 3701
+12,Do,4296,Tablet of the Seven,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4296,,,,,,,"","",Do: Tablet of the Seven |q 4296
+13,Do,3823,Extinguish the Firegut,Burning Steppes,,,,,,https://classic.wowhead.com/quest=3823,,,,,,,"","",Do: Extinguish the Firegut |q 3823
+14,Do,4726,Broodling Essence,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4726,,,,,,,"","",Do: Broodling Essence |q 4726
 15,DoOptional,4182,Dragonkin Menace,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4182,,,,,,,"","",Do (Optional): Dragonkin Menace
 16,AcceptOptional,4023,A Taste of Flame,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4023,,,,,,,"","",
 17,TurnInOptional,4023,A Taste of Flame,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4023,,,,,,,"","",
@@ -23,8 +23,8 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,It
 21,Accept,3824,Gor'tesh the Brute Lord,Burning Steppes,,,,,,https://classic.wowhead.com/quest=3824,,,,,,,"","",accept Gor'tesh the Brute Lord##3824
 22,TurnInOptional,4182,Dragonkin Menace,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4182,,,,,,,"","",
 23,AcceptOptional,4183,The True Masters,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4183,,,,,,,"","",
-24,Do,3824,Gor'tesh the Brute Lord,Burning Steppes,,,,,,https://classic.wowhead.com/quest=3824,,,,,,,"","",Do: Gor'tesh the Brute Lord
-25,Do,4283,FIFTY! YEP!,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4283,,,,,,,"","",Do: FIFTY! YEP!
+24,Do,3824,Gor'tesh the Brute Lord,Burning Steppes,,,,,,https://classic.wowhead.com/quest=3824,,,,,,,"","",Do: Gor'tesh the Brute Lord |q 3824
+25,Do,4283,FIFTY! YEP!,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4283,,,,,,,"","",Do: FIFTY! YEP! |q 4283
 26,TurnIn,4283,FIFTY! YEP!,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4283,,,,,,,"","",turnin FIFTY! YEP!##4283
 27,TurnIn,3824,Gor'tesh the Brute Lord,Burning Steppes,,,,,,https://classic.wowhead.com/quest=3824,,,,,,,"","",turnin Gor'tesh the Brute Lord##3824
 28,Fly,,,Redridge Mountains,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Redridge Mountains

@@ -8,7 +8,7 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Text,WowHead,ItemID,ItemName
 6,Accept,4740,WANTED: Murkdeep!,Darkshore,,,,,https://classic.wowhead.com/quest=4740,,,,,,,"","",,accept WANTED: Murkdeep!##4740
 7,Accept,1138,Fruit of the Sea,Darkshore,,,,,https://classic.wowhead.com/quest=1138,,,,,,,"","",,accept Fruit of the Sea##1138
 8,Accept,4728,Beached Sea Creature,Darkshore,,,,,https://classic.wowhead.com/quest=4728,,,,,,,"","",,accept Beached Sea Creature##4728
-9,Do,1138,Fruit of the Sea,Darkshore,,,,,https://classic.wowhead.com/quest=1138,,,,,,,"","",,Do: Fruit of the Sea
+9,Do,1138,Fruit of the Sea,Darkshore,,,,,https://classic.wowhead.com/quest=1138,,,,,,,"","",,Do: Fruit of the Sea |q 1138
 10,Accept,4730,Beached Sea Creature,Darkshore,,,,,https://classic.wowhead.com/quest=4730,,,,,,,"","",,accept Beached Sea Creature##4730
 11,Text,,,,,,,"The next 3 sea creatures are harder to get,especially as lvl 17warrior, but its doable, pull them ONE BY ONE! (You could also do it later if you die)",https://classic.wowhead.com/quest=,,,,,,,"","",,"The next 3 sea creatures are harder to get,especially as lvl 17warrior, but its doable, pull them ONE BY ONE! (You could also do it later if you die)"
 12,Accept,4731,Beached Sea Turtle,Darkshore,,,,,https://classic.wowhead.com/quest=4731,,,,,,,"","",,accept Beached Sea Turtle##4731
@@ -16,8 +16,8 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Text,WowHead,ItemID,ItemName
 14,Accept,4733,Beached Sea Creature,Darkshore,,,,,https://classic.wowhead.com/quest=4733,,,,,,,"","",,accept Beached Sea Creature##4733
 15,Text,,,,,,,"Whilst going towards the next quest, kill all Moonstalker Sires you see.",https://classic.wowhead.com/quest=,,,,,,,"","",,"Whilst going towards the next quest, kill all Moonstalker Sires you see."
 16,Accept,5713,One Shot. One Kill.,Darkshore,,,,,https://classic.wowhead.com/quest=5713,,,,,,,"","",,accept One Shot. One Kill.##5713
-17,Do,5713,One Shot. One Kill.,Darkshore,,,,,https://classic.wowhead.com/quest=5713,,,,,,,"","",,Do: One Shot. One Kill.
-18,Do,986,A Lost Master,Darkshore,,,,,https://classic.wowhead.com/quest=986,,,,,,,"","",,Do: A Lost Master
+17,Do,5713,One Shot. One Kill.,Darkshore,,,,,https://classic.wowhead.com/quest=5713,,,,,,,"","",,Do: One Shot. One Kill. |q 5713
+18,Do,986,A Lost Master,Darkshore,,,,,https://classic.wowhead.com/quest=986,,,,,,,"","",,Do: A Lost Master |q 986
 19,Text,1003,Buzzbox 525,Darkshore,,,,Do [QC986- ][QC1003],https://classic.wowhead.com/quest=1003,,,,,,,"","",,Do [QC986- ][QC1003]
 20,TurnIn,1003,Buzzbox 525,Darkshore,,,,,https://classic.wowhead.com/quest=1003,,,,,,,"","",,turnin Buzzbox 525##1003
 21,TurnIn,948,Onu,Darkshore,,,,,https://classic.wowhead.com/quest=948,,,,,,,"","",,turnin Onu##948
@@ -29,7 +29,7 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Text,WowHead,ItemID,ItemName
 27,Accept,950,Return to Onu,Darkshore,,,,,https://classic.wowhead.com/quest=950,,,,,,,"","",,accept Return to Onu##950
 28,Text,,,Darkshore,,,,"ESCORT QUEST COMING,TURN OFF AUTO TURNIN/ACCEPT IF YOURE IN A GROUP!",https://classic.wowhead.com/quest=,,,,,,,"","",,"ESCORT QUEST COMING,TURN OFF AUTO TURNIN/ACCEPT IF YOURE IN A GROUP!"
 29,Accept,945,Therylune's Escape,Darkshore,,,,,https://classic.wowhead.com/quest=945,,,,,,,"","",,accept Therylune's Escape##945
-30,Do,945,Therylune's Escape,Darkshore,,,,,https://classic.wowhead.com/quest=945,,,,,,,"","",,Do: Therylune's Escape
+30,Do,945,Therylune's Escape,Darkshore,,,,,https://classic.wowhead.com/quest=945,,,,,,,"","",,Do: Therylune's Escape |q 945
 31,Text,,,Darkshore,,,,"There is a RARE quest drop - Book: The Powers Below - in the pit, I never got it regularly EVER(I only got it when the escort dryad wasnt there and I was grinding mobs till she spawns). Accept it if you got it.",https://classic.wowhead.com/quest=,,,,,,,"","",,"There is a RARE quest drop - Book: The Powers Below - in the pit, I never got it regularly EVER(I only got it when the escort dryad wasnt there and I was grinding mobs till she spawns). Accept it if you got it."
 32,Accept,968,The Powers Below,Darkshore,,,,,https://classic.wowhead.com/quest=968,,,,,,,"","",,accept The Powers Below##968
 33,Text,,,Darkshore,,,,"ESCORT QUEST COMING,TURN OFF AUTO TURNIN/ACCEPT IF YOURE IN A GROUP! 
@@ -43,7 +43,7 @@ This escort quest is REALLY hard but has 3 follow ups, so make sure to do this(a
 Tip: Make Remtravel pull, or he will just continue walking, BUT he is NOT TANKY, take the aggro as soon as he is engaged! Even I fail this(if I am solo) sometimes and Remtravel dies.Just grind on the Golems until he respawns."
 34,TurnIn,729,The Absent Minded Prospector,Darkshore,,,,,https://classic.wowhead.com/quest=729,,,,,,,"","",,turnin The Absent Minded Prospector##729
 35,Accept,731,The Absent Minded Prospector,Darkshore,,,,,https://classic.wowhead.com/quest=731,,,,,,,"","",,accept The Absent Minded Prospector##731
-36,Do,731,The Absent Minded Prospector,Darkshore,,,,,https://classic.wowhead.com/quest=731,,,,,,,"","",,Do: The Absent Minded Prospector
+36,Do,731,The Absent Minded Prospector,Darkshore,,,,,https://classic.wowhead.com/quest=731,,,,,,,"","",,Do: The Absent Minded Prospector |q 731
 37,TurnIn,950,Return to Onu,Darkshore,,,,,https://classic.wowhead.com/quest=950,,,,,,,"","",,turnin Return to Onu##950
 38,Accept,951,Mathystra Relics,Darkshore,,,,,https://classic.wowhead.com/quest=951,,,,,,,"","",,accept Mathystra Relics##951
 39,Text,,,Darkshore,,,,"Careful, there will be multiple waves with 2-3Murlocs each, kill the last murloc per wave away from the fire,eat/drink up and pull the next wave OR get a group! If you cant manage to do it,just skip it.",https://classic.wowhead.com/quest=,,,,,,,"","",,"Careful, there will be multiple waves with 2-3Murlocs each, kill the last murloc per wave away from the fire,eat/drink up and pull the next wave OR get a group! If you cant manage to do it,just skip it."
@@ -53,7 +53,7 @@ Series: '' [str]
 	""36.4""
 	"" 75.6""
 ]",36.4, 75.6,"","",,"Run to 36.4, 75.6 |goto Darkshore 36.4, 75.6"
-41,Do,4740,WANTED: Murkdeep!,Darkshore,,,,,https://classic.wowhead.com/quest=4740,,,,,,,"","",,Do: WANTED: Murkdeep!
+41,Do,4740,WANTED: Murkdeep!,Darkshore,,,,,https://classic.wowhead.com/quest=4740,,,,,,,"","",,Do: WANTED: Murkdeep! |q 4740
 42,TurnIn,4731,Beached Sea Turtle,Darkshore,,,,,https://classic.wowhead.com/quest=4731,,,,,,,"","",,turnin Beached Sea Turtle##4731
 43,TurnIn,4728,Beached Sea Creature,Darkshore,,,,,https://classic.wowhead.com/quest=4728,,,,,,,"","",,turnin Beached Sea Creature##4728
 44,TurnIn,4730,Beached Sea Creature,Darkshore,,,,,https://classic.wowhead.com/quest=4730,,,,,,,"","",,turnin Beached Sea Creature##4730
@@ -68,13 +68,13 @@ Series: '' [str]
 53,Accept,2139,Tharnariun's Hope,Darkshore,,,,,https://classic.wowhead.com/quest=2139,,,,,,,"","",,accept Tharnariun's Hope##2139
 54,TurnIn,986,A Lost Master,Darkshore,,,,,https://classic.wowhead.com/quest=986,,,,,,,"","",,turnin A Lost Master##986
 55,Accept,993,A Lost Master,Darkshore,,,,,https://classic.wowhead.com/quest=993,,,,,,,"","",,accept A Lost Master##993
-56,Do,2139,Tharnariun's Hope,Darkshore,,,,,https://classic.wowhead.com/quest=2139,,,,,,,"","",,Do: Tharnariun's Hope
-57,Do,4763,The Blackwood Corrupted,Darkshore,,,,,https://classic.wowhead.com/quest=4763,,,,,,,"","",,Do: The Blackwood Corrupted
+56,Do,2139,Tharnariun's Hope,Darkshore,,,,,https://classic.wowhead.com/quest=2139,,,,,,,"","",,Do: Tharnariun's Hope |q 2139
+57,Do,4763,The Blackwood Corrupted,Darkshore,,,,,https://classic.wowhead.com/quest=4763,,,,,,,"","",,Do: The Blackwood Corrupted |q 4763
 58,Accept,966,The Tower of Althalaxx,Darkshore,,,,,https://classic.wowhead.com/quest=966,,,,,,,"","",,accept The Tower of Althalaxx##966
-59,Do,966,The Tower of Althalaxx,Darkshore,,,,,https://classic.wowhead.com/quest=966,,,,,,,"","",,Do: The Tower of Althalaxx
+59,Do,966,The Tower of Althalaxx,Darkshore,,,,,https://classic.wowhead.com/quest=966,,,,,,,"","",,Do: The Tower of Althalaxx |q 966
 60,TurnIn,966,The Tower of Althalaxx,Darkshore,,,,,https://classic.wowhead.com/quest=966,,,,,,,"","",,turnin The Tower of Althalaxx##966
 61,Accept,967,The Tower of Althalaxx,Darkshore,,,,,https://classic.wowhead.com/quest=967,,,,,,,"","",,accept The Tower of Althalaxx##967
-62,Do,951,Mathystra Relics,Darkshore,,,,,https://classic.wowhead.com/quest=951,,,,,,,"","",,Do: Mathystra Relics
+62,Do,951,Mathystra Relics,Darkshore,,,,,https://classic.wowhead.com/quest=951,,,,,,,"","",,Do: Mathystra Relics |q 951
 63,Grind,,,,,,19+4200,the nagas,https://classic.wowhead.com/quest=,,,,,,,"","",,"Grind until level19+4200
 |ding 19+4200"
 64,Text,,,Darkshore,,,,Die on purpose and rezz up.,https://classic.wowhead.com/quest=,,,,,,,"","",,Die on purpose and rezz up.

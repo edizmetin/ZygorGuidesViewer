@@ -6,14 +6,14 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,It
 4,,,,,,,,,,,,,,,,,"","",""
 5,Text,,,,,,,,,,,,,,,,"","",
 6,Text,,,Uldaman,,,,,"Now do Uldaman quests, this will require MULTIPLE travels from Uldaman to IF and back I will explain this in the next couple of steps, the loot quest markers will be all OUTSIDE of Uldaman allthough some stuff is inside!",https://classic.wowhead.com/quest=,,,,,,,"","","Now do Uldaman quests, this will require MULTIPLE travels from Uldaman to IF and back I will explain this in the next couple of steps, the loot quest markers will be all OUTSIDE of Uldaman allthough some stuff is inside!"
-7,Do,2418,Power Stones,Uldaman,,,,,,https://classic.wowhead.com/quest=2418,,,,,,,"","",Do: Power Stones
-8,Do,17,Uldaman Reagent Run,Uldaman,,,,,,https://classic.wowhead.com/quest=17,,,,,,,"","",Do: Uldaman Reagent Run
+7,Do,2418,Power Stones,Uldaman,,,,,,https://classic.wowhead.com/quest=2418,,,,,,,"","",Do: Power Stones |q 2418
+8,Do,17,Uldaman Reagent Run,Uldaman,,,,,,https://classic.wowhead.com/quest=17,,,,,,,"","",Do: Uldaman Reagent Run |q 17
 9,TurnIn,721,A Sign of Hope,Uldaman,,,,,,https://classic.wowhead.com/quest=721,,,,,,,"","",turnin A Sign of Hope##721
 10,Accept,722,Amulet of Secrets,Uldaman,,,,,,https://classic.wowhead.com/quest=722,,,,,,,"","",accept Amulet of Secrets##722
 11,Text,,,Uldaman,,,,,"Go further into Uldaman whilst keeping left, go up the small ramp and take the FIRST to the rest.The Room is round-ish and kill Magregan Deepshadow, down in the pit loot Ancient Chest->Go Back and take the first to the left(Area is filled with Troggs) At the end there is a chest to loot.",https://classic.wowhead.com/quest=,,,,,,,"","","Go further into Uldaman whilst keeping left, go up the small ramp and take the FIRST to the rest.The Room is round-ish and kill Magregan Deepshadow, down in the pit loot Ancient Chest->Go Back and take the first to the left(Area is filled with Troggs) At the end there is a chest to loot."
-12,Do,722,Amulet of Secrets,Uldaman,,,,,,https://classic.wowhead.com/quest=722,,,,,,,"","",Do: Amulet of Secrets
-13,Do,709,Solution to Doom,Uldaman,,,,,,https://classic.wowhead.com/quest=709,,,,,,,"","",Do: Solution to Doom
-14,Do,1360,Reclaimed Treasures,Uldaman,,,,,,https://classic.wowhead.com/quest=1360,,,,,,,"","",Do: Reclaimed Treasures
+12,Do,722,Amulet of Secrets,Uldaman,,,,,,https://classic.wowhead.com/quest=722,,,,,,,"","",Do: Amulet of Secrets |q 722
+13,Do,709,Solution to Doom,Uldaman,,,,,,https://classic.wowhead.com/quest=709,,,,,,,"","",Do: Solution to Doom |q 709
+14,Do,1360,Reclaimed Treasures,Uldaman,,,,,,https://classic.wowhead.com/quest=1360,,,,,,,"","",Do: Reclaimed Treasures |q 1360
 15,TurnIn,722,Amulet of Secrets,Uldaman,,,,,,https://classic.wowhead.com/quest=722,,,,,,,"","",turnin Amulet of Secrets##722
 16,Accept,724,Prospect of Faith,Uldaman,,,,,,https://classic.wowhead.com/quest=724,,,,,,,"","",accept Prospect of Faith##724
 17,Text,,,Uldaman,,,,,"If you havent found Shattered Necklace yet, go into the dungeon and grind Troggs untill you do so. Run outside",https://classic.wowhead.com/quest=,,,,,,,"","","If you havent found Shattered Necklace yet, go into the dungeon and grind Troggs untill you do so. Run outside"
@@ -46,7 +46,7 @@ Series: '' [str]
 39,TurnIn,726,Passing Word of a Threat,Ironforge,,,,,,https://classic.wowhead.com/quest=726,,,,,,,"","",turnin Passing Word of a Threat##726
 40,Accept,762,An Ambassador of Evil,Ironforge,,,,,,https://classic.wowhead.com/quest=762,,,,,,,"","",accept An Ambassador of Evil##762
 41,Fly,,,Loch Modan,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Loch Modan
-42,Do,762,An Ambassador of Evil,Badlands,,,,,,https://classic.wowhead.com/quest=762,,,,,,,"","",Do: An Ambassador of Evil
+42,Do,762,An Ambassador of Evil,Badlands,,,,,,https://classic.wowhead.com/quest=762,,,,,,,"","",Do: An Ambassador of Evil |q 762
 43,UseHearthstone,,,Badlands,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",use Hearthstone##6948
 44,TurnIn,762,An Ambassador of Evil,Ironforge,,,,,,https://classic.wowhead.com/quest=762,,,,,,,"","",turnin An Ambassador of Evil##762
 45,Accept,1139,The Lost Tablets of Will,Loch Modan,,,,,,https://classic.wowhead.com/quest=1139,,,,,,,"","",accept The Lost Tablets of Will##1139

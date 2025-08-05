@@ -11,19 +11,19 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,It
 9,Fly,,,Duskwood,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Duskwood
 10,TurnIn,1477,Vital Supplies,Duskwood,,,,,,https://classic.wowhead.com/quest=1477,,,,,,,"","",turnin Vital Supplies##1477
 11,Accept,1396,Encroaching Wildlife,Duskwood,,,,,,https://classic.wowhead.com/quest=1396,,,,,,,"","",accept Encroaching Wildlife##1396
-12,Do,1116,Dream Dust in the Swamp,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1116,,,,,,,"","",Do: Dream Dust in the Swamp
-13,Do,1396,Encroaching Wildlife,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1396,,,,,,,"","",Do: Encroaching Wildlife
+12,Do,1116,Dream Dust in the Swamp,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1116,,,,,,,"","",Do: Dream Dust in the Swamp |q 1116
+13,Do,1396,Encroaching Wildlife,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1396,,,,,,,"","",Do: Encroaching Wildlife |q 1396
 14,TurnIn,1396,Encroaching Wildlife,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1396,,,,,,,"","",turnin Encroaching Wildlife##1396
 15,Accept,1421,The Lost Caravan,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1421,,,,,,,"","",accept The Lost Caravan##1421
 16,Text,,,Swamp of Sorrows,,,,,"Kill Noboru the Cudgel to get Noboru's Cudgel. This is a grey item,but if you rightclick it, it starts a quest. Its only an OPTIONAL quest though",https://classic.wowhead.com/quest=,,,,,,,"","","Kill Noboru the Cudgel to get Noboru's Cudgel. This is a grey item,but if you rightclick it, it starts a quest. Its only an OPTIONAL quest though"
 17,Accept,1392,Noboru the Cudgel,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1392,,,,,,,"","",accept Noboru the Cudgel##1392
 18,TurnIn,1392,Noboru the Cudgel,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1392,,,,,,,"","",turnin Noboru the Cudgel##1392
 19,Accept,1389,Draenethyst Crystals,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1389,,,,,,,"","",accept Draenethyst Crystals##1389
-20,Do,1389,Draenethyst Crystals,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1389,,,,,,,"","",Do: Draenethyst Crystals
-21,Do,1373,Ongeku,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1373,,,,,,,"","",Do: Ongeku
-22,Do,1421,The Lost Caravan,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1421,,,,,,,"","",Do: The Lost Caravan
+20,Do,1389,Draenethyst Crystals,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1389,,,,,,,"","",Do: Draenethyst Crystals |q 1389
+21,Do,1373,Ongeku,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1373,,,,,,,"","",Do: Ongeku |q 1373
+22,Do,1421,The Lost Caravan,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1421,,,,,,,"","",Do: The Lost Caravan |q 1421
 23,Accept,1393,Galen's Escape,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1393,,,,,,,"","",accept Galen's Escape##1393
-24,Do,1393,Galen's Escape,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1393,,,,,,,"","",Do: Galen's Escape
+24,Do,1393,Galen's Escape,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1393,,,,,,,"","",Do: Galen's Escape |q 1393
 25,TurnIn,1393,Galen's Escape,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1393,,,,,,,"","",turnin Galen's Escape##1393
 26,TurnIn,1389,Draenethyst Crystals,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1389,,,,,,,"","",turnin Draenethyst Crystals##1389
 27,TurnIn,1421,The Lost Caravan,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1421,,,,,,,"","",turnin The Lost Caravan##1421
@@ -34,7 +34,7 @@ Series: '' [str]
 	""56.2""
 	""76.6""
 ]",56.2,76.6,"","","Run to 56.2,76.6 |goto Swamp of Sorrows 56.2,76.6"
-30,Do,1398,Driftwood,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1398,,,,,,,"","",Do: Driftwood
+30,Do,1398,Driftwood,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1398,,,,,,,"","",Do: Driftwood |q 1398
 31,Text,,,Swamp of Sorrows,,,,,"After done with the wood, farm 3-4 bars on the murlocs",https://classic.wowhead.com/quest=,,,,,,,"","","After done with the wood, farm 3-4 bars on the murlocs"
 32,TurnIn,1398,Driftwood,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1398,,,,,,,"","",turnin Driftwood##1398
 33,Accept,1425,Deliver the Shipment,Swamp of Sorrows,,,,,,https://classic.wowhead.com/quest=1425,,,,,,,"","",accept Deliver the Shipment##1425
@@ -54,13 +54,13 @@ Series: '' [str]
 42,Accept,6134,Ghost-o-plasm Round Up,Desolace,,,,,,https://classic.wowhead.com/quest=6134,,,,,,,"","",accept Ghost-o-plasm Round Up##6134
 43,TurnIn,1373,Ongeku,Desolace,,,,,,https://classic.wowhead.com/quest=1373,,,,,,,"","",turnin Ongeku##1373
 44,Accept,1374,Khan Jehn,Desolace,,,,,,https://classic.wowhead.com/quest=1374,,,,,,,"","",accept Khan Jehn##1374
-45,Do,261,Down the Scarlet Path,Desolace,,,,,,https://classic.wowhead.com/quest=261,,,,,,,"","",Do: Down the Scarlet Path
-46,Do,6134,Ghost-o-plasm Round Up,Desolace,,,,,,https://classic.wowhead.com/quest=6134,,,,,,,"","",Do: Ghost-o-plasm Round Up
+45,Do,261,Down the Scarlet Path,Desolace,,,,,,https://classic.wowhead.com/quest=261,,,,,,,"","",Do: Down the Scarlet Path |q 261
+46,Do,6134,Ghost-o-plasm Round Up,Desolace,,,,,,https://classic.wowhead.com/quest=6134,,,,,,,"","",Do: Ghost-o-plasm Round Up |q 6134
 47,Text,,,Desolace,,,,,Grind on the skeletons untill youre [XP42],https://classic.wowhead.com/quest=,,,,,,,"","",Grind on the skeletons untill youre [XP42]
-48,Do,1374,Khan Jehn,Desolace,,,,,,https://classic.wowhead.com/quest=1374,,,,,,,"","",Do: Khan Jehn
+48,Do,1374,Khan Jehn,Desolace,,,,,,https://classic.wowhead.com/quest=1374,,,,,,,"","",Do: Khan Jehn |q 1374
 49,TurnIn,1374,Khan Jehn,Desolace,,,,,,https://classic.wowhead.com/quest=1374,,,,,,,"","",turnin Khan Jehn##1374
 50,Accept,1380,Khan Hratha,Desolace,,,,,,https://classic.wowhead.com/quest=1380,,,,,,,"","",accept Khan Hratha##1380
-51,Do,1380,Khan Hratha,Desolace,,,,,,https://classic.wowhead.com/quest=1380,,,,,,,"","",Do: Khan Hratha
+51,Do,1380,Khan Hratha,Desolace,,,,,,https://classic.wowhead.com/quest=1380,,,,,,,"","",Do: Khan Hratha |q 1380
 52,TurnIn,1380,Khan Hratha,Desolace,,,,,,https://classic.wowhead.com/quest=1380,,,,,,,"","",turnin Khan Hratha##1380
 53,TurnIn,6134,Ghost-o-plasm Round Up,Desolace,,,,,,https://classic.wowhead.com/quest=6134,,,,,,,"","",turnin Ghost-o-plasm Round Up##6134
 54,TurnIn,261,Down the Scarlet Path,Desolace,,,,,,https://classic.wowhead.com/quest=261,,,,,,,"","",turnin Down the Scarlet Path##261

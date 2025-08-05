@@ -23,7 +23,7 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,It
 21,AcceptOptional,2768,Divino-matic Rod,Tanaris,,,,,,https://classic.wowhead.com/quest=2768,,,,,,,"","",
 22,AcceptOptional,3042,Troll Temper,Tanaris,,,,,,https://classic.wowhead.com/quest=3042,,,,,,,"","",
 23,Accept,992,Gadgetzan Water Survey,Tanaris,,,,,,https://classic.wowhead.com/quest=992,,,,,,,"","",accept Gadgetzan Water Survey##992
-24,Do,992,Gadgetzan Water Survey,Tanaris,,,,,,https://classic.wowhead.com/quest=992,,,,,,,"","",Do: Gadgetzan Water Survey
+24,Do,992,Gadgetzan Water Survey,Tanaris,,,,,,https://classic.wowhead.com/quest=992,,,,,,,"","",Do: Gadgetzan Water Survey |q 992
 25,Grind,,,Zul'Farrak,,,48,,,https://classic.wowhead.com/quest=,,,,,,,"","","Grind until level48
 |ding 48"
 26,UseHearthstone,,,Feralas,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",use Hearthstone##6948
@@ -40,18 +40,18 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,It
 37,TurnIn,3445,The Sunken Temple,Tanaris,,,,,,https://classic.wowhead.com/quest=3445,,,,,,,"","",turnin The Sunken Temple##3445
 38,Accept,3444,The Stone Circle,Tanaris,,,,,,https://classic.wowhead.com/quest=3444,,,,,,,"","",accept The Stone Circle##3444
 39,Accept,3161,Gahz'ridian,Tanaris,,,,,,https://classic.wowhead.com/quest=3161,,,,,,,"","",accept Gahz'ridian##3161
-40,Do,5863,The Dunemaul Compound,Tanaris,,,,,,https://classic.wowhead.com/quest=5863,,,,,,,"","",Do: The Dunemaul Compound
-41,Do,82,Noxious Lair Investigation,Tanaris,,,,,,https://classic.wowhead.com/quest=82,,,,,,,"","",Do: Noxious Lair Investigation
-42,Do,3161,Gahz'ridian,Tanaris,,,,,,https://classic.wowhead.com/quest=3161,,,,,,,"","",Do: Gahz'ridian
-43,Do,2605,The Thirsty Goblin,Tanaris,,,,,,https://classic.wowhead.com/quest=2605,,,,,,,"","",Do: The Thirsty Goblin
-44,Do,3362,Thistleshrub Valley,Tanaris,,,,,,https://classic.wowhead.com/quest=3362,,,,,,,"","",Do: Thistleshrub Valley
+40,Do,5863,The Dunemaul Compound,Tanaris,,,,,,https://classic.wowhead.com/quest=5863,,,,,,,"","",Do: The Dunemaul Compound |q 5863
+41,Do,82,Noxious Lair Investigation,Tanaris,,,,,,https://classic.wowhead.com/quest=82,,,,,,,"","",Do: Noxious Lair Investigation |q 82
+42,Do,3161,Gahz'ridian,Tanaris,,,,,,https://classic.wowhead.com/quest=3161,,,,,,,"","",Do: Gahz'ridian |q 3161
+43,Do,2605,The Thirsty Goblin,Tanaris,,,,,,https://classic.wowhead.com/quest=2605,,,,,,,"","",Do: The Thirsty Goblin |q 2605
+44,Do,3362,Thistleshrub Valley,Tanaris,,,,,,https://classic.wowhead.com/quest=3362,,,,,,,"","",Do: Thistleshrub Valley |q 3362
 45,Text,,,Tanaris,,,,,You should have found the chicken beacon quest by now,https://classic.wowhead.com/quest=,,,,,,,"","",You should have found the chicken beacon quest by now
 46,Accept,351,Find OOX-17/TN!,Tanaris,,,,,,https://classic.wowhead.com/quest=351,,,,,,,"","",accept Find OOX-17/TN!##351
 47,Accept,1560,Tooga's Quest,Tanaris,,,,,,https://classic.wowhead.com/quest=1560,,,,,,,"","",accept Tooga's Quest##1560
 48,Text,,,Tanaris,,,,,"Escort quest inv,if youre in a group, dont accept the follow before everyone has turned in!",https://classic.wowhead.com/quest=,,,,,,,"","","Escort quest inv,if youre in a group, dont accept the follow before everyone has turned in!"
 49,TurnIn,351,Find OOX-17/TN!,Tanaris,,,,,,https://classic.wowhead.com/quest=351,,,,,,,"","",turnin Find OOX-17/TN!##351
 50,Accept,648,Rescue OOX-17/TN!,Tanaris,,,,,,https://classic.wowhead.com/quest=648,,,,,,,"","",accept Rescue OOX-17/TN!##648
-51,Do,648,Rescue OOX-17/TN!,Tanaris,,,,,,https://classic.wowhead.com/quest=648,,,,,,,"","",Do: Rescue OOX-17/TN!
+51,Do,648,Rescue OOX-17/TN!,Tanaris,,,,,,https://classic.wowhead.com/quest=648,,,,,,,"","",Do: Rescue OOX-17/TN! |q 648
 52,TurnIn,1560,Tooga's Quest,Tanaris,,,,,,https://classic.wowhead.com/quest=1560,,,,,,,"","",turnin Tooga's Quest##1560
 53,TurnInOptional,3527,The Prophecy of Mosh'aru,Tanaris,,,,,,https://classic.wowhead.com/quest=3527,,,,,,,"","",
 54,TurnIn,5863,The Dunemaul Compound,Tanaris,,,,,,https://classic.wowhead.com/quest=5863,,,,,,,"","",turnin The Dunemaul Compound##5863
@@ -81,7 +81,7 @@ Series: '' [str]
 	""56.3""
 	""72.2""
 ]",56.3,72.2,"","","Run to 56.3,72.2 |goto Tanaris 56.3,72.2"
-66,Do,10,The Scrimshank Redemption,Tanaris,,,,,,https://classic.wowhead.com/quest=10,,,,,,,"","",Do: The Scrimshank Redemption
+66,Do,10,The Scrimshank Redemption,Tanaris,,,,,,https://classic.wowhead.com/quest=10,,,,,,,"","",Do: The Scrimshank Redemption |q 10
 67,TurnIn,10,The Scrimshank Redemption,Tanaris,,,,,,https://classic.wowhead.com/quest=10,,,,,,,"","",turnin The Scrimshank Redemption##10
 68,Accept,110,Insect Part Analysis,Tanaris,,,,,,https://classic.wowhead.com/quest=110,,,,,,,"","",accept Insect Part Analysis##110
 69,TurnIn,110,Insect Part Analysis,Tanaris,,,,,,https://classic.wowhead.com/quest=110,,,,,,,"","",turnin Insect Part Analysis##110

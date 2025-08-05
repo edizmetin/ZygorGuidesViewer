@@ -21,10 +21,10 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,It
 19,TurnInOptional,4223,The True Masters,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4223,,,,,,,"","",
 20,AcceptOptional,4224,The True Masters,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4224,,,,,,,"","",
 21,Accept,4286,The Good Stuff,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4286,,,,,,,"","",accept The Good Stuff##4286
-22,Do,4224,The True Masters,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4224,,,,,,,"","",Do: The True Masters
+22,Do,4224,The True Masters,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4224,,,,,,,"","",Do: The True Masters |q 4224
 23,Accept,4123,The Heart of the Mountain,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4123,,,,,,,"","",accept The Heart of the Mountain##4123
 24,Accept,3825,Ogre Head On A Stick = Party,Burning Steppes,,,,,,https://classic.wowhead.com/quest=3825,,,,,,,"","",accept Ogre Head On A Stick = Party##3825
-25,Do,3825,Ogre Head On A Stick = Party,Burning Steppes,,,,,,https://classic.wowhead.com/quest=3825,,,,,,,"","",Do: Ogre Head On A Stick = Party
+25,Do,3825,Ogre Head On A Stick = Party,Burning Steppes,,,,,,https://classic.wowhead.com/quest=3825,,,,,,,"","",Do: Ogre Head On A Stick = Party |q 3825
 26,Accept,4024,A Taste of Flame,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4024,,,,,,,"","",accept A Taste of Flame##4024
 27,TurnInOptional,4224,The True Masters,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4224,,,,,,,"","",
 28,AcceptOptional,4241,Marshal Windsor,Burning Steppes,,,,,,https://classic.wowhead.com/quest=4241,,,,,,,"","",

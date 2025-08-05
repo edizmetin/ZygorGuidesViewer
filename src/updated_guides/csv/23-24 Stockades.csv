@@ -12,11 +12,11 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Text,WowHead,ItemID,ItemName
 10,Fly,,,Redridge Mountains,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",,fpath Redridge Mountains
 11,Accept,386,What Comes Around...,,,,,,https://classic.wowhead.com/quest=386,,,,,,,"","",,accept What Comes Around...##386
 12,Text,,,,,,,Do the dungeon,https://classic.wowhead.com/quest=,,,,,,,"","",,Do the dungeon
-13,Do,387,Quell The Uprising,,,,,,https://classic.wowhead.com/quest=387,,,,,,,"","",,Do: Quell The Uprising
-14,Do,391,The Stockade Riots,,,,,,https://classic.wowhead.com/quest=391,,,,,,,"","",,Do: The Stockade Riots
-15,Do,388,The Color of Blood,,,,,,https://classic.wowhead.com/quest=388,,,,,,,"","",,Do: The Color of Blood
-16,Do,377,Crime and Punishment,,,,,,https://classic.wowhead.com/quest=377,,,,,,,"","",,Do: Crime and Punishment
-17,Do,386,What Comes Around...,,,,,,https://classic.wowhead.com/quest=386,,,,,,,"","",,Do: What Comes Around...
+13,Do,387,Quell The Uprising,,,,,,https://classic.wowhead.com/quest=387,,,,,,,"","",,Do: Quell The Uprising |q 387
+14,Do,391,The Stockade Riots,,,,,,https://classic.wowhead.com/quest=391,,,,,,,"","",,Do: The Stockade Riots |q 391
+15,Do,388,The Color of Blood,,,,,,https://classic.wowhead.com/quest=388,,,,,,,"","",,Do: The Color of Blood |q 388
+16,Do,377,Crime and Punishment,,,,,,https://classic.wowhead.com/quest=377,,,,,,,"","",,Do: Crime and Punishment |q 377
+17,Do,386,What Comes Around...,,,,,,https://classic.wowhead.com/quest=386,,,,,,,"","",,Do: What Comes Around... |q 386
 18,TurnIn,387,Quell The Uprising,,,,,,https://classic.wowhead.com/quest=387,,,,,,,"","",,turnin Quell The Uprising##387
 19,TurnIn,391,The Stockade Riots,,,,,,https://classic.wowhead.com/quest=391,,,,,,,"","",,turnin The Stockade Riots##391
 20,Accept,392,The Curious Visitor,Stormwind City,,,,,https://classic.wowhead.com/quest=392,,,,,,,"","",,accept The Curious Visitor##392

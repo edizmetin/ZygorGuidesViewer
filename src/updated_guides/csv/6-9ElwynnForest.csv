@@ -61,8 +61,8 @@ Series: '' [str]
 |only if Paladin,Mage,Warlock"
 45,Text,,,Elwynn Forest,,,,"[A Warrior,Rogue] Buy 20 Food(lvl5) and as many 6 Slot Bags as you can.",https://classic.wowhead.com/quest=,,,,,,,"","","Warrior,Rogue","[A Warrior,Rogue] Buy 20 Food(lvl5) and as many 6 Slot Bags as you can.
 |only if Warrior,Rogue"
-46,Do,112,Collecting Kelp,Elwynn Forest,,,,,https://classic.wowhead.com/quest=112,,,,,,,"","",,Do: Collecting Kelp
-47,Do,76,The Jasperlode Mine,Elwynn Forest,,,,,https://classic.wowhead.com/quest=76,,,,,,,"","",,Do: The Jasperlode Mine
+46,Do,112,Collecting Kelp,Elwynn Forest,,,,,https://classic.wowhead.com/quest=112,,,,,,,"","",,Do: Collecting Kelp |q 112
+47,Do,76,The Jasperlode Mine,Elwynn Forest,,,,,https://classic.wowhead.com/quest=76,,,,,,,"","",,Do: The Jasperlode Mine |q 76
 48,Text,,,Elwynn Forest,"64.5,56.6",,,"Die on the Campfire nearby[G64.5,56.6Elwynn Forest] and rezz at Ghosthealer.",https://classic.wowhead.com/quest=,,,,"shape: (2,)
 Series: '' [str]
 [

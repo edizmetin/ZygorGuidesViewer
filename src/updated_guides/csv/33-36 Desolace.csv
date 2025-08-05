@@ -25,13 +25,13 @@ Series: '' [str]
 ]",66,6,"","",home Desolace
 14,Turnin,1437,Vahlarriel's Search,Desolace,,,,,,https://classic.wowhead.com/quest=1437,,,,,,,"","",""
 15,Accept,1465,Vahlarriel's Search,Desolace,,,,,,https://classic.wowhead.com/quest=1465,,,,,,,"","",accept Vahlarriel's Search##1465
-16,Do,1458,Reagents for Reclaimers Inc.,Desolace,,,,,,https://classic.wowhead.com/quest=1458,,,,,,,"","",Do: Reagents for Reclaimers Inc.
+16,Do,1458,Reagents for Reclaimers Inc.,Desolace,,,,,,https://classic.wowhead.com/quest=1458,,,,,,,"","",Do: Reagents for Reclaimers Inc. |q 1458
 17,Turnin,1465,Vahlarriel's Search,Desolace,,,,,,https://classic.wowhead.com/quest=1465,,,,,,,"","",""
 18,Accept,1438,Vahlarriel's Search,Desolace,,,,,,https://classic.wowhead.com/quest=1438,,,,,,,"","",accept Vahlarriel's Search##1438
 19,Turnin,1458,Reagents for Reclaimers Inc.,Desolace,,,,,,https://classic.wowhead.com/quest=1458,,,,,,,"","",""
 20,Accept,1459,Reagents for Reclaimers Inc.,Desolace,,,,,,https://classic.wowhead.com/quest=1459,,,,,,,"","",accept Reagents for Reclaimers Inc.##1459
 21,Text,,,Desolace,,,,,Kill all Scorpions/Aged Kodos you find from now on,https://classic.wowhead.com/quest=,,,,,,,"","",Kill all Scorpions/Aged Kodos you find from now on
-22,Do,1459,Reagents for Reclaimers Inc.,Desolace,,,,,,https://classic.wowhead.com/quest=1459,,,,,,,"","",Do: Reagents for Reclaimers Inc.
+22,Do,1459,Reagents for Reclaimers Inc.,Desolace,,,,,,https://classic.wowhead.com/quest=1459,,,,,,,"","",Do: Reagents for Reclaimers Inc. |q 1459
 23,Accept,5501,Bone Collector,Desolace,,,,,,https://classic.wowhead.com/quest=5501,,,,,,,"","",accept Bone Collector##5501
 24,Run,,,Desolace,"67.2, 74.4",,,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
 Series: '' [str]
@@ -40,12 +40,12 @@ Series: '' [str]
 	"" 74.4""
 ]",67.2, 74.4,"","","Run to 67.2, 74.4 |goto Desolace 67.2, 74.4"
 25,Text,,,Desolace,,,,,Kill Magram Centaurs for Strange Alliances (Farm untill youre friendly with Gelkis) and Centaur Bounty,https://classic.wowhead.com/quest=,,,,,,,"","",Kill Magram Centaurs for Strange Alliances (Farm untill youre friendly with Gelkis) and Centaur Bounty
-26,Do,1382,Strange Alliance,Desolace,,,,,,https://classic.wowhead.com/quest=1382,,,,,,,"","",Do: Strange Alliance
-27,Do,1387,Centaur Bounty,Desolace,,,,,,https://classic.wowhead.com/quest=1387,,,,,,,"","",Do: Centaur Bounty
+26,Do,1382,Strange Alliance,Desolace,,,,,,https://classic.wowhead.com/quest=1382,,,,,,,"","",Do: Strange Alliance |q 1382
+27,Do,1387,Centaur Bounty,Desolace,,,,,,https://classic.wowhead.com/quest=1387,,,,,,,"","",Do: Centaur Bounty |q 1387
 28,Accept,5561,Kodo Roundup,Desolace,,,,,,https://classic.wowhead.com/quest=5561,,,,,,,"","",accept Kodo Roundup##5561
-29,Do,5561,Kodo Roundup,Desolace,,,,,,https://classic.wowhead.com/quest=5561,,,,,,,"","",Do: Kodo Roundup
-30,Do,5501,Bone Collector,Desolace,,,,,,https://classic.wowhead.com/quest=5501,,,,,,,"","",Do: Bone Collector
-31,Do,1459,Reagents for Reclaimers Inc.,Desolace,,,,,,https://classic.wowhead.com/quest=1459,,,,,,,"","",Do: Reagents for Reclaimers Inc.
+29,Do,5561,Kodo Roundup,Desolace,,,,,,https://classic.wowhead.com/quest=5561,,,,,,,"","",Do: Kodo Roundup |q 5561
+30,Do,5501,Bone Collector,Desolace,,,,,,https://classic.wowhead.com/quest=5501,,,,,,,"","",Do: Bone Collector |q 5501
+31,Do,1459,Reagents for Reclaimers Inc.,Desolace,,,,,,https://classic.wowhead.com/quest=1459,,,,,,,"","",Do: Reagents for Reclaimers Inc. |q 1459
 32,Turnin,5561,Kodo Roundup,Desolace,,,,,,https://classic.wowhead.com/quest=5561,,,,,,,"","",""
 33,Turnin,1382,Strange Alliance,Desolace,,,,,,https://classic.wowhead.com/quest=1382,,,,,,,"","",""
 34,Accept,1384,Raid on the Kolkar,Desolace,,,,,,https://classic.wowhead.com/quest=1384,,,,,,,"","",accept Raid on the Kolkar##1384
@@ -53,14 +53,14 @@ Series: '' [str]
 36,Turnin,1459,Reagents for Reclaimers Inc.,Desolace,,,,,,https://classic.wowhead.com/quest=1459,,,,,,,"","",""
 37,Turnin,1387,Centaur Bounty,Desolace,,,,,,https://classic.wowhead.com/quest=1387,,,,,,,"","",""
 38,Turnin,5501,Bone Collector,Desolace,,,,,,https://classic.wowhead.com/quest=5501,,,,,,,"","",""
-39,Do,1384,Raid on the Kolkar,Desolace,,,,,,https://classic.wowhead.com/quest=1384,,,,,,,"","",Do: Raid on the Kolkar
+39,Do,1384,Raid on the Kolkar,Desolace,,,,,,https://classic.wowhead.com/quest=1384,,,,,,,"","",Do: Raid on the Kolkar |q 1384
 40,Turnin,1454,The Karnitol Shipwreck,Desolace,,,,,,https://classic.wowhead.com/quest=1454,,,,,,,"","",""
 41,Accept,1455,The Karnitol Shipwreck,Desolace,,,,,,https://classic.wowhead.com/quest=1455,,,,,,,"","",accept The Karnitol Shipwreck##1455
 42,Accept,5741,Sceptre of Light,Desolace,,,,,,https://classic.wowhead.com/quest=5741,,,,,,,"","",accept Sceptre of Light##5741
 43,Turnin,1438,Vahlarriel's Search,Desolace,,,,,,https://classic.wowhead.com/quest=1438,,,,,,,"","",""
 44,Accept,1439,Search for Tyranis,Desolace,,,,,,https://classic.wowhead.com/quest=1439,,,,,,,"","",accept Search for Tyranis##1439
-45,Do,5741,Sceptre of Light,Desolace,,,,,,https://classic.wowhead.com/quest=5741,,,,,,,"","",Do: Sceptre of Light
-46,Do,1439,Search for Tyranis,Desolace,,,,,,https://classic.wowhead.com/quest=1439,,,,,,,"","",Do: Search for Tyranis
+45,Do,5741,Sceptre of Light,Desolace,,,,,,https://classic.wowhead.com/quest=5741,,,,,,,"","",Do: Sceptre of Light |q 5741
+46,Do,1439,Search for Tyranis,Desolace,,,,,,https://classic.wowhead.com/quest=1439,,,,,,,"","",Do: Search for Tyranis |q 1439
 47,Turnin,1439,Search for Tyranis,Desolace,,,,,,https://classic.wowhead.com/quest=1439,,,,,,,"","",""
 48,Text,,,Desolace,,,,,"NEXT ACCEPT IS ESCORT,WAIT IF YOURE IN GRP!",https://classic.wowhead.com/quest=,,,,,,,"","","NEXT ACCEPT IS ESCORT,WAIT IF YOURE IN GRP!"
 49,Accept,1440,Return to Vahlarriel,Desolace,,,,,,https://classic.wowhead.com/quest=1440,,,,,,,"","",accept Return to Vahlarriel##1440
@@ -69,15 +69,15 @@ Series: '' [str]
 52,Accept,1456,The Karnitol Shipwreck,Desolace,,,,,,https://classic.wowhead.com/quest=1456,,,,,,,"","",accept The Karnitol Shipwreck##1456
 53,Turnin,5741,Sceptre of Light,Desolace,,,,,,https://classic.wowhead.com/quest=5741,,,,,,,"","",""
 54,Accept,6027,Book of the Ancients,Desolace,,,,,,https://classic.wowhead.com/quest=6027,,,,,,,"","",accept Book of the Ancients##6027
-55,Do,1456,The Karnitol Shipwreck,Desolace,,,,,,https://classic.wowhead.com/quest=1456,,,,,,,"","",Do: The Karnitol Shipwreck
-56,Do,6027,Book of the Ancients,Desolace,,,,,,https://classic.wowhead.com/quest=6027,,,,,,,"","",Do: Book of the Ancients
+55,Do,1456,The Karnitol Shipwreck,Desolace,,,,,,https://classic.wowhead.com/quest=1456,,,,,,,"","",Do: The Karnitol Shipwreck |q 1456
+56,Do,6027,Book of the Ancients,Desolace,,,,,,https://classic.wowhead.com/quest=6027,,,,,,,"","",Do: Book of the Ancients |q 6027
 57,Turnin,6027,Book of the Ancients,Desolace,,,,,,https://classic.wowhead.com/quest=6027,,,,,,,"","",""
 58,UseHearthstone,,,Desolace,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",use Hearthstone##6948
 59,Turnin,1456,The Karnitol Shipwreck,Desolace,,,,,,https://classic.wowhead.com/quest=1456,,,,,,,"","",""
 60,Accept,1457,The Karnitol Shipwreck,Desolace,,,,,,https://classic.wowhead.com/quest=1457,,,,,,,"","",accept The Karnitol Shipwreck##1457
 61,Turnin,1384,Raid on the Kolkar,Desolace,,,,,,https://classic.wowhead.com/quest=1384,,,,,,,"","",""
 62,Accept,1370,Stealing Supplies,Desolace,,,,,,https://classic.wowhead.com/quest=1370,,,,,,,"","",accept Stealing Supplies##1370
-63,Do,1370,Stealing Supplies,Desolace,,,,,,https://classic.wowhead.com/quest=1370,,,,,,,"","",Do: Stealing Supplies
+63,Do,1370,Stealing Supplies,Desolace,,,,,,https://classic.wowhead.com/quest=1370,,,,,,,"","",Do: Stealing Supplies |q 1370
 64,Turnin,1370,Stealing Supplies,Desolace,,,,,,https://classic.wowhead.com/quest=1370,,,,,,,"","",""
 65,Accept,1373,Ongeku,Desolace,,,,,,https://classic.wowhead.com/quest=1373,,,,,,,"","",accept Ongeku##1373
 66,Run,,,Desolace,"41.3,93.0",,,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
@@ -130,29 +130,29 @@ Series: '' [str]
 88,Accept,1182,Goblin Sponsorship,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=1182,,,,,,,"","",accept Goblin Sponsorship##1182
 89,Accept,578,The Stone of the Tides,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=578,,,,,,,"","",accept The Stone of the Tides##578
 90,Accept,575,Supply and Demand,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=575,,,,,,,"","",accept Supply and Demand##575
-91,Do,213,Hostile Takeover,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=213,,,,,,,"","",Do: Hostile Takeover
+91,Do,213,Hostile Takeover,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=213,,,,,,,"","",Do: Hostile Takeover |q 213
 92,Text,,,Stranglethorn Vale,,,,,They key for the chest is ontop of the oil rig,https://classic.wowhead.com/quest=,,,,,,,"","",They key for the chest is ontop of the oil rig
-93,Do,1182,Goblin Sponsorship,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=1182,,,,,,,"","",Do: Goblin Sponsorship
-94,Do,195,Raptor Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=195,,,,,,,"","",Do: Raptor Mastery
-95,Do,188,Tiger Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=188,,,,,,,"","",Do: Tiger Mastery
+93,Do,1182,Goblin Sponsorship,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=1182,,,,,,,"","",Do: Goblin Sponsorship |q 1182
+94,Do,195,Raptor Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=195,,,,,,,"","",Do: Raptor Mastery |q 195
+95,Do,188,Tiger Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=188,,,,,,,"","",Do: Tiger Mastery |q 188
 96,Text,,,Stranglethorn Vale,,,,,You dont have to finish the Bloodscalp ears now,https://classic.wowhead.com/quest=,,,,,,,"","",You dont have to finish the Bloodscalp ears now
-97,Do,189,Bloodscalp Ears,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=189,,,,,,,"","",Do: Bloodscalp Ears
+97,Do,189,Bloodscalp Ears,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=189,,,,,,,"","",Do: Bloodscalp Ears |q 189
 98,Turnin,195,Raptor Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=195,,,,,,,"","",""
 99,Accept,196,Raptor Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=196,,,,,,,"","",accept Raptor Mastery##196
 100,Turnin,5762,Hemet Nesingwary,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=5762,,,,,,,"","",""
 101,Turnin,188,Tiger Mastery,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=188,,,,,,,"","",""
 102,Turnin,198,Supplies to Private Thorsen,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=198,,,,,,,"","",""
-103,Do,575,Supply and Demand,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=575,,,,,,,"","",Do: Supply and Demand
+103,Do,575,Supply and Demand,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=575,,,,,,,"","",Do: Supply and Demand |q 575
 104,Run,,,Stranglethorn Vale,"26,17",,,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
 Series: '' [str]
 [
 	""26""
 	""17""
 ]",26,17,"","","Run to 26,17 |goto Stranglethorn Vale 26,17"
-105,Do,605,Singing Blue Shards,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=605,,,,,,,"","",Do: Singing Blue Shards
-106,Do,189,Bloodscalp Ears,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=189,,,,,,,"","",Do: Bloodscalp Ears
+105,Do,605,Singing Blue Shards,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=605,,,,,,,"","",Do: Singing Blue Shards |q 605
+106,Do,189,Bloodscalp Ears,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=189,,,,,,,"","",Do: Bloodscalp Ears |q 189
 107,Text,,,Stranglethorn Vale,,,,,Finish the Bloodscalp ears now,https://classic.wowhead.com/quest=,,,,,,,"","",Finish the Bloodscalp ears now
-108,Do,578,The Stone of the Tides,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=578,,,,,,,"","",Do: The Stone of the Tides
+108,Do,578,The Stone of the Tides,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=578,,,,,,,"","",Do: The Stone of the Tides |q 578
 109,UseHearthstone,,,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",use Hearthstone##6948
 110,Turnin,605,Singing Blue Shards,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=605,,,,,,,"","",""
 111,Turnin,201,Investigate the Camp,Stranglethorn Vale,,,,,,https://classic.wowhead.com/quest=201,,,,,,,"","",""
@@ -170,7 +170,7 @@ Series: '' [str]
 123,TurninOptional,229,The Daughter Who Lived,Duskwood,,,,,,https://classic.wowhead.com/quest=229,,,,,,,"","",""
 124,Turnin,1042,The Carevin Family,Duskwood,,,,,,https://classic.wowhead.com/quest=1042,,,,,,,"","",""
 125,Accept,1043,The Scythe of Elune,Duskwood,,,,,,https://classic.wowhead.com/quest=1043,,,,,,,"","",accept The Scythe of Elune##1043
-126,Do,1043,The Scythe of Elune,Duskwood,,,,,,https://classic.wowhead.com/quest=1043,,,,,,,"","",Do: The Scythe of Elune
+126,Do,1043,The Scythe of Elune,Duskwood,,,,,,https://classic.wowhead.com/quest=1043,,,,,,,"","",Do: The Scythe of Elune |q 1043
 127,Turnin,1043,The Scythe of Elune,Duskwood,,,,,,https://classic.wowhead.com/quest=1043,,,,,,,"","",""
 128,Accept,1044,Answered Questions,Duskwood,,,,,,https://classic.wowhead.com/quest=1044,,,,,,,"","",accept Answered Questions##1044
 129,Fly,,,Stormwind City,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Stormwind City
@@ -195,10 +195,10 @@ Series: '' [str]
 	""51.2""
 	""58.8""
 ]",51.2,58.8,"","",home Hillsbrad Foothills
-146,Do,500,Crushridge Bounty,Hillsbrad Foothills,,,,,,https://classic.wowhead.com/quest=500,,,,,,,"","",Do: Crushridge Bounty
+146,Do,500,Crushridge Bounty,Hillsbrad Foothills,,,,,,https://classic.wowhead.com/quest=500,,,,,,,"","",Do: Crushridge Bounty |q 500
 147,DoOptional,543,The Perenolde Tiara,Hillsbrad Foothills,,,,,,https://classic.wowhead.com/quest=543,,,,,,,"","",Do (Optional): The Perenolde Tiara
-148,Do,537,Dark Council,Hillsbrad Foothills,,,,,,https://classic.wowhead.com/quest=537,,,,,,,"","",Do: Dark Council
-149,Do,512,Noble Deaths,Hillsbrad Foothills,,,,,,https://classic.wowhead.com/quest=512,,,,,,,"","",Do: Noble Deaths
+148,Do,537,Dark Council,Hillsbrad Foothills,,,,,,https://classic.wowhead.com/quest=537,,,,,,,"","",Do: Dark Council |q 537
+149,Do,512,Noble Deaths,Hillsbrad Foothills,,,,,,https://classic.wowhead.com/quest=512,,,,,,,"","",Do: Noble Deaths |q 512
 150,Grind,,,Scarlet Monastery,,,38,,,https://classic.wowhead.com/quest=,,,,,,,"","","Grind until level38
 |ding 38"
 151,UseHearthstone,,,Hillsbrad Foothills,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",use Hearthstone##6948
@@ -207,5 +207,5 @@ Series: '' [str]
 154,Turnin,512,Noble Deaths,Hillsbrad Foothills,,,,,,https://classic.wowhead.com/quest=512,,,,,,,"","",""
 155,Fly,,,Wetlands,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",fpath Wetlands
 156,Accept,1249,The Missing Diplomat,Wetlands,,,,,,https://classic.wowhead.com/quest=1249,,,,,,,"","",accept The Missing Diplomat##1249
-157,Do,1249,The Missing Diplomat,Wetlands,,,,,,https://classic.wowhead.com/quest=1249,,,,,,,"","",Do: The Missing Diplomat
+157,Do,1249,The Missing Diplomat,Wetlands,,,,,,https://classic.wowhead.com/quest=1249,,,,,,,"","",Do: The Missing Diplomat |q 1249
 158,Turnin,1249,The Missing Diplomat,Wetlands,,,,,,https://classic.wowhead.com/quest=1249,,,,,,,"","",""

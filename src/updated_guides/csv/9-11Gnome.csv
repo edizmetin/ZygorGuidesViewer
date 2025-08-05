@@ -16,7 +16,7 @@ row_id,Action,ID,Questname,Location,Coords,XP,Level,Text,WowHead,ItemID,ItemName
 14,Accept,419,The Lost Pilot,Dun Morogh,,,,,https://classic.wowhead.com/quest=419,,,,"",,,,"","",,accept ##419
 15,TurnIn,419,The Lost Pilot,Dun Morogh,,,,,https://classic.wowhead.com/quest=419,,,,"",,,,"","",,turnin ##419
 16,Accept,417,A Pilot's Revenge,Dun Morogh,,,,,https://classic.wowhead.com/quest=417,,,,"",,,,"","",,accept ##417
-17,Do,417,A Pilot's Revenge,Dun Morogh,,,,,https://classic.wowhead.com/quest=417,,,,"",,,,"","",,Do: 
+17,Do,417,A Pilot's Revenge,Dun Morogh,,,,,https://classic.wowhead.com/quest=417,,,,"",,,,"","",,Do:  |q 417
 18,TurnIn,417,A Pilot's Revenge,Dun Morogh,,,,,https://classic.wowhead.com/quest=417,,,,"",,,,"","",,turnin ##417
 19,Run,,,Dun Morogh,"79.4, 49.9",,,,https://classic.wowhead.com/quest=,,,,"","shape: (2,)
 Series: '' [str]
@@ -56,19 +56,19 @@ Series: '' [str]
 |only if Hunter"
 28,Accept,6064,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6064,,,,"",,,,"","",Hunter,"accept ##6064
 |only if Hunter"
-29,Do,6064,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6064,,,,"",,,,"","",Hunter,"Do: 
+29,Do,6064,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6064,,,,"",,,,"","",Hunter,"Do:  |q 6064
 |only if Hunter"
 30,TurnIn,6064,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6064,,,,"",,,,"","",Hunter,"turnin ##6064
 |only if Hunter"
 31,Accept,6084,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6084,,,,"",,,,"","",Hunter,"accept ##6084
 |only if Hunter"
-32,Do,6084,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6084,,,,"",,,,"","",Hunter,"Do: 
+32,Do,6084,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6084,,,,"",,,,"","",Hunter,"Do:  |q 6084
 |only if Hunter"
 33,TurnIn,6084,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6084,,,,"",,,,"","",Hunter,"turnin ##6084
 |only if Hunter"
 34,Accept,6085,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6085,,,,"",,,,"","",Hunter,"accept ##6085
 |only if Hunter"
-35,Do,6085,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6085,,,,"",,,,"","",Hunter,"Do: 
+35,Do,6085,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6085,,,,"",,,,"","",Hunter,"Do:  |q 6085
 |only if Hunter"
 36,TurnIn,6085,Taming the Beast,,,,,,https://classic.wowhead.com/quest=6085,,,,"",,,,"","",Hunter,"turnin ##6085
 |only if Hunter"
@@ -82,8 +82,8 @@ Series: '' [str]
 |only if Hunter"
 41,Fly,,,Loch Modan,,,,,https://classic.wowhead.com/quest=,,,,"",,,,"","",Hunter,"fpath Loch Modan
 |only if Hunter"
-42,Do,224,In Defense of the King's Lands,Loch Modan,,,,,https://classic.wowhead.com/quest=224,,,,"",,,,"","",,Do: 
-43,Do,267,The Trogg Threat,Loch Modan,,,,,https://classic.wowhead.com/quest=267,,,,"",,,,"","",,Do: 
+42,Do,224,In Defense of the King's Lands,Loch Modan,,,,,https://classic.wowhead.com/quest=224,,,,"",,,,"","",,Do:  |q 224
+43,Do,267,The Trogg Threat,Loch Modan,,,,,https://classic.wowhead.com/quest=267,,,,"",,,,"","",,Do:  |q 267
 44,TurnIn,224,In Defense of the King's Lands,Loch Modan,,,,,https://classic.wowhead.com/quest=224,,,,"",,,,"","",,turnin ##224
 45,Accept,237,In Defense of the King's Lands,Loch Modan,,,,,https://classic.wowhead.com/quest=237,,,,"",,,,"","",,accept ##237
 46,TurnIn,267,The Trogg Threat,Loch Modan,,,,,https://classic.wowhead.com/quest=267,,,,"",,,,"","",,turnin ##267
@@ -107,7 +107,7 @@ Series: '' [str]
 |only if Human"
 52,TurnIn,1339,Mountaineer Stormpike's Task,Loch Modan,,,,,https://classic.wowhead.com/quest=1339,,,,"",,,,"","",,turnin ##1339
 53,Accept,307,Filthy Paws,Loch Modan,,,,,https://classic.wowhead.com/quest=307,,,,"",,,,"","",,accept ##307
-54,Do,307,Filthy Paws,Loch Modan,,,,,https://classic.wowhead.com/quest=307,,,,"",,,,"","",,Do: 
+54,Do,307,Filthy Paws,Loch Modan,,,,,https://classic.wowhead.com/quest=307,,,,"",,,,"","",,Do:  |q 307
 55,Buy,,,Loch Modan,,,,"from [G42.8,10Loch Modan]Nillen Andemar - Its a limited supply weapon,so it might not be available",https://classic.wowhead.com/quest=,4778,Heavy Spiked Mace,1,"",,,,"","","Warrior,Paladin",
 56,TurnIn,307,Filthy Paws,Loch Modan,,,,,https://classic.wowhead.com/quest=307,,,,"",,,,"","",,turnin ##307
 57,Accept,1338,Stormpike's Order,Loch Modan,,,,,https://classic.wowhead.com/quest=1338,,,,"",,,,"","",,accept ##1338

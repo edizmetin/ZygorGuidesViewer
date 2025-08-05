@@ -9,13 +9,13 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Text,WowHead,ItemID,ItemName
 7,Text,,,Darkshore,,,,"ESCORT QUEST INCOMING,make sure all group members are on the same questprogress.",https://classic.wowhead.com/quest=,,,,,,,"","",,"ESCORT QUEST INCOMING,make sure all group members are on the same questprogress."
 8,TurnIn,993,A Lost Master,Darkshore,,,,,https://classic.wowhead.com/quest=993,,,,,,,"","",,turnin A Lost Master##993
 9,Accept,994,Escape Through Force,Darkshore,,,,,https://classic.wowhead.com/quest=994,,,,,,,"","",,accept Escape Through Force##994
-10,Do,994,Escape Through Force,Darkshore,,,,,https://classic.wowhead.com/quest=994,,,,,,,"","",,Do: Escape Through Force
+10,Do,994,Escape Through Force,Darkshore,,,,,https://classic.wowhead.com/quest=994,,,,,,,"","",,Do: Escape Through Force |q 994
 11,TurnIn,5713,One Shot. One Kill.,Ashenvale,,,,,https://classic.wowhead.com/quest=5713,,,,,,,"","",,turnin One Shot. One Kill.##5713
 12,TurnIn,967,The Tower of Althalaxx,Ashenvale,,,,,https://classic.wowhead.com/quest=967,,,,,,,"","",,turnin The Tower of Althalaxx##967
 13,Accept,970,The Tower of Althalaxx,Ashenvale,,,,,https://classic.wowhead.com/quest=970,,,,,,,"","",,accept The Tower of Althalaxx##970
 14,Accept,1010,Bathran's Hair,Ashenvale,,,,,https://classic.wowhead.com/quest=1010,,,,,,,"","",,accept Bathran's Hair##1010
-15,Do,970,The Tower of Althalaxx,Ashenvale,,,,,https://classic.wowhead.com/quest=970,,,,,,,"","",,Do: The Tower of Althalaxx
-16,Do,1010,Bathran's Hair,Ashenvale,,,,,https://classic.wowhead.com/quest=1010,,,,,,,"","",,Do: Bathran's Hair
+15,Do,970,The Tower of Althalaxx,Ashenvale,,,,,https://classic.wowhead.com/quest=970,,,,,,,"","",,Do: The Tower of Althalaxx |q 970
+16,Do,1010,Bathran's Hair,Ashenvale,,,,,https://classic.wowhead.com/quest=1010,,,,,,,"","",,Do: Bathran's Hair |q 1010
 17,TurnIn,1010,Bathran's Hair,Ashenvale,,,,,https://classic.wowhead.com/quest=1010,,,,,,,"","",,turnin Bathran's Hair##1010
 18,Accept,1020,Orendil's Cure,Ashenvale,,,,,https://classic.wowhead.com/quest=1020,,,,,,,"","",,accept Orendil's Cure##1020
 19,TurnIn,970,The Tower of Althalaxx,Ashenvale,,,,,https://classic.wowhead.com/quest=970,,,,,,,"","",,turnin The Tower of Althalaxx##970
@@ -34,14 +34,14 @@ Series: '' [str]
 27,Accept,1033,Elune's Tear,Ashenvale,,,,,https://classic.wowhead.com/quest=1033,,,,,,,"","",,accept Elune's Tear##1033
 28,TurnIn,991,Raene's Cleansing,Ashenvale,,,,,https://classic.wowhead.com/quest=991,,,,,,,"","",,turnin Raene's Cleansing##991
 29,Accept,1023,Raene's Cleansing,Ashenvale,,,,,https://classic.wowhead.com/quest=1023,,,,,,,"","",,accept Raene's Cleansing##1023
-30,Do,1023,Raene's Cleansing,Ashenvale,,,,,https://classic.wowhead.com/quest=1023,,,,,,,"","",,Do: Raene's Cleansing
+30,Do,1023,Raene's Cleansing,Ashenvale,,,,,https://classic.wowhead.com/quest=1023,,,,,,,"","",,Do: Raene's Cleansing |q 1023
 31,Accept,1007,The Ancient Statuette,Ashenvale,,,,,https://classic.wowhead.com/quest=1007,,,,,,,"","",,accept The Ancient Statuette##1007
-32,Do,1007,The Ancient Statuette,Ashenvale,,,,,https://classic.wowhead.com/quest=1007,,,,,,,"","",,Do: The Ancient Statuette
+32,Do,1007,The Ancient Statuette,Ashenvale,,,,,https://classic.wowhead.com/quest=1007,,,,,,,"","",,Do: The Ancient Statuette |q 1007
 33,TurnIn,1007,The Ancient Statuette,,,,,,https://classic.wowhead.com/quest=1007,,,,,,,"","",,turnin The Ancient Statuette##1007
 34,Accept,1009,Ruuzel,Ashenvale,,,,,https://classic.wowhead.com/quest=1009,,,,,,,"","",,accept Ruuzel##1009
 35,Text,,,Ashenvale,,,,"As a Group do Ruuzel, if youre solo skip it. (Some classes can do it solo too, Mage,Warlock,Hunter especially).",https://classic.wowhead.com/quest=,,,,,,,"","",,"As a Group do Ruuzel, if youre solo skip it. (Some classes can do it solo too, Mage,Warlock,Hunter especially)."
-36,Do,1009,Ruuzel,Ashenvale,,,,,https://classic.wowhead.com/quest=1009,,,,,,,"","",,Do: Ruuzel
-37,Do,1008,The Zoram Strand,Ashenvale,,,,,https://classic.wowhead.com/quest=1008,,,,,,,"","",,Do: The Zoram Strand
+36,Do,1009,Ruuzel,Ashenvale,,,,,https://classic.wowhead.com/quest=1009,,,,,,,"","",,Do: Ruuzel |q 1009
+37,Do,1008,The Zoram Strand,Ashenvale,,,,,https://classic.wowhead.com/quest=1008,,,,,,,"","",,Do: The Zoram Strand |q 1008
 38,Grind,,,,,,22+5000,the nagas/crabs,https://classic.wowhead.com/quest=,,,,,,,"","",,"Grind until level22+5000
 |ding 22+5000"
 39,TurnIn,1009,Ruuzel,Ashenvale,,,,,https://classic.wowhead.com/quest=1009,,,,,,,"","",,turnin Ruuzel##1009

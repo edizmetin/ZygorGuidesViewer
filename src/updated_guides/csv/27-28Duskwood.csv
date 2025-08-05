@@ -16,7 +16,7 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Text,WowHead,ItemID,ItemName
 11,TurnIn,1075,A Scroll from Mauren,Stormwind City,,,,,https://classic.wowhead.com/quest=1075,,,,,,,"","",,turnin A Scroll from Mauren##1075
 12,TurnIn,7791,A Donation of Wool,Stormwind City,,,,,https://classic.wowhead.com/quest=7791,,,,,,,"","",,turnin A Donation of Wool##7791
 13,Fly,,,Duskwood,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",,fpath Duskwood
-14,Do,"335,1",A Noble Brew,Duskwood,,,,,"https://classic.wowhead.com/quest=335,1",,,,,,,"","",,Do: A Noble Brew
+14,Do,"335,1",A Noble Brew,Duskwood,,,,,"https://classic.wowhead.com/quest=335,1",,,,,,,"","",,"Do: A Noble Brew |q 335,1"
 15,Text,,,Duskwood,,,,Buy Food&Water and repair.,https://classic.wowhead.com/quest=,,,,,,,"","",,Buy Food&Water and repair.
 16,Accept,57,The Night Watch,Duskwood,,,,,https://classic.wowhead.com/quest=57,,,,,,,"","",,accept The Night Watch##57
 17,Accept,173,Worgen in the Woods,Duskwood,,,,,https://classic.wowhead.com/quest=173,,,,,,,"","",,accept Worgen in the Woods##173
@@ -25,27 +25,27 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Text,WowHead,ItemID,ItemName
 20,Accept,175,Look To The Stars,Duskwood,,,,,https://classic.wowhead.com/quest=175,,,,,,,"","",,accept Look To The Stars##175
 21,TurnIn,175,Look To The Stars,Duskwood,,,,,https://classic.wowhead.com/quest=175,,,,,,,"","",,turnin Look To The Stars##175
 22,Accept,177,Look To The Stars,Duskwood,,,,,https://classic.wowhead.com/quest=177,,,,,,,"","",,accept Look To The Stars##177
-23,Do,177,Look To The Stars,Duskwood,,,,,https://classic.wowhead.com/quest=177,,,,,,,"","",,Do: Look To The Stars
+23,Do,177,Look To The Stars,Duskwood,,,,,https://classic.wowhead.com/quest=177,,,,,,,"","",,Do: Look To The Stars |q 177
 24,Run,,,Duskwood,"65.0, 46.3",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
 Series: '' [str]
 [
 	""65.0""
 	"" 46.3""
 ]",65.0, 46.3,"","",,"Run to 65.0, 46.3 |goto Duskwood 65.0, 46.3"
-25,Do,173,Worgen in the Woods,Duskwood,,,,,https://classic.wowhead.com/quest=173,,,,,,,"","",,Do: Worgen in the Woods
+25,Do,173,Worgen in the Woods,Duskwood,,,,,https://classic.wowhead.com/quest=173,,,,,,,"","",,Do: Worgen in the Woods |q 173
 26,TurnIn,173,Worgen in the Woods,Duskwood,,,,,https://classic.wowhead.com/quest=173,,,,,,,"","",,turnin Worgen in the Woods##173
 27,Accept,221,Worgen in the Woods,Duskwood,,,,,https://classic.wowhead.com/quest=221,,,,,,,"","",,accept Worgen in the Woods##221
 28,TurnIn,177,Look To The Stars,Duskwood,,,,,https://classic.wowhead.com/quest=177,,,,,,,"","",,turnin Look To The Stars##177
 29,Accept,181,Look To The Stars,Duskwood,,,,,https://classic.wowhead.com/quest=181,,,,,,,"","",,accept Look To The Stars##181
-30,Do,221,Worgen in the Woods,Duskwood,,,,,https://classic.wowhead.com/quest=221,,,,,,,"","",,Do: Worgen in the Woods
+30,Do,221,Worgen in the Woods,Duskwood,,,,,https://classic.wowhead.com/quest=221,,,,,,,"","",,Do: Worgen in the Woods |q 221
 31,Grind,,,at this farm,,,28,the worgen,https://classic.wowhead.com/quest=,,,,,,,"","",,"Grind until level28
 |ding 28"
 32,TurnIn,95,Sven's Revenge,Duskwood,,,,,https://classic.wowhead.com/quest=95,,,,,,,"","",,turnin Sven's Revenge##95
 33,Accept,230,Sven's Camp,Duskwood,,,,,https://classic.wowhead.com/quest=230,,,,,,,"","",,accept Sven's Camp##230
 34,TurnIn,245,Eight-Legged Menaces,,,,,,https://classic.wowhead.com/quest=245,,,,,,,"","",,turnin Eight-Legged Menaces##245
-35,Do,"101,2",The Totem of Infliction,Duskwood,,,,,"https://classic.wowhead.com/quest=101,2",,,,,,,"","",,Do: The Totem of Infliction
+35,Do,"101,2",The Totem of Infliction,Duskwood,,,,,"https://classic.wowhead.com/quest=101,2",,,,,,,"","",,"Do: The Totem of Infliction |q 101,2"
 36,TurnIn,240,Return to Jitters,Duskwood,,,,,https://classic.wowhead.com/quest=240,,,,,,,"","",,turnin Return to Jitters##240
-37,Do,57,The Night Watch,Duskwood,,,,,https://classic.wowhead.com/quest=57,,,,,,,"","",,Do: The Night Watch
+37,Do,57,The Night Watch,Duskwood,,,,,https://classic.wowhead.com/quest=57,,,,,,,"","",,Do: The Night Watch |q 57
 38,TurnIn,157,Deliver the Thread,Duskwood,,,,,https://classic.wowhead.com/quest=157,,,,,,,"","",,turnin Deliver the Thread##157
 39,Accept,158,Zombie Juice,Duskwood,,,,,https://classic.wowhead.com/quest=158,,,,,,,"","",,accept Zombie Juice##158
 40,Accept,225,The Weathered Grave,Duskwood,,,,,https://classic.wowhead.com/quest=225,,,,,,,"","",,accept The Weathered Grave##225
@@ -72,7 +72,7 @@ Series: '' [str]
 56,TurnIn,158,Zombie Juice,Duskwood,,,,,https://classic.wowhead.com/quest=158,,,,,,,"","",,turnin Zombie Juice##158
 57,Accept,156,Gather Rot Blossoms,Duskwood,,,,,https://classic.wowhead.com/quest=156,,,,,,,"","",,accept Gather Rot Blossoms##156
 58,TurnIn,221,Worgen in the Woods,Duskwood,,,,,https://classic.wowhead.com/quest=221,,,,,,,"","",,turnin Worgen in the Woods##221
-59,Do,156,Gather Rot Blossoms,Duskwood,,,,,https://classic.wowhead.com/quest=156,,,,,,,"","",,Do: Gather Rot Blossoms
+59,Do,156,Gather Rot Blossoms,Duskwood,,,,,https://classic.wowhead.com/quest=156,,,,,,,"","",,Do: Gather Rot Blossoms |q 156
 60,TurnIn,156,Gather Rot Blossoms,Duskwood,,,,,https://classic.wowhead.com/quest=156,,,,,,,"","",,turnin Gather Rot Blossoms##156
 61,Accept,159,Juice Delivery,Duskwood,,,,,https://classic.wowhead.com/quest=159,,,,,,,"","",,accept Juice Delivery##159
 62,Fly,,,Westfall,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",,fpath Westfall
@@ -80,14 +80,14 @@ Series: '' [str]
 64,Accept,268,Return to Sven,Duskwood,,,,,https://classic.wowhead.com/quest=268,,,,,,,"","",,accept Return to Sven##268
 65,TurnIn,159,Juice Delivery,Duskwood,,,,,https://classic.wowhead.com/quest=159,,,,,,,"","",,turnin Juice Delivery##159
 66,Accept,133,Ghoulish Effigy,Duskwood,,,,,https://classic.wowhead.com/quest=133,,,,,,,"","",,accept Ghoulish Effigy##133
-67,Do,58,The Night Watch,Duskwood,,,,,https://classic.wowhead.com/quest=58,,,,,,,"","",,Do: The Night Watch
-68,Do,133,Ghoulish Effigy,Duskwood,,,,,https://classic.wowhead.com/quest=133,,,,,,,"","",,Do: Ghoulish Effigy
-69,Do,101,The Totem of Infliction,Duskwood,,,,,https://classic.wowhead.com/quest=101,,,,,,,"","",,Do: The Totem of Infliction
+67,Do,58,The Night Watch,Duskwood,,,,,https://classic.wowhead.com/quest=58,,,,,,,"","",,Do: The Night Watch |q 58
+68,Do,133,Ghoulish Effigy,Duskwood,,,,,https://classic.wowhead.com/quest=133,,,,,,,"","",,Do: Ghoulish Effigy |q 133
+69,Do,101,The Totem of Infliction,Duskwood,,,,,https://classic.wowhead.com/quest=101,,,,,,,"","",,Do: The Totem of Infliction |q 101
 70,TurnIn,133,Ghoulish Effigy,Duskwood,,,,,https://classic.wowhead.com/quest=133,,,,,,,"","",,turnin Ghoulish Effigy##133
 71,Accept,134,Ogre Thieves,Duskwood,,,,,https://classic.wowhead.com/quest=134,,,,,,,"","",,accept Ogre Thieves##134
 72,Turnin,268,Return to Sven,Duskwood,,,,,https://classic.wowhead.com/quest=268,,,,,,,"","",,""
 73,Accept,323,Proving Your Worth,Duskwood,,,,,https://classic.wowhead.com/quest=323,,,,,,,"","",,accept Proving Your Worth##323
-74,Do,323,Proving Your Worth,Duskwood,,,,,https://classic.wowhead.com/quest=323,,,,,,,"","",,Do: Proving Your Worth
+74,Do,323,Proving Your Worth,Duskwood,,,,,https://classic.wowhead.com/quest=323,,,,,,,"","",,Do: Proving Your Worth |q 323
 75,Turnin,323,Proving Your Worth,Duskwood,,,,,https://classic.wowhead.com/quest=323,,,,,,,"","",,""
 76,Accept,269,Seeking Wisdom,Duskwood,,,,,https://classic.wowhead.com/quest=269,,,,,,,"","",,accept Seeking Wisdom##269
 77,Run,,,Westfall,"56.4,52.6",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)

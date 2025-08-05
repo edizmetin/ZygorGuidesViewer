@@ -20,7 +20,7 @@ Series: '' [str]
 	""44.17""
 ]",77.12,44.17,"","",,"fpath Duskwood |goto Duskwood 77.12,44.17"
 15,Text,,,Duskwood,,,,"If it is in stock - and you dont have one yet-: Buy a Bronzetube at [G78,48.3Duskwood]",https://classic.wowhead.com/quest=,,,,,,,"","",,"If it is in stock - and you dont have one yet-: Buy a Bronzetube at [G78,48.3Duskwood]"
-16,Do,56,The Night Watch,Duskwood,,,,,https://classic.wowhead.com/quest=56,,,,,,,"","",,Do: The Night Watch
+16,Do,56,The Night Watch,Duskwood,,,,,https://classic.wowhead.com/quest=56,,,,,,,"","",,Do: The Night Watch |q 56
 17,Accept,245,Eight-Legged Menaces,Duskwood,,,,,https://classic.wowhead.com/quest=245,,,,,,,"","",,accept Eight-Legged Menaces##245
 18,TurnIn,163,Raven Hill,Duskwood,,,,,https://classic.wowhead.com/quest=163,,,,,,,"","",,turnin Raven Hill##163
 19,Accept,5,Jitters' Growling Gut,Duskwood,,,,,https://classic.wowhead.com/quest=5,,,,,,,"","",,accept Jitters' Growling Gut##5

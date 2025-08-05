@@ -19,7 +19,7 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Text,WowHead,ItemID,ItemName
 17,Accept,92,Redridge Goulash,Redridge Mountains,,,,,https://classic.wowhead.com/quest=92,,,,,,,"","",,accept Redridge Goulash##92
 18,TurnIn,92,Redridge Goulash,Redridge Mountains,,,,,https://classic.wowhead.com/quest=92,,,,,,,"","",,turnin Redridge Goulash##92
 19,Accept,34,An Unwelcome Guest,Redridge Mountains,,,,,https://classic.wowhead.com/quest=34,,,,,,,"","",,accept An Unwelcome Guest##34
-20,Do,34,An Unwelcome Guest,Redridge Mountains,,,,,https://classic.wowhead.com/quest=34,,,,,,,"","",,Do: An Unwelcome Guest
+20,Do,34,An Unwelcome Guest,Redridge Mountains,,,,,https://classic.wowhead.com/quest=34,,,,,,,"","",,Do: An Unwelcome Guest |q 34
 21,TurnIn,74,The Legend of Stalvan,Elwynn Forest,,,,,https://classic.wowhead.com/quest=74,,,,,,,"","",,turnin The Legend of Stalvan##74
 22,Accept,75,The Legend of Stalvan,Elwynn Forest,,,,,https://classic.wowhead.com/quest=75,,,,,,,"","",,accept The Legend of Stalvan##75
 23,Text,,,Elwynn Forest,,,,Go upstairs and loot the Box,https://classic.wowhead.com/quest=,,,,,,,"","",,Go upstairs and loot the Box
@@ -28,17 +28,17 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Text,WowHead,ItemID,ItemName
 26,Accept,94,A Watchful Eye,Elwynn Forest,,,,,https://classic.wowhead.com/quest=94,,,,,,,"","",,accept A Watchful Eye##94
 27,Accept,128,Blackrock Bounty,Redridge Mountains,,,,,https://classic.wowhead.com/quest=128,,,,,,,"","",,accept Blackrock Bounty##128
 28,TurnIn,94,A Watchful Eye,Redridge Mountains,,,,,https://classic.wowhead.com/quest=94,,,,,,,"","",,turnin A Watchful Eye##94
-29,Do,91,Solomon's Law,Redridge Mountains,,,,,https://classic.wowhead.com/quest=91,,,,,,,"","",,Do: Solomon's Law
+29,Do,91,Solomon's Law,Redridge Mountains,,,,,https://classic.wowhead.com/quest=91,,,,,,,"","",,Do: Solomon's Law |q 91
 30,Text,,,,,,,"Wanted: Lieutenant Fangore,Blackrock Bounty and Howling in the Hills are pretty hard quests solo. I usually skip them and grind 6.650XP instead. You can try them solo or find a group, if not grind the mentioned XP.",https://classic.wowhead.com/quest=,,,,,,,"","",,"Wanted: Lieutenant Fangore,Blackrock Bounty and Howling in the Hills are pretty hard quests solo. I usually skip them and grind 6.650XP instead. You can try them solo or find a group, if not grind the mentioned XP."
-31,Do,180,Wanted: Lieutenant Fangore,Redridge Mountains,,,,,https://classic.wowhead.com/quest=180,,,,,,,"","",,Do: Wanted: Lieutenant Fangore
+31,Do,180,Wanted: Lieutenant Fangore,Redridge Mountains,,,,,https://classic.wowhead.com/quest=180,,,,,,,"","",,Do: Wanted: Lieutenant Fangore |q 180
 32,Text,,,,,,,"There is a Drop-Quest-Item Glowing Shadowhide Pendant. You have to turn it in in Elwynn Forest, wich I think is a waste of time for 1.400xp. I will NOT include it in this guide, do it if you want though.",https://classic.wowhead.com/quest=,,,,,,,"","",,"There is a Drop-Quest-Item Glowing Shadowhide Pendant. You have to turn it in in Elwynn Forest, wich I think is a waste of time for 1.400xp. I will NOT include it in this guide, do it if you want though."
 33,Text,,,,,,,"The next area is pretty dangerous even for good players. Additionally you might wanna do the escort quest that is in the cave(follow the left side). I usually dont do it,so this guide skips it.",https://classic.wowhead.com/quest=,,,,,,,"","",,"The next area is pretty dangerous even for good players. Additionally you might wanna do the escort quest that is in the cave(follow the left side). I usually dont do it,so this guide skips it."
-34,Do,128,Blackrock Bounty,Redridge Mountains,,,,,https://classic.wowhead.com/quest=128,,,,,,,"","",,Do: Blackrock Bounty
+34,Do,128,Blackrock Bounty,Redridge Mountains,,,,,https://classic.wowhead.com/quest=128,,,,,,,"","",,Do: Blackrock Bounty |q 128
 35,Text,,,,,,,"Yowler is pretty hard too, as he has 2-3 adds. Do it if you can, grind 2000xp if you dont",https://classic.wowhead.com/quest=,,,,,,,"","",,"Yowler is pretty hard too, as he has 2-3 adds. Do it if you can, grind 2000xp if you dont"
-36,Do,126,Howling in the Hills,Redridge Mountains,,,,,https://classic.wowhead.com/quest=126,,,,,,,"","",,Do: Howling in the Hills
+36,Do,126,Howling in the Hills,Redridge Mountains,,,,,https://classic.wowhead.com/quest=126,,,,,,,"","",,Do: Howling in the Hills |q 126
 37,Grind,,,,,,23+27000,the gnolls,https://classic.wowhead.com/quest=,,,,,,,"","",,"Grind until level23+27000
 |ding 23+27000"
-38,Do,127,Selling Fish,Redridge Mountains,,,,,https://classic.wowhead.com/quest=127,,,,,,,"","",,Do: Selling Fish
+38,Do,127,Selling Fish,Redridge Mountains,,,,,https://classic.wowhead.com/quest=127,,,,,,,"","",,Do: Selling Fish |q 127
 39,TurnIn,34,An Unwelcome Guest,Redridge Mountains,,,,,https://classic.wowhead.com/quest=34,,,,,,,"","",,turnin An Unwelcome Guest##34
 40,TurnIn,127,Selling Fish,Redridge Mountains,,,,,https://classic.wowhead.com/quest=127,,,,,,,"","",,turnin Selling Fish##127
 41,TurnIn,91,Solomon's Law,Redridge Mountains,,,,,https://classic.wowhead.com/quest=91,,,,,,,"","",,turnin Solomon's Law##91

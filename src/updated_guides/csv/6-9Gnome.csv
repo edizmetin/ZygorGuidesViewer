@@ -20,11 +20,11 @@ Series: '' [str]
 13,Accept,5541,Dun Morogh,,,,,https://classic.wowhead.com/quest=5541,,,,"",,,,"","",,accept ##5541
 14,TurnIn,400,Dun Morogh,,,,,https://classic.wowhead.com/quest=400,,,,"",,,,"","",,turnin ##400
 15,Text,,,,,,"Stocking Jetsteam is your NR 1 Priority now, GO OUT OF YOUR WAY to kill bears and boars!",https://classic.wowhead.com/quest=,,,,"",,,,"","",,"Stocking Jetsteam is your NR 1 Priority now, GO OUT OF YOUR WAY to kill bears and boars!"
-16,Do,313,Dun Morogh,,,,,https://classic.wowhead.com/quest=313,,,,"",,,,"","",,Do: 
+16,Do,313,Dun Morogh,,,,,https://classic.wowhead.com/quest=313,,,,"",,,,"","",,Do:  |q 313
 17,Grind,,the yeti cave,,,7,,https://classic.wowhead.com/quest=,,,,"",,,,"","",,"Grind until level7
 |ding 7"
-18,Do,5541,,,,,,https://classic.wowhead.com/quest=5541,,,,"",,,,"","",,Do: 
-19,Do,317,Dun Morogh,,,,,https://classic.wowhead.com/quest=317,,,,"",,,,"","",,Do: 
+18,Do,5541,,,,,,https://classic.wowhead.com/quest=5541,,,,"",,,,"","",,Do:  |q 5541
+19,Do,317,Dun Morogh,,,,,https://classic.wowhead.com/quest=317,,,,"",,,,"","",,Do:  |q 317
 20,TurnIn,5541,Dun Morogh,,,,,https://classic.wowhead.com/quest=5541,,,,"",,,,"","",,turnin ##5541
 21,Buy,,,,,,,https://classic.wowhead.com/quest=,2509,Ornate Blunderbuss,1,"",,,,"","",Hunter,
 22,Collect,,,,,,,https://classic.wowhead.com/quest=,2886,Crag Boar Rib,6,"",,,,"","",,
@@ -37,12 +37,12 @@ Series: '' [str]
 29,TurnIn,313,Dun Morogh,,,,,https://classic.wowhead.com/quest=313,,,,"",,,,"","",,turnin ##313
 30,Accept,312,Dun Morogh,,,,,https://classic.wowhead.com/quest=312,,,,"",,,,"","",,accept ##312
 31,Text,,,,,,For the next part you do NOT need to kill the yeti. Wait until he leaves - this might take up to 5minutes- the cave(if he is in there) and then loot the chest and run out immediately!,https://classic.wowhead.com/quest=,,,,"",,,,"","",,For the next part you do NOT need to kill the yeti. Wait until he leaves - this might take up to 5minutes- the cave(if he is in there) and then loot the chest and run out immediately!
-32,Do,312,Dun Morogh,,,,,https://classic.wowhead.com/quest=312,,,,"",,,,"","",,Do: 
+32,Do,312,Dun Morogh,,,,,https://classic.wowhead.com/quest=312,,,,"",,,,"","",,Do:  |q 312
 33,TurnIn,312,Dun Morogh,,,,,https://classic.wowhead.com/quest=312,,,,"",,,,"","",,turnin ##312
 34,TurnIn,318,Dun Morogh,,,,,https://classic.wowhead.com/quest=318,,,,"",,,,"","",,turnin ##318
 35,Accept,319,Dun Morogh,,,,,https://classic.wowhead.com/quest=319,,,,"",,,,"","",,accept ##319
 36,Accept,310,Dun Morogh,,,,,https://classic.wowhead.com/quest=310,,,,"",,,,"","",,accept ##310
-37,Do,319,Dun Morogh,,,,,https://classic.wowhead.com/quest=319,,,,"",,,,"","",,Do: 
+37,Do,319,Dun Morogh,,,,,https://classic.wowhead.com/quest=319,,,,"",,,,"","",,Do:  |q 319
 38,Run,,Dun Morogh,"30.9,36.5",,,,https://classic.wowhead.com/quest=,,,,"","shape: (2,)
 Series: '' [str]
 [
@@ -92,7 +92,7 @@ Series: '' [str]
 53,TurnIn,319,Dun Morogh,,,,,https://classic.wowhead.com/quest=319,,,,"",,,,"","",,turnin ##319
 54,Accept,320,Dun Morogh,,,,,https://classic.wowhead.com/quest=320,,,,"",,,,"","",,accept ##320
 55,TurnIn,311,Dun Morogh,,,,,https://classic.wowhead.com/quest=311,,,,"",,,,"","",,turnin ##311
-56,Do,287,Dun Morogh,,,,,https://classic.wowhead.com/quest=287,,,,"",,,,"","",,Do: 
+56,Do,287,Dun Morogh,,,,,https://classic.wowhead.com/quest=287,,,,"",,,,"","",,Do:  |q 287
 57,Text,,Dun Morogh,,,,"MAKE SURE YOU GOT THE EXPLORATION part of ""Frostmane Hold"". Die on purpose and rezz up! If youre a pserver player: dieing IN the cave gets you to Kharanos not the starting area!",https://classic.wowhead.com/quest=,,,,"",,,,"","",,"MAKE SURE YOU GOT THE EXPLORATION part of ""Frostmane Hold"". Die on purpose and rezz up! If youre a pserver player: dieing IN the cave gets you to Kharanos not the starting area!"
 58,TurnIn,287,Dun Morogh,,,,,https://classic.wowhead.com/quest=287,,,,"",,,,"","",,turnin ##287
 59,Accept,291,Dun Morogh,,,,,https://classic.wowhead.com/quest=291,,,,"",,,,"","",,accept ##291

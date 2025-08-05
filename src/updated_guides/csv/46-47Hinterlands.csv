@@ -23,25 +23,25 @@ Series: '' [str]
 	""13.8""
 	""41.6""
 ]",13.8,41.6,"","",home The Hinterlands
-14,Do,3661,Favored of Elune?,The Hinterlands,,,,,,https://classic.wowhead.com/quest=3661,,,,,,,"","",Do: Favored of Elune?
-15,Do,2988,Witherbark Cages,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2988,,,,,,,"","",Do: Witherbark Cages
+14,Do,3661,Favored of Elune?,The Hinterlands,,,,,,https://classic.wowhead.com/quest=3661,,,,,,,"","",Do: Favored of Elune? |q 3661
+15,Do,2988,Witherbark Cages,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2988,,,,,,,"","",Do: Witherbark Cages |q 2988
 16,Text,,,The Hinterlands,,,,,Grind on the trolls untill youre [XP47],https://classic.wowhead.com/quest=,,,,,,,"","",Grind on the trolls untill youre [XP47]
-17,Do,2880,Troll Necklace Bounty,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2880,,,,,,,"","",Do: Troll Necklace Bounty
-18,Do,2988,Witherbark Cages,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2988,,,,,,,"","",Do: Witherbark Cages
-19,Do,2641,Sprinkle's Secret Ingredient,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2641,,,,,,,"","",Do: Sprinkle's Secret Ingredient
-20,Do,2877,Skulk Rock Clean-up,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2877,,,,,,,"","",Do: Skulk Rock Clean-up
+17,Do,2880,Troll Necklace Bounty,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2880,,,,,,,"","",Do: Troll Necklace Bounty |q 2880
+18,Do,2988,Witherbark Cages,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2988,,,,,,,"","",Do: Witherbark Cages |q 2988
+19,Do,2641,Sprinkle's Secret Ingredient,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2641,,,,,,,"","",Do: Sprinkle's Secret Ingredient |q 2641
+20,Do,2877,Skulk Rock Clean-up,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2877,,,,,,,"","",Do: Skulk Rock Clean-up |q 2877
 21,TurnIn,2880,Troll Necklace Bounty,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2880,,,,,,,"","",turnin Troll Necklace Bounty##2880
 22,TurnIn,2877,Skulk Rock Clean-up,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2877,,,,,,,"","",turnin Skulk Rock Clean-up##2877
 23,TurnIn,2988,Witherbark Cages,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2988,,,,,,,"","",turnin Witherbark Cages##2988
 24,Accept,2989,The Altar of Zul,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2989,,,,,,,"","",accept The Altar of Zul##2989
-25,Do,2989,The Altar of Zul,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2989,,,,,,,"","",Do: The Altar of Zul
+25,Do,2989,The Altar of Zul,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2989,,,,,,,"","",Do: The Altar of Zul |q 2989
 26,Text,,,The Hinterlands,,,,,You should have found the chicken beacon quest by now,https://classic.wowhead.com/quest=,,,,,,,"","",You should have found the chicken beacon quest by now
 27,Accept,485,Find OOX-09/HL!,The Hinterlands,,,,,,https://classic.wowhead.com/quest=485,,,,,,,"","",accept Find OOX-09/HL!##485
 28,TurnIn,485,Find OOX-09/HL!,The Hinterlands,,,,,,https://classic.wowhead.com/quest=485,,,,,,,"","",turnin Find OOX-09/HL!##485
 29,Accept,836,Rescue OOX-09/HL!,The Hinterlands,,,,,,https://classic.wowhead.com/quest=836,,,,,,,"","",accept Rescue OOX-09/HL!##836
-30,Do,836,Rescue OOX-09/HL!,The Hinterlands,,,,,,https://classic.wowhead.com/quest=836,,,,,,,"","",Do: Rescue OOX-09/HL!
-31,Do,2944,The Super Snapper FX,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2944,,,,,,,"","",Do: The Super Snapper FX
-32,Do,580,Whiskey Slim's Lost Grog,The Hinterlands,,,,,,https://classic.wowhead.com/quest=580,,,,,,,"","",Do: Whiskey Slim's Lost Grog
+30,Do,836,Rescue OOX-09/HL!,The Hinterlands,,,,,,https://classic.wowhead.com/quest=836,,,,,,,"","",Do: Rescue OOX-09/HL! |q 836
+31,Do,2944,The Super Snapper FX,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2944,,,,,,,"","",Do: The Super Snapper FX |q 2944
+32,Do,580,Whiskey Slim's Lost Grog,The Hinterlands,,,,,,https://classic.wowhead.com/quest=580,,,,,,,"","",Do: Whiskey Slim's Lost Grog |q 580
 33,Text,,,The Hinterlands,,,,,Grind 3-4 bars on the turtles,https://classic.wowhead.com/quest=,,,,,,,"","",Grind 3-4 bars on the turtles
 34,UseHearthstone,,,The Hinterlands,,,,,,https://classic.wowhead.com/quest=,,,,,,,"","",use Hearthstone##6948
 35,TurnIn,2989,The Altar of Zul,The Hinterlands,,,,,,https://classic.wowhead.com/quest=2989,,,,,,,"","",turnin The Altar of Zul##2989

@@ -12,11 +12,11 @@ Series: '' [str]
 ]",49.4,52.4,"","",,"fpath Hillsbrad Foothills |goto Hillsbrad Foothills 49.4,52.4"
 6,Accept,659,Hints of a New Plague?,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=659,,,,,,,"","",,accept Hints of a New Plague?##659
 7,Accept,536,Down the Coast,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=536,,,,,,,"","",,accept Down the Coast##536
-8,Do,536,Down the Coast,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=536,,,,,,,"","",,Do: Down the Coast
+8,Do,536,Down the Coast,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=536,,,,,,,"","",,Do: Down the Coast |q 536
 9,Text,,,Hillsbrad Foothills,,,,Grind on the Murlocs till [XP30+25000],https://classic.wowhead.com/quest=,,,,,,,"","",,Grind on the Murlocs till [XP30+25000]
 10,Turnin,536,Down the Coast,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=536,,,,,,,"","",,""
 11,Accept,559,Farren's Proof,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=559,,,,,,,"","",,accept Farren's Proof##559
-12,Do,559,Farren's Proof,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=559,,,,,,,"","",,Do: Farren's Proof
+12,Do,559,Farren's Proof,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=559,,,,,,,"","",,Do: Farren's Proof |q 559
 13,Text,,,Hillsbrad Foothills,,,,Grind on the Murlocs till [XP30+35000],https://classic.wowhead.com/quest=,,,,,,,"","",,Grind on the Murlocs till [XP30+35000]
 14,Turnin,559,Farren's Proof,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=559,,,,,,,"","",,""
 15,Accept,560,Farren's Proof,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=560,,,,,,,"","",,accept Farren's Proof##560
@@ -24,7 +24,7 @@ Series: '' [str]
 17,Accept,561,Farren's Proof,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=561,,,,,,,"","",,accept Farren's Proof##561
 18,Turnin,561,Farren's Proof,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=561,,,,,,,"","",,""
 19,Accept,562,Stormwind Ho!,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=562,,,,,,,"","",,accept Stormwind Ho!##562
-20,Do,562,Stormwind Ho!,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=562,,,,,,,"","",,Do: Stormwind Ho!
+20,Do,562,Stormwind Ho!,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=562,,,,,,,"","",,Do: Stormwind Ho! |q 562
 21,Text,,,Hillsbrad Foothills,,,,Grind on the Murlocs till [XP30+45500],https://classic.wowhead.com/quest=,,,,,,,"","",,Grind on the Murlocs till [XP30+45500]
 22,Turnin,562,Stormwind Ho!,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=562,,,,,,,"","",,""
 23,Accept,563,Reassignment,Hillsbrad Foothills,,,,,https://classic.wowhead.com/quest=563,,,,,,,"","",,accept Reassignment##563

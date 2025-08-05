@@ -23,7 +23,7 @@ Series: '' [str]
 	""41.7""
 	"" 49.9""
 ]",41.7, 49.9,"","",,"Run to 41.7, 49.9 |goto Ashenvale 41.7, 49.9"
-19,Do,1033,Elune's Tear,Ashenvale,,,,,https://classic.wowhead.com/quest=1033,,,,,,,"","",,Do: Elune's Tear
+19,Do,1033,Elune's Tear,Ashenvale,,,,,https://classic.wowhead.com/quest=1033,,,,,,,"","",,Do: Elune's Tear |q 1033
 20,Run,,,Ashenvale,"46.8, 49.1",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
 Series: '' [str]
 [
@@ -40,9 +40,9 @@ Series: '' [str]
 23,Accept,1026,Raene's Cleansing,Ashenvale,,,,,https://classic.wowhead.com/quest=1026,,,,,,,"","",,accept Raene's Cleansing##1026
 24,TurnIn,1033,Elune's Tear,Ashenvale,,,,,https://classic.wowhead.com/quest=1033,,,,,,,"","",,turnin Elune's Tear##1033
 25,Accept,1034,The Ruins of Stardust,Astranaar,,,,,https://classic.wowhead.com/quest=1034,,,,,,,"","",,accept The Ruins of Stardust##1034
-26,Do,973,The Tower of Althalaxx,Ashenvale,,,,,https://classic.wowhead.com/quest=973,,,,,,,"","",,Do: The Tower of Althalaxx
-27,Do,1034,The Ruins of Stardust,Ashenvale,,,,,https://classic.wowhead.com/quest=1034,,,,,,,"","",,Do: The Ruins of Stardust
-28,Do,1025,An Aggressive Defense,Ashenvale,,,,,https://classic.wowhead.com/quest=1025,,,,,,,"","",,Do: An Aggressive Defense
+26,Do,973,The Tower of Althalaxx,Ashenvale,,,,,https://classic.wowhead.com/quest=973,,,,,,,"","",,Do: The Tower of Althalaxx |q 973
+27,Do,1034,The Ruins of Stardust,Ashenvale,,,,,https://classic.wowhead.com/quest=1034,,,,,,,"","",,Do: The Ruins of Stardust |q 1034
+28,Do,1025,An Aggressive Defense,Ashenvale,,,,,https://classic.wowhead.com/quest=1025,,,,,,,"","",,Do: An Aggressive Defense |q 1025
 29,Run,,,Ashenvale,"50.0, 66.6",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
 Series: '' [str]
 [
@@ -62,13 +62,13 @@ Series: '' [str]
 35,TurnIn,1085,On Guard in Stonetalon,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1085,,,,,,,"","",,turnin On Guard in Stonetalon##1085
 36,Accept,1071,A Gnome's Respite,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1071,,,,,,,"","",,accept A Gnome's Respite##1071
 37,Accept,1093,Super Reaper 6000,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1093,,,,,,,"","",,accept Super Reaper 6000##1093
-38,Do,1093,Super Reaper 6000,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1093,,,,,,,"","",,Do: Super Reaper 6000
-39,Do,1071,A Gnome's Respite,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1071,,,,,,,"","",,Do: A Gnome's Respite
+38,Do,1093,Super Reaper 6000,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1093,,,,,,,"","",,Do: Super Reaper 6000 |q 1093
+39,Do,1071,A Gnome's Respite,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1071,,,,,,,"","",,Do: A Gnome's Respite |q 1071
 40,TurnIn,1093,Super Reaper 6000,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1093,,,,,,,"","",,turnin Super Reaper 6000##1093
 41,TurnIn,1071,A Gnome's Respite,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1071,,,,,,,"","",,turnin A Gnome's Respite##1071
 42,Accept,1072,An Old Colleague,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1072,,,,,,,"","",,accept An Old Colleague##1072
 43,Accept,1075,A Scroll from Mauren,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1075,,,,,,,"","",,accept A Scroll from Mauren##1075
-44,Do,1134,Pridewings of Stonetalon,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1134,,,,,,,"","",,Do: Pridewings of Stonetalon
+44,Do,1134,Pridewings of Stonetalon,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1134,,,,,,,"","",,Do: Pridewings of Stonetalon |q 1134
 45,TurnIn,1056,Journey to Stonetalon Peak,Stonetalon Mountains,,,,,https://classic.wowhead.com/quest=1056,,,,,,,"","",,turnin Journey to Stonetalon Peak##1056
 46,Flightpath,,,Stonetalon Mountains,"36.45,7.07",,,,https://classic.wowhead.com/quest=,,,,"shape: (2,)
 Series: '' [str]
@@ -90,7 +90,7 @@ Series: '' [str]
 	""31.3""
 	""46.9""
 ]",31.3,46.9,"","",,"Run to 31.3,46.9 |goto Ashenvale 31.3,46.9"
-56,Do,1054,Culling the Threat,Ashenvale,,,,,https://classic.wowhead.com/quest=1054,,,,,,,"","",,Do: Culling the Threat
+56,Do,1054,Culling the Threat,Ashenvale,,,,,https://classic.wowhead.com/quest=1054,,,,,,,"","",,Do: Culling the Threat |q 1054
 57,Grind,,,here,,,25+16000,the furbolgs,https://classic.wowhead.com/quest=,,,,,,,"","",,"Grind until level25+16000
 |ding 25+16000"
 58,TurnIn,1054,Culling the Threat,Ashenvale,,,,,https://classic.wowhead.com/quest=1054,,,,,,,"","",,turnin Culling the Threat##1054

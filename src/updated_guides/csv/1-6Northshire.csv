@@ -29,9 +29,9 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,It
 |only if Warlock"
 23,TurnIn,3105,Tainted Letter,Elwynn Forest,,,,Warlock,,https://classic.wowhead.com/quest=3105,,,,,,,"","","turnin Tainted Letter##3105
 |only if Warlock"
-24,Do,1598,The Stolen Tome,Elwynn Forest,,,,Warlock,,https://classic.wowhead.com/quest=1598,,,,,,,"","","Do: The Stolen Tome
+24,Do,1598,The Stolen Tome,Elwynn Forest,,,,Warlock,,https://classic.wowhead.com/quest=1598,,,,,,,"","","Do: The Stolen Tome |q 1598
 |only if Warlock"
-25,Do,18,Brotherhood of Thieves,Elwynn Forest,,,,,,https://classic.wowhead.com/quest=18,,,,,,,"","",Do: Brotherhood of Thieves
+25,Do,18,Brotherhood of Thieves,Elwynn Forest,,,,,,https://classic.wowhead.com/quest=18,,,,,,,"","",Do: Brotherhood of Thieves |q 18
 26,TurnIn,18,Brotherhood of Thieves,Elwynn Forest,,,,,,https://classic.wowhead.com/quest=18,,,,,,,"","",turnin Brotherhood of Thieves##18
 27,Accept,3903,Milly Osworth,Elwynn Forest,,,,,,https://classic.wowhead.com/quest=3903,,,,,,,"","",accept Milly Osworth##3903
 28,Accept,6,Bounty on Garrick Padfoot,Elwynn Forest,,,,,,https://classic.wowhead.com/quest=6,,,,,,,"","",accept Bounty on Garrick Padfoot##6
@@ -45,7 +45,7 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,It
 33,TurnIn,3100,Simple Letter,Elwynn Forest,,,,Warrior,,https://classic.wowhead.com/quest=3100,,,,,,,"","","turnin Simple Letter##3100
 |only if Warrior"
 34,Learn,,,Elwynn Forest,,,4,,,https://classic.wowhead.com/quest=,,,,,,,"","",Get your level 4 spells at your trainer
-35,Do,15,Investigate Echo Ridge,Elwynn Forest,,,,,,https://classic.wowhead.com/quest=15,,,,,,,"","",Do: Investigate Echo Ridge
+35,Do,15,Investigate Echo Ridge,Elwynn Forest,,,,,,https://classic.wowhead.com/quest=15,,,,,,,"","",Do: Investigate Echo Ridge |q 15
 36,TurnIn,3903,Milly Osworth,Elwynn Forest,,,,,,https://classic.wowhead.com/quest=3903,,,,,,,"","",turnin Milly Osworth##3903
 37,Accept,3904,Milly's Harvest,Elwynn Forest,,,,,,https://classic.wowhead.com/quest=3904,,,,,,,"","",accept Milly's Harvest##3904
 38,Text,3904,Milly's Harvest,Elwynn Forest,,,,,Do [QC3904- ][QC6],https://classic.wowhead.com/quest=3904,,,,,,,"","",Do [QC3904- ][QC6]
@@ -55,7 +55,7 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Class,Text,WowHead,ItemID,It
 41,TurnIn,6,Bounty on Garrick Padfoot,Elwynn Forest,,,,,,https://classic.wowhead.com/quest=6,,,,,,,"","",turnin Bounty on Garrick Padfoot##6
 42,TurnIn,15,Investigate Echo Ridge,Elwynn Forest,,,,,,https://classic.wowhead.com/quest=15,,,,,,,"","",turnin Investigate Echo Ridge##15
 43,Accept,21,Skirmish at Echo Ridge,Elwynn Forest,,,,,,https://classic.wowhead.com/quest=21,,,,,,,"","",accept Skirmish at Echo Ridge##21
-44,Do,21,Skirmish at Echo Ridge,Elwynn Forest,,,,,,https://classic.wowhead.com/quest=21,,,,,,,"","",Do: Skirmish at Echo Ridge
+44,Do,21,Skirmish at Echo Ridge,Elwynn Forest,,,,,,https://classic.wowhead.com/quest=21,,,,,,,"","",Do: Skirmish at Echo Ridge |q 21
 45,TurnIn,3904,Milly's Harvest,Elwynn Forest,,,,,,https://classic.wowhead.com/quest=3904,,,,,,,"","",turnin Milly's Harvest##3904
 46,Accept,3905,Grape Manifest,Elwynn Forest,,,,,,https://classic.wowhead.com/quest=3905,,,,,,,"","",accept Grape Manifest##3905
 47,TurnIn,21,Skirmish at Echo Ridge,Elwynn Forest,,,,,,https://classic.wowhead.com/quest=21,,,,,,,"","",turnin Skirmish at Echo Ridge##21

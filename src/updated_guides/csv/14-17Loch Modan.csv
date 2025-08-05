@@ -44,43 +44,43 @@ row_id,Action,ID,QuestName,Location,Coords,XP,Level,Text,WowHead,ItemID,ItemName
 |only if Nightelf"
 27,Accept,267,The Trogg Threat,,,,,,https://classic.wowhead.com/quest=267,,,,,,,"","",Nightelf,"accept The Trogg Threat##267
 |only if Nightelf"
-28,Do,224,In Defense of the King's Lands,,,,,,https://classic.wowhead.com/quest=224,,,,,,,"","",Nightelf,"Do: In Defense of the King's Lands
+28,Do,224,In Defense of the King's Lands,,,,,,https://classic.wowhead.com/quest=224,,,,,,,"","",Nightelf,"Do: In Defense of the King's Lands |q 224
 |only if Nightelf"
 29,TurnIn,224,In Defense of the King's Lands,,,,,,https://classic.wowhead.com/quest=224,,,,,,,"","",Nightelf,"turnin In Defense of the King's Lands##224
 |only if Nightelf"
 30,Accept,237,In Defense of the King's Lands,,,,,,https://classic.wowhead.com/quest=237,,,,,,,"","",,accept In Defense of the King's Lands##237
-31,Do,237,In Defense of the King's Lands,Loch Modan,,,,,https://classic.wowhead.com/quest=237,,,,,,,"","",,Do: In Defense of the King's Lands
-32,Do,267,The Trogg Threat,,,,,,https://classic.wowhead.com/quest=267,,,,,,,"","",Nightelf,"Do: The Trogg Threat
+31,Do,237,In Defense of the King's Lands,Loch Modan,,,,,https://classic.wowhead.com/quest=237,,,,,,,"","",,Do: In Defense of the King's Lands |q 237
+32,Do,267,The Trogg Threat,,,,,,https://classic.wowhead.com/quest=267,,,,,,,"","",Nightelf,"Do: The Trogg Threat |q 267
 |only if Nightelf"
 33,TurnIn,237,In Defense of the King's Lands,Loch Modan,,,,,https://classic.wowhead.com/quest=237,,,,,,,"","",,turnin In Defense of the King's Lands##237
 34,TurnIn,267,The Trogg Threat,,,,,,https://classic.wowhead.com/quest=267,,,,,,,"","",Nightelf,"turnin The Trogg Threat##267
 |only if Nightelf"
 35,Accept,263,In Defense of the King's Lands,Loch Modan,,,,,https://classic.wowhead.com/quest=263,,,,,,,"","",,accept In Defense of the King's Lands##263
-36,Do,1783,The Tome of Divinity,,,,,,https://classic.wowhead.com/quest=1783,,,,,,,"","",Paladin,"Do: The Tome of Divinity
+36,Do,1783,The Tome of Divinity,,,,,,https://classic.wowhead.com/quest=1783,,,,,,,"","",Paladin,"Do: The Tome of Divinity |q 1783
 |only if Paladin"
 37,TurnIn,436,Ironband's Excavation,Loch Modan,,,,,https://classic.wowhead.com/quest=436,,,,,,,"","",,turnin Ironband's Excavation##436
 38,Accept,297,Gathering Idols,Loch Modan,,,,,https://classic.wowhead.com/quest=297,,,,,,,"","",,accept Gathering Idols##297
 39,Accept,298,Excavation Progress Report,Loch Modan,,,,,https://classic.wowhead.com/quest=298,,,,,,,"","",,accept Excavation Progress Report##298
 40,Accept,257,A Hunter's Boast,Loch Modan,,,,,https://classic.wowhead.com/quest=257,,,,,,,"","",,accept A Hunter's Boast##257
-41,Do,257,A Hunter's Boast,Loch Modan,,,,,https://classic.wowhead.com/quest=257,,,,,,,"","",,Do: A Hunter's Boast
+41,Do,257,A Hunter's Boast,Loch Modan,,,,,https://classic.wowhead.com/quest=257,,,,,,,"","",,Do: A Hunter's Boast |q 257
 42,TurnIn,257,A Hunter's Boast,Loch Modan,,,,,https://classic.wowhead.com/quest=257,,,,,,,"","",,turnin A Hunter's Boast##257
 43,Accept,258,A Hunter's Challenge,Loch Modan,,,,,https://classic.wowhead.com/quest=258,,,,,,,"","",,accept A Hunter's Challenge##258
-44,Do,258,A Hunter's Challenge,Loch Modan,,,,,https://classic.wowhead.com/quest=258,,,,,,,"","",,Do: A Hunter's Challenge
+44,Do,258,A Hunter's Challenge,Loch Modan,,,,,https://classic.wowhead.com/quest=258,,,,,,,"","",,Do: A Hunter's Challenge |q 258
 45,TurnIn,258,A Hunter's Challenge,Loch Modan,,,,,https://classic.wowhead.com/quest=258,,,,,,,"","",,turnin A Hunter's Challenge##258
 46,AcceptOptional,271,Vyrin's Revenge,Loch Modan,,,,,https://classic.wowhead.com/quest=271,,,,,,,"","",,
 47,Accept,385,Crocolisk Hunting,Loch Modan,,,,,https://classic.wowhead.com/quest=385,,,,,,,"","",,accept Crocolisk Hunting##385
 48,TurnIn,2039,Find Bingles,Loch Modan,,,,,https://classic.wowhead.com/quest=2039,,,,,,,"","",,turnin Find Bingles##2039
 49,Accept,2038,Bingles' Missing Supplies,Loch Modan,,,,,https://classic.wowhead.com/quest=2038,,,,,,,"","",,accept Bingles' Missing Supplies##2038
-50,Do,385,Crocolisk Hunting,Loch Modan,,,,,https://classic.wowhead.com/quest=385,,,,,,,"","",,Do: Crocolisk Hunting
-51,Do,2038,Bingles' Missing Supplies,Loch Modan,,,,,https://classic.wowhead.com/quest=2038,,,,,,,"","",,Do: Bingles' Missing Supplies
-52,Do,263,In Defense of the King's Lands,Loch Modan,,,,,https://classic.wowhead.com/quest=263,,,,,,,"","",,Do: In Defense of the King's Lands
+50,Do,385,Crocolisk Hunting,Loch Modan,,,,,https://classic.wowhead.com/quest=385,,,,,,,"","",,Do: Crocolisk Hunting |q 385
+51,Do,2038,Bingles' Missing Supplies,Loch Modan,,,,,https://classic.wowhead.com/quest=2038,,,,,,,"","",,Do: Bingles' Missing Supplies |q 2038
+52,Do,263,In Defense of the King's Lands,Loch Modan,,,,,https://classic.wowhead.com/quest=263,,,,,,,"","",,Do: In Defense of the King's Lands |q 263
 53,Accept,250,A Dark Threat Looms,Loch Modan,,,,,https://classic.wowhead.com/quest=250,,,,,,,"","",,accept A Dark Threat Looms##250
 54,TurnIn,250,A Dark Threat Looms,Loch Modan,,,,,https://classic.wowhead.com/quest=250,,,,,,,"","",,turnin A Dark Threat Looms##250
 55,Accept,199,A Dark Threat Looms,Loch Modan,,,,,https://classic.wowhead.com/quest=199,,,,,,,"","",,accept A Dark Threat Looms##199
 56,TurnIn,199,A Dark Threat Looms,Loch Modan,,,,,https://classic.wowhead.com/quest=199,,,,,,,"","",,turnin A Dark Threat Looms##199
 57,TurnIn,2038,Bingles' Missing Supplies,Loch Modan,,,,,https://classic.wowhead.com/quest=2038,,,,,,,"","",,turnin Bingles' Missing Supplies##2038
 58,TurnIn,385,Crocolisk Hunting,Loch Modan,,,,,https://classic.wowhead.com/quest=385,,,,,,,"","",,turnin Crocolisk Hunting##385
-59,Do,297,Gathering Idols,Loch Modan,,,,,https://classic.wowhead.com/quest=297,,,,,,,"","",,Do: Gathering Idols
+59,Do,297,Gathering Idols,Loch Modan,,,,,https://classic.wowhead.com/quest=297,,,,,,,"","",,Do: Gathering Idols |q 297
 60,Grind,,,,,,17+500,the troggs,https://classic.wowhead.com/quest=,,,,,,,"","",,"Grind until level17+500
 |ding 17+500"
 61,TurnIn,297,Gathering Idols,Loch Modan,,,,,https://classic.wowhead.com/quest=297,,,,,,,"","",,turnin Gathering Idols##297
