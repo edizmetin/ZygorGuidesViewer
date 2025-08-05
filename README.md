@@ -14,7 +14,7 @@ Note : This is **NOT** TUG's project, they allowed me to port their guide as the
 
 The goal of this project is to have a strong leveling base with Zygor / TUG guides, then to expand them as new quests are discovered.
 
-Important : This is very WIP as Epoch hasn't released yet and this repository is quite new !
+Important : This is very WIP as Epoch hasn't released yet and this repository is quite new ! Coordinates and quest ids might not work as expected in the first few weeks post launch.
 
 ## Installing
 
