@@ -186,4 +186,4 @@ step
 |only if Human
 step
 Take the ship to Darkshore
-]]
+]])

@@ -39,4 +39,4 @@ step
 accept The Bloodsail Buccaneers##599
 step
 fpath Stormwind City
-]]
+]])

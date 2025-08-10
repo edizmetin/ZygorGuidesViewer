@@ -44,4 +44,4 @@ step
 accept Overmaster Pyron##4262
 step
 If youre not 60 by now there are basically 2 options: Finish the Winterspring quests or do a Full BRD run (and Stratholme/Scholo if thats still not enough)
-]]
+]])

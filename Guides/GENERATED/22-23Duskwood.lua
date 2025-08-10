@@ -109,4 +109,4 @@ step
 accept The Legend of Stalvan##74
 step
 The next guide is 23-24 Redridge Mountains. There is another 23-24 guide if you want to do stockades(what I would suggest doing now).
-]]
+]])

@@ -91,4 +91,4 @@ step
 turnin Cortello's Riddle##626
 step
 use Hearthstone##6948
-]]
+]])

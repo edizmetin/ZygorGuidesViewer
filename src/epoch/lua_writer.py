@@ -32,7 +32,7 @@ def write_guide_to_lua(
         for row in guide.iter_rows(named=True):
             step: str | None = row["formatted_text"]
             if step:
-                f.write("\nstep\n") # TODO : Do we need step id ?
+                f.write("\nstep\n")  # TODO : Do we need step id ?
                 f.write(row["formatted_text"])
                 step_id += 1
-        f.write("\n]]")
+        f.write("\n]])")

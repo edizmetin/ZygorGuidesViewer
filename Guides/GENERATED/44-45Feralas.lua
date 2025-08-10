@@ -87,4 +87,4 @@ step
 accept Delivering the Relic##2871
 step
 fpath Darnassus
-]]
+]])

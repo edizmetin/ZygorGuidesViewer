@@ -59,4 +59,4 @@ step
 Do (Optional): Attack on the Tower
 step
 use Hearthstone##6948
-]]
+]])

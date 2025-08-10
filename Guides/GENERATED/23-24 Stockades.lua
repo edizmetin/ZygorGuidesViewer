@@ -57,4 +57,4 @@ step
 accept Items of Some Consequence##2746
 step
 We will turn in the other 2 dungeons quests in the next guide.
-]]
+]])

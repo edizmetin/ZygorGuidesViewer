@@ -99,4 +99,4 @@ step
 Wait untill Rizzle Brassbolts leaves the building.
 step
 accept Rizzle's Schematics##1194
-]]
+]])

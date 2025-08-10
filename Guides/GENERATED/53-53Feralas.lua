@@ -199,4 +199,4 @@ step
 turnin Purified!##4442
 step
 Run to 62.5,24.2 |goto Felwood 62.5,24.2
-]]
+]])

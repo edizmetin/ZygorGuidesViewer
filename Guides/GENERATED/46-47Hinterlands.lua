@@ -71,4 +71,4 @@ step
 home Loch Modan
 step
 Run to 46.9,78.4 |goto Loch Modan 46.9,78.4
-]]
+]])

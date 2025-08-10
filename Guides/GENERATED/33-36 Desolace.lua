@@ -214,4 +214,4 @@ step
 accept The Missing Diplomat##1249
 step
 Do: The Missing Diplomat |q 1249
-]]
+]])

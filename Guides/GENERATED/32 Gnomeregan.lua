@@ -17,4 +17,4 @@ step
 turnin Klockmort's Essentials##2925
 step
 Next part is optional,as its Gnomeregan, continue with Accept The Brassbolt Brother
-]]
+]])

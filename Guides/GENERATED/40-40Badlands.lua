@@ -99,4 +99,4 @@ step
 turnin Badlands Reagent Run##2500
 step
 If you dont intent to do Uldaman, Grind till 41 and skip to the next guide after
-]]
+]])

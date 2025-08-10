@@ -105,4 +105,4 @@ step
 turnin Down the Scarlet Path##261
 step
 use Hearthstone##6948
-]]
+]])

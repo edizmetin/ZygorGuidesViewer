@@ -147,4 +147,4 @@ step
 Do (Optional): The Dark Iron War
 step
 fpath Arathi Highlands |goto Arathi Highlands 45.7, 46.1
-]]
+]])

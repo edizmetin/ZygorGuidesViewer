@@ -158,4 +158,4 @@ step
 fpath Wetlands
 step
 Take the boat to Darkshore
-]]
+]])

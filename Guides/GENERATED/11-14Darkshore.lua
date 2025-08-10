@@ -213,4 +213,4 @@ use Hearthstone##6948
 |only if Dwarf,Gnome,Human
 step
 Buy lvl 15 Food/Water (I recommend 30-40 each)
-]]
+]])

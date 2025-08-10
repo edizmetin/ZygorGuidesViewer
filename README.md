@@ -6,7 +6,7 @@ This is a port of Zygor 3.3.5 addon to Project Epoch, with the following guides 
 
 - (Recommended) Zygor Leveling Guide : Integrated within the addon when ported. This is the most complete leveling guide as it was made specifically for this Addon.
   - All credits go to the original author Zygor !
-- Auto generated TUG : Automated port of TUG guide from his google sheet to this addon in the Zygor format. This port is experimental and has not been tested yet.
+- Auto generated TUG (Currently disabled due to a bug) : Automated port of TUG guide from his google sheet to this addon in the Zygor format. This port is experimental and has not been tested yet.
   - This guide is entirely open source and free (compared to Zygor which is usually paid), all credits go to TUG !
 - TUG manual port (max level 36 !) : TUG ported a few of his guides manually to the Zygor addon, these have better integration with Zygor than auto generated ones but only go to level 36 (not everything was tested)
 
@@ -20,8 +20,8 @@ Important : This is very WIP as Epoch hasn't released yet and this repository is
 
 Either :
 
-- (Recommended) Clone the repository in your `Addon` folder with name `ZygorGuideViewer`
-- (Not recommended as you will not get updates) Download the Addon as a zip file, unzip it in your Addon folder, rename the extrated folder to `ZygorGuideViewer`
+- (Recommended) Clone the repository in your `Addon` folder with name `ZygorGuidesViewer` (the name is very important, otherwise the addon won't load)
+- (Not recommended as you will not get updates) Download the Addon as a zip file, unzip it in your Addon folder, rename the extrated folder to `ZygorGuidesViewer`
 
 ## Contributing
 

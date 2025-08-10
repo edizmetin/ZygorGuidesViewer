@@ -47,4 +47,4 @@ step
 Do (Optional): The True Masters
 step
 accept A Call to Arms: The Plaguelands!##5066
-]]
+]])

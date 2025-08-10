@@ -171,4 +171,4 @@ step
 accept The Missing Diplomat##1243
 step
 use Hearthstone##6948
-]]
+]])

@@ -266,4 +266,4 @@ step
 turnin The Stone Watcher##2954
 step
 Run to 27.1,56.9 |goto Tanaris 27.1,56.9
-]]
+]])

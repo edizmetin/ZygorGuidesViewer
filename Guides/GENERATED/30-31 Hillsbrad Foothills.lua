@@ -84,4 +84,4 @@ Get your level 30 spells at your trainer
 |only if Warlock,Mage,Warrior
 step
 If you have 60 silk already: TurnIn: [QT7793] A Donation of silk at: [G44.3, 73.9 Stormwind City]
-]]
+]])

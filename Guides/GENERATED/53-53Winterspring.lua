@@ -127,4 +127,4 @@ step
 accept The Smoldering Ruins of Thaurissan##3701
 step
 fpath Redridge
-]]
+]])

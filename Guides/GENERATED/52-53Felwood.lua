@@ -77,4 +77,4 @@ step
 accept Sister Pamela##5601
 step
 fpath Winterspring |goto Winterspring 61.4,38.8
-]]
+]])
