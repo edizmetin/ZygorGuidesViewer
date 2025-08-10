@@ -4,8 +4,8 @@
 
 This is a port of Zygor 3.3.5 addon to Project Epoch, with the following guides :
 
-- (Recommended) Zygor Leveling Guide : Integrated within the addon when ported. This is the most complete leveling guide as it was made specifically for this Addon.
-  - This will be the updated guide with new content.
+- **(Recommended) Zygor Leveling Guide** : Integrated within the addon when ported. This is the most complete leveling guide as it was made specifically for this Addon.
+  - **This will be the updated guide with new content.**
   - All credits go to Zygor for the original guide !
 - Auto generated TUG (Currently disabled due to a bug) : Automated port of TUG guide from his google sheet to this addon in the Zygor format. This port is experimental and has not been tested yet.
   - This guide is entirely open source and free (compared to Zygor which is usually paid), all credits go to TUG !
@@ -21,7 +21,7 @@ Important : This is very WIP as Epoch hasn't released yet and this repository is
 
 Either :
 
-- (Recommended) Clone the repository in your `Addon` folder with name `ZygorGuidesViewer` (the name is very important, otherwise the addon won't load)
+- **(Recommended) Clone the repository in your `Addon` folder with name `ZygorGuidesViewer` (the name is very important, otherwise the addon won't load)**
 - (Not recommended as you will not get updates) Download the Addon as a zip file, unzip it in your Addon folder, rename the extrated folder to `ZygorGuidesViewer`
 
 ## Contributing
@@ -29,7 +29,7 @@ Either :
 Overall, the plan is to make this project community-based since there is a massive amount of new quests / items added with Project Epoch,
 and I will not be able to go through all the content myself so I rely on the Epoch community to suggest leveling routes !
 
-IMPORTANT : NEW QUESTS / ROUTES WILL FIRST BE ADDED TO THE ZYGOR GUIDE. 
+**IMPORTANT : NEW QUESTS / ROUTES WILL FIRST BE ADDED TO THE ZYGOR GUIDE.** 
 
 In order to contribute :
 
