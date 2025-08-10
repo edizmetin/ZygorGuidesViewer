@@ -5,7 +5,8 @@
 This is a port of Zygor 3.3.5 addon to Project Epoch, with the following guides :
 
 - (Recommended) Zygor Leveling Guide : Integrated within the addon when ported. This is the most complete leveling guide as it was made specifically for this Addon.
-  - All credits go to the original author Zygor !
+  - This will be the updated guide with new content.
+  - All credits go to Zygor for the original guide !
 - Auto generated TUG (Currently disabled due to a bug) : Automated port of TUG guide from his google sheet to this addon in the Zygor format. This port is experimental and has not been tested yet.
   - This guide is entirely open source and free (compared to Zygor which is usually paid), all credits go to TUG !
 - TUG manual port (max level 36 !) : TUG ported a few of his guides manually to the Zygor addon, these have better integration with Zygor than auto generated ones but only go to level 36 (not everything was tested)
@@ -27,6 +28,8 @@ Either :
 
 Overall, the plan is to make this project community-based since there is a massive amount of new quests / items added with Project Epoch,
 and I will not be able to go through all the content myself so I rely on the Epoch community to suggest leveling routes !
+
+IMPORTANT : NEW QUESTS / ROUTES WILL FIRST BE ADDED TO THE ZYGOR GUIDE. 
 
 In order to contribute :
 
