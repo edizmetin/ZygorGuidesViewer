@@ -1,6 +1,7 @@
 import glob
 import logging
 import os
+from pathlib import Path
 
 logger = logging.getLogger("Epoch")
 logging.basicConfig(level=logging.DEBUG)
@@ -41,7 +42,9 @@ ZygorGuidesViewer.HordeInstalled = true
 """
 
 
-def compile_guides(input_dir, output_file, guide_name_mapping, header, footer):
+def compile_guides(
+    input_dir: Path, output_file: Path, guide_name_mapping: dict[str, str], header: str, footer: str
+):
     """
     Compile all .zygor_guide guide files in input_dir into a single Lua file.
 
@@ -126,11 +129,11 @@ def load_guide_name_mapping(mapping_file):
 
 ALLIANCE_MAPPING_FILE = "zygor_guides/alliance_mapping.txt"
 ALLIANCE_INPUT_DIR = "zygor_guides/alliance/"
-ALLIANCE_OUTPUT_FILE = "alliance_guide.lua"
+ALLIANCE_OUTPUT_FILE = "out/alliance_guide.lua"
 
 HORDE_MAPPING_FILE = "zygor_guides/horde_mapping.txt"
 HORDE_INPUT_DIR = "zygor_guides/horde/"
-HORDE_OUTPUT_FILE = "horde_guide.lua"
+HORDE_OUTPUT_FILE = "out/horde_guide.lua"
 
 
 def load(mapping_file, input_dir, output_file, header, footer):
@@ -145,4 +148,24 @@ def load(mapping_file, input_dir, output_file, header, footer):
 
 
 if __name__ == "__main__":
-    load(ALLIANCE_MAPPING_FILE, ALLIANCE_INPUT_DIR, ALLIANCE_OUTPUT_FILE, ALLIANCE_HEADER, ALLIANCE_FOOTER)
+    logger.info("Creating alliance guide")
+    base_dir = Path(__file__).parent
+    Path.mkdir(base_dir / Path(ALLIANCE_OUTPUT_FILE).parent, exist_ok=True)
+    load(
+        base_dir / ALLIANCE_MAPPING_FILE,
+        base_dir / ALLIANCE_INPUT_DIR,
+        base_dir / ALLIANCE_OUTPUT_FILE,
+        ALLIANCE_HEADER,
+        ALLIANCE_FOOTER,
+    )
+    logger.info("Creating horde guide")
+    Path.mkdir(base_dir / Path(HORDE_OUTPUT_FILE).parent, exist_ok=True)
+
+    load(
+        base_dir / HORDE_MAPPING_FILE,
+        base_dir / HORDE_INPUT_DIR,
+        base_dir / HORDE_OUTPUT_FILE,
+        HORDE_HEADER,
+        HORDE_FOOTER,
+    )
+    logger.info("All guides completed, exiting")
