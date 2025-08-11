@@ -5,3 +5,5 @@ build
 __pycache__
 .venv
 src/updated_guides/*
+alliance_guide.lua
+horde_guide.lua

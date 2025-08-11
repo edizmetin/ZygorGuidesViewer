@@ -69,11 +69,12 @@ def sanitize_df(df: pl.DataFrame):
     if GuideSchema.ITEM_NAME not in df.columns:
         df = df.with_columns(pl.lit(None).alias(GuideSchema.ITEM_NAME))
     if GuideSchema.ITEM_AMOUNT not in df.columns:
-         df = df.with_columns(pl.lit(None).alias(GuideSchema.ITEM_AMOUNT))
+        df = df.with_columns(pl.lit(None).alias(GuideSchema.ITEM_AMOUNT))
     if GuideSchema.QUEST_NAME not in df.columns:
         # TODO : This only happens in the 6-9 Gnome guide which is missing Quest names
-        df = df.with_columns(pl.lit("").alias(GuideSchema.QUEST_NAME ))
+        df = df.with_columns(pl.lit("").alias(GuideSchema.QUEST_NAME))
     return df.pipe(parse_coords).pipe(parse_class)
+
 
 def convert_guide(df: pl.DataFrame):
     df = df.pipe(sanitize_df)
@@ -81,7 +82,6 @@ def convert_guide(df: pl.DataFrame):
     df = df.with_columns(add_conditional())
 
     return df
-
 
 
 def write_guide_to_csv(name: str, df: pl.DataFrame, path: Path):
