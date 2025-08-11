@@ -50,7 +50,9 @@ In order to run the script, create a new venv with `python -m venv .venv` at the
 
 ## Notes
 
-Issues / contributions regarding bugs in the addon itself are very much appreciated !
+Another reason I split the guide into subfiles which are not lua is to be able to have syntax highlighting (+ potentially LSP features) in IDEs for the zygor guides which are written in a custom language.
+
+Since I use neovim for development, I wrote this small treesitter parser/highlighting (experimental) : [https://github.com/SimonGaufreteau/tree-sitter-zygor].
 
 ## Credits
 
