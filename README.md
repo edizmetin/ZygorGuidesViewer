@@ -1,9 +1,8 @@
-
 # VanillaEpochTUGs
 
 ## Overview
 
-This is a port of Zygor 3.3.5 addon to Project Epoch, with the following guides :
+This is a port of Zygor 3.3.5 addon to Project Epoch (Vanilla+ 1-60), with the following guides :
 
 - **(Recommended) Zygor Leveling Guide** : Integrated within the addon when ported. This is the most complete leveling guide as it was made specifically for this Addon.
   - **This will be the updated guide with new content.**
@@ -20,7 +19,6 @@ Note : This is **NOT** TUG's project, they allowed me to port their guide as the
 The goal of this project is to have a strong leveling base with Zygor / TUG guides, then to expand them as new quests are discovered.
 
 Important : This is very WIP as Epoch hasn't released yet and this repository is quite new ! Coordinates and quest ids might not work as expected in the first few weeks post launch.
-
 
 <img width="653" height="339" alt="zygor_ingame" src="https://github.com/user-attachments/assets/ec84af4d-14ce-4005-aa5f-512bdc38456b" />
 
