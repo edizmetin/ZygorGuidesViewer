@@ -1,4 +1,4 @@
-# VanillaEpochTUGs
+# VanillaEpochLeveling
 
 ## Overview
 
