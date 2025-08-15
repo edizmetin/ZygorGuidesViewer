@@ -47,68 +47,7 @@ step //11
 step //12
   'Fly to Darkshire|goto Duskwood,74.7,46.9,7|noway|c
   only Draenei Warrior,Gnome Warrior,NightElf Warrior,Dwarf Warrior,Human Warrior
-step //13
-  'Fly to Stormwind|goto Stormwind City|noway|c
-  only Draenei Shaman
-step //14
-  goto Stormwind City,22.6,56.1
-  'Ride the boat to Auberdine|goto Darkshore,32.4,43.7,1|noway|c
-  only Draenei Shaman
-step //15
-  'Ride the boat to Azuremyst Isle|goto Azuremyst Isle|noway|c
-  only Draenei Shaman
-step //16
-  'Go northeast to the Exodar|goto The Exodar|noway|c
-  only Draenei Shaman
-step //17
-  goto The Exodar,32.3,23.9
-  .talk Sulaa##17219
-  ..accept Call of Air (1)##9551
-  only Draenei Shaman
-step //18
-  goto 31.4,27.7
-  .talk Farseer Nobundo##17204
-  ..turnin Call of Air (1)##9551
-  ..accept Call of Air (2)##9552
-  only Draenei Shaman
-step //19
-  'Go outside to Azuremyst Isle|goto Azuremyst Isle|noway|c
-  only Draenei Shaman
-step //20
-  goto Azuremyst Isle,26.8,25.6|n
-  .' The path up to Call of Air (2) starts here|goto Azuremyst Isle,26.8,25.6,1|noway|c
-  only Draenei Shaman
-step //21
-  'Go up the path to 24.6,35.6|goto 24.6,35.6
-  .talk Velaada##17431
-  ..turnin Call of Air (2)##9552
-  ..accept Call of Air (3)##9553
-  only Draenei Shaman
-step //22
-  goto 22.6,32.4
-  .talk Susurrus##17435
-  ..turnin Call of Air (3)##9553
-  ..accept Call of Air (4)##9554
-  ..'Click -I am ready-
-  ..'He brings you back down the mountain to the Exodar at 78,55|noway|c
-  only Draenei Shaman
-step //23
-  'Go inside the Exodar to 31.4,27.7|goto The Exodar,31.4,27.7
-  .talk Farseer Nobundo##17204
-  ..turnin Call of Air (4)##9554
-  only Draenei Shaman
-step //24
-  'Go outside to Azuremyst Isle|goto Azuremyst Isle|noway|c
-  only Draenei Shaman
-step //25
-  'Go southwest to ride the boat to Auberdine|goto Darkshore,38.1,43.1,9|noway|c
-  only Draenei Shaman
-step //26
-  'Ride the boat to Stormwind Harbor|goto Stormwind City|noway|c
-  only Draenei Shaman
-step //27
-  'Fly to Darkshire|goto Duskwood,74.7,46.9,7|noway|c
-  only Draenei Shaman
+
 step //28
   goto Duskwood,77.4,36.1
   .from Stalvan Mistmantle##315
