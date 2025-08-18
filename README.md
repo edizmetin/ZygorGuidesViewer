@@ -54,6 +54,29 @@ These files are then merged using a python script (see [build_zygor.py](./src/ep
 In order to run the script, create a new venv with `python -m venv .venv` at the folder root, run `pip install .`, then do `bash generate_zygor_guides.sh`.
 This is not required to open a PR, I can run the script for you if needed.
 
+## Custom content status tracker
+
+Alliance (empty rows mean no updates yet) :
+| Guide | Status |
+|-----------|--------|
+| dwarf1-13 | |
+| human1-13 | Mostly done, new content added|
+| gnome1-13 | |
+| elf1-13 | |
+| main13-20 | |
+| main20-25 | |
+| main25-30 | |
+| main30-35 | |
+| main35-40 | |
+| main40-45 | |
+| main45-50 | |
+| main50-55 | |
+| main55-60 | |
+
+Horde :
+
+(Not updated yet)
+
 ## Notes
 
 Another reason I split the guide into subfiles which are not lua is to be able to have syntax highlighting (+ potentially LSP features) in IDEs for the zygor guides which are written in a custom language.
