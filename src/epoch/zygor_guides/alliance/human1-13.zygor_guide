@@ -114,7 +114,7 @@ step //23
   goto 51.3,37.0
   .kill 10 Kobold Workers|q 15/1
 step 
-  goto 48.3, 58.2
+  goto 48.3,58.2
   .accept The Soaked Barrel##26777
 step //24
   goto 54.3,41
@@ -173,7 +173,7 @@ step //35
   goto 47.7,32
   .kill 12 Kobold Laborer##80|q 21/1
 step
-  goto 54.9, 37.6
+  goto 54.9,37.6
   .from Swiftpaw##45326
   .get Swiftpaw's Snout##60388|q 26776/1
 step //36
