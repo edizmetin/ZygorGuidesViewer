@@ -8,11 +8,11 @@ This is a port of Zygor 3.3.5 addon to Project Epoch (Vanilla+ 1-60), with the f
   - **This will be the updated guide with new content.**
   - All credits go to Zygor for the original guide !
 
-Other guides :
+Other guides (both disabled for launch) :
 
 - Auto generated TUG (Currently disabled due to a bug) : Automated port of TUG guide from his google sheet to this addon in the Zygor format. This port is experimental and has not been tested yet.
   - This guide is entirely open source and free (compared to Zygor which is usually paid), all credits go to TUG !
-- TUG manual port (max level 36 !) : TUG ported a few of his guides manually to the Zygor addon, these have better integration with Zygor than auto generated ones but only go to level 36 (not everything was tested)
+- TUG manual port (Disabled, max level 36 !) : TUG ported a few of his guides manually to the Zygor addon, these have better integration with Zygor than auto generated ones but only go to level 36 (not everything was tested)
 
 Note : This is **NOT** TUG's project, they allowed me to port their guide as they are not involved in Project Epoch.
 
@@ -27,6 +27,7 @@ Important : This is very WIP as Epoch hasn't released yet and this repository is
 Either :
 
 - **(Recommended) Clone the repository in your `Addon` folder with name `ZygorGuidesViewer` (the name is very important, otherwise the addon won't load)**
+- (Alternative) Use [GitAddonsManager](https://woblight.gitlab.io/overview/gitaddonsmanager/). Remember to change the name to `ZygorGuidesViewer`
 - (Not recommended as you will not get updates) Download the Addon as a zip file, unzip it in your Addon folder, rename the extrated folder to `ZygorGuidesViewer`
 
 ## Contributing
@@ -39,7 +40,7 @@ and I will not be able to go through all the content myself so I rely on the Epo
 In order to contribute :
 
 - Open an issue [in Github here](https://github.com/SimonGaufreteau/VanillaEpochLeveling/issues) with the changes you think should be made. Each issue should cover 1 change "idea"
-  (eg. you can include multiple quest change in 1 zone if they relate to each other in the route. Changes across multiple zones should be split in general).
+  (eg. you can include multiple quests change in 1 zone if they relate to each other in the route. Changes across multiple zones should be split except if related).
 - If you would like to directly implement the change in the code base, create [a pull request](https://github.com/SimonGaufreteau/VanillaEpochLeveling/pulls) linking to an issue.
 
 Please read the guide format [here](./guide_format.html) on how to write Zygor formatted guides (open in your browser).
@@ -49,6 +50,7 @@ I separated each guide in its own file to make it easier to edit.
 These files are then merged using a python script (see [build_zygor.py](./src/epoch/build_zygor.py) and copied using a small bash script (see [generate_zygor_guides.sh](./generate_zygor_guides.sh)
 
 In order to run the script, create a new venv with `python -m venv .venv` at the folder root, run `pip install .`, then do `bash generate_zygor_guides.sh`.
+This is not required to open a PR, I can run the script for you if needed.
 
 ## Notes
 

@@ -50,20 +50,20 @@
  <!--  <Script file="GENERATED\6-9Gnome.lua"\> -->
  <!--  <Script file="GENERATED\6-9ElwynnForest_1.lua"\> -->
  <!--  <Script file="GENERATED\9-11Gnome.lua"\> -->
-	<Script file="TUGs\01-10 Elwynn Forest.lua"/>
-	<Script file="TUGs\10-11 DunMorogh+LochModan.lua"/>
-	<Script file="TUGs\11-15 Darkshore.lua"/>
-	<Script file="TUGs\15-17 RR+Loch.lua"/>
-	<Script file="TUGs\17-20 DarkshoreII.lua"/>
-	<Script file="TUGs\20-21 Redridge Mountains.lua"/>
-	<Script file="TUGs\21-23 Ashenvale.lua"/>
-	<Script file="TUGs\23-24 Stockades.lua"/>
-	<Script file="TUGs\23-25 Redridge Mountains.lua"/>
-	<Script file="TUGs\25-26 Ashenvale+WetlandsI.lua"/>
-	<Script file="TUGs\22-23 Duskwood.lua"/>
-	<Script file="TUGs\23-24 Stockades.lua"/>
-	<Script file="TUGs\23-24 Redridge.lua"/>
-	<Script file="TUGs\24-25 Ashenvale.lua"/>
+	<!-- <Script file="TUGs\01-10 Elwynn Forest.lua"/> -->
+	<!-- <Script file="TUGs\10-11 DunMorogh+LochModan.lua"/> -->
+	<!-- <Script file="TUGs\11-15 Darkshore.lua"/> -->
+	<!-- <Script file="TUGs\15-17 RR+Loch.lua"/> -->
+	<!-- <Script file="TUGs\17-20 DarkshoreII.lua"/> -->
+	<!-- <Script file="TUGs\20-21 Redridge Mountains.lua"/> -->
+	<!-- <Script file="TUGs\21-23 Ashenvale.lua"/> -->
+	<!-- <Script file="TUGs\23-24 Stockades.lua"/> -->
+	<!-- <Script file="TUGs\23-25 Redridge Mountains.lua"/> -->
+	<!-- <Script file="TUGs\25-26 Ashenvale+WetlandsI.lua"/> -->
+	<!-- <Script file="TUGs\22-23 Duskwood.lua"/> -->
+	<!-- <Script file="TUGs\23-24 Stockades.lua"/> -->
+	<!-- <Script file="TUGs\23-24 Redridge.lua"/> -->
+	<!-- <Script file="TUGs\24-25 Ashenvale.lua"/> -->
 	
 
 </Ui>
