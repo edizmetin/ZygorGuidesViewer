@@ -26,8 +26,9 @@ Important : Coordinates and quest ids might not work as expected in the first fe
 
 Either :
 
-- **(Recommended) Clone the repository in your `Addon` folder with name `ZygorGuidesViewer` (the name is very important, otherwise the addon won't load)**
-- (Alternative) Use [GitAddonsManager](https://woblight.gitlab.io/overview/gitaddonsmanager/). Remember to change the name to `ZygorGuidesViewer`
+
+- **(Recommended) Use [GitAddonsManager](https://woblight.gitlab.io/overview/gitaddonsmanager/). Then change the folder name to `ZygorGuidesViewer` (the name is very important, otherwise the addon won't load)**
+- (Alternative for git users) Clone the repository in your `Addon` folder with name `ZygorGuidesViewer` 
 - (Not recommended as you will not get updates) Download the Addon as a zip file, unzip it in your Addon folder, rename the extrated folder to `ZygorGuidesViewer`
 
 ## Contributing
