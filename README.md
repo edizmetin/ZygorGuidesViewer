@@ -45,6 +45,8 @@ In order to contribute :
 
 Please read the guide format [here](./guide_format.html) on how to write Zygor formatted guides (open in your browser).
 
+In order to get quest / items / NPC IDs and location, check the [pfquest-Epoch](https://github.com/Bennylavaa/pfQuest-epoch) db.
+
 Zygor guides (the one which will be updated) are located here : [zygor_guides/](./src/epoch/zygor_guides).
 I separated each guide in its own file to make it easier to edit.
 These files are then merged using a python script (see [build_zygor.py](./src/epoch/build_zygor.py) and copied using a small bash script (see [generate_zygor_guides.sh](./generate_zygor_guides.sh)
