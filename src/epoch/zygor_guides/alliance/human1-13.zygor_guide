@@ -113,6 +113,9 @@ step //22
 step //23
   goto 51.3,37.0
   .kill 10 Kobold Workers|q 15/1
+step 
+  goto 48.3,58.2
+  .accept The Soaked Barrel##26777
 step //24
   goto 54.3,41
   .from Defias Thug##38+
@@ -134,13 +137,15 @@ step //28
   goto 50.7,39.3
   .talk Milly Osworth##9296
   ..turnin Milly Osworth##3903
+  ..turnin The Soaked Barrel##26777
   ..accept Milly's Harvest##3904
+  ..accept Find the Brother##26778
 step //29
   goto 53.6,47.3
   .' Click Milly's Harvest barrels around the vineyard|tip Milly's Harvest look like barrels of grapes.
   .get 8 Milly's Harvest|q 3904/1
 step //30
-  goto 57.5,48.3
+  ' In the house'|goto 57.5,48.3
   .from Garrick Padfoot##103
   .get Garrick's Head|q 6/1
 step //31
@@ -158,9 +163,19 @@ step //34
   goto 49.5,41.6
   .talk Brother Neals##952
   ..turnin Grape Manifest##3905
+  ..turnin Find the Brother##26778
+  ..accept A Brother's Disgust##26779
+step
+  goto 47.4,41.9
+  .talk Merissa Stilwell##11940
+  .accept Swiftpaw##26776
 step //35
   goto 47.7,32
   .kill 12 Kobold Laborer##80|q 21/1
+step
+  goto 54.9,37.6
+  .from Swiftpaw##45326
+  .get Swiftpaw's Snout##60388|q 26776/1
 step //36
   'Hearth to Northshire Valley|goto Elwynn Forest,48.1,43.7,1|use Hearthstone##6948|noway|c
 step //37
@@ -174,25 +189,43 @@ step //39
   goto 45.6,47.7
   .talk Falkhaan Isenstrider##6774
   ..accept Rest and Relaxation##2158
+step
+  goto 42.0,67.0
+  .talk Matron Darcy##45021
+  ..accept Spider Elixir##26774
 step //40
-  goto 42.1,65.9
+  goto 39.5,68.9
   .talk Marshal Dughan##240
   ..turnin Report to Goldshire##54
   ..accept The Fargodeep Mine##62
 step //41
-  goto 43.3,65.7
+  goto 38.9,68.4
   .talk William Pestle##253
   ..accept Kobold Candles##60
 step //42
-  goto 43.8,65.8
+  goto 38.1,68.1
   .talk Innkeeper Farley##295
   ..turnin Rest and Relaxation##2158
 step //43
   home Goldshire
+step 
+  goto 38.2,68.6
+  .talk Melika Isenstrider##6778
+  ..turnin A Brother's Disgust##26779
+  ..accept A Mage's Advice##26780
+step 
+  ' At the upper level of the inn'|goto 38.0,68.3
+  .talk Zaldimar Wefhellt##328
+  ..turnin A Mage's Advice##26780
+  ..accept Linus Stone Tips##26781
 step //44
-  goto 42.1,67.3
+  goto 38.5,70
   .talk Remy "Two Times"##241
   ..accept Gold Dust Exchange##47
+step
+  goto 42.5,69.2
+  .talk Robert Miston##45085
+  ..accept Lost Equipment##26771
 step //45
   goto 39,82.3
   .from Kobold Tunneler##475+, Kobold Miner##40+
@@ -202,18 +235,18 @@ step //46
   'Go northeast inside the mine to 41.3,79.1|goto 41.3,79.1
   .' Explore the Fargodeep Mine|goal Scout through the Fargodeep Mine|q 62/1
 step //47
-  goto 42.1,67.3
+  goto 38.5,70
   .talk Remy "Two Times"##241
   ..turnin Gold Dust Exchange##47
 step //48
   ding 6
 step //49
-  goto 42.1,65.9
+  goto 39.5,68.9
   .talk Marshal Dughan##240
   ..turnin The Fargodeep Mine##62
   ..accept The Jasperlode Mine##76
 step //50
-  goto 43.3,65.7
+  goto 38.9,68.4
   .talk William Pestle##253
   ..turnin Kobold Candles##60
   ..accept Shipment to Stormwind##61
@@ -268,36 +301,49 @@ step //61
 step //62
   ding 7
 step //63
-  'Go outside to 42.1,67.3|goto 42.1,67.3
+  'Go outside to 38.5,70|goto 38.5,70
   .talk Remy "Two Times"##241
   ..accept A Fishy Peril##40
 step //64
-  goto 42.1,65.9
+  goto 39.5,68.9
   .talk Marshal Dughan##240
   ..turnin A Fishy Peril##40
   ..accept Further Concerns##35
 step //65
-  goto 43.3,65.7
+  goto 38.9,68.4
   .talk William Pestle##253
   ..turnin Note to William##107
   ..accept Collecting Kelp##112
+step
+  goto 42.5,58.5
+  .from Linus Royston##45027
+  .get Depleted Translocation Stone##60024|q 26781/1
 step //66
   goto 49.7,66.3
   .from Murloc##285+, Murloc Steamrunner##735+
   .get 4 Crystal Kelp Frond|q 112/1
 step //67
-  goto 43.3,65.7
+  goto 38.9,68.4
   .talk William Pestle##253
   ..turnin Collecting Kelp##112
   ..accept The Escape##114
+step 
+  ' At the upper level of the inn (skip follow up)'|goto 38.0,68.3
+  .talk Zaldimar Wefhellt##328
+  ..turnin Linus Stone Tips##26781
+step 
+  'If you see Lorkiz Quietbit on the road to the east pick up this quest, coordinates are not exact right now'
+  .talk Lorkiz Quietbit##45032
+  ..accept Wanted: Big Blue##26794
+
 step //68
-  goto 43.2,89.6
-  .talk Maybell Maclure##251
-  ..turnin The Escape##114
-step //69
   goto 34.5,84.2
   .talk "Auntie" Bernice Stonefield##246
   ..turnin Goldtooth##87
+step //69
+  goto 43.2,89.6
+  .talk Maybell Maclure##251
+  ..turnin The Escape##114
 step //70
   goto 74,72.2
   .talk Guard Thomas##261
@@ -321,6 +367,10 @@ step //74
   .' Click the Half-Eaten body|tip On the ground next to some big rocks by the river and a tree.
   ..turnin Find the Lost Guards##37
   ..accept Discover Rolf's Fate##45
+step 
+  goto 70.7,59.7
+  .get Big Blue's Wing##60030
+  . from Big Blue##45030|q 26794/1
 step //75
   goto 79.8,55.5
   .' Click Rolf's Corpse|tip On the ground next to a murloc hut.
@@ -357,23 +407,48 @@ step //83
   goto 79.5,68.8
   .talk Sara Timberlain##278
   ..turnin Red Linen Goods##83
+step 
+  goto 63.3,69.1
+  .talk Ginger McGrubbins##45031
+  ..turnin Wanted: Big Blue##26794
 step //84
   'Go inside the mine to 60.4,49.7|goto 60.4,49.7
   .' Explore the Jasperlode Mine|goal Scout through the Jasperlode Mine|q 76/1
+  ..from Mine Spider##43
+  ..get 4 Mine Spider Mandible##60018|q 26774/1
+  ..kill 4 Webbed Miner##45023|q 26774/2
+  ..' Click Mining Equipment in the cave'
+  ..get 8 Mining Equipment|q 26771/1
 step //85
   ding 9
 step //86
   'Hearth to Goldshire|goto Elwynn Forest,42.4,65.8,2|use Hearthstone##6948|noway|c
 step //87
-  goto 42.1,65.9
+  goto  39.5,68.9
   .talk Marshal Dughan##240
   ..turnin The Jasperlode Mine##76
   ..turnin Deliver Thomas' Report##39
   ..accept Westbrook Garrison Needs Help!##239
 step //88
-  goto 41.7,65.6
+  goto 42.4,69.5
   .talk Smith Argus##514
   ..accept Elmore's Task##1097
+step
+  goto 42.5,69.2
+  .talk Robert Miston##45085
+  ..turnin Lost Equipment##26771
+step
+  goto 42.0,67.0
+  .talk Matron Darcy##45021
+  ..turnin Spider Elixir##26774
+  ..accept Tend to the Wounded##26775
+step 
+  .' Use the Spider Elixir in your bags on the Sickly Miner in the tend |use Spider Elixir##60020
+  .' Complete Tend to the Wounded|goal Tend to the Wounded|q 26775/1
+step
+  goto 42.0,67.0
+  .talk Matron Darcy##45021
+  ..turnin Tend to the Wounded##26775
 step //89
   goto 34.6,84.5
   .talk Ma Stonefield##244
@@ -752,7 +827,7 @@ step //178
   'Go outside to Elwynn Forest|goto Elwynn Forest|noway|c
   only Human Paladin
 step //179
-  goto Elwynn Forest,42.1,65.9
+  goto Elwynn Forest,39.5,68.9
   .talk Marshal Dughan##240
   ..accept Report to Gryan Stoutmantle##109
 step //180
