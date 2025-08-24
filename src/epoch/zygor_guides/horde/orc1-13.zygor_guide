@@ -13,7 +13,7 @@ step //2
   ..accept Cutting Teeth##788
 step //3
   goto 43.8,70
-  .kill 8 Mottled Boar|q 788/1
+  .kill 10 Mottled Boar|q 788/1
 step //4
   ding 2
 step //5
@@ -121,7 +121,7 @@ step //23
   .get 6 Cactus Apple|q 4402/1
 step //24
   goto 45.8,59.3
-  .kill 8 Vile Familiar|q 792/1
+  .kill 12 Vile Familiar|q 792/1
 step //25
   'Go inside the cave to 45.5,56.4|goto 45.5,56.4
 step //26
