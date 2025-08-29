@@ -20205,7 +20205,7 @@ step
 talk Tynnus Venomsprout##5169
 |tip Stock up on poisons.
 |tip Open your poison crafting window and purchase the ingredients you need.
-Visit the Vendor |vendor Tynnus Venomsprout##5169 |goto Ironforge 52.94,13.66 |q 5219 |futre
+Visit the Vendor |vendor Tynnus Venomsprout##5169 |goto Ironforge 52.94,13.66 |q 5219 |future
 |only if Rogue
 step
 Enter the building |goto Hillsbrad Foothills 50.45,58.55 < 10 |walk
@@ -26165,7 +26165,7 @@ Cross the bridge |goto Felwood 40.49,48.48 < 10 |walk
 Run down the ramp |goto Felwood 40.04,47.71 < 10 |walk
 Run up the ramp |goto Felwood 38.49,46.17 < 10 |walk
 Follow the path |goto Felwood 38.22,46.82 < 10 |walk
-run up the ramp |goto Felwood 37.35,45.87 < 10 |c |q 7625 |walk
+Run up the ramp |goto Felwood 37.35,45.87 < 10 |c |q 7625 |walk
 |only if Warlock
 step
 Cross the bridge |goto Felwood 38.03,46.48 < 10 |walk

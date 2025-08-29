@@ -28,7 +28,11 @@ end
 
 function Goal:IsVisible()
 	if not self:IsFitting() then return false end
+	if self.hidden then return false end
+	if self.onlyinsticky and not self.parentStep:IsCurrentlySticky() then return false end
+	if self.notinsticky and self.parentStep:IsCurrentlySticky() then return false end		
 	if self.condition_visible then return self.condition_visible() end
+
 	return true
 end
 
@@ -63,6 +67,7 @@ function Goal:IsCompleteable()
 	or self.action=="skill"
 	or self.action=="skillmax"
 	or self.action=="learn"
+	or self.action=="complete"
 	 then return true end
 	if self.action=="goto" then
 		-- this one is tricky.
@@ -223,7 +228,6 @@ function Goal:IsComplete()
 		percent = (level<self.level-1) and 0 or (level>=self.level) and 1.0 or UnitXP("player")/UnitXPMax("player")
 
 		return UnitLevel("player")>=tonumber(self.level), UnitLevel("player")>=tonumber(self.level)-1, percent
-
 	elseif self.action=="goto" then
 		local zone = GetRealZoneText()
 		if self.map and zone~=self.map then return false,true end
@@ -315,7 +319,7 @@ function Goal:IsComplete()
 		else
 			return nil,nil,nil
 		end
-	elseif self.action=="condition" then
+	elseif self.action=="condition" or self.action == "complete" then
 		return self:condition_complete()
 	elseif self.action=="achieve" then
 		if self.achieveid then
@@ -531,6 +535,7 @@ function Goal:GetText(showcompleteness)
 	elseif self.action=='turnin' then text = L["stepgoal_turn in"]:format(COLOR_QUEST((self.questpart and L['questtitle_part'] or L['questtitle']):format(self.quest,self.questpart)))
 	elseif self.action=='talk' then text = L["stepgoal_talk to"]:format(COLOR_NPC(self.npc))
 	elseif self.action=='trash' then text = L["Trash item %s"]:format(COLOR_ITEM(self.trashitem))
+	elseif self.action=='click' then text = L["Click %s"]:format(COLOR_ITEM(self.target))
 	elseif self.action=='get' and self.count and self.count>1 then text = L["stepgoal_get #"]:format(self.count>0 and self.count or "?",COLOR_ITEM(plural(self.target,self.count)))
 	elseif self.action=='get' then text = L["stepgoal_get"]:format(COLOR_ITEM(plural(self.target,self.plural and 2 or 1)))
 	elseif self.action=='kill' and self.count and self.count>1 then text = L["stepgoal_kill #"]:format(self.count>0 and self.count or "?",COLOR_MONSTER(plural(self.target,self.count)))

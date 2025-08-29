@@ -23952,7 +23952,7 @@ Cross the bridge |goto Felwood 40.49,48.48 < 10 |walk
 Run down the ramp |goto Felwood 40.04,47.71 < 10 |walk
 Run up the ramp |goto Felwood 38.49,46.17 < 10 |walk
 Follow the path |goto Felwood 38.22,46.82 < 10 |walk
-run up the ramp |goto Felwood 37.35,45.87 < 10 |c |q 7624 |walk
+Run up the ramp |goto Felwood 37.35,45.87 < 10 |c |q 7624 |walk
 |only if Warlock
 step
 Cross the bridge |goto Felwood 38.03,46.48 < 10 |walk

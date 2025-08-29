@@ -3,6 +3,10 @@
 local ZGV = ZygorGuidesViewer
 if not ZGV then return end
 
+
+local linecount = 30;
+
+
 local doborderrgb = function(self)
 	local progress = 1.0 - self:GetProgress()
 	self.target:SetBackdropBorderColor(
@@ -18,7 +22,7 @@ local obscured
 
 local function Step_OnClick(self,button)
 	if ZGV.CurrentStep==self.step then
-		for i=1,20,1 do
+		for i=1,linecount,1 do
 			if MouseIsOver(self.lines[i].clicker) then self.lines[i].clicker:GetScript("OnClick")(self.lines[i].clicker,button) end
 		end
 		return
@@ -34,7 +38,7 @@ end
 local function Step_OnUpdate(self,button)
 	if ZGV.CurrentStep==self.step then
 		local clicker
-		for i=1,20,1 do
+		for i=1,linecount,1 do
 			clicker=self.lines[i].clicker
 			if clicker.over and not MouseIsOver(clicker) then
 				clicker:GetScript("OnLeave")(clicker)
@@ -44,7 +48,7 @@ local function Step_OnUpdate(self,button)
 		-- ugly! but first leave's, then enter's.
 		obscured = (GetMouseFocus()~=WorldFrame and GetMouseFocus()~=self)
 
-		for i=1,20,1 do
+		for i=1,linecount,1 do
 			clicker=self.lines[i].clicker
 			if clicker:IsVisible() and MouseIsOver(clicker) and not clicker.over and not obscured then
 				clicker:GetScript("OnEnter")(clicker)
@@ -99,7 +103,7 @@ function ZygorGuidesViewerFrame_Step_Setup(num)
 
 	ZGV.stepframes[num] = step
 
-	for i=1,20,1 do
+	for i=1,linecount,1 do
 		local line = obj("Line"..i)
 		local label = obj("Line"..i.."Text")
 		if not label then break end
@@ -178,7 +182,7 @@ end
 local function Spot_OnUpdate(self,button)
 	if ZGV.CurrentStep==self.step then
 		local clicker
-		for i=1,20,1 do
+		for i=1,linecount,1 do
 			clicker=self.lines[i].clicker
 			if clicker.over and not MouseIsOver(clicker) then
 				clicker:GetScript("OnLeave")(clicker)
@@ -188,7 +192,7 @@ local function Spot_OnUpdate(self,button)
 		-- ugly! but first leave's, then enter's.
 		obscured = (GetMouseFocus()~=WorldFrame and GetMouseFocus()~=self)
 
-		for i=1,20,1 do
+		for i=1,linecount,1 do
 			clicker=self.lines[i].clicker
 			if clicker:IsVisible() and MouseIsOver(clicker) and not clicker.over and not obscured then
 				clicker:GetScript("OnEnter")(clicker)
@@ -238,7 +242,7 @@ function ZygorGuidesViewerFrame_Spot_Setup(num)
 
 	ZGV.spotframes[num] = spot
 
-	for i=1,20 do
+	for i=1,linecount do
 		local line = obj("Line"..i)
 		local label = line.label
 		if not label then break end
@@ -342,7 +346,7 @@ function ZygorGuidesViewerFrame_OnLoad(self)
 
 	self:SetClampRectInsets(0,0,10,0)
 
-	for i=1,20 do
+	for i=1,linecount do
 		
 		ZygorGuidesViewerFrame_Step_Setup(i)
 
@@ -414,7 +418,7 @@ function ZygorGuidesViewerFrame_OnLoad(self)
 
 	end
 
-	for i=1,20 do
+	for i=1,linecount do
 		ZygorGuidesViewerFrame_Spot_Setup(i)
 	end
 
@@ -620,7 +624,7 @@ function ZygorGuidesViewerFrame_OnUpdate(self,elapsed)
 				ThinFlash:ClearAllPoints()
 				ThinFlash:SetPoint("TOPLEFT",ZygorGuidesViewerFrameScroll,"TOPLEFT",-18,18)
 				local lastbottom=0
-				for i=2,20 do
+				for i=2,linecount do
 					if ZGV.stepframes[i]:IsVisible() then lastbottom=ZygorGuidesViewerFrameScroll:GetTop()-ZGV.stepframes[i]:GetBottom() end
 				end
 				if lastbottom>0 then
@@ -698,7 +702,7 @@ function ZygorGuidesViewerFrame_OnUpdate(self,elapsed)
 	for i=1,50 do
 		local spot = ZGV.spotframes[i]
 		if spot and spot:IsShown() then
-			for l=1,20 do
+			for l=1,linecount do
 				if spot.lines[l] and spot.lines[l].label.reenableHyperlinks then
 					spot.lines[l].label:SetHyperlinksEnabled(true)
 					spot.lines[l].label.reenableHyperlinks = nil

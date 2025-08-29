@@ -236,3 +236,39 @@ function Step:GetNextStep()
 		end
 	end
 end
+
+--- Ported from Era
+--- Checks if the step is currently acting as a sticky, with another step focused.
+function Step:IsCurrentlySticky()
+	if not self.is_sticky then return false end  -- obviously.
+	if not ZGV.CurrentStickies then return false end
+	for k,v in ipairs(ZGV.CurrentStickies) do if v==self then return true end end
+	return false
+end
+
+function Step:CanBeSticky()
+	if self.condition_sticky then
+		ZGV.Parser.ConditionEnv:_SetLocal(self.parentGuide,self,self.goals[1])
+		if not self.condition_sticky() then return false,"condition sticky fail" end
+	end
+
+	if self.is_sticky then
+		-- only show step as sticky if it has no quests tied, has accept goals, or player is already on the quest
+		local hasquests,onquest = false,false
+
+		for _,goal in ipairs(self.goals) do
+			if goal.questid and not goal.future then
+				hasquests = true
+				local quest = ZGV.questsbyid[goal.questid]
+				local inlog = (quest and quest.inlog)
+				if goal.action == "accept" or inlog then
+					onquest = true
+					break
+				end
+			end
+		end
+		return not hasquests or onquest
+	else
+		return false
+	end
+end

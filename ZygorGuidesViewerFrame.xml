@@ -133,6 +133,16 @@
 			<Frame name="$parent_Line18" inherits="ZGVFStepLine" />
 			<Frame name="$parent_Line19" inherits="ZGVFStepLine" />
 			<Frame name="$parent_Line20" inherits="ZGVFStepLine" />
+			<Frame name="$parent_Line21" inherits="ZGVFStepLine" />
+			<Frame name="$parent_Line22" inherits="ZGVFStepLine" />
+			<Frame name="$parent_Line23" inherits="ZGVFStepLine" />
+			<Frame name="$parent_Line24" inherits="ZGVFStepLine" />
+			<Frame name="$parent_Line25" inherits="ZGVFStepLine" />		
+			<Frame name="$parent_Line26" inherits="ZGVFStepLine" />
+			<Frame name="$parent_Line27" inherits="ZGVFStepLine" />
+			<Frame name="$parent_Line28" inherits="ZGVFStepLine" />
+			<Frame name="$parent_Line29" inherits="ZGVFStepLine" />
+			<Frame name="$parent_Line30" inherits="ZGVFStepLine" />					
 			<Frame name="$parent_Border" parentKey="border" />
 		</Frames>
 		<Scripts>
@@ -163,6 +173,16 @@
 			<Frame name="$parent_Line18" inherits="ZGVFSpotLine" />
 			<Frame name="$parent_Line19" inherits="ZGVFSpotLine" />
 			<Frame name="$parent_Line20" inherits="ZGVFSpotLine" />
+			<Frame name="$parent_Line21" inherits="ZGVFSpotLine" />
+			<Frame name="$parent_Line22" inherits="ZGVFSpotLine" />
+			<Frame name="$parent_Line23" inherits="ZGVFSpotLine" />
+			<Frame name="$parent_Line24" inherits="ZGVFSpotLine" />
+			<Frame name="$parent_Line25" inherits="ZGVFSpotLine" />
+			<Frame name="$parent_Line26" inherits="ZGVFSpotLine" />
+			<Frame name="$parent_Line27" inherits="ZGVFSpotLine" />
+			<Frame name="$parent_Line28" inherits="ZGVFSpotLine" />
+			<Frame name="$parent_Line29" inherits="ZGVFSpotLine" />
+			<Frame name="$parent_Line30" inherits="ZGVFSpotLine" />		
 			<Frame name="$parent_Border" parentKey="border" />
 		</Frames>
 		<Scripts>
@@ -321,6 +341,16 @@
 							<Button name="ZygorGuidesViewerFrame_Step18" inherits="ZGVFStep" />
 							<Button name="ZygorGuidesViewerFrame_Step19" inherits="ZGVFStep" />
 							<Button name="ZygorGuidesViewerFrame_Step20" inherits="ZGVFStep" />
+							<Button name="ZygorGuidesViewerFrame_Step21" inherits="ZGVFStep" />
+							<Button name="ZygorGuidesViewerFrame_Step22" inherits="ZGVFStep" />
+							<Button name="ZygorGuidesViewerFrame_Step23" inherits="ZGVFStep" />
+							<Button name="ZygorGuidesViewerFrame_Step24" inherits="ZGVFStep" />
+							<Button name="ZygorGuidesViewerFrame_Step25" inherits="ZGVFStep" />
+							<Button name="ZygorGuidesViewerFrame_Step26" inherits="ZGVFStep" />
+							<Button name="ZygorGuidesViewerFrame_Step27" inherits="ZGVFStep" />
+							<Button name="ZygorGuidesViewerFrame_Step28" inherits="ZGVFStep" />
+							<Button name="ZygorGuidesViewerFrame_Step29" inherits="ZGVFStep" />
+							<Button name="ZygorGuidesViewerFrame_Step30" inherits="ZGVFStep" />
 
 							<Button name="ZygorGuidesViewerFrame_Spot1" inherits="ZGVFSpot" />
 							<Button name="ZygorGuidesViewerFrame_Spot2" inherits="ZGVFSpot" />
@@ -342,6 +372,17 @@
 							<Button name="ZygorGuidesViewerFrame_Spot18" inherits="ZGVFSpot" />
 							<Button name="ZygorGuidesViewerFrame_Spot19" inherits="ZGVFSpot" />
 							<Button name="ZygorGuidesViewerFrame_Spot20" inherits="ZGVFSpot" />
+							<Button name="ZygorGuidesViewerFrame_Spot21" inherits="ZGVFSpot" />
+							<Button name="ZygorGuidesViewerFrame_Spot22" inherits="ZGVFSpot" />
+							<Button name="ZygorGuidesViewerFrame_Spot23" inherits="ZGVFSpot" />
+							<Button name="ZygorGuidesViewerFrame_Spot24" inherits="ZGVFSpot" />
+							<Button name="ZygorGuidesViewerFrame_Spot25" inherits="ZGVFSpot" />
+							<Button name="ZygorGuidesViewerFrame_Spot26" inherits="ZGVFSpot" />
+							<Button name="ZygorGuidesViewerFrame_Spot27" inherits="ZGVFSpot" />
+							<Button name="ZygorGuidesViewerFrame_Spot28" inherits="ZGVFSpot" />
+							<Button name="ZygorGuidesViewerFrame_Spot29" inherits="ZGVFSpot" />
+							<Button name="ZygorGuidesViewerFrame_Spot30" inherits="ZGVFSpot" />							
+							
 						</Frames>
 					</Frame>
 					

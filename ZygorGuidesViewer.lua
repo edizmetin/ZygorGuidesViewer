@@ -18,6 +18,9 @@ local ZGV = me
 me.L = ZygorGuidesViewer_L("Main")
 me.LS = ZygorGuidesViewer_L("G_string")
 
+
+local linecount = 30;
+
 local L = me.L
 local LI = me.LI
 local LC = me.LC
@@ -74,7 +77,7 @@ me.CartographerDatabase = { }
 
 me.startups = {}
 
-me.StepLimit = 20
+me.StepLimit = linecount
 me.stepframes = {}
 me.spotframes = {}
 
@@ -706,8 +709,8 @@ end
 
 function me:StopFlashAnimation()
 	if not self.stepframes[1] then return end
-	for s=1,20 do
-		for i=1,20,1 do
+	for s=1,linecount do
+		for i=1,linecount,1 do
 			local anim_w2g = self.stepframes[s].lines[i].anim_w2g
 			if not anim_w2g then break end
 			anim_w2g:Stop()
@@ -727,7 +730,7 @@ function me:UpdateCooldowns()
 	if not self.CurrentStep then return end
 	local stepframe = self.stepframes[self.CurrentStepframeNum]
 	if not stepframe then return end
-	for i=1,20,1 do
+	for i=1,linecount,1 do
 		local cooldown = _G["ZygorGuidesViewerFrame_Act"..i.."ActionCooldown"]
 		if not cooldown then return end
 		local goal = stepframe.lines[i].goal
@@ -1072,7 +1075,7 @@ function me:UpdateFrame(full,onupdate)
 					local textheight
 					frame.truncated=nil
 					local abort
-					for l=1,20 do
+					for l=1,linecount do
 						local lineframe = frame.lines[l]
 						local text = lineframe.label
 						if l<line and not frame.truncated then
@@ -1154,7 +1157,7 @@ function me:UpdateFrame(full,onupdate)
 					frame:Show()
 
 					if stepdata~=self.CurrentStep then
-						for l=1,20 do
+						for l=1,linecount do
 							frame.lines[l].back:Hide()
 							frame.lines[l].icon:Hide()
 						end
@@ -1491,7 +1494,7 @@ function me:UpdateFrame(full,onupdate)
 				frame.truncated=nil
 				local abort
 
-				for l=1,20 do
+				for l=1,linecount do
 					local lineframe = frame.lines[l]
 					local text = lineframe.label
 					if l<line and not frame.truncated then
@@ -1631,7 +1634,7 @@ end
 
 function me:ClearFrameCurrent()
 	if InCombatLockdown() then return end
-	for i=1,20 do
+	for i=1,linecount do
 		local actname = "ZygorGuidesViewerFrame_Act"..i
 		local action = _G[actname..'Action']
 		local petaction = _G[actname..'PetAction']
@@ -1731,7 +1734,7 @@ function me:UpdateFrameCurrent()
 			if not InCombatLockdown() then self.actionsvisible = false end
 		end
 
-		for i=1,20,1 do  -- update all lines
+		for i=1,linecount,1 do  -- update all lines
 			--local linenum = (self.CurrentStep.requirement and i+1 or i)
 
 			line = stepframe.lines[i]
@@ -1884,6 +1887,8 @@ function me:UpdateFrameCurrent()
 					else
 						icon:SetIcon(1)
 					end
+
+					
 					icon:SetDesaturated(false)
 					back:SetVertexColor(0.0,0.0,0.0,0)
 
@@ -2783,7 +2788,7 @@ function me:Frame_OnHide()
 	PlaySound("igQuestLogClose")
 	self.db.profile.visible = not not self.Frame:IsVisible()
 	if not InCombatLockdown() then
-		for i=1,20,1 do
+		for i=1,linecount,1 do
 			local action = _G["ZygorGuidesViewerFrame_Act"..i.."Action"]
 			if action then action:Hide() end
 			local cooldown = _G["ZygorGuidesViewerFrame_Act"..i.."ActionCooldown"]

@@ -5,6 +5,7 @@ local ZGV=me
 local L = ZygorGuidesViewer_L("Main")
 
 local BZL=me.BZL
+local BZR=me.BZR
 
 local table,string,tonumber,ipairs,pairs,setmetatable,tinsert = table,string,tonumber,ipairs,pairs,setmetatable,tinsert
 
@@ -200,12 +201,140 @@ ZGV.ConditionEnv = {
 
 	-- independent data feeds
 	rep = function(faction)
-		return ZGV:GetReputation(faction).standing
+		local rep = ZGV:GetReputation(faction)
+		return 0
 	end,
+
+	Hated = -42000,
+	Hostile = -6000,
+	Unfriendly = -3000,
+	NeutralRep = 0,
+	Friendly = 3000,
+	Honored = 6000,
+	Revered = 12000,
+	Exalted = 21000,
 
 	skill = function(skill)
 		return ZGV:GetSkill(skill).level
 	end,
+
+	hasbuff = function(query,count)
+			local aura = C_UnitAuras.GetPlayerAuraBySpellID(tonumber(query))
+			if aura and (aura.applications or 0)>=(count or 0) then return true end
+			return false
+	end,
+
+	warlockpetids = {
+		felhunter = 417,
+		voidwalker = 1860,
+		succubus = 1863,
+		imp = 416
+	},
+
+	warlockpet = function(id)
+		if type(id)=="string" then
+			id = ZGV.ConditionEnv.warlockpetids[id:lower()]
+		end
+			
+		return ZGV.GetUnitId("pet")==id
+	end,
+
+	haveq = function(...)
+		local count = select("#", ...)
+		for i = 1, count do
+			local id = select(i, ...)
+			if tonumber(id) then
+				local q=ZGV.questsbyid[id]
+				if (q and q.inlog) then return true end
+			else
+				for _,qid in ipairs(ParseRanges(id)) do
+					local q=ZGV.questsbyid[qid]
+					if (q and q.inlog) then return true end
+				end
+			end
+		end
+		return false
+	end,
+
+	completedq = function(...)
+		local count = select("#", ...)
+		for i = 1, count do
+			local id = select(i, ...)
+			if tonumber(id) then -- just quest
+				if C_QuestLog.IsQuestFlaggedCompleted(id) then return true end
+			else 
+				if id:match("-") then -- range of quests
+					for _,qid in ipairs(ParseRanges(id)) do
+						if C_QuestLog.IsQuestFlaggedCompleted(qid) then return true end
+					end
+				else -- quest/objective
+					local _,id,obj = ParseID(id)
+					local qcomplete = C_QuestLog.IsQuestFlaggedCompleted(id)
+					if qcomplete then return true end
+					if not obj then return false end
+					local q=ZGV.questsbyid[id]
+					if not q then return false end
+					if q.complete then return true end
+					if not q.goals or not q.goals[obj] then return false end
+					return q.goals[obj].complete
+				end
+			end
+		end
+
+		return false
+	end,	
+
+	subzone = function(name)
+		local minizone = GetMinimapZoneText()
+		local engname = BZR[minizone] or minizone or ""
+		return engname == name
+	end,
+
+	zone = function(skill)
+		--TODO:
+		return true
+	end,
+
+	knowspell = function(spellid)
+		return IsSpellKnown(spellid)
+	end,
+
+	guideflag = function(skill)
+		--TODO: Maybe not needed
+		return true
+	end,
+
+	C_Container = ZGV.Retrofit.C_Container,
+
+	GetMoney = function()
+		--TODO:
+		return 0
+	end,
+
+	GetItemCooldown = GetItemCooldown,
+
+	readyq = function(...)
+		local count = select("#", ...)
+		for i = 1, count do
+			local id = select(i, ...)
+			local q=ZGV.questsbyid[id]
+			return q and q.complete and q.inlog
+		end
+		return false
+	end,
+
+	weaponskill = function(name)
+		for i=1, GetNumSkillLines() do
+			local skillName, _, _, skillRank, numTempPoints, skillModifier, skillMaxRank, isAbandonable, stepCost, rankCost, minLevel, skillCostType = GetSkillLineInfo(i);
+			local skillTag = ZGV.ItemScore.SkillNamesRev[skillName]
+			
+			if skillTag == name then
+				return skillRank
+			end
+		end
+		return 0
+	end,
+
 }
 
 local ConditionEnv = ZGV.ConditionEnv
@@ -225,8 +354,17 @@ local function MakeCondition(cond,forcebool)
 	if forcebool then s = ("_Update()  return not not (%s)"):format(cond)
 		     else s = ("_Update()  return %s"):format(cond)
 		     end
+
+	--No Clue, lua quirks.
+	s = s:gsub("Neutral","NeutralRep")			 
+
 	local fun,err = loadstring(s)
+	
 	if fun then setfenv(fun,ZGV.ConditionEnv) end
+	if fun then 
+		--if s:find("rep") then print(s) end		
+		fun() 
+	end
 	return fun,err
 end
 
@@ -452,7 +590,7 @@ function me:ParseEntry(text)
 					if not step.level then return nil,"Missing step level information",linecount,chunk end
 				end
 
-			elseif cmd=="talk" then
+			elseif cmd=="talk" or cmd=="vendor" or cmd=="trainer" then
 				goal.action = goal.action or cmd
 				if not params then return nil,"no npc",linecount,chunk end
 				goal.npc,goal.npcid = self:ParseID(params)
@@ -536,81 +674,48 @@ function me:ParseEntry(text)
 					tinsert(goal.mobs,{name=nm,id=id,pl=plural and true or false})
 				end
 			elseif cmd=="walk" then
-				--Settings like walk arent implemented yet, they also dont count as goals
 				goal.force_walk = true
-			elseif cmd=="bank" then
-				goal.action = goal.action or cmd
-				return nil,"bank not implemented",linecount,chunk
 			elseif cmd=="click" then
-				goal.action = goal.action or cmd
-				return nil,"click not implemented",linecount,chunk
+				goal.target,goal.targetid = self:ParseID(params)
 			elseif cmd=="clicknpc" then
-				goal.action = goal.action or cmd
-				return nil,"clicknpc not implemented",linecount,chunk
+				--TODO: Implement, high prio
 			elseif cmd=="confirm" then
-				goal.action = goal.action or cmd
-				return nil,"confirm not implemented",linecount,chunk
+				--Can be a goal, we dont have clickable text yet
 			elseif cmd=="count" then
-				goal.action = goal.action or cmd
-				return nil,"count not implemented",linecount,chunk
+				--TODO: Implement, high prio
 			elseif cmd=="destroy" then
-				goal.action = goal.action or cmd
-				return nil,"destroy not implemented",linecount,chunk
-			elseif cmd=="futre" then
-				goal.action = goal.action or cmd
-				return nil,"futre not implemented",linecount,chunk
+				--TODO: Implement, high prio
 			elseif cmd=="gossip" then
-				goal.action = goal.action or cmd
-				return nil,"gossip not implemented",linecount,chunk
+				--TODO: Implement, low prio
 			elseif cmd=="learnpetspell" then
-				goal.action = goal.action or cmd
-				return nil,"learnpetspell not implemented",linecount,chunk
+				--TODO: Implement, low prio
 			elseif cmd=="learnspell" then
-				goal.action = goal.action or cmd
-				return nil,"learnspell not implemented",linecount,chunk
+				--TODO: Implement, low prio
 			elseif cmd=="loadguide" then
-				goal.action = goal.action or cmd
-				return nil,"loadguide not implemented",linecount,chunk
+				--TODO: Implement, high prio
 			elseif cmd=="noautoaccept" then
-				goal.action = goal.action or cmd
-				return nil,"noautoaccept not implemented",linecount,chunk
+				goal.noautoaccept = true
 			elseif cmd=="nohearth" then
-				goal.action = goal.action or cmd
-				return nil,"nohearth not implemented",linecount,chunk
+				step.travelcfg = step.travelcfg or {}
+				step.travelcfg["use_hearth"] = false
 			elseif cmd=="noordinal" then
-				goal.action = goal.action or cmd
-				return nil,"noordinal not implemented",linecount,chunk
+				goal.countord = false
 			elseif cmd=="notravel" then
-				goal.action = goal.action or cmd
-				return nil,"notravel not implemented",linecount,chunk
+				goal.waypoint_notravel = true
 			elseif cmd=="path" then
-				goal.action = goal.action or cmd
-				return nil,"path not implemented",linecount,chunk
+				--TODO: Implement, this may be hard
 			elseif cmd=="popuptext" then
-				goal.action = goal.action or cmd
-				return nil,"popuptext not implemented",linecount,chunk
+				--TODO: Implement, low prio
 			elseif cmd=="run" then
 				goal.action = goal.action or cmd
 				return nil,"run not implemented",linecount,chunk
 			elseif cmd=="stickyif" then
-				goal.action = goal.action or cmd
-				return nil,"stickyif not implemented",linecount,chunk
-			elseif cmd=="trainer" then
-				goal.action = goal.action or cmd
-				return nil,"trainer not implemented",linecount,chunk
-			elseif cmd=="vendor" then
-				goal.action = goal.action or cmd
-				return nil,"vendor not implemented",linecount,chunk
+				--TODO: Implement, probably very low prio
 			elseif cmd=="zombiewalk" then
-				goal.action = goal.action or cmd
-				return nil,"zombiewalk not implemented",linecount,chunk
-			elseif cmd=="trash" then
-				goal.action = goal.action or cmd
+				goal.zombiewalk = true
+			elseif cmd=="trash" or cmd=="bank" then
+				goal.action = goal.action or "trash"
 				goal.trashitem,goal.trashitemid = self:ParseID(params)
-			elseif cmd=="complete" then --unused
-				goal.action = goal.action or cmd
-				goal.quest,goal.questid,goal.objnum = self:ParseID(params)
-				if not goal.quest and not goal.questid then return nil,"no quest parameter",linecount,chunk end
 			elseif cmd=="ding" then
 				goal.action = goal.action or cmd
 
@@ -683,7 +788,7 @@ function me:ParseEntry(text)
 				goal.action = goal.action or cmd
 			elseif cmd=="outvehicle" then
 				goal.action = goal.action or cmd
-			elseif cmd=="condition" then
+			elseif cmd=="condition" or cmd=="complete" then
 				goal.action = goal.action or cmd
 				local fun,err = MakeCondition(params,false)
 				if not fun then return nil,err,linecount,chunk end
@@ -697,8 +802,6 @@ function me:ParseEntry(text)
 			elseif cmd=="info" then
 				goal.action = goal.action or cmd
 				goal.info = params
-
-
 			-- clickable icon displayers
 
 			elseif cmd=="cast" then
