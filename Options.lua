@@ -41,8 +41,8 @@ local BASE_PROFILE_DEFAULTS = {
 	analyzereps = false,
 
 	skin = "modern",
-	skincolors = { text = { 0.95, 0.65, 1.0 }, back = { 0.17, 0.07, 0.20 } },
-	showallsteps = false,
+	skincolors = { text = { 1.0, 1.0, 1.0 }, back = { 0.0, 0.0, 0.0  } },
+	showallsteps = true,
 	hideborder = false,
 	hidestepborders = false,
 	showcountsteps = 1,
