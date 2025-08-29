@@ -119,6 +119,16 @@ Z_SKINS = {
 		Boarder_topright_offsetY = 11,
 		disableBackDrop = false,
 		bgfileback = "Interface\\ChatFrame\\ChatFrameBackground",
+				Boarder_Left_TopLeft_X = -1,
+		Boarder_Left_TopLeft_Y = -85,
+		Boarder_Left_BottomRight_X = 9,
+		Boarder_Left_BottomRight_Y = 10,
+
+		Boarder_Right_TopRight_X = 1,
+		Boarder_Right_TopRight_Y = -35,
+		Boarder_Right_BottomLeft_X = -9,
+		Boarder_Right_BottomLeft_Y = 10,
+		
 	},
 	Modern = {
 		disableBackDrop = true,
@@ -276,6 +286,8 @@ Z_SKIN_HOOKS = {
 		ZygorGuidesViewerFrame_Border_Left:SetTexture(SKINDIR.."\\leavesofsteel_border")
 		ZygorGuidesViewerFrame_Border_Right:SetTexture(SKINDIR.."\\leavesofsteel_border")
 		ZygorGuidesViewerFrame_Border_Bottom:SetTexture(SKINDIR.."\\leavesofsteel_border")
+		ZygorGuidesViewerFrame_Border_Left:SetDrawLayer("OVERLAY")
+		ZygorGuidesViewerFrame_Border_Right:SetDrawLayer("OVERLAY")
 		ZygorGuidesViewerFrame_Border_Top:SetTexture(SKINDIR.."\\leavesofsteel_top")
 		ZygorGuidesViewerFrame_Border_Gear1:SetTexture(nil)
 		ZygorGuidesViewerFrame_Border_Gear2:SetTexture(nil)
