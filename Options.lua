@@ -40,7 +40,7 @@ local BASE_PROFILE_DEFAULTS = {
 	fixblizzardautoaccept = false,
 	analyzereps = false,
 
-	skin = "violet",
+	skin = "modern",
 	skincolors = { text = { 0.95, 0.65, 1.0 }, back = { 0.17, 0.07, 0.20 } },
 	showallsteps = false,
 	hideborder = false,
@@ -51,7 +51,7 @@ local BASE_PROFILE_DEFAULTS = {
 	fontsecsize = 10,
 
 	--backcolor = {r=0.18,g=0.05,b=0.23,a=0.56},
-	backopacity = 0.3,
+	backopacity = 0.85,
 	opacitymain = 1.0,
 
 	stepbackalpha = 0.5,
