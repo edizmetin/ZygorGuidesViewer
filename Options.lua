@@ -391,6 +391,7 @@ function me:Options_DefineOptions()
 							blue = L["opt_skin_blue"],
 							orange = L["opt_skin_orange"],
 							modern = L["opt_skin_modern"],
+							classic = L["opt_skin_classic"],
 						},
 						set = function(_, n)
 							self.db.profile.skin = n
@@ -400,6 +401,7 @@ function me:Options_DefineOptions()
 								green = { text = { 0.5, 1.0, 0.5 }, back = { 0.09, 0.20, 0.07 } },
 								orange = { text = { 1.0, 0.8, 0.0 }, back = { 0.23, 0.11, 0.07 } },
 								modern = { text = { 1.0, 1.0, 1.0 }, back = { 0.047, 0.047, 0.043 } },
+								classic = { text = { 1.0, 1.0, 1.0 }, back = { 0.047, 0.047, 0.043 } },
 							}
 							self.db.profile.skincolors = colors[self.db.profile.skin]
 							self:UpdateSkin()
