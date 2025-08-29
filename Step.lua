@@ -12,6 +12,8 @@ ZGV.StepProto_mt = { __index=Step }
 ---
 -- @return complete, possible, manual
 function Step:IsComplete()
+	--print(self.sticky_labels and self.sticky_labels[1] or "none")
+
 	--self:Debug("Step complete check")
 	--if not self.CurrentStep then return false end
 	--if not self.CurrentStep.goals then return false end

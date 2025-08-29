@@ -950,6 +950,47 @@ function me:UpdateFrame(full,onupdate)
 					if stepdata:AreRequirementsMet() or self.db.profile.showwrongsteps then
 						--#### insert goals
 
+						if stepdata.stickies then
+							for i,sticky in ipairs(stepdata.stickies) do
+								if sticky:AreRequirementsMet() then
+									for i,goal in ipairs(sticky.goals) do
+
+										if goal:GetStatus()~="hidden" then
+											--steptext = steptext .. ("  "):rep(goal.indent or 0) .. goal:GetText() .. "|n"
+											local indent = ("  "):rep(goal.indent or 0)
+											--local goaltxt = goal:GetText(stepnum>=self.CurrentStepNum)
+											local goaltxt = goal:GetText(true)
+											if goaltxt~="?" or (goal.action=="info") then
+												if goal.action=="info" then
+													frame.lines[line].label:SetFont(FONT,round(self.db.profile.fontsecsize))
+													frame.lines[line].label:SetText(indent.."|cffeeeecc"..goal.info.."|r")
+													frame.lines[line].goal = nil
+												else
+													local link = ((goal.tooltip and not self.db.profile.tooltipsbelow) or (goal.x and not self.db.profile.windowlocked) or goal.image) and " |cffdd44ff*|r" or ""
+
+													frame.lines[line].label:SetFont(FONT,self.db.profile.fontsize)
+													frame.lines[line].label:SetText(indent..goaltxt..link)
+													frame.lines[line].goal = goal
+												end
+												line=line+1
+												--frame.lines[line].label:SetMultilineIndent(1)
+
+												if self.db.profile.tooltipsbelow and goal.tooltip then
+													frame.lines[line].label:SetFont(FONT,round(self.db.profile.fontsecsize))
+													frame.lines[line].label:SetText(indent.."|cffeeeecc"..goal.tooltip.."|r")
+													--frame.lines[line].label:SetMultilineIndent(1)
+													frame.lines[line].goal = nil
+													line=line+1
+												end
+											end 
+										end
+									end
+								end
+							end
+
+						end
+						
+						
 						for i,goal in ipairs(stepdata.goals) do
 
 							if goal:GetStatus()~="hidden" then
@@ -979,19 +1020,7 @@ function me:UpdateFrame(full,onupdate)
 										frame.lines[line].goal = nil
 										line=line+1
 									end
-								end -- no text, no line!
-
-								-- 'or' between or-positive goals
-								-- not anymore
-								--[[
-								if goal.orlogic and i<#stepdata.goals and stepdata.goals[i+1].orlogic then
-									frame.lines[line].label:SetFont(FONT,round(self.db.profile.fontsecsize))
-									frame.lines[line].label:SetText(indent.."|cffeeeecc"..L['stepgoal_or'].."|r")
-									--frame.lines[line].label:SetMultilineIndent(1)
-									frame.lines[line].goal = nil
-									line=line+1
-								end
-								--]]
+								end 
 							end
 						end
 
@@ -1620,6 +1649,7 @@ local actionicon={
 	["kill"]=7,
 	["get"]=8,
 	["collect"]=8,
+	["trash"]=8,
 	["buy"]=8,
 	["goal"]=9,
 	["home"]=10,
@@ -3101,7 +3131,11 @@ end
 
 me.registered_groups = { groups={},guides={}}
 
-function me:RegisterGuide(title,data,extra)
+
+function me:RegisterGuide(title,data,extra,...)
+	if type(data) == "table" then
+		return me:RegisterGuideCompat(title, data, extra, ...)
+	end		
 	local group,tit = title:match("^(.*)\\+(.-)$")
 	if group then
 		group = FindGroup(self.registered_groups,group)
@@ -3114,6 +3148,14 @@ function me:RegisterGuide(title,data,extra)
 	tinsert(group.guides,{full=title,short=tit or title,num=#self.registeredguides+1})
 	tinsert(self.registeredguides,guide)
 end
+
+function me:RegisterGuideCompat(...)
+  local n = select("#", ...)            -- number of arguments
+	local title, data = select(1,...),select(n, ...)
+	print("Compat Guide: "..title)
+	me:RegisterGuide(title, data)
+end
+
 
 me.registered_mapspotset_groups = { groups={},guides={}}
 

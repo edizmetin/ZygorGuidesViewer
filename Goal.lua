@@ -223,6 +223,7 @@ function Goal:IsComplete()
 		percent = (level<self.level-1) and 0 or (level>=self.level) and 1.0 or UnitXP("player")/UnitXPMax("player")
 
 		return UnitLevel("player")>=tonumber(self.level), UnitLevel("player")>=tonumber(self.level)-1, percent
+
 	elseif self.action=="goto" then
 		local zone = GetRealZoneText()
 		if self.map and zone~=self.map then return false,true end
@@ -234,6 +235,7 @@ function Goal:IsComplete()
 			local px,py = GetPlayerMapPosition("player")
 			local gx,gy,dist = self.x/100,self.y/100,self.dist/100
 			local realdist2 = (px-gx)*(px-gx) + (py-gy)*(py-gy)
+			
 			if realdist2<=dist*dist then
 				ZGV.recentlyVisitedCoords[self] = true
 				return true, true
@@ -261,6 +263,9 @@ function Goal:IsComplete()
 		else
 			return got>=self.count, true, progress>1 and 1 or progress
 		end
+	elseif self.action=="trash" then
+		local got = GetItemCount(self.trashitemid)
+		return got == 0, true, 1		
 	elseif self.action=="havebuff" then
 		for i=1,30 do
 			local name,_,tex = UnitBuff("player",i)
@@ -282,10 +287,27 @@ function Goal:IsComplete()
 	elseif self.action=="outvehicle" then
 		return not UnitInVehicle("player"),true
 	elseif self.action=="equipped" then
-		local link = GetInventoryItemLink("player",self.slot)
-		local name
-		if link then name = link:match("|Hitem:.-%[(.-)%]") end
-		return name and name==self.item , GetItemCount(self.item)>0
+		--Ugly
+		local invslots = {'AmmoSlot','BackSlot','Bag0Slot','Bag1Slot','Bag2Slot','Bag3Slot','ChestSlot','FeetSlot','Finger0Slot','Finger1Slot','HandsSlot','HeadSlot','LegsSlot','MainHandSlot','NeckSlot','SecondaryHandSlot','ShirtSlot','ShoulderSlot','TabardSlot','Trinket0Slot','Trinket1Slot','WaistSlot','WristSlot'}
+
+		if self.slot then
+			local link = GetInventoryItemLink("player",self.slot)
+			local name
+			if link then name = link:match("|Hitem:.-%[(.-)%]") end
+			return name and name==self.item , GetItemCount(self.item)>0
+		else
+			if GetItemCount(self.targetid or self.itemid)==0 then return false,false,0 end  -- not even in the bags
+			for i,slot in pairs(invslots) do
+				local slotid,_ = GetInventorySlotInfo(slot)
+				if slotid then
+					local id = GetInventoryItemID("player",slotid)
+					if id and id==(self.targetid or self.itemid) then
+						return true,true,1  -- equipped!
+					end
+				end
+			end
+			return false,true,1  -- in bags, not equipped
+		end
 	elseif self.action=="rep" then
 		local rep = ZGV:GetReputation(self.faction)
 		if rep then
@@ -508,6 +530,7 @@ function Goal:GetText(showcompleteness)
 	elseif self.action=='accept' then text = L["stepgoal_accept"]:format(COLOR_QUEST((self.questpart and L['questtitle_part'] or L['questtitle']):format(self.quest,self.questpart)))
 	elseif self.action=='turnin' then text = L["stepgoal_turn in"]:format(COLOR_QUEST((self.questpart and L['questtitle_part'] or L['questtitle']):format(self.quest,self.questpart)))
 	elseif self.action=='talk' then text = L["stepgoal_talk to"]:format(COLOR_NPC(self.npc))
+	elseif self.action=='trash' then text = L["Trash item %s"]:format(COLOR_ITEM(self.trashitem))
 	elseif self.action=='get' and self.count and self.count>1 then text = L["stepgoal_get #"]:format(self.count>0 and self.count or "?",COLOR_ITEM(plural(self.target,self.count)))
 	elseif self.action=='get' then text = L["stepgoal_get"]:format(COLOR_ITEM(plural(self.target,self.plural and 2 or 1)))
 	elseif self.action=='kill' and self.count and self.count>1 then text = L["stepgoal_kill #"]:format(self.count>0 and self.count or "?",COLOR_MONSTER(plural(self.target,self.count)))

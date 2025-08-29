@@ -40,17 +40,37 @@ local function split(str,sep)
 	return fields
 end
 
+
 function me:ParseMapXYDist(text)
+
 	local map,x,y,dist,_
+	--Map, X, Y, Dist
 	_,_,map,x,y,dist = string.find(text,"^(.+),([0-9%.]+),([0-9%.]+),([0-9%.]+)$")
+	--X, Y, Dist
 	if not _ then _,_,x,y,dist = string.find(text,"^([0-9%.]+),([0-9%.]+),([0-9%.]+)$") end
+	--Map, X, Y
 	if not _ then _,_,map,x,y = string.find(text,"^(.+),([0-9%.]+),([0-9%.]+)$") end
+	--X, Y
 	if not _ then _,_,x,y = string.find(text,"^([0-9%.]+),([0-9%.]+)$") end
+	--Dist
 	if not _ then _,_,dist = string.find(text,"^([0-9%.]+)$") end
-	if not _ then map = text end
+
+	--Map, X, Y, Dist
+	_,_,map,x,y = string.find(text,"^(.+) ([0-9%.]+),([0-9%.]+).*$")
+
+	--Map Only
+	if not _ then 
+		map = text 
+	end
 	
 	x = tonumber(x)
 	y = tonumber(y)
+
+	if map:find("/") then 
+		map = split(map,"/")[1]
+	end
+
+
 --	if x then x=x/100 end
 --	if y then y=y/100 end
 --	if dist then dist=dist/100 or 0.2 end
@@ -59,6 +79,7 @@ function me:ParseMapXYDist(text)
 
 	return map,x,y,dist
 end
+
 
 function me:ParseID(str)
 	local name,id,nid,obj
@@ -127,27 +148,79 @@ ZGV.ConditionEnv = {
 	-- variables needing update
 	level=1,
 	ZGV=ZGV,
+	races={
+		"NightElf","Dwarf","Human","Gnome","Draenei","Worgen","Orc","Troll","Scourge","Tauren","BloodElf","Goblin","Undead","Scourge"
+	},
+	classes={},
+	factions = {"Alliance","Horde","Neutral"},
+
+	_Setup = function(self)
+
+		-- Register all kinds of literals for simple "only if" checks
+		local function registerLiteral(s,num)
+			self[s:gsub("[ %.,%-']","")]=num
+		end
+
+		-- reputation 'constants'
+		for standing,num in pairs(ZGV.StandingNamesEngRev) do ZGV.ConditionEnv[standing]=num end
+
+		-- Store class constants
+		for cl,_ in pairs(ZGV.ClassToNumber) do tinsert(self.classes,cl:sub(1,1):upper()..cl:lower():sub(2)) end
+		local pcl = select(2,UnitClass("player")):lower()
+		for i,cl in ipairs(self.classes) do
+			local cl2 = cl:lower()
+			registerLiteral(cl,pcl==cl2)  
+		end
+
+		-- Store race constants
+		local pra = select(2,UnitRace("player"))
+		for i,ra in ipairs(self.races) do 
+			 --print(ra.." is? "..pra)
+			 registerLiteral(ra,pra==ra) 
+		end
+
+		ZGV.ConditionEnv.Undead = ZGV.ConditionEnv.Undead  and ZGV.ConditionEnv.Undead  or ZGV.ConditionEnv.Scourge
+
+		-- Store faction constants
+		local pfa = UnitFactionGroup("player")
+		for i,fa in ipairs(self.factions) do  registerLiteral(fa,pfa==fa)  end		
+
+
+
+	end,
 
 	_Update = function()
 		ZGV.ConditionEnv.level = UnitLevel("player")
 		if ZGV.db.char.fakelevel and ZGV.db.char.fakelevel>0 then ZGV.ConditionEnv.level=ZGV.db.char.fakelevel end
 	end,
 
-	_Setup = function()
-		-- reputation 'constants'
-		for standing,num in pairs(ZGV.StandingNamesEngRev) do ZGV.ConditionEnv[standing]=num end
+	itemcount = function(...)
+		return GetItemCount(...)
 	end,
 
 	-- independent data feeds
 	rep = function(faction)
 		return ZGV:GetReputation(faction).standing
 	end,
+
 	skill = function(skill)
 		return ZGV:GetSkill(skill).level
 	end,
 }
 
+local ConditionEnv = ZGV.ConditionEnv
+
 local function MakeCondition(cond,forcebool)
+
+	-- replace "Race Class" with "(Race and Class)"
+	-- don't try to optimize too much. Race-spec-class and race-class checks must all run before spec-class checks are attempted.
+	for i,ra in ipairs(ConditionEnv.races) do
+		for j,cl in ipairs(ConditionEnv.classes) do
+			cond = cond:gsub("("..ra..") ("..cl..")","(%1 and %2)")
+			--print("("..ra..") ("..cl..")")
+		end
+	end
+
 	local s
 	if forcebool then s = ("_Update()  return not not (%s)"):format(cond)
 		     else s = ("_Update()  return %s"):format(cond)
@@ -182,6 +255,50 @@ function me:ParseEntry(text)
 
 	local strfind = string.find
 
+--#Region Stickies
+	local open_stickies={}
+	local open_stickies_ord={}
+	local used_stickies={}
+	guide.stickies = nil
+
+	local autolabels=0
+	local autolabel
+	local function get_next_autolabel()
+		autolabels=autolabels+1
+		autolabel=("label%03d"):format(autolabels)
+		return autolabel
+	end
+	local function use_autolabel()
+		local a=autolabel
+		autolabel=nil
+		return a
+	end
+
+	local function assign_label_from(params)
+		local label = params:gsub("^\"(.-)\"$","%1") -- strip quotes
+		
+		if label=="" or not label then return end
+		if step.label then
+			step.extralabels = step.extralabels or {}
+			table.insert(step.extralabels,label)
+		else
+			step.label=label
+			autolabel=label
+			if open_stickies[label] then
+				for i=#open_stickies_ord,1,-1 do
+					if open_stickies_ord[i]==label then  -- close it
+						ZGV:Debug("&sticky (parser) closing %s",label)
+						tremove(open_stickies_ord,i)
+					end
+				end
+				open_stickies[label]=nil
+			end
+			step.is_sticky = used_stickies[label]
+		end
+	end
+--#endregion
+
+
 	--local debug
 	--if text:find("goto The Exodar,44.9,24.2") then debug=true end
 
@@ -196,6 +313,11 @@ function me:ParseEntry(text)
 			return nil,linecount,"More than 100000 lines!?"
 		end
 
+		--Pipes at the start of a line dont work
+		line = line:gsub("^|",".") 
+
+
+
 		--line = line:gsub("^[%s	]+","")
 		--line = line:gsub("[%s	]+$","") --done in the find
 
@@ -203,6 +325,7 @@ function me:ParseEntry(text)
 		--if st then line=line:sub(1,st-1) end
 		-- not really faster
 		line = line:gsub("//.*$","")
+
 
 		local indent
 		indent,line = line:match("^(%.*)(.*)")
@@ -215,8 +338,12 @@ function me:ParseEntry(text)
 		local chunkcount=1
 
 		for chunk in line:gmatch("%s*(.-)%s*|+") do
+			if chunk:find("%[") then
+				chunk = chunk:gsub("%[","- "):gsub("%]","")
+			end
 			chunk = chunk:gsub("^'%s*","' ")
-			--chunk = chunk:gsub("^turn in ","turnin ")
+
+			
 			chunk = chunk:gsub("^@(%S)","@ %1")
 			--chunk = chunk:gsub("^%s+","")
 			--chunk = chunk:gsub("[%s	]+$","")
@@ -236,12 +363,44 @@ function me:ParseEntry(text)
 			--	guide[cmd]=params
 			elseif cmd=="startlevel" then
 				prevlevel=tonumber(params)
+			--#region Compat Guide Params, dont work but dont crash either
+			elseif cmd=="suggested" then
+				--guide[cmd]=params
+			elseif cmd=="hardcore" then
+				--guide[cmd]=params
+			elseif cmd=="image" then
+				--guide[cmd]=params
+			elseif cmd=="condition_suggested" then
+				--guide[cmd]=params
+			elseif cmd=="condition_suggested_race" then
+				--guide[cmd]=params								
+			elseif cmd=="condition_suggested_exclusive" then
+				--guide[cmd]=params								
+			--#endregion	
+			elseif cmd=="startlevel" then
+				prevlevel=tonumber(params)								
+			
 
 			elseif cmd=="step" then
 				step = { goals = {}, map = prevmap, level = prevlevel, num = #guide.steps+1, parentGuide=guide }
 				guide.steps[#guide.steps+1] = step
 
 				setmetatable(step,ZGV.StepProto_mt)
+
+					assign_label_from(params)
+
+					if next(open_stickies) then
+						-- record stickies that pertain to this step
+						step.sticky_labels={}
+						
+						for i,stickylabel in ipairs(open_stickies_ord) do
+							if stickylabel~=step.label then
+								tinsert(step.sticky_labels,stickylabel)  -- step is not built yet, naturally.
+							end
+						end
+
+
+					end
 
 			-- step parameters
 			elseif cmd=="level" then
@@ -254,27 +413,32 @@ function me:ParseEntry(text)
 				if BZL[params] then params=BZL[params] end
 				if step then step.map = params end
 				prevmap = params
-	--[[
-			elseif cmd=="@" then
-				local map,x,y
-				map,x,y = params:match("(.+),([0-9.]+),([0-9.]+)")
-				if not map then
-					x,y = params:match("([0-9.]+),([0-9.]+)")
-				end
-				if not x then
-					map = params
-				end
-				if not map then
-					map = prevmap
-				end
-				step['map']=map
-				prevmap=map
-				if x or y then
-					step['x']=x
-					step['y']=y
-				end
-	--]]
+			elseif cmd=="label" then
+				assign_label_from(params)
+
+
 			-- goal commands
+				elseif cmd=="stickystart" then
+					local label = params:gsub("^%s*\"(.-)\"%s*$","%1") -- strip quotes
+					if label=="" then  label=get_next_autolabel()  end
+					autolabel=label
+					--if not guide.sticky_timetable then guide.sticky_timetable={} end
+					--if not guide.sticky_timetable[#guide.steps+1] then guide.sticky_timetable[#guide.steps+1]={} end
+					--tinsert(guide.sticky_timetable[#guide.steps+1],{"start",params})
+					open_stickies[label]=true
+					used_stickies[label]=true
+					tinsert(open_stickies_ord,label)
+					cmd_parsed=true
+				elseif cmd=="stickystop" then
+					local label = params:gsub("^%s*\"(.-)\"%s*$","%1") -- strip quotes
+					if not label then   label=use_autolabel()  end
+					autolabel=nil
+					if not label then return parseerror("stickystop without a label, and none was implictly given (you need a 'stickystart' before)") end
+					if not open_stickies[label] then return parseerror("stickystop with no matching stickystart - need 'stickystart' before") end
+					open_stickies[label]=nil
+					for i=#open_stickies_ord,1,-1 do if open_stickies_ord[i]==label then tremove(open_stickies_ord,i) end end
+					cmd_parsed=true
+
 			elseif cmd=="accept" or cmd=="turnin" then
 				goal.action = goal.action or cmd
 				if not params then return nil,"no quest parameter",linecount,chunk end
@@ -295,25 +459,26 @@ function me:ParseEntry(text)
 				if not goal.npc then return nil,"no npc",linecount,chunk end
 			elseif cmd=="goto" or cmd=="at" then
 				goal.action = goal.action or cmd
-				local map,x,y,dist = self:ParseMapXYDist(params)
+				
+					local map,x,y,dist = self:ParseMapXYDist(params)
 
-				if BZL[map] then map=BZL[map] end
+					if BZL[map] then map=BZL[map] end
 
-				goal.map = map or goal.map or step.map or prevmap
-				step.map = goal.map
-				prevmap = step.map
+					goal.map = map or goal.map or step.map or prevmap
+					step.map = goal.map
+					prevmap = step.map
 
-				goal.x = x or goal.x
-				goal.y = y or goal.y
-				goal.dist = dist or goal.dist
+					goal.x = x or goal.x
+					goal.y = y or goal.y
+					goal.dist = dist or goal.dist
 
-				if (goal.action=="accept" or goal.action=="turnin" 	or goal.action=="kill" 	or goal.action=="get" 	or goal.action=="talk" 	or goal.action=="goal" 	or goal.action=="use") then
-					goal.autotitle = goal.param or goal.target or goal.quest
-				end
+					if (goal.action=="accept" or goal.action=="turnin" 	or goal.action=="kill" 	or goal.action=="get" 	or goal.action=="talk" 	or goal.action=="goal" 	or goal.action=="use") then
+						goal.autotitle = goal.param or goal.target or goal.quest
+					end
 
-				if not goal.map then
-					return nil,"'"..cmd.."' has no map parameter, neither has one been given before.",linecount,chunk
-				end
+					if not goal.map then
+						return nil,"'"..cmd.."' has no map parameter, neither has one been given before.",linecount,chunk
+					end
 
 			elseif cmd=="kill" or cmd=="get" or cmd=="collect" or cmd=="goal" or cmd=="buy" then
 				goal.action = goal.action or cmd
@@ -370,23 +535,114 @@ function me:ParseEntry(text)
 					
 					tinsert(goal.mobs,{name=nm,id=id,pl=plural and true or false})
 				end
+			elseif cmd=="walk" then
+				--Settings like walk arent implemented yet, they also dont count as goals
+				goal.force_walk = true
+			elseif cmd=="bank" then
+				goal.action = goal.action or cmd
+				return nil,"bank not implemented",linecount,chunk
+			elseif cmd=="click" then
+				goal.action = goal.action or cmd
+				return nil,"click not implemented",linecount,chunk
+			elseif cmd=="clicknpc" then
+				goal.action = goal.action or cmd
+				return nil,"clicknpc not implemented",linecount,chunk
+			elseif cmd=="confirm" then
+				goal.action = goal.action or cmd
+				return nil,"confirm not implemented",linecount,chunk
+			elseif cmd=="count" then
+				goal.action = goal.action or cmd
+				return nil,"count not implemented",linecount,chunk
+			elseif cmd=="destroy" then
+				goal.action = goal.action or cmd
+				return nil,"destroy not implemented",linecount,chunk
+			elseif cmd=="futre" then
+				goal.action = goal.action or cmd
+				return nil,"futre not implemented",linecount,chunk
+			elseif cmd=="gossip" then
+				goal.action = goal.action or cmd
+				return nil,"gossip not implemented",linecount,chunk
+			elseif cmd=="learnpetspell" then
+				goal.action = goal.action or cmd
+				return nil,"learnpetspell not implemented",linecount,chunk
+			elseif cmd=="learnspell" then
+				goal.action = goal.action or cmd
+				return nil,"learnspell not implemented",linecount,chunk
+			elseif cmd=="loadguide" then
+				goal.action = goal.action or cmd
+				return nil,"loadguide not implemented",linecount,chunk
+			elseif cmd=="noautoaccept" then
+				goal.action = goal.action or cmd
+				return nil,"noautoaccept not implemented",linecount,chunk
+			elseif cmd=="nohearth" then
+				goal.action = goal.action or cmd
+				return nil,"nohearth not implemented",linecount,chunk
+			elseif cmd=="noordinal" then
+				goal.action = goal.action or cmd
+				return nil,"noordinal not implemented",linecount,chunk
+			elseif cmd=="notravel" then
+				goal.action = goal.action or cmd
+				return nil,"notravel not implemented",linecount,chunk
+			elseif cmd=="path" then
+				goal.action = goal.action or cmd
+				return nil,"path not implemented",linecount,chunk
+			elseif cmd=="popuptext" then
+				goal.action = goal.action or cmd
+				return nil,"popuptext not implemented",linecount,chunk
+			elseif cmd=="run" then
+				goal.action = goal.action or cmd
+				return nil,"run not implemented",linecount,chunk
+			elseif cmd=="stickyif" then
+				goal.action = goal.action or cmd
+				return nil,"stickyif not implemented",linecount,chunk
+			elseif cmd=="trainer" then
+				goal.action = goal.action or cmd
+				return nil,"trainer not implemented",linecount,chunk
+			elseif cmd=="vendor" then
+				goal.action = goal.action or cmd
+				return nil,"vendor not implemented",linecount,chunk
+			elseif cmd=="zombiewalk" then
+				goal.action = goal.action or cmd
+				return nil,"zombiewalk not implemented",linecount,chunk
+			elseif cmd=="trash" then
+				goal.action = goal.action or cmd
+				goal.trashitem,goal.trashitemid = self:ParseID(params)
 			elseif cmd=="complete" then --unused
 				goal.action = goal.action or cmd
 				goal.quest,goal.questid,goal.objnum = self:ParseID(params)
 				if not goal.quest and not goal.questid then return nil,"no quest parameter",linecount,chunk end
 			elseif cmd=="ding" then
 				goal.action = goal.action or cmd
-				goal.level = tonumber(params)
+
+				local splits = split(params, ",")
+			
+				if splits[2] then
+					--goal.experience = tonumber(splits[2]) 
+					goal.level = tonumber(splits[1]) 
+				else
+					goal.level = tonumber(params)
+				end
+
+				--print(goal.level)
+				--goal.level = tonumber(params)
 				if not goal.level then return nil,"'ding': invalid level value",linecount,chunk end
-				prevlevel = tonumber(params)
+				prevlevel = goal.level
 			elseif cmd=="equipped" then
 				goal.action = goal.action or cmd
 				local slot,item = params:match("^([a-zA-Z]+) (.*)")
-				slot,_ = GetInventorySlotInfo(slot)
-				if not slot then return nil,"equipped needs proper slot" end
-				if not item then return nil,"equipped needs item" end
-				goal.slot=slot
-				goal.item=item
+				--Use the old Slot mechanic if we have a valid Slot
+				if slot:find("Slot") then
+					slot,_ = GetInventorySlotInfo(slot)
+					if not slot then return nil,"equipped needs proper slot" end
+					if not item then return nil,"equipped needs item" end
+					goal.slot=slot
+					goal.item=item
+				else
+					-- Parse the itemid and set slot to nil so goal knows about it
+					goal.equippeditemid, goal.equippeditemname = self:ParseID(params)
+					goal.slot = nil
+				end
+
 			elseif cmd=="hearth" then
 				goal.action = goal.action or cmd
 				goal.useitem = "Hearthstone"
@@ -433,6 +689,10 @@ function me:ParseEntry(text)
 				if not fun then return nil,err,linecount,chunk end
 				goal.condition_complete_raw=params
 				goal.condition_complete = fun
+
+			elseif cmd=="tip" then	
+				goal.action = "info"
+				goal.info = params
 
 			elseif cmd=="info" then
 				goal.action = goal.action or cmd
@@ -483,7 +743,7 @@ function me:ParseEntry(text)
 				end
 
 			-- extra tags
-
+			elseif cmd=="notinsticky" then
 			elseif cmd=="autoscript" then
 				goal.autoscript = params
 			elseif cmd=="n" then
@@ -524,6 +784,16 @@ function me:ParseEntry(text)
 			elseif cmd=="killcount" then  -- use killcounter for non-quest mobs
 				goal.usekillcount=true
 			elseif #chunk>1 then -- text
+				if #cmd>2 and cmd:match("^[a-z]") then		
+					condiss = condiss and condiss or {}
+					if condiss[cmd] then
+					else
+						condiss[cmd] = true
+						print(cmd)
+					end	
+					
+				end
+				--params = params:gsub("%[",""):gsub("%]","")
 				-- snag coordinates for waypointing, with distance
 				local st,en,x,y,d
 				st,en = 1,1
@@ -553,35 +823,80 @@ function me:ParseEntry(text)
 			end
 		end
 
-		if #TableKeys(goal)>0 then
+		if goal and next(goal) then
 			if not step then return nil,"What? Unknown data before first 'step' tag, or what?",linecount,line end
 
 			-- so there's something to record? go ahead.
 
 			setmetatable(goal,ZGV.GoalProto_mt)
 
-			if not goal.action and (goal.x or goal.map) then
-				goal.action = "goto"
-			end
+			goal.parentStep = step
+			goal.num = #step.goals+1
+
+			tinsert(step.goals,goal)
+
+				if not goal.action then
+					if (goal.x or goal.map) then
+						goal.action = "goto"
+					elseif goal.text then
+						goal.action = "text"
+					end
+				end
 
 			if goal.questid and noobsoletequests[goal.questid] then
 				goal.noobsolete = true
 			end
 
-
-			goal.parentStep = step
-			goal.num = #step.goals+1
-
-			step.goals[#step.goals+1] = goal
-
-			if (goal.action=="get" or goal.action=="kill" or goal.action=="goal") and not goal.questid and not goal.force_nocomplete then
-				return nil,"Objective has no quest ID!",linecount,line
-			end
+				if (goal.action=="kill" or goal.action=="avoid" or goal.action=="goal")
+					and not goal.questid
+					and not goal.objnum
+					and not goal.criteriaid
+					and not goal.achieveid
+					and not goal.force_nocomplete
+					and not goal.scenario_criteriaid
+					and not goal.scenario_stagenum
+					and not goal.completeoverrides
+					then
+					goal.force_nocomplete = true
+				end
+				
 		end
 
 		if goal then goal.indent = #indent end
 
 	end
+
+	--We are finished parsing
+			-- gather all step labels, round'em up and brand'em
+				guide.steplabels={}
+				for si,step in ipairs(guide.steps) do
+					local label=step.label
+					if label then
+						if not guide.steplabels[label] then guide.steplabels[label]={} end
+						tinsert(guide.steplabels[label],si)
+					end
+					if step.extralabels then
+						for _,extralabel in ipairs(step.extralabels) do
+							if not guide.steplabels[extralabel] then guide.steplabels[extralabel]={} end
+							tinsert(guide.steplabels[extralabel],si)
+						end
+					end
+				end
+				-- render sticky refs into their steps
+				for sn,step in ipairs(guide.steps) do
+					if step.sticky_labels then
+						step.stickies={}
+						for i,stickylabel in ipairs(step.sticky_labels) do repeat
+							if stickylabel~=step.label then
+								local stickynums = guide.steplabels[stickylabel]  if not stickynums then ZGV:Error("Sticky step by that label not found: %s  in  %s  step %d",stickylabel,guide.title,sn) break end
+								local stickynum=stickynums[1]
+								local stickystep = guide.steps[stickynum]  if not stickystep then ZGV:Error("Sticky step by that label/number not found: %s %s  in  %s",stickylabel,stickynum,guide.title)  break  end
+								tinsert(step.stickies,stickystep)
+							end
+						until true end
+					end
+				end
+
 	return guide
 end
 

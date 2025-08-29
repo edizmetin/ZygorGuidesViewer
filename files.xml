@@ -10,6 +10,7 @@
 	<Script file="QuestTracking.lua"/>
 	<Script file="Faction.lua"/>
 	<Script file="Profession.lua"/>
+	<Script file="Retrofit.lua"/>
 
 	<Script file="QuestAutoAccept.lua"/>
 
