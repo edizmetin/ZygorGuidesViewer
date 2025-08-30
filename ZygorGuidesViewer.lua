@@ -2832,6 +2832,12 @@ function me:GoalOnClick(goalframe,button)
 
 	local goal = goalframe:GetParent().goal
 	if not goal then return end
+  
+  --No Clue why they didnt code this in the first place
+  if goal:OnClick(button) then 
+    return
+  end
+  
 	--local num=goalframe.goalnum
 	self:Debug("goal clicked "..tostring(goal.num))
 	--local goal = self.CurrentStep.goals[num]

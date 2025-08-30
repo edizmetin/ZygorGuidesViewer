@@ -331,11 +331,6 @@ ZGV.ConditionEnv = {
 		return IsSpellKnown(spellid)
 	end,
 
-	guideflag = function(skill)
-		--TODO: Maybe not needed
-		return false
-	end,
-
 	C_Container = ZGV.Retrofit.C_Container,
 
 	GetMoney = function()
@@ -364,6 +359,10 @@ ZGV.ConditionEnv = {
 			end
 		end
 		return 0
+	end,
+
+	guideflag = function(flag)
+		return ZGV.db.char.guideflags[flag]==true
 	end,
 
 }
@@ -407,6 +406,7 @@ function me:ParseEntry(guidedata)
 
 	local guide,step
 
+	local prevpathvars={}
 	local prevmap
 	local prevlevel = 0
 
@@ -535,7 +535,7 @@ function me:ParseEntry(guidedata)
 			-- guide parameters
 			if cmd=="defaultfor" then
 				guide[cmd]=params
-			elseif cmd=="next" then
+			elseif cmd=="next" and not #guide.steps then
 				guide[cmd]=params:gsub("\\\\","\\")
 			elseif cmd=="author" then
 				guide[cmd]=params
@@ -584,6 +584,8 @@ function me:ParseEntry(guidedata)
 
 					end
 
+					wipe(prevpathvars)
+
 			-- step parameters
 			elseif cmd=="level" then
 				step[cmd]=params
@@ -595,6 +597,11 @@ function me:ParseEntry(guidedata)
 				if BZL[params] then params=BZL[params] end
 				if step then step.map = params end
 				prevmap = params
+			elseif cmd=="stickyif" then
+				local fun,err = MakeCondition(params,false)
+				if not fun then return nil,err,linecount,chunk end
+				step.sticky_condition_complete_raw=params
+				step.sticky_condition_complete = fun				
 			elseif cmd=="label" then
 				assign_label_from(params)
 
@@ -723,19 +730,37 @@ function me:ParseEntry(guidedata)
 				goal.target,goal.targetid = self:ParseID(params)			
 			elseif cmd=="clicknpc" then
 				goal.npc,goal.npcid = self:ParseID(params)		
+			elseif cmd =="next" then
+				params = params:gsub("^\"(.-)\"$","%1")
+				if params=="" then params="+1" end
+				goal.next=params
+			elseif cmd=="popuptext" then	
+				goal.action = goal.action or cmd	
+				goal.popuptext = params
 			elseif cmd=="confirm" then
-				--Can be a goal, we dont have clickable text yet
+				goal.action = goal.action or cmd	
+				goal.always = (params == "always")
+				goal.begin = (params == "begin")
+				goal.skip = (params == "skip")
+				goal.flagname = params
+				goal.optional = true
+				goal.was_clicked = false
 			elseif cmd=="count" then
 				--This overrides a collect quests condition to only need X and not full
 				goal.count = tonumber(params)
 			elseif cmd=="gossip" then
-				--TODO: Implement, low prio
-			elseif cmd=="learnpetspell" then
-				--TODO: Implement, low prio
+				--Not needed, guides instruct the user what to select already 
 			elseif cmd=="learnspell" then
-				--TODO: Implement, low prio
+				goal.action = goal.action or cmd		
+				goal.spell,goal.spellid = self:ParseID(params)
+			elseif cmd=="learnpetspell" then
+				goal.action = goal.action or cmd
+				goal.spell,goal.spellid = self:ParseID(params)				
 			elseif cmd=="loadguide" then
-				--TODO: Implement, high prio
+				goal.action = goal.action or cmd
+				params = params:gsub("^\"(.-)\"$","%1")
+				if params=="" then params="+1" end
+				goal.next=params
 			elseif cmd=="noautoaccept" then
 				goal.noautoaccept = true
 			elseif cmd=="nohearth" then
@@ -746,14 +771,65 @@ function me:ParseEntry(guidedata)
 			elseif cmd=="notravel" then
 				goal.waypoint_notravel = true
 			elseif cmd=="path" then
-				--TODO: Implement, this may be hard
+				goal.action = goal.action or cmd
+				if not step.hasPath then
+					goal.firstPath = true
+					step.hasPath = true
+				end
+				--No point in creating this when questie shows the mobspawn anyway.
+				--[[goal.action = goal.action or cmd
+				goal.raw = params
+				local path=params
+				if not step.waypath then step.waypath={follow="loose",loop=true,ants="straight",coords={}} end
+				for var,val in pairs(prevpathvars) do step.waypath[var] = val or step.waypath[var] end
+
+				-- remove plusses, trim
+				path=path:gsub("^%+%s*","")
+				path=path:gsub("%s*[	;]+%s*",";"):gsub("  +",";")
+				path=path .. ";"
+				for coord in path:gmatch("(.-);") do
+					local map,x,y,dist,err = self:ParseMapXYDist(coord)
+					if x then
+						if err then return parseerror(err) end  -- might happen, if the coords look good but map is bogus.
+						local point = {map=map or prevmap or step.map,floor=flr or prevfloor or step.floor,x=x,y=y,dist=dist or step.waypath.dist}
+						tinsert(step.waypath.coords,point)
+						prevmap,prevfloor = point.map,point.floor
+					else
+						-- no coords..? maybe a path command, then?
+						local var,val = coord:match("^([^%s]+)%s+(.+)$")
+						if not val then var,val=coord,1 end
+						if val=="off" then val=false end
+						if var:sub(1,1)=="<" then
+							-- assign something to the last point. This sucks, but CBA to make it any better right now.
+							step.waypath.coords[#step.waypath.coords][var:sub(2)] = tonumber(val) or val
+						else
+							-- plain two-word variable.
+							step.waypath[var] = tonumber(val) or val
+							prevpathvars[var] = tonumber(val) or val
+						end
+						if step.waypath.radius then step.waypath.dist=step.waypath.radius end  -- radius=dist
+					end
+				end
+
+				if step.waypath['use']=="goto" then
+					-- physically convert gotos to path!
+					local i=1
+					while i<=#step.goals do
+						local goal=step.goals[i]
+						if goal.action=="goto" then
+							tinsert(step.waypath.coords,goal)
+							tremove(step.goals,i)
+							i=i-1
+						end
+						i=i+1
+					end
+					step.waypath['loop']=false
+				end]]--
 			elseif cmd=="popuptext" then
 				--TODO: Implement, low prio
 			elseif cmd=="run" then
 				goal.action = goal.action or cmd
 				return nil,"run not implemented",linecount,chunk
-			elseif cmd=="stickyif" then
-				--TODO: Implement, probably very low prio
 			elseif cmd=="zombiewalk" then
 				goal.zombiewalk = true
 			elseif cmd=="trash" or cmd=="bank" or cmd== "destroy" then
@@ -890,6 +966,7 @@ function me:ParseEntry(guidedata)
 
 			-- extra tags
 			elseif cmd=="notinsticky" then
+				goal.notinsticky=true
 			elseif cmd=="autoscript" then
 				goal.autoscript = params
 			elseif cmd=="n" then

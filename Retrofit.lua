@@ -288,3 +288,82 @@ for i,skillset in pairs(ItemScore.SkillNames) do -- drop other languages
 end
 
 ZGV.ItemScore = ItemScore
+
+function ShowCopyPopup(text)
+    -- Main frame
+    local f = CreateFrame("Frame", nil, UIParent)
+    f:SetSize(340, 200)
+    f:SetPoint("CENTER")
+    f:SetBackdrop({
+        bgFile = "Interface/DialogFrame/UI-DialogBox-Background",
+        edgeFile = "Interface/DialogFrame/UI-DialogBox-Border",
+        tile = true, tileSize = 32, edgeSize = 32,
+        insets = { left = 8, right = 8, top = 8, bottom = 8 }
+    })
+    f:SetBackdropColor(0,0,0,1)
+    f:EnableMouse(true)
+    f:SetMovable(true)
+    f:RegisterForDrag("LeftButton")
+    f:SetScript("OnDragStart", f.StartMoving)
+    f:SetScript("OnDragStop", f.StopMovingOrSizing)
+
+    -- Close button
+    local close = CreateFrame("Button", nil, f, "UIPanelCloseButton")
+    close:SetPoint("TOPRIGHT", -4, -4)
+
+    -- ScrollFrame
+    local scroll = CreateFrame("ScrollFrame", nil, f)
+    scroll:SetPoint("TOPLEFT", 16, -32)
+    scroll:SetPoint("BOTTOMRIGHT", -26, 16)
+
+    -- Scrollbar
+    local scrollbar = CreateFrame("Slider", nil, scroll, "UIPanelScrollBarTemplate")
+    scrollbar:SetPoint("TOPLEFT", f, "TOPRIGHT", -28, -52)
+    scrollbar:SetPoint("BOTTOMLEFT", f, "BOTTOMRIGHT", -28, 16)
+    scrollbar:SetMinMaxValues(0, 1)
+    scrollbar:SetValueStep(1)
+    scrollbar:SetWidth(16)
+    scrollbar:Hide() -- will show if needed
+
+    -- EditBox inside scroll
+    local editbox = CreateFrame("EditBox", nil, scroll)
+    editbox:SetMultiLine(true)
+    editbox:SetFontObject(ChatFontNormal)
+    editbox:SetAutoFocus(false)
+    editbox:SetWidth(280)
+    editbox:SetScript("OnEscapePressed", function(self) self:ClearFocus() end)
+    editbox:SetScript("OnEditFocusGained", function(self) self:HighlightText() end)
+
+    scroll:SetScrollChild(editbox)
+
+    -- Scroll handling
+    scrollbar:SetScript("OnValueChanged", function(self, value)
+        scroll:SetVerticalScroll(value)
+    end)
+
+    scroll:SetScript("OnScrollRangeChanged", function(self, xrange, yrange)
+        if yrange > 0 then
+            scrollbar:SetMinMaxValues(0, yrange)
+            scrollbar:Show()
+        else
+            scrollbar:Hide()
+        end
+    end)
+
+    -- Fill text
+    editbox:SetText(text or "")
+    editbox:HighlightText()
+    editbox:SetFocus()
+
+    -- Cleanup
+    local function cleanup()
+        editbox:ClearFocus()
+        f:Hide()
+        f:SetParent(nil)
+    end
+    close:SetScript("OnClick", cleanup)
+    f:SetScript("OnHide", cleanup)
+
+    f:Show()
+end
+

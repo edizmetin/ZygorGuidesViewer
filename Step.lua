@@ -97,9 +97,11 @@ function Step:AreRequirementsMet()
 	if not raceclass then return false end
 
 	if self.condition_visible and not self.condition_visible() then return false end
+	if self.is_sticky and self.sticky_condition_complete then
+		return self.sticky_condition_complete()
+	end
 
 	return true
-	-- wrong
 end
 
 function Step:PrepareCompletion()

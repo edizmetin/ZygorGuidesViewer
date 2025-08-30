@@ -35,6 +35,7 @@ Sell your trash |vendor Archibald Kava##2113 |q 364 |future |goto Tirisfal Glade
 step
 goto Tirisfal Glades 31.39,66.20
 talk Shadow Priest Sarvis##1569
+Click Here To Copy The Video Link |popuptext www.youtube.com/watch?v=g5Aak-n_XJk
 |tip Inside the building.
 turnin Rude Awakening##363 |goto Tirisfal Glades 30.84,66.20
 accept The Mindless Ones##364 |goto Tirisfal Glades 30.84,66.20
@@ -57,10 +58,11 @@ learnspell Battle Shout##6673 |goto Tirisfal Glades/0 32.68,65.56
 stickystart "Kill_Wretched_Zombies"
 stickystart "Collect_Rattlecage_Skulls_Warlock"
 step
-kill 8 Mindless Zombie##1501 |q 364/1  | count 4|goto Tirisfal Glades 31.96,63.30
+kill 8 Mindless Zombie##1501 |q 364/1  |goto Tirisfal Glades 31.96,63.30
+|only if guideflag("testflag")
 step
 label "Kill_Wretched_Zombies"
-kill 8 Wretched Zombie##1502 |q 364/2  |count 3 |goto Tirisfal Glades 31.96,63.30
+kill 8 Wretched Zombie##1502 |q 364/2  |goto Tirisfal Glades 31.96,63.30
 step
 label "Collect_Rattlecage_Skulls_Warlock"
 kill Rattlecage Skeleton##1890+
@@ -68,7 +70,6 @@ collect 3 Rattlecage Skull##6281 |q 1470/1 |goto Tirisfal Glades 32.73,60.10
 |only if Scourge Warlock
 step
 Enter the building |goto Tirisfal Glades 31.39,66.20 < 10 |walk
-destroy Forest Mushroom Cap##4604
 talk Shadow Priest Sarvis##1569
 |tip Inside the building.
 turnin The Mindless Ones##364 |goto Tirisfal Glades 30.84,66.20
