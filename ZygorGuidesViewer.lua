@@ -60,6 +60,9 @@ local BFR = BF:GetReverseLookupTable()
 me.BFL = BFL
 me.BFR = BFR
 
+
+me.guidesets = {}
+
 local _G,assert,table,string,tinsert,tonumber,tostring,type,ipairs,pairs,setmetatable,math = _G,assert,table,string,tinsert,tonumber,tostring,type,ipairs,pairs,setmetatable,math
 
 --local Dewdrop = AceLibrary("Dewdrop-2.0")
@@ -386,6 +389,20 @@ function me:FindDefaultGuide()
 		if guide.defaultfor and self:RaceClassMatch(guide.defaultfor,true) then return i end
 	end
 	return nil
+end
+
+--Some nonsense
+
+function ZGV.BETASTART()
+	ZGV.BETAguides=true
+end
+function ZGV.BETAEND()
+	ZGV.BETAguides=false
+end
+
+function me:DoMutex(m)
+	ZygorGuidesViewer.GuideMenuTier = nil
+	if self.guidesets[m] then return true else self.guidesets[m]=true end
 end
 
 -- function me:SearchForCompleteableGoal() --removed

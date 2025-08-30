@@ -339,8 +339,7 @@ ZGV.ConditionEnv = {
 	C_Container = ZGV.Retrofit.C_Container,
 
 	GetMoney = function()
-		--TODO:
-		return 0
+		return GetMoney()
 	end,
 
 	GetItemCooldown = GetItemCooldown,
