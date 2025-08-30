@@ -19,7 +19,7 @@ me.L = ZygorGuidesViewer_L("Main")
 me.LS = ZygorGuidesViewer_L("G_string")
 
 
-local linecount = 30;
+local linecount = 50;
 
 local L = me.L
 local LI = me.LI
@@ -3137,9 +3137,9 @@ end
 me.registered_groups = { groups={},guides={}}
 
 
-function me:RegisterGuide(title,data,extra,...)
+function me:RegisterGuide(title,data,extra)
 	if type(data) == "table" then
-		return me:RegisterGuideCompat(title, data, extra, ...)
+		return me:RegisterGuide(title, extra, data)
 	end		
 	local group,tit = title:match("^(.*)\\+(.-)$")
 	if group then
@@ -3154,12 +3154,12 @@ function me:RegisterGuide(title,data,extra,...)
 	tinsert(self.registeredguides,guide)
 end
 
-function me:RegisterGuideCompat(...)
-  local n = select("#", ...)            -- number of arguments
-	local title, data = select(1,...),select(n, ...)
-	print("Compat Guide: "..title)
-	me:RegisterGuide(title, data)
-end
+--function me:RegisterGuideCompat(...)
+--  local n = select("#", ...)            -- number of arguments
+--	local title, data = select(1,...),select(n, ...)
+	--print("Compat Guide: "..title)
+--	me:RegisterGuide(title, data)
+--end
 
 
 me.registered_mapspotset_groups = { groups={},guides={}}
@@ -3249,7 +3249,7 @@ function me:ParseGuides()
 	if #self.registeredguides>0 then
 		for i,guide in ipairs(self.registeredguides) do
 			if guide.rawdata then
-				local status,parsed,err,line,linedata = pcall(self.ParseEntry,self,guide.rawdata)
+				local status,parsed,err,line,linedata = pcall(self.ParseEntry,self,guide)
 				if status and parsed then
 					for k,v in pairs(parsed) do guide[k]=v end
 					guide.rawdata=nil

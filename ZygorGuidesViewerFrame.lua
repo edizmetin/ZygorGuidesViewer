@@ -4,7 +4,7 @@ local ZGV = ZygorGuidesViewer
 if not ZGV then return end
 
 
-local linecount = 30;
+local linecount = 50;
 
 
 local doborderrgb = function(self)

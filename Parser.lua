@@ -144,6 +144,9 @@ function me:ParseHeader(text)
 	return header
 end
 
+
+--The entire condition env pains me and the elseifchains in general do too but unless someone wants to rework them it stays.
+
 ZGV.ConditionEnv = {
 	_G = _G,
 	-- variables needing update
@@ -187,7 +190,22 @@ ZGV.ConditionEnv = {
 		for i,fa in ipairs(self.factions) do  registerLiteral(fa,pfa==fa)  end		
 
 
-
+		setmetatable(ZGV.ConditionEnv, {
+				__index = function(table, key)
+						if key == "hardcore" then
+							return false --already covered due to nil
+						elseif key == "isdead" then
+							return UnitIsDeadOrGhost("player")
+						elseif key == "selfmade" then
+							return false							
+						elseif key == "walking" then
+							return IsFlying()
+						else
+							print(tostring(key).." Condition not found, may be a typo in the guide")
+							table[key] = 0
+						end
+				end
+		})
 	end,
 
 	_Update = function()
@@ -196,7 +214,12 @@ ZGV.ConditionEnv = {
 	end,
 
 	itemcount = function(...)
-		return GetItemCount(...)
+		local total = 0
+		local count = select("#", ...)
+		for i = 1, count do
+			total = total + GetItemCount(select(i, ...))
+		end
+		return total
 	end,
 
 	-- independent data feeds
@@ -290,9 +313,8 @@ ZGV.ConditionEnv = {
 		return engname == name
 	end,
 
-	zone = function(skill)
-		--TODO:
-		return true
+	zone = function(targetZone)
+    return GetZoneText():lower() == targetZone:lower()
 	end,
 
 	knowspell = function(spellid)
@@ -369,7 +391,8 @@ local function MakeCondition(cond,forcebool)
 end
 
 --- parse ONE guide section into usable arrays.
-function me:ParseEntry(text)
+function me:ParseEntry(guidedata)
+	text = guidedata.rawdata
 	if not text then return nil,"No text!",0 end
 	local index = 1
 
@@ -381,6 +404,12 @@ function me:ParseEntry(text)
 	guide = { ["steps"] = {}, ["quests"] = {} }
 
 	text = text .. "\n"
+
+--	Parse the extras 
+
+	for k,v in pairs(guidedata.extra) do
+		guide[k] = v
+	end
 
 	local linecount=0
 
@@ -436,6 +465,12 @@ function me:ParseEntry(text)
 	end
 --#endregion
 
+	--Parse new guide headers
+
+		--print(guide.extra)
+   --for i, v in pairs(guide.extra) do
+   --     print(i, v)
+   --end
 
 	--local debug
 	--if text:find("goto The Exodar,44.9,24.2") then debug=true end
@@ -892,7 +927,7 @@ function me:ParseEntry(text)
 					if condiss[cmd] then
 					else
 						condiss[cmd] = true
-						print(cmd)
+						--print(cmd)
 					end	
 					
 				end

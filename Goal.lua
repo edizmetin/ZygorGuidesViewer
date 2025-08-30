@@ -90,6 +90,7 @@ local goalstring_slain=QUEST_MONSTERS_KILLED:gsub(": .*","")
 -- second return: true = completable, false = incompletable
 function Goal:IsComplete()
 
+
 	if (self.force_sticky and ZGV.recentlyCompletedGoals[self]) or ZGV.recentlyStickiedGoals[self] then
 		return true,true,true
 	end
@@ -214,12 +215,11 @@ function Goal:IsComplete()
 		else
 			-- if quest is not in log, then it usually means screw its links as well.
 			-- Unless we're a future-proof goal, which drops through.
-			if not self.future then
-				return false,false
-			end
+			--if not self.future then
+			--	return false,false
+			--end
 		end
 	end
-
 
 	if self.action=="ding" then
 		local percent

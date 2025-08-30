@@ -1,3 +1,8 @@
+local ZygorGuidesViewer=ZygorGuidesViewer
+if not ZygorGuidesViewer then return end
+if UnitFactionGroup("player")~="Horde" then return end
+
+
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Undead Starter (1-14)",{
 image=ZGV.IMAGESDIR.."Tirisfal Glades",
 condition_suggested=function() return raceclass('Scourge') and level <= 12 end,
@@ -21419,7 +21424,7 @@ turnin The Ultimate Deception##8829 |goto Silithus 51.96,38.15
 step
 collect 1 Logistics Assignment##21266 |next "Begin_Logistics_Assignment"
 ]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Druid Class Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Class Quests\\Druid",{
 description="This guide will walk you through completing various Druid Class Quests.",
 },[[
 step
@@ -21725,7 +21730,7 @@ talk Torwa Pathfinder##9619
 turnin A Better Ingredient##9053 |goto Un'Goro Crater 71.63,75.96
 |only if Druid
 ]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Priest Class Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Class Quests\\Priest",{
 description="This guide will walk you through completing various Priest Class Quests.",
 },[[
 step
@@ -21853,7 +21858,7 @@ talk Movkar##16012
 turnin An Earnest Proposition##8916 |goto Orgrimmar 34.80,38.00
 |only if Priest
 ]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Warrior Class Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Class Quests\\Warrior",{
 description="This guide will walk you through completing various Warrior Class Quests.",
 },[[
 step
@@ -22150,7 +22155,7 @@ talk Fallen Hero of the Horde##7572
 turnin Voodoo Feathers##8425 |goto Swamp of Sorrows 34.29,66.15
 |only if Warrior
 ]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Hunter Class Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Class Quests\\Hunter",{
 description="This guide will walk you through completing various Hunter Class Quests.",
 },[[
 step
@@ -22462,7 +22467,7 @@ collect Rhok'delar, Longbow of the Ancient Keepers##18713 |n
 collect Lok'delar, Stave of the Ancient Keepers##18715 |n
 |only if Hunter
 ]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Mage Class Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Class Quests\\Mage",{
 description="This guide will walk you through completing various Mage Class Quests.",
 },[[
 step
@@ -22837,7 +22842,7 @@ talk Lorekeeper Lydros##14368
 turnin Arcane Refreshment##7463
 |only if Mage
 ]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Rogue Class Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Class Quests\\Rogue",{
 description="This guide will walk you through completing various Rogue Class Quests.",
 },[[
 step
@@ -23088,7 +23093,7 @@ talk Lord Jorach Ravenholdt##6768
 turnin The Azure Key##8236|goto Alterac Mountains 86.03,78.88
 |only if Rogue
 ]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shaman Class Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Class Quests\\Shaman",{
 description="This guide will walk you through completing various Shaman Class Quests.",
 },[[
 step
@@ -23421,7 +23426,7 @@ talk Bath'rah the Windwatcher##6176
 turnin Da Voodoo##8413 |goto Alterac Mountains 80.50,66.92
 |only if Shaman
 ]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Warlock Class Quests",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Class Quests\\Warlock",{
 description="This guide will walk you through completing various Warlock Class Quests.",
 },[[
 step
