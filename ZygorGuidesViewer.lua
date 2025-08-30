@@ -3130,8 +3130,17 @@ local function split(str,sep)
 	return fields
 end
 
-local function FindGroup(self,title)
-	local path = split(title,"\\")
+local function FindGroup(self, rawpath, title)
+
+	--AutoGuideSorting
+	local _,_, s, e = string.find(title, ".+%((%d+)-(%d+)%)")
+	
+	if s then
+		truestart = math.floor(s/10)*10
+		rawpath = rawpath.."\\Level "..tostring(truestart).."-"..tostring(truestart+10)
+	end
+	
+	local path = split(rawpath,"\\")
 
 	-- create one
 	local group=self
@@ -3158,9 +3167,10 @@ function me:RegisterGuide(title,data,extra)
 	if type(data) == "table" then
 		return me:RegisterGuide(title, extra, data)
 	end		
+
 	local group,tit = title:match("^(.*)\\+(.-)$")
 	if group then
-		group = FindGroup(self.registered_groups,group)
+		group = FindGroup(self.registered_groups,group,tit)
 	else
 		group = self.registered_groups
 	end
@@ -3184,7 +3194,7 @@ me.registered_mapspotset_groups = { groups={},guides={}}
 function me:RegisterMapSpots(title,data)
 	local group,tit = title:match("^(.*)\\+(.-)$")
 	if group then
-		group = FindGroup(self.registered_mapspotset_groups,group)
+		group = FindGroup(self.registered_mapspotset_groups,group, tit)
 	else
 		group = self.registered_mapspotset_groups
 	end

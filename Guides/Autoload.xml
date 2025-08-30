@@ -11,11 +11,7 @@
 	<!-- DUNGEONS -->
 		<!-- CLASSIC -->
 		<Script file="Dungeons\ZygorDungeonAllianceCLASSIC.lua"/>
-		<Script file="Dungeons\ZygorDungeonAllianceCLASSICTrial.lua"/>
 		<Script file="Dungeons\ZygorDungeonHordeCLASSIC.lua"/>
-		<Script file="Dungeons\ZygorDungeonHordeCLASSICTrial.lua"/>
-		<Script file="Dungeons\ZygorDungeonScenariosAlliance_CLASSICTrial.lua"/>
-		<Script file="Dungeons\ZygorDungeonScenariosHordeCLASSICTrial.lua"/>
 	
 
 </Ui>
