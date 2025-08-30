@@ -57,8 +57,9 @@ function me:ParseMapXYDist(text)
 	if not _ then _,_,dist = string.find(text,"^([0-9%.]+)$") end
 
 	--Map, X, Y, Dist
-	_,_,map,x,y = string.find(text,"^(.+) ([0-9%.]+),([0-9%.]+).*$")
-
+	if not _ then _,_,map,x,y = string.find(text,"^([^,]+) ([0-9%.]+),([0-9%.]+).*$") end
+	-- I dontn know if this was just a guide typo
+	if not _ then _,_,map,x,y = string.find(text,"^(.+), ([0-9%.]+),([0-9%.]+).*$") end
 	--Map Only
 	if not _ then 
 		map = text 
@@ -67,10 +68,19 @@ function me:ParseMapXYDist(text)
 	x = tonumber(x)
 	y = tonumber(y)
 
-	if map:find("/") then 
-		map = split(map,"/")[1]
-	end
 
+	if map then
+		-- Subzone shenanigans we dont respect
+		if map:find("/") then 
+			map = split(map,"/")[1]
+		end
+
+			--ewhhh
+		if map:find(",") then
+			--print(text)
+			--print(map)
+		end 
+	end
 
 --	if x then x=x/100 end
 --	if y then y=y/100 end

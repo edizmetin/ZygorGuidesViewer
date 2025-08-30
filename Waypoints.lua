@@ -259,11 +259,14 @@ me.WaypointFunctions['internal'] = {
 			if goalnumORx then goals={self.CurrentStep.goals[goalnumORx]} else for i=1,#self.CurrentStep.goals do if self.CurrentStep.goals[i].x then tinsert(goals,self.CurrentStep.goals[i]) end end end
 			for k,goal in ipairs(goals) do
 				if not goal.force_noway then
+				
 					local way = self.Pointer:SetWaypoint (nil,goal.map,goal.x,goal.y,{title=title or self.CurrentStep:GetTitle() or (goal.map and goal.x and ("%s %d,%d"):format(goal.map,goal.x,goal.y)) or L['waypoint_step']:format(self.CurrentStepNum),onminimap="always",overworld=true})
+					--print(goal.map)
 					if way then
 						if not firstpoint then firstpoint=way end
 					else
-						self:Print("Unable to create waypoint: "..goal.map.." "..goal.x.." "..goal.y)
+						
+						self:Print("Unable to create waypoint: "..goal.map.." "..goal.x.." "..goal.y.." ")
 					end
 				end
 			end
