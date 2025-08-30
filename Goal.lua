@@ -68,6 +68,8 @@ function Goal:IsCompleteable()
 	or self.action=="skillmax"
 	or self.action=="learn"
 	or self.action=="complete"
+	or self.action=="trash"
+
 	 then return true end
 	if self.action=="goto" then
 		-- this one is tricky.
@@ -356,7 +358,7 @@ function Goal:IsComplete()
 		return ZGV.db.char.RecipesKnown[self.recipeid] or (self.recipe and ZGV.recentlyLearnedRecipes[self.recipe]), true
 	elseif self.action=="kill" and self.usekillcount then --killcount version
 		local count = ZGV.recentKills[self.target]
-		return count and count>=self.count, true
+		return count and count>=self.count, true	
 	end
 
 	return false,false
@@ -536,11 +538,13 @@ function Goal:GetText(showcompleteness)
 	elseif self.action=='talk' then text = L["stepgoal_talk to"]:format(COLOR_NPC(self.npc))
 	elseif self.action=='trash' then text = L["Trash item %s"]:format(COLOR_ITEM(self.trashitem))
 	elseif self.action=='click' then text = L["Click %s"]:format(COLOR_ITEM(self.target))
+	elseif self.action=='clicknpc' then text = L["Click %s"]:format(COLOR_NPC(self.npc))
 	elseif self.action=='get' and self.count and self.count>1 then text = L["stepgoal_get #"]:format(self.count>0 and self.count or "?",COLOR_ITEM(plural(self.target,self.count)))
 	elseif self.action=='get' then text = L["stepgoal_get"]:format(COLOR_ITEM(plural(self.target,self.plural and 2 or 1)))
 	elseif self.action=='kill' and self.count and self.count>1 then text = L["stepgoal_kill #"]:format(self.count>0 and self.count or "?",COLOR_MONSTER(plural(self.target,self.count)))
 	elseif self.action=='kill' then text = L["stepgoal_kill"]:format(COLOR_MONSTER(plural(self.target,self.plural and 2 or 1)))
-	elseif self.action=='collect' and self.count and self.count>1 then text = L["stepgoal_collect #"]:format(self.count,COLOR_ITEM(plural(self.target,self.count)))
+	elseif self.action=='collect' and self.count and self.count>1 then
+		text = L["stepgoal_collect #"]:format(self.count,COLOR_ITEM(plural(self.target,self.ocount or self.count)))
 	elseif self.action=='collect' then text = L["stepgoal_collect"]:format(COLOR_ITEM(plural(self.target,self.plural and 2 or 1)))
 	elseif self.action=='buy' then text = L["stepgoal_buy"]:format(self.count,COLOR_ITEM(plural(self.target,self.count)))
 	elseif self.action=='goal' and self.count and self.count>1 then text = L["stepgoal_goal #"]:format(self.count>0 and self.count or "?",COLOR_GOAL(plural(self.target,self.count)))
@@ -649,7 +653,7 @@ function Goal:GetText(showcompleteness)
 					local questgoal = questdata.goals[self.objnum]
 					if questgoal then
 						local count = self.count or questgoal.needed
-						desc = L["completion_goal"]:format(questgoal.num,count)
+						desc = L["completion_goal"]:format(questgoal.num,self.ocount or count)
 					end
 				else
 					-- quest-bound, bugger
@@ -686,6 +690,8 @@ function Goal:GetText(showcompleteness)
 			--]]
 		elseif self.action=="collect" or self.action=="buy" then
 			desc = L["completion_collect"]:format(GetItemCount(self.target),self.count)
+		elseif self.action=="trash" then
+			desc = L["completion_collect"]:format(GetItemCount(self.trashitemid),0)
 		elseif self.action=="rep" then
 			desc = L["completion_rep"]:format(ZGV:GetReputation(self.faction):Going())
 		elseif self.action=="achieve" then

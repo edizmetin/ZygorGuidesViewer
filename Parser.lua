@@ -333,7 +333,7 @@ ZGV.ConditionEnv = {
 
 	guideflag = function(skill)
 		--TODO: Maybe not needed
-		return true
+		return false
 	end,
 
 	C_Container = ZGV.Retrofit.C_Container,
@@ -720,15 +720,14 @@ function me:ParseEntry(guidedata)
 			elseif cmd=="walk" then
 				goal.force_walk = true
 			elseif cmd=="click" then
-				goal.target,goal.targetid = self:ParseID(params)
+				goal.target,goal.targetid = self:ParseID(params)			
 			elseif cmd=="clicknpc" then
-				--TODO: Implement, high prio
+				goal.npc,goal.npcid = self:ParseID(params)		
 			elseif cmd=="confirm" then
 				--Can be a goal, we dont have clickable text yet
 			elseif cmd=="count" then
-				--TODO: Implement, high prio
-			elseif cmd=="destroy" then
-				--TODO: Implement, high prio
+				--This overrides a collect quests condition to only need X and not full
+				goal.count = tonumber(params)
 			elseif cmd=="gossip" then
 				--TODO: Implement, low prio
 			elseif cmd=="learnpetspell" then
@@ -757,7 +756,7 @@ function me:ParseEntry(guidedata)
 				--TODO: Implement, probably very low prio
 			elseif cmd=="zombiewalk" then
 				goal.zombiewalk = true
-			elseif cmd=="trash" or cmd=="bank" then
+			elseif cmd=="trash" or cmd=="bank" or cmd== "destroy" then
 				goal.action = goal.action or "trash"
 				goal.trashitem,goal.trashitemid = self:ParseID(params)
 			elseif cmd=="ding" then
