@@ -1,13 +1,24 @@
-local ZygorGuidesViewer=ZygorGuidesViewer
-if not ZygorGuidesViewer then return end
-if UnitFactionGroup("player")~="Horde" then return end
-if ZGV:DoMutex("ProfessionsHCLASSIC") then return end
-ZygorGuidesViewer.GuideMenuTier = "CLA"
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Alchemy (1-300)",{
-condition_suggested=function() return skill('Alchemy') > 0 end,
-description="This guide will walk you through leveling your Alchemy skill from 1-300.",
-hardcore = true,
-},[[
+local ZygorGuidesViewer = ZygorGuidesViewer
+if not ZygorGuidesViewer then
+  return
+end
+if UnitFactionGroup('player') ~= 'Horde' then
+  return
+end
+if ZGV:DoMutex('ProfessionsHCLASSIC') then
+  return
+end
+ZygorGuidesViewer.GuideMenuTier = 'CLA'
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Alchemy\\Alchemy (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Alchemy') > 0
+    end,
+    description = 'This guide will walk you through leveling your Alchemy skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 to train professions.
@@ -1225,12 +1236,18 @@ Reach Skill 300 in Alchemy |skill Alchemy,300
 step
 _Congratulations!_
 You Reached Skill 300 in Alchemy.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Blacksmithing (1-300)",{
-condition_suggested=function() return skill('Blacksmithing') > 0 end,
-description="This guide will walk you through leveling your Blacksmithing skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Blacksmithing\\Blacksmithing (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Blacksmithing') > 0
+    end,
+    description = 'This guide will walk you through leveling your Blacksmithing skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 to train Apprentice professions.
@@ -2425,12 +2442,18 @@ Reach Skill 300 in Blacksmithing |skill Blacksmithing,300 |goto Tanaris 51.39,28
 step
 _Congratulations!_
 You Reached Skill 300 in Blacksmithing.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Cooking (1-300)",{
-condition_suggested=function() return skill('Cooking') > 0 end,
-description="This guide will walk you through leveling your Cooking skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Cooking (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Cooking') > 0
+    end,
+    description = 'This guide will walk you through leveling your Cooking skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 before you can learn professions.
@@ -2696,11 +2719,17 @@ Open Your Cooking Crafting Panel:
 |tip Inside the building.
 _<Create 35 Poached Sunscale Salmon>_
 Reach Skill 300 in Cooking |skill Cooking,300 |goto Orgrimmar 57.20,53.32
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Cooking + Fishing (1-300)",{
-condition_suggested=function() return (skill('Cooking') > 0) or (skill('Fishing') > 0) end,
-description="This guide will walk you through leveling both your Cooking and Fishing skills from 1-300, together.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Cooking + Fishing (1-300)',
+  {
+    condition_suggested = function()
+      return (skill('Cooking') > 0) or (skill('Fishing') > 0)
+    end,
+    description = 'This guide will walk you through leveling both your Cooking and Fishing skills from 1-300, together.',
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 before you can learn professions.
@@ -3059,10 +3088,14 @@ _<Create 35 Poached Sunscale Salmon or Nightfin Soup>_
 |tip The recipe you use will depend on which fish you caught easier in an earlier step.
 |tip Cook whichever of these fish you have.
 Reach Skill 300 in Cooking |skill Cooking,300 |goto Feralas 75.65,44.08
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Chunk of Boar Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Chunk of Boar Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Durotar
 path follow smart; loop on; ants curved; dist 20
@@ -3075,10 +3108,14 @@ path	37.94,23.38	40.00,20.80	40.35,17.61	42.55,17.05	44.72,17.22
 path	45.61,15.87
 Kill Boar enemies around this area
 collect Chunk of Boar Meat##769 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Small Egg",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Small Egg',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Mulgore
 path follow smart; loop on; ants curved; dist 20
@@ -3090,10 +3127,14 @@ path	36.60,45.80	41.60,48.60	42.80,53.00	43.60,49.60	46.60,50.20
 path	48.09,53.39	51.19,58.92	53.62,62.28
 Kill Swoop enemies along this path
 collect Small Egg##6889 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Stringy Wolf Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Stringy Wolf Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Silverpine Forest
 path follow smart; loop on; ants curved; dist 20
@@ -3104,10 +3145,14 @@ path	64.00,11.52	65.79,10.72	67.99,8.47	69.34,5.89	68.36,5.26
 path	66.45,5.26
 Kill Worg enemies along this path
 collect Stringy Wolf Meat##2672 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Meaty Bat Wing",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Meaty Bat Wing',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Tirisfal Glades
 path follow smart; loop on; ants curved; dist 20
@@ -3122,10 +3167,14 @@ path	64.99,41.00	63.82,44.53	63.73,47.67	63.23,49.86	63.49,52.65
 path	63.93,55.31
 Kill Bat enemies along this path
 collect Meaty Bat Wing##12223 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Scorpid Stinger",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Scorpid Stinger',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Durotar
 path follow smart; loop on; ants curved; dist 20
@@ -3138,10 +3187,14 @@ path	52.78,58.81	52.26,56.13	51.76,53.68	52.33,52.11	51.49,48.96
 path	52.65,45.64	53.80,45.65
 Kill Scorpid enemies along this path
 collect Scorpid Stinger##5466 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Coyote Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Coyote Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Westfall
@@ -3165,10 +3218,14 @@ path	62.45,42.12
 Kill Coyote enemies along this path
 collect Coyote Meat##2673 |n
 '|goto Westfall 62.45,42.12 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Strider Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Strider Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -3184,10 +3241,14 @@ path	44.23,34.84	44.88,36.86	44.87,38.28	44.26,39.76	45.05,41.47
 path	46.55,43.95	47.19,42.91	49.21,41.46	49.88,39.03	50.32,36.85
 Kill Strider enemies along this path
 collect Strider Meat##5469 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Kodo Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Kodo Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -3197,10 +3258,14 @@ path	45.93,66.82
 Kill Kodo enemies along this path
 collect Kodo Meat##5467 |n
 |tip Thunderheads will not drop this item.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Bear Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Bear Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Darkshore
 path follow smart; loop on; ants curved; dist 20
@@ -3213,10 +3278,14 @@ path	41.39,33.60	41.66,35.17	42.07,37.43	42.42,39.82	43.17,41.92
 path	44.41,42.90	45.25,43.21	45.48,41.84
 Kill Bear enemies along this path
 collect Bear Meat##3173 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Crawler Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Crawler Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Darkshore
@@ -3244,10 +3313,14 @@ path	35.96,73.13
 Kill Crawler enemies along this path
 collect Crawler Meat##2674 |n
 '|goto Darkshore 35.96,73.13 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Crawler Claw",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Crawler Claw',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Darkshore
@@ -3275,20 +3348,28 @@ path	35.96,73.13
 Kill Crawler enemies along this path
 collect Crawler Claw##2675 |n
 '|goto Darkshore 35.96,73.13 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Clam Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Clam Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill enemies around this area
 collect Small Barnacled Clam##5523 |n
 use the Small Barnacled Clam##5523
 collect Clam Meat##5503 |n |goto Ashenvale 11.51,28.67
 You can find more around here [13.09,25.61]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Murloc Fin",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Murloc Fin',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Ashenvale
 path follow smart; loop on; ants curved; dist 20
@@ -3296,10 +3377,14 @@ path	20.90,40.21	21.33,41.92	21.06,43.30	20.66,44.48	19.75,43.65
 path	19.08,42.84	18.81,41.34	18.96,40.20	19.58,41.07
 Kill Saltspittle enemies around this area
 collect Murloc Fin##1468 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Big Bear Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Big Bear Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Ashenvale
 path follow smart; loop on; ants curved; dist 20
@@ -3311,10 +3396,14 @@ path	64.04,43.77	62.76,44.57	63.03,46.48	64.54,48.42	63.80,53.72
 path	64.12,55.74	64.34,58.42	65.19,59.98	66.42,61.67	65.60,63.39
 Kill Bear enemies around this area
 collect Big Bear Meat##3730 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Raptor Egg",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Raptor Egg',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Stranglethorn Vale
@@ -3334,10 +3423,14 @@ path	30.40,23.48	30.64,25.20
 Kill Raptor enemies around this area
 collect Raptor Egg##3685 |n
 '|goto Stranglethorn Vale 30.64,25.20 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Thunder Lizard Tail",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Thunder Lizard Tail',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -3350,10 +3443,14 @@ path	45.56,72.50	45.56,70.73	45.79,69.01	46.03,66.53	45.23,64.79
 path	45.30,63.46	46.25,61.69	46.94,60.01	47.00,58.41
 Kill Thunderhead enemies around this area
 collect Thunder Lizard Tail##5470 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Tangy Clam Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Tangy Clam Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Hillsbrad Foothills
@@ -3381,10 +3478,14 @@ collect Thick-shelled Clam##5524 |n
 use the Thick-shelled Clam##5524
 collect Tangy Clam Meat##5504 |n
 '|goto Hillsbrad Foothills 23.74,64.84 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Tender Crocolisk Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Tender Crocolisk Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Dustwallow Marsh
@@ -3408,10 +3509,14 @@ path	40.81,32.17	41.27,30.48	42.01,28.23
 Kill Drywallow enemies along this path
 collect Tender Crocolisk Meat##3667 |n
 '|goto Dustwallow Marsh 42.01,28.23 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Lion Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Lion Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Hillsbrad Foothills
 path follow smart; loop on; ants curved; dist 20
@@ -3422,10 +3527,14 @@ path	50.74,47.10	53.15,47.46	55.37,44.48	54.69,42.88	56.10,41.00
 path	56.82,37.61
 kill Starving Mountain Lion##2384+
 collect Lion Meat##3731 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Stag Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Stag Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Stonetalon Mountains
@@ -3447,10 +3556,14 @@ path	48.15,33.61	49.75,34.63	50.21,36.84
 Kill Courser enemies along this path
 collect Stag Meat##5471 |n
 '|goto Stonetalon Mountains 50.21,36.84 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Gooey Spider Leg",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Gooey Spider Leg',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Ashenvale
 path follow smart; loop on; ants curved; dist 20
@@ -3460,10 +3573,14 @@ path	29.06,57.28	29.40,55.20	28.00,55.67	27.45,53.31	26.08,51.85
 path	24.96,50.29	25.87,46.65	26.74,48.07	28.74,48.35
 kill Wildthorn Stalker##3819+
 collect Gooey Spider Leg##2251 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Mystery Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Mystery Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Desolace
 path follow smart; loop on; ants curved; dist 20
@@ -3477,10 +3594,14 @@ path	42.23,61.68	42.51,57.62	43.63,55.03	43.45,50.95	41.83,49.60
 path	41.89,45.46	45.18,40.98	45.64,38.42	48.07,39.13	50.82,41.52
 Kill enemies around this area
 collect Mystery Meat##12037 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Red Wolf Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Red Wolf Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map The Hinterlands
 path follow smart; loop on; ants curved; dist 20
@@ -3488,10 +3609,14 @@ path	16.99,49.54	14.76,51.94	16.34,54.97	19.20,54.81	21.00,55.69
 path	22.67,53.75	24.13,52.68	22.29,51.46	20.61,50.68	19.10,49.49
 kill Mangy Silvermane##2923+
 collect Red Wolf Meat##12203 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Turtle Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Turtle Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Hillsbrad Foothills
@@ -3517,10 +3642,14 @@ path	61.27,45.60	59.58,47.03	58.10,47.76	56.82,50.74	55.45,57.43
 kill Snapjaw##2408+
 collect Turtle Meat##3712 |n
 '|goto Hillsbrad Foothills 55.45,57.43 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Tiger Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Tiger Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Stranglethorn Vale
 path follow smart; loop on; ants curved; dist 20
@@ -3530,10 +3659,14 @@ path	34.58,13.61	35.43,12.75	36.60,13.36	37.41,14.77	38.14,14.47
 path	38.22,13.67	38.39,12.20	39.14,10.33	39.08,9.00	37.71,9.37
 Kill Tiger enemies around this area
 collect Tiger Meat##12202 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Raptor Flesh",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Raptor Flesh',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Stranglethorn Vale
@@ -3553,10 +3686,14 @@ path	30.40,23.48	30.64,25.20
 Kill Raptor enemies around this area
 collect Raptor Flesh##12184 |n
 '|goto Stranglethorn Vale 30.64,25.20 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Buzzard Wing",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Buzzard Wing',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Desolace
 path follow smart; loop on; ants curved; dist 20
@@ -3570,62 +3707,90 @@ path	42.23,61.68	42.51,57.62	43.63,55.03	43.45,50.95	41.83,49.60
 path	41.89,45.46	45.18,40.98	45.64,38.42	48.07,39.13	50.82,41.52
 Kill Dread enemies around this area
 collect Buzzard Wing##3404 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Giant Clam Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Giant Clam Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 click Giant Clam##2744+
 |tip They look like large shells underwater around this area.
 |tip Elixirs of Water Breathing are very helpful while farming these.
 collect Giant Clam Meat##4655 |n |goto Stranglethorn Vale 26.75,26.88
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Elements\\Farming Guides\\Essence of Water",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Elements\\Farming Guides\\Essence of Water',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill enemies around this area
 |tip Only Plague Ravagers and Blighted Surges will drop this item.
 collect Essence of Water##7080 |n |goto Eastern Plaguelands 61.65,81.13
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Elements\\Farming Guides\\Living Essence",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Elements\\Farming Guides\\Living Essence',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Tar enemies around this area
 collect Living Essence##12803 |n |goto Un'Goro Crater 46.46,17.23
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Elements\\Farming Guides\\Essence of Fire",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Elements\\Farming Guides\\Essence of Fire',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Follow the path up |goto Un'Goro Crater 52.06,42.40 < 10 |only if walking
 Kill enemies around this area
 collect Essence of Fire##7078 |n |goto Un'Goro Crater 49.32,48.31
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Elements\\Farming Guides\\Essence of Air",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Elements\\Farming Guides\\Essence of Air',
+  {
+    hardcore = true,
+  },
+  [[
 step
 kill Dust Stormer##11744+
 collect Essence of Air##7082 |n |goto Silithus 31.69,18.15
 |tip These have a low drop rate.
 You can find more around [21.34,29.92]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Elements\\Farming Guides\\Essence of Earth",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Elements\\Farming Guides\\Essence of Earth',
+  {
+    hardcore = true,
+  },
+  [[
 step
 kill Desert Rumbler##11746+
 collect Essence of Earth##7076 |n |goto Silithus 22.37,11.12
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Elements\\Farming Guides\\Essence of Undeath",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Elements\\Farming Guides\\Essence of Undeath',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Follow the path |goto Western Plaguelands 56.61,78.55 < 10 |only if walking
 Continue following the path |goto Western Plaguelands 68.58,80.14 < 10 |only if walking
@@ -3637,10 +3802,14 @@ step
 Kill enemies throughout the dungeon
 collect Essence of Undeath##12808 |n
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Elements\\Farming Guides\\Heart of the Wild",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Elements\\Farming Guides\\Heart of the Wild',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Enter the cave |goto Western Plaguelands 64.78,38.69 < 5 |walk
 Kill enemies around this area
@@ -3649,10 +3818,14 @@ Kill enemies around this area
 |tip The enemies share spawn points, so killing the oozes will spawn more elemental enemies.
 collect Heart of the Wild##10286 |n |goto Western Plaguelands 61.43,36.20
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Elements\\Farming Guides\\Ichor of Undeath",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Elements\\Farming Guides\\Ichor of Undeath',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Highborne enemies around this area
 collect Ichor of Undeath##7972 |n |goto Winterspring 52.59,40.68
@@ -3660,79 +3833,117 @@ collect Ichor of Undeath##7972 |n |goto Winterspring 52.59,40.68
 You can find more around: |notinsticky
 [53.62,42.09]
 [56.02,44.24]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Elements\\Farming Guides\\Heart of Fire",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Elements\\Farming Guides\\Heart of Fire',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Entropic enemies around this area
 collect Heart of Fire##7077 |n |goto Felwood 40.92,40.34
 |tip These have a low drop rate.
 You can find more around [42.51,37.87]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Elements\\Farming Guides\\Globe of Water",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Elements\\Farming Guides\\Globe of Water',
+  {
+    hardcore = true,
+  },
+  [[
 step
 kill Toxic Horror##7132+
 collect Globe of Water##7079 |n |goto Felwood 49.48,23.46
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Elements\\Farming Guides\\Core of Earth",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Elements\\Farming Guides\\Core of Earth',
+  {
+    hardcore = true,
+  },
+  [[
 step
 kill Desert Rumbler##11746+
 collect Core of Earth##7075 |n |goto Silithus 22.94,12.29
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Elements\\Farming Guides\\Breath of Wind",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Elements\\Farming Guides\\Breath of Wind',
+  {
+    hardcore = true,
+  },
+  [[
 step
 kill Dust Stormer##11744+
 collect Breath of Wind##7081 |n |goto Silithus 31.69,18.15
 |tip These have a low drop rate.
 You can find more around [21.34,29.92]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Elements\\Farming Guides\\Elemental Fire",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Elements\\Farming Guides\\Elemental Fire',
+  {
+    hardcore = true,
+  },
+  [[
 step
 kill Burning Exile##2760+
 collect Elemental Fire##7068 |n |goto Arathi Highlands 24.80,29.95
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Elements\\Farming Guides\\Elemental Earth",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Elements\\Farming Guides\\Elemental Earth',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Follow the path up |goto Badlands 46.37,77.20
 kill Rock Elemental##92+
 collect Elemental Earth##7067 |n |goto Badlands 43.30,84.24
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Elements\\Farming Guides\\Elemental Water",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Elements\\Farming Guides\\Elemental Water',
+  {
+    hardcore = true,
+  },
+  [[
 step
 kill Cresting Exile##2761+
 collect Elemental Water##7070 |n |goto Arathi Highlands 66.70,29.91
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Elements\\Farming Guides\\Elemental Air",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Elements\\Farming Guides\\Elemental Air',
+  {
+    hardcore = true,
+  },
+  [[
 step
 kill Thundering Exile##2762+
 collect Elemental Air##7069 |n |goto Arathi Highlands 52.03,50.77
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Enchanting (1-300)",{
-condition_suggested=function() return skill('Enchanting') > 0 end,
-description="This guide will walk you through leveling your Enchanting skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Enchanting (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Enchanting') > 0
+    end,
+    description = 'This guide will walk you through leveling your Enchanting skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 to train Apprentice professions.
@@ -4539,30 +4750,42 @@ Reach Skill 300 in Enchanting |skill Enchanting,300
 step
 _Congratulations!_
 You Reached Skill 300 in Enchanting.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Strange Dust",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Strange Dust',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 5-20 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 |tip You may sometimes get Small Glimmering Shards instead of Strange Dust.
 collect Strange Dust##10940 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Lesser Magic Essence",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Lesser Magic Essence',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 3-12 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 |tip You may sometimes get Strange Dust instead of Lesser Magic Essence.
 collect Lesser Magic Essence##10938 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Greater Magic Essence",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Greater Magic Essence',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 9-21 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
@@ -4570,20 +4793,28 @@ Disenchant level 9-21 green weapons and armor
 |tip You may sometimes get Strange Dust instead of Greater Magic Essence.
 |tip You can turn 3 Lesser Magic Essences into a Greater Magic Essence.
 collect Greater Magic Essence##10939 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Lesser Eternal Essence",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Lesser Eternal Essence',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 40-50 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 |tip You may sometimes get Dream Dust instead of Lesser Eternal Essence.
 collect Lesser Eternal Essence##16202 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Greater Eternal Essence",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Greater Eternal Essence',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 45-60 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
@@ -4591,123 +4822,177 @@ Disenchant level 45-60 green weapons and armor
 |tip You may sometimes get Illusion Dust instead of Greater Eternal Essence.
 |tip You can turn 3 Lesser Eternal Essences into a Greater Eternal Essence.
 collect Greater Eternal Essence##16203 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Small Brilliant Shard",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Small Brilliant Shard',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 38-50 blue and green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 |tip You may sometimes get Dream Dust instead of Small Brilliant Shards.
 collect Small Brilliant Shard##14343 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Large Brilliant Shard",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Large Brilliant Shard',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 50-58 blue weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 |tip You may very rarely get Nexus Crystals instead of Large Brilliant Shards.
 collect Large Brilliant Shard##14344 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Illusion Dust",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Illusion Dust',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 45-60 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 |tip You may sometimes get Greater Eternal Essence instead of Illusion Dust.
 collect Illusion Dust##16204 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Lesser Astral Essence",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Lesser Astral Essence',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 20-25 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 collect Lesser Astral Essence##10998 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Greater Astral Essence",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Greater Astral Essence',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 20-30 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 collect Greater Astral Essence##11082 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Soul Dust",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Soul Dust',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 25-35 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 collect Soul Dust##11083 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Lesser Mystic Essence",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Lesser Mystic Essence',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 30-35 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 collect Lesser Mystic Essence##11134 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Greater Mystic Essence",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Greater Mystic Essence',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 35-40 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 collect Greater Mystic Essence##11135 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Vision Dust",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Vision Dust',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 35-45 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 collect Vision Dust##11137 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Dream Dust",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Dream Dust',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 45-55 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 collect Dream Dust##11176 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Greater Nether Essence",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Greater Nether Essence',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 45-50 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 collect Greater Nether Essence##11175 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Lesser Nether Essence",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Lesser Nether Essence',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 40-45 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 collect Lesser Nether Essence##11174 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Engineering (1-300)",{
-condition_suggested=function() return skill('Engineering') > 0 end,
-description="This guide will walk you through leveling your Engineering skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Engineering\\Engineering (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Engineering') > 0
+    end,
+    description = 'This guide will walk you through leveling your Engineering skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 to train Apprentice professions.
@@ -5741,12 +6026,18 @@ Reach Skill 300 in Engineering |skill Engineering,300 |goto Orgrimmar 79.61,22.9
 step
 _Congratulations!_
 You Reached Skill 300 in Engineering.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\First Aid\\First Aid (1-300)",{
-condition_suggested=function() return skill('First Aid') > 0 end,
-description="This guide will walk you through leveling your First Aid skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\First Aid\\First Aid (1-300)',
+  {
+    condition_suggested = function()
+      return skill('First Aid') > 0
+    end,
+    description = 'This guide will walk you through leveling your First Aid skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 talk Arnok##3373
 |tip Inside the building.
@@ -5928,12 +6219,18 @@ step
 Open Your First Aid Crafting Panel:
 _<Create 20 Heavy Runecloth Bandages>_
 Reach Skill 300 First in Aid |skill First Aid,300
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Fishing (1-300)",{
-condition_suggested=function() return skill('Fishing') > 0 end,
-description="This guide will walk you through leveling your Fishing skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Fishing\\Fishing (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Fishing') > 0
+    end,
+    description = 'This guide will walk you through leveling your Fishing skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 to train Apprentice professions.
@@ -6073,81 +6370,123 @@ use the Bright Baubles##6532+
 |tip These will allow you to catch fish easier.
 |tip Try to keep one of these active whenever you are fishing.
 Reach Skill 300 in Fishing |skill Fishing,300 |goto The Hinterlands 81.66,82.38
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Raw Brilliant Smallfish",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Fishing\\Farming Guides\\Raw Brilliant Smallfish',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Fish in the open water
 collect Raw Brilliant Smallfish##6291 |n |goto Mulgore 48.60,52.66
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Raw Slitherskin Mackerel",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Fishing\\Farming Guides\\Raw Slitherskin Mackerel',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Fish in the open water
 collect Raw Slitherskin Mackerel##6303 |n |goto Durotar 56.41,10.85
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Raw Rainbow Fin Albacore",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Fishing\\Farming Guides\\Raw Rainbow Fin Albacore',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Fish in the Open Water
 collect Raw Rainbow Fin Albacore##6361 |n |goto The Barrens 63.19,38.19
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Raw Longjaw Mud Snapper",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Fishing\\Farming Guides\\Raw Longjaw Mud Snapper',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Fish in the Open Water
 collect Raw Longjaw Mud Snapper##6289 |n |goto Orgrimmar 69.75,30.12
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Raw Sagefish",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Fishing\\Farming Guides\\Raw Sagefish',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Fish from Sagefish Schools in the water around this area
 collect Raw Sagefish##21071 |n |goto Hillsbrad Foothills 62.51,43.06
 |tip Follow the river north for more schools.
 |tip You will need level 100 Fishing to catch these.
 You can find more around [69.87,13.66]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Raw Bristle Whisker Catfish",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Fishing\\Farming Guides\\Raw Bristle Whisker Catfish',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Fish in the Open Water
 collect Raw Bristle Whisker Catfish##6308 |n |goto Orgrimmar 69.75,30.12
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Raw Mithril Head Trout",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Fishing\\Farming Guides\\Raw Mithril Head Trout',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Fish in the Open Water
 collect Raw Mithril Head Trout##8365 |n |goto Desolace 21.47,74.18
 |tip You will need level 130 Fishing to catch these.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Raw Rockscale Cod",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Fishing\\Farming Guides\\Raw Rockscale Cod',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Fish in the Open Water
 collect Raw Rockscale Cod##6362 |n |goto Stranglethorn Vale 26.22,73.57
 |tip You will need level 130 Fishing to catch these.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Farming Guides\\Raw Sunscale Salmon",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Fishing\\Farming Guides\\Raw Sunscale Salmon',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Fish in the Open Water
 collect Raw Sunscale Salmon##13760 |n |goto Feralas 75.58,44.52
 |tip You will need level 205 Fishing to catch these.
 |tip This fish can only be caught during the day; they cannot be caught between midnight and 6 AM server time.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Herbalism (1-300)",{
-condition_suggested=function() return skill('Herbalism') > 0 end,
-description="This guide will walk you through leveling your Herbalism skill from 1-300.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Herbalism (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Herbalism') > 0
+    end,
+    description = 'This guide will walk you through leveling your Herbalism skill from 1-300.',
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 before you can learn professions.
@@ -6288,10 +6627,14 @@ path	63.98,59.07
 Reach Skill 300 in Herbalism |skill Herbalism,300
 |tip Click herbs as you follow the path around this area.
 |tip Track them on your minimap with "Find Herbs".
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Silverleaf",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Silverleaf',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Tirisfal Glades
 path follow smart; loop on; ants curved; dist 20
@@ -6305,10 +6648,14 @@ path	53.81,53.15	52.04,54.99
 Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 collect Silverleaf##765 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Peacebloom",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Peacebloom',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Tirisfal Glades
 path follow smart; loop on; ants curved; dist 20
@@ -6322,10 +6669,14 @@ path	53.81,53.15	52.04,54.99
 Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 collect Peacebloom##2447 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Earthroot",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Earthroot',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Mulgore
 path follow smart; loop on; ants curved; dist 20
@@ -6359,10 +6710,14 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 15 Herbalism to collect these.
 collect Earthroot##2449 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Mageroyal",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Mageroyal',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -6383,10 +6738,14 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 50 Herbalism to collect these.
 collect Mageroyal##785 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Stranglekelp",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Stranglekelp',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Stranglethorn Vale
@@ -6418,10 +6777,14 @@ Click herbs as you follow the path around this area
 |tip You will need level 85 Herbalism to collect these.
 collect Stranglekelp##3820 |n
 '|goto Stranglethorn Vale 27.56,22.38 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Briarthorn",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Briarthorn',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Silverpine Forest
@@ -6453,10 +6816,14 @@ Click herbs as you follow the path around this area
 |tip You will need level 70 Herbalism to collect these.
 collect Briarthorn##2450 |n
 '|goto Silverpine Forest 49.04,32.38 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Swiftthistle",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Swiftthistle',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Silverpine Forest
@@ -6490,10 +6857,14 @@ Click herbs as you follow the path around this area
 |tip You will need level 70 Herbalism to collect these.
 collect Swiftthistle##2452 |n
 '|goto Silverpine Forest 49.04,32.38 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Bruiseweed",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Bruiseweed',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Bruiseweed_1"
 map Ashenvale
@@ -6521,10 +6892,14 @@ Click herbs as you follow the path around this area
 |tip You will need level 100 Herbalism to collect these.
 collect Bruiseweed##2453 |n
 '|goto Ashenvale 30.47,44.71 < 20 |noway |c |next "Bruiseweed_1"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Wild Steelbloom",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Wild Steelbloom',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Stranglethorn Vale
 path follow smart; loop on; ants curved; dist 20
@@ -6539,10 +6914,14 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 115 Herbalism to collect these.
 collect Wild Steelbloom##3355 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Grave Moss",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Grave Moss',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Click herbs around this area |goto Desolace 54.10,61.43
 |tip Track them on your minimap with "Find Herbs".
@@ -6550,10 +6929,14 @@ Click herbs around this area |goto Desolace 54.10,61.43
 |tip You will need level 120 Herbalism to collect these.
 collect Grave Moss##3369 |n |goto Desolace 54.10,61.43
 You can find more around this area [50.23,57.64]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Kingsblood",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Kingsblood',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Wetlands
 path follow smart; loop on; ants curved; dist 20
@@ -6566,10 +6949,14 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 125 Herbalism to collect these.
 collect Kingsblood##3356 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Liferoot",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Liferoot',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Wetlands
@@ -6591,10 +6978,14 @@ Click herbs as you follow the path around this area
 |tip You will need level 150 Herbalism to collect these.
 collect Liferoot##3357 |n
 '|goto Wetlands 39.88,29.56 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Fadeleaf",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Fadeleaf',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Swamp of Sorrows
 path follow smart; loop on; ants curved; dist 20
@@ -6607,10 +6998,14 @@ Click herbs as you follow the path around this area
 |tip Watch out for horde guards along the main road.
 |tip You will need level 160 Herbalism to collect these.
 collect Fadeleaf##3818 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Goldthorn",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Goldthorn',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Stranglethorn Vale
@@ -6641,10 +7036,14 @@ Click herbs as you follow the path around this area
 |tip You will need level 170 Herbalism to collect these.
 collect Goldthorn##3821 |n
 '|goto Stranglethorn Vale 30.40,67.21 < 30 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Khadgar's Whisker",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  "Profession Guides\\Herbalism\\Farming Guides\\Khadgar's Whisker",
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Stranglethorn Vale
@@ -6675,10 +7074,14 @@ Click herbs as you follow the path around this area
 |tip You will need level 185 Herbalism to collect these.
 collect Khadgar's Whisker##3358 |n
 '|goto Stranglethorn Vale 30.40,67.21 < 30 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Wintersbite",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Wintersbite',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Alterac Mountains
@@ -6702,20 +7105,28 @@ Click herbs as you follow the path around this area
 |tip You will need level 195 Herbalism to collect these.
 collect Wintersbite##3819 |n
 '|goto Alterac Mountains 36.21,70.12 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Wildvine",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Wildvine',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Vilebranch Enemies around this area
 collect Wildvine##8153 |n |goto The Hinterlands 47.57,66.46
 |tip They have a 10% chance to be gathered from Purple Lotus around the Altar.
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 210 Herbalism to collect these.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Firebloom",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Firebloom',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Blasted Lands
 path follow smart; loop on; ants curved; dist 20
@@ -6728,10 +7139,14 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 205 Herbalism to collect these.
 collect Firebloom##4625 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Purple Lotus",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Purple Lotus',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Azshara
 path follow smart; loop on; ants curved; dist 20
@@ -6748,10 +7163,14 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 210 Herbalism to collect these.
 collect Purple Lotus##8831 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Arthas' Tears",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  "Profession Guides\\Herbalism\\Farming Guides\\Arthas' Tears",
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Western Plaguelands
 path follow smart; loop on; ants curved; dist 20
@@ -6770,10 +7189,14 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 220 Herbalism to collect these.
 collect Arthas' Tears##8836 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Sungrass",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Sungrass',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Blasted Lands
 path follow smart; loop on; ants curved; dist 20
@@ -6786,10 +7209,14 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 230 Herbalism to collect these.
 collect Sungrass##8838 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Blindweed",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Blindweed',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Swamp of Sorrows
 path follow smart; loop on; ants curved; dist 20
@@ -6810,10 +7237,14 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 235 Herbalism to collect these.
 collect Blindweed##8839 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Ghost Mushroom",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Ghost Mushroom',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map The Hinterlands
 path follow smart; loop on; ants curved; dist 20
@@ -6824,10 +7255,14 @@ Click herbs as you follow the path around this area
 |tip You will need level 245 Herbalism to collect these.
 |tip They spawn inside of the cave along this path as well as outside of it.
 collect Ghost Mushroom##8845 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Gromsblood",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Gromsblood',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Blasted Lands
 path follow smart; loop on; ants curved; dist 20
@@ -6840,10 +7275,14 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 250 Herbalism to collect these.
 collect Gromsblood##8846 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Golden Sansam",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Golden Sansam',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Azshara
 path follow smart; loop on; ants curved; dist 20
@@ -6859,10 +7298,14 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 260 Herbalism to collect these.
 collect Golden Sansam##13464 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Dreamfoil",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Dreamfoil',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Azshara
 path follow smart; loop on; ants curved; dist 20
@@ -6878,10 +7321,14 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 270 Herbalism to collect these.
 collect Dreamfoil##13463 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Mountain Silversage",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Mountain Silversage',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Un'Goro Crater
 path follow smart; loop on; ants curved; dist 20
@@ -6903,10 +7350,14 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 280 Herbalism to collect these.
 collect Mountain Silversage##13465 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Plaguebloom",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Plaguebloom',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Eastern Plaguelands
 path follow smart; loop on; ants curved; dist 20
@@ -6919,10 +7370,14 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 285 Herbalism to collect these.
 collect Plaguebloom##13466 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Icecap",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Icecap',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Winterspring
 path follow smart; loop on; ants curved; dist 20
@@ -6940,10 +7395,14 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 290 Herbalism to collect these.
 collect Icecap##13467 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Black Lotus",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Black Lotus',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Burning Steppes
@@ -6975,12 +7434,18 @@ collect Black Lotus##13468 |n
 |tip These are extremely rare.
 |tip Pick other herbs on the path to have a chance to spawn them.
 '|goto Burning Steppes 75.56,48.10 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leatherworking (1-300)",{
-condition_suggested=function() return skill('Leatherworking') > 0 end,
-description="This guide will walk you through leveling your Leatherworking skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Leatherworking\\Leatherworking (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Leatherworking') > 0
+    end,
+    description = 'This guide will walk you through leveling your Leatherworking skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 to train Apprentice professions.
@@ -7496,12 +7961,18 @@ Reach Skill 300 in Leatherworking |skill Leatherworking,300
 step
 _Congratulations!_
 You Reached Skill 300 in Leatherworking.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Lockpicking\\Lockpicking (1-300)",{
-condition_suggested=function() return skill('Lockpicking') > 0 end,
-description="This guide will walk you through leveling your Lockpicking skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Lockpicking\\Lockpicking (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Lockpicking') > 0
+    end,
+    description = 'This guide will walk you through leveling your Lockpicking skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 20 |ding 20
 |tip You must be at least level 16 before you can learn Lockpicking.
@@ -7671,12 +8142,18 @@ _Inside the Blackrock Depths Dungeon:_
 |tip Outside the dungeon portal, right-click your player portrait.
 |tip Select "Reset all instances" and re-enter the dungeon to repeat this process.
 Reach Skill 300 in Lockpicking |skill Lockpicking,300
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Mining (1-300)",{
-condition_suggested=function() return skill('Mining') > 0 end,
-description="This guide will walk you through leveling your Mining skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Mining (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Mining') > 0
+    end,
+    description = 'This guide will walk you through leveling your Mining skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 before you can learn professions.
@@ -7815,10 +8292,14 @@ path	71.39,73.80	71.00,79.21	68.32,79.90
 Reach Skill 300 in Mining |skill Mining,300
 |tip Click ore as you follow the path around this area.
 |tip Track them on your minimap with "Find Minerals".
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Copper Ore",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Copper Ore',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Durotar
 path follow smart; loop on; ants curved; dist 20
@@ -7831,10 +8312,14 @@ path	49.70,21.37	49.54,18.59
 Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 collect Copper Ore##2770 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Rough Stone",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Rough Stone',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Durotar
 path follow smart; loop on; ants curved; dist 20
@@ -7847,10 +8332,14 @@ path	49.70,21.37	49.54,18.59
 Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 collect Rough Stone##2835 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Tin Ore",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Tin Ore',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -7870,10 +8359,14 @@ Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 |tip You will need level 65 Mining to collect these.
 collect Tin Ore##2771 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Coarse Stone",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Coarse Stone',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -7893,10 +8386,14 @@ Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 |tip You will need level 65 Mining to collect these.
 collect Coarse Stone##2836 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Silver Ore",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Silver Ore',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -7916,10 +8413,14 @@ Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 |tip You will need level 75 Mining to collect these.
 collect Silver Ore##2775 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Moss Agate",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Moss Agate',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -7940,10 +8441,14 @@ Click ore as you follow the path around this area
 |tip You will need level 65 Mining to collect Tin Ore nodes and 75 to collect Silver Ore nodes.
 collect Moss Agate##1206 |n
 |tip These are a rare drop from Tin and Silver Ore nodes.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Iron Ore",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Iron Ore',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Arathi Highlands
 path follow smart; loop on; ants curved; dist 20
@@ -7965,10 +8470,14 @@ Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 |tip You will need level 125 Mining to collect these.
 collect Iron Ore##2772 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Heavy Stone",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Heavy Stone',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Arathi Highlands
 path follow smart; loop on; ants curved; dist 20
@@ -7990,10 +8499,14 @@ Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 |tip You will need level 125 Mining to collect these.
 collect Heavy Stone##2838 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Gold Ore",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Gold Ore',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Arathi Highlands
 path follow smart; loop on; ants curved; dist 20
@@ -8015,10 +8528,14 @@ Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 |tip You will need level 155 Mining to collect these.
 collect Gold Ore##2776 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Mithril Ore",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Mithril Ore',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Badlands
 path follow smart; loop on; ants curved; dist 20
@@ -8029,10 +8546,14 @@ Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 |tip You will need level 175 Mining to collect these.
 collect Mithril Ore##3858 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Solid Stone",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Solid Stone',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Badlands
 path follow smart; loop on; ants curved; dist 20
@@ -8043,10 +8564,14 @@ Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 |tip You will need level 175 Mining to collect these.
 collect Solid Stone##7912 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Truesilver Ore",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Truesilver Ore',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Badlands
 path follow smart; loop on; ants curved; dist 20
@@ -8057,10 +8582,14 @@ Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 |tip You will need level 230 Mining to collect these.
 collect Truesilver Ore##7911 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Dark Iron Ore",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Dark Iron Ore',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Burning Steppes
 path follow smart; loop on; ants curved; dist 20
@@ -8074,10 +8603,14 @@ Click ore as you follow the path around this area
 |tip These are a rare spawn.
 |tip However, they can be found more consistently inside the Blackrock Depths dungeon and Molten Core raid.
 collect Dark Iron Ore##11370 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Thorium Ore",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Thorium Ore',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Un'Goro Crater
 path follow smart; loop on; ants curved; dist 20
@@ -8097,10 +8630,14 @@ Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 |tip You will need level 245 Mining to collect these.
 collect Thorium Ore##10620 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Dense Stone",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Dense Stone',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Un'Goro Crater
 path follow smart; loop on; ants curved; dist 20
@@ -8120,10 +8657,14 @@ Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 |tip You will need level 245 Mining to collect these.
 collect Dense Stone##12365 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Guardian Stone",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Guardian Stone',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Un'Goro Crater
 path follow smart; loop on; ants curved; dist 20
@@ -8134,10 +8675,14 @@ path	56.97,14.88	53.59,13.78	51.39,17.24	48.13,13.45
 Kill Stone Guardians as you follow the path around this area
 |tip These are level 60-61 Elite enemies.
 collect Guardian Stone##12809 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Elementium Ore",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Elementium Ore',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Follow the path up |goto Searing Gorge 33.53,75.22 < 20 |only if walking
 Enter Blackrock Mountain |goto Searing Gorge 34.76,83.98 < 7 |walk
@@ -8153,12 +8698,18 @@ Inside the Blackwing Lair Raid:
 kill Blackwing Technician##13996+
 collect Elementium Ore##18562 |n
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Skinning (1-300)",{
-condition_suggested=function() return skill('Skinning') > 0 end,
-description="This guide will walk you through leveling your Skinning skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Skinning (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Skinning') > 0
+    end,
+    description = 'This guide will walk you through leveling your Skinning skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 before you can learn professions.
@@ -8259,20 +8810,28 @@ You can find more around: |notinsticky
 [49.69,28.62]
 [46.69,24.68]
 [44.94,22.35]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Green Whelp Scale",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Green Whelp Scale',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Whelp enemies around this area
 |tip Skin their corpses.
 |tip You will need level 170 Skinning to collect these.
 collect Green Whelp Scale##7392 |n |goto Swamp of Sorrows 13.29,64.20
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Black Whelp Scale",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Black Whelp Scale',
+  {
+    hardcore = true,
+  },
+  [[
 step
 kill Black Dragon Whelp##441+
 |tip Skin their corpses.
@@ -8283,28 +8842,40 @@ You can find more around: |notinsticky
 [46.74,77.01]
 [57.29,75.08]
 [66.62,76.17]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Ruined Leather Scraps",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Ruined Leather Scraps',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill enemies around this area
 |tip Skin their corpses.
 collect Ruined Leather Scraps##2934 |n |goto Durotar 43.89,17.49
 You can find more around [39.47,17.22]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Light Leather",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Light Leather',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill enemies around this area
 |tip Skin their corpses.
 collect Light Leather##2318 |n |goto Durotar 43.89,17.49
 You can find more around [39.47,17.22]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Thin Kodo Leather",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Thin Kodo Leather',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Mulgore
 path follow smart; loop on; ants curved; dist 20
@@ -8312,10 +8883,14 @@ path	36.83,37.11	40.70,41.79	47.76,36.77	51.48,25.17	49.44,17.26
 path	43.79,16.61	35.19,17.28	31.28,20.42	34.20,31.05
 Kill Kodo enemies as you follow the path around this area
 collect Thin Kodo Leather##5082 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Light Hide",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Light Hide',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -8327,30 +8902,42 @@ Kill enemies as you follow the path around this area
 |tip You will need level 100 Skinning to collect these.
 collect Light Hide##783 |n
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Slimy Murloc Scale",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Slimy Murloc Scale',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Vile Fin enemies around this area
 collect Slimy Murloc Scale##5784 |n |goto Silverpine Forest 78.30,30.76
 You can find more around: |notinsticky
 [80.06,28.45]
 [73.54,17.09]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Medium Leather",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Medium Leather',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Yeti enemies around this area
 |tip Skin their corpses.
 |tip You can find more inside the cave.
 |tip You will need level 155 Skinning to collect these.
 collect Medium Leather##2319 |n |goto Hillsbrad Foothills 46.12,31.76
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Medium Hide",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Medium Hide',
+  {
+    hardcore = true,
+  },
+  [[
 step
 kill Blackened Basilisk##4044+
 |tip Skin their corpses.
@@ -8358,10 +8945,14 @@ kill Blackened Basilisk##4044+
 collect Medium Hide##4232 |n |goto Stonetalon Mountains 44.88,41.82
 |tip These have a low drop rate.
 You can find more around [36.49,48.50]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Heavy Leather",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Heavy Leather',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill enemies around this area
 |tip Only beast enemies will be skinnable.
@@ -8371,28 +8962,40 @@ collect Heavy Leather##4234 |n |goto Dustwallow Marsh 40.73,58.37
 You can find more around: |notinsticky
 [43.35,50.06]
 [40.42,41.57]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Raptor Hide",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Raptor Hide',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Highland enemies around this area
 collect Raptor Hide##4461 |n |goto Arathi Highlands 52.39,67.61
 You can find more around [47.28,78.85]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Heavy Hide",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Heavy Hide',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill enemies around this area
 |tip Skin their corpses.
 |tip You will need level 205 Skinning to collect these.
 collect Heavy Hide##4235 |n |goto The Hinterlands 16.19,50.97
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Turtle Scale",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Turtle Scale',
+  {
+    hardcore = true,
+  },
+  [[
 step
 kill Steeljaw Snapper##14123+
 |tip Skin their corpses.
@@ -8402,17 +9005,25 @@ You can find more around: |notinsticky
 [67.57,28.82]
 [67.85,35.25]
 [68.10,39.75]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Thick Murloc Scale",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Thick Murloc Scale',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Mirefin enemies around this area
 collect Thick Murloc Scale##5785 |n |goto Dustwallow Marsh 58.78,9.45
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Thick Leather",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Thick Leather',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Ravasaur enemies around this area
 |tip Skin their corpses.
@@ -8421,10 +9032,14 @@ collect Thick Leather##4304 |n |goto Un'Goro Crater 67.37,72.59
 You can find more around: |notinsticky
 [65.75,64.16]
 [70.21,55.33]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Thick Hide",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Thick Hide',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill enemies around this area
 |tip Only beast enemies will be skinnable.
@@ -8435,10 +9050,14 @@ collect Thick Hide##8169 |n |goto Un'Goro Crater 67.37,72.59
 You can find more around: |notinsticky
 [65.75,64.16]
 [70.21,55.33]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Worn Dragonscale",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Worn Dragonscale',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill enemies around this area
 |tip Skin their corpses.
@@ -8446,10 +9065,14 @@ Kill enemies around this area
 collect Worn Dragonscale##8165 |n |goto Dustwallow Marsh 44.75,66.19
 |tip These have a low drop rate.
 You can find more around [44.71,74.76]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Scorpid Scale",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Scorpid Scale',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Scorpid enemies around this area
 |tip Skin their corpses.
@@ -8459,10 +9082,14 @@ You can find more around: |notinsticky
 [50.33,48.18]
 [44.99,44.85]
 [39.08,34.58]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Devilsaur Leather",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Devilsaur Leather',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Devilsaur enemies around this area
 |tip Skin their corpses.
@@ -8476,10 +9103,14 @@ You can find more around: |notinsticky
 [71.30,51.78]
 [68.80,26.05]
 [31.30,25.52]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Rugged Leather",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Rugged Leather',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Ice Thistle enemies around this area
 |tip You can find more inside the cave.
@@ -8487,10 +9118,14 @@ Kill Ice Thistle enemies around this area
 |tip You will need level 275 Skinning to collect these.
 collect Rugged Leather##8170 |n |goto Winterspring 66.43,44.38
 You can find more inside the cave at [67.67,41.72]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Warbear Leather",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Warbear Leather',
+  {
+    hardcore = true,
+  },
+  [[
 step
 kill Diseased Grizzly##1816+
 |tip Skin their corpses.
@@ -8501,10 +9136,14 @@ You can find more around: |notinsticky
 [58.69,58.24]
 [57.20,52.78]
 [61.55,52.23]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Green Dragonscale",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Green Dragonscale',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Swamp of Sorrows
 path follow smart; loop on; ants curved; dist 20
@@ -8517,10 +9156,14 @@ Kill Dragonkin enemies around this area as you follow the path
 |tip You will need level 205 Skinning to collect these.
 collect Green Dragonscale##15412 |n
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Blue Dragonscale",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Blue Dragonscale',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill enemies around this area
 |tip Any Draconic or Blue enemy.
@@ -8534,10 +9177,14 @@ You can find more around: |notinsticky
 [42.89,82.91]
 [39.79,83.98]
 [37.50,80.60]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Rugged Hide",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Rugged Hide',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Ice Thistle enemies around this area
 |tip You can find more inside the cave.
@@ -8546,10 +9193,14 @@ Kill Ice Thistle enemies around this area
 collect Rugged Hide##8171 |n |goto Winterspring 66.43,44.38
 |tip These have a low drop rate.
 You can find more inside the cave at [67.67,41.72]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Black Dragonscale",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Black Dragonscale',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill enemies around this area
 |tip Most of the enemies around this area are Elite.
@@ -8558,10 +9209,14 @@ Kill enemies around this area
 collect Black Dragonscale##15416 |n |goto Burning Steppes 91.30,35.07
 |tip These have a low drop rate.
 You can find more around [90.73,53.59]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Heavy Scorpid Scale",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Heavy Scorpid Scale',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Stonelash enemies around this area
 |tip Skin their corpses.
@@ -8576,10 +9231,14 @@ You can find more around: |notinsticky
 [46.67,70.30]
 [45.02,83.62]
 [40.32,81.44]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Core Leather",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Core Leather',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Enter the Molten Core Raid:
 Kill Ancient Core Hounds and Magmadar
@@ -8587,20 +9246,28 @@ Kill Ancient Core Hounds and Magmadar
 |tip Skin their corpses.
 |tip Level 61's require 305 Skinning, level 62's require 310 Skinning, and bosses require 315 Skinning.
 collect Core Leather##17012 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Scale of Onyxia",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Scale of Onyxia',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Enter the Onyxia's Lair Raid:
 kill Onyxia##10184
 |tip Skin its corpse.
 |tip You will need level 315 Skinning to collect these.
 collect Scale of Onyxia##15410 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Red Dragonscale",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Red Dragonscale',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Follow the path up |goto Wetlands 74.18,47.32 < 20 |only if walking
 Kill Dragonkin enemies around this area
@@ -8613,36 +9280,54 @@ collect Red Dragonscale##15414 |n |goto Wetlands 86.54,51.83
 You can find more around: |notinsticky
 [87.95,64.81]
 [82.51,70.50]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Primal Bat Leather",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Primal Bat Leather',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Primal Bat Leather is currently unobtainable in Classic
 It is dropped from High Priestess Jeklik in the Zul'Gurub raid
 Zul'Gurub will not be added to Classic until Phase 4
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Primal Tiger Leather",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Primal Tiger Leather',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Primal Tiger Leather is currently unobtainable in Classic
 It is dropped from High Priest Thekal in the Zul'Gurub raid
 Zul'Gurub will not be added to Classic until Phase 4
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Dreamscale",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Dreamscale',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Dreamscale is currently unobtainable in Classic
 They are dropped from the four Green Dragon world bosses
 They will not be added to Classic until Phase 4
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Tailoring (1-300)",{
-condition_suggested=function() return skill('Tailoring') > 0 end,
-description="This guide will walk you through leveling your Tailoring skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Tailoring\\Tailoring (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Tailoring') > 0
+    end,
+    description = 'This guide will walk you through leveling your Tailoring skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 to train professions.
@@ -9157,10 +9842,14 @@ Reach Skill 300 in Tailoring |skill Tailoring,300
 step
 _Congratulations!_
 You Reached Skill 300 in Tailoring.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Linen Cloth",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Tailoring\\Farming Guides\\Linen Cloth',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Follow the path |goto Orgrimmar 52.00,57.84 < 15 |only if walking
 Follow the path down |goto Orgrimmar 56.07,41.08 < 10 |only if walking
@@ -9169,51 +9858,75 @@ Enter the Ragefire Chasm dungeon |goto Orgrimmar 52.75,48.86 < 7 |c
 step
 Kill Ragefire enemies throughout the dungeon
 collect Linen Cloth##2589 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Wool Cloth",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Tailoring\\Farming Guides\\Wool Cloth',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Foulweald enemies around this area
 collect Wool Cloth##2592 |n |goto Ashenvale/0 54.08,62.60
 You can find more around:
 [goto Ashenvale/0 49.65,60.58]
 [goto Ashenvale/0 56.36,63.49]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Silk Cloth",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Tailoring\\Farming Guides\\Silk Cloth',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Galak enemies around this area
 |tip You can find more inside the cave.
 collect Silk Cloth##4306 |n |goto Thousand Needles 44.01,37.41
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Mageweave Cloth",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Tailoring\\Farming Guides\\Mageweave Cloth',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Dunemaul enemies around this area
 collect Mageweave Cloth##4338 |n |goto Tanaris 40.50,55.50
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Runecloth",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Tailoring\\Farming Guides\\Runecloth',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Blackrock enemies around this area
 |tip You can find more inside the building.
 collect Runecloth###14047 |n |goto Burning Steppes 42.17,35.64
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Felcloth",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Tailoring\\Farming Guides\\Felcloth',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Jadefire enemies around this area
 collect Felcloth##14256 |n |goto Felwood 37.17,67.00
 You can find more around [32.71,66.66]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Mooncloth",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Tailoring\\Farming Guides\\Mooncloth',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Farm_Felcloth"
 Kill Jadefire enemies around this area
@@ -9226,39 +9939,55 @@ _<Create Mooncloth>_
 |tip This spell has a 4 day cooldown.
 collect Mooncloth##14342 |n |goto Ashenvale 60.19,72.90
 Click here to farm more Felcloth |confirm |next "Farm_Felcloth"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Spider's Silk",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  "Profession Guides\\Tailoring\\Farming Guides\\Spider's Silk",
+  {
+    hardcore = true,
+  },
+  [[
 step
 Enter the cave |goto Wetlands 52.79,62.90 < 20 |walk
 Kill enemies around this area
 |tip Inside the cave.
 collect Spider's Silk##3182 |n |goto Wetlands 48.51,60.67
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Thick Spider's Silk",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  "Profession Guides\\Tailoring\\Farming Guides\\Thick Spider's Silk",
+  {
+    hardcore = true,
+  },
+  [[
 step
 Follow the path up |goto Eastern Plaguelands 77.56,47.20 < 10 |only if walking
 Kill Crypt enemies around this area
 |tip You can find more inside the nearby crypt buildings.
 collect Thick Spider's Silk##4337 |n |goto Eastern Plaguelands 83.60,42.07
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Shadow Silk",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Tailoring\\Farming Guides\\Shadow Silk',
+  {
+    hardcore = true,
+  },
+  [[
 step
 kill Deathstrike Tarantula##769+
 collect Shadow Silk##10285 |n |goto Swamp of Sorrows 58.74,62.39
 |tip These have a low drop rate.
 You can find more around [66.70,68.65]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Ironweb Spider Silk",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Tailoring\\Farming Guides\\Ironweb Spider Silk',
+  {
+    hardcore = true,
+  },
+  [[
 step
 kill Sand Skitterer##11738+
 collect Ironweb Spider Silk##14227 |n |goto Silithus 56.25,26.22
@@ -9270,10 +9999,14 @@ You can find more around: |notinsticky
 [38.69,34.85]
 [35.71,30.35]
 [35.29,20.57]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Dropped\\Farming Guides\\Righteous Orb",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Dropped\\Farming Guides\\Righteous Orb',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Enter the Stratholme Dungeon
 |tip You will need to join and form a group for this.
@@ -9284,10 +10017,14 @@ Make your way to the Crusaders' Square
 Kill Crimson enemies around this area
 |tip All Crimson enemies in The Scarlet Bastion have a chance to drop the orb.
 collect Righteous Orb##12811 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Dropped\\Farming Guides\\Demonic Rune",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Dropped\\Farming Guides\\Demonic Rune',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Follow the path up |goto Felwood 38.44,59.39 < 20 |only if walking
 Continue following the path |goto Felwood 37.63,60.96 < 20 |only if walking
@@ -9296,10 +10033,14 @@ Enter the building |goto Felwood 35.39,58.61 < 20 |walk
 Kill Jaedenar enemies around this area
 collect Demonic Rune##12662 |n |goto Felwood 37.61,54.67
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Dropped\\Farming Guides\\Dark Rune",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Dropped\\Farming Guides\\Dark Rune',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Enter the Scholomance Dungeon
 |tip You will need to join and form a group for this.
@@ -9309,10 +10050,14 @@ Kill enemies around this area
 |tip Scholomance Necromancers and Scholomance Dark Summoners are the only enemies besides bosses that will drop them.
 collect Dark Rune##20520 |n
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Dropped\\Farming Guides\\Sharp Claw",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Dropped\\Farming Guides\\Sharp Claw',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Stonetalon Mountains
 path follow smart; loop on; ants curved; dist 20
@@ -9322,10 +10067,14 @@ path	36.03,66.45	36.02,64.80	34.83,62.63	33.70,60.85	32.02,60.86
 Kill enemies around this area
 collect Sharp Claw##5635 |n
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Dropped\\Farming Guides\\Ogre Tannin",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Dropped\\Farming Guides\\Ogre Tannin',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Enter the Dire Maul West Dungeon Entrance
 |tip You will need to join and form a group for this.
@@ -9336,10 +10085,14 @@ click Ogre Tannin Basket##179499
 |tip Once up the first ramp, it will be in the far northwest corner of the room.
 |tip Only one person will be able to loot it.
 collect Ogre Tannin##18240 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Dropped\\Farming Guides\\Small Venom Sac",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Dropped\\Farming Guides\\Small Venom Sac',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Enter the mine |goto Silverpine Forest 35.64,13.54 < 20 |walk
 Kill enemies around this area
@@ -9347,10 +10100,14 @@ Kill enemies around this area
 |tip You can find more outside the mine.
 collect Small Venom Sac##1475 |n |goto Silverpine Forest 35.38,8.06
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Dropped\\Farming Guides\\Huge Venom Sac",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Dropped\\Farming Guides\\Huge Venom Sac',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Silithus
 path follow smart; loop on; ants curved; dist 20
@@ -9362,10 +10119,14 @@ path	52.30,29.17	52.30,29.17
 Kill enemies around this area
 collect Huge Venom Sac##19441 |n
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Dropped\\Farming Guides\\Iridescent Pearl",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Dropped\\Farming Guides\\Iridescent Pearl',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Hillsbrad Foothills
@@ -9395,10 +10156,14 @@ use the Thick-shelled Clam##5524
 collect Iridescent Pearl##5500 |n
 |tip These have a low drop rate.
 '|goto Hillsbrad Foothills 23.74,64.84 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Dropped\\Farming Guides\\Black Pearl",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Dropped\\Farming Guides\\Black Pearl',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map The Hinterlands
 path follow smart; loop on; ants curved; dist 20
@@ -9410,10 +10175,14 @@ collect Big-mouth Clam##7973 |n
 use the Big-mouth Clam##7973
 collect Black Pearl##7971 |n
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Dropped\\Farming Guides\\Golden Pearl",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Dropped\\Farming Guides\\Golden Pearl',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map The Hinterlands
 path follow smart; loop on; ants curved; dist 20
@@ -9425,10 +10194,14 @@ collect Big-mouth Clam##7973 |n
 use the Big-mouth Clam##7973
 collect Golden Pearl##13926 |n
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Dropped\\Farming Guides\\Giant Egg",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Dropped\\Farming Guides\\Giant Egg',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Roc enemies around this area
 |tip They are found all around the zone.
@@ -9437,10 +10210,14 @@ You can find more around: |notinsticky
 [45.55,38.57]
 [44.01,40.45]
 [47.27,46.81]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Dropped\\Farming Guides\\Zesty Clam Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Dropped\\Farming Guides\\Zesty Clam Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map The Hinterlands
 path follow smart; loop on; ants curved; dist 20
@@ -9451,12 +10228,18 @@ Kill Snapjaw enemies around this area
 collect Big-mouth Clam##7973 |n
 use the Big-mouth Clam##7973
 collect Zesty Clam Meat##7974 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Specialization\\Armorsmith\\Armorsmith Questline",{
-condition_suggested=function() return skill('Blacksmithing') >= 200 end,
-description="This guide will walk you through completing the Armorsmith questline for the Blacksmithing profession.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Blacksmithing\\Specialization\\Armorsmith\\Armorsmith Questline',
+  {
+    condition_suggested = function()
+      return skill('Blacksmithing') >= 200
+    end,
+    description = 'This guide will walk you through completing the Armorsmith questline for the Blacksmithing profession.',
+    hardcore = true,
+  },
+  [[
 step
 _NOTE ABOUT BLACKSMITHING SPECIALIZATION:_
 |tip You can only have one Blacksmithing specialization.
@@ -9695,12 +10478,18 @@ step
 _Congratulations!_
 |tip You have become an Blacksmithing Armorsmith.
 Learn Plans From Okothos Ironrager at [Orgrimmar 79.81,24.05]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Specialization\\Weaponsmith\\Weaponsmith Questline",{
-condition_suggested=function() return skill('Blacksmithing') >= 200 end,
-description="This guide will walk you through completing the Weaponsmith questline for the Blacksmithing profession.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Blacksmithing\\Specialization\\Weaponsmith\\Weaponsmith Questline',
+  {
+    condition_suggested = function()
+      return skill('Blacksmithing') >= 200
+    end,
+    description = 'This guide will walk you through completing the Weaponsmith questline for the Blacksmithing profession.',
+    hardcore = true,
+  },
+  [[
 step
 _NOTE ABOUT BLACKSMITHING SPECIALIZATION:_
 |tip You can only have one Blacksmithing specialization.
@@ -9814,11 +10603,15 @@ Learn Plans From Borgosh Corebender at [Orgrimmar 79.42,23.73]
 |tip Master Hammersmith
 |tip Master Swordsmith
 |tip Search the guide menu for the title above to find the questline guide associated with it.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Specialization\\Weaponsmith\\Master Axesmith Questline",{
-description="This guide will walk you through completing the Master Axesmith questline to continue Weaponsmith specialization for the Blacksmithing profession.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Blacksmithing\\Specialization\\Weaponsmith\\Master Axesmith Questline',
+  {
+    description = 'This guide will walk you through completing the Master Axesmith questline to continue Weaponsmith specialization for the Blacksmithing profession.',
+    hardcore = true,
+  },
+  [[
 step
 _NOTE ABOUT BLACKSMITHING SPECIALIZATION:_
 |tip You can only have one Blacksmithing specialization.
@@ -9871,11 +10664,15 @@ learn Dawn's Edge##16970
 step
 _Congratulations!_
 |tip You have become a Master Axesmith.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Specialization\\Weaponsmith\\Master Hammersmith Questline",{
-description="This guide will walk you through completing the Master Hammersmith questline to continue Weaponsmith specialization for the Blacksmithing profession.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Blacksmithing\\Specialization\\Weaponsmith\\Master Hammersmith Questline',
+  {
+    description = 'This guide will walk you through completing the Master Hammersmith questline to continue Weaponsmith specialization for the Blacksmithing profession.',
+    hardcore = true,
+  },
+  [[
 step
 _NOTE ABOUT BLACKSMITHING SPECIALIZATION:_
 |tip You can only have one Blacksmithing specialization.
@@ -9928,11 +10725,15 @@ learn Enchanted Battlehammer##16973
 step
 _Congratulations!_
 |tip You have become a Master Hammersmith.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Specialization\\Weaponsmith\\Master Swordsmith Questline",{
-description="This guide will walk you through completing the Master Swordsmith questline to continue Weaponsmith specialization for the Blacksmithing profession.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Blacksmithing\\Specialization\\Weaponsmith\\Master Swordsmith Questline',
+  {
+    description = 'This guide will walk you through completing the Master Swordsmith questline to continue Weaponsmith specialization for the Blacksmithing profession.',
+    hardcore = true,
+  },
+  [[
 step
 _NOTE ABOUT BLACKSMITHING SPECIALIZATION:_
 |tip You can only have one Blacksmithing specialization.
@@ -9985,11 +10786,15 @@ learn Blazing Rapier##16978
 step
 _Congratulations!_
 |tip You have become a Master Swordsmith.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Specialization\\How to Change Blacksmithing Specialization",{
-description="This guide will walk you through changing your Blacksmithing profession specialization.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Blacksmithing\\Specialization\\How to Change Blacksmithing Specialization',
+  {
+    description = 'This guide will walk you through changing your Blacksmithing profession specialization.',
+    hardcore = true,
+  },
+  [[
 step
 _NOTE:_
 |tip You MUST fully complete the questline for either Armorsmith or Weaponsmith before you can switch specializations.
@@ -10012,12 +10817,18 @@ Enter the building |goto Tanaris 65.41,18.56 < 7 |walk
 click Book "Soothsaying for Dummies"
 |tip Inside the building.
 |tip Choose the dialogue option that matches what you want to do.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Specialization\\Gnomish Engineering\\Gnomish Engineering Questline",{
-condition_suggested=function() return skill('Engineering') >= 200 end,
-description="This guide will walk you through completing the Gnomish Engineering questline for the Engineering profession.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Engineering\\Specialization\\Gnomish Engineering\\Gnomish Engineering Questline',
+  {
+    condition_suggested = function()
+      return skill('Engineering') >= 200
+    end,
+    description = 'This guide will walk you through completing the Gnomish Engineering questline for the Engineering profession.',
+    hardcore = true,
+  },
+  [[
 step
 _NOTE ABOUT GNOMISH ENGINEERING:_
 |tip You cannot specialize in both Gnomish and Goblin Engineering.
@@ -10159,11 +10970,15 @@ _Congratulations!_
 |tip Use the "Gnomish Engineering Card Renewal" guide to renew the card.
 Learn Schematics From Oglethorpe Obnoticus at [Stranglethorn Vale 28.36,76.35]
 |tip On the upper dock, inside the building.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Specialization\\Gnomish Engineering\\Gnome Engineer Membership Card Renewal",{
-description="This guide will walk you through renewing your Gnome Engineer Membership Card, as well as using the Gnome Engineer's Renewal Gifts to collect rare schematics.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Engineering\\Specialization\\Gnomish Engineering\\Gnome Engineer Membership Card Renewal',
+  {
+    description = "This guide will walk you through renewing your Gnome Engineer Membership Card, as well as using the Gnome Engineer's Renewal Gifts to collect rare schematics.",
+    hardcore = true,
+  },
+  [[
 step
 Enter the building |goto Stranglethorn Vale 28.29,76.16 < 5 |walk
 talk Oglethorpe Obnoticus##7406
@@ -10180,12 +10995,18 @@ collect Gnome Engineer's Renewal Gift##11423 |n
 use the Gnome Engineer's Renewal Gift##11423
 |tip These will contain some Engineer crafting supplies.
 |tip The rare schematic for the "Lil' Smoky" pet also has a chance to be inside.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Specialization\\Goblin Engineering\\Goblin Engineering Questline",{
-condition_suggested=function() return skill('Engineering') >= 200 end,
-description="This guide will walk you through completing the Goblin Engineering questline for the Engineering profession.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Engineering\\Specialization\\Goblin Engineering\\Goblin Engineering Questline',
+  {
+    condition_suggested = function()
+      return skill('Engineering') >= 200
+    end,
+    description = 'This guide will walk you through completing the Goblin Engineering questline for the Engineering profession.',
+    hardcore = true,
+  },
+  [[
 step
 _NOTE ABOUT GOBLIN ENGINEERING:_
 |tip You cannot specialize in both Gnomish and Goblin Engineering.
@@ -10301,11 +11122,15 @@ _Congratulations!_
 |tip Use the "Goblin Engineering Card Renewal" guide to renew the card.
 Learn Schematics From Nixx Sprocketspring at [Tanaris 52.48,27.33]
 |tip Inside the building.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Specialization\\Goblin Engineering\\Goblin Engineer Membership Card Renewal",{
-description="This guide will walk you through renewing your Goblin Engineer Membership Card, as well as using the Goblin Engineer's Renewal Gifts to collect rare schematics.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Engineering\\Specialization\\Goblin Engineering\\Goblin Engineer Membership Card Renewal',
+  {
+    description = "This guide will walk you through renewing your Goblin Engineer Membership Card, as well as using the Goblin Engineer's Renewal Gifts to collect rare schematics.",
+    hardcore = true,
+  },
+  [[
 step
 Enter the building |goto Tanaris 52.39,27.30 < 5 |walk
 talk Nixx Sprocketspring##8126
@@ -10322,11 +11147,15 @@ collect Goblin Engineer's Renewal Gift##11422 |n
 use the Goblin Engineer's Renewal Gift##11422
 |tip These will contain some Engineer crafting supplies.
 |tip The rare schematic for the "Pet Bombling" pet also has a chance to be inside.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Specialization\\How to Change Engineering Specialization",{
-description="This guide will walk you through changing your Engineering profession specialization.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Engineering\\Specialization\\How to Change Engineering Specialization',
+  {
+    description = 'This guide will walk you through changing your Engineering profession specialization.',
+    hardcore = true,
+  },
+  [[
 step
 _NOTE:_
 |tip You MUST fully complete the questline for either Gnomish Engineering or Goblin engineering before you can switch specializations.
@@ -10350,12 +11179,18 @@ Enter the building |goto Tanaris 65.41,18.56 < 7 |walk
 click Book "Soothsaying for Dummies"
 |tip Inside the building.
 |tip Choose the dialogue option that matches what you want to do.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Specialization\\Dragonscale Leatherworking\\Dragonscale Leatherworking Questline",{
-condition_suggested=function() return skill('Leatherworking') >= 225 end,
-description="This guide will walk you through completing the Dragonscale Leatherworking questline for the Leatherworking profession.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Leatherworking\\Specialization\\Dragonscale Leatherworking\\Dragonscale Leatherworking Questline',
+  {
+    condition_suggested = function()
+      return skill('Leatherworking') >= 225
+    end,
+    description = 'This guide will walk you through completing the Dragonscale Leatherworking questline for the Leatherworking profession.',
+    hardcore = true,
+  },
+  [[
 step
 _NOTE ABOUT LEATHERWORKING SPECIALIZATION:_
 |tip You can only have one Leatherworking specialization.
@@ -10420,12 +11255,18 @@ step
 _Congratulations!_
 |tip You have become a Dragonscale Leatherworker.
 Learn Patterns From Thorkaf Dragoneye at [Badlands 62.70,57.40]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Specialization\\Elemental Leatherworking\\Elemental Leatherworking Questline",{
-condition_suggested=function() return skill('Leatherworking') >= 225 end,
-description="This guide will walk you through completing the Elemental Leatherworking questline for the Leatherworking profession.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Leatherworking\\Specialization\\Elemental Leatherworking\\Elemental Leatherworking Questline',
+  {
+    condition_suggested = function()
+      return skill('Leatherworking') >= 225
+    end,
+    description = 'This guide will walk you through completing the Elemental Leatherworking questline for the Leatherworking profession.',
+    hardcore = true,
+  },
+  [[
 step
 _NOTE ABOUT LEATHERWORKING SPECIALIZATION:_
 |tip You can only have one Leatherworking specialization.
@@ -10458,12 +11299,18 @@ step
 _Congratulations!_
 |tip You have become an Elemental Leatherworker.
 Learn Patterns From Brumn Winterhoof at [Arathi Highlands 28.27,45.09]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Specialization\\Tribal Leatherworking\\Tribal Leatherworking Questline",{
-condition_suggested=function() return skill('Leatherworking') >= 225 end,
-description="This guide will walk you through completing the Tribal Leatherworking questline for the Leatherworking profession.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Leatherworking\\Specialization\\Tribal Leatherworking\\Tribal Leatherworking Questline',
+  {
+    condition_suggested = function()
+      return skill('Leatherworking') >= 225
+    end,
+    description = 'This guide will walk you through completing the Tribal Leatherworking questline for the Leatherworking profession.',
+    hardcore = true,
+  },
+  [[
 step
 _NOTE ABOUT LEATHERWORKING SPECIALIZATION:_
 |tip You can only have one Leatherworking specialization.
@@ -10632,10 +11479,14 @@ step
 _Congratulations!_
 |tip You have become a Tribal Leatherworker.
 Learn Patterns From Se'Jib at [Stranglethorn Vale 36.55,34.09]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Bracers",{
-description="This guide will walk you through learning the Blacksmithing Armorsmith \"Dark Iron Bracers\" plans.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Bracers',
+  {
+    description = 'This guide will walk you through learning the Blacksmithing Armorsmith "Dark Iron Bracers" plans.',
+  },
+  [[
 step
 Reach Revered Reputation with the Thorium Brotherhood |complete rep('Thorium Brotherhood') >= Revered
 |tip Use the "Thorium Brotherhood" reputation guide to accomplish this.
@@ -10650,10 +11501,14 @@ buy Plans: Dark Iron Bracers##17051 |n
 |tip It is Bind on Pickup, so you can't buy it from the Auction House. |only if not selfmade
 use the Plans: Dark Iron Bracers##17051
 learn Dark Iron Bracers##20874
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Gauntlets",{
-description="This guide will walk you through learning the Blacksmithing Armorsmith \"Dark Iron Gauntlets\" plans.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Gauntlets',
+  {
+    description = 'This guide will walk you through learning the Blacksmithing Armorsmith "Dark Iron Gauntlets" plans.',
+  },
+  [[
 step
 Reach Revered Reputation with the Thorium Brotherhood |complete rep('Thorium Brotherhood') >= Revered
 |tip Use the "Thorium Brotherhood" reputation guide to accomplish this.
@@ -10668,10 +11523,14 @@ buy Plans: Dark Iron Gauntlets##19207 |n
 |tip It is Bind on Pickup, so you can't buy it from the Auction House. |only if not selfmade
 use the Plans: Dark Iron Gauntlets##19207
 learn Dark Iron Gauntlets##23637
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Helm",{
-description="This guide will walk you through learning the Blacksmithing Armorsmith \"Dark Iron Helm\" plans.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Helm',
+  {
+    description = 'This guide will walk you through learning the Blacksmithing Armorsmith "Dark Iron Helm" plans.',
+  },
+  [[
 step
 Reach Revered Reputation with the Thorium Brotherhood |complete rep('Thorium Brotherhood') >= Revered
 |tip Use the "Thorium Brotherhood" reputation guide to accomplish this.
@@ -10686,10 +11545,14 @@ buy Plans: Dark Iron Helm##19206 |n
 |tip It is Bind on Pickup, so you can't buy it from the Auction House. |only if not selfmade
 use the Plans: Dark Iron Helm##19206
 learn Dark Iron Helm##23636
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Leggings",{
-description="This guide will walk you through learning the Blacksmithing Armorsmith \"Dark Iron Leggings\" plans.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Leggings',
+  {
+    description = 'This guide will walk you through learning the Blacksmithing Armorsmith "Dark Iron Leggings" plans.',
+  },
+  [[
 step
 Reach Revered Reputation with the Thorium Brotherhood |complete rep('Thorium Brotherhood') >= Revered
 |tip Use the "Thorium Brotherhood" reputation guide to accomplish this.
@@ -10704,10 +11567,14 @@ buy Plans: Dark Iron Leggings##17013 |n
 |tip It is Bind on Pickup, so you can't buy it from the Auction House. |only if not selfmade
 use the Plans: Dark Iron Leggings##17013
 learn Dark Iron Leggings##20876
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Boots",{
-description="This guide will walk you through learning the Blacksmithing Armorsmith \"Dark Iron Boots\" plans.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Boots',
+  {
+    description = 'This guide will walk you through learning the Blacksmithing Armorsmith "Dark Iron Boots" plans.',
+  },
+  [[
 step
 Reach Revered Reputation with the Thorium Brotherhood |complete rep('Thorium Brotherhood') >= Revered
 |tip Use the "Thorium Brotherhood" reputation guide to accomplish this.
@@ -10722,20 +11589,28 @@ buy Plans: Dark Iron Boots##20039 |n
 |tip It is Bind on Pickup, so you can't buy it from the Auction House. |only if not selfmade
 use the Plans: Dark Iron Boots##20039
 learn Dark Iron Boots##24399
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Plate",{
-description="This guide will walk you through learning the Blacksmithing Armorsmith \"Dark Iron Plate\" plans.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Plate',
+  {
+    description = 'This guide will walk you through learning the Blacksmithing Armorsmith "Dark Iron Plate" plans.',
+  },
+  [[
 step
 collect Plans: Dawnbringer Shoulders##12698 |n
 |tip This a world drop item, so it can drop from almost anything.
 |tip You can also buy this from the Auction House. |only if not selfmade
 use the Plans: Dawnbringer Shoulders##12698
 learn Dawnbringer Shoulders##16660
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Non-Trainer Recipes\\Engineering\\Gnomish Engineering\\Ultrasafe Transporter - Gadgetzan",{
-description="This guide will walk you through learning the Gnomish Engineering \"Ultrasafe Transporter - Gadgetzan\" schematic.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Non-Trainer Recipes\\Engineering\\Gnomish Engineering\\Ultrasafe Transporter - Gadgetzan',
+  {
+    description = 'This guide will walk you through learning the Gnomish Engineering "Ultrasafe Transporter - Gadgetzan" schematic.',
+  },
+  [[
 step
 collect Gnome Engineer Membership Card##10790
 |tip You must have the Gnomish Engineering specialization to be able to learn this schematic.
@@ -10744,20 +11619,28 @@ step
 talk Jhordy Lapforge##14743
 Select _"I must build a beacon for this marvelous device!"_
 learn Ultrasafe Transporter - Gadgetzan##23489 |goto Tanaris 52.30,26.89
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Non-Trainer Recipes\\Engineering\\Gnomish Engineering\\Lil' Smoky",{
-description="This guide will walk you through learning the Gnomish Engineering \"Lil' Smoky\" schematic.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  "Profession Guides\\Non-Trainer Recipes\\Engineering\\Gnomish Engineering\\Lil' Smoky",
+  {
+    description = 'This guide will walk you through learning the Gnomish Engineering "Lil\' Smoky" schematic.',
+  },
+  [[
 step
 collect Schematic: Lil' Smoky##11827 |n
 |tip This schematic has a chance to be inside the "Gnome Engineer's Renewal Gift" boxes you receive when renewing your Gnome Engineer Membership Card.
 |tip Use the "Gnome Engineer Membership Card Renewal" guide to accomplish this.
 use the Schematic: Lil' Smoky##11827
 learn Lil' Smoky##15633
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Non-Trainer Recipes\\Engineering\\Goblin Engineering\\Dimensional Ripper - Everlook",{
-description="This guide will walk you through learning the Goblin Engineering \"Dimensional Ripper - Everlook\" schematic.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Non-Trainer Recipes\\Engineering\\Goblin Engineering\\Dimensional Ripper - Everlook',
+  {
+    description = 'This guide will walk you through learning the Goblin Engineering "Dimensional Ripper - Everlook" schematic.',
+  },
+  [[
 step
 collect Goblin Engineer Membership Card##10791
 |tip You must have the Goblin Engineering specialization to be able to learn this schematic.
@@ -10767,14 +11650,19 @@ Follow the path |goto Winterspring 60.55,38.20 < 7 |only if walking
 talk Zap Farflinger##14742
 Select _"This Dimensional Imploder sounds dangerous! How can I make one?"_
 learn Dimensional Ripper - Everlook##23486 |goto Winterspring 61.18,37.60
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Non-Trainer Recipes\\Engineering\\Goblin Engineering\\Pet Bombling",{
-description="This guide will walk you through learning the Goblin Engineering \"Pet Bombling\" schematic.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Non-Trainer Recipes\\Engineering\\Goblin Engineering\\Pet Bombling',
+  {
+    description = 'This guide will walk you through learning the Goblin Engineering "Pet Bombling" schematic.',
+  },
+  [[
 step
 collect Schematic: Pet Bombling##11828 |n
 |tip This schematic has a chance to be inside the "Goblin Engineer's Renewal Gift" boxes you receive when renewing your Goblin Engineer Membership Card.
 |tip Use the "Goblin Engineer Membership Card Renewal" guide to accomplish this.
 use the Schematic: Pet Bombling##11828
 learn Pet Bombling##15628
-]])
+]]
+)

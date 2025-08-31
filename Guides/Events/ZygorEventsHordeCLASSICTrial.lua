@@ -1,14 +1,25 @@
-local ZygorGuidesViewer=ZygorGuidesViewer
-if not ZygorGuidesViewer then return end
-if UnitFactionGroup("player")~="Horde" then return end
-if ZGV:DoMutex("EventsH") then return end
-ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Children's Week Main Questline")
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Darkmoon Faire\\Elwynn Forest\\Sayge's Fortunes (Elwynn Forest)",{
-description="\nReceive a stat buff and have your fortune told by Sayge at the Darkmoon Faire.",
-model={491},
-hardcore = true,
-},[[
+local ZygorGuidesViewer = ZygorGuidesViewer
+if not ZygorGuidesViewer then
+  return
+end
+if UnitFactionGroup('player') ~= 'Horde' then
+  return
+end
+if ZGV:DoMutex('EventsH') then
+  return
+end
+ZygorGuidesViewer.GuideMenuTier = 'TRI'
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  "Events Guides\\Children's Week\\Children's Week Main Questline"
+)
+ZygorGuidesViewer:RegisterGuide(
+  "Events Guides\\Darkmoon Faire\\Elwynn Forest\\Sayge's Fortunes (Elwynn Forest)",
+  {
+    description = '\nReceive a stat buff and have your fortune told by Sayge at the Darkmoon Faire.',
+    model = { 491 },
+    hardcore = true,
+  },
+  [[
 step
 label "Choose_Fortune"
 Choose the buff you would like to receive:
@@ -128,12 +139,16 @@ accept Your Fortune Awaits You...##7945
 step
 click Mysterious Tree Stump
 turnin Your Fortune Awaits You...##7945 |goto Mulgore 34.99,61.56 |next "Fortune_Told"
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Darkmoon Faire\\Elwynn Forest\\Chronos Turn-Ins (Elwynn Forest)",{
-description="\nExchange various Leatherworking crafted items with Chronos for prize tickets at the Darkmoon Faire.",
-model={14875},
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Events Guides\\Darkmoon Faire\\Elwynn Forest\\Chronos Turn-Ins (Elwynn Forest)',
+  {
+    description = '\nExchange various Leatherworking crafted items with Chronos for prize tickets at the Darkmoon Faire.',
+    model = { 14875 },
+    hardcore = true,
+  },
+  [[
 step
 collect 3 Embossed Leather Boots##2309 |n
 |tip Create them with Leatherworking or purchase them from the Auction House. |only if not selfmade
@@ -196,12 +211,16 @@ accept More Armor Kits##7941 |goto Elwynn Forest 43.57,70.86 |or
 |tip From this point on, you can continue turning in Rugged Armor Kits.
 |tip Each of these turnins will award 20 Darkmoon Faire Prize Tickets.
 |tip Each turnin requires 8 Rugged Armor Kits and grants 100 reputation with the Darkmoon Faire.
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Darkmoon Faire\\Elwynn Forest\\Kerri Hicks Turn-Ins (Elwynn Forest)",{
-description="\nExchange various Blacksmithing crafted items with Kerri Hicks for prize tickets at the Darkmoon Faire.",
-model={14876},
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Events Guides\\Darkmoon Faire\\Elwynn Forest\\Kerri Hicks Turn-Ins (Elwynn Forest)',
+  {
+    description = '\nExchange various Blacksmithing crafted items with Kerri Hicks for prize tickets at the Darkmoon Faire.',
+    model = { 14876 },
+    hardcore = true,
+  },
+  [[
 step
 collect 10 Coarse Weightstone##3240 |n
 |tip Create them with Blacksmithing or purchase them from the Auction House. |only if not selfmade
@@ -264,12 +283,16 @@ accept More Dense Grinding Stones##7939 |goto Elwynn Forest 40.48,69.93 |or
 |tip From this point on, you can continue turning in Dense Grinding Stones.
 |tip Each of these turnins will award 20 Darkmoon Faire Prize Tickets.
 |tip Each turnin requires 8 Dense Grinding Stones and grants 100 reputation with the Darkmoon Faire.
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Darkmoon Faire\\Elwynn Forest\\Rinling Turn-Ins (Elwynn Forest)",{
-description="\nExchange various Engineering crafted items with Rinling for prize tickets at the Darkmoon Faire.",
-model={14877},
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Events Guides\\Darkmoon Faire\\Elwynn Forest\\Rinling Turn-Ins (Elwynn Forest)',
+  {
+    description = '\nExchange various Engineering crafted items with Rinling for prize tickets at the Darkmoon Faire.',
+    model = { 14877 },
+    hardcore = true,
+  },
+  [[
 step
 collect 5 Copper Modulator##4363 |n
 |tip Create them with Engineering or purchase them from the Auction House. |only if not selfmade
@@ -334,12 +357,16 @@ accept More Thorium Widgets##7942 |goto Elwynn Forest 41.71,70.72 |or
 |tip From this point on, you can continue turning in Thorium Widgets.
 |tip Each of these turnins will award 20 Darkmoon Faire Prize Tickets.
 |tip Each turnin requires 6 Thorium Widgets and grants 100 reputation with the Darkmoon Faire.
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Darkmoon Faire\\Elwynn Forest\\Yebb Neblegear Turn-Ins (Elwynn Forest)",{
-description="\nExchange various Farmed items with Yebb Neblegear for prize tickets at the Darkmoon Faire.",
-model={14856},
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Events Guides\\Darkmoon Faire\\Elwynn Forest\\Yebb Neblegear Turn-Ins (Elwynn Forest)',
+  {
+    description = '\nExchange various Farmed items with Yebb Neblegear for prize tickets at the Darkmoon Faire.',
+    model = { 14856 },
+    hardcore = true,
+  },
+  [[
 step
 Kill Savannah enemies around this area
 |tip You can find them all over around Crossroads and to its northern area.
@@ -410,14 +437,20 @@ accept More Glowing Scorpid Blood##8223 |goto Elwynn Forest 40.17,69.53
 |tip From this point on, you can continue turning in Glowing Scorpid Blood.
 |tip Each of these turnins will award 20 Darkmoon Faire Prize Tickets.
 |tip Each turnin requires 10 Glowing Scorpid Blood and grants 100 reputation with the Darkmoon Faire.
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Darkmoon Faire\\Elwynn Forest\\Spawn of Jubjub (Elwynn Forest)",{
-description="\nCollect a couple of Dark Iron Ale Mugs from the Grim Guzzler tavern in Blackrock Depths "..
-"and offer them to Morja at the Darkmoon Faire to receive your very own Jubjub companion pet.",
-condition_end=function() return completedq(7946) end,
-model={14938},
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Events Guides\\Darkmoon Faire\\Elwynn Forest\\Spawn of Jubjub (Elwynn Forest)',
+  {
+    description = '\nCollect a couple of Dark Iron Ale Mugs from the Grim Guzzler tavern in Blackrock Depths '
+      .. 'and offer them to Morja at the Darkmoon Faire to receive your very own Jubjub companion pet.',
+    condition_end = function()
+      return completedq(7946)
+    end,
+    model = { 14938 },
+    hardcore = true,
+  },
+  [[
 step
 click Dark Iron Ale Mug##165738
 |tip They look like small mugs of ale on tables around the Grim Guzzler tavern in Blackrock Depths.
@@ -438,13 +471,17 @@ step
 use the Unhatched Jubling Egg##19462
 |tip It will take seven days for the egg to mature enough to hatch.
 collect 1 A Jubling's Tiny Home##19450
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Darkmoon Faire\\Elwynn Forest\\Wood Frog (Elwynn Forest)",{
-description="\nCatch Flik as he runs all over the Darkmoon Faire grounds and purchase his limited supply "..
-"Wood Frog Box for 1 gold.",
-model={901},
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Events Guides\\Darkmoon Faire\\Elwynn Forest\\Wood Frog (Elwynn Forest)',
+  {
+    description = '\nCatch Flik as he runs all over the Darkmoon Faire grounds and purchase his limited supply '
+      .. 'Wood Frog Box for 1 gold.',
+    model = { 901 },
+    hardcore = true,
+  },
+  [[
 step
 talk Flik##14860
 |tip He's a little Orc boy running fast all over the Darkmoon Faire grounds.
@@ -453,13 +490,17 @@ talk Flik##14860
 buy 1 Wood Frog Box##11027 |goto Elwynn Forest 42.59,70.30
 |tip This item costs 1 gold and has a limited quantity of 1.
 |tip It respawns in approximately 20 minutes.
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Darkmoon Faire\\Elwynn Forest\\Tree Frog (Elwynn Forest)",{
-description="\nCatch Flik as he runs all over the Darkmoon Faire grounds and purchase his "..
-"Tree Frog Box for 1 gold.",
-model={6295},
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Events Guides\\Darkmoon Faire\\Elwynn Forest\\Tree Frog (Elwynn Forest)',
+  {
+    description = '\nCatch Flik as he runs all over the Darkmoon Faire grounds and purchase his '
+      .. 'Tree Frog Box for 1 gold.',
+    model = { 6295 },
+    hardcore = true,
+  },
+  [[
 step
 talk Flik##14860
 |tip He's a little Orc boy running fast all over the Darkmoon Faire grounds.
@@ -467,21 +508,43 @@ talk Flik##14860
 |tip Talking to him will stop him for a short period of time.
 buy 1 Tree Frog Box##11026 |goto Elwynn Forest 42.59,70.30
 |tip This item costs 1 gold.
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Darkmoon Faire\\Mulgore\\Sayge's Fortunes (Mulgore)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Darkmoon Faire\\Mulgore\\Chronos Turn-Ins (Mulgore)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Darkmoon Faire\\Mulgore\\Kerri Hicks Turn-Ins (Mulgore)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Darkmoon Faire\\Mulgore\\Rinling Turn-Ins (Mulgore)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Darkmoon Faire\\Mulgore\\Yebb Neblegear Turn-Ins (Mulgore)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Darkmoon Faire\\Mulgore\\Spawn of Jubjub (Mulgore)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Darkmoon Faire\\Mulgore\\Wood Frog (Mulgore)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Darkmoon Faire\\Mulgore\\Tree Frog (Mulgore)")
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  "Events Guides\\Darkmoon Faire\\Mulgore\\Sayge's Fortunes (Mulgore)"
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Events Guides\\Darkmoon Faire\\Mulgore\\Chronos Turn-Ins (Mulgore)'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Events Guides\\Darkmoon Faire\\Mulgore\\Kerri Hicks Turn-Ins (Mulgore)'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Events Guides\\Darkmoon Faire\\Mulgore\\Rinling Turn-Ins (Mulgore)'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Events Guides\\Darkmoon Faire\\Mulgore\\Yebb Neblegear Turn-Ins (Mulgore)'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Events Guides\\Darkmoon Faire\\Mulgore\\Spawn of Jubjub (Mulgore)'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Events Guides\\Darkmoon Faire\\Mulgore\\Wood Frog (Mulgore)'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Events Guides\\Darkmoon Faire\\Mulgore\\Tree Frog (Mulgore)'
+)
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Hallow's End\\Hallow's End Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Harvest Festival\\Harvest Festival Quest")
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Quest",{
-description="This guide will walk you through the quests for the \"Feast of Winter Veil\" event.",
-hardcore = true,
-},[[
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Events Guides\\Harvest Festival\\Harvest Festival Quest'
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Quest',
+  {
+    description = 'This guide will walk you through the quests for the "Feast of Winter Veil" event.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 10 |ding 10
 |tip You must be at least this level to be able to accept the quest.
@@ -592,9 +655,18 @@ turnin Metzen the Reindeer##8746 |goto Orgrimmar 53.33,66.49
 step
 _Congratulations!_
 You Completed the "Feast of Winter Veil" Event
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Lunar Festival\\Lunar Festival Main Questline")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Lunar Festival\\Lunar Festival Optimized Elders Path")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Love is in the Air\\Love is in the Air Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Love is in the Air\\Gift Giving")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Quests")
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Events Guides\\Lunar Festival\\Lunar Festival Main Questline'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Events Guides\\Lunar Festival\\Lunar Festival Optimized Elders Path'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Events Guides\\Love is in the Air\\Love is in the Air Quests'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Events Guides\\Love is in the Air\\Gift Giving')
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Quests'
+)

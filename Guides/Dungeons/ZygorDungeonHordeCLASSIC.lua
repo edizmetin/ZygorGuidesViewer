@@ -1,16 +1,29 @@
-local ZygorGuidesViewer=ZygorGuidesViewer
-if not ZygorGuidesViewer then return end
-if UnitFactionGroup("player")~="Horde" then return end
-if ZGV:DoMutex("DungeonHCLASSIC") then return end
-ZygorGuidesViewer.GuideMenuTier = "CLA"
+local ZygorGuidesViewer = ZygorGuidesViewer
+if not ZygorGuidesViewer then
+  return
+end
+if UnitFactionGroup('player') ~= 'Horde' then
+  return
+end
+if ZGV:DoMutex('DungeonHCLASSIC') then
+  return
+end
+ZygorGuidesViewer.GuideMenuTier = 'CLA'
 
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Ragefire Chasm Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Ragefire Chasm",
-description="This guide will walk you through completing the Ragefire Chasm quests.",
-condition_suggested=function() return level >= 13 and level <= 18 and not completedq(5723) end,
-condition_end=function() return completedq(5723) end,
-},[[
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Ragefire Chasm Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Ragefire Chasm',
+    description = 'This guide will walk you through completing the Ragefire Chasm quests.',
+    condition_suggested = function()
+      return level >= 13 and level <= 18 and not completedq(5723)
+    end,
+    condition_end = function()
+      return completedq(5723)
+    end,
+  },
+  [[
 step
 Reach Level 9 |ding 9
 |tip Use the Leveling guides to accomplish this.
@@ -151,14 +164,22 @@ talk Rahauro##11833
 |tip He walks around this area.
 turnin Returning the Lost Satchel##5724 |goto Thunder Bluff 70.51,31.83
 turnin Testing an Enemy's Strength##5723 |goto Thunder Bluff 70.51,31.83
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Wailing Caverns Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Wailing Caverns",
-description="This guide will walk you through completing the Wailing Caverns quests.",
-condition_suggested=function() return level >= 15 and level <= 25 and not completedq(962) end,
-condition_end=function() return completedq(962) end,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Wailing Caverns Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Wailing Caverns',
+    description = 'This guide will walk you through completing the Wailing Caverns quests.',
+    condition_suggested = function()
+      return level >= 15 and level <= 25 and not completedq(962)
+    end,
+    condition_end = function()
+      return completedq(962)
+    end,
+  },
+  [[
 step
 Reach Level 15 |ding 15
 |tip Use the Leveling guides to accomplish this.
@@ -413,14 +434,22 @@ Enter the cave |goto Thunder Bluff 29.89,29.80 < 5 |walk
 talk Apothecary Zamah##3419
 |tip Inside the cave.
 turnin Serpentbloom##962 |goto Thunder Bluff 22.82,20.90
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Shadowfang Keep Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Shadowfang Keep",
-description="This guide will walk you through completing the Shadowfang Keep quests.",
-condition_suggested=function() return level >= 18 and level <= 30 and not completedq(1013) end,
-condition_end=function() return completedq(1013) end,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Shadowfang Keep Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Shadowfang Keep',
+    description = 'This guide will walk you through completing the Shadowfang Keep quests.',
+    condition_suggested = function()
+      return level >= 18 and level <= 30 and not completedq(1013)
+    end,
+    condition_end = function()
+      return completedq(1013)
+    end,
+  },
+  [[
 step
 Reach Level 18 |ding 18
 |tip Use the Leveling guides to accomplish this.
@@ -471,15 +500,23 @@ turnin Arugal Must Die##1014 |goto Silverpine Forest 44.20,39.79
 step
 talk Keeper Bel'dugur##2934
 turnin The Book of Ur##1013 |goto Undercity 53.72,54.45
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Blackfathom Deeps Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Blackfathom Deeps",
-description="This guide will walk you through completing the Blackfathom Deeps quests.",
-condition_suggested=function() return level >= 21 and level <= 32 and not completedq(6561) end,
-condition_end=function() return completedq(6561) end,
-hideif=ZGV.IsClassicSoD,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Blackfathom Deeps Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Blackfathom Deeps',
+    description = 'This guide will walk you through completing the Blackfathom Deeps quests.',
+    condition_suggested = function()
+      return level >= 21 and level <= 32 and not completedq(6561)
+    end,
+    condition_end = function()
+      return completedq(6561)
+    end,
+    hideif = ZGV.IsClassicSoD,
+  },
+  [[
 step
 Reach Level 21 |ding 21
 |tip Use the Leveling guides to accomplish this.
@@ -563,15 +600,23 @@ step
 talk Bashana Runetotem##9087
 |tip Inside the building.
 turnin Blackfathom Villainy##6561 |goto Thunder Bluff 71.07,34.16
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Gnomeregan Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Gnomeregan",
-description="This guide will walk you through completing the Gnomeregan quests.",
-condition_suggested=function() return level >= 25 and level <= 38 and not completedq(2841) end,
-condition_end=function() return completedq(2841) end,
-hideif=ZGV.IsClassicSoD,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Gnomeregan Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Gnomeregan',
+    description = 'This guide will walk you through completing the Gnomeregan quests.',
+    condition_suggested = function()
+      return level >= 25 and level <= 38 and not completedq(2841)
+    end,
+    condition_end = function()
+      return completedq(2841)
+    end,
+    hideif = ZGV.IsClassicSoD,
+  },
+  [[
 step
 Reach Level 25 |ding 25
 |tip Use the Leveling guides to accomplish this.
@@ -620,14 +665,22 @@ Enter the building |goto Orgrimmar 75.22,24.61 < 5 |walk
 talk Nogg##3412
 |tip Inside the building.
 turnin Rig Wars##2841 |goto Orgrimmar 76.00,25.42
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Razorfen Kraul Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Razorfen Kraul",
-description="This guide will walk you through completing the Razorfen Kraul quests.",
-condition_suggested=function() return level >= 30 and level <= 40 and not completedq(6522) end,
-condition_end=function() return completedq(6522) end,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Razorfen Kraul Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Razorfen Kraul',
+    description = 'This guide will walk you through completing the Razorfen Kraul quests.',
+    condition_suggested = function()
+      return level >= 30 and level <= 40 and not completedq(6522)
+    end,
+    condition_end = function()
+      return completedq(6522)
+    end,
+  },
+  [[
 step
 Reach Level 30 |ding 30
 |tip Use the Leveling guides to accomplish this.
@@ -720,12 +773,16 @@ step
 Follow the path |goto Undercity 51.86,64.67 < 10 |only if walking
 talk Varimathras##2425
 turnin An Unholy Alliance##6522 |goto Undercity 56.23,92.18
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Scarlet Monastery Graveyard Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Scarlet Monastery",
-description="This guide will walk you through completing the Scarlet Monastery Graveyard Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Scarlet Monastery Graveyard Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Scarlet Monastery',
+    description = 'This guide will walk you through completing the Scarlet Monastery Graveyard Quests.',
+  },
+  [[
 step
 Reach Level 30 |ding 30
 |tip Use the Leveling guides to accomplish this.
@@ -779,12 +836,16 @@ Follow the path	|goto Undercity 46.94,59.57 < 10 |only if walking
 Run down the ramp |goto Undercity 44.56,66.51 < 10 |only if walking
 talk Master Apothecary Faranell##2055
 turnin Hearts of Zeal##1113 |goto Undercity 48.81,69.30
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Scarlet Monastery Library Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Scarlet Monastery",
-description="This guide will walk you through completing the Scarlet Monastery Library Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Scarlet Monastery Library Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Scarlet Monastery',
+    description = 'This guide will walk you through completing the Scarlet Monastery Library Quests.',
+  },
+  [[
 step
 Reach Level 28 |ding 28
 |tip Use the Leveling guides to accomplish this.
@@ -965,12 +1026,16 @@ Enter the cave |goto Thousand Needles 53.67,42.51 < 7 |walk
 talk Dorn Plainstalker##2986
 |tip Inside the cave.
 turnin Final Passage##1394 |goto Thousand Needles 53.94,41.48
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Scarlet Monastery Armory Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Scarlet Monastery",
-description="This guide will walk you through completing the Scarlet Monastery Armory Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Scarlet Monastery Armory Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Scarlet Monastery',
+    description = 'This guide will walk you through completing the Scarlet Monastery Armory Quests.',
+  },
+  [[
 step
 Reach Level 38 |ding 38
 |tip Use the Leveling guides to accomplish this.
@@ -1000,12 +1065,16 @@ turnin Into The Scarlet Monastery##1048 |goto Undercity 56.26,92.20
 |tip This quest requires you to kill bosses in Scarlet Monastery - Library, Armory and Cathedral.
 |tip Use the Scarlet Monastery Library Quests and Scarlet Monastery Cathedral Quests guides to accomplish this.
 |tip If you haven't completed the other objectives yet, skip this for now.
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Scarlet Monastery Cathedral Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Scarlet Monastery",
-description="This guide will walk you through completing the Scarlet Monastery Cathedral Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Scarlet Monastery Cathedral Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Scarlet Monastery',
+    description = 'This guide will walk you through completing the Scarlet Monastery Cathedral Quests.',
+  },
+  [[
 step
 Reach Level 40 |ding 40
 |tip Use the Leveling guides to accomplish this.
@@ -1036,12 +1105,16 @@ step
 Follow the path |goto Undercity 52.15,64.37 < 10 |only if walking
 talk Varimathras##2425
 turnin Into The Scarlet Monastery##1048 |goto Undercity 56.26,92.20
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Razorfen Downs Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Razorfen Downs",
-description="This guide will walk you through completing the Razorfen Downs Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Razorfen Downs Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Razorfen Downs',
+    description = 'This guide will walk you through completing the Razorfen Downs Quests.',
+  },
+  [[
 step
 Reach Level 37 |ding 37
 |tip Use the leveling guides to accomplish this.
@@ -1139,12 +1212,16 @@ step
 Follow the path |goto Undercity 51.86,64.67 < 10 |only if walking
 talk Varimathras##2425
 turnin An Unholy Alliance##6521 |goto Undercity 56.23,92.18
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Uldaman Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Uldaman",
-description="This guide will walk you through completing the Uldaman Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Uldaman Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Uldaman',
+    description = 'This guide will walk you through completing the Uldaman Quests.',
+  },
+  [[
 step
 Reach Level 37 |ding 37
 |tip Use the Leveling guides to accomplish this.
@@ -1355,12 +1432,16 @@ Enter the building |goto Badlands 3.83,46.98 < 5 |walk
 talk Jarkal Mossmeld##6868
 |tip Upstairs inside the building.
 turnin Necklace Recovery, Take 3##2341 |goto Badlands 2.43,46.07
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Zul'Farrak Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Zul'Farrak",
-description="This guide will walk you through completing the Zul'Farrak Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  "Dungeon Guides\\Zul'Farrak Quests",
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. "Zul'Farrak",
+    description = "This guide will walk you through completing the Zul'Farrak Quests.",
+  },
+  [[
 step
 Reach Level 40 |ding 40
 |tip Use the Leveling guides to accomplish this.
@@ -1524,12 +1605,16 @@ turnin Tiara of the Deep##2846 |goto Dustwallow Marsh 46.06,57.09
 step
 talk Master Gadrin##3188
 turnin The Spider God##2936 |goto Durotar 55.95,74.72
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Maraudon Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Maraudon",
-description="This guide will walk you through completing the Maraudon Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Maraudon Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Maraudon',
+    description = 'This guide will walk you through completing the Maraudon Quests.',
+  },
+  [[
 step
 Reach Level 45 |ding 45
 |tip Use the Leveling guides to accomplish this.
@@ -1751,13 +1836,17 @@ turnin Twisted Evils##7028 |goto Desolace 62.19,39.63
 step
 talk Keeper Remulos##11832
 turnin Seed of Life##7066 |goto Moonglade 36.18,41.82
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Temple of Atal'Hakkar Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."The Temple of Atal'Hakkar",
-description="This guide will walk you through completing the Temple of Atal'Hakkar Quests.",
-hideif=ZGV.IsClassicSoD,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  "Dungeon Guides\\Temple of Atal'Hakkar Quests",
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. "The Temple of Atal'Hakkar",
+    description = "This guide will walk you through completing the Temple of Atal'Hakkar Quests.",
+    hideif = ZGV.IsClassicSoD,
+  },
+  [[
 step
 Reach Level 47 |ding 47
 |tip Use the Leveling guides to accomplish this.
@@ -2018,12 +2107,16 @@ turnin The God Hakkar##3528 |goto Tanaris 66.98,22.36
 step
 talk Larion##9118
 turnin Zapper Fuel##4146 |goto Un'Goro Crater 45.54,8.71
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Blackrock Depths Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Blackrock Depths",
-description="This guide will walk you through completing the Blackrock Depths Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Blackrock Depths Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Blackrock Depths',
+    description = 'This guide will walk you through completing the Blackrock Depths Quests.',
+  },
+  [[
 step
 Reach Level 52 |ding 52
 |tip Use the Leveling guides to accomplish this.
@@ -2547,12 +2640,16 @@ Enter the building |goto Orgrimmar 40.09,36.93 < 8 |walk
 talk Thrall##4949
 |tip Inside the building.
 turnin The Princess Saved?##4004 |goto Orgrimmar 31.77,37.82
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Dire Maul East Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Dire Maul",
-description="This guide will walk you through completing the Dire Maul East Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Dire Maul East Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Dire Maul',
+    description = 'This guide will walk you through completing the Dire Maul East Quests.',
+  },
+  [[
 step
 Reach Level 56 |ding 56
 |tip Use the Leveling guides to accomplish this.
@@ -2679,12 +2776,16 @@ Enter the building |goto Moonglade 51.46,41.44 < 7 |walk
 talk Rabine Saturna##11801
 |tip Inside the building.
 turnin Shards of the Felvine##5526 |goto Moonglade 51.69,45.10
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Dire Maul West Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Dire Maul",
-description="This guide will walk you through completing the Dire Maul West Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Dire Maul West Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Dire Maul',
+    description = 'This guide will walk you through completing the Dire Maul West Quests.',
+  },
+  [[
 step
 Reach Level 56 |ding 56
 |tip Use the Leveling guides to accomplish this.
@@ -2773,12 +2874,16 @@ click Treasure of the Shen'dralar
 |tip It looks like a large stone chest underneath the ramp in The Athenaeum.
 |tip Go back through the Prison of Immol'thar and reenter The Athenaeum.
 turnin The Treasure of the Shen'dralar##7462
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Dire Maul North Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Dire Maul",
-description="This guide will walk you through completing the Dire Maul North Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Dire Maul North Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Dire Maul',
+    description = 'This guide will walk you through completing the Dire Maul North Quests.',
+  },
+  [[
 step
 Reach Level 56 |ding 56
 |tip Use the Leveling guides to accomplish this.
@@ -2898,12 +3003,16 @@ step
 talk Sage Korolusk##14373
 |tip He patrols along the road.
 turnin Elven Legends##7481 |goto Feralas 75.45,43.68
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Lower Blackrock Spire Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Lower Blackrock Spire",
-description="This guide will walk you through completing the Lower Blackrock Spire Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Lower Blackrock Spire Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Lower Blackrock Spire',
+    description = 'This guide will walk you through completing the Lower Blackrock Spire Quests.',
+  },
+  [[
 step
 Reach Level 57 |ding 57
 |tip Use the Leveling guides to accomplish this.
@@ -3236,12 +3345,16 @@ turnin The Pack Mistress##4724 |goto Badlands 5.96,47.74
 step
 talk Prospector Ironboot##10460
 turnin The Final Tablets##4788 |goto Tanaris 66.89,24.03
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Scholomance Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Scholomance",
-description="This guide will walk you through completing the Scholomance Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Scholomance Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Scholomance',
+    description = 'This guide will walk you through completing the Scholomance Quests.',
+  },
+  [[
 step
 Reach Level 50 |ding 50
 |tip Use the Leveling guides to accomplish this.
@@ -3673,12 +3786,16 @@ Equip the Spectral Essence
 talk Magistrate Marduke##11286
 |tip You must have the Spectral Essence equipped to see him.
 turnin The Lich, Ras Frostwhisper##5466 |goto Western Plaguelands 70.57,74.11
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Stratholme - Live Side Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Stratholme",
-description="This guide will walk you through completing the Stratholme - Live Side Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Stratholme - Live Side Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Stratholme',
+    description = 'This guide will walk you through completing the Stratholme - Live Side Quests.',
+  },
+  [[
 step
 Reach Level 55 |ding 55
 |tip Use the Leveling guides to accomplish this.
@@ -3894,12 +4011,16 @@ Click Here to Continue |confirm |q 5262
 step
 talk Duke Nicholas Zverenhoff##11039
 turnin The Truth Comes Crashing Down##5262 |goto Eastern Plaguelands 81.44,59.82
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Stratholme - Undead Side Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Stratholme",
-description="This guide will walk you through completing the Stratholme - Undead Side Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Stratholme - Undead Side Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Stratholme',
+    description = 'This guide will walk you through completing the Stratholme - Undead Side Quests.',
+  },
+  [[
 step
 Reach Level 55 |ding 55
 |tip Use the Leveling guides to accomplish this.
@@ -4232,12 +4353,16 @@ Click Here to Continue |confirm |q 5213
 step
 talk Betina Bigglezink##11035
 turnin The Active Agent##5213 |goto Eastern Plaguelands 81.47,59.65
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Upper Blackrock Spire Quests",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Upper Blackrock Spire",
-description="This guide will walk you through completing the Upper Blackrock Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Upper Blackrock Spire Quests',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Upper Blackrock Spire',
+    description = 'This guide will walk you through completing the Upper Blackrock Quests.',
+  },
+  [[
 step
 Reach Level 57 |ding 57
 |tip Use the Leveling guides to accomplish this.
@@ -4780,4 +4905,5 @@ turnin Blood of the Black Dragon Champion##6602 |or
 |tip Completing this quest will award you with a Darkfire Amulet, which will allow you to enter the Onyxia's Lair raid.
 |tip You must keep it in your inventory in order to enter the raid instance.
 '|goto Stonetalon Mountains 30.39,73.93 < 20 |noway |or |c |next "Rexxar_Blood_of_the_Black_Dragon_Champion_Path_One"
-]])
+]]
+)

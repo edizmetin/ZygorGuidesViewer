@@ -1,13 +1,24 @@
-local ZygorGuidesViewer=ZygorGuidesViewer
-if not ZygorGuidesViewer then return end
-if UnitFactionGroup("player")~="Horde" then return end
-if ZGV:DoMutex("ProfessionsHCLASSIC") then return end
-ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Alchemy (1-300)",{
-condition_suggested=function() return skill('Alchemy') > 0 end,
-description="This guide will walk you through leveling your Alchemy skill from 1-300.",
-hardcore = true,
-},[[
+local ZygorGuidesViewer = ZygorGuidesViewer
+if not ZygorGuidesViewer then
+  return
+end
+if UnitFactionGroup('player') ~= 'Horde' then
+  return
+end
+if ZGV:DoMutex('ProfessionsHCLASSIC') then
+  return
+end
+ZygorGuidesViewer.GuideMenuTier = 'TRI'
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Alchemy\\Alchemy (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Alchemy') > 0
+    end,
+    description = 'This guide will walk you through leveling your Alchemy skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 to train professions.
@@ -200,12 +211,18 @@ step
 Open Your Alchemy Crafting Panel:
 _<Create 35 Healing Potions>_
 Reach Skill 140 in Alchemy |skill Alchemy,140
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Blacksmithing (1-300)",{
-condition_suggested=function() return skill('Blacksmithing') > 0 end,
-description="This guide will walk you through leveling your Blacksmithing skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Blacksmithing\\Blacksmithing (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Blacksmithing') > 0
+    end,
+    description = 'This guide will walk you through leveling your Blacksmithing skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 to train Apprentice professions.
@@ -532,12 +549,18 @@ _<Create 10 Patterned Bronze Bracers>_
 |tip Stand next to an anvil.
 |tip Inside the building.
 Reach Skill 150 in Blacksmithing |skill Blacksmithing,150 |goto Orgrimmar 79.60,23.31
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Cooking (1-300)",{
-condition_suggested=function() return skill('Cooking') > 0 end,
-description="This guide will walk you through leveling your Cooking skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Cooking (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Cooking') > 0
+    end,
+    description = 'This guide will walk you through leveling your Cooking skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 before you can learn professions.
@@ -637,11 +660,15 @@ Open Your Cooking Crafting Panel:
 |tip Inside the building.
 _<Create 30 Crab Cakes>_
 Reach Skill 130 in Cooking |skill Cooking,130 |goto Orgrimmar 57.20,53.32
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Cooking + Fishing (1-300)")
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Chunk of Boar Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Cooking\\Cooking + Fishing (1-300)')
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Chunk of Boar Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Durotar
 path follow smart; loop on; ants curved; dist 20
@@ -654,17 +681,31 @@ path	37.94,23.38	40.00,20.80	40.35,17.61	42.55,17.05	44.72,17.22
 path	45.61,15.87
 Kill Boar enemies around this area
 collect Chunk of Boar Meat##769 |n
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Small Egg")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Stringy Wolf Meat")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Meaty Bat Wing")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Scorpid Stinger")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Coyote Meat")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Strider Meat")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Kodo Meat")
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Bear Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Cooking\\Farming Guides\\Small Egg')
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Cooking\\Farming Guides\\Stringy Wolf Meat'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Cooking\\Farming Guides\\Meaty Bat Wing'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Cooking\\Farming Guides\\Scorpid Stinger'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Cooking\\Farming Guides\\Coyote Meat'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Cooking\\Farming Guides\\Strider Meat'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Cooking\\Farming Guides\\Kodo Meat')
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Bear Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Darkshore
 path follow smart; loop on; ants curved; dist 20
@@ -677,10 +718,14 @@ path	41.39,33.60	41.66,35.17	42.07,37.43	42.42,39.82	43.17,41.92
 path	44.41,42.90	45.25,43.21	45.48,41.84
 Kill Bear enemies along this path
 collect Bear Meat##3173 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Crawler Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Crawler Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Darkshore
@@ -708,55 +753,121 @@ path	35.96,73.13
 Kill Crawler enemies along this path
 collect Crawler Meat##2674 |n
 '|goto Darkshore 35.96,73.13 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Crawler Claw")
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Farming Guides\\Clam Meat",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Cooking\\Farming Guides\\Crawler Claw'
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Cooking\\Farming Guides\\Clam Meat',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill enemies around this area
 collect Small Barnacled Clam##5523 |n
 use the Small Barnacled Clam##5523
 collect Clam Meat##5503 |n |goto Ashenvale 11.51,28.67
 You can find more around here [13.09,25.61]
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Murloc Fin")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Big Bear Meat")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Raptor Egg")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Thunder Lizard Tail")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Tangy Clam Meat")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Tender Crocolisk Meat")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Lion Meat")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Stag Meat")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Gooey Spider Leg")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Mystery Meat")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Red Wolf Meat")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Turtle Meat")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Tiger Meat")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Raptor Flesh")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Buzzard Wing")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Cooking\\Farming Guides\\Giant Clam Meat")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Elements\\Farming Guides\\Essence of Water")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Elements\\Farming Guides\\Living Essence")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Elements\\Farming Guides\\Essence of Fire")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Elements\\Farming Guides\\Essence of Air")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Elements\\Farming Guides\\Essence of Earth")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Elements\\Farming Guides\\Essence of Undeath")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Elements\\Farming Guides\\Heart of the Wild")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Elements\\Farming Guides\\Ichor of Undeath")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Elements\\Farming Guides\\Heart of Fire")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Elements\\Farming Guides\\Globe of Water")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Elements\\Farming Guides\\Core of Earth")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Elements\\Farming Guides\\Breath of Wind")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Elements\\Farming Guides\\Elemental Fire")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Elements\\Farming Guides\\Elemental Earth")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Elements\\Farming Guides\\Elemental Water")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Elements\\Farming Guides\\Elemental Air")
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Enchanting (1-300)",{
-condition_suggested=function() return skill('Enchanting') > 0 end,
-description="This guide will walk you through leveling your Enchanting skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Cooking\\Farming Guides\\Murloc Fin')
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Cooking\\Farming Guides\\Big Bear Meat'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Cooking\\Farming Guides\\Raptor Egg')
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Cooking\\Farming Guides\\Thunder Lizard Tail'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Cooking\\Farming Guides\\Tangy Clam Meat'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Cooking\\Farming Guides\\Tender Crocolisk Meat'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Cooking\\Farming Guides\\Lion Meat')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Cooking\\Farming Guides\\Stag Meat')
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Cooking\\Farming Guides\\Gooey Spider Leg'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Cooking\\Farming Guides\\Mystery Meat'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Cooking\\Farming Guides\\Red Wolf Meat'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Cooking\\Farming Guides\\Turtle Meat'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Cooking\\Farming Guides\\Tiger Meat')
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Cooking\\Farming Guides\\Raptor Flesh'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Cooking\\Farming Guides\\Buzzard Wing'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Cooking\\Farming Guides\\Giant Clam Meat'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Elements\\Farming Guides\\Essence of Water'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Elements\\Farming Guides\\Living Essence'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Elements\\Farming Guides\\Essence of Fire'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Elements\\Farming Guides\\Essence of Air'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Elements\\Farming Guides\\Essence of Earth'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Elements\\Farming Guides\\Essence of Undeath'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Elements\\Farming Guides\\Heart of the Wild'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Elements\\Farming Guides\\Ichor of Undeath'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Elements\\Farming Guides\\Heart of Fire'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Elements\\Farming Guides\\Globe of Water'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Elements\\Farming Guides\\Core of Earth'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Elements\\Farming Guides\\Breath of Wind'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Elements\\Farming Guides\\Elemental Fire'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Elements\\Farming Guides\\Elemental Earth'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Elements\\Farming Guides\\Elemental Water'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Elements\\Farming Guides\\Elemental Air'
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Enchanting (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Enchanting') > 0
+    end,
+    description = 'This guide will walk you through leveling your Enchanting skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 to train Apprentice professions.
@@ -910,30 +1021,42 @@ _<Create 25 Enchant Cloak - Minor Agility>_
 |tip Place then enchant on a cloak slot item, either equipped or in your inventory.
 |tip You may be able to use it on other players' cloak to make some profit while increasing your skill level.
 Reach Skill 135 in Enchanting |skill Enchanting,135
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Strange Dust",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Strange Dust',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 5-20 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 |tip You may sometimes get Small Glimmering Shards instead of Strange Dust.
 collect Strange Dust##10940 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Lesser Magic Essence",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Lesser Magic Essence',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 3-12 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 |tip You may sometimes get Strange Dust instead of Lesser Magic Essence.
 collect Lesser Magic Essence##10938 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Greater Magic Essence",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Greater Magic Essence',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 9-21 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
@@ -941,42 +1064,80 @@ Disenchant level 9-21 green weapons and armor
 |tip You may sometimes get Strange Dust instead of Greater Magic Essence.
 |tip You can turn 3 Lesser Magic Essences into a Greater Magic Essence.
 collect Greater Magic Essence##10939 |n
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Enchanting\\Farming Guides\\Lesser Eternal Essence")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Enchanting\\Farming Guides\\Greater Eternal Essence")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Enchanting\\Farming Guides\\Small Brilliant Shard")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Enchanting\\Farming Guides\\Large Brilliant Shard")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Enchanting\\Farming Guides\\Illusion Dust")
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Lesser Astral Essence",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Enchanting\\Farming Guides\\Lesser Eternal Essence'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Enchanting\\Farming Guides\\Greater Eternal Essence'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Enchanting\\Farming Guides\\Small Brilliant Shard'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Enchanting\\Farming Guides\\Large Brilliant Shard'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Enchanting\\Farming Guides\\Illusion Dust'
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Lesser Astral Essence',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 20-25 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 collect Lesser Astral Essence##10998 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Farming Guides\\Greater Astral Essence",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Enchanting\\Farming Guides\\Greater Astral Essence',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Disenchant level 20-30 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House. |only if not selfmade
 |tip You can disenchant old gear. |only if selfmade
 collect Greater Astral Essence##11082 |n
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Enchanting\\Farming Guides\\Soul Dust")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Enchanting\\Farming Guides\\Lesser Mystic Essence")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Enchanting\\Farming Guides\\Greater Mystic Essence")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Enchanting\\Farming Guides\\Vision Dust")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Enchanting\\Farming Guides\\Dream Dust")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Enchanting\\Farming Guides\\Greater Nether Essence")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Enchanting\\Farming Guides\\Lesser Nether Essence")
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Engineering (1-300)",{
-condition_suggested=function() return skill('Engineering') > 0 end,
-description="This guide will walk you through leveling your Engineering skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Enchanting\\Farming Guides\\Soul Dust'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Enchanting\\Farming Guides\\Lesser Mystic Essence'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Enchanting\\Farming Guides\\Greater Mystic Essence'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Enchanting\\Farming Guides\\Vision Dust'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Enchanting\\Farming Guides\\Dream Dust'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Enchanting\\Farming Guides\\Greater Nether Essence'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Enchanting\\Farming Guides\\Lesser Nether Essence'
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Engineering\\Engineering (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Engineering') > 0
+    end,
+    description = 'This guide will walk you through leveling your Engineering skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 to train Apprentice professions.
@@ -1291,12 +1452,18 @@ step
 Open Your Engineering Crafting Panel:
 _<Create 10 Standard Scopes>_
 Reach Skill 135 in Engineering |skill Engineering,135 |or
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\First Aid\\First Aid (1-300)",{
-condition_suggested=function() return skill('First Aid') > 0 end,
-description="This guide will walk you through leveling your First Aid skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\First Aid\\First Aid (1-300)',
+  {
+    condition_suggested = function()
+      return skill('First Aid') > 0
+    end,
+    description = 'This guide will walk you through leveling your First Aid skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 talk Arnok##3373
 |tip Inside the building.
@@ -1362,12 +1529,18 @@ step
 Open Your First Aid Crafting Panel:
 _<Create 55 Heavy Wool Bandages>_
 Reach Skill 150 First in Aid |skill First Aid,150
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Fishing (1-300)",{
-condition_suggested=function() return skill('Fishing') > 0 end,
-description="This guide will walk you through leveling your Fishing skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Fishing\\Fishing (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Fishing') > 0
+    end,
+    description = 'This guide will walk you through leveling your Fishing skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 to train Apprentice professions.
@@ -1423,20 +1596,44 @@ use the Nightcrawlers##6530+
 |tip These will allow you to catch fish easier.
 |tip Try to keep one of these active whenever you are fishing.
 Reach Skill 150 in Fishing |skill Fishing,150 |goto Stonetalon Mountains 46.33,61.29
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Fishing\\Farming Guides\\Raw Brilliant Smallfish")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Fishing\\Farming Guides\\Raw Slitherskin Mackerel")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Fishing\\Farming Guides\\Raw Rainbow Fin Albacore")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Fishing\\Farming Guides\\Raw Longjaw Mud Snapper")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Fishing\\Farming Guides\\Raw Sagefish")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Fishing\\Farming Guides\\Raw Bristle Whisker Catfish")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Fishing\\Farming Guides\\Raw Mithril Head Trout")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Fishing\\Farming Guides\\Raw Rockscale Cod")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Fishing\\Farming Guides\\Raw Sunscale Salmon")
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Herbalism (1-300)",{
-condition_suggested=function() return skill('Herbalism') > 0 end,
-description="This guide will walk you through leveling your Herbalism skill from 1-300.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Fishing\\Farming Guides\\Raw Brilliant Smallfish'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Fishing\\Farming Guides\\Raw Slitherskin Mackerel'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Fishing\\Farming Guides\\Raw Rainbow Fin Albacore'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Fishing\\Farming Guides\\Raw Longjaw Mud Snapper'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Fishing\\Farming Guides\\Raw Sagefish'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Fishing\\Farming Guides\\Raw Bristle Whisker Catfish'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Fishing\\Farming Guides\\Raw Mithril Head Trout'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Fishing\\Farming Guides\\Raw Rockscale Cod'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Fishing\\Farming Guides\\Raw Sunscale Salmon'
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Herbalism (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Herbalism') > 0
+    end,
+    description = 'This guide will walk you through leveling your Herbalism skill from 1-300.',
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 before you can learn professions.
@@ -1493,10 +1690,14 @@ path	45.54,68.99	45.03,65.70	43.83,62.98
 Reach Skill 125 in Herbalism |skill Herbalism,125
 |tip Click herbs as you follow the path around this area.
 |tip Track them on your minimap with "Find Herbs".
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Silverleaf",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Silverleaf',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Tirisfal Glades
 path follow smart; loop on; ants curved; dist 20
@@ -1510,10 +1711,14 @@ path	53.81,53.15	52.04,54.99
 Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 collect Silverleaf##765 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Peacebloom",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Peacebloom',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Tirisfal Glades
 path follow smart; loop on; ants curved; dist 20
@@ -1527,13 +1732,23 @@ path	53.81,53.15	52.04,54.99
 Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 collect Peacebloom##2447 |n
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Earthroot")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Mageroyal")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Stranglekelp")
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Briarthorn",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Earthroot'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Mageroyal'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Stranglekelp'
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Briarthorn',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Path_One"
 map Silverpine Forest
@@ -1565,11 +1780,17 @@ Click herbs as you follow the path around this area
 |tip You will need level 70 Herbalism to collect these.
 collect Briarthorn##2450 |n
 '|goto Silverpine Forest 49.04,32.38 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Swiftthistle")
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Bruiseweed",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Swiftthistle'
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Herbalism\\Farming Guides\\Bruiseweed',
+  {
+    hardcore = true,
+  },
+  [[
 step
 label "Bruiseweed_1"
 map Ashenvale
@@ -1597,34 +1818,74 @@ Click herbs as you follow the path around this area
 |tip You will need level 100 Herbalism to collect these.
 collect Bruiseweed##2453 |n
 '|goto Ashenvale 30.47,44.71 < 20 |noway |c |next "Bruiseweed_1"
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Wild Steelbloom")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Grave Moss")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Kingsblood")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Liferoot")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Fadeleaf")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Goldthorn")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Khadgar's Whisker")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Wintersbite")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Wildvine")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Firebloom")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Purple Lotus")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Arthas' Tears")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Sungrass")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Blindweed")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Ghost Mushroom")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Gromsblood")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Golden Sansam")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Dreamfoil")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Mountain Silversage")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Plaguebloom")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Icecap")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Herbalism\\Farming Guides\\Black Lotus")
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leatherworking (1-300)",{
-condition_suggested=function() return skill('Leatherworking') > 0 end,
-description="This guide will walk you through leveling your Leatherworking skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Wild Steelbloom'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Grave Moss'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Kingsblood'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Herbalism\\Farming Guides\\Liferoot')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Herbalism\\Farming Guides\\Fadeleaf')
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Goldthorn'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  "Profession Guides\\Herbalism\\Farming Guides\\Khadgar's Whisker"
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Wintersbite'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Herbalism\\Farming Guides\\Wildvine')
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Firebloom'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Purple Lotus'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  "Profession Guides\\Herbalism\\Farming Guides\\Arthas' Tears"
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Herbalism\\Farming Guides\\Sungrass')
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Blindweed'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Ghost Mushroom'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Gromsblood'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Golden Sansam'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Dreamfoil'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Mountain Silversage'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Plaguebloom'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Herbalism\\Farming Guides\\Icecap')
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Herbalism\\Farming Guides\\Black Lotus'
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Leatherworking\\Leatherworking (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Leatherworking') > 0
+    end,
+    description = 'This guide will walk you through leveling your Leatherworking skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 to train Apprentice professions.
@@ -1761,13 +2022,19 @@ _<Create 18 Dark Leather Boots>_
 |tip You may need to create a few more or less of these.
 |tip Each additional Dark Leather Boot requires 4 Medium Leather, 2 Fine Thread, and 1 Gray Dye.
 Reach Skill 137 in Leatherworking |skill Leatherworking,137
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Lockpicking\\Lockpicking (1-300)")
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Mining (1-300)",{
-condition_suggested=function() return skill('Mining') > 0 end,
-description="This guide will walk you through leveling your Mining skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Lockpicking\\Lockpicking (1-300)')
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Mining (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Mining') > 0
+    end,
+    description = 'This guide will walk you through leveling your Mining skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 before you can learn professions.
@@ -1824,10 +2091,14 @@ Reach Skill 125 in Mining |skill Mining,125
 |tip Track them on your minimap with "Find Minerals".
 |tip You can smelt Bronze Bars with leftover Tin and Copper Bars from skill level 65-90 for additional points.
 |tip You can smelt Silver Ore from skill level 75-112 for additional points.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Copper Ore",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Copper Ore',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Durotar
 path follow smart; loop on; ants curved; dist 20
@@ -1840,10 +2111,14 @@ path	49.70,21.37	49.54,18.59
 Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 collect Copper Ore##2770 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Rough Stone",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Rough Stone',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Durotar
 path follow smart; loop on; ants curved; dist 20
@@ -1856,10 +2131,14 @@ path	49.70,21.37	49.54,18.59
 Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 collect Rough Stone##2835 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Tin Ore",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Tin Ore',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -1879,10 +2158,14 @@ Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 |tip You will need level 65 Mining to collect these.
 collect Tin Ore##2771 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Coarse Stone",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Coarse Stone',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -1902,10 +2185,14 @@ Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 |tip You will need level 65 Mining to collect these.
 collect Coarse Stone##2836 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Silver Ore",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Silver Ore',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -1925,10 +2212,14 @@ Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 |tip You will need level 75 Mining to collect these.
 collect Silver Ore##2775 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Moss Agate",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Moss Agate',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -1949,11 +2240,15 @@ Click ore as you follow the path around this area
 |tip You will need level 65 Mining to collect Tin Ore nodes and 75 to collect Silver Ore nodes.
 collect Moss Agate##1206 |n
 |tip These are a rare drop from Tin and Silver Ore nodes.
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Mining\\Farming Guides\\Iron Ore")
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Heavy Stone",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Mining\\Farming Guides\\Iron Ore')
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Mining\\Farming Guides\\Heavy Stone',
+  {
+    hardcore = true,
+  },
+  [[
 step
 map Arathi Highlands
 path follow smart; loop on; ants curved; dist 20
@@ -1975,21 +2270,35 @@ Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 |tip You will need level 125 Mining to collect these.
 collect Heavy Stone##2838 |n
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Mining\\Farming Guides\\Gold Ore")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Mining\\Farming Guides\\Mithril Ore")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Mining\\Farming Guides\\Solid Stone")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Mining\\Farming Guides\\Truesilver Ore")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Mining\\Farming Guides\\Dark Iron Ore")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Mining\\Farming Guides\\Thorium Ore")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Mining\\Farming Guides\\Dense Stone")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Mining\\Farming Guides\\Guardian Stone")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Mining\\Farming Guides\\Elementium Ore")
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Skinning (1-300)",{
-condition_suggested=function() return skill('Skinning') > 0 end,
-description="This guide will walk you through leveling your Skinning skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Mining\\Farming Guides\\Gold Ore')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Mining\\Farming Guides\\Mithril Ore')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Mining\\Farming Guides\\Solid Stone')
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Mining\\Farming Guides\\Truesilver Ore'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Mining\\Farming Guides\\Dark Iron Ore'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Mining\\Farming Guides\\Thorium Ore')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Mining\\Farming Guides\\Dense Stone')
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Mining\\Farming Guides\\Guardian Stone'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Mining\\Farming Guides\\Elementium Ore'
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Skinning (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Skinning') > 0
+    end,
+    description = 'This guide will walk you through leveling your Skinning skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 before you can learn professions.
@@ -2040,69 +2349,145 @@ You can find more around: |notinsticky
 [46.67,50.16]
 [49.90,53.28]
 [48.92,58.67]
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Green Whelp Scale")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Black Whelp Scale")
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Ruined Leather Scraps",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Green Whelp Scale'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Black Whelp Scale'
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Ruined Leather Scraps',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill enemies around this area
 |tip Skin their corpses.
 collect Ruined Leather Scraps##2934 |n |goto Durotar 43.89,17.49
 You can find more around [39.47,17.22]
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Light Leather",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Light Leather',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill enemies around this area
 |tip Skin their corpses.
 collect Light Leather##2318 |n |goto Durotar 43.89,17.49
 You can find more around [39.47,17.22]
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Thin Kodo Leather")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Light Hide")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Slimy Murloc Scale")
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Medium Leather",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Thin Kodo Leather'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Light Hide'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Slimy Murloc Scale'
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Skinning\\Farming Guides\\Medium Leather',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Yeti enemies around this area
 |tip Skin their corpses.
 |tip You can find more inside the cave.
 |tip You will need level 155 Skinning to collect these.
 collect Medium Leather##2319 |n |goto Hillsbrad Foothills 46.12,31.76
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Medium Hide")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Heavy Leather")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Raptor Hide")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Heavy Hide")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Turtle Scale")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Thick Murloc Scale")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Thick Leather")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Thick Hide")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Worn Dragonscale")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Scorpid Scale")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Devilsaur Leather")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Rugged Leather")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Warbear Leather")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Green Dragonscale")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Blue Dragonscale")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Rugged Hide")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Black Dragonscale")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Heavy Scorpid Scale")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Core Leather")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Scale of Onyxia")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Red Dragonscale")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Primal Bat Leather")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Primal Tiger Leather")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Skinning\\Farming Guides\\Dreamscale")
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Tailoring (1-300)",{
-condition_suggested=function() return skill('Tailoring') > 0 end,
-description="This guide will walk you through leveling your Tailoring skill from 1-300.",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Medium Hide'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Heavy Leather'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Raptor Hide'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Heavy Hide'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Turtle Scale'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Thick Murloc Scale'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Thick Leather'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Thick Hide'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Worn Dragonscale'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Scorpid Scale'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Devilsaur Leather'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Rugged Leather'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Warbear Leather'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Green Dragonscale'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Blue Dragonscale'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Rugged Hide'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Black Dragonscale'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Heavy Scorpid Scale'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Core Leather'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Scale of Onyxia'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Red Dragonscale'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Primal Bat Leather'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Primal Tiger Leather'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Skinning\\Farming Guides\\Dreamscale'
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Tailoring\\Tailoring (1-300)',
+  {
+    condition_suggested = function()
+      return skill('Tailoring') > 0
+    end,
+    description = 'This guide will walk you through leveling your Tailoring skill from 1-300.',
+    hardcore = true,
+  },
+  [[
 step
 Reach Level 5 |ding 5
 |tip You must be at least level 5 to train professions.
@@ -2239,10 +2624,14 @@ step
 Open Your Tailoring Crafting Panel:
 _<Create 15 Double-stitched Woolen Shoulders>_
 Reach Skill 125 in Tailoring |skill Tailoring,125
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Linen Cloth",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Tailoring\\Farming Guides\\Linen Cloth',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Follow the path |goto Orgrimmar 52.00,57.84 < 15 |only if walking
 Follow the path down |goto Orgrimmar 56.07,41.08 < 10 |only if walking
@@ -2251,59 +2640,146 @@ Enter the Ragefire Chasm dungeon |goto Orgrimmar 52.75,48.86 < 7 |c
 step
 Kill Ragefire enemies throughout the dungeon
 collect Linen Cloth##2589 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Wool Cloth",{
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Profession Guides\\Tailoring\\Farming Guides\\Wool Cloth',
+  {
+    hardcore = true,
+  },
+  [[
 step
 Kill Foulweald enemies around this area
 collect Wool Cloth##2592 |n |goto Ashenvale/0 54.08,62.60
 You can find more around:
 [goto Ashenvale/0 49.65,60.58]
 [goto Ashenvale/0 56.36,63.49]
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Tailoring\\Farming Guides\\Silk Cloth")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Tailoring\\Farming Guides\\Mageweave Cloth")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Tailoring\\Farming Guides\\Runecloth")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Tailoring\\Farming Guides\\Felcloth")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Tailoring\\Farming Guides\\Mooncloth")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Tailoring\\Farming Guides\\Spider's Silk")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Tailoring\\Farming Guides\\Thick Spider's Silk")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Tailoring\\Farming Guides\\Shadow Silk")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Tailoring\\Farming Guides\\Ironweb Spider Silk")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Dropped\\Farming Guides\\Righteous Orb")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Dropped\\Farming Guides\\Demonic Rune")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Dropped\\Farming Guides\\Dark Rune")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Dropped\\Farming Guides\\Sharp Claw")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Dropped\\Farming Guides\\Ogre Tannin")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Dropped\\Farming Guides\\Small Venom Sac")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Dropped\\Farming Guides\\Huge Venom Sac")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Dropped\\Farming Guides\\Iridescent Pearl")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Dropped\\Farming Guides\\Black Pearl")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Dropped\\Farming Guides\\Golden Pearl")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Dropped\\Farming Guides\\Giant Egg")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Dropped\\Farming Guides\\Zesty Clam Meat")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Blacksmithing\\Specialization\\Armorsmith\\Armorsmith Questline")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Blacksmithing\\Specialization\\Weaponsmith\\Weaponsmith Questline")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Blacksmithing\\Specialization\\Weaponsmith\\Master Axesmith Questline")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Blacksmithing\\Specialization\\Weaponsmith\\Master Hammersmith Questline")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Blacksmithing\\Specialization\\Weaponsmith\\Master Swordsmith Questline")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Blacksmithing\\Specialization\\How to Change Blacksmithing Specialization")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Engineering\\Specialization\\Gnomish Engineering\\Gnomish Engineering Questline")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Engineering\\Specialization\\Gnomish Engineering\\Gnome Engineer Membership Card Renewal")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Engineering\\Specialization\\Goblin Engineering\\Goblin Engineering Questline")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Engineering\\Specialization\\Goblin Engineering\\Goblin Engineer Membership Card Renewal")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Engineering\\Specialization\\How to Change Engineering Specialization")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Leatherworking\\Specialization\\Dragonscale Leatherworking\\Dragonscale Leatherworking Questline")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Leatherworking\\Specialization\\Elemental Leatherworking\\Elemental Leatherworking Questline")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Leatherworking\\Specialization\\Tribal Leatherworking\\Tribal Leatherworking Questline")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Bracers")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Gauntlets")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Helm")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Leggings")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Boots")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Plate")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Non-Trainer Recipes\\Engineering\\Gnomish Engineering\\Ultrasafe Transporter - Gadgetzan")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Non-Trainer Recipes\\Engineering\\Gnomish Engineering\\Lil' Smoky")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Non-Trainer Recipes\\Engineering\\Goblin Engineering\\Dimensional Ripper - Everlook")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Non-Trainer Recipes\\Engineering\\Goblin Engineering\\Pet Bombling")
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Tailoring\\Farming Guides\\Silk Cloth'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Tailoring\\Farming Guides\\Mageweave Cloth'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Tailoring\\Farming Guides\\Runecloth'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Tailoring\\Farming Guides\\Felcloth')
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Tailoring\\Farming Guides\\Mooncloth'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  "Profession Guides\\Tailoring\\Farming Guides\\Spider's Silk"
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  "Profession Guides\\Tailoring\\Farming Guides\\Thick Spider's Silk"
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Tailoring\\Farming Guides\\Shadow Silk'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Tailoring\\Farming Guides\\Ironweb Spider Silk'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Dropped\\Farming Guides\\Righteous Orb'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Dropped\\Farming Guides\\Demonic Rune'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Dropped\\Farming Guides\\Dark Rune')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Dropped\\Farming Guides\\Sharp Claw')
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Dropped\\Farming Guides\\Ogre Tannin'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Dropped\\Farming Guides\\Small Venom Sac'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Dropped\\Farming Guides\\Huge Venom Sac'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Dropped\\Farming Guides\\Iridescent Pearl'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Dropped\\Farming Guides\\Black Pearl'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Dropped\\Farming Guides\\Golden Pearl'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Profession Guides\\Dropped\\Farming Guides\\Giant Egg')
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Dropped\\Farming Guides\\Zesty Clam Meat'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Blacksmithing\\Specialization\\Armorsmith\\Armorsmith Questline'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Blacksmithing\\Specialization\\Weaponsmith\\Weaponsmith Questline'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Blacksmithing\\Specialization\\Weaponsmith\\Master Axesmith Questline'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Blacksmithing\\Specialization\\Weaponsmith\\Master Hammersmith Questline'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Blacksmithing\\Specialization\\Weaponsmith\\Master Swordsmith Questline'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Blacksmithing\\Specialization\\How to Change Blacksmithing Specialization'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Engineering\\Specialization\\Gnomish Engineering\\Gnomish Engineering Questline'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Engineering\\Specialization\\Gnomish Engineering\\Gnome Engineer Membership Card Renewal'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Engineering\\Specialization\\Goblin Engineering\\Goblin Engineering Questline'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Engineering\\Specialization\\Goblin Engineering\\Goblin Engineer Membership Card Renewal'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Engineering\\Specialization\\How to Change Engineering Specialization'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Leatherworking\\Specialization\\Dragonscale Leatherworking\\Dragonscale Leatherworking Questline'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Leatherworking\\Specialization\\Elemental Leatherworking\\Elemental Leatherworking Questline'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Leatherworking\\Specialization\\Tribal Leatherworking\\Tribal Leatherworking Questline'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Bracers'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Gauntlets'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Helm'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Leggings'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Boots'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Non-Trainer Recipes\\Blacksmithing\\Armorsmith\\Dark Iron Plate'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Non-Trainer Recipes\\Engineering\\Gnomish Engineering\\Ultrasafe Transporter - Gadgetzan'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  "Profession Guides\\Non-Trainer Recipes\\Engineering\\Gnomish Engineering\\Lil' Smoky"
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Non-Trainer Recipes\\Engineering\\Goblin Engineering\\Dimensional Ripper - Everlook'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Profession Guides\\Non-Trainer Recipes\\Engineering\\Goblin Engineering\\Pet Bombling'
+)

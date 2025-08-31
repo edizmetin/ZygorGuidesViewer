@@ -1,13 +1,22 @@
-local ZygorGuidesViewer=ZygorGuidesViewer
-if not ZygorGuidesViewer then return end
-if UnitFactionGroup("player")~="Horde" then return end
-if ZGV:DoMutex("GoldGathH") then return end
-ZygorGuidesViewer.GuideMenuTier = "CLA"
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Silverleaf, Peacebloom",{
-meta={goldtype="route",skillreq={herbalism=1},levelreq={1,60}},
-items={{765,140},{2447,120}},
-maps={"Tirisfal Glades"},
-},[[
+local ZygorGuidesViewer = ZygorGuidesViewer
+if not ZygorGuidesViewer then
+  return
+end
+if UnitFactionGroup('player') ~= 'Horde' then
+  return
+end
+if ZGV:DoMutex('GoldGathH') then
+  return
+end
+ZygorGuidesViewer.GuideMenuTier = 'CLA'
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Silverleaf, Peacebloom',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 1 }, levelreq = { 1, 60 } },
+    items = { { 765, 140 }, { 2447, 120 } },
+    maps = { 'Tirisfal Glades' },
+  },
+  [[
 step
 map Tirisfal Glades
 path follow smart; loop on; ants curved; dist 20
@@ -22,12 +31,16 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 collect Silverleaf##765 |n
 collect Peacebloom##2447 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Earthroot",{
-meta={goldtype="route",skillreq={herbalism=15},levelreq={1,60}},
-items={{2449,100},{765,100},{2447,100}},
-maps={"Mulgore"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Earthroot',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 15 }, levelreq = { 1, 60 } },
+    items = { { 2449, 100 }, { 765, 100 }, { 2447, 100 } },
+    maps = { 'Mulgore' },
+  },
+  [[
 step
 map Mulgore
 path follow smart; loop on; ants curved; dist 20
@@ -61,12 +74,16 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 15 Herbalism to collect these.
 collect Earthroot##2449 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Mageroyal",{
-meta={goldtype="route",skillreq={herbalism=50},levelreq={10,60}},
-items={{785,24},{2450,12},{2447,30}},
-maps={"The Barrens"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Mageroyal',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 50 }, levelreq = { 10, 60 } },
+    items = { { 785, 24 }, { 2450, 12 }, { 2447, 30 } },
+    maps = { 'The Barrens' },
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -87,12 +104,16 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 50 Herbalism to collect these.
 collect Mageroyal##785 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Stranglekelp",{
-meta={goldtype="route",skillreq={herbalism=85},levelreq={30,60}},
-items={{3820,40}},
-maps={"Stranglethorn Vale"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Stranglekelp',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 85 }, levelreq = { 30, 60 } },
+    items = { { 3820, 40 } },
+    maps = { 'Stranglethorn Vale' },
+  },
+  [[
 step
 label "Path_One"
 map Stranglethorn Vale
@@ -124,12 +145,16 @@ Click herbs as you follow the path around this area
 |tip You will need level 85 Herbalism to collect these.
 collect Stranglekelp##3820 |n
 '|goto Stranglethorn Vale 27.56,22.38 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Briarthorn, Swiftthistle",{
-meta={goldtype="route",skillreq={herbalism=70},levelreq={1,60}},
-items={{2450,24},{2452,40},{2447,28},{785,20},{2449,20}},
-maps={"Silverpine Forest"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Briarthorn, Swiftthistle',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 70 }, levelreq = { 1, 60 } },
+    items = { { 2450, 24 }, { 2452, 40 }, { 2447, 28 }, { 785, 20 }, { 2449, 20 } },
+    maps = { 'Silverpine Forest' },
+  },
+  [[
 step
 label "Path_One"
 map Silverpine Forest
@@ -163,12 +188,16 @@ Click herbs as you follow the path around this area
 collect Briarthorn##2450 |n
 collect Swiftthistle##2452 |n
 '|goto Silverpine Forest 49.04,32.38 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Bruiseweed",{
-meta={goldtype="route",skillreq={herbalism=100},levelreq={20,60}},
-items={{2453,32}},
-maps={"Ashenvale"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Bruiseweed',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 100 }, levelreq = { 20, 60 } },
+    items = { { 2453, 32 } },
+    maps = { 'Ashenvale' },
+  },
+  [[
 step
 label "Bruiseweed_1"
 map Ashenvale
@@ -196,12 +225,16 @@ Click herbs as you follow the path around this area
 |tip You will need level 100 Herbalism to collect these.
 collect Bruiseweed##2453 |n
 '|goto Ashenvale 30.47,44.71 < 20 |noway |c |next "Bruiseweed_1"
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Wild Steelbloom",{
-meta={goldtype="route",skillreq={herbalism=115},levelreq={30,60}},
-items={{3355,40}},
-maps={"Stranglethorn Vale"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Wild Steelbloom',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 115 }, levelreq = { 30, 60 } },
+    items = { { 3355, 40 } },
+    maps = { 'Stranglethorn Vale' },
+  },
+  [[
 step
 map Stranglethorn Vale
 path follow smart; loop on; ants curved; dist 20
@@ -216,12 +249,16 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 115 Herbalism to collect these.
 collect Wild Steelbloom##3355 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Grave Moss",{
-meta={goldtype="route",skillreq={herbalism=120},levelreq={35,60}},
-items={{3369,20}},
-maps={"Desolace"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Grave Moss',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 120 }, levelreq = { 35, 60 } },
+    items = { { 3369, 20 } },
+    maps = { 'Desolace' },
+  },
+  [[
 step
 Click herbs around this area
 |tip Track them on your minimap with "Find Herbs".
@@ -229,12 +266,16 @@ Click herbs around this area
 |tip You will need level 120 Herbalism to collect these.
 collect Grave Moss##3369 |n |goto Desolace 54.10,61.43
 You can find more around this area [50.23,57.64]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Kingsblood",{
-meta={goldtype="route",skillreq={herbalism=125},levelreq={20,60}},
-items={{3356,48}},
-maps={"Wetlands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Kingsblood',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 125 }, levelreq = { 20, 60 } },
+    items = { { 3356, 48 } },
+    maps = { 'Wetlands' },
+  },
+  [[
 step
 map Wetlands
 path follow smart; loop on; ants curved; dist 20
@@ -247,12 +288,16 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 125 Herbalism to collect these.
 collect Kingsblood##3356 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Liferoot",{
-meta={goldtype="route",skillreq={herbalism=150},levelreq={20,60}},
-items={{3357,20}},
-maps={"Wetlands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Liferoot',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 150 }, levelreq = { 20, 60 } },
+    items = { { 3357, 20 } },
+    maps = { 'Wetlands' },
+  },
+  [[
 step
 label "Path_One"
 map Wetlands
@@ -274,12 +319,16 @@ Click herbs as you follow the path around this area
 |tip You will need level 150 Herbalism to collect these.
 collect Liferoot##3357 |n
 '|goto Wetlands 39.88,29.56 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Fadeleaf",{
-meta={goldtype="route",skillreq={herbalism=160},levelreq={20,60}},
-items={{3818,60}},
-maps={"Swamp of Sorrows"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Fadeleaf',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 160 }, levelreq = { 20, 60 } },
+    items = { { 3818, 60 } },
+    maps = { 'Swamp of Sorrows' },
+  },
+  [[
 step
 map Swamp of Sorrows
 path follow smart; loop on; ants curved; dist 20
@@ -292,12 +341,16 @@ Click herbs as you follow the path around this area
 |tip Watch out for horde guards along the main road.
 |tip You will need level 160 Herbalism to collect these.
 collect Fadeleaf##3818 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Goldthorn, Khadgar's Whisker",{
-meta={goldtype="route",skillreq={herbalism=170},levelreq={30,60}},
-items={{3821,60},{3358,32}},
-maps={"Stranglethorn Vale"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  "GOLD\\Gathering\\Goldthorn, Khadgar's Whisker",
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 170 }, levelreq = { 30, 60 } },
+    items = { { 3821, 60 }, { 3358, 32 } },
+    maps = { 'Stranglethorn Vale' },
+  },
+  [[
 step
 label "Path_One"
 map Stranglethorn Vale
@@ -330,12 +383,16 @@ Click herbs as you follow the path around this area
 collect Goldthorn##3821 |n
 collect Khadgar's Whisker##3358 |n
 '|goto Stranglethorn Vale 30.40,67.21 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Wintersbite",{
-meta={goldtype="route",skillreq={herbalism=195},levelreq={30,60}},
-items={{3819,40}},
-maps={"Alterac Mountains"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Wintersbite',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 195 }, levelreq = { 30, 60 } },
+    items = { { 3819, 40 } },
+    maps = { 'Alterac Mountains' },
+  },
+  [[
 step
 label "Path_One"
 map Alterac Mountains
@@ -359,24 +416,32 @@ Click herbs as you follow the path around this area
 |tip You will need level 195 Herbalism to collect these.
 collect Wintersbite##3819 |n
 '|goto Alterac Mountains 36.21,70.12 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Wildvine",{
-meta={goldtype="route",skillreq={herbalism=210},levelreq={45,60}},
-items={{8153,20}},
-maps={"The Hinterlands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Wildvine',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 210 }, levelreq = { 45, 60 } },
+    items = { { 8153, 20 } },
+    maps = { 'The Hinterlands' },
+  },
+  [[
 step
 Kill Vilebranch Enemies around this area
 collect Wildvine##8153 |n |goto The Hinterlands 47.57,66.46
 |tip They have a 10% chance to be gathered from Purple Lotus around the Altar.
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 210 Herbalism to collect these.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Firebloom",{
-meta={goldtype="route",skillreq={herbalism=205},levelreq={45,60}},
-items={{4625,60}},
-maps={"Blasted Lands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Firebloom',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 205 }, levelreq = { 45, 60 } },
+    items = { { 4625, 60 } },
+    maps = { 'Blasted Lands' },
+  },
+  [[
 step
 map Blasted Lands
 path follow smart; loop on; ants curved; dist 20
@@ -389,12 +454,16 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 205 Herbalism to collect these.
 collect Firebloom##4625 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Purple Lotus",{
-meta={goldtype="route",skillreq={herbalism=210},levelreq={45,60}},
-items={{8831,48}},
-maps={"Azshara"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Purple Lotus',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 210 }, levelreq = { 45, 60 } },
+    items = { { 8831, 48 } },
+    maps = { 'Azshara' },
+  },
+  [[
 step
 map Azshara
 path follow smart; loop on; ants curved; dist 20
@@ -411,12 +480,16 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 210 Herbalism to collect these.
 collect Purple Lotus##8831 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Arthas' Tears",{
-meta={goldtype="route",skillreq={herbalism=220},levelreq={50,60}},
-items={{8836,20}},
-maps={"Western Plaguelands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  "GOLD\\Gathering\\Arthas' Tears",
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 220 }, levelreq = { 50, 60 } },
+    items = { { 8836, 20 } },
+    maps = { 'Western Plaguelands' },
+  },
+  [[
 step
 map Western Plaguelands
 path follow smart; loop on; ants curved; dist 20
@@ -435,12 +508,16 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 220 Herbalism to collect these.
 collect Arthas' Tears##8836 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Sungrass, Firebloom",{
-meta={goldtype="route",skillreq={herbalism=230},levelreq={45,60}},
-items={{8838,40},{4625,32}},
-maps={"Blasted Lands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Sungrass, Firebloom',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 230 }, levelreq = { 45, 60 } },
+    items = { { 8838, 40 }, { 4625, 32 } },
+    maps = { 'Blasted Lands' },
+  },
+  [[
 step
 map Blasted Lands
 path follow smart; loop on; ants curved; dist 20
@@ -454,12 +531,16 @@ Click herbs as you follow the path around this area
 |tip You will need level 230 Herbalism to collect these.
 collect Sungrass##8838 |n
 collect Firebloom##4625 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Blindweed, Fadeleaf",{
-meta={goldtype="route",skillreq={herbalism=235},levelreq={35,60}},
-items={{8839,60},{3818,60}},
-maps={"Swamp of Sorrows"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Blindweed, Fadeleaf',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 235 }, levelreq = { 35, 60 } },
+    items = { { 8839, 60 }, { 3818, 60 } },
+    maps = { 'Swamp of Sorrows' },
+  },
+  [[
 step
 map Swamp of Sorrows
 path follow smart; loop on; ants curved; dist 20
@@ -481,12 +562,16 @@ Click herbs as you follow the path around this area
 |tip You will need level 235 Herbalism to collect these.
 collect Blindweed##8839 |n
 collect Fadeleaf##3818 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Ghost Mushroom, Wildvine",{
-meta={goldtype="route",skillreq={herbalism=245},levelreq={45,60}},
-items={{8845,28},{8153,20}},
-maps={"The Hinterlands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Ghost Mushroom, Wildvine',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 245 }, levelreq = { 45, 60 } },
+    items = { { 8845, 28 }, { 8153, 20 } },
+    maps = { 'The Hinterlands' },
+  },
+  [[
 step
 map The Hinterlands
 path follow smart; loop on; ants curved; dist 20
@@ -498,12 +583,16 @@ Click herbs as you follow the path around this area
 |tip They spawn inside of the cave along this path as well as outside of it.
 collect Ghost Mushroom##8845 |n
 collect Wildvine##8153 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Gromsblood, Sungrass, Firebloom",{
-meta={goldtype="route",skillreq={herbalism=250},levelreq={45,60}},
-items={{8846,28},{8838,40},{4625,32}},
-maps={"Blasted Lands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Gromsblood, Sungrass, Firebloom',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 250 }, levelreq = { 45, 60 } },
+    items = { { 8846, 28 }, { 8838, 40 }, { 4625, 32 } },
+    maps = { 'Blasted Lands' },
+  },
+  [[
 step
 map Blasted Lands
 path follow smart; loop on; ants curved; dist 20
@@ -518,12 +607,16 @@ Click herbs as you follow the path around this area
 collect Gromsblood##8846 |n
 collect Sungrass##8838 |n
 collect Firebloom##4625 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Golden Sansam, Dreamfoil",{
-meta={goldtype="route",skillreq={herbalism=260},levelreq={45,60}},
-items={{13464,40},{13463,28}},
-maps={"Azshara"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Golden Sansam, Dreamfoil',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 260 }, levelreq = { 45, 60 } },
+    items = { { 13464, 40 }, { 13463, 28 } },
+    maps = { 'Azshara' },
+  },
+  [[
 step
 map Azshara
 path follow smart; loop on; ants curved; dist 20
@@ -540,12 +633,16 @@ Click herbs as you follow the path around this area
 |tip You will need level 260 Herbalism to collect these.
 collect Golden Sansam##13464 |n
 collect Dreamfoil##13463 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Mountain Silversage",{
-meta={goldtype="route",skillreq={herbalism=280},levelreq={50,60}},
-items={{13465,20}},
-maps={"Un'Goro Crater"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Mountain Silversage',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 280 }, levelreq = { 50, 60 } },
+    items = { { 13465, 20 } },
+    maps = { "Un'Goro Crater" },
+  },
+  [[
 step
 map Un'Goro Crater
 path follow smart; loop on; ants curved; dist 20
@@ -567,12 +664,16 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 280 Herbalism to collect these.
 collect Mountain Silversage##13465 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Plaguebloom",{
-meta={goldtype="route",skillreq={herbalism=285},levelreq={50,60}},
-items={{13466,20},{13463,16}},
-maps={"Eastern Plaguelands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Plaguebloom',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 285 }, levelreq = { 50, 60 } },
+    items = { { 13466, 20 }, { 13463, 16 } },
+    maps = { 'Eastern Plaguelands' },
+  },
+  [[
 step
 map Eastern Plaguelands
 path follow smart; loop on; ants curved; dist 20
@@ -585,12 +686,16 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 285 Herbalism to collect these.
 collect Plaguebloom##13466 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Icecap",{
-meta={goldtype="route",skillreq={herbalism=285},levelreq={50,60}},
-items={{13467,28},{13465,12}},
-maps={"Winterspring"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Icecap',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 285 }, levelreq = { 50, 60 } },
+    items = { { 13467, 28 }, { 13465, 12 } },
+    maps = { 'Winterspring' },
+  },
+  [[
 step
 map Winterspring
 path follow smart; loop on; ants curved; dist 20
@@ -608,12 +713,16 @@ Click herbs as you follow the path around this area
 |tip Track them on your minimap with "Find Herbs".
 |tip You will need level 290 Herbalism to collect these.
 collect Icecap##13467 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Black Lotus",{
-meta={goldtype="route",skillreq={herbalism=285},levelreq={50,60}},
-items={{13468,4}},
-maps={"Burning Steppes"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Black Lotus',
+  {
+    meta = { goldtype = 'route', skillreq = { herbalism = 285 }, levelreq = { 50, 60 } },
+    items = { { 13468, 4 } },
+    maps = { 'Burning Steppes' },
+  },
+  [[
 step
 label "Path_One"
 map Burning Steppes
@@ -645,12 +754,16 @@ collect Black Lotus##13468 |n
 |tip These are extremely rare.
 |tip Pick other herbs on the path to have a chance to spawn them.
 '|goto Burning Steppes 75.56,48.10 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Copper Ore, Rough Stone",{
-meta={goldtype="route",skillreq={mining=1},levelreq={1,60}},
-items={{2770,160},{2835,100}},
-maps={"Durotar"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Copper Ore, Rough Stone',
+  {
+    meta = { goldtype = 'route', skillreq = { mining = 1 }, levelreq = { 1, 60 } },
+    items = { { 2770, 160 }, { 2835, 100 } },
+    maps = { 'Durotar' },
+  },
+  [[
 step
 map Durotar
 path follow smart; loop on; ants curved; dist 20
@@ -664,12 +777,16 @@ Click ore as you follow the path around this area
 |tip Track them on your minimap with "Find Minerals".
 collect Copper Ore##2770 |n
 collect Rough Stone##2835 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Silver Ore, Tin Ore, Coarse Stone, Moss Agate",{
-meta={goldtype="route",skillreq={mining=65},levelreq={30,60}},
-items={{2775,12},{2771,60},{2836,48},{2770,100},{2835,52}},
-maps={"The Barrens"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Silver Ore, Tin Ore, Coarse Stone, Moss Agate',
+  {
+    meta = { goldtype = 'route', skillreq = { mining = 65 }, levelreq = { 30, 60 } },
+    items = { { 2775, 12 }, { 2771, 60 }, { 2836, 48 }, { 2770, 100 }, { 2835, 52 } },
+    maps = { 'The Barrens' },
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -693,12 +810,16 @@ collect Tin Ore##2771 |n
 collect Coarse Stone##2836 |n
 collect Moss Agate##1206 |n
 |tip These are a rare drop from Tin and Silver Ore.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Iron Ore, Gold Ore, Heavy Stone",{
-meta={goldtype="route",skillreq={mining=125},levelreq={30,60}},
-items={{2772,100},{2776,12},{2838,80}},
-maps={"Arathi Highlands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Iron Ore, Gold Ore, Heavy Stone',
+  {
+    meta = { goldtype = 'route', skillreq = { mining = 125 }, levelreq = { 30, 60 } },
+    items = { { 2772, 100 }, { 2776, 12 }, { 2838, 80 } },
+    maps = { 'Arathi Highlands' },
+  },
+  [[
 step
 map Arathi Highlands
 path follow smart; loop on; ants curved; dist 20
@@ -722,12 +843,16 @@ Click ore as you follow the path around this area
 collect Iron Ore##2772 |n
 collect Gold Ore##2776 |n
 collect Heavy Stone##2838 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Mithril Ore, Truesilver Ore, Solid Stone",{
-meta={goldtype="route",skillreq={mining=175},levelreq={40,60}},
-items={{3858,100},{7911,12},{7912,60},{2772,40}},
-maps={"Badlands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Mithril Ore, Truesilver Ore, Solid Stone',
+  {
+    meta = { goldtype = 'route', skillreq = { mining = 175 }, levelreq = { 40, 60 } },
+    items = { { 3858, 100 }, { 7911, 12 }, { 7912, 60 }, { 2772, 40 } },
+    maps = { 'Badlands' },
+  },
+  [[
 step
 map Badlands
 path follow smart; loop on; ants curved; dist 20
@@ -740,12 +865,16 @@ Click ore as you follow the path around this area
 collect Mithril Ore##3858 |n
 collect Truesilver Ore##7911 |n
 collect Solid Stone##7912 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Dark Iron Ore",{
-meta={goldtype="route",skillreq={mining=230},levelreq={50,60}},
-items={{11370,40},{10620,12},{12365,12},{3858,16},{7912,28}},
-maps={"Burning Steppes"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Dark Iron Ore',
+  {
+    meta = { goldtype = 'route', skillreq = { mining = 230 }, levelreq = { 50, 60 } },
+    items = { { 11370, 40 }, { 10620, 12 }, { 12365, 12 }, { 3858, 16 }, { 7912, 28 } },
+    maps = { 'Burning Steppes' },
+  },
+  [[
 step
 map Burning Steppes
 path follow smart; loop on; ants curved; dist 20
@@ -759,12 +888,16 @@ Click ore as you follow the path around this area
 |tip These are a rare spawn.
 |tip However, they can be found more consistently inside the Blackrock Depths dungeon and Molten Core raid.
 collect Dark Iron Ore##11370 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Thorium Ore, Dense Stone",{
-meta={goldtype="route",skillreq={mining=245},levelreq={50,60}},
-items={{10620,20},{12365,28}},
-maps={"Un'Goro Crater"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Thorium Ore, Dense Stone',
+  {
+    meta = { goldtype = 'route', skillreq = { mining = 245 }, levelreq = { 50, 60 } },
+    items = { { 10620, 20 }, { 12365, 28 } },
+    maps = { "Un'Goro Crater" },
+  },
+  [[
 step
 map Un'Goro Crater
 path follow smart; loop on; ants curved; dist 20
@@ -785,12 +918,16 @@ Click ore as you follow the path around this area
 |tip You will need level 245 Mining to collect these.
 collect Thorium Ore##10620 |n
 collect Dense Stone##12365 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Guardian Stone",{
-meta={goldtype="route",levelreq={60,60}},
-items={{12809,8}},
-maps={"Un'Goro Crater"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Guardian Stone',
+  {
+    meta = { goldtype = 'route', levelreq = { 60, 60 } },
+    items = { { 12809, 8 } },
+    maps = { "Un'Goro Crater" },
+  },
+  [[
 step
 map Un'Goro Crater
 path follow smart; loop on; ants curved; dist 20
@@ -801,10 +938,14 @@ path	56.97,14.88	53.59,13.78	51.39,17.24	48.13,13.45
 Kill Stone Guardians as you follow the path around this area
 |tip These are level 60-61 Elite enemies.
 collect Guardian Stone##12809 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Elementium Ore",{
-hideif=not ZGV.IsClassicSoM
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Elementium Ore',
+  {
+    hideif = not ZGV.IsClassicSoM,
+  },
+  [[
 step
 Follow the path up |goto Searing Gorge 33.53,75.22 < 20 |only if walking
 Enter Blackrock Mountain |goto Searing Gorge 34.76,83.98 < 7 |walk
@@ -820,141 +961,196 @@ Inside the Blackwing Lair Raid:
 kill Blackwing Technician##13996+
 collect Elementium Ore##18562 |n
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Strange Dust",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Strange Dust',
+  {},
+  [[
 step
 Disenchant level 5-20 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House.
 |tip You may sometimes get Small Glimmering Shards instead of Strange Dust.
 collect Strange Dust##10940 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Lesser Magic Essence",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Lesser Magic Essence',
+  {},
+  [[
 step
 Disenchant level 3-12 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House.
 |tip You may sometimes get Strange Dust instead of Lesser Magic Essence.
 collect Lesser Magic Essence##10938 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Greater Magic Essence",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Greater Magic Essence',
+  {},
+  [[
 step
 Disenchant level 9-21 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House.
 |tip You may sometimes get Strange Dust instead of Greater Magic Essence.
 |tip You can turn 3 Lesser Magic Essences into a Greater Magic Essence.
 collect Greater Magic Essence##10939 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Lesser Eternal Essence",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Lesser Eternal Essence',
+  {},
+  [[
 step
 Disenchant level 40-50 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House.
 |tip You may sometimes get Dream Dust instead of Lesser Eternal Essence.
 collect Lesser Eternal Essence##16202 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Greater Eternal Essence",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Greater Eternal Essence',
+  {},
+  [[
 step
 Disenchant level 45-60 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House.
 |tip You may sometimes get Illusion Dust instead of Greater Eternal Essence.
 |tip You can turn 3 Lesser Eternal Essences into a Greater Eternal Essence.
 collect Greater Eternal Essence##16203 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Small Brilliant Shard",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Small Brilliant Shard',
+  {},
+  [[
 step
 Disenchant level 38-50 blue and green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House.
 |tip You may sometimes get Dream Dust instead of Small Brilliant Shards.
 collect Small Brilliant Shard##14343 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Large Brilliant Shard",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Large Brilliant Shard',
+  {},
+  [[
 step
 Disenchant level 50-58 blue weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House.
 |tip You may very rarely get Nexus Crystals instead of Large Brilliant Shards.
 collect Large Brilliant Shard##14344 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Illusion Dust",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Illusion Dust',
+  {},
+  [[
 step
 Disenchant level 45-60 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House.
 |tip You may sometimes get Greater Eternal Essence instead of Illusion Dust.
 collect Illusion Dust##16204 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Lesser Astral Essence",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Lesser Astral Essence',
+  {},
+  [[
 step
 Disenchant level 20-25 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House.
 collect Lesser Astral Essence##10998 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Greater Astral Essence",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Greater Astral Essence',
+  {},
+  [[
 step
 Disenchant level 20-30 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House.
 collect Greater Astral Essence##11082 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Soul Dust",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Soul Dust',
+  {},
+  [[
 step
 Disenchant level 25-35 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House.
 collect Soul Dust##11083 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Lesser Mystic Essence",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Lesser Mystic Essence',
+  {},
+  [[
 step
 Disenchant level 30-35 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House.
 collect Lesser Mystic Essence##11134 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Greater Mystic Essence",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Greater Mystic Essence',
+  {},
+  [[
 step
 Disenchant level 35-40 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House.
 collect Greater Mystic Essence##11135 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Vision Dust",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Vision Dust',
+  {},
+  [[
 step
 Disenchant level 35-45 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House.
 collect Vision Dust##11137 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Dream Dust",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Dream Dust',
+  {},
+  [[
 step
 Disenchant level 45-55 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House.
 collect Dream Dust##11176 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Greater Nether Essence",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Greater Nether Essence',
+  {},
+  [[
 step
 Disenchant level 45-50 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House.
 collect Greater Nether Essence##11175 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Lesser Nether Essence",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Lesser Nether Essence',
+  {},
+  [[
 step
 Disenchant level 40-45 green weapons and armor
 |tip You can disenchant old gear or buy some off the Auction House.
 collect Lesser Nether Essence##11174 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Green Whelp Scale, Heavy Leather, Medium Leather",{
-meta={goldtype="route",skillreq={skinning=170},levelreq={35,60}},
-items={{7392,28},{4234,44},{2319,36}},
-maps={"Swamp of Sorrows"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Green Whelp Scale, Heavy Leather, Medium Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 170 }, levelreq = { 35, 60 } },
+    items = { { 7392, 28 }, { 4234, 44 }, { 2319, 36 } },
+    maps = { 'Swamp of Sorrows' },
+  },
+  [[
 step
 Kill Whelp enemies around this area
 |tip Skin their corpses.
@@ -963,12 +1159,16 @@ collect Green Whelp Scale##7392 |n |goto Swamp of Sorrows 13.29,64.20
 |tip These have a low drop rate.
 collect Heavy Leather##4234 |n |goto Swamp of Sorrows 13.29,64.20
 collect Medium Leather##2319 |n |goto Swamp of Sorrows 13.29,64.20
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Black Whelp Scale, Light Leather",{
-meta={goldtype="route",skillreq={skinning=70},levelreq={15,60}},
-items={{7286,66},{2318,120}},
-maps={"Redridge Mountains"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Black Whelp Scale, Light Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 70 }, levelreq = { 15, 60 } },
+    items = { { 7286, 66 }, { 2318, 120 } },
+    maps = { 'Redridge Mountains' },
+  },
+  [[
 step
 kill Black Dragon Whelp##441+
 |tip Skin their corpses.
@@ -981,24 +1181,32 @@ You can find more around: |notinsticky
 [46.74,77.01]
 [57.29,75.08]
 [66.62,76.17]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Light Leather, Ruined Leather Scraps",{
-meta={goldtype="route",skillreq={skinning=1},levelreq={5,60}},
-items={{2318,60},{2934,80}},
-maps={"Durotar"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Light Leather, Ruined Leather Scraps',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 1 }, levelreq = { 5, 60 } },
+    items = { { 2318, 60 }, { 2934, 80 } },
+    maps = { 'Durotar' },
+  },
+  [[
 step
 Kill enemies around this area
 |tip Skin their corpses.
 collect Light Leather##2318 |n |goto Durotar 43.89,17.49
 collect Ruined Leather Scraps##2934 |n |goto Durotar 43.89,17.49
 You can find more around [39.47,17.22]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Thin Kodo Leather",{
-meta={goldtype="route",levelreq={10,60}},
-items={{5082,20}},
-maps={"Mulgore"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Thin Kodo Leather',
+  {
+    meta = { goldtype = 'route', levelreq = { 10, 60 } },
+    items = { { 5082, 20 } },
+    maps = { 'Mulgore' },
+  },
+  [[
 step
 map Mulgore
 path follow smart; loop on; ants curved; dist 20
@@ -1006,12 +1214,16 @@ path	36.83,37.11	40.70,41.79	47.76,36.77	51.48,25.17	49.44,17.26
 path	43.79,16.61	35.19,17.28	31.28,20.42	34.20,31.05
 Kill Kodo enemies as you follow the path around this area
 collect Thin Kodo Leather##5082 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Light Hide, Light Leather",{
-meta={goldtype="route",skillreq={skinning=100},levelreq={20,60}},
-items={{783,8},{2318,52},{2319,36}},
-maps={"The Barrens"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Light Hide, Light Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 100 }, levelreq = { 20, 60 } },
+    items = { { 783, 8 }, { 2318, 52 }, { 2319, 36 } },
+    maps = { 'The Barrens' },
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -1024,24 +1236,32 @@ Kill enemies as you follow the path around this area
 collect Light Hide##783 |n
 |tip These have a low drop rate.
 collect Light Leather##2318 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Slimy Murloc Scale",{
-meta={goldtype="route",levelreq={16,60}},
-items={{5784,32}},
-maps={"Silverpine Forest"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Slimy Murloc Scale',
+  {
+    meta = { goldtype = 'route', levelreq = { 16, 60 } },
+    items = { { 5784, 32 } },
+    maps = { 'Silverpine Forest' },
+  },
+  [[
 step
 Kill Vile Fin enemies around this area
 collect Slimy Murloc Scale##5784 |n |goto Silverpine Forest 78.30,30.76
 You can find more around: |notinsticky
 [80.06,28.45]
 [73.54,17.09]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Medium Leather, Heavy Leather",{
-meta={goldtype="route",skillreq={skinning=155},levelreq={30,60}},
-items={{2319,80},{4234,48}},
-maps={"Hillsbrad Foothills"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Medium Leather, Heavy Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 155 }, levelreq = { 30, 60 } },
+    items = { { 2319, 80 }, { 4234, 48 } },
+    maps = { 'Hillsbrad Foothills' },
+  },
+  [[
 step
 Kill Yeti enemies around this area
 |tip Skin their corpses.
@@ -1049,12 +1269,16 @@ Kill Yeti enemies around this area
 |tip You will need level 155 Skinning to collect these.
 collect Medium Leather##2319 |n |goto Hillsbrad Foothills 46.12,31.76
 collect Heavy Leather##4234 |n |goto Hillsbrad Foothills 46.12,31.76
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Medium Hide, Medium Leather, Light Leather",{
-meta={goldtype="route",skillreq={skinning=115},levelreq={20,60}},
-items={{4232,8},{2319,48},{2318,40}},
-maps={"Stonetalon Mountains"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Medium Hide, Medium Leather, Light Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 115 }, levelreq = { 20, 60 } },
+    items = { { 4232, 8 }, { 2319, 48 }, { 2318, 40 } },
+    maps = { 'Stonetalon Mountains' },
+  },
+  [[
 step
 kill Blackened Basilisk##4044+
 |tip Skin their corpses.
@@ -1064,12 +1288,16 @@ collect Medium Hide##4232 |n |goto Stonetalon Mountains 44.88,41.82
 collect Medium Leather##2319 |n |goto Stonetalon Mountains 44.88,41.82
 collect Light Leather##2318 |n |goto Stonetalon Mountains 44.88,41.82
 You can find more around [36.49,48.50]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Heavy Leather",{
-meta={goldtype="route",skillreq={skinning=185},levelreq={35,60}},
-items={{4234,100}},
-maps={"Dustwallow Marsh"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Heavy Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 185 }, levelreq = { 35, 60 } },
+    items = { { 4234, 100 } },
+    maps = { 'Dustwallow Marsh' },
+  },
+  [[
 step
 Kill enemies around this area
 |tip Only beast enemies will be skinnable.
@@ -1079,22 +1307,30 @@ collect Heavy Leather##4234 |n |goto Dustwallow Marsh 40.73,58.37
 You can find more around: |notinsticky
 [43.35,50.06]
 [40.42,41.57]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Raptor Hide",{
-meta={goldtype="route",levelreq={35,60}},
-items={{4461,40}},
-maps={"Arathi Highlands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Raptor Hide',
+  {
+    meta = { goldtype = 'route', levelreq = { 35, 60 } },
+    items = { { 4461, 40 } },
+    maps = { 'Arathi Highlands' },
+  },
+  [[
 step
 Kill Highland enemies around this area
 collect Raptor Hide##4461 |n |goto Arathi Highlands 52.39,67.61
 You can find more around [47.28,78.85]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Heavy Hide, Heavy Leather, Thick Leather",{
-meta={goldtype="route",skillreq={skinning=205},levelreq={40,60}},
-items={{4235,8},{4234,60},{4304,40}},
-maps={"The Hinterlands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Heavy Hide, Heavy Leather, Thick Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 205 }, levelreq = { 40, 60 } },
+    items = { { 4235, 8 }, { 4234, 60 }, { 4304, 40 } },
+    maps = { 'The Hinterlands' },
+  },
+  [[
 step
 Kill enemies around this area
 |tip Skin their corpses.
@@ -1103,12 +1339,16 @@ collect Heavy Hide##4235 |n |goto The Hinterlands 16.19,50.97
 |tip These have a low drop rate.
 collect Heavy Leather##4234 |n |goto The Hinterlands 16.19,50.97
 collect Thick Leather##4304 |n |goto The Hinterlands 16.19,50.97
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Turtle Scale, Heavy Leather, Thick Leather",{
-meta={goldtype="route",skillreq={skinning=210},levelreq={40,60}},
-items={{8167,66},{4234,60},{4304,56}},
-maps={"Tanaris"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Turtle Scale, Heavy Leather, Thick Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 210 }, levelreq = { 40, 60 } },
+    items = { { 8167, 66 }, { 4234, 60 }, { 4304, 56 } },
+    maps = { 'Tanaris' },
+  },
+  [[
 step
 kill Steeljaw Snapper##14123+
 |tip Skin their corpses.
@@ -1120,21 +1360,29 @@ You can find more around: |notinsticky
 [67.57,28.82]
 [67.85,35.25]
 [68.10,39.75]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Thick Murloc Scale",{
-meta={goldtype="route",levelreq={35,60}},
-items={{5785,25}},
-maps={"Dustwallow Marsh"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Thick Murloc Scale',
+  {
+    meta = { goldtype = 'route', levelreq = { 35, 60 } },
+    items = { { 5785, 25 } },
+    maps = { 'Dustwallow Marsh' },
+  },
+  [[
 step
 Kill Mirefin enemies around this area
 collect Thick Murloc Scale##5785 |n |goto Dustwallow Marsh 58.78,9.45
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Thick Hide, Thick Leather",{
-meta={goldtype="route",skillreq={skinning=245},levelreq={46,60}},
-items={{8169,8},{4304,56}},
-maps={"Un'Goro Crater"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Thick Hide, Thick Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 245 }, levelreq = { 46, 60 } },
+    items = { { 8169, 8 }, { 4304, 56 } },
+    maps = { "Un'Goro Crater" },
+  },
+  [[
 step
 Kill enemies around this area
 |tip Only beast enemies will be skinnable.
@@ -1146,12 +1394,16 @@ collect Thick Leather##4304 |n |goto Un'Goro Crater 67.37,72.59
 You can find more around: |notinsticky
 [65.75,64.16]
 [70.21,55.33]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Worn Dragonscale, Thick Leather, Heavy Leather",{
-meta={goldtype="route",skillreq={skinning=205},levelreq={40,60}},
-items={{8165,8},{4304,52},{4234,44}},
-maps={"Dustwallow Marsh"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Worn Dragonscale, Thick Leather, Heavy Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 205 }, levelreq = { 40, 60 } },
+    items = { { 8165, 8 }, { 4304, 52 }, { 4234, 44 } },
+    maps = { 'Dustwallow Marsh' },
+  },
+  [[
 step
 Kill enemies around this area
 |tip Skin their corpses.
@@ -1161,12 +1413,16 @@ collect Worn Dragonscale##8165 |n |goto Dustwallow Marsh 44.75,66.19
 collect Thick Leather##4304 |n |goto Dustwallow Marsh 44.75,66.19
 collect Heavy Leather##4234 |n |goto Dustwallow Marsh 44.75,66.19
 You can find more around [44.71,74.76]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Scorpid Scale, Thick Leather, Heavy Leather",{
-meta={goldtype="route",skillreq={skinning=215},levelreq={40,60}},
-items={{8154,60},{4304,36},{4234,32}},
-maps={"Tanaris"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Scorpid Scale, Thick Leather, Heavy Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 215 }, levelreq = { 40, 60 } },
+    items = { { 8154, 60 }, { 4304, 36 }, { 4234, 32 } },
+    maps = { 'Tanaris' },
+  },
+  [[
 step
 Kill Scorpid enemies around this area
 |tip Skin their corpses.
@@ -1178,12 +1434,16 @@ You can find more around: |notinsticky
 [50.33,48.18]
 [44.99,44.85]
 [39.08,34.58]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Devilsaur Leather",{
-meta={goldtype="route",skillreq={skinning=270},levelreq={55,60}},
-items={{15417,8}},
-maps={"Un'Goro Crater"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Devilsaur Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 270 }, levelreq = { 55, 60 } },
+    items = { { 15417, 8 } },
+    maps = { "Un'Goro Crater" },
+  },
+  [[
 step
 Kill Devilsaur enemies around this area
 |tip Skin their corpses.
@@ -1197,12 +1457,16 @@ You can find more around: |notinsticky
 [71.30,51.78]
 [68.80,26.05]
 [31.30,25.52]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Rugged Leather",{
-meta={goldtype="route",skillreq={skinning=275},levelreq={55,60}},
-items={{8170,60},{8169,12},{4304,44}},
-maps={"Winterspring"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Rugged Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 275 }, levelreq = { 55, 60 } },
+    items = { { 8170, 60 }, { 8169, 12 }, { 4304, 44 } },
+    maps = { 'Winterspring' },
+  },
+  [[
 step
 Kill Ice Thistle enemies around this area
 |tip You can find more inside the cave.
@@ -1210,12 +1474,16 @@ Kill Ice Thistle enemies around this area
 |tip You will need level 275 Skinning to collect these.
 collect Rugged Leather##8170 |n |goto Winterspring 66.43,44.38
 You can find more inside the cave at [67.67,41.72]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Warbear Leather, Rugged Leather",{
-meta={goldtype="route",skillreq={skinning=275},levelreq={55,60}},
-items={{15419,12},{8170,60}},
-maps={"Western Plaguelands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Warbear Leather, Rugged Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 275 }, levelreq = { 55, 60 } },
+    items = { { 15419, 12 }, { 8170, 60 } },
+    maps = { 'Western Plaguelands' },
+  },
+  [[
 step
 kill Diseased Grizzly##1816+
 |tip Skin their corpses.
@@ -1227,12 +1495,16 @@ You can find more around: |notinsticky
 [58.69,58.24]
 [57.20,52.78]
 [61.55,52.23]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Green Dragonscale, Thick Leather, Heavy Leather",{
-meta={goldtype="route",skillreq={skinning=205},levelreq={40,60}},
-items={{15412,8},{4304,48},{4234,36}},
-maps={"Swamp of Sorrows"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Green Dragonscale, Thick Leather, Heavy Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 205 }, levelreq = { 40, 60 } },
+    items = { { 15412, 8 }, { 4304, 48 }, { 4234, 36 } },
+    maps = { 'Swamp of Sorrows' },
+  },
+  [[
 step
 map Swamp of Sorrows
 path follow smart; loop on; ants curved; dist 20
@@ -1247,12 +1519,16 @@ collect Green Dragonscale##15412 |n
 |tip These have a low drop rate.
 collect Thick Leather##4304 |n
 collect Heavy Leather##4234 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Blue Dragonscale, Rugged Leather, Thick Leather",{
-meta={goldtype="route",skillreq={skinning=250},levelreq={50,60}},
-items={{15415,4},{8170,40},{4304,16}},
-maps={"Azshara"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Blue Dragonscale, Rugged Leather, Thick Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 250 }, levelreq = { 50, 60 } },
+    items = { { 15415, 4 }, { 8170, 40 }, { 4304, 16 } },
+    maps = { 'Azshara' },
+  },
+  [[
 step
 Kill enemies around this area
 |tip Any Draconic or Blue enemy.
@@ -1268,12 +1544,16 @@ You can find more around: |notinsticky
 [42.89,82.91]
 [39.79,83.98]
 [37.50,80.60]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Rugged Hide, Rugged Leather, Thick Leather",{
-meta={goldtype="route",skillreq={skinning=275},levelreq={55,60}},
-items={{8171,8},{8170,52},{4304,48}},
-maps={"Winterspring"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Rugged Hide, Rugged Leather, Thick Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 275 }, levelreq = { 55, 60 } },
+    items = { { 8171, 8 }, { 8170, 52 }, { 4304, 48 } },
+    maps = { 'Winterspring' },
+  },
+  [[
 step
 Kill Ice Thistle enemies around this area
 |tip You can find more inside the cave.
@@ -1284,12 +1564,16 @@ collect Rugged Hide##8171 |n |goto Winterspring 66.43,44.38
 collect Rugged Leather##8170 |n |goto Winterspring 66.43,44.38
 collect Thick Leather##4304 |n |goto Winterspring 66.43,44.38
 You can find more inside the cave at [67.67,41.72]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Black Dragonscale, Rugged Leather",{
-meta={goldtype="route",skillreq={skinning=260},levelreq={50,60}},
-items={{15416,4},{8170,60}},
-maps={"Burning Steppes"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Black Dragonscale, Rugged Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 260 }, levelreq = { 50, 60 } },
+    items = { { 15416, 4 }, { 8170, 60 } },
+    maps = { 'Burning Steppes' },
+  },
+  [[
 step
 Kill enemies around this area
 |tip Most of the enemies around this area are Elite.
@@ -1299,12 +1583,16 @@ collect Black Dragonscale##15416 |n |goto Burning Steppes 91.30,35.07
 |tip These have a low drop rate.
 collect Rugged Leather##8170 |n |goto Burning Steppes 91.30,35.07
 You can find more around [90.73,53.59]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Heavy Scorpid Scale, Rugged Leather",{
-meta={goldtype="route",skillreq={skinning=270},levelreq={55,60}},
-items={{15408,32},{8170,40}},
-maps={"Silithus"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Heavy Scorpid Scale, Rugged Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 270 }, levelreq = { 55, 60 } },
+    items = { { 15408, 32 }, { 8170, 40 } },
+    maps = { 'Silithus' },
+  },
+  [[
 step
 Kill Stonelash enemies around this area
 |tip Skin their corpses.
@@ -1320,11 +1608,15 @@ You can find more around: |notinsticky
 [46.67,70.30]
 [45.02,83.62]
 [40.32,81.44]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Core Leather",{
-meta={goldtype="route",skillreq={skinning=300},levelreq={60,60}},
-items={{17012,4}},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Core Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 300 }, levelreq = { 60, 60 } },
+    items = { { 17012, 4 } },
+  },
+  [[
 step
 Enter the Molten Core Raid:
 Kill Ancient Core Hounds and Magmadar
@@ -1332,23 +1624,31 @@ Kill Ancient Core Hounds and Magmadar
 |tip Skin their corpses.
 |tip Level 61's require 305 Skinning, level 62's require 310 Skinning, and bosses require 315 Skinning.
 collect Core Leather##17012 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Scale of Onyxia",{
-meta={goldtype="route",skillreq={skinning=300},levelreq={60,60}},
-items={{15410,2}},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Scale of Onyxia',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 300 }, levelreq = { 60, 60 } },
+    items = { { 15410, 2 } },
+  },
+  [[
 step
 Enter the Onyxia's Lair Raid:
 kill Onyxia##10184
 |tip Skin its corpse.
 |tip You will need level 315 Skinning to collect these.
 collect Scale of Onyxia##15410 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Gathering\\Red Dragonscale, Rugged Leather",{
-meta={goldtype="route",skillreq={skinning=300},levelreq={55,60}},
-items={{15414,8},{8170,60}},
-maps={"Wetlands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Gathering\\Red Dragonscale, Rugged Leather',
+  {
+    meta = { goldtype = 'route', skillreq = { skinning = 300 }, levelreq = { 55, 60 } },
+    items = { { 15414, 8 }, { 8170, 60 } },
+    maps = { 'Wetlands' },
+  },
+  [[
 step
 Follow the path up |goto Wetlands 74.18,47.32 < 20 |only if walking
 Kill Dragonkin enemies around this area
@@ -1362,4 +1662,5 @@ collect Rugged Leather##8170 |n |goto Wetlands 86.54,51.83
 You can find more around: |notinsticky
 [87.95,64.81]
 [82.51,70.50]
-]])
+]]
+)

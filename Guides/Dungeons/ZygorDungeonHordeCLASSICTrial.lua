@@ -1,14 +1,23 @@
-local ZygorGuidesViewer=ZygorGuidesViewer
-if not ZygorGuidesViewer then return end
-if UnitFactionGroup("player")~="Horde" then return end
-if ZGV:DoMutex("DungeonHCLASSIC") then return end
-ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Ragefire Chasm (13-18)",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Ragefire Chasm",
-description="This guide will walk you through the Ragefire Chasm dungeon.",
-lfgid=2437,
-},[[
+local ZygorGuidesViewer = ZygorGuidesViewer
+if not ZygorGuidesViewer then
+  return
+end
+if UnitFactionGroup('player') ~= 'Horde' then
+  return
+end
+if ZGV:DoMutex('DungeonHCLASSIC') then
+  return
+end
+ZygorGuidesViewer.GuideMenuTier = 'TRI'
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Ragefire Chasm (13-18)',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Ragefire Chasm',
+    description = 'This guide will walk you through the Ragefire Chasm dungeon.',
+    lfgid = 2437,
+  },
+  [[
 step
 Enter the Ragefire Chasm Dungeon with Your Group |goto Ragefire Chasm/0 0.00,0.00 < 500 |c
 step
@@ -31,13 +40,17 @@ step
 kill Bazzalan##11519
 |tip The Searing Blade Cultist to the right of the boss can be pulled by itself and should be killed before pulling the boss.
 |tip CC the second Searing Blade Cultist and then focus on kill Bazzalan.
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Wailing Caverns (15-25)",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Wailing Caverns",
-description="This guide will walk you through the Wailing Caverns dungeon.",
-lfgid=718,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Wailing Caverns (15-25)',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Wailing Caverns',
+    description = 'This guide will walk you through the Wailing Caverns dungeon.',
+    lfgid = 718,
+  },
+  [[
 step
 Enter the Wailing Caverns Dungeon with Your Group |goto Wailing Caverns/0 0.00,0.00 < 500 |c
 step
@@ -84,13 +97,17 @@ kill Mutanus the Devourer##3654
 |tip Once the Disciple reaches the ritual stone where Naralex sleeps, you will be attacked by waves of enemies.
 |tip Mutanus' "Thunderclap" ability does high damage to the tank and any nearby melee DPS so ranged DPS is better for this fight.
 |tip He also has two abilities, "Terrify" and "Naralex's Nightmare" that both stun/sleep players so the healer should try to keep the group's health topped off as much as possible.
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\The Deadmines (17-26)",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Deadmines",
-description="This guide will walk you through the Deadmines dungeon.",
-lfgid=1581,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\The Deadmines (17-26)',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Deadmines',
+    description = 'This guide will walk you through the Deadmines dungeon.',
+    lfgid = 1581,
+  },
+  [[
 step
 Enter the building |goto Westfall/0 42.57,71.83 < 5 |walk
 Jump down here |goto Westfall/0 43.42,72.89 < 5 |walk
@@ -152,13 +169,17 @@ kill Cookie##645
 |tip This is a bonus boss, on a little island below.
 |tip If you want to be safe, you can clear the adds below before jumping down.
 |tip Interrupt "Cookie's Cooking" spell or it heals him.
-]])
-ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Shadowfang Keep (22-30)",{
-author="support@zygorguides.com",
-image=ZGV.IMAGESDIR.."Shadowfang Keep",
-description="This guide will walk you through the Shadowfang Keep dungeon.",
-lfgid=209,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Dungeon Guides\\Shadowfang Keep (22-30)',
+  {
+    author = 'support@zygorguides.com',
+    image = ZGV.IMAGESDIR .. 'Shadowfang Keep',
+    description = 'This guide will walk you through the Shadowfang Keep dungeon.',
+    lfgid = 209,
+  },
+  [[
 step
 Enter the Shadowfang Keep Dungeon with Your Group |goto Shadowfang Keep/0 0.00,0.00 < 500 |c
 step
@@ -216,64 +237,79 @@ kill Archmage Arugal##4275
 |tip As the encounter progresses, Arugal will teleport around the room.
 |tip His standard attack, "Shadow Bolt" hits very hard.
 Click Here to Continue |confirm
-]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Blackfathom Deeps (24-32)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Gnomeregan (29-38)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Razorfen Kraul (30-40)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Scarlet Monastery (Graveyard) (29-35)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Scarlet Monastery (Library) (31-37)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Scarlet Monastery (Armory) (35-40)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Scarlet Monastery (Cathedral) (36-42)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Razorfen Downs (37-43)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Uldaman (42-52)")
+]]
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Blackfathom Deeps (24-32)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Gnomeregan (29-38)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Razorfen Kraul (30-40)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Scarlet Monastery (Graveyard) (29-35)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Scarlet Monastery (Library) (31-37)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Scarlet Monastery (Armory) (35-40)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Scarlet Monastery (Cathedral) (36-42)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Razorfen Downs (37-43)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Uldaman (42-52)')
 ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Zul'Farrak (44-49)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Maraudon (Wicked Grotto - Purple) (45-53)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Maraudon (Foulspore Cavern - Orange) (45-53)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Maraudon (Poison Falls - Inner) (48-57)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Maraudon (Earth Song Falls - Inner) (48-57)")
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Dungeon Guides\\Maraudon (Wicked Grotto - Purple) (45-53)'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Dungeon Guides\\Maraudon (Foulspore Cavern - Orange) (45-53)'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Dungeon Guides\\Maraudon (Poison Falls - Inner) (48-57)'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Dungeon Guides\\Maraudon (Earth Song Falls - Inner) (48-57)'
+)
 ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\The Temple of Atal'Hakkar (50-60)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Blackrock Depths (52-60)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Scholomance (58-60)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Stratholme - Live (58-60)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Stratholme - Undead (58-60)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dire Maul East (58-60)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dire Maul North (58-60)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dire Maul North Tribute (58-60)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dire Maul West (58-60)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Lower Blackrock Spire (55-60)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Upper Blackrock Spire (55-60)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Ragefire Chasm Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Wailing Caverns Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Shadowfang Keep Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Blackfathom Deeps Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Gnomeregan Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Razorfen Kraul Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Scarlet Monastery Graveyard Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Scarlet Monastery Library Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Scarlet Monastery Armory Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Scarlet Monastery Cathedral Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Razorfen Downs Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Uldaman Quests")
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Blackrock Depths (52-60)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Scholomance (58-60)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Stratholme - Live (58-60)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Stratholme - Undead (58-60)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Dire Maul East (58-60)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Dire Maul North (58-60)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Dire Maul North Tribute (58-60)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Dire Maul West (58-60)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Lower Blackrock Spire (55-60)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Upper Blackrock Spire (55-60)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Ragefire Chasm Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Wailing Caverns Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Shadowfang Keep Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Blackfathom Deeps Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Gnomeregan Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Razorfen Kraul Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Scarlet Monastery Graveyard Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Scarlet Monastery Library Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Scarlet Monastery Armory Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Scarlet Monastery Cathedral Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Razorfen Downs Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Uldaman Quests')
 ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Zul'Farrak Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Maraudon Quests")
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Maraudon Quests')
 ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Temple of Atal'Hakkar Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Blackrock Depths Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dire Maul East Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dire Maul West Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dire Maul North Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Lower Blackrock Spire Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Scholomance Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Stratholme - Live Side Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Stratholme - Undead Side Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Upper Blackrock Spire Quests")
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Blackrock Depths Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Dire Maul East Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Dire Maul West Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Dire Maul North Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Lower Blackrock Spire Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Scholomance Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Stratholme - Live Side Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Stratholme - Undead Side Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Upper Blackrock Spire Quests')
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Blackfathom Deeps Raid (25)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Blackfathom Deeps Raid Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Gnomeregan Raid (40)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Gnomeregan Raid Quests")
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Blackfathom Deeps Raid (25)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Blackfathom Deeps Raid Quests')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Gnomeregan Raid (40)')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Gnomeregan Raid Quests')
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Raid Attunements\\Blackwing Lair Attunement")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Raid Attunements\\Molten Core Attunement")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Raid Attunements\\Onyxia's Lair Attunement")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Raid Attunements\\Naxxramas Attunement")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Tier 0.5 Dungeon Gear Questline")
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Dungeon Guides\\Raid Attunements\\Blackwing Lair Attunement'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  'Dungeon Guides\\Raid Attunements\\Molten Core Attunement'
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder(
+  "Dungeon Guides\\Raid Attunements\\Onyxia's Lair Attunement"
+)
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Raid Attunements\\Naxxramas Attunement')
+ZygorGuidesViewer:RegisterGuidePlaceholder('Dungeon Guides\\Tier 0.5 Dungeon Gear Questline')

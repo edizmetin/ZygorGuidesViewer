@@ -1,10 +1,18 @@
-local ZygorGuidesViewer=ZygorGuidesViewer
-if not ZygorGuidesViewer then return end
-if UnitFactionGroup("player")~="Alliance" then return end
-if ZGV:DoMutex("ReputationsACLASSIC") then return end
-ZygorGuidesViewer.GuideMenuTier = "CLA"
-ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Reputations\\Bloodsail Buccaneers",{
-},[[
+local ZygorGuidesViewer = ZygorGuidesViewer
+if not ZygorGuidesViewer then
+  return
+end
+if UnitFactionGroup('player') ~= 'Alliance' then
+  return
+end
+if ZGV:DoMutex('ReputationsACLASSIC') then
+  return
+end
+ZygorGuidesViewer.GuideMenuTier = 'CLA'
+ZygorGuidesViewer:RegisterGuide(
+  'Reputation Guides\\Reputations\\Bloodsail Buccaneers',
+  {},
+  [[
 step
 _NOTE:_
 About Bloodsail Buccaneers Reputation
@@ -57,9 +65,12 @@ Congratulations!
 |tip There are {o}no rewards{} for reaching {o}Exalted{} reputation with the {o}Bloodsail Buccaneer{} faction.
 |tip Click the {o}line below{} to begin {o}repairing{} your {o}reputaiton{} with the {o}Steamwheedle Cartel{}.
 Load the Steamwheedle Cartel Guide |loadguide "Reputation\\Steamwheedle Cartel"
-]])
-ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Reputations\\Brood of Nozdormu",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Reputation Guides\\Reputations\\Brood of Nozdormu',
+  {},
+  [[
 step
 _NOTE:_
 About Brood of Nozdormu Reputation
@@ -126,9 +137,12 @@ Routing Guide	|complete rep('Brood of Nozdormu') == Exalted	|or	|next "Exalted"
 step
 label "Exalted"
 Reach Exalted Reputation with the Brood of Nozdormu Faction |complete rep('Brood of Nozdormu') == Exalted
-]])
-ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Reputations\\Cenarion Circle",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Reputation Guides\\Reputations\\Cenarion Circle',
+  {},
+  [[
 _NOTE:_
 About Cenarion Circle Reputation
 |tip You can gain reputation {o}two ways{}.
@@ -183,9 +197,12 @@ You can find more around: |notinsticky
 |tip
 Turn in Encrypted Twilight Texts to Bor Wildmane at [Silithus 48.57,37.78]
 |tip He offers an {o}Encrypted Twilight Texts{} quest that is {o}repeatable{}.
-]])
-ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Reputations\\Gelkis & Magram Centaur Clans",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Reputation Guides\\Reputations\\Gelkis & Magram Centaur Clans',
+  {},
+  [[
 step
 About Centaur Clans Reputation
 |tip There are  {o}two centaur clans{} you can earn reputation with: {o}Gelkis Clan Centaur{} and {o}Magram Clan Centaur{}.
@@ -235,9 +252,12 @@ step
 label "Revered"
 Reach Exalted Reputation with the Gelkis Clan Centaur Faction |complete rep('Gelkis Clan Centaur') == Revered |only if rep('Gelkis Clan Centaur') == Revered
 Reach Exalted Reputation with the Magram Clan Centaur Faction |complete rep('Magram Clan Centaur') == Revered |only if rep('Magram Clan Centaur') == Revered
-]])
-ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Reputations\\Hydraxian Waterlords",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Reputation Guides\\Reputations\\Hydraxian Waterlords',
+  {},
+  [[
 step
 _NOTE:_
 Attune to Molten Core
@@ -251,9 +271,12 @@ Kill enemies throughout the raid
 |tip You can only become {o}Exalted{} by killing the {o}Golemagg the Incinerator{} or {o}Ragnaros{} bosses.
 |tip Otherwise, the {o}max{} reputation is {o}20999/21000 Revered{}.
 Reach Exalted Reputation with the Hydraxian Waterlords Faction |complete rep('Hydraxian Waterlords') == Exalted
-]])
-ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Reputations\\Ravenholdt",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Reputation Guides\\Reputations\\Ravenholdt',
+  {},
+  [[
 step
 _NOTE:_
 About Ravenholdt Reputation
@@ -283,9 +306,12 @@ talk Fahrad##6707
 |tip Upstairs in the building, {o}outside on the balcony{}.
 |tip Complete the {o}Junkboxes Needed{} quest {o}repeatedly{}.
 Reach Exalted Reputation with the Ravenholdt Faction |complete rep("Ravenholdt") >= Exalted |goto Alterac Mountains 84.45,80.32
-]])
-ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Reputations\\Steamwheedle Cartel",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Reputation Guides\\Reputations\\Steamwheedle Cartel',
+  {},
+  [[
 step
 talk Zorbin Fandazzle##14637
 accept Zapped Giants##7003 |goto Feralas 44.81,43.42
@@ -336,9 +362,12 @@ Routing Guide	|complete rep('Steamwheedle Cartel') == Exalted	|or	|next "Exalted
 step
 label "Exalted"
 Reach Exalted Reputation with the Steamwheedle Cartel Faction |complete rep('Steamwheedle Cartel') == Exalted
-]])
-ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Reputations\\Timbermaw Hold",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Reputation Guides\\Reputations\\Timbermaw Hold',
+  {},
+  [[
 step
 _NOTE:_
 About Timbermaw Hold Reputation
@@ -484,9 +513,12 @@ talk Salfa##11556
 |tip Turn in any {o}Winterfall Spirit Beads{} you have.
 |tip He offers a {o}Beads for Salfa{} quest that is {o}repeatable{}.
 Reach Exalted Reputation with the Timbermaw Hold Faction |complete rep("Timbermaw Hold") >= Exalted |goto Winterspring 27.74,34.50
-]])
-ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Reputations\\Thorium Brotherhood",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Reputation Guides\\Reputations\\Thorium Brotherhood',
+  {},
+  [[
 step
 _NOTE:_
 About Thorium Brotherhood Reputation
@@ -634,9 +666,12 @@ talk Lokhtos Darkbargainer##12944
 |tip In the Grim Guzzler (bar area) inside {o}Blackrock Depths{}.
 |tip Complete the {o}repeatable quest{} he offers that you {o}have the items for{}.
 Reach Exalted Reputation with the Thorium Brotherhood Faction |complete rep ('Thorium Brotherhood') >= Exalted
-]])
-ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Reputations\\Wintersaber Trainers",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Reputation Guides\\Reputations\\Wintersaber Trainers',
+  {},
+  [[
 step
 _NOTE:_
 About Wintersaber Trainers Reputation
@@ -759,9 +794,12 @@ label "Exalted"
 talk Rivern Frostwind##10618
 |tip On top of the huge rock.
 buy Reins of the Winterspring Frostsaber##13086 |goto Winterspring 49.94,9.84
-]])
-ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Reputations\\Darnassus",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Reputation Guides\\Reputations\\Darnassus',
+  {},
+  [[
 step
 _NOTE:_
 Farm or Buy Cloth
@@ -803,9 +841,12 @@ talk Raedon Duskstriker##14725
 |tip Inside the building.
 |tip {o}Repeatedly complete the {o}Additional Runecloth{} quest.
 Reach Exalted Reputation with the Darnassus Faction |complete rep("Darnassus") == Exalted |goto Darnassus 64.02,23.00
-]])
-ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Reputations\\Gnomeregan Exiles",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Reputation Guides\\Reputations\\Gnomeregan Exiles',
+  {},
+  [[
 step
 _NOTE:_
 Farm or Buy Cloth
@@ -842,9 +883,12 @@ step
 talk Bubulo Acerbus##14724
 |tip {o}Repeatedly complete the {o}Additional Runecloth{} quest.
 Reach Exalted Reputation with the Gnomeregan Exiles Faction |complete rep("Gnomeregan Exiles") == Exalted |goto Ironforge/0 74.09,48.22
-]])
-ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Reputations\\Ironforge",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Reputation Guides\\Reputations\\Ironforge',
+  {},
+  [[
 step
 _NOTE:_
 Farm or Buy Cloth
@@ -881,9 +925,12 @@ step
 talk Mistina Steelshield##14723
 |tip {o}Repeatedly complete the {o}Additional Runecloth{} quest.
 Reach Exalted Reputation with the Ironforge Faction |complete rep("Ironforge") == Exalted |goto Ironforge/0 43.22,31.57
-]])
-ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Reputations\\Stormwind City",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Reputation Guides\\Reputations\\Stormwind City',
+  {},
+  [[
 step
 _NOTE:_
 Farm or Buy Cloth
@@ -925,10 +972,14 @@ talk Clavicus Knavingham##14722
 |tip Upstairs inside the building.
 |tip {o}Repeatedly complete the {o}Additional Runecloth{} quest.
 Reach Exalted Reputation with the Stormwind City Faction |complete rep("Stormwind City") == Exalted |goto Stormwind City 44.27,73.97
-]])
-ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Reputations\\Argent Dawn",{
-description="Temp",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Reputation Guides\\Reputations\\Argent Dawn',
+  {
+    description = 'Temp',
+  },
+  [[
 step
 It Is Advised to Have a Dedicated Group For This
 |tip The best rep farm by far is doing Stratholme and Scholomance.
@@ -1089,4 +1140,5 @@ label "Equip_The_Argent_Dawn_Commission"
 Equip the Argent Dawn Commission
 |tip Wearing it will allow Scourgestones to drop from undead enemies in Eastern/Western Plaguelands, Scholomance and Stratholme.
 Gain the Argent Dawn Commission Buff |havebuff Argent Dawn Commission##17670
-]])
+]]
+)

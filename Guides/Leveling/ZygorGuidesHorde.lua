@@ -1,16 +1,26 @@
-local ZygorGuidesViewer=ZygorGuidesViewer
-if not ZygorGuidesViewer then return end
-if UnitFactionGroup("player")~="Horde" then return end
+local ZygorGuidesViewer = ZygorGuidesViewer
+if not ZygorGuidesViewer then
+  return
+end
+if UnitFactionGroup('player') ~= 'Horde' then
+  return
+end
 
-
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Undead Starter (1-14)",{
-image=ZGV.IMAGESDIR.."Tirisfal Glades",
-condition_suggested=function() return raceclass('Scourge') and level <= 12 end,
-condition_suggested_race=function() return raceclass('Scourge') end,
-condition_suggested_exclusive=true,
-next="Leveling Guides\\The Barrens (12-18)",
-hardcore = true,
-},[[
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Undead Starter (1-14)',
+  {
+    image = ZGV.IMAGESDIR .. 'Tirisfal Glades',
+    condition_suggested = function()
+      return raceclass('Scourge') and level <= 12
+    end,
+    condition_suggested_race = function()
+      return raceclass('Scourge')
+    end,
+    condition_suggested_exclusive = true,
+    next = 'Leveling Guides\\The Barrens (12-18)',
+    hardcore = true,
+  },
+  [[
 step
 talk Undertaker Mordo##1568
 |tip Leave the crypt.
@@ -1773,15 +1783,23 @@ Follow the road |goto Durotar 52.38,33.50 < 30 |only if walking
 Follow the road |goto Durotar 52.23,42.43 < 30 |only if walking
 talk Takrin Pathseeker##3336
 accept Conscript of the Horde##840 |goto Durotar 50.85,43.59
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Tauren Starter (1-12)",{
-image=ZGV.IMAGESDIR.."Mulgore",
-condition_suggested=function() return raceclass('Tauren') and level <= 12 end,
-condition_suggested_race=function() return raceclass('Tauren') end,
-condition_suggested_exclusive=true,
-next="Leveling Guides\\The Barrens (12-18)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Tauren Starter (1-12)',
+  {
+    image = ZGV.IMAGESDIR .. 'Mulgore',
+    condition_suggested = function()
+      return raceclass('Tauren') and level <= 12
+    end,
+    condition_suggested_race = function()
+      return raceclass('Tauren')
+    end,
+    condition_suggested_exclusive = true,
+    next = 'Leveling Guides\\The Barrens (12-18)',
+    hardcore = true,
+  },
+  [[
 step
 talk Grull Hawkwind##2980
 accept The Hunt Begins##747 |goto Mulgore 44.87,77.08
@@ -3096,15 +3114,23 @@ talk Doras##3310
 |tip At the top of the tower.
 |tip You are taking the time to get the Orgrimmar flight path now, so you can use it to travel faster in the future.
 fpath Orgrimmar |goto Orgrimmar 45.13,63.90
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Orc & Troll Starter (1-12)",{
-image=ZGV.IMAGESDIR.."Durotar",
-condition_suggested=function() return raceclass{'Orc','Troll'} and level <= 12 end,
-condition_suggested_race=function() return raceclass{'Orc','Troll'} end,
-condition_suggested_exclusive=true,
-next="Leveling Guides\\The Barrens (12-18)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Orc & Troll Starter (1-12)',
+  {
+    image = ZGV.IMAGESDIR .. 'Durotar',
+    condition_suggested = function()
+      return raceclass({ 'Orc', 'Troll' }) and level <= 12
+    end,
+    condition_suggested_race = function()
+      return raceclass({ 'Orc', 'Troll' })
+    end,
+    condition_suggested_exclusive = true,
+    next = 'Leveling Guides\\The Barrens (12-18)',
+    hardcore = true,
+  },
+  [[
 step
 talk Kaltunk##10176
 accept Your Place In The World##4641 |goto Durotar 43.29,68.54
@@ -4982,13 +5008,19 @@ step
 Kill enemies around this area
 |tip You are grinding here to prepare yourself for the Barrens.
 |ding 12,3000 |goto Durotar 42.94,39.44
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\The Barrens (12-18)",{
-image=ZGV.IMAGESDIR.."The Barrens",
-condition_suggested=function() return level >= 12 and level <= 18 and not completedq(875) end,
-next="Leveling Guides\\Stonetalon Mountains (18-19)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\The Barrens (12-18)',
+  {
+    image = ZGV.IMAGESDIR .. 'The Barrens',
+    condition_suggested = function()
+      return level >= 12 and level <= 18 and not completedq(875)
+    end,
+    next = 'Leveling Guides\\Stonetalon Mountains (18-19)',
+    hardcore = true,
+  },
+  [[
 step
 Optional Route Change
 |tip You can opt to do Ragefire Chasm around level 16 instead of grinding.
@@ -6230,13 +6262,19 @@ Save Wool Cloth in Your Bank as You Level
 |tip This will give you about 40,000 quick and easy xp to help you get to level 60 faster in the longer later levels.
 Click Here to Continue |confirm
 |only if level < 60
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Stonetalon Mountains (18-19)",{
-image=ZGV.IMAGESDIR.."Stonetalon Mountains",
-condition_suggested=function() return level >= 18 and level <= 19 and not completedq(1094) end,
-next="Leveling Guides\\The Barrens (19-20)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Stonetalon Mountains (18-19)',
+  {
+    image = ZGV.IMAGESDIR .. 'Stonetalon Mountains',
+    condition_suggested = function()
+      return level >= 18 and level <= 19 and not completedq(1094)
+    end,
+    next = 'Leveling Guides\\The Barrens (19-20)',
+    hardcore = true,
+  },
+  [[
 step
 Follow the path to Stonetalon Mountains |goto The Barrens 40.17,24.03 < 70 |only if walking
 talk Seereth Stonebreak##4049
@@ -6361,13 +6399,19 @@ Kill enemies around this area
 |tip You are about to have to kill a level 22 enemy soon.
 |tip It will help to be a level higher.
 ding 19 |goto Stonetalon Mountains 61.74,61.21
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\The Barrens (19-20)",{
-image=ZGV.IMAGESDIR.."The Barrens",
-condition_suggested=function() return level >= 19 and level <= 20 and not completedq(6629) end,
-next="Leveling Guides\\Stonetalon Mountains (20-21)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\The Barrens (19-20)',
+  {
+    image = ZGV.IMAGESDIR .. 'The Barrens',
+    condition_suggested = function()
+      return level >= 19 and level <= 20 and not completedq(6629)
+    end,
+    next = 'Leveling Guides\\Stonetalon Mountains (20-21)',
+    hardcore = true,
+  },
+  [[
 step
 talk Jorn Skyseer##3387
 turnin Jorn Skyseer##3261 |goto The Barrens 44.86,59.14
@@ -6772,13 +6816,19 @@ talk Makaba Flathoof##11857
 turnin Protect Kaya##6523 |goto The Barrens 35.19,27.79
 accept Kaya's Alive##6401 |goto The Barrens 35.19,27.79
 turnin Kill Grundig Darkcloud##6629 |goto The Barrens 35.19,27.79
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Stonetalon Mountains (20-21)",{
-image=ZGV.IMAGESDIR.."Stonetalon Mountains",
-condition_suggested=function() return level >= 20 and level <= 21 and not completedq(1068) end,
-next="Leveling Guides\\Ashenvale (21-22)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Stonetalon Mountains (20-21)',
+  {
+    image = ZGV.IMAGESDIR .. 'Stonetalon Mountains',
+    condition_suggested = function()
+      return level >= 20 and level <= 21 and not completedq(1068)
+    end,
+    next = 'Leveling Guides\\Ashenvale (21-22)',
+    hardcore = true,
+  },
+  [[
 step
 Follow the path up and through the mountains |goto Stonetalon Mountains 82.07,98.57 < 20 |only if walking and subzone("The Barrens")
 Enter the cave |goto Stonetalon Mountains 74.22,97.13 < 10 |walk
@@ -7011,13 +7061,19 @@ step
 Kill enemies around this area
 |tip We want to be atleast level 21 for the next segment.
 ding 21 |goto Stonetalon Mountains/0 75.19,45.76
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Ashenvale (21-22)",{
-image=ZGV.IMAGESDIR.."Ashenvale",
-condition_suggested=function() return level >= 21 and level <= 22 and not completedq(6383) end,
-next="Leveling Guides\\Hillsbrad Foothills (22-24)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Ashenvale (21-22)',
+  {
+    image = ZGV.IMAGESDIR .. 'Ashenvale',
+    condition_suggested = function()
+      return level >= 21 and level <= 22 and not completedq(6383)
+    end,
+    next = 'Leveling Guides\\Hillsbrad Foothills (22-24)',
+    hardcore = true,
+  },
+  [[
 step
 Enter the tunnel and follow the path of lanterns to Ashenvale |goto Stonetalon Mountains 78.28,42.51 < 15 |only if walking
 Leave the tunnel and enter Ashenvale |goto Stonetalon Mountains 81.54,30.03 < 15 |only if walking
@@ -7263,13 +7319,19 @@ buy Dusk Wand##5211 |n
 |tip If you have better, skip this step.
 Visit the Vendor |vendor Katis##5816 |goto Orgrimmar 44.18,48.44 |q 3301
 |only if Mage and itemcount(5211) == 0
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Hillsbrad Foothills (22-24)",{
-image=ZGV.IMAGESDIR.."Hillsbrad Foothills",
-condition_suggested=function() return level >= 22 and level <= 24 and not completedq(546) end,
-next="Leveling Guides\\The Barrens (24-26)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Hillsbrad Foothills (22-24)',
+  {
+    image = ZGV.IMAGESDIR .. 'Hillsbrad Foothills',
+    condition_suggested = function()
+      return level >= 22 and level <= 24 and not completedq(546)
+    end,
+    next = 'Leveling Guides\\The Barrens (24-26)',
+    hardcore = true,
+  },
+  [[
 step
 talk Michael Garrett##4551
 fpath Undercity |goto Undercity 63.28,48.58
@@ -7890,13 +7952,19 @@ Kill Hillsbrad enemies around this area
 |tip You do not need to finish this step now, we return in the future.
 collect 30 Hillsbrad Human Skull##3692 |q 546/1 |goto Thunder Bluff 34.91,46.21
 |sticky only
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\The Barrens (24-26)",{
-image=ZGV.IMAGESDIR.."The Barrens",
-condition_suggested=function() return level >= 24 and level <= 26 and not completedq(868) end,
-next="Leveling Guides\\Stonetalon Mountains (26-27)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\The Barrens (24-26)',
+  {
+    image = ZGV.IMAGESDIR .. 'The Barrens',
+    condition_suggested = function()
+      return level >= 24 and level <= 26 and not completedq(868)
+    end,
+    next = 'Leveling Guides\\Stonetalon Mountains (26-27)',
+    hardcore = true,
+  },
+  [[
 step
 talk Hula'mahi##3490
 |tip Stock up on poisons.
@@ -8247,13 +8315,19 @@ Also check around: |notinsticky
 step
 talk Mahren Skyseer##3388
 turnin Isha Awak##873 |goto The Barrens 65.84,43.86
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Stonetalon Mountains (26-27)",{
-image=ZGV.IMAGESDIR.."Stonetalon Mountains",
-condition_suggested=function() return level >= 26 and level <= 27 and not completedq(1068) end,
-next="Leveling Guides\\Ashenvale (27-28)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Stonetalon Mountains (26-27)',
+  {
+    image = ZGV.IMAGESDIR .. 'Stonetalon Mountains',
+    condition_suggested = function()
+      return level >= 26 and level <= 27 and not completedq(1068)
+    end,
+    next = 'Leveling Guides\\Ashenvale (27-28)',
+    hardcore = true,
+  },
+  [[
 step
 Enter the building |goto Orgrimmar/0 48.19,79.68 < 10 |walk
 talk Trak'gen##3313
@@ -8503,13 +8577,19 @@ step
 Follow the path up and through the mountains to the Barrens |goto Stonetalon Mountains 72.88,93.76 < 20 |only if walking and subzone("Malaka'jin")
 talk Seereth Stonebreak##4049
 turnin Shredding Machines##1068 |goto The Barrens 35.26,27.88
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Ashenvale (27-28)",{
-image=ZGV.IMAGESDIR.."Ashenvale",
-condition_suggested=function() return level >= 27 and level <= 28 and not completedq(1131) end,
-next="Leveling Guides\\Thousand Needles (28-30)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Ashenvale (27-28)',
+  {
+    image = ZGV.IMAGESDIR .. 'Ashenvale',
+    condition_suggested = function()
+      return level >= 27 and level <= 28 and not completedq(1131)
+    end,
+    next = 'Leveling Guides\\Thousand Needles (28-30)',
+    hardcore = true,
+  },
+  [[
 step
 Enter the building |goto Orgrimmar/0 48.19,79.68 < 10 |walk
 talk Trak'gen##3313
@@ -8886,13 +8966,19 @@ step
 talk Innkeeper Pala##6746
 |tip Inside the building.
 home Thunder Bluff |goto Thunder Bluff 45.81,64.71
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Thousand Needles (28-30)",{
-image=ZGV.IMAGESDIR.."Thousand Needles",
-condition_suggested=function() return level >= 28 and level <= 30 and not completedq(1432) end,
-next="Leveling Guides\\Hillsbrad Foothills (30-32)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Thousand Needles (28-30)',
+  {
+    image = ZGV.IMAGESDIR .. 'Thousand Needles',
+    condition_suggested = function()
+      return level >= 28 and level <= 30 and not completedq(1432)
+    end,
+    next = 'Leveling Guides\\Hillsbrad Foothills (30-32)',
+    hardcore = true,
+  },
+  [[
 step
 talk Tatternack Steelforge##3433
 accept A New Ore Sample##1153 |goto The Barrens 45.10,57.68
@@ -9467,13 +9553,19 @@ buy Pestilent Wand##5347 |n
 |tip If you have better, skip this step.
 Visit the Vendor |vendor Katis##5816 |goto Orgrimmar 44.18,48.44 |q 1432
 |only if Priest and itemcount(5347) == 0
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Hillsbrad Foothills (30-32)",{
-image=ZGV.IMAGESDIR.."Hillsbrad Foothills",
-condition_suggested=function() return level >= 30 and level <= 32 and not completedq(509) end,
-next="Leveling Guides\\Arathi Highlands (32-33)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Hillsbrad Foothills (30-32)',
+  {
+    image = ZGV.IMAGESDIR .. 'Hillsbrad Foothills',
+    condition_suggested = function()
+      return level >= 30 and level <= 32 and not completedq(509)
+    end,
+    next = 'Leveling Guides\\Arathi Highlands (32-33)',
+    hardcore = true,
+  },
+  [[
 step
 _NOTE:_
 Save Silk Cloth in Your Bank as You Level
@@ -9831,13 +9923,19 @@ step
 click Mudsnout Blossom##1723+
 |tip They look like large white and blue mushrooms on the ground around this area.
 collect 6 Mudsnout Blossoms##3502 |q 509/1 |goto Hillsbrad Foothills 64.26,61.28
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Arathi Highlands (32-33)",{
-image=ZGV.IMAGESDIR.."Arathi Highlands",
-condition_suggested=function() return level >= 32 and level <= 32 and not completedq(513) end,
-next="Leveling Guides\\Thousand Needles (33-34)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Arathi Highlands (32-33)',
+  {
+    image = ZGV.IMAGESDIR .. 'Arathi Highlands',
+    condition_suggested = function()
+      return level >= 32 and level <= 32 and not completedq(513)
+    end,
+    next = 'Leveling Guides\\Thousand Needles (33-34)',
+    hardcore = true,
+  },
+  [[
 stickystart "Kill_Boulderfist_Ogres"
 step
 kill 10 Boulderfist Enforcer##2564 |q 676/2 |goto Arathi Highlands 34.81,44.14
@@ -10002,13 +10100,19 @@ step
 Follow the path down |goto Undercity 52.84,77.63 < 7 |walk
 talk Master Apothecary Faranell##2055
 turnin Elixir of Agony##513 |goto Undercity 48.82,69.28
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Thousand Needles (33-34)",{
-image=ZGV.IMAGESDIR.."Thousand Needles",
-condition_suggested=function() return level >= 33 and level <= 32 and not completedq(1182) end,
-next="Leveling Guides\\Desolace (34-36)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Thousand Needles (33-34)',
+  {
+    image = ZGV.IMAGESDIR .. 'Thousand Needles',
+    condition_suggested = function()
+      return level >= 33 and level <= 32 and not completedq(1182)
+    end,
+    next = 'Leveling Guides\\Desolace (34-36)',
+    hardcore = true,
+  },
+  [[
 step
 talk Hula'mahi##3490
 |tip Stock up on poisons.
@@ -10318,13 +10422,19 @@ step
 talk Scooty##7853
 turnin A Fine Mess##2904 |goto Stranglethorn Vale 27.60,77.48
 |only if completedq(2904)
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Desolace (34-36)",{
-image=ZGV.IMAGESDIR.."Desolace",
-condition_suggested=function() return level >= 34 and level <= 36 and not completedq(1184) end,
-next="Leveling Guides\\Stranglethorn Vale (36-37)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Desolace (34-36)',
+  {
+    image = ZGV.IMAGESDIR .. 'Desolace',
+    condition_suggested = function()
+      return level >= 34 and level <= 36 and not completedq(1184)
+    end,
+    next = 'Leveling Guides\\Stranglethorn Vale (36-37)',
+    hardcore = true,
+  },
+  [[
 step
 talk Hula'mahi##3490
 |tip Stock up on poisons.
@@ -10765,13 +10875,19 @@ talk Karus##3309
 |tip Inside the building.
 |tip Collect these items from the bank.
 collect Kravel's Crate##14542 |goto Orgrimmar 49.58,69.12 |q 5762
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Stranglethorn Vale (36-37)",{
-image=ZGV.IMAGESDIR.."Stranglethorn Vale",
-condition_suggested=function() return level >= 36 and level <= 37 and not completedq(575) end,
-next="Leveling Guides\\Dustwallow Marsh (37-38)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Stranglethorn Vale (36-37)',
+  {
+    image = ZGV.IMAGESDIR .. 'Stranglethorn Vale',
+    condition_suggested = function()
+      return level >= 36 and level <= 37 and not completedq(575)
+    end,
+    next = 'Leveling Guides\\Dustwallow Marsh (37-38)',
+    hardcore = true,
+  },
+  [[
 step
 talk Rekkul##3334
 |tip Inside the tent, inside the Cleft of Shadow.
@@ -11169,13 +11285,19 @@ buy Big Stick##12251 |n
 |tip If you have better, skip this step.
 Visit the Vendor |vendor Zarena Cromwind##2482 |goto Stranglethorn Vale 28.34,75.46 |q 572 |future
 |only if Shaman and itemcount(12251) == 0
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dustwallow Marsh (37-38)",{
-image=ZGV.IMAGESDIR.."Dustwallow Marsh",
-condition_suggested=function() return level >= 37 and level <= 38 and not completedq(668) end,
-next="Leveling Guides\\Alterac Mountains (38-38)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Dustwallow Marsh (37-38)',
+  {
+    image = ZGV.IMAGESDIR .. 'Dustwallow Marsh',
+    condition_suggested = function()
+      return level >= 37 and level <= 38 and not completedq(668)
+    end,
+    next = 'Leveling Guides\\Alterac Mountains (38-38)',
+    hardcore = true,
+  },
+  [[
 step
 talk Rekkul##3334
 |tip Inside the tent, inside the Cleft of Shadow.
@@ -11514,13 +11636,19 @@ Follow the path |goto Undercity 52.15,64.37 < 10 |only if walking
 talk Varimathras##2425
 turnin Into The Scarlet Monastery##1048 |goto Undercity 56.26,92.20
 |only if guideflag("SMflag")
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Alterac Mountains (38-38)",{
-image=ZGV.IMAGESDIR.."Alterac Mountains",
-condition_suggested=function() return level == 38 and not completedq(508) end,
-next="Leveling Guides\\Arathi Highlands (38-39)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Alterac Mountains (38-38)',
+  {
+    image = ZGV.IMAGESDIR .. 'Alterac Mountains',
+    condition_suggested = function()
+      return level == 38 and not completedq(508)
+    end,
+    next = 'Leveling Guides\\Arathi Highlands (38-39)',
+    hardcore = true,
+  },
+  [[
 step
 talk Patrice Dwyer##3551
 |tip Stock up on poisons.
@@ -11677,13 +11805,19 @@ talk Krusk##2229
 |tip Inside the building.
 turnin Taretha's Gift##508 |goto Hillsbrad Foothills 63.24,20.66
 |only if completedq(508)
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Arathi Highlands (38-39)",{
-image=ZGV.IMAGESDIR.."Arathi Highlands",
-condition_suggested=function() return level >= 38 and level <= 39 and not completedq(669) end,
-next="Leveling Guides\\Badlands (39-40)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Arathi Highlands (38-39)',
+  {
+    image = ZGV.IMAGESDIR .. 'Arathi Highlands',
+    condition_suggested = function()
+      return level >= 38 and level <= 39 and not completedq(669)
+    end,
+    next = 'Leveling Guides\\Badlands (39-40)',
+    hardcore = true,
+  },
+  [[
 step
 talk Zengu##2703
 turnin Trollbane##638 |goto Arathi Highlands 73.80,33.95
@@ -11885,13 +12019,19 @@ Leave the Cove |goto Arathi Highlands/0 22.07,79.87 < 20 |c |q 669
 |tip You are going to be traveling to Badlands, be careful to not aggro the dwarf guards on the way. |only if hardcore
 |tip They are currently bugged and will PvP flag you even if you do not fight back. |only if hardcore
 |only if subzone("Faldir's Cove")
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Badlands (39-40)",{
-image=ZGV.IMAGESDIR.."Badlands",
-condition_suggested=function() return level >= 38 and level <= 40 and not completedq(2981) end,
-next="Leveling Guides\\Stranglethorn Vale (40-40)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Badlands (39-40)',
+  {
+    image = ZGV.IMAGESDIR .. 'Badlands',
+    condition_suggested = function()
+      return level >= 38 and level <= 40 and not completedq(2981)
+    end,
+    next = 'Leveling Guides\\Stranglethorn Vale (40-40)',
+    hardcore = true,
+  },
+  [[
 step
 talk Martek the Exiled##4618
 turnin Martek the Exiled##1106 |goto Badlands 42.22,52.69
@@ -12155,13 +12295,19 @@ collect Green Hills of Stranglethorn - Page 25##2749 |goto Orgrimmar 55.90,62.71
 collect Green Hills of Stranglethorn - Page 26##2750 |goto Orgrimmar 55.90,62.71 |q 342 |future
 collect Green Hills of Stranglethorn - Page 27##2751 |goto Orgrimmar 55.90,62.71 |q 342 |future
 |only if not selfmade
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Stranglethorn Vale (40-40)",{
-image=ZGV.IMAGESDIR.."Stranglethorn Vale",
-condition_suggested=function() return level == 40 and not completedq(197) end,
-next="Leveling Guides\\Swamp of Sorrows (40-41)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Stranglethorn Vale (40-40)',
+  {
+    image = ZGV.IMAGESDIR .. 'Stranglethorn Vale',
+    condition_suggested = function()
+      return level == 40 and not completedq(197)
+    end,
+    next = 'Leveling Guides\\Swamp of Sorrows (40-41)',
+    hardcore = true,
+  },
+  [[
 step
 Enter the building |goto Stranglethorn Vale 28.11,74.98 < 10 |walk
 talk Zarena Cromwind##2482
@@ -12343,13 +12489,19 @@ step
 talk Hemet Nesingwary##715
 turnin Raptor Mastery##196 |goto Stranglethorn Vale 35.66,10.81
 accept Raptor Mastery##197 |goto Stranglethorn Vale 35.66,10.81
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Swamp of Sorrows (40-41)",{
-image=ZGV.IMAGESDIR.."Swamp of Sorrows",
-condition_suggested=function() return level >= 40 and level <= 41 and not completedq(1205) end,
-next="Leveling Guides\\Desolace (41-41)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Swamp of Sorrows (40-41)',
+  {
+    image = ZGV.IMAGESDIR .. 'Swamp of Sorrows',
+    condition_suggested = function()
+      return level >= 40 and level <= 41 and not completedq(1205)
+    end,
+    next = 'Leveling Guides\\Desolace (41-41)',
+    hardcore = true,
+  },
+  [[
 step
 Follow the path |goto Duskwood/0 78.40,60.33 < 35	|only if hardcore
 Continue following the path |goto Duskwood/0 81.97,50.51 < 35	|only if hardcore
@@ -12619,13 +12771,19 @@ step
 talk Melor Stonehoof##3441
 turnin Frostmaw##1136 |goto Thunder Bluff 61.53,80.90
 accept Deadmire##1205 |goto Thunder Bluff 61.53,80.90	|only if not hardcore
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Desolace (41-41)",{
-image=ZGV.IMAGESDIR.."Desolace",
-condition_suggested=function() return level == 41 and not completedq(5581) end,
-next="Leveling Guides\\Tanaris (41-42)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Desolace (41-41)',
+  {
+    image = ZGV.IMAGESDIR .. 'Desolace',
+    condition_suggested = function()
+      return level == 41 and not completedq(5581)
+    end,
+    next = 'Leveling Guides\\Tanaris (41-42)',
+    hardcore = true,
+  },
+  [[
 step
 talk Taiga Wisemane##11624
 accept Portals of the Legion##5581 |goto Desolace 25.81,68.22
@@ -12720,13 +12878,19 @@ step
 Enter Shadowprey Village |goto Desolace 26.62,75.41 < 30 |only if walking and not subzone("Shadowprey Village")
 talk Taiga Wisemane##11624
 turnin Portals of the Legion##5581 |goto Desolace 25.81,68.22
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Tanaris (41-42)",{
-image=ZGV.IMAGESDIR.."Tanaris",
-condition_suggested=function() return level >= 41 and level <= 42 and not completedq(1194) end,
-next="Leveling Guides\\Dustwallow Marsh (42-42)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Tanaris (41-42)',
+  {
+    image = ZGV.IMAGESDIR .. 'Tanaris',
+    condition_suggested = function()
+      return level >= 41 and level <= 42 and not completedq(1194)
+    end,
+    next = 'Leveling Guides\\Dustwallow Marsh (42-42)',
+    hardcore = true,
+  },
+  [[
 step
 talk Hula'mahi##3490
 |tip Stock up on poisons.
@@ -12870,13 +13034,19 @@ talk Gimblethorn##7799
 |tip Inside the building.
 |tip Deposit these items into the bank.
 bank Kravel's Scheme##5826 |goto Tanaris 52.30,28.91 |q 1118 |future
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dustwallow Marsh (42-42)",{
-image=ZGV.IMAGESDIR.."Dustwallow Marsh",
-condition_suggested=function() return level == 42 and not completedq(1262) end,
-next="Leveling Guides\\Tanaris (42-43)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Dustwallow Marsh (42-42)',
+  {
+    image = ZGV.IMAGESDIR .. 'Dustwallow Marsh',
+    condition_suggested = function()
+      return level == 42 and not completedq(1262)
+    end,
+    next = 'Leveling Guides\\Tanaris (42-43)',
+    hardcore = true,
+  },
+  [[
 step
 talk Zanara##9552
 |tip Buy enough ammo to fill your ammo bag, plus 5 extra stacks.
@@ -13037,13 +13207,19 @@ talk Zanara##9552
 |tip You will be questing a while.
 Visit the Vendor |vendor Zanara##9552 |goto Dustwallow Marsh 35.50,30.09 |q 1262
 |only if Hunter
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Tanaris (42-43)",{
-image=ZGV.IMAGESDIR.."Tanaris",
-condition_suggested=function() return level == 43 and not completedq(864) end,
-next="Leveling Guides\\Feralas (43-44)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Tanaris (42-43)',
+  {
+    image = ZGV.IMAGESDIR .. 'Tanaris',
+    condition_suggested = function()
+      return level == 43 and not completedq(864)
+    end,
+    next = 'Leveling Guides\\Feralas (43-44)',
+    hardcore = true,
+  },
+  [[
 step
 talk Hula'mahi##3490
 |tip Stock up on poisons.
@@ -13150,13 +13326,19 @@ Kill enemies around this area
 |tip You should already be pretty close to reaching level 43.
 ding 43 |goto Tanaris 59.82,24.34
 You can find more around [63.51,30.31]
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Feralas (43-44)",{
-image=ZGV.IMAGESDIR.."Feralas",
-condition_suggested=function() return level >= 43 and level <= 44 and not completedq(3002) end,
-next="Leveling Guides\\Stranglethorn Vale (44-45)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Feralas (43-44)',
+  {
+    image = ZGV.IMAGESDIR .. 'Feralas',
+    condition_suggested = function()
+      return level >= 43 and level <= 44 and not completedq(3002)
+    end,
+    next = 'Leveling Guides\\Stranglethorn Vale (44-45)',
+    hardcore = true,
+  },
+  [[
 step
 talk Bronk##8158
 |tip Bronk sells potions as a limited stock item, they may not be here if another player recently bought them.
@@ -13541,13 +13723,19 @@ bank Neeru's Herb Pouch##9628 |goto Orgrimmar 49.58,69.12 |q 3122 |future
 |tip Collect these items from the bank.
 collect Kravel's Scheme##5826 |goto Orgrimmar 49.58,69.12 |q 1118
 collect Elder Crocolisk Skin##4105 |goto Orgrimmar 49.58,69.12 |q 2635
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Stranglethorn Vale (44-45)",{
-image=ZGV.IMAGESDIR.."Stranglethorn Vale",
-condition_suggested=function() return level >= 44 and level <= 45 and not completedq(608) end,
-next="Leveling Guides\\Swamp of Sorrows (45-46)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Stranglethorn Vale (44-45)',
+  {
+    image = ZGV.IMAGESDIR .. 'Stranglethorn Vale',
+    condition_suggested = function()
+      return level >= 44 and level <= 45 and not completedq(608)
+    end,
+    next = 'Leveling Guides\\Swamp of Sorrows (45-46)',
+    hardcore = true,
+  },
+  [[
 step
 talk Zudd##3624
 Train your pet in Grom'gol. |trainer Zudd##3624 |goto Stranglethorn Vale/0 31.13,28.93 |q 197
@@ -13917,13 +14105,19 @@ talk Uthok##1149
 |tip You will be out questing for a while with no arrow vendor nearby.
 Visit the Vendor |vendor Uthok##1149 |goto Stranglethorn Vale 31.55,27.95 |q 580
 |only if Hunter and not hardcore
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Swamp of Sorrows (45-46)",{
-image=ZGV.IMAGESDIR.."Swamp of Sorrows",
-condition_suggested=function() return level >= 45 and level <= 46 and not completedq(1188) end,
-next="Leveling Guides\\Tanaris (46-48)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Swamp of Sorrows (45-46)',
+  {
+    image = ZGV.IMAGESDIR .. 'Swamp of Sorrows',
+    condition_suggested = function()
+      return level >= 45 and level <= 46 and not completedq(1188)
+    end,
+    next = 'Leveling Guides\\Tanaris (46-48)',
+    hardcore = true,
+  },
+  [[
 step
 talk Fallen Hero of the Horde##7572
 accept Fall From Grace##2784 |goto Swamp of Sorrows 34.29,66.13
@@ -14098,13 +14292,19 @@ step
 talk Razzeric##4706
 turnin Razzeric's Tweaking##1187 |goto Thousand Needles 80.33,76.10
 accept Safety First##1188 |goto Thousand Needles 80.33,76.10
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Tanaris (46-48)",{
-image=ZGV.IMAGESDIR.."Tanaris",
-condition_suggested=function() return level >= 46 and level <= 48 and not completedq(32) end,
-next="Leveling Guides\\Dustwallow Marsh (48-48)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Tanaris (46-48)',
+  {
+    image = ZGV.IMAGESDIR .. 'Tanaris',
+    condition_suggested = function()
+      return level >= 46 and level <= 48 and not completedq(32)
+    end,
+    next = 'Leveling Guides\\Dustwallow Marsh (48-48)',
+    hardcore = true,
+  },
+  [[
 step
 talk Shreev##4708
 turnin Safety First##1188 |goto Tanaris 50.96,27.24
@@ -14598,13 +14798,19 @@ talk Gimblethorn##7799
 |tip Inside the building.
 |tip Deposit these items into the bank.
 bank Stoley's Bottle##9245 |goto Tanaris 52.30,28.91 |q 2874 |future
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dustwallow Marsh (48-48)",{
-image=ZGV.IMAGESDIR.."Dustwallow Marsh",
-condition_suggested=function() return level == 48 and not completedq(4300) end,
-next="Leveling Guides\\The Hinterlands (48-49)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Dustwallow Marsh (48-48)',
+  {
+    image = ZGV.IMAGESDIR .. 'Dustwallow Marsh',
+    condition_suggested = function()
+      return level == 48 and not completedq(4300)
+    end,
+    next = 'Leveling Guides\\The Hinterlands (48-49)',
+    hardcore = true,
+  },
+  [[
 step
 talk Hula'mahi##3490
 |tip Stock up on poisons.
@@ -14721,13 +14927,19 @@ talk Kurgul##5815
 |tip After buying them, make sure to use them in your bags to learn the spells.
 Visit the Vendor |vendor Kurgul##5815 |goto Orgrimmar 47.52,46.72 |q 4300
 |only if Warlock
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\The Hinterlands (48-49)",{
-image=ZGV.IMAGESDIR.."The Hinterlands",
-condition_suggested=function() return level >= 48 and level <= 49 and not completedq(2662) end,
-next="Leveling Guides\\Feralas (49-50)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\The Hinterlands (48-49)',
+  {
+    image = ZGV.IMAGESDIR .. 'The Hinterlands',
+    condition_suggested = function()
+      return level >= 48 and level <= 49 and not completedq(2662)
+    end,
+    next = 'Leveling Guides\\Feralas (49-50)',
+    hardcore = true,
+  },
+  [[
 step
 talk Ezekiel Graves##4585
 |tip Stock up on poisons.
@@ -15183,13 +15395,19 @@ Watch the dialogue
 talk Marin Noggenfogger##7564
 turnin Noggenfogger Elixir##2662 |goto Tanaris 51.81,28.66
 |tip It is worthwhile buying a stack of Noggenfogger and keeping it in your bags, it can grant you slowfall to help with traversing the world. |only if not Mage
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Feralas (49-50)",{
-image=ZGV.IMAGESDIR.."Feralas",
-condition_suggested=function() return level >= 49 and level <= 50 and not completedq(3444) end,
-next="Leveling Guides\\Un'Goro Crater (50-50)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Feralas (49-50)',
+  {
+    image = ZGV.IMAGESDIR .. 'Feralas',
+    condition_suggested = function()
+      return level >= 49 and level <= 50 and not completedq(3444)
+    end,
+    next = "Leveling Guides\\Un'Goro Crater (50-50)",
+    hardcore = true,
+  },
+  [[
 step
 talk Talo Thornhoof##7776
 |tip Inside the tent.
@@ -15476,13 +15694,19 @@ collect Stone Circle##10556 |goto Tanaris 52.30,28.91 |q 3444
 step
 talk Marvon Rivetseeker##7771
 turnin The Stone Circle##3444 |goto Tanaris 52.71,45.92
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Un'Goro Crater (50-50)",{
-image=ZGV.IMAGESDIR.."Un'Goro Crater",
-condition_suggested=function() return level == 50 and not completedq(3884) end,
-next="Leveling Guides\\Feralas (50-50)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  "Leveling Guides\\Un'Goro Crater (50-50)",
+  {
+    image = ZGV.IMAGESDIR .. "Un'Goro Crater",
+    condition_suggested = function()
+      return level == 50 and not completedq(3884)
+    end,
+    next = 'Leveling Guides\\Feralas (50-50)',
+    hardcore = true,
+  },
+  [[
 step
 Follow the path down into Un'Goro Crater |goto Tanaris 27.04,56.57 < 40 |only if walking and not zone("Un'Goro Crater")
 talk Torwa Pathfinder##9619
@@ -15608,13 +15832,19 @@ use A Mangled Journal##11116
 accept Williden's Journal##3884
 |only if itemcount(11116) > 0
 |sticky only
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Feralas (50-50)",{
-image=ZGV.IMAGESDIR.."Feralas",
-condition_suggested=function() return level == 50 and not completedq(1122) end,
-next="Leveling Guides\\Blasted Lands (50-51)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Feralas (50-50)',
+  {
+    image = ZGV.IMAGESDIR .. 'Feralas',
+    condition_suggested = function()
+      return level == 50 and not completedq(1122)
+    end,
+    next = 'Leveling Guides\\Blasted Lands (50-51)',
+    hardcore = true,
+  },
+  [[
 step
 Optional Route Change
 |tip You can opt to do Maraudon soon instead of grinding.
@@ -15830,13 +16060,19 @@ talk Willow##13656
 |tip Inside the building.
 turnin Twisted Evils##7028 |goto Desolace 62.19,39.63
 |only if guideflag("Maraflag")
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Blasted Lands (50-51)",{
-image=ZGV.IMAGESDIR.."Blasted Lands",
-condition_suggested=function() return level >= 50 and level <= 51 and not completedq(2585) end,
-next="Leveling Guides\\Searing Gorge (51-52)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Blasted Lands (50-51)',
+  {
+    image = ZGV.IMAGESDIR .. 'Blasted Lands',
+    condition_suggested = function()
+      return level >= 50 and level <= 51 and not completedq(2585)
+    end,
+    next = 'Leveling Guides\\Searing Gorge (51-52)',
+    hardcore = true,
+  },
+  [[
 step
 talk Ogromm##987 |only if Hunter
 talk Kartosh##988 |only if Warlock
@@ -15992,13 +16228,19 @@ trash Blasted Boar Lung##8392
 trash Scorpok Pincer##8393
 trash Basilisk Brain##8394
 trash Vulture Gizzard##8396
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Searing Gorge (51-52)",{
-image=ZGV.IMAGESDIR.."Searing Gorge",
-condition_suggested=function() return level >= 51 and level <= 52 and not completedq(4022) end,
-next="Leveling Guides\\Burning Steppes (52-52)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Searing Gorge (51-52)',
+  {
+    image = ZGV.IMAGESDIR .. 'Searing Gorge',
+    condition_suggested = function()
+      return level >= 51 and level <= 52 and not completedq(4022)
+    end,
+    next = 'Leveling Guides\\Burning Steppes (52-52)',
+    hardcore = true,
+  },
+  [[
 step
 talk Thal'trak Proudtusk##9082
 |tip He walks along the path near Kargath.
@@ -16283,15 +16525,20 @@ talk Vahgruk##13177
 |tip Be very careful to navigate around them and not aggro any while running.
 |tip If you die running here, just resurrect at the spirit healer. |only if not hardcore
 fpath Flame Crest |goto Burning Steppes 65.68,24.21
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Burning Steppes (52-52)",{
-image=ZGV.IMAGESDIR.."Burning Steppes",
-condition_suggested=function() return level == 52 and not completedq(4300) end,
-next = ZGV.IsClassicSoD
-and "Leveling Guides\\Felwood (52-53)"
-or "Leveling Guides\\Azshara (52-52)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Burning Steppes (52-52)',
+  {
+    image = ZGV.IMAGESDIR .. 'Burning Steppes',
+    condition_suggested = function()
+      return level == 52 and not completedq(4300)
+    end,
+    next = ZGV.IsClassicSoD and 'Leveling Guides\\Felwood (52-53)'
+      or 'Leveling Guides\\Azshara (52-52)',
+    hardcore = true,
+  },
+  [[
 step
 _NOTE:_
 Save Runecloth in Your Bank as You Level
@@ -16458,14 +16705,20 @@ home Orgrimmar |goto Orgrimmar 54.09,68.42
 step
 talk Barkeep Morag##5611
 Restock Food / Water |vendor Barkeep Morag##5611 |goto Orgrimmar/0 54.63,67.81 |q 4494
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Azshara (52-52)",{
-image=ZGV.IMAGESDIR.."Azshara",
-condition_suggested=function() return level == 52 and not completedq(3565) end,
-next="Leveling Guides\\Felwood (52-53)",
-hardcore = true,
-hideif=ZGV.IsClassicSoD,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Azshara (52-52)',
+  {
+    image = ZGV.IMAGESDIR .. 'Azshara',
+    condition_suggested = function()
+      return level == 52 and not completedq(3565)
+    end,
+    next = 'Leveling Guides\\Felwood (52-53)',
+    hardcore = true,
+    hideif = ZGV.IsClassicSoD,
+  },
+  [[
 step
 talk Loh'atu##11548
 accept Spiritual Unrest##5535 |goto Azshara 11.37,78.16
@@ -16604,13 +16857,19 @@ Teleport to the Ground |goto Azshara 28.06,50.41 < 20 |noway |c |q 3565
 step
 talk Jediga##8587
 turnin Xylem's Payment to Jediga##3565 |goto Azshara 22.56,51.42
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Felwood (52-53)",{
-image=ZGV.IMAGESDIR.."Felwood",
-condition_suggested=function() return level >= 52 and level <= 53 and not completedq(8465) end,
-next="Leveling Guides\\Winterspring (53-53)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Felwood (52-53)',
+  {
+    image = ZGV.IMAGESDIR .. 'Felwood',
+    condition_suggested = function()
+      return level >= 52 and level <= 53 and not completedq(8465)
+    end,
+    next = 'Leveling Guides\\Winterspring (53-53)',
+    hardcore = true,
+  },
+  [[
 step
 talk Hula'mahi##3490
 |tip Stock up on poisons.
@@ -16853,13 +17112,19 @@ You can turn in Deadwood Headdress Feathers to Nafien at [64.77,8.13]
 |tip Each stack of 5 will give you 50 reputation with Timbermaw Hold.
 |tip It's easy to pull multiple enemies by accident in this area.	|only if hardcore |notinsticky
 |tip Watch for respawns while in the area.				|only if hardcore |notinsticky
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Winterspring (53-53)",{
-image=ZGV.IMAGESDIR.."Winterspring",
-condition_suggested=function() return level == 53 and not completedq(4808) end,
-next="Leveling Guides\\Felwood (53-53)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Winterspring (53-53)',
+  {
+    image = ZGV.IMAGESDIR .. 'Winterspring',
+    condition_suggested = function()
+      return level == 53 and not completedq(4808)
+    end,
+    next = 'Leveling Guides\\Felwood (53-53)',
+    hardcore = true,
+  },
+  [[
 step
 Enter the tunnel |goto Felwood 65.13,8.01 < 10 |walk |only if not zone("Moonglade")
 Run down the stairs and follow the path |goto Felwood 65.36,2.34 < 10 |walk |only if not zone("Moonglade")
@@ -16939,13 +17204,19 @@ step
 Leave Everlook |goto Winterspring 60.56,38.21 < 10 |only if walking
 talk Yugrek##11139
 fpath Everlook |goto Winterspring 60.47,36.30
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Felwood (53-53)",{
-image=ZGV.IMAGESDIR.."Felwood",
-condition_suggested=function() return level == 53 and not completedq(5887) end,
-next="Leveling Guides\\Un'Goro Crater (53-54)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Felwood (53-53)',
+  {
+    image = ZGV.IMAGESDIR .. 'Felwood',
+    condition_suggested = function()
+      return level == 53 and not completedq(5887)
+    end,
+    next = "Leveling Guides\\Un'Goro Crater (53-54)",
+    hardcore = true,
+  },
+  [[
 step
 talk Dreka'Sur##9620
 turnin A Husband's Last Battle##6162 |goto Felwood 34.80,52.73
@@ -16972,13 +17243,19 @@ step
 talk Taronn Redfeather##10921
 |tip Inside the building.
 turnin Verifying the Corruption##5156 |goto Felwood 50.89,81.62
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Un'Goro Crater (53-54)",{
-image=ZGV.IMAGESDIR.."Un'Goro Crater",
-condition_suggested=function() return level >= 53 and level <= 54 and not completedq(4496) end,
-next="Leveling Guides\\Feralas (54-54)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  "Leveling Guides\\Un'Goro Crater (53-54)",
+  {
+    image = ZGV.IMAGESDIR .. "Un'Goro Crater",
+    condition_suggested = function()
+      return level >= 53 and level <= 54 and not completedq(4496)
+    end,
+    next = 'Leveling Guides\\Feralas (54-54)',
+    hardcore = true,
+  },
+  [[
 step
 talk Rekkul##3334
 |tip Inside the tent, inside the Cleft of Shadow.
@@ -17440,15 +17717,20 @@ step
 talk Alchemist Pestlezugg##5594
 |tip Inside the building.
 turnin Bungle in the Jungle##4496 |goto Tanaris 50.89,26.96
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Feralas (54-54)",{
-image=ZGV.IMAGESDIR.."Feralas",
-condition_suggested=function() return level == 54 and not completedq(5159) end,
-next = ZGV.IsClassicSoD
-and "Leveling Guides\\Felwood (54-55)"
-or "Leveling Guides\\Azshara (54-54)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Feralas (54-54)',
+  {
+    image = ZGV.IMAGESDIR .. 'Feralas',
+    condition_suggested = function()
+      return level == 54 and not completedq(5159)
+    end,
+    next = ZGV.IsClassicSoD and 'Leveling Guides\\Felwood (54-55)'
+      or 'Leveling Guides\\Azshara (54-54)',
+    hardcore = true,
+  },
+  [[
 step
 talk Talo Thornhoof##7776
 |tip Inside the building.
@@ -17569,14 +17851,20 @@ step
 Watch the dialogue
 talk Islen Waterseer##5901
 accept Cleansed Water Returns to Felwood##5159 |goto The Barrens 65.83,43.78
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Azshara (54-54)",{
-image=ZGV.IMAGESDIR.."Azshara",
-condition_suggested=function() return level == 54 and not completedq(3507) end,
-next="Leveling Guides\\Felwood (54-55)",
-hardcore = true,
-hideif=ZGV.IsClassicSoD,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Azshara (54-54)',
+  {
+    image = ZGV.IMAGESDIR .. 'Azshara',
+    condition_suggested = function()
+      return level == 54 and not completedq(3507)
+    end,
+    next = 'Leveling Guides\\Felwood (54-55)',
+    hardcore = true,
+    hideif = ZGV.IsClassicSoD,
+  },
+  [[
 step
 talk Ag'tor Bloodfist##8576
 accept Betrayed##3505 |goto Azshara 22.26,51.48
@@ -17669,13 +17957,19 @@ step
 talk Ag'tor Bloodfist##8576
 turnin Betrayed##3506 |goto Azshara 22.26,51.48
 accept Betrayed##3507 |goto Azshara 22.26,51.48
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Felwood (54-55)",{
-image=ZGV.IMAGESDIR.."Felwood",
-condition_suggested=function() return level >= 54 and level <= 55 and not completedq(5085) end,
-next="Leveling Guides\\Winterspring (55-55)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Felwood (54-55)',
+  {
+    image = ZGV.IMAGESDIR .. 'Felwood',
+    condition_suggested = function()
+      return level >= 54 and level <= 55 and not completedq(5085)
+    end,
+    next = 'Leveling Guides\\Winterspring (55-55)',
+    hardcore = true,
+  },
+  [[
 step
 talk Hula'mahi##3490
 |tip Stock up on poisons.
@@ -17802,13 +18096,19 @@ talk Nafien##15395 |goto Felwood 64.77,8.13
 |tip Destroy any leftovers after, this is the last time we will farm this area.
 trash Deadwood Headdress Feather##21377
 |only if itemcount(21377) >= 5
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Winterspring (55-55)",{
-image=ZGV.IMAGESDIR.."Winterspring",
-condition_suggested=function() return level == 55 and not completedq(5601) end,
-next="Leveling Guides\\Felwood (55-55)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Winterspring (55-55)',
+  {
+    image = ZGV.IMAGESDIR .. 'Winterspring',
+    condition_suggested = function()
+      return level == 55 and not completedq(5601)
+    end,
+    next = 'Leveling Guides\\Felwood (55-55)',
+    hardcore = true,
+  },
+  [[
 step
 Follow the road up |goto Felwood 64.06,14.72 < 30 |only if walking and subzone("Felpaw Village")
 Enter the tunnel |goto Felwood 65.13,8.01 < 10 |walk |only if not zone("Winterspring")
@@ -17924,13 +18224,19 @@ bank Tablet of Markri##10540 |goto Winterspring 61.45,36.981 |q 3542 |future
 bank Everlook Report##15788 |goto Winterspring 61.45,36.98 |q 6029 |future
 bank Studies in Spirit Speaking##15790 |goto Winterspring 61.45,36.98 |q 6030 |future
 bank Head of Magus Rimtori##10597 |goto Winterspring 61.45,36.98 |q 3507
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Felwood (55-55)",{
-image=ZGV.IMAGESDIR.."Felwood",
-condition_suggested=function() return level == 55 and not completedq(4084) end,
-next="Leveling Guides\\Winterspring Part 2 (55-55)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Felwood (55-55)',
+  {
+    image = ZGV.IMAGESDIR .. 'Felwood',
+    condition_suggested = function()
+      return level == 55 and not completedq(4084)
+    end,
+    next = 'Leveling Guides\\Winterspring Part 2 (55-55)',
+    hardcore = true,
+  },
+  [[
 step
 talk Trull Failbane##10306
 turnin Wild Guardians##4521 |goto Felwood 34.73,52.79
@@ -17974,13 +18280,19 @@ You can find more around: |notinsticky
 [56.10,22.91]
 [57.71,18.14]
 [61.26,15.96]
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Winterspring Part 2 (55-55)",{
-image=ZGV.IMAGESDIR.."Winterspring",
-condition_suggested=function() return level == 55 and not completedq(4300) end,
-next="Leveling Guides\\Western Plaguelands (55-56)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Winterspring Part 2 (55-55)',
+  {
+    image = ZGV.IMAGESDIR .. 'Winterspring',
+    condition_suggested = function()
+      return level == 55 and not completedq(4300)
+    end,
+    next = 'Leveling Guides\\Western Plaguelands (55-56)',
+    hardcore = true,
+  },
+  [[
 step
 Follow the road up and enter the tunnel |goto Felwood 65.13,8.01 < 10 |only if walking and not zone("Winterspring")
 Follow the path |goto Felwood 66.26,2.90 < 10 |only if walking and not zone("Winterspring")
@@ -18036,13 +18348,19 @@ Visit the Vendor |vendor Trak'gen##3313 |goto Orgrimmar 48.12,80.53 |q 3507
 step
 talk Belgrom Rockmaul##4485
 turnin Betrayed##3507 |goto Orgrimmar 75.23,34.24
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Western Plaguelands (55-56)",{
-image=ZGV.IMAGESDIR.."Western Plaguelands",
-condition_suggested=function() return level >= 55 and level <= 56 and not completedq(4985) end,
-next="Leveling Guides\\Eastern Plaguelands (56-57)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Western Plaguelands (55-56)',
+  {
+    image = ZGV.IMAGESDIR .. 'Western Plaguelands',
+    condition_suggested = function()
+      return level >= 55 and level <= 56 and not completedq(4985)
+    end,
+    next = 'Leveling Guides\\Eastern Plaguelands (56-57)',
+    hardcore = true,
+  },
+  [[
 step
 talk William Montague##4549
 |tip Collect these items from the bank.
@@ -18370,13 +18688,19 @@ You can find more around: |notinsticky
 [58.89,53.98]
 [63.17,49.89]
 [68.09,46.85]
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Eastern Plaguelands (56-57)",{
-image=ZGV.IMAGESDIR.."Eastern Plaguelands",
-condition_suggested=function() return level >= 56 and level <= 57 and not completedq(7818) end,
-next="Leveling Guides\\Western Plaguelands (57-58)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Eastern Plaguelands (56-57)',
+  {
+    image = ZGV.IMAGESDIR .. 'Eastern Plaguelands',
+    condition_suggested = function()
+      return level >= 56 and level <= 57 and not completedq(7818)
+    end,
+    next = 'Leveling Guides\\Western Plaguelands (57-58)',
+    hardcore = true,
+  },
+  [[
 step
 Cross into Eastern Plaguelands and follow the river north |goto Western Plaguelands 69.30,45.04 < 50 |only if walking and zone("Western Plaguelands")
 talk Tirion Fordring##1855
@@ -18685,13 +19009,19 @@ talk Ezekiel Graves##4585
 |tip Open your poison crafting window and purchase the ingredients you need.
 Visit the Vendor |vendor Ezekiel Graves##4585 |goto Undercity 75.20,51.19 |q 5050
 |only if Rogue
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Western Plaguelands (57-58)",{
-image=ZGV.IMAGESDIR.."Western Plaguelands",
-condition_suggested=function() return level >= 57 and level <= 58 and not completedq(5210) end,
-next="Leveling Guides\\Winterspring (58-59)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Western Plaguelands (57-58)',
+  {
+    image = ZGV.IMAGESDIR .. 'Western Plaguelands',
+    condition_suggested = function()
+      return level >= 57 and level <= 58 and not completedq(5210)
+    end,
+    next = 'Leveling Guides\\Winterspring (58-59)',
+    hardcore = true,
+  },
+  [[
 step
 talk Mickey Levine##11615
 turnin A Plague Upon Thee##5901 |goto Tirisfal Glades 83.29,72.33
@@ -18821,13 +19151,19 @@ talk Loganaar##12042
 Train your spells. |trainer Loganaar##12042 |goto Moonglade/0 52.50,40.54 |q 4741
 |tip Go to Moonglade and train your spells, then hearth once it is off cooldown.
 |only if Druid and C_Container.GetItemCooldown(6948) <= 100
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Winterspring (58-59)",{
-image=ZGV.IMAGESDIR.."Winterspring",
-condition_suggested=function() return level >= 58 and level <= 59 and not completedq(5163) end,
-next="Leveling Guides\\Silithus (59-60)",
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Winterspring (58-59)',
+  {
+    image = ZGV.IMAGESDIR .. 'Winterspring',
+    condition_suggested = function()
+      return level >= 58 and level <= 59 and not completedq(5163)
+    end,
+    next = 'Leveling Guides\\Silithus (59-60)',
+    hardcore = true,
+  },
+  [[
 step
 talk Felnok Steelspring##10468
 accept Chillwind Horns##4809 |goto Winterspring 61.63,38.61
@@ -19100,12 +19436,18 @@ step
 use the Umi's Mechanical Yeti##12928
 |tip Use it on Quixxil.
 Scare Quixxil |q 5163/3 |goto Un'Goro Crater 43.67,9.38
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Silithus (59-60)",{
-image=ZGV.IMAGESDIR.."Silithus",
-condition_suggested=function() return level >= 59 and level <= 60 and not completedq(1185) end,
-hardcore = true,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Silithus (59-60)',
+  {
+    image = ZGV.IMAGESDIR .. 'Silithus',
+    condition_suggested = function()
+      return level >= 59 and level <= 60 and not completedq(1185)
+    end,
+    hardcore = true,
+  },
+  [[
 step
 talk Layo Starstrike##13220
 |tip Inside the building.
@@ -19379,10 +19721,14 @@ step
 talk Umber##11939
 |tip He walks around this area.
 accept Under the Chitin Was...##1185 |goto Moonglade 44.89,35.59 |instant
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Class Quests\\Druid",{
-description="This guide will walk you through completing various Druid Class Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Class Quests\\Druid',
+  {
+    description = 'This guide will walk you through completing various Druid Class Quests.',
+  },
+  [[
 step
 ding 10
 step
@@ -19685,10 +20031,14 @@ step
 talk Torwa Pathfinder##9619
 turnin A Better Ingredient##9053 |goto Un'Goro Crater 71.63,75.96
 |only if Druid
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Class Quests\\Priest",{
-description="This guide will walk you through completing various Priest Class Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Class Quests\\Priest',
+  {
+    description = 'This guide will walk you through completing various Priest Class Quests.',
+  },
+  [[
 step
 ding 10
 step
@@ -19813,10 +20163,14 @@ talk Movkar##16012
 |tip Inside the building.
 turnin An Earnest Proposition##8916 |goto Orgrimmar 34.80,38.00
 |only if Priest
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Class Quests\\Warrior",{
-description="This guide will walk you through completing various Warrior Class Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Class Quests\\Warrior',
+  {
+    description = 'This guide will walk you through completing various Warrior Class Quests.',
+  },
+  [[
 step
 ding 10
 step
@@ -20110,10 +20464,14 @@ step
 talk Fallen Hero of the Horde##7572
 turnin Voodoo Feathers##8425 |goto Swamp of Sorrows 34.29,66.15
 |only if Warrior
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Class Quests\\Hunter",{
-description="This guide will walk you through completing various Hunter Class Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Class Quests\\Hunter',
+  {
+    description = 'This guide will walk you through completing various Hunter Class Quests.',
+  },
+  [[
 step
 ding 10
 step
@@ -20422,10 +20780,14 @@ use the Ancient Rune Etched Stave##18707
 collect Rhok'delar, Longbow of the Ancient Keepers##18713 |n
 collect Lok'delar, Stave of the Ancient Keepers##18715 |n
 |only if Hunter
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Class Quests\\Mage",{
-description="This guide will walk you through completing various Mage Class Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Class Quests\\Mage',
+  {
+    description = 'This guide will walk you through completing various Mage Class Quests.',
+  },
+  [[
 step
 ding 15
 step
@@ -20797,10 +21159,14 @@ talk Lorekeeper Lydros##14368
 |tip Through the Conservatory Door in the courtyard.
 turnin Arcane Refreshment##7463
 |only if Mage
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Class Quests\\Rogue",{
-description="This guide will walk you through completing various Rogue Class Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Class Quests\\Rogue',
+  {
+    description = 'This guide will walk you through completing various Rogue Class Quests.',
+  },
+  [[
 step
 ding 20
 |only if not hardcore
@@ -21048,10 +21414,14 @@ Enter the building |goto Alterac Mountains 85.46,79.39 < 10 |walk
 talk Lord Jorach Ravenholdt##6768
 turnin The Azure Key##8236|goto Alterac Mountains 86.03,78.88
 |only if Rogue
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Class Quests\\Shaman",{
-description="This guide will walk you through completing various Shaman Class Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Class Quests\\Shaman',
+  {
+    description = 'This guide will walk you through completing various Shaman Class Quests.',
+  },
+  [[
 step
 ding 4
 step
@@ -21381,10 +21751,14 @@ step
 talk Bath'rah the Windwatcher##6176
 turnin Da Voodoo##8413 |goto Alterac Mountains 80.50,66.92
 |only if Shaman
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Class Quests\\Warlock",{
-description="This guide will walk you through completing various Warlock Class Quests.",
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Class Quests\\Warlock',
+  {
+    description = 'This guide will walk you through completing various Warlock Class Quests.',
+  },
+  [[
 step
 talk Ruzan##5765
 accept Vile Familiars##1485 |goto Durotar 42.59,69.00
@@ -21999,11 +22373,17 @@ kill Xorothian Dreadsteed##14502
 talk Dreadsteed Spirit##14504
 turnin Dreadsteed of Xoroth##7631
 |only if Warlock
-]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Extra Zones\\Silverpine Forest",{
-image=ZGV.IMAGESDIR.."Silverpine Forest",
-condition_suggested=function() return level >= 18 and level <= 21 and not completedq(516) end,
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'Leveling Guides\\Extra Zones\\Silverpine Forest',
+  {
+    image = ZGV.IMAGESDIR .. 'Silverpine Forest',
+    condition_suggested = function()
+      return level >= 18 and level <= 21 and not completedq(516)
+    end,
+  },
+  [[
 stickystart "Collect_Discolored_Worg_Hearts"
 step
 Enter Silverpine Forest |goto Silverpine Forest 67.40,5.82 < 30 |only if walking
@@ -22377,4 +22757,5 @@ Continue following the road |goto Silverpine Forest 51.91,50.20 < 30 |only if wa
 Continue following the road |goto Silverpine Forest 50.83,37.00 < 50 |only if walking
 talk Shadow Priest Allister##2121
 turnin Beren's Peril##516 |goto Silverpine Forest 43.98,40.93
-]])
+]]
+)

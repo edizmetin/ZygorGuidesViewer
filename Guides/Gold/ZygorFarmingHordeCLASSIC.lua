@@ -1,11 +1,20 @@
-local ZygorGuidesViewer=ZygorGuidesViewer
-if not ZygorGuidesViewer then return end
-if UnitFactionGroup("player")~="Horde" then return end
-if ZGV:DoMutex("GoldFarmH") then return end
-ZygorGuidesViewer.GuideMenuTier = "CLA"
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Linen Cloth",{
-items={{2589,30}},
-},[[
+local ZygorGuidesViewer = ZygorGuidesViewer
+if not ZygorGuidesViewer then
+  return
+end
+if UnitFactionGroup('player') ~= 'Horde' then
+  return
+end
+if ZGV:DoMutex('GoldFarmH') then
+  return
+end
+ZygorGuidesViewer.GuideMenuTier = 'CLA'
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Linen Cloth',
+  {
+    items = { { 2589, 30 } },
+  },
+  [[
 step
 Follow the path |goto Orgrimmar 52.00,57.84 < 15 |only if walking
 Follow the path down |goto Orgrimmar 56.07,41.08 < 10 |only if walking
@@ -14,59 +23,82 @@ Enter the Ragefire Chasm dungeon |goto Orgrimmar 52.75,48.86 < 7 |c
 step
 Kill Ragefire enemies throughout the dungeon
 collect Linen Cloth##2589 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Wool Cloth",{
-meta={goldtype="route",levelreq={15,60}},
-items={{2592,60}},
-maps={"The Barrens"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Wool Cloth',
+  {
+    meta = { goldtype = 'route', levelreq = { 15, 60 } },
+    items = { { 2592, 60 } },
+    maps = { 'The Barrens' },
+  },
+  [[
 step
 Follow the path up |goto The Barrens 62.21,7.28 < 15 |only if walking
 Kill Venture Co. enemies around this area
 |tip You can find more inside the mine.
 collect Wool Cloth##2592 |n |goto The Barrens 60.91,3.82
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Silk Cloth",{
-meta={goldtype="route",levelreq={20,60}},
-items={{4306,60},{2592,20}},
-maps={"Thousand Needles"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Silk Cloth',
+  {
+    meta = { goldtype = 'route', levelreq = { 20, 60 } },
+    items = { { 4306, 60 }, { 2592, 20 } },
+    maps = { 'Thousand Needles' },
+  },
+  [[
 step
 Kill Galak enemies around this area
 |tip You can find more inside the cave.
 collect Silk Cloth##4306 |n |goto Thousand Needles 44.01,37.41
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Mageweave Cloth",{
-meta={goldtype="route",levelreq={45,60}},
-items={{4338,60}},
-maps={"Tanaris"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Mageweave Cloth',
+  {
+    meta = { goldtype = 'route', levelreq = { 45, 60 } },
+    items = { { 4338, 60 } },
+    maps = { 'Tanaris' },
+  },
+  [[
 step
 Kill Dunemaul enemies around this area
 collect Mageweave Cloth##4338 |n |goto Tanaris 40.50,55.50
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Runecloth",{
-meta={goldtype="route",levelreq={50,60}},
-items={{14047,48}},
-maps={"Western Plaguelands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Runecloth',
+  {
+    meta = { goldtype = 'route', levelreq = { 50, 60 } },
+    items = { { 14047, 48 } },
+    maps = { 'Western Plaguelands' },
+  },
+  [[
 step
 Kill Blackrock enemies around this area
 |tip You can find more inside the building.
 collect Runecloth###14047 |n |goto Burning Steppes 42.17,35.64
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Felcloth",{
-meta={goldtype="route",levelreq={50,60}},
-items={{14256,10},{4338,60}},
-maps={"Felwood"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Felcloth',
+  {
+    meta = { goldtype = 'route', levelreq = { 50, 60 } },
+    items = { { 14256, 10 }, { 4338, 60 } },
+    maps = { 'Felwood' },
+  },
+  [[
 step
 Kill Jadefire enemies around this area
 collect Felcloth##14256 |n |goto Felwood 37.17,67.00
 You can find more around [32.71,66.66]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Mooncloth",{
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Mooncloth',
+  {},
+  [[
 step
 label "Farm_Felcloth"
 Kill Jadefire enemies around this area
@@ -79,47 +111,63 @@ _<Create Mooncloth>_
 |tip This spell has a 4 day cooldown.
 collect Mooncloth##14342 |n |goto Ashenvale 60.19,72.90
 Click here to farm more Felcloth |confirm |next "Farm_Felcloth"
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Spider's Silk",{
-meta={goldtype="route",levelreq={20,60}},
-items={{3182,12},{1081,40}},
-maps={"Wetlands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  "GOLD\\Farming\\Spider's Silk",
+  {
+    meta = { goldtype = 'route', levelreq = { 20, 60 } },
+    items = { { 3182, 12 }, { 1081, 40 } },
+    maps = { 'Wetlands' },
+  },
+  [[
 step
 Enter the cave |goto Wetlands 52.79,62.90 < 20 |walk
 Kill enemies around this area
 |tip Inside the cave.
 collect Spider's Silk##3182 |n |goto Wetlands 48.51,60.67
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Thick Spider's Silk",{
-meta={goldtype="route",levelreq={58,60}},
-items={{4337,8},{14047,28}},
-maps={"Eastern Plaguelands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  "GOLD\\Farming\\Thick Spider's Silk",
+  {
+    meta = { goldtype = 'route', levelreq = { 58, 60 } },
+    items = { { 4337, 8 }, { 14047, 28 } },
+    maps = { 'Eastern Plaguelands' },
+  },
+  [[
 step
 Follow the path up |goto Eastern Plaguelands 77.56,47.20 < 10 |only if walking
 Kill Crypt enemies around this area
 |tip You can find more inside the nearby crypt buildings.
 collect Thick Spider's Silk##4337 |n |goto Eastern Plaguelands 83.60,42.07
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Shadow Silk",{
-meta={goldtype="route",levelreq={38,60}},
-items={{10285,16},{4337,20}},
-maps={"Swamp of Sorrows"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Shadow Silk',
+  {
+    meta = { goldtype = 'route', levelreq = { 38, 60 } },
+    items = { { 10285, 16 }, { 4337, 20 } },
+    maps = { 'Swamp of Sorrows' },
+  },
+  [[
 step
 kill Deathstrike Tarantula##769+
 collect Shadow Silk##10285 |n |goto Swamp of Sorrows 58.74,62.39
 |tip These have a low drop rate.
 You can find more around [66.70,68.65]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Ironweb Spider Silk",{
-meta={goldtype="route",levelreq={55,60}},
-items={{14227,6}},
-maps={"Silithus"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Ironweb Spider Silk',
+  {
+    meta = { goldtype = 'route', levelreq = { 55, 60 } },
+    items = { { 14227, 6 } },
+    maps = { 'Silithus' },
+  },
+  [[
 step
 kill Sand Skitterer##11738+
 collect Ironweb Spider Silk##14227 |n |goto Silithus 56.25,26.22
@@ -131,21 +179,29 @@ You can find more around: |notinsticky
 [38.69,34.85]
 [35.71,30.35]
 [35.29,20.57]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Raw Brilliant Smallfish",{
-meta={goldtype="route",skillreq={fishing=1},levelreq={5,60}},
-items={{6291,100},{6289,40}},
-maps={"Mulgore"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Raw Brilliant Smallfish',
+  {
+    meta = { goldtype = 'route', skillreq = { fishing = 1 }, levelreq = { 5, 60 } },
+    items = { { 6291, 100 }, { 6289, 40 } },
+    maps = { 'Mulgore' },
+  },
+  [[
 step
 Fish in the open water
 collect Raw Brilliant Smallfish##6291 |n |goto Mulgore 48.60,52.66
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Chunk of Boar Meat",{
-meta={goldtype="route",levelreq={1,60}},
-items={{769,100}},
-maps={"Durotar"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Chunk of Boar Meat',
+  {
+    meta = { goldtype = 'route', levelreq = { 1, 60 } },
+    items = { { 769, 100 } },
+    maps = { 'Durotar' },
+  },
+  [[
 step
 map Durotar
 path follow smart; loop on; ants curved; dist 20
@@ -158,12 +214,16 @@ path	37.94,23.38	40.00,20.80	40.35,17.61	42.55,17.05	44.72,17.22
 path	45.61,15.87
 Kill Boar enemies around this area
 collect Chunk of Boar Meat##769 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Small Egg",{
-meta={goldtype="route",levelreq={1,60}},
-items={{6889,60}},
-maps={"Mulgore"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Small Egg',
+  {
+    meta = { goldtype = 'route', levelreq = { 1, 60 } },
+    items = { { 6889, 60 } },
+    maps = { 'Mulgore' },
+  },
+  [[
 step
 map Mulgore
 path follow smart; loop on; ants curved; dist 20
@@ -175,12 +235,16 @@ path	36.60,45.80	41.60,48.60	42.80,53.00	43.60,49.60	46.60,50.20
 path	48.09,53.39	51.19,58.92	53.62,62.28
 Kill Swoop enemies along this path
 collect Small Egg##6889 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Stringy Wolf Meat",{
-meta={goldtype="route",levelreq={10,60}},
-items={{2672,80}},
-maps={"Silverpine Forest"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Stringy Wolf Meat',
+  {
+    meta = { goldtype = 'route', levelreq = { 10, 60 } },
+    items = { { 2672, 80 } },
+    maps = { 'Silverpine Forest' },
+  },
+  [[
 step
 map Silverpine Forest
 path follow smart; loop on; ants curved; dist 20
@@ -191,21 +255,29 @@ path	64.00,11.52	65.79,10.72	67.99,8.47	69.34,5.89	68.36,5.26
 path	66.45,5.26
 Kill Worg enemies along this path
 collect Stringy Wolf Meat##2672 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Raw Slitherskin Mackerel",{
-meta={goldtype="route",skillreq={fishing=1},levelreq={5,60}},
-items={{6303,160}},
-maps={"Durotar"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Raw Slitherskin Mackerel',
+  {
+    meta = { goldtype = 'route', skillreq = { fishing = 1 }, levelreq = { 5, 60 } },
+    items = { { 6303, 160 } },
+    maps = { 'Durotar' },
+  },
+  [[
 step
 Fish in the open water
 collect Raw Slitherskin Mackerel##6303 |n |goto Durotar 56.41,10.85
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Meaty Bat Wing",{
-meta={goldtype="route",levelreq={5,60}},
-items={{12223,80}},
-maps={"Tirisfal Glades"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Meaty Bat Wing',
+  {
+    meta = { goldtype = 'route', levelreq = { 5, 60 } },
+    items = { { 12223, 80 } },
+    maps = { 'Tirisfal Glades' },
+  },
+  [[
 step
 map Tirisfal Glades
 path follow smart; loop on; ants curved; dist 20
@@ -220,12 +292,16 @@ path	64.99,41.00	63.82,44.53	63.73,47.67	63.23,49.86	63.49,52.65
 path	63.93,55.31
 Kill Bat enemies along this path
 collect Meaty Bat Wing##12223 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Scorpid Stinger",{
-meta={goldtype="route",levelreq={5,60}},
-items={{5466,100}},
-maps={"Durotar"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Scorpid Stinger',
+  {
+    meta = { goldtype = 'route', levelreq = { 5, 60 } },
+    items = { { 5466, 100 } },
+    maps = { 'Durotar' },
+  },
+  [[
 step
 map Durotar
 path follow smart; loop on; ants curved; dist 20
@@ -238,12 +314,16 @@ path	52.78,58.81	52.26,56.13	51.76,53.68	52.33,52.11	51.49,48.96
 path	52.65,45.64	53.80,45.65
 Kill Scorpid enemies along this path
 collect Scorpid Stinger##5466 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Coyote Meat",{
-meta={goldtype="route",levelreq={10,60}},
-items={{2673,60}},
-maps={"Westfall"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Coyote Meat',
+  {
+    meta = { goldtype = 'route', levelreq = { 10, 60 } },
+    items = { { 2673, 60 } },
+    maps = { 'Westfall' },
+  },
+  [[
 step
 label "Path_One"
 map Westfall
@@ -267,12 +347,16 @@ path	62.45,42.12
 Kill Coyote enemies along this path
 collect Coyote Meat##2673 |n
 '|goto Westfall 62.45,42.12 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Strider Meat",{
-meta={goldtype="route",levelreq={10,60}},
-items={{5469,40}},
-maps={"The Barrens"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Strider Meat',
+  {
+    meta = { goldtype = 'route', levelreq = { 10, 60 } },
+    items = { { 5469, 40 } },
+    maps = { 'The Barrens' },
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -288,12 +372,16 @@ path	44.23,34.84	44.88,36.86	44.87,38.28	44.26,39.76	45.05,41.47
 path	46.55,43.95	47.19,42.91	49.21,41.46	49.88,39.03	50.32,36.85
 Kill Strider enemies along this path
 collect Strider Meat##5469 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Kodo Meat",{
-meta={goldtype="route",levelreq={20,60}},
-items={{5467,30}},
-maps={"The Barrens"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Kodo Meat',
+  {
+    meta = { goldtype = 'route', levelreq = { 20, 60 } },
+    items = { { 5467, 30 } },
+    maps = { 'The Barrens' },
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -303,12 +391,16 @@ path	45.93,66.82
 Kill Kodo enemies along this path
 collect Kodo Meat##5467 |n
 |tip Thunderheads will not drop this item.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Bear Meat",{
-meta={goldtype="route",levelreq={10,60}},
-items={{3173,60}},
-maps={"Darkshore"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Bear Meat',
+  {
+    meta = { goldtype = 'route', levelreq = { 10, 60 } },
+    items = { { 3173, 60 } },
+    maps = { 'Darkshore' },
+  },
+  [[
 step
 map Darkshore
 path follow smart; loop on; ants curved; dist 20
@@ -321,12 +413,16 @@ path	41.39,33.60	41.66,35.17	42.07,37.43	42.42,39.82	43.17,41.92
 path	44.41,42.90	45.25,43.21	45.48,41.84
 Kill Bear enemies along this path
 collect Bear Meat##3173 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Crawler Meat, Crawler Claw",{
-meta={goldtype="route",levelreq={10,60}},
-items={{2674,40},{2675,48}},
-maps={"Darkshore"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Crawler Meat, Crawler Claw',
+  {
+    meta = { goldtype = 'route', levelreq = { 10, 60 } },
+    items = { { 2674, 40 }, { 2675, 48 } },
+    maps = { 'Darkshore' },
+  },
+  [[
 step
 label "Path_One"
 map Darkshore
@@ -356,42 +452,58 @@ Kill Crawler enemies along this path
 collect Crawler Meat##2674 |n
 collect Crawler Claw##2675 |n
 '|goto Darkshore 35.96,73.13 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Clam Meat",{
-meta={goldtype="route",levelreq={20,60}},
-items={{5503,60}},
-maps={"Ashenvale"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Clam Meat',
+  {
+    meta = { goldtype = 'route', levelreq = { 20, 60 } },
+    items = { { 5503, 60 } },
+    maps = { 'Ashenvale' },
+  },
+  [[
 step
 Kill enemies around this area
 collect Small Barnacled Clam##5523 |n
 use the Small Barnacled Clam##5523
 collect Clam Meat##5503 |n |goto Ashenvale 11.51,28.67
 You can find more around here [13.09,25.61]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Raw Rainbow Fin Albacore",{
-meta={goldtype="route",skillreq={fishing=1},levelreq={5,60}},
-items={{6361,60}},
-maps={"The Barrens"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Raw Rainbow Fin Albacore',
+  {
+    meta = { goldtype = 'route', skillreq = { fishing = 1 }, levelreq = { 5, 60 } },
+    items = { { 6361, 60 } },
+    maps = { 'The Barrens' },
+  },
+  [[
 step
 Fish in the Open Water
 collect Raw Rainbow Fin Albacore##6361 |n |goto The Barrens 63.19,38.19
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Raw Longjaw Mud Snapper",{
-meta={goldtype="route",skillreq={fishing=1},levelreq={5,60}},
-items={{6289,120}},
-maps={"Orgrimmar"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Raw Longjaw Mud Snapper',
+  {
+    meta = { goldtype = 'route', skillreq = { fishing = 1 }, levelreq = { 5, 60 } },
+    items = { { 6289, 120 } },
+    maps = { 'Orgrimmar' },
+  },
+  [[
 step
 Fish in the Open Water
 collect Raw Longjaw Mud Snapper##6289 |n |goto Orgrimmar 69.75,30.12
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Murloc Fin",{
-meta={goldtype="route",levelreq={18,60}},
-items={{1468,64},{730,60},{5503,64}},
-maps={"Ashenvale"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Murloc Fin',
+  {
+    meta = { goldtype = 'route', levelreq = { 18, 60 } },
+    items = { { 1468, 64 }, { 730, 60 }, { 5503, 64 } },
+    maps = { 'Ashenvale' },
+  },
+  [[
 step
 map Ashenvale
 path follow smart; loop on; ants curved; dist 20
@@ -399,24 +511,32 @@ path	20.90,40.21	21.33,41.92	21.06,43.30	20.66,44.48	19.75,43.65
 path	19.08,42.84	18.81,41.34	18.96,40.20	19.58,41.07
 Kill Saltspittle enemies around this area
 collect Murloc Fin##1468 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Raw Sagefish",{
-meta={goldtype="route",skillreq={fishing=100},levelreq={30,60}},
-items={{21071,120}},
-maps={"Hillsbrad Foothills"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Raw Sagefish',
+  {
+    meta = { goldtype = 'route', skillreq = { fishing = 100 }, levelreq = { 30, 60 } },
+    items = { { 21071, 120 } },
+    maps = { 'Hillsbrad Foothills' },
+  },
+  [[
 step
 Fish from Sagefish Schools in the water around this area
 collect Raw Sagefish##21071 |n |goto Hillsbrad Foothills 62.51,43.06
 |tip Follow the river north for more schools.
 |tip You will need level 100 Fishing to catch these.
 You can find more around [69.87,13.66]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Big Bear Meat",{
-meta={goldtype="route",levelreq={25,60}},
-items={{3730,40}},
-maps={"Ashenvale"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Big Bear Meat',
+  {
+    meta = { goldtype = 'route', levelreq = { 25, 60 } },
+    items = { { 3730, 40 } },
+    maps = { 'Ashenvale' },
+  },
+  [[
 step
 map Ashenvale
 path follow smart; loop on; ants curved; dist 20
@@ -428,12 +548,16 @@ path	64.04,43.77	62.76,44.57	63.03,46.48	64.54,48.42	63.80,53.72
 path	64.12,55.74	64.34,58.42	65.19,59.98	66.42,61.67	65.60,63.39
 Kill Bear enemies around this area
 collect Big Bear Meat##3730 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Raptor Egg",{
-meta={goldtype="route",levelreq={35,60}},
-items={{3685,100}},
-maps={"Stranglethorn Vale"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Raptor Egg',
+  {
+    meta = { goldtype = 'route', levelreq = { 35, 60 } },
+    items = { { 3685, 100 } },
+    maps = { 'Stranglethorn Vale' },
+  },
+  [[
 step
 label "Path_One"
 map Stranglethorn Vale
@@ -453,12 +577,16 @@ path	30.40,23.48	30.64,25.20
 Kill Raptor enemies around this area
 collect Raptor Egg##3685 |n
 '|goto Stranglethorn Vale 30.64,25.20 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Thunder Lizard Tail",{
-meta={goldtype="route",levelreq={20,60}},
-items={{5470,60}},
-maps={"The Barrens"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Thunder Lizard Tail',
+  {
+    meta = { goldtype = 'route', levelreq = { 20, 60 } },
+    items = { { 5470, 60 } },
+    maps = { 'The Barrens' },
+  },
+  [[
 step
 map The Barrens
 path follow smart; loop on; ants curved; dist 20
@@ -471,12 +599,16 @@ path	45.56,72.50	45.56,70.73	45.79,69.01	46.03,66.53	45.23,64.79
 path	45.30,63.46	46.25,61.69	46.94,60.01	47.00,58.41
 Kill Thunderhead enemies around this area
 collect Thunder Lizard Tail##5470 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Tangy Clam Meat",{
-meta={goldtype="route",levelreq={25,60}},
-items={{5504,60}},
-maps={"Hillsbrad Foothills"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Tangy Clam Meat',
+  {
+    meta = { goldtype = 'route', levelreq = { 25, 60 } },
+    items = { { 5504, 60 } },
+    maps = { 'Hillsbrad Foothills' },
+  },
+  [[
 step
 label "Path_One"
 map Hillsbrad Foothills
@@ -504,12 +636,16 @@ collect Thick-shelled Clam##5524 |n
 use the Thick-shelled Clam##5524
 collect Tangy Clam Meat##5504 |n
 '|goto Hillsbrad Foothills 23.74,64.84 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Tender Crocolisk Meat",{
-meta={goldtype="route",levelreq={35,60}},
-items={{3667,60}},
-maps={"Dustwallow Marsh"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Tender Crocolisk Meat',
+  {
+    meta = { goldtype = 'route', levelreq = { 35, 60 } },
+    items = { { 3667, 60 } },
+    maps = { 'Dustwallow Marsh' },
+  },
+  [[
 step
 label "Path_One"
 map Dustwallow Marsh
@@ -533,12 +669,16 @@ path	40.81,32.17	41.27,30.48	42.01,28.23
 Kill Drywallow enemies along this path
 collect Tender Crocolisk Meat##3667 |n
 '|goto Dustwallow Marsh 42.01,28.23 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Lion Meat",{
-meta={goldtype="route",levelreq={25,60}},
-items={{3731,28}},
-maps={"Hillsbrad Foothills"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Lion Meat',
+  {
+    meta = { goldtype = 'route', levelreq = { 25, 60 } },
+    items = { { 3731, 28 } },
+    maps = { 'Hillsbrad Foothills' },
+  },
+  [[
 step
 map Hillsbrad Foothills
 path follow smart; loop on; ants curved; dist 20
@@ -549,12 +689,16 @@ path	50.74,47.10	53.15,47.46	55.37,44.48	54.69,42.88	56.10,41.00
 path	56.82,37.61
 kill Starving Mountain Lion##2384+
 collect Lion Meat##3731 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Stag Meat",{
-meta={goldtype="route",levelreq={20,60}},
-items={{5471,40}},
-maps={"Stonetalon Mountains"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Stag Meat',
+  {
+    meta = { goldtype = 'route', levelreq = { 20, 60 } },
+    items = { { 5471, 40 } },
+    maps = { 'Stonetalon Mountains' },
+  },
+  [[
 step
 label "Path_One"
 map Stonetalon Mountains
@@ -576,21 +720,29 @@ path	48.15,33.61	49.75,34.63	50.21,36.84
 Kill Courser enemies along this path
 collect Stag Meat##5471 |n
 '|goto Stonetalon Mountains 50.21,36.84 < 30 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Raw Bristle Whisker Catfish",{
-meta={goldtype="route",skillreq={fishing=1},levelreq={5,60}},
-items={{6308,44}},
-maps={"Orgrimmar"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Raw Bristle Whisker Catfish',
+  {
+    meta = { goldtype = 'route', skillreq = { fishing = 1 }, levelreq = { 5, 60 } },
+    items = { { 6308, 44 } },
+    maps = { 'Orgrimmar' },
+  },
+  [[
 step
 Fish in the Open Water
 collect Raw Bristle Whisker Catfish##6308 |n |goto Orgrimmar 69.75,30.12
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Gooey Spider Leg",{
-meta={goldtype="route",levelreq={20,60}},
-items={{2251,64}},
-maps={"Ashenvale"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Gooey Spider Leg',
+  {
+    meta = { goldtype = 'route', levelreq = { 20, 60 } },
+    items = { { 2251, 64 } },
+    maps = { 'Ashenvale' },
+  },
+  [[
 step
 map Ashenvale
 path follow smart; loop on; ants curved; dist 20
@@ -600,12 +752,16 @@ path	29.06,57.28	29.40,55.20	28.00,55.67	27.45,53.31	26.08,51.85
 path	24.96,50.29	25.87,46.65	26.74,48.07	28.74,48.35
 kill Wildthorn Stalker##3819+
 collect Gooey Spider Leg##2251 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Mystery Meat, Buzzard Wing",{
-meta={goldtype="route",levelreq={35,60}},
-items={{12037,28},{3404,32}},
-maps={"Desolace"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Mystery Meat, Buzzard Wing',
+  {
+    meta = { goldtype = 'route', levelreq = { 35, 60 } },
+    items = { { 12037, 28 }, { 3404, 32 } },
+    maps = { 'Desolace' },
+  },
+  [[
 step
 map Desolace
 path follow smart; loop on; ants curved; dist 20
@@ -621,12 +777,16 @@ Kill enemies around this area
 collect Mystery Meat##12037 |n
 collect Buzzard Wing##3404 |n
 |tip These are only dropped by Dread enemies.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Red Wolf Meat",{
-meta={goldtype="route",levelreq={40,60}},
-items={{12203,40}},
-maps={"The Hinterlands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Red Wolf Meat',
+  {
+    meta = { goldtype = 'route', levelreq = { 40, 60 } },
+    items = { { 12203, 40 } },
+    maps = { 'The Hinterlands' },
+  },
+  [[
 step
 map The Hinterlands
 path follow smart; loop on; ants curved; dist 20
@@ -634,12 +794,16 @@ path	16.99,49.54	14.76,51.94	16.34,54.97	19.20,54.81	21.00,55.69
 path	22.67,53.75	24.13,52.68	22.29,51.46	20.61,50.68	19.10,49.49
 kill Mangy Silvermane##2923+
 collect Red Wolf Meat##12203 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Turtle Meat",{
-meta={goldtype="route",levelreq={30,60}},
-items={{3712,40}},
-maps={"Hillsbrad Foothills"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Turtle Meat',
+  {
+    meta = { goldtype = 'route', levelreq = { 30, 60 } },
+    items = { { 3712, 40 } },
+    maps = { 'Hillsbrad Foothills' },
+  },
+  [[
 step
 label "Path_One"
 map Hillsbrad Foothills
@@ -665,12 +829,16 @@ path	61.27,45.60	59.58,47.03	58.10,47.76	56.82,50.74	55.45,57.43
 kill Snapjaw##2408+
 collect Turtle Meat##3712 |n
 '|goto Hillsbrad Foothills 55.45,57.43 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Tiger Meat",{
-meta={goldtype="route",levelreq={30,60}},
-items={{12202,40}},
-maps={"Stranglethorn Vale"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Tiger Meat',
+  {
+    meta = { goldtype = 'route', levelreq = { 30, 60 } },
+    items = { { 12202, 40 } },
+    maps = { 'Stranglethorn Vale' },
+  },
+  [[
 step
 map Stranglethorn Vale
 path follow smart; loop on; ants curved; dist 20
@@ -680,12 +848,16 @@ path	34.58,13.61	35.43,12.75	36.60,13.36	37.41,14.77	38.14,14.47
 path	38.22,13.67	38.39,12.20	39.14,10.33	39.08,9.00	37.71,9.37
 Kill Tiger enemies around this area
 collect Tiger Meat##12202 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Raptor Flesh",{
-meta={goldtype="route",levelreq={30,60}},
-items={{12184,40}},
-maps={"Stranglethorn Vale"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Raptor Flesh',
+  {
+    meta = { goldtype = 'route', levelreq = { 30, 60 } },
+    items = { { 12184, 40 } },
+    maps = { 'Stranglethorn Vale' },
+  },
+  [[
 step
 label "Path_One"
 map Stranglethorn Vale
@@ -705,86 +877,118 @@ path	30.40,23.48	30.64,25.20
 Kill Raptor enemies around this area
 collect Raptor Flesh##12184 |n
 '|goto Stranglethorn Vale 30.64,25.20 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Raw Mithril Head Trout",{
-meta={goldtype="route",skillreq={fishing=130},levelreq={20,60}},
-items={{8365,80}},
-maps={"Desolace"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Raw Mithril Head Trout',
+  {
+    meta = { goldtype = 'route', skillreq = { fishing = 130 }, levelreq = { 20, 60 } },
+    items = { { 8365, 80 } },
+    maps = { 'Desolace' },
+  },
+  [[
 step
 Fish in the Open Water
 collect Raw Mithril Head Trout##8365 |n |goto Desolace 21.47,74.18
 |tip You will need level 130 Fishing to catch these.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Raw Rockscale Cod",{
-meta={goldtype="route",skillreq={fishing=130},levelreq={20,60}},
-items={{6362,100}},
-maps={"Stranglethorn Vale"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Raw Rockscale Cod',
+  {
+    meta = { goldtype = 'route', skillreq = { fishing = 130 }, levelreq = { 20, 60 } },
+    items = { { 6362, 100 } },
+    maps = { 'Stranglethorn Vale' },
+  },
+  [[
 step
 Fish in the Open Water
 collect Raw Rockscale Cod##6362 |n |goto Stranglethorn Vale 26.22,73.57
 |tip You will need level 130 Fishing to catch these.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Giant Clam Meat",{
-meta={goldtype="route",levelreq={35,60}},
-items={{4655,16},{4611,28}},
-maps={"Stranglethorn Vale"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Giant Clam Meat',
+  {
+    meta = { goldtype = 'route', levelreq = { 35, 60 } },
+    items = { { 4655, 16 }, { 4611, 28 } },
+    maps = { 'Stranglethorn Vale' },
+  },
+  [[
 step
 click Giant Clam##2744+
 |tip They look like large shells underwater around this area.
 |tip Elixirs of Water Breathing are very helpful while farming these.
 collect Giant Clam Meat##4655 |n |goto Stranglethorn Vale 26.75,26.88
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Raw Sunscale Salmon",{
-meta={goldtype="route",skillreq={fishing=205},levelreq={40,60}},
-items={{13760,24}},
-maps={"Feralas"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Raw Sunscale Salmon',
+  {
+    meta = { goldtype = 'route', skillreq = { fishing = 205 }, levelreq = { 40, 60 } },
+    items = { { 13760, 24 } },
+    maps = { 'Feralas' },
+  },
+  [[
 step
 Fish in the Open Water
 collect Raw Sunscale Salmon##13760 |n |goto Feralas 75.58,44.52
 |tip You will need level 205 Fishing to catch these.
 |tip This fish can only be caught during the day; they cannot be caught between midnight and 6 AM server time.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Essence of Water",{
-meta={goldtype="route",levelreq={55,60}},
-items={{7080,6},{7070,4}},
-maps={"Eastern Plaguelands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Essence of Water',
+  {
+    meta = { goldtype = 'route', levelreq = { 55, 60 } },
+    items = { { 7080, 6 }, { 7070, 4 } },
+    maps = { 'Eastern Plaguelands' },
+  },
+  [[
 step
 Kill enemies around this area
 |tip Only Plague Ravagers and Blighted Surges will drop this item.
 collect Essence of Water##7080 |n |goto Eastern Plaguelands 61.65,81.13
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Living Essence",{
-meta={goldtype="route",levelreq={50,60}},
-items={{12803,6}},
-maps={"Un'Goro Crater"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Living Essence',
+  {
+    meta = { goldtype = 'route', levelreq = { 50, 60 } },
+    items = { { 12803, 6 } },
+    maps = { "Un'Goro Crater" },
+  },
+  [[
 step
 Kill Tar enemies around this area
 collect Living Essence##12803 |n |goto Un'Goro Crater 46.46,17.23
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Essence of Fire",{
-meta={goldtype="route",levelreq={50,60}},
-items={{7078,6}},
-maps={"Un'Goro Crater"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Essence of Fire',
+  {
+    meta = { goldtype = 'route', levelreq = { 50, 60 } },
+    items = { { 7078, 6 } },
+    maps = { "Un'Goro Crater" },
+  },
+  [[
 step
 Follow the path up |goto Un'Goro Crater 52.06,42.40 < 10 |only if walking
 Kill enemies around this area
 collect Essence of Fire##7078 |n |goto Un'Goro Crater 49.32,48.31
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Essence of Air, Breath of Wind, Elemental Air",{
-meta={goldtype="route",levelreq={55,60}},
-items={{7082,6},{7081,4},{7069,4}},
-maps={"Silithus"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Essence of Air, Breath of Wind, Elemental Air',
+  {
+    meta = { goldtype = 'route', levelreq = { 55, 60 } },
+    items = { { 7082, 6 }, { 7081, 4 }, { 7069, 4 } },
+    maps = { 'Silithus' },
+  },
+  [[
 step
 kill Dust Stormer##11744+
 collect Essence of Air##7082 |n |goto Silithus 31.69,18.15
@@ -792,23 +996,31 @@ collect Breath of Wind##7081 |n |goto Silithus 31.69,18.15
 collect Elemental Air##7069 |n |goto Silithus 31.69,18.15
 |tip These have a low drop rate.
 You can find more around [21.34,29.92]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Essence of Earth, Core of Earth",{
-meta={goldtype="route",levelreq={55,60}},
-items={{7076,6},{7075,6},{7912,40},{8150,24}},
-maps={"Silithus"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Essence of Earth, Core of Earth',
+  {
+    meta = { goldtype = 'route', levelreq = { 55, 60 } },
+    items = { { 7076, 6 }, { 7075, 6 }, { 7912, 40 }, { 8150, 24 } },
+    maps = { 'Silithus' },
+  },
+  [[
 step
 kill Desert Rumbler##11746+
 collect Essence of Earth##7076 |n |goto Silithus 22.37,11.12
 collect Core of Earth##7075 |n |goto Silithus 22.37,11.12
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Essence of Undeath",{
-meta={goldtype="route",levelreq={55,60}},
-items={{12808,4}},
-maps={"Western Plaguelands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Essence of Undeath',
+  {
+    meta = { goldtype = 'route', levelreq = { 55, 60 } },
+    items = { { 12808, 4 } },
+    maps = { 'Western Plaguelands' },
+  },
+  [[
 step
 Follow the path |goto Western Plaguelands 56.61,78.55 < 10 |only if walking
 Continue following the path |goto Western Plaguelands 68.58,80.14 < 10 |only if walking
@@ -820,12 +1032,16 @@ step
 Kill enemies throughout the dungeon
 collect Essence of Undeath##12808 |n
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Heart of the Wild",{
-meta={goldtype="route",levelreq={55,60}},
-items={{10286,4}},
-maps={"Western Plaguelands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Heart of the Wild',
+  {
+    meta = { goldtype = 'route', levelreq = { 55, 60 } },
+    items = { { 10286, 4 } },
+    maps = { 'Western Plaguelands' },
+  },
+  [[
 step
 Enter the cave |goto Western Plaguelands 64.78,38.69 < 5 |walk
 Kill enemies around this area
@@ -834,12 +1050,16 @@ Kill enemies around this area
 |tip The enemies share spawn points, so killing the oozes will spawn more elemental enemies.
 collect Heart of the Wild##10286 |n |goto Western Plaguelands 61.43,36.20
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Ichor of Undeath",{
-meta={goldtype="route",levelreq={55,60}},
-items={{7972,20}},
-maps={"Winterspring"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Ichor of Undeath',
+  {
+    meta = { goldtype = 'route', levelreq = { 55, 60 } },
+    items = { { 7972, 20 } },
+    maps = { 'Winterspring' },
+  },
+  [[
 step
 Kill Highborne enemies around this area
 collect Ichor of Undeath##7972 |n |goto Winterspring 52.59,40.68
@@ -847,43 +1067,59 @@ collect Ichor of Undeath##7972 |n |goto Winterspring 52.59,40.68
 You can find more around: |notinsticky
 [53.62,42.09]
 [56.02,44.24]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Heart of Fire",{
-meta={goldtype="route",levelreq={50,60}},
-items={{7077,6},{7067,8}},
-maps={"Felwood"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Heart of Fire',
+  {
+    meta = { goldtype = 'route', levelreq = { 50, 60 } },
+    items = { { 7077, 6 }, { 7067, 8 } },
+    maps = { 'Felwood' },
+  },
+  [[
 step
 Kill Entropic enemies around this area
 collect Heart of Fire##7077 |n |goto Felwood 40.92,40.34
 |tip These have a low drop rate.
 You can find more around [42.51,37.87]
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Globe of Water",{
-meta={goldtype="route",levelreq={50,60}},
-items={{7079,6},{7080,4}},
-maps={"Felwood"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Globe of Water',
+  {
+    meta = { goldtype = 'route', levelreq = { 50, 60 } },
+    items = { { 7079, 6 }, { 7080, 4 } },
+    maps = { 'Felwood' },
+  },
+  [[
 step
 kill Toxic Horror##7132+
 collect Globe of Water##7079 |n |goto Felwood 49.48,23.46
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Elemental Fire",{
-meta={goldtype="route",levelreq={35,60}},
-items={{7068,8}},
-maps={"Arathi Highlands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Elemental Fire',
+  {
+    meta = { goldtype = 'route', levelreq = { 35, 60 } },
+    items = { { 7068, 8 } },
+    maps = { 'Arathi Highlands' },
+  },
+  [[
 step
 kill Burning Exile##2760+
 collect Elemental Fire##7068 |n |goto Arathi Highlands 24.80,29.95
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Elemental Earth, Deeprock Salt, Solid Stone",{
-meta={goldtype="route",levelreq={40,60}},
-items={{7067,8},{8150,40},{7912,40}},
-maps={"Badlands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Elemental Earth, Deeprock Salt, Solid Stone',
+  {
+    meta = { goldtype = 'route', levelreq = { 40, 60 } },
+    items = { { 7067, 8 }, { 8150, 40 }, { 7912, 40 } },
+    maps = { 'Badlands' },
+  },
+  [[
 step
 Follow the path up |goto Badlands 46.37,77.20
 kill Rock Elemental##92+
@@ -891,31 +1127,43 @@ collect Elemental Earth##7067 |n |goto Badlands 43.30,84.24
 collect Deeprock Salt##8150 |n |goto Badlands 43.30,84.24
 collect Solid Stone##7912 |n |goto Badlands 43.30,84.24
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Elemental Water",{
-meta={goldtype="route",levelreq={35,60}},
-items={{7070,8}},
-maps={"Arathi Highlands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Elemental Water',
+  {
+    meta = { goldtype = 'route', levelreq = { 35, 60 } },
+    items = { { 7070, 8 } },
+    maps = { 'Arathi Highlands' },
+  },
+  [[
 step
 kill Cresting Exile##2761+
 collect Elemental Water##7070 |n |goto Arathi Highlands 66.70,29.91
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Elemental Air",{
-meta={goldtype="route",levelreq={35,60}},
-items={{7069,16}},
-maps={"Arathi Highlands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Elemental Air',
+  {
+    meta = { goldtype = 'route', levelreq = { 35, 60 } },
+    items = { { 7069, 16 } },
+    maps = { 'Arathi Highlands' },
+  },
+  [[
 step
 kill Thundering Exile##2762+
 collect Elemental Air##7069 |n |goto Arathi Highlands 52.03,50.77
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Righteous Orb",{
-meta={goldtype="route",levelreq={55,60}},
-items={{12811,1}},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Righteous Orb',
+  {
+    meta = { goldtype = 'route', levelreq = { 55, 60 } },
+    items = { { 12811, 1 } },
+  },
+  [[
 step
 Enter the Stratholme Dungeon
 |tip You will need to join and form a group for this.
@@ -926,12 +1174,16 @@ Make your way to the Crusaders' Square
 Kill Crimson enemies around this area
 |tip All Crimson enemies in The Scarlet Bastion have a chance to drop the orb.
 collect Righteous Orb##12811 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Demonic Rune",{
-meta={goldtype="route",levelreq={55,60}},
-items={{12662,4}},
-maps={"Felwood"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Demonic Rune',
+  {
+    meta = { goldtype = 'route', levelreq = { 55, 60 } },
+    items = { { 12662, 4 } },
+    maps = { 'Felwood' },
+  },
+  [[
 step
 Follow the path up |goto Felwood 38.44,59.39 < 20 |only if walking
 Continue following the path |goto Felwood 37.63,60.96 < 20 |only if walking
@@ -940,11 +1192,15 @@ Enter the building |goto Felwood 35.39,58.61 < 20 |walk
 Kill Jaedenar enemies around this area
 collect Demonic Rune##12662 |n |goto Felwood 37.61,54.67
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Dark Rune",{
-meta={goldtype="route",levelreq={55,60}},
-items={{20520,4}},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Dark Rune',
+  {
+    meta = { goldtype = 'route', levelreq = { 55, 60 } },
+    items = { { 20520, 4 } },
+  },
+  [[
 step
 Enter the Scholomance Dungeon
 |tip You will need to join and form a group for this.
@@ -954,12 +1210,16 @@ Kill enemies around this area
 |tip Scholomance Necromancers and Scholomance Dark Summoners are the only enemies besides bosses that will drop them.
 collect Dark Rune##20520 |n
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Sharp Claw",{
-meta={goldtype="route",levelreq={55,60}},
-items={{5635,4}},
-maps={"Stonetalon Mountains"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Sharp Claw',
+  {
+    meta = { goldtype = 'route', levelreq = { 55, 60 } },
+    items = { { 5635, 4 } },
+    maps = { 'Stonetalon Mountains' },
+  },
+  [[
 step
 map Stonetalon Mountains
 path follow smart; loop on; ants curved; dist 20
@@ -969,11 +1229,15 @@ path	36.03,66.45	36.02,64.80	34.83,62.63	33.70,60.85	32.02,60.86
 Kill enemies around this area
 collect Sharp Claw##5635 |n
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Ogre Tannin",{
-meta={goldtype="route",levelreq={58,60}},
-items={{18240,1}},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Ogre Tannin',
+  {
+    meta = { goldtype = 'route', levelreq = { 58, 60 } },
+    items = { { 18240, 1 } },
+  },
+  [[
 step
 Enter the Dire Maul West Dungeon Entrance
 |tip You will need to join and form a group for this.
@@ -984,12 +1248,16 @@ click Ogre Tannin Basket##179499
 |tip Once up the first ramp, it will be in the far northwest corner of the room.
 |tip Only one person will be able to loot it.
 collect Ogre Tannin##18240 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Small Venom Sac",{
-meta={goldtype="route",levelreq={55,60}},
-items={{5635,8}},
-maps={"Silverpine Forest"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Small Venom Sac',
+  {
+    meta = { goldtype = 'route', levelreq = { 55, 60 } },
+    items = { { 5635, 8 } },
+    maps = { 'Silverpine Forest' },
+  },
+  [[
 step
 Enter the mine |goto Silverpine Forest 35.64,13.54 < 20 |walk
 Kill enemies around this area
@@ -997,12 +1265,16 @@ Kill enemies around this area
 |tip You can find more outside the mine.
 collect Small Venom Sac##1475 |n |goto Silverpine Forest 35.38,8.06
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Huge Venom Sac",{
-meta={goldtype="route",levelreq={55,60}},
-items={{19441,6}},
-maps={"Silithus"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Huge Venom Sac',
+  {
+    meta = { goldtype = 'route', levelreq = { 55, 60 } },
+    items = { { 19441, 6 } },
+    maps = { 'Silithus' },
+  },
+  [[
 step
 map Silithus
 path follow smart; loop on; ants curved; dist 20
@@ -1014,12 +1286,16 @@ path	52.30,29.17	52.30,29.17
 Kill enemies around this area
 collect Huge Venom Sac##19441 |n
 |tip These have a low drop rate.
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Iridescent Pearl",{
-meta={goldtype="route",levelreq={30,60}},
-items={{5635,1}},
-maps={"Hillsbrad Foothills"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Iridescent Pearl',
+  {
+    meta = { goldtype = 'route', levelreq = { 30, 60 } },
+    items = { { 5635, 1 } },
+    maps = { 'Hillsbrad Foothills' },
+  },
+  [[
 step
 label "Path_One"
 map Hillsbrad Foothills
@@ -1049,12 +1325,16 @@ use the Thick-shelled Clam##5524
 collect Iridescent Pearl##5500 |n
 |tip These have a low drop rate.
 '|goto Hillsbrad Foothills 23.74,64.84 < 20 |noway |c |next "Path_One"
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Black Pearl, Golden Pearl, Zesty Clam Meat",{
-meta={goldtype="route",levelreq={50,60}},
-items={{7971,2},{13926,2},{7974,40}},
-maps={"The Hinterlands"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Black Pearl, Golden Pearl, Zesty Clam Meat',
+  {
+    meta = { goldtype = 'route', levelreq = { 50, 60 } },
+    items = { { 7971, 2 }, { 13926, 2 }, { 7974, 40 } },
+    maps = { 'The Hinterlands' },
+  },
+  [[
 step
 map The Hinterlands
 path follow smart; loop on; ants curved; dist 20
@@ -1068,12 +1348,16 @@ collect Black Pearl##7971 |n
 collect Golden Pearl##13926 |n
 |tip These have a low drop rate.
 collect Zesty Clam Meat##7974 |n
-]])
-ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Giant Egg",{
-meta={goldtype="route",levelreq={50,60}},
-items={{12207,12}},
-maps={"Tanaris"},
-},[[
+]]
+)
+ZygorGuidesViewer:RegisterGuide(
+  'GOLD\\Farming\\Giant Egg',
+  {
+    meta = { goldtype = 'route', levelreq = { 50, 60 } },
+    items = { { 12207, 12 } },
+    maps = { 'Tanaris' },
+  },
+  [[
 step
 Kill Roc enemies around this area
 |tip They are found all around the zone.
@@ -1082,4 +1366,5 @@ You can find more around: |notinsticky
 [45.55,38.57]
 [44.01,40.45]
 [47.27,46.81]
-]])
+]]
+)
