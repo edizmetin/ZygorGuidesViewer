@@ -1794,19 +1794,13 @@ function Pointer.Overlay_OnUpdate(frame, but, ...)
       --ZGV:Print(x.." "..y)
       if x > 0 and x < 1 and y > 0 and y < 1 then
         ZGV.Pointer:ClearWaypoints('manual')
-        ZGV.Pointer:SetWaypoint(
-          nil,
-          nil,
-          x * 100,
-          y * 100,
-          {
-            title = WorldMapFrameAreaLabel:GetText(),
-            type = 'manual',
-            clearonarrival = true,
-            overworld = true,
-            onminimap = 'always',
-          }
-        )
+        ZGV.Pointer:SetWaypoint(nil, nil, x * 100, y * 100, {
+          title = WorldMapFrameAreaLabel:GetText(),
+          type = 'manual',
+          clearonarrival = true,
+          overworld = true,
+          onminimap = 'always',
+        })
       end
     end
   end

@@ -227,9 +227,8 @@ do
       if rowends[numrows - 1] == numtabs - 1 then
         --if there are more than 2 tabs in the 2nd last row
         if
-          (numrows == 2 and rowends[numrows - 1] > 2) or (
-            rowends[numrows] - rowends[numrows - 1] > 2
-          )
+          (numrows == 2 and rowends[numrows - 1] > 2)
+          or (rowends[numrows] - rowends[numrows - 1] > 2)
         then
           --move 1 tab from the second last row to the last, if there is enough space
           if (rowwidths[numrows] + widths[numtabs - 1]) <= width then

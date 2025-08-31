@@ -93,20 +93,14 @@ end
 
 function MapSpot:Show()
   if not self.waypoint then
-    self.waypoint = ZGV.Pointer:SetWaypoint(
-      nil,
-      self.map,
-      self.x,
-      self.y,
-      {
-        title = self:GetTitle(),
-        type = 'poi',
-        icon = ZGV.DIR .. '\\Skin\\minimaparrow-gold-dot',
-        edgeicon = ZGV.DIR .. '\\Skin\\minimaparrow-gold-edge',
-        overworld = false,
-        onminimap = 'zonedistance',
-      }
-    )
+    self.waypoint = ZGV.Pointer:SetWaypoint(nil, self.map, self.x, self.y, {
+      title = self:GetTitle(),
+      type = 'poi',
+      icon = ZGV.DIR .. '\\Skin\\minimaparrow-gold-dot',
+      edgeicon = ZGV.DIR .. '\\Skin\\minimaparrow-gold-edge',
+      overworld = false,
+      onminimap = 'zonedistance',
+    })
     if not self.waypoint then
       return
     end

@@ -305,20 +305,14 @@ me.WaypointFunctions['internal'] = {
       end
       for k, goal in ipairs(goals) do
         if not goal.force_noway then
-          local way = self.Pointer:SetWaypoint(
-            nil,
-            goal.map,
-            goal.x,
-            goal.y,
-            {
-              title = title
-                or self.CurrentStep:GetTitle()
-                or (goal.map and goal.x and ('%s %d,%d'):format(goal.map, goal.x, goal.y))
-                or L['waypoint_step']:format(self.CurrentStepNum),
-              onminimap = 'always',
-              overworld = true,
-            }
-          )
+          local way = self.Pointer:SetWaypoint(nil, goal.map, goal.x, goal.y, {
+            title = title
+              or self.CurrentStep:GetTitle()
+              or (goal.map and goal.x and ('%s %d,%d'):format(goal.map, goal.x, goal.y))
+              or L['waypoint_step']:format(self.CurrentStepNum),
+            onminimap = 'always',
+            overworld = true,
+          })
           --print(goal.map)
           if way then
             if not firstpoint then
