@@ -37,7 +37,7 @@ function Goal:IsVisible()
 end
 
 function Goal:OnClick(button)
-	if button == "LeftButton" then
+	--if button == "LeftButton" then
 
 		if self.action == "loadguide" and self.next then
 			ZGV:SetGuide(self.next)
@@ -58,7 +58,7 @@ function Goal:OnClick(button)
 			return true			
 		end
 
-	end
+	--end
 	return false
 end
 
@@ -884,6 +884,7 @@ function Goal:IsAuxiliary()
 	or self.action=="get"
 	or self.action=="goal"
 	or self.action=="ding") and not self.force_nocomplete
+	or self.action=="confirm" and self.always
 	then
 		return false
 	elseif self.action=="fpath" then
@@ -903,7 +904,7 @@ function Goal:IsAuxiliary()
 			if step:IsComplete() then return true end
 		end
 		return false
-	else
+	else 
 		return true
 	end
 end

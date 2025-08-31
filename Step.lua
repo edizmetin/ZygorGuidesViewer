@@ -31,6 +31,12 @@ function Step:IsComplete()
 	local orcount = 0
 	local orcomplete = false
 
+	-- one click to complete them all
+	for i,goal in ipairs(self.goals) do
+		if goal.action=="confirm" and goal.status=="complete" then return true,true,"confirm complete",i end  ------------- COMPLETE
+	end
+
+
 	local status
 	for i,goal in ipairs(self.goals) do
 		goal:UpdateStatus()
