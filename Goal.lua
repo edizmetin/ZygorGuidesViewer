@@ -12,6 +12,24 @@ local table, string, tonumber, ipairs, pairs, setmetatable =
 ZGV.GoalProto = Goal
 ZGV.GoalProto_mt = { __index = Goal }
 
+ZYGOR_KILL_TARGET_TEMPLATE = [[
+/target %s
+/script if GetRaidTargetIndex("target")~=8 and UnitName("target") == "%s" then SetRaidTarget("target",8) end
+]]
+
+ZYGOR_TALK_TARGET_TEMPLATE = [[
+/target %s
+/script if GetRaidTargetIndex("target")~=1 and UnitName("target") == "%s" then SetRaidTarget("target",1) end
+]]
+
+ZYGOR_USE_ITEM_TEMPLATE = [[
+/use %s
+]]
+
+ZYGOR_CAST_SPELL_TEMPLATE = [[
+/cast %s
+]]
+
 Goal.indent = 0
 
 function Goal:GetStatus()
@@ -850,7 +868,7 @@ function Goal:GetText(showcompleteness)
   elseif self.action == 'use' then
     text = L['stepgoal_use']:format(COLOR_ITEM(self.useitem or '#' .. self.useitemid))
   elseif self.action == 'cast' then
-    text = L['stepgoal_cast']:format(COLOR_ITEM(self.castspell or '#' .. self.castspellid))
+    text = ("Cast Spell %s"):format(COLOR_ITEM(self.castspell or '#' .. self.castspellid))
   elseif self.action == 'petaction' then
     text = L['stepgoal_petaction']:format(self.petaction)
   elseif self.action == 'havebuff' then
@@ -1083,6 +1101,15 @@ function Goal:Prepare()
         macro = CreateMacro(macroname, 1, '/run ' .. self.script, 1)
       end
       self.macro = macro
+    end
+    if self.action == "kill" then
+			ZGV:SetNextMacroButton(string.format(ZYGOR_KILL_TARGET_TEMPLATE,self.target, self.target))
+    elseif self.action == "talk" then
+      ZGV:SetNextMacroButton(string.format(ZYGOR_TALK_TARGET_TEMPLATE,self.npc, self.npc))
+    elseif self.useitem then
+      ZGV:SetNextMacroButton(string.format(ZYGOR_USE_ITEM_TEMPLATE,self.useitem))
+    elseif self.castspell then
+      ZGV:SetNextMacroButton(string.format(ZYGOR_CAST_SPELL_TEMPLATE,self.castspell))
     end
   end
 

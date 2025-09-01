@@ -141,6 +141,8 @@ function Step:PrepareCompletion()
     end
   end
 
+  ZGV:ResetMacroButtons()
+
   -- REMOVE non-matching goals
   --[[
 	local i=1

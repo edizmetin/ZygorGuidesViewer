@@ -24,6 +24,7 @@ me.L = ZygorGuidesViewer_L('Main')
 me.LS = ZygorGuidesViewer_L('G_string')
 
 local linecount = 50
+local guidebuttoncount = 10
 
 local L = me.L
 local LI = me.LI
@@ -35,6 +36,7 @@ local Gratuity = LibStub('LibGratuity-3.0')
 
 me.registeredguides = {}
 me.registeredmapspotsets = {}
+me.guidebuttons = {}
 
 local DIR = 'Interface\\AddOns\\ZygorGuidesViewer'
 ZGV.DIR = DIR
@@ -48,6 +50,12 @@ BINDING_HEADER_ZYGORGUIDES = L['name_plain']
 BINDING_NAME_ZYGORGUIDES_OPENGUIDE = L['binding_togglewindow']
 BINDING_NAME_ZYGORGUIDES_PREV = L['binding_prev']
 BINDING_NAME_ZYGORGUIDES_NEXT = L['binding_next']
+
+_G["BINDING_NAME_CLICK ZygorGuideButton1:LeftButton"]  = "Magic Button #1 (Target, UseItem)"
+_G["BINDING_NAME_CLICK ZygorGuideButton2:LeftButton"]  = "Magic Button #2 (Target, UseItem)"
+_G["BINDING_NAME_CLICK ZygorGuideButton3:LeftButton"]  = "Magic Button #3 (Target, UseItem)"
+_G["BINDING_NAME_CLICK ZygorGuideButton4:LeftButton"] = "Magic Button #4 (Target, UseItem)"
+_G["BINDING_NAME_CLICK ZygorGuideButton5:LeftButton"] = "Magic Button #5 (Target, UseItem)"
 
 local ver = select(4, GetBuildInfo())
 ZGV.WotLK = (ver >= 30000)
@@ -382,6 +390,19 @@ function me:OnInitialize()
     self.date = ZygorTalentAdvisor.date
   end
 
+	for i = 1, guidebuttoncount do
+    local name = "ZygorGuideButton"..i
+    local btn = CreateFrame("Button", name, UIParent, "SecureActionButtonTemplate")
+    btn:SetPoint("TOPLEFT", UIParent, "BOTTOMLEFT", -100, -100) -- put offscreen
+    btn:SetSize(36, 36)
+    btn:Hide()
+
+    btn:SetAttribute("type", "macro")
+    btn:SetAttribute("macrotext", "/say yo"..i)
+
+		self.guidebuttons[i] = btn
+	end
+
   if self.LocaleFont then
     FONT = self.LocaleFont
   end
@@ -390,6 +411,30 @@ function me:OnInitialize()
   hooksecurefunc('ConfirmBinder', function()
     ZygorGuidesViewer.recentlyHomeChanged = true
   end)
+end
+
+
+local macroIndex = 1
+
+function me:SetMacroButton(slot, text)
+	if InCombatLockdown() then return end
+  
+	local btn = self.guidebuttons[slot]
+	if btn then
+			btn:SetAttribute("macrotext", text or "")
+	end
+end
+
+function me:SetNextMacroButton(text)
+  me:SetMacroButton(macroIndex, text)
+  macroIndex = macroIndex+1
+end
+
+function me:ResetMacroButtons()
+	for i = 1, guidebuttoncount do
+    ZGV:SetMacroButton(i,"")
+  end
+  macroIndex = 1
 end
 
 function me:OnEnable()
