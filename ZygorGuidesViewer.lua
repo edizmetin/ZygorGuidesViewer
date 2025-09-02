@@ -114,130 +114,226 @@ local FONT = STANDARD_TEXT_FONT
 
 -- NOTE : To create a skin, create an entry in both SKINS and SKIN_HOOKS
 Z_SKINS = {
-  Default = {
-    skinbacktopoff = 0,
-    disableGuideAnim = false,
-    Boarder_Close_topright_offsetX = 5,
-    Boarder_Close_topright_offsetY = 5,
-    Boarder_Mini_topright_offsetX = -40,
-    Boarder_Mini_topright_offsetY = -5,
-    Boarder_Guide_topright_offsetX = -58,
-    Boarder_Guide_topright_offsetY = -19,
-    Boarder_Settings_anchor_offsetX = 40,
-    Boarder_Settings_anchor_offsetY = -5,
-    Boarder_Lock_offsetX = 8,
-    Boarder_Lock_offsetY = -13,
-    Boarder_Settings_anchor = 'TOPLEFT',
-    Boarder_topleft_offsetX = 28,
-    Boarder_topleft_offsetY = 11,
-    Boarder_topright_offsetX = 25,
-    Boarder_topright_offsetY = 11,
-    disableBackDrop = false,
-    bgfileback = 'Interface\\ChatFrame\\ChatFrameBackground',
-  },
-  Modern = {
-    disableBackDrop = true,
-    -- ZygorGuidesViewerFrame_Border_Close Button
-    Boarder_Close_topright_offsetX = -15,
-    Boarder_Close_topright_offsetY = -13,
-    -- ZygorGuidesViewerFrame_Border_MiniButton Button
-    Boarder_Mini_topright_offsetX = -35,
-    Boarder_Mini_topright_offsetY = -13,
-    -- ZygorGuidesViewerFrame_Border_GuideButton
-    Boarder_Guide_topright_offsetX = -55,
-    Boarder_Guide_topright_offsetY = -27,
-    disableGuideAnim = true,
-    -- ZygorGuidesViewerFrame_Border_SettingsButton
-    Boarder_Settings_anchor_offsetX = -75,
-    Boarder_Settings_anchor_offsetY = -13,
-    Boarder_Settings_anchor = 'TOPRIGHT',
-    -- ZygorGuidesViewerFrame_Border_LockButton
-    Boarder_Lock_offsetX = 10,
-    Boarder_Lock_offsetY = -13,
-    -- ZygorGuidesViewerFrame_Border
-    backopacity = 1,
-    -- Minus goes up, postive goes down
-    skinbacktopoff = -20,
-    bgfileback = 'Interface\\ChatFrame\\ChatFrameBackground',
-    --End ZygorGuidesViewerFrame_Border
-    Boarder_topleft_offsetX = 0,
-    Boarder_topleft_offsetY = 0,
-    Boarder_topright_offsetX = 0,
-    Boarder_topright_offsetY = 0,
-  },
+	Default = {
+		skinbacktopoff = 0,
+		disableGuideAnim = false,
+		Boarder_Close_topright_offsetX = 5,
+		Boarder_Close_topright_offsetY = 5,
+		Boarder_Mini_topright_offsetX = -40,
+		Boarder_Mini_topright_offsetY = -5,
+		Boarder_Guide_topright_offsetX = -58,
+		Boarder_Guide_topright_offsetY = -19,
+		Boarder_Settings_anchor_offsetX = 40,
+		Boarder_Settings_anchor_offsetY = -5,
+		Boarder_Lock_offsetX = 8,
+		Boarder_Lock_offsetY = -13,
+		Boarder_Settings_anchor = "TOPLEFT",
+		Boarder_topleft_offsetX = 28,
+		Boarder_topleft_offsetY = 11,
+		Boarder_topright_offsetX = 25,
+		Boarder_topright_offsetY = 11,
+		disableBackDrop = false,
+		bgfileback = "Interface\\ChatFrame\\ChatFrameBackground",
+		Boarder_Left_TopLeft_X = -1,
+		Boarder_Left_TopLeft_Y = -85,
+		Boarder_Left_BottomRight_X = 9,
+		Boarder_Left_BottomRight_Y = 10,
+		Boarder_Right_TopRight_X = 1,
+		Boarder_Right_TopRight_Y = -35,
+		Boarder_Right_BottomLeft_X = -9,
+		Boarder_Right_BottomLeft_Y = 10,
+		Border_Title = true,
+		Skipper_anchor = (not self.db.profile.resizeup) and 'TOPLEFT' or 'BOTTOMLEFT', -- This feels evil - Kevinf100
+		Skipper_relativeTo = self.frame,
+		Skipper_xOffset = -23,
+		Skipper_yOffset = -27,
+	},
+	Modern = {
+		disableBackDrop = true,
+		-- ZygorGuidesViewerFrame_Border_Close Button
+		Boarder_Close_topright_offsetX = -15,
+		Boarder_Close_topright_offsetY = -13,
+		-- ZygorGuidesViewerFrame_Border_MiniButton Button
+		Boarder_Mini_topright_offsetX = -35,
+		Boarder_Mini_topright_offsetY = -13,
+		-- ZygorGuidesViewerFrame_Border_GuideButton
+		Boarder_Guide_topright_offsetX = -55,
+		Boarder_Guide_topright_offsetY = -27,
+		disableGuideAnim = true,
+		-- ZygorGuidesViewerFrame_Border_SettingsButton
+		Boarder_Settings_anchor_offsetX = -75,
+		Boarder_Settings_anchor_offsetY = -13,
+		Boarder_Settings_anchor = "TOPRIGHT",
+		-- ZygorGuidesViewerFrame_Border_LockButton
+		Boarder_Lock_offsetX = 10,
+		Boarder_Lock_offsetY = -13,
+		-- ZygorGuidesViewerFrame_Border
+		--backopacity = 1,
+		-- Minus goes up, postive goes down
+		skinbacktopoff = 0,
+		bgfileback = "Interface\\ChatFrame\\ChatFrameBackground",
+		--End ZygorGuidesViewerFrame_Border
+		Boarder_topleft_offsetX = 0,
+		Boarder_topleft_offsetY = 5,
+		Boarder_topright_offsetX = 0,
+		Boarder_topright_offsetY = 0,
+		Border_Title = false,
+		-- ZygorGuidesViewerFrame_Border_Left
+		Boarder_Left_TopLeft_X = -1,
+		Boarder_Left_TopLeft_Y = -85,
+		Boarder_Left_BottomRight_X = 9,
+		Boarder_Left_BottomRight_Y = 10,
+		-- ZygorGuidesViewerFrame_Border_Right
+		Boarder_Right_TopRight_X = 1,
+		Boarder_Right_TopRight_Y = -35,
+		Boarder_Right_BottomLeft_X = -9,
+		Boarder_Right_BottomLeft_Y = 10,
+		-- ZygorGuidesViewerFrame_Skipper
+		Skipper_anchor = 'CENTER',
+		Skipper_relativeTo = ZygorGuidesViewerFrame_Border_Top,
+		Skipper_xOffset = 0,
+		Skipper_yOffset = 0,
+	},
+	Classic = {
+		disableBackDrop = false,
+		-- ZygorGuidesViewerFrame_Border_Close Button
+		Boarder_Close_topright_offsetX = -12,
+		Boarder_Close_topright_offsetY = -3,
+		-- ZygorGuidesViewerFrame_Border_MiniButton Button
+		Boarder_Mini_topright_offsetX = -30,
+		Boarder_Mini_topright_offsetY = -3,
+		-- ZygorGuidesViewerFrame_Border_GuideButton
+		Boarder_Guide_topright_offsetX = -51,
+		Boarder_Guide_topright_offsetY = -18,
+		Boarder_Guide_anchor = "CENTER",
+		disableGuideAnim = true,
+		-- ZygorGuidesViewerFrame_Border_SettingsButton
+		Boarder_Settings_anchor_offsetX = -70,
+		Boarder_Settings_anchor_offsetY = -3,
+		Boarder_Settings_anchor = "TOPRIGHT",
+		-- ZygorGuidesViewerFrame_Border_LockButton
+		Boarder_Lock_offsetX = 12,
+		Boarder_Lock_offsetY = -3,
+		Boarder_Lock_anchor = "TOPRLEFT",
+		-- ZygorGuidesViewerFrame_Border
+		--backopacity = 1,
+		-- Minus goes up, postive goes down
+		skinbacktopoff = 0,
+		bgfileback = "Interface\\AddOns\\ZygorGuidesViewer\\Skin\\Classic\\UI-Background-Marble.tga",
+		--End ZygorGuidesViewerFrame_Border
+		Boarder_topleft_offsetX = 0,
+		Boarder_topleft_offsetY = 10,
+		Boarder_topright_offsetX = 1,
+		Boarder_topright_offsetY = 6,
+		Border_Title = false,
+		-- ZygorGuidesViewerFrame_Border_Left
+		Boarder_Left_TopLeft_X = -3,
+		Boarder_Left_TopLeft_Y = 10,
+		Boarder_Left_BottomRight_X = 6,
+		Boarder_Left_BottomRight_Y = 2,
+		-- ZygorGuidesViewerFrame_Border_Right
+		Boarder_Right_TopRight_X = 2,
+		Boarder_Right_TopRight_Y = 10,
+		Boarder_Right_BottomLeft_X = -7,
+		Boarder_Right_BottomLeft_Y = 2,
+		-- ZygorGuidesViewerFrame_Skipper
+		Skipper_anchor = 'CENTER',
+		Skipper_relativeTo = ZygorGuidesViewerFrame_Border_Top,
+		Skipper_xOffset = 0,
+		Skipper_yOffset = 0,
+	},
 }
 Z_SKIN_HOOKS = {
-  Default = function()
-    ZygorGuidesViewerFrame_Border_Left:SetTexture(
-      'Interface\\AddOns\\ZygorGuidesViewer\\Skin\\LeavesOfSteel_border'
-    )
-    ZygorGuidesViewerFrame_Skipper_Step:ClearAllPoints()
-    ZygorGuidesViewerFrame_Skipper_Step:SetPoint(
-      'TOP',
-      ZygorGuidesViewerFrame_Skipper,
-      'TOP',
-      0,
-      -19
-    )
-    ZygorGuidesViewerFrame_Skipper_PrevButton:ClearAllPoints()
-    ZygorGuidesViewerFrame_Skipper_PrevButton:SetPoint(
-      'TOP',
-      ZygorGuidesViewerFrame_Skipper,
-      'TOP',
-      0,
-      0
-    )
-    ZygorGuidesViewerFrame_Skipper_NextButton:ClearAllPoints()
-    ZygorGuidesViewerFrame_Skipper_NextButton:SetPoint(
-      'TOP',
-      ZygorGuidesViewerFrame_Skipper_PrevButton,
-      'BOTTOM',
-      0,
-      -13
-    )
-    ZygorGuidesViewerFrame_Border_Gear1:SetTexture(
-      'Interface\\AddOns\\ZygorGuidesViewer\\Skin\\leavesofsteel_gear1'
-    )
-    ZygorGuidesViewerFrame_Border_Gear2:SetTexture(
-      'Interface\\AddOns\\ZygorGuidesViewer\\Skin\\leavesofsteel_gear2'
-    )
-    ZygorGuidesViewerFrame_Border_Gear3:SetTexture(
-      'Interface\\AddOns\\ZygorGuidesViewer\\Skin\\leavesofsteel_gear3'
-    )
-    ZygorGuidesViewerFrame_Border_Logo:SetTexture(SKINDIR .. '\\zglogo')
-  end,
-  Modern = function()
-    ZygorGuidesViewerFrame_Border_Left:SetTexture(nil)
-    ZygorGuidesViewerFrame_Skipper_PrevButton:ClearAllPoints()
-    ZygorGuidesViewerFrame_Skipper_PrevButton:SetPoint(
-      'TOP',
-      ZygorGuidesViewerFrame_Skipper,
-      'TOP',
-      50,
-      21
-    )
-    ZygorGuidesViewerFrame_Skipper_Step:ClearAllPoints()
-    ZygorGuidesViewerFrame_Skipper_Step:SetPoint(
-      'TOP',
-      ZygorGuidesViewerFrame_Skipper_PrevButton,
-      'TOP',
-      17,
-      -2
-    )
-    ZygorGuidesViewerFrame_Skipper_NextButton:ClearAllPoints()
-    ZygorGuidesViewerFrame_Skipper_NextButton:SetPoint(
-      'TOP',
-      ZygorGuidesViewerFrame_Skipper_PrevButton,
-      'TOP',
-      37,
-      0
-    )
-    ZygorGuidesViewerFrame_Border_Gear1:SetTexture(nil)
-    ZygorGuidesViewerFrame_Border_Gear2:SetTexture(nil)
-    ZygorGuidesViewerFrame_Border_Gear3:SetTexture(nil)
-    ZygorGuidesViewerFrame_Border_Logo:SetTexture(nil)
-    ZygorGuidesViewerFrame_Border_Top:ClearAllPoints()
-  end,
+	Default = function()
+		ZygorGuidesViewerFrame_Border_Left:SetTexture(
+			"Interface\\AddOns\\ZygorGuidesViewer\\Skin\\LeavesOfSteel_border"
+		)
+		ZygorGuidesViewerFrame_Skipper_Step:ClearAllPoints()
+		ZygorGuidesViewerFrame_Skipper_Step:SetPoint("TOP", ZygorGuidesViewerFrame_Skipper, "TOP", 0, -19)
+		ZygorGuidesViewerFrame_Skipper_PrevButton:ClearAllPoints()
+		ZygorGuidesViewerFrame_Skipper_PrevButton:SetPoint("TOP", ZygorGuidesViewerFrame_Skipper, "TOP", 0, 0)
+		ZygorGuidesViewerFrame_Skipper_NextButton:ClearAllPoints()
+		ZygorGuidesViewerFrame_Skipper_NextButton:SetPoint(
+			"TOP",
+			ZygorGuidesViewerFrame_Skipper_PrevButton,
+			"BOTTOM",
+			0,
+			-13
+		)
+		ZygorGuidesViewerFrame_Border_Gear1:SetTexture(
+			"Interface\\AddOns\\ZygorGuidesViewer\\Skin\\leavesofsteel_gear1"
+		)
+		ZygorGuidesViewerFrame_Border_Gear2:SetTexture(
+			"Interface\\AddOns\\ZygorGuidesViewer\\Skin\\leavesofsteel_gear2"
+		)
+		ZygorGuidesViewerFrame_Border_Gear3:SetTexture(
+			"Interface\\AddOns\\ZygorGuidesViewer\\Skin\\leavesofsteel_gear3"
+		)
+		ZygorGuidesViewerFrame_Border_Logo:SetTexture(SKINDIR .. "\\zglogo")
+	end,
+	Modern = function()
+		ZygorGuidesViewerFrame_Border_Left:SetTexture(nil)
+		-- New horizontal layout for skipper buttons
+		ZygorGuidesViewerFrame_Skipper_PrevButton:ClearAllPoints()
+		ZygorGuidesViewerFrame_Skipper_PrevButton:SetPoint("LEFT", ZygorGuidesViewerFrame_Border_LockButton, "CENTER", 20, 0)
+		ZygorGuidesViewerFrame_Skipper_Step:ClearAllPoints()
+		ZygorGuidesViewerFrame_Skipper_Step:SetPoint("CENTER", ZygorGuidesViewerFrame_Skipper_PrevButton, "CENTER", 17, 0)
+		ZygorGuidesViewerFrame_Skipper_NextButton:ClearAllPoints()
+		ZygorGuidesViewerFrame_Skipper_NextButton:SetPoint(
+			"RIGHT",
+			ZygorGuidesViewerFrame_Skipper_PrevButton,
+			"CENTER",
+			44,
+			0
+		)
+		ZygorGuidesViewerFrame_Border_Gear1:SetTexture(nil)
+		ZygorGuidesViewerFrame_Border_Gear2:SetTexture(nil)
+		ZygorGuidesViewerFrame_Border_Gear3:SetTexture(nil)
+		ZygorGuidesViewerFrame_Border_Logo:SetTexture(nil)
+		ZygorGuidesViewerFrame_Border_Top:ClearAllPoints()
+	end,
+	Classic = function()
+		SKINDIR = DIR.."\\Skin\\Classic" -- Force the path to your Classic folder
+
+		-- Load all textures for the Classic skin
+		ZygorGuidesViewerFrame_Skipper_PrevButton:ClearAllPoints()
+		-- ZygorGuidesViewerFrame_Border_LockButton:ClearAllPoints()
+		-- ZygorGuidesViewerFrame_Border_LockButton:SetPoint("TOP", ZygorGuidesViewerFrame_Skipper, "TOP", 0, 0)
+		ZygorGuidesViewerFrame_Skipper_PrevButton:SetPoint("LEFT", ZygorGuidesViewerFrame_Border_LockButton, "CENTER", 20, -2)
+		ZygorGuidesViewerFrame_Skipper_Step:ClearAllPoints()
+		ZygorGuidesViewerFrame_Skipper_Step:SetPoint("CENTER", ZygorGuidesViewerFrame_Skipper_PrevButton, "CENTER", 17, 1)
+		ZygorGuidesViewerFrame_Skipper_NextButton:ClearAllPoints()
+		ZygorGuidesViewerFrame_Skipper_NextButton:SetPoint(
+			"RIGHT",
+			ZygorGuidesViewerFrame_Skipper_PrevButton,
+			"CENTER",
+			44,
+			0
+		)
+		ZygorGuidesViewerFrame_Skipper_PrevButton.ntx:SetTexture(SKINDIR .. "\\titlebuttons2.tga")
+		ZygorGuidesViewerFrame_Skipper_PrevButton.ptx:SetTexture(SKINDIR .. "\\titlebuttons2")
+		ZygorGuidesViewerFrame_Skipper_PrevButton.htx:SetTexture(SKINDIR .. "\\titlebuttons2")
+		ZygorGuidesViewerFrame_Skipper_NextButton.ntx:SetTexture(SKINDIR .. "\\titlebuttons2")
+		ZygorGuidesViewerFrame_Skipper_NextButton.ptx:SetTexture(SKINDIR .. "\\titlebuttons2")
+		ZygorGuidesViewerFrame_Skipper_NextButton.htx:SetTexture(SKINDIR .. "\\titlebuttons2")
+		ZygorGuidesViewerFrame_Border_GuideButton.ntx:SetTexture(SKINDIR.."\\leavesofsteel_dropdown_up")
+		ZygorGuidesViewerFrame_Border_GuideButton.ptx:SetTexture(SKINDIR.."\\leavesofsteel_dropdown_down")
+		ZygorGuidesViewerFrame_Border_GuideButton.htx:SetTexture(SKINDIR.."\\leavesofsteel_dropdown_hi")
+		ZygorGuidesViewerFrame_Border_TopLeft:SetTexture(SKINDIR.."\\leavesofsteel")
+		ZygorGuidesViewerFrame_Border_TopRight:SetTexture(SKINDIR.."\\leavesofsteel")
+		ZygorGuidesViewerFrame_Border_BottomLeft:SetTexture(SKINDIR.."\\leavesofsteel")
+		ZygorGuidesViewerFrame_Border_BottomRight:SetTexture(SKINDIR.."\\leavesofsteel")
+		ZygorGuidesViewerFrame_Border_Left:SetTexture(SKINDIR.."\\leavesofsteel_border")
+		ZygorGuidesViewerFrame_Border_Right:SetTexture(SKINDIR.."\\leavesofsteel_border")
+		ZygorGuidesViewerFrame_Border_Bottom:SetTexture(SKINDIR.."\\leavesofsteel_border")
+		ZygorGuidesViewerFrame_Border_Left:SetDrawLayer("OVERLAY")
+		ZygorGuidesViewerFrame_Border_Right:SetDrawLayer("OVERLAY")
+		ZygorGuidesViewerFrame_Border_Top:SetTexture(SKINDIR.."\\leavesofsteel_top")
+		ZygorGuidesViewerFrame_Border_Gear1:SetTexture(nil)
+		ZygorGuidesViewerFrame_Border_Gear2:SetTexture(nil)
+		ZygorGuidesViewerFrame_Border_Gear3:SetTexture(nil)
+		ZygorGuidesViewerFrame_Border_Logo:SetTexture(nil)
+	end,
 }
 
 local math_modf = math.modf
@@ -287,6 +383,7 @@ function me:OnInitialize()
 
   self.skin_choice = {
     ['modern'] = 'Modern',
+	['classic'] = 'Classic',
     ['violet'] = 'Default',
     ['green'] = 'Default',
     ['blue'] = 'Default',
@@ -2627,7 +2724,7 @@ function me:AlignFrame()
     --bgFile="Interface\\AddOns\\ZygorGuidesViewer\\Skin\\leavesofsteel_bgr",  -- 3.3.3 BLIZZARD TEXTURE FAIL
     bgFile = self.db.profile.bgfileback, --instead
     tileSize = 128,
-    tile = true,
+    tile = elf.db.profile.Border_Title,
     insets = {
       top = (upsideup and 20 or 0) + self.db.profile.skinbacktopoff,
       right = 0,
@@ -2644,8 +2741,8 @@ function me:AlignFrame()
     self.db.profile.backopacity
   )
 
-  ZygorGuidesViewerFrame_Skipper:ClearAllPoints()
-  ZygorGuidesViewerFrame_Skipper:SetPoint(UP_TOPLEFT, self.Frame, -23, -27 * UP)
+	ZygorGuidesViewerFrame_Skipper:ClearAllPoints()
+	ZygorGuidesViewerFrame_Skipper:SetPoint(Skipper_anchor, Skipper_relativeTo, Skipper_xOffset, Skipper_yOffset * UP)
 
   ZygorGuidesViewerFrame_Border_SectionTitle:ClearAllPoints()
   ZygorGuidesViewerFrame_Border_SectionTitle:SetPoint(
@@ -2839,24 +2936,20 @@ function me:AlignFrame()
   ZygorGuidesViewerFrame_Border_Top:SetTexture(tx, true)
   ZygorGuidesViewerFrame_Border_Top:SetTexCoord(UPcoords(0, 1, 0, 1))
 
-  ZygorGuidesViewerFrame_Border_Left:ClearAllPoints()
-  ZygorGuidesViewerFrame_Border_Left:SetPoint(UP_TOPLEFT, -1, -85 * UP)
-  ZygorGuidesViewerFrame_Border_Left:SetPoint(UP_BOTTOMRIGHT, self.Frame, UP_BOTTOMLEFT, 9, 10 * UP)
-  tx = ZygorGuidesViewerFrame_Border_Left:GetTexture()
-  ZygorGuidesViewerFrame_Border_Left:SetTexture(1)
-  ZygorGuidesViewerFrame_Border_Left:SetTexture(tx, true)
+-- Position Left Border using values from Z_SKINS
+	ZygorGuidesViewerFrame_Border_Left:ClearAllPoints()
+	ZygorGuidesViewerFrame_Border_Left:SetPoint(UP_TOPLEFT, self.db.profile.Boarder_Left_TopLeft_X, self.db.profile.Boarder_Left_TopLeft_Y * UP)
+	ZygorGuidesViewerFrame_Border_Left:SetPoint(UP_BOTTOMRIGHT, self.Frame, UP_BOTTOMLEFT, self.db.profile.Boarder_Left_BottomRight_X, self.db.profile.Boarder_Left_BottomRight_Y * UP)
+	tx = ZygorGuidesViewerFrame_Border_Left:GetTexture()
+	ZygorGuidesViewerFrame_Border_Left:SetTexture(1)
+	ZygorGuidesViewerFrame_Border_Left:SetTexture(tx, true)
 
-  ZygorGuidesViewerFrame_Border_Right:ClearAllPoints()
-  ZygorGuidesViewerFrame_Border_Right:SetPoint(UP_TOPRIGHT, 1, -35 * UP)
-  ZygorGuidesViewerFrame_Border_Right:SetPoint(
-    UP_BOTTOMLEFT,
-    self.Frame,
-    UP_BOTTOMRIGHT,
-    -9,
-    10 * UP
-  )
-  ZygorGuidesViewerFrame_Border_Right:SetTexture(1)
-  ZygorGuidesViewerFrame_Border_Right:SetTexture(tx, true)
+	-- Position Right Border using values from Z_SKINS
+	ZygorGuidesViewerFrame_Border_Right:ClearAllPoints()
+	ZygorGuidesViewerFrame_Border_Right:SetPoint(UP_TOPRIGHT, self.db.profile.Boarder_Right_TopRight_X, self.db.profile.Boarder_Right_TopRight_Y * UP)
+	ZygorGuidesViewerFrame_Border_Right:SetPoint(UP_BOTTOMLEFT, self.Frame, UP_BOTTOMRIGHT, self.db.profile.Boarder_Right_BottomLeft_X, self.db.profile.Boarder_Right_BottomLeft_Y * UP)
+	ZygorGuidesViewerFrame_Border_Right:SetTexture(1)
+	ZygorGuidesViewerFrame_Border_Right:SetTexture(tx, true)
 
   ZygorGuidesViewerFrame_Border_Bottom:ClearAllPoints()
   ZygorGuidesViewerFrame_Border_Bottom:SetPoint(UP_TOPLEFT, self.Frame, UP_BOTTOMLEFT, 13, 10 * UP)
@@ -3030,12 +3123,25 @@ function me:UpdateSkin()
     self:Print('Load skin Error!')
   end
 
-  ZygorGuidesViewerFrame_Skipper_PrevButton.ntx:SetTexture(SKINDIR .. '\\titlebuttons')
-  ZygorGuidesViewerFrame_Skipper_PrevButton.ptx:SetTexture(SKINDIR .. '\\titlebuttons')
-  ZygorGuidesViewerFrame_Skipper_PrevButton.htx:SetTexture(SKINDIR .. '\\titlebuttons')
-  ZygorGuidesViewerFrame_Skipper_NextButton.ntx:SetTexture(SKINDIR .. '\\titlebuttons')
-  ZygorGuidesViewerFrame_Skipper_NextButton.ptx:SetTexture(SKINDIR .. '\\titlebuttons')
-  ZygorGuidesViewerFrame_Skipper_NextButton.htx:SetTexture(SKINDIR .. '\\titlebuttons')
+	-- Check which skin is active to set the correct skipper button textures
+	local choice = self.skin_choice[self.db.profile.skin]
+	if choice == "Classic" then
+		-- Use your special texture file for the Classic skin
+		ZygorGuidesViewerFrame_Skipper_PrevButton.ntx:SetTexture(SKINDIR .. "\\titlebuttons2")
+		ZygorGuidesViewerFrame_Skipper_PrevButton.ptx:SetTexture(SKINDIR .. "\\titlebuttons2")
+		ZygorGuidesViewerFrame_Skipper_PrevButton.htx:SetTexture(SKINDIR .. "\\titlebuttons2")
+		ZygorGuidesViewerFrame_Skipper_NextButton.ntx:SetTexture(SKINDIR .. "\\titlebuttons2")
+		ZygorGuidesViewerFrame_Skipper_NextButton.ptx:SetTexture(SKINDIR .. "\\titlebuttons2")
+		ZygorGuidesViewerFrame_Skipper_NextButton.htx:SetTexture(SKINDIR .. "\\titlebuttons2")
+	else
+		-- Use the default texture file for all other skins
+		ZygorGuidesViewerFrame_Skipper_PrevButton.ntx:SetTexture(SKINDIR .. "\\titlebuttons")
+		ZygorGuidesViewerFrame_Skipper_PrevButton.ptx:SetTexture(SKINDIR .. "\\titlebuttons")
+		ZygorGuidesViewerFrame_Skipper_PrevButton.htx:SetTexture(SKINDIR .. "\\titlebuttons")
+		ZygorGuidesViewerFrame_Skipper_NextButton.ntx:SetTexture(SKINDIR .. "\\titlebuttons")
+		ZygorGuidesViewerFrame_Skipper_NextButton.ptx:SetTexture(SKINDIR .. "\\titlebuttons")
+		ZygorGuidesViewerFrame_Skipper_NextButton.htx:SetTexture(SKINDIR .. "\\titlebuttons")
+	end
 
   ZygorGuidesViewerFrame_Border_CloseButton.ntx:SetTexture(SKINDIR .. '\\titlebuttons')
   ZygorGuidesViewerFrame_Border_CloseButton.ptx:SetTexture(SKINDIR .. '\\titlebuttons')
