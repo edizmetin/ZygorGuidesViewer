@@ -39,6 +39,7 @@ local BASE_PROFILE_DEFAULTS = {
   autoturnin = false,
   fixblizzardautoaccept = false,
   analyzereps = false,
+  macrocount = 5,
 
   skin = 'violet',
   skincolors = { text = { 0.95, 0.65, 1.0 }, back = { 0.17, 0.07, 0.20 } },
@@ -1085,6 +1086,17 @@ function me:Options_DefineOptions()
         width = 'full',
         order = 3.7,
       },
+      macrocount = {
+        name = L['opt_macrocount'],
+        desc = L['opt_macrocount_desc'],
+        type = 'range',
+        min = 0,
+        max = 5,
+        step = 1,
+        bigStep = 1,
+        width = 'single',
+        order = 3.8,
+      },      
     },
   }
 

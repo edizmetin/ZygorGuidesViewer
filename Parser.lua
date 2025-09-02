@@ -343,46 +343,8 @@ ZGV.ConditionEnv = {
     return false
   end,
 
-  completedq = function(...)
-    local count = select('#', ...)
-    for i = 1, count do
-      local id = select(i, ...)
-      if tonumber(id) then -- just quest
-        if C_QuestLog.IsQuestFlaggedCompleted(id) then
-          return true
-        end
-      else
-        if id:match('-') then -- range of quests
-          for _, qid in ipairs(ParseRanges(id)) do
-            if C_QuestLog.IsQuestFlaggedCompleted(qid) then
-              return true
-            end
-          end
-        else -- quest/objective
-          local _, id, obj = ParseID(id)
-          local qcomplete = C_QuestLog.IsQuestFlaggedCompleted(id)
-          if qcomplete then
-            return true
-          end
-          if not obj then
-            return false
-          end
-          local q = ZGV.questsbyid[id]
-          if not q then
-            return false
-          end
-          if q.complete then
-            return true
-          end
-          if not q.goals or not q.goals[obj] then
-            return false
-          end
-          return q.goals[obj].complete
-        end
-      end
-    end
-
-    return false
+  completedq = function(quest)
+    return C_QuestLog.IsQuestFlaggedCompleted(id)
   end,
 
   subzone = function(name)

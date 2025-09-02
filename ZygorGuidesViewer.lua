@@ -423,6 +423,16 @@ function me:SetMacroButton(slot, text)
 	if btn then
 			btn:SetAttribute("macrotext", text or "")
 	end
+
+  if true and slot <= ZGV.db.profile.macrocount then
+    local macroname = 'ZGV:' .. slot
+    local macro = GetMacroIndexByName(macroname)
+    if macro == 0 then
+      macro = CreateMacro(macroname, 1, text, 1)
+    end
+    
+    macro = EditMacro(macroname, "ZGV:"..slot, 1, text, 1)
+  end
 end
 
 function me:SetNextMacroButton(text)

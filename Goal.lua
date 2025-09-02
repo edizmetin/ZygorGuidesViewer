@@ -12,21 +12,21 @@ local table, string, tonumber, ipairs, pairs, setmetatable =
 ZGV.GoalProto = Goal
 ZGV.GoalProto_mt = { __index = Goal }
 
-ZYGOR_KILL_TARGET_TEMPLATE = [[
+ZYGOR_KILL_TARGET_TEMPLATE = [[#showtooltip "Zygor Kill Macro"
 /target %s
 /script if GetRaidTargetIndex("target")~=8 and UnitName("target") == "%s" then SetRaidTarget("target",8) end
 ]]
 
-ZYGOR_TALK_TARGET_TEMPLATE = [[
+ZYGOR_TALK_TARGET_TEMPLATE = [[#showtooltip "Zygor Talk Macro"
 /target %s
 /script if GetRaidTargetIndex("target")~=1 and UnitName("target") == "%s" then SetRaidTarget("target",1) end
 ]]
 
-ZYGOR_USE_ITEM_TEMPLATE = [[
+ZYGOR_USE_ITEM_TEMPLATE = [[#showtooltip "Zygor Item Macro"
 /use %s
 ]]
 
-ZYGOR_CAST_SPELL_TEMPLATE = [[
+ZYGOR_CAST_SPELL_TEMPLATE = [[#showtooltip "Zygor Spell Macro"
 /cast %s
 ]]
 
