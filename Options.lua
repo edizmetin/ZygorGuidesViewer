@@ -40,19 +40,19 @@ local BASE_PROFILE_DEFAULTS = {
   fixblizzardautoaccept = false,
   analyzereps = false,
 
-	skin = "modern",
-	skincolors = { text = { 1.0, 1.0, 1.0 }, back = { 0.0, 0.0, 0.0  } },
-	showallsteps = true,
-	hideborder = false,
-	hidestepborders = false,
-	showcountsteps = 1,
-	framescale = 1.0,
-	fontsize = 10,
-	fontsecsize = 10,
+  skin = 'modern',
+  skincolors = { text = { 1.0, 1.0, 1.0 }, back = { 0.0, 0.0, 0.0 } },
+  showallsteps = true,
+  hideborder = false,
+  hidestepborders = false,
+  showcountsteps = 1,
+  framescale = 1.0,
+  fontsize = 10,
+  fontsecsize = 10,
 
-	--backcolor = {r=0.18,g=0.05,b=0.23,a=0.56},
-	backopacity = 0.85,
-	opacitymain = 1.0,
+  --backcolor = {r=0.18,g=0.05,b=0.23,a=0.56},
+  backopacity = 0.85,
+  opacitymain = 1.0,
 
   stepbackalpha = 0.5,
   goalicons = true,
@@ -350,87 +350,87 @@ function me:Options_DefineOptions()
 						order=2,
 					},
 					--]]
-					showcountsteps = {
-						name = L["opt_showcountsteps"],
-						desc = L["opt_showcountsteps_desc"],
-						type = "select",
-						values = {
-							[0] = L["opt_showcountsteps_all"],
-							"1",
-							"2",
-							"3",
-							"4",
-							"5",
-						},
-						get = function()
-							return self.db.profile.showallsteps and 0 or self.db.profile.showcountsteps
-						end,
-						set = function(_, n)
-							if n == 0 then
-								self.db.profile.showallsteps = true
-							else
-								self.db.profile.showallsteps = false
-								self.db.profile.showcountsteps = n
-							end
-							if self.db.profile["showallsteps"] then
-								ZygorGuidesViewerFrame:SetHeight(self.db.profile.fullheight)
-							end
-							self:UpdateFrame(true)
-							self:AlignFrame()
-							self:UpdateLocking()
-							self:ScrollToCurrentStep()
-						end,
-						order = 1,
-					},
-					sep1 = { type = "description", name = "", order = 2 },
-					skin = {
-						name = L["opt_skin"],
-						desc = L["opt_skin_desc"],
-						type = "select",
-						values = {
-							violet = L["opt_skin_violet"],
-							green = L["opt_skin_green"],
-							blue = L["opt_skin_blue"],
-							orange = L["opt_skin_orange"],
-							modern = L["opt_skin_modern"],
-							classic = L['opt_skin_classic'],
-						},
-						set = function(_, n)
-							self.db.profile.skin = n
-							local colors = {
-								violet = { text = { 0.95, 0.65, 1.0 }, back = { 0.17, 0.07, 0.20 } },
-								blue = { text = { 0.7, 0.8, 1.0 }, back = { 0.08, 0.11, 0.24 } },
-								green = { text = { 0.5, 1.0, 0.5 }, back = { 0.09, 0.20, 0.07 } },
-								orange = { text = { 1.0, 0.8, 0.0 }, back = { 0.23, 0.11, 0.07 } },
-								modern = { text = { 1.0, 1.0, 1.0 }, back = { 0.047, 0.047, 0.043 } },
-								classic = { text = { 1.0, 1.0, 1.0 }, back = { 0.047, 0.047, 0.043 } },
-							}
-							self.db.profile.skincolors = colors[self.db.profile.skin]
-							self:UpdateSkin()
-							self:AlignFrame()
-							self:UpdateLocking()
-							self:ScrollToCurrentStep()
-						end,
-						order = 2.05,
-					},
-					opacitymain = {
-						name = L["opt_opacitymain"],
-						desc = L["opt_opacitymain_desc"],
-						type = "range",
-						set = function(i, v)
-							Setter_Simple(i, v)
-							self:AlignFrame()
-						end,
-						min = 0,
-						max = 1.0,
-						isPercent = true,
-						step = 0.01,
-						bigStep = 0.1,
-						--stepBasis = 0,
-						--width="double",
-						order = 2.1,
-					},
-					--[[
+          showcountsteps = {
+            name = L['opt_showcountsteps'],
+            desc = L['opt_showcountsteps_desc'],
+            type = 'select',
+            values = {
+              [0] = L['opt_showcountsteps_all'],
+              '1',
+              '2',
+              '3',
+              '4',
+              '5',
+            },
+            get = function()
+              return self.db.profile.showallsteps and 0 or self.db.profile.showcountsteps
+            end,
+            set = function(_, n)
+              if n == 0 then
+                self.db.profile.showallsteps = true
+              else
+                self.db.profile.showallsteps = false
+                self.db.profile.showcountsteps = n
+              end
+              if self.db.profile['showallsteps'] then
+                ZygorGuidesViewerFrame:SetHeight(self.db.profile.fullheight)
+              end
+              self:UpdateFrame(true)
+              self:AlignFrame()
+              self:UpdateLocking()
+              self:ScrollToCurrentStep()
+            end,
+            order = 1,
+          },
+          sep1 = { type = 'description', name = '', order = 2 },
+          skin = {
+            name = L['opt_skin'],
+            desc = L['opt_skin_desc'],
+            type = 'select',
+            values = {
+              violet = L['opt_skin_violet'],
+              green = L['opt_skin_green'],
+              blue = L['opt_skin_blue'],
+              orange = L['opt_skin_orange'],
+              modern = L['opt_skin_modern'],
+              classic = L['opt_skin_classic'],
+            },
+            set = function(_, n)
+              self.db.profile.skin = n
+              local colors = {
+                violet = { text = { 0.95, 0.65, 1.0 }, back = { 0.17, 0.07, 0.20 } },
+                blue = { text = { 0.7, 0.8, 1.0 }, back = { 0.08, 0.11, 0.24 } },
+                green = { text = { 0.5, 1.0, 0.5 }, back = { 0.09, 0.20, 0.07 } },
+                orange = { text = { 1.0, 0.8, 0.0 }, back = { 0.23, 0.11, 0.07 } },
+                modern = { text = { 1.0, 1.0, 1.0 }, back = { 0.047, 0.047, 0.043 } },
+                classic = { text = { 1.0, 1.0, 1.0 }, back = { 0.047, 0.047, 0.043 } },
+              }
+              self.db.profile.skincolors = colors[self.db.profile.skin]
+              self:UpdateSkin()
+              self:AlignFrame()
+              self:UpdateLocking()
+              self:ScrollToCurrentStep()
+            end,
+            order = 2.05,
+          },
+          opacitymain = {
+            name = L['opt_opacitymain'],
+            desc = L['opt_opacitymain_desc'],
+            type = 'range',
+            set = function(i, v)
+              Setter_Simple(i, v)
+              self:AlignFrame()
+            end,
+            min = 0,
+            max = 1.0,
+            isPercent = true,
+            step = 0.01,
+            bigStep = 0.1,
+            --stepBasis = 0,
+            --width="double",
+            order = 2.1,
+          },
+          --[[
 					backcolor = {
 						name = L["opt_backcolor"],
 						desc = L["opt_backcolor_desc"],
