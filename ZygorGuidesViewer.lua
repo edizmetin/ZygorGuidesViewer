@@ -118,7 +118,7 @@ Z_SKINS = {
 		skinbacktopoff = 0,
 		disableGuideAnim = false,
 		Boarder_Close_topright_offsetX = 5,
-		Boarder_Close_topright_offsetY = 5,
+		Boarder_Close_topright_offsetY = -2,
 		Boarder_Mini_topright_offsetX = -40,
 		Boarder_Mini_topright_offsetY = -5,
 		Boarder_Guide_topright_offsetX = -58,
@@ -143,8 +143,8 @@ Z_SKINS = {
 		Boarder_Right_BottomLeft_X = -9,
 		Boarder_Right_BottomLeft_Y = 10,
 		Border_Title = true,
-		Skipper_anchor = (not self.db.profile.resizeup) and 'TOPLEFT' or 'BOTTOMLEFT', -- This feels evil - Kevinf100
-		Skipper_relativeTo = self.frame,
+		Skipper_anchor = (not LibStub('AceDB-3.0'):New('ZygorGuidesViewerSettings').profile.resizeup) and 'TOPLEFT' or 'BOTTOMLEFT', -- This feels evil - Kevinf100
+		Skipper_relativeTo = ZygorGuidesViewerFrame, -- Broken?
 		Skipper_xOffset = -23,
 		Skipper_yOffset = -27,
 	},
@@ -190,7 +190,7 @@ Z_SKINS = {
 		Boarder_Right_BottomLeft_Y = 10,
 		-- ZygorGuidesViewerFrame_Skipper
 		Skipper_anchor = 'CENTER',
-		Skipper_relativeTo = ZygorGuidesViewerFrame_Border_Top,
+		Skipper_relativeTo = ZygorGuidesViewerFrame_Border_Top,  -- Unused atm?
 		Skipper_xOffset = 0,
 		Skipper_yOffset = 0,
 	},
@@ -238,7 +238,7 @@ Z_SKINS = {
 		Boarder_Right_BottomLeft_Y = 2,
 		-- ZygorGuidesViewerFrame_Skipper
 		Skipper_anchor = 'CENTER',
-		Skipper_relativeTo = ZygorGuidesViewerFrame_Border_Top,
+		Skipper_relativeTo = ZygorGuidesViewerFrame_Border_Top, -- Unused atm
 		Skipper_xOffset = 0,
 		Skipper_yOffset = 0,
 	},
@@ -290,7 +290,97 @@ Z_SKIN_HOOKS = {
 		ZygorGuidesViewerFrame_Border_Gear2:SetTexture(nil)
 		ZygorGuidesViewerFrame_Border_Gear3:SetTexture(nil)
 		ZygorGuidesViewerFrame_Border_Logo:SetTexture(nil)
-		ZygorGuidesViewerFrame_Border_Top:ClearAllPoints()
+		
+		-- Check which skin is active to set the correct scrollbar button textures
+		-- Textures for the MODERN skin scrollbar
+		local modernScrollAtlas = SKINDIR .. "\\modern_scroll_buttons.tga" -- Make sure this is your filename
+		
+		-- Updated to use your 256px icon height
+		local icon_height_ratio = 256 / 1024 -- (256px Icon Height / 1024px Image Height)
+
+		-- UP ARROWS (Top row, arranged right-to-left on the image)
+		ZygorGuidesViewerFrameScrollScrollBarScrollUpButton:SetNormalTexture(
+			CreateTextureWithCoords(
+				ZygorGuidesViewerFrameScrollScrollBarScrollUpButton,
+				modernScrollAtlas,
+				0.75,
+				1.0,
+				0.0,
+				icon_height_ratio
+			)
+		)   -- Normal (Far right)
+		ZygorGuidesViewerFrameScrollScrollBarScrollUpButton:SetPushedTexture(
+			CreateTextureWithCoords(
+				ZygorGuidesViewerFrameScrollScrollBarScrollUpButton,
+				modernScrollAtlas,
+				0.5,
+				0.75,
+				0.0,
+				icon_height_ratio
+			)
+		)   -- Pushed
+		ZygorGuidesViewerFrameScrollScrollBarScrollUpButton:SetDisabledTexture(
+			CreateTextureWithCoords(
+				ZygorGuidesViewerFrameScrollScrollBarScrollUpButton,
+				modernScrollAtlas,
+				0.25,
+				0.5,
+				0.0,
+				icon_height_ratio
+			)
+		) -- Disabled
+		ZygorGuidesViewerFrameScrollScrollBarScrollUpButton:SetHighlightTexture(
+			CreateTextureWithCoords(
+				ZygorGuidesViewerFrameScrollScrollBarScrollUpButton,
+				modernScrollAtlas,
+				0.0,
+				0.25,
+				0.0,
+				icon_height_ratio
+			)
+		) -- Highlight (Far left)
+
+		-- DOWN ARROWS (Bottom row, arranged right-to-left on the image)
+		ZygorGuidesViewerFrameScrollScrollBarScrollDownButton:SetNormalTexture(
+			CreateTextureWithCoords(
+				ZygorGuidesViewerFrameScrollScrollBarScrollDownButton,
+				modernScrollAtlas,
+				0.75,
+				1.0,
+				1.0 - icon_height_ratio,
+				1.0
+			)
+		)   -- Normal (Far right)
+		ZygorGuidesViewerFrameScrollScrollBarScrollDownButton:SetPushedTexture(
+			CreateTextureWithCoords(
+				ZygorGuidesViewerFrameScrollScrollBarScrollDownButton,
+				modernScrollAtlas,
+				0.5,
+				0.75,
+				1.0 - icon_height_ratio,
+				1.0
+			)
+		)   -- Pushed
+		ZygorGuidesViewerFrameScrollScrollBarScrollDownButton:SetDisabledTexture(
+			CreateTextureWithCoords(
+				ZygorGuidesViewerFrameScrollScrollBarScrollDownButton,
+				modernScrollAtlas,
+				0.25,
+				0.5,
+				1.0 - icon_height_ratio,
+				1.0
+			)
+		) -- Disabled
+		ZygorGuidesViewerFrameScrollScrollBarScrollDownButton:SetHighlightTexture(
+			CreateTextureWithCoords(
+				ZygorGuidesViewerFrameScrollScrollBarScrollDownButton,
+				modernScrollAtlas,
+				0.0,
+				0.25,
+				1.0 - icon_height_ratio,
+				1.0
+			)
+		) -- Highlight (Far left)
 	end,
 	Classic = function()
 		SKINDIR = DIR.."\\Skin\\Classic" -- Force the path to your Classic folder
@@ -333,6 +423,13 @@ Z_SKIN_HOOKS = {
 		ZygorGuidesViewerFrame_Border_Gear2:SetTexture(nil)
 		ZygorGuidesViewerFrame_Border_Gear3:SetTexture(nil)
 		ZygorGuidesViewerFrame_Border_Logo:SetTexture(nil)
+		ZygorGuidesViewerFrame_Skipper_PrevButton.ntx:SetTexture(SKINDIR .. "\\titlebuttons2")
+		ZygorGuidesViewerFrame_Skipper_PrevButton.ptx:SetTexture(SKINDIR .. "\\titlebuttons2")
+		ZygorGuidesViewerFrame_Skipper_PrevButton.htx:SetTexture(SKINDIR .. "\\titlebuttons2")
+		ZygorGuidesViewerFrame_Skipper_NextButton.ntx:SetTexture(SKINDIR .. "\\titlebuttons2")
+		ZygorGuidesViewerFrame_Skipper_NextButton.ptx:SetTexture(SKINDIR .. "\\titlebuttons2")
+		ZygorGuidesViewerFrame_Skipper_NextButton.htx:SetTexture(SKINDIR .. "\\titlebuttons2")
+
 	end,
 }
 
@@ -2724,7 +2821,7 @@ function me:AlignFrame()
     --bgFile="Interface\\AddOns\\ZygorGuidesViewer\\Skin\\leavesofsteel_bgr",  -- 3.3.3 BLIZZARD TEXTURE FAIL
     bgFile = self.db.profile.bgfileback, --instead
     tileSize = 128,
-    tile = elf.db.profile.Border_Title,
+    tile = self.db.profile.Border_Title,
     insets = {
       top = (upsideup and 20 or 0) + self.db.profile.skinbacktopoff,
       right = 0,
@@ -2741,8 +2838,13 @@ function me:AlignFrame()
     self.db.profile.backopacity
   )
 
-	ZygorGuidesViewerFrame_Skipper:ClearAllPoints()
-	ZygorGuidesViewerFrame_Skipper:SetPoint(Skipper_anchor, Skipper_relativeTo, Skipper_xOffset, Skipper_yOffset * UP)
+  ZygorGuidesViewerFrame_Skipper:ClearAllPoints()
+  --ZygorGuidesViewerFrame_Skipper:SetPoint(UP_TOPLEFT,self.Frame,-23,-27*UP)
+  ZygorGuidesViewerFrame_Skipper:SetPoint(
+	self.db.profile.Skipper_anchor, 
+	self.Frame, 
+	self.db.profile.Skipper_xOffset, 
+	self.db.profile.Skipper_yOffset * UP)
 
   ZygorGuidesViewerFrame_Border_SectionTitle:ClearAllPoints()
   ZygorGuidesViewerFrame_Border_SectionTitle:SetPoint(
@@ -3115,33 +3217,12 @@ function me:UpdateSkin()
   ZygorGuidesViewerFrame_Border_BottomLeft:SetTexture(SKINDIR .. '\\leavesofsteel')
   ZygorGuidesViewerFrame_Border_BottomRight:SetTexture(SKINDIR .. '\\leavesofsteel')
 
-  choice = self.skin_choice[self.db.profile.skin]
-  if choice then
-    LoadSkin(choice)
-  else
-    --LoadDefault()
-    self:Print('Load skin Error!')
-  end
-
-	-- Check which skin is active to set the correct skipper button textures
-	local choice = self.skin_choice[self.db.profile.skin]
-	if choice == "Classic" then
-		-- Use your special texture file for the Classic skin
-		ZygorGuidesViewerFrame_Skipper_PrevButton.ntx:SetTexture(SKINDIR .. "\\titlebuttons2")
-		ZygorGuidesViewerFrame_Skipper_PrevButton.ptx:SetTexture(SKINDIR .. "\\titlebuttons2")
-		ZygorGuidesViewerFrame_Skipper_PrevButton.htx:SetTexture(SKINDIR .. "\\titlebuttons2")
-		ZygorGuidesViewerFrame_Skipper_NextButton.ntx:SetTexture(SKINDIR .. "\\titlebuttons2")
-		ZygorGuidesViewerFrame_Skipper_NextButton.ptx:SetTexture(SKINDIR .. "\\titlebuttons2")
-		ZygorGuidesViewerFrame_Skipper_NextButton.htx:SetTexture(SKINDIR .. "\\titlebuttons2")
-	else
-		-- Use the default texture file for all other skins
-		ZygorGuidesViewerFrame_Skipper_PrevButton.ntx:SetTexture(SKINDIR .. "\\titlebuttons")
-		ZygorGuidesViewerFrame_Skipper_PrevButton.ptx:SetTexture(SKINDIR .. "\\titlebuttons")
-		ZygorGuidesViewerFrame_Skipper_PrevButton.htx:SetTexture(SKINDIR .. "\\titlebuttons")
-		ZygorGuidesViewerFrame_Skipper_NextButton.ntx:SetTexture(SKINDIR .. "\\titlebuttons")
-		ZygorGuidesViewerFrame_Skipper_NextButton.ptx:SetTexture(SKINDIR .. "\\titlebuttons")
-		ZygorGuidesViewerFrame_Skipper_NextButton.htx:SetTexture(SKINDIR .. "\\titlebuttons")
-	end
+  ZygorGuidesViewerFrame_Skipper_PrevButton.ntx:SetTexture(SKINDIR .. "\\titlebuttons")
+  ZygorGuidesViewerFrame_Skipper_PrevButton.ptx:SetTexture(SKINDIR .. "\\titlebuttons")
+  ZygorGuidesViewerFrame_Skipper_PrevButton.htx:SetTexture(SKINDIR .. "\\titlebuttons")
+  ZygorGuidesViewerFrame_Skipper_NextButton.ntx:SetTexture(SKINDIR .. "\\titlebuttons")
+  ZygorGuidesViewerFrame_Skipper_NextButton.ptx:SetTexture(SKINDIR .. "\\titlebuttons")
+  ZygorGuidesViewerFrame_Skipper_NextButton.htx:SetTexture(SKINDIR .. "\\titlebuttons")
 
   ZygorGuidesViewerFrame_Border_CloseButton.ntx:SetTexture(SKINDIR .. '\\titlebuttons')
   ZygorGuidesViewerFrame_Border_CloseButton.ptx:SetTexture(SKINDIR .. '\\titlebuttons')
@@ -3249,7 +3330,14 @@ function me:UpdateSkin()
   )
   ZygorGuidesViewerFrameScrollScrollBarThumbTexture:SetTexture(SKINDIR .. '\\leavesofsteel')
   ZygorGuidesViewerFrameScrollScrollBarTrackerTexture:SetTexture(SKINDIR .. '\\leavesofsteel')
-
+  
+  local choice = self.skin_choice[self.db.profile.skin]
+  if choice then
+    LoadSkin(choice)
+  else
+    --LoadDefault()
+    self:Print('Load skin Error!')
+  end
   self:UpdateLocking()
   self:AlignFrame()
 end
