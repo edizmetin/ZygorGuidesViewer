@@ -68,6 +68,7 @@ function Goal:IsVisible()
   if self.hidden then
     return false
   end
+
   if self.onlyinsticky and not self.parentStep:IsCurrentlySticky() then
     return false
   end
@@ -328,16 +329,14 @@ function Goal:IsComplete()
   if self.action == 'ding' then
     local percent
     local level = UnitLevel('player')
+    local xp = UnitXP('player')
+    local max = UnitXPMax('player')
     if ZGV.db.char.fakelevel and ZGV.db.char.fakelevel > 0 then
       level = ZGV.db.char.fakelevel
     end
-    percent = (level < self.level - 1) and 0
-      or (level >= self.level) and 1.0
-      or UnitXP('player') / UnitXPMax('player')
-
-    return UnitLevel('player') >= tonumber(self.level),
-      UnitLevel('player') >= tonumber(self.level) - 1,
-      percent
+    --print(self.level.." and "..self.experience.." were at "..tostring(xp).." and "..tostring(xp*100/(max-tonumber(self.experience))))
+    return level > tonumber(self.level) or (level == tonumber(self.level) and xp >= tonumber(self.experience)),
+      true
   elseif self.action == 'goto' then
     local zone = GetRealZoneText()
     if self.map and zone ~= self.map then
@@ -860,7 +859,7 @@ function Goal:GetText(showcompleteness)
     end
     text = L['stepgoal_kill']:format(text)
   elseif self.action == 'ding' then
-    text = L['stepgoal_ding']:format(COLOR_NPC(self.level))
+    text = L['stepgoal_ding']:format(COLOR_NPC(self.level),COLOR_NPC(self.experience))
   elseif self.action == 'fpath' then
     text = L['stepgoal_fpath']:format(COLOR_LOC(self.param))
   elseif self.action == 'home' then
@@ -970,12 +969,7 @@ function Goal:GetText(showcompleteness)
     end
 
     if self.action == 'ding' then
-      local percent
-      local level = UnitLevel('player')
-      percent = (level < self.level - 1) and 0
-        or (level >= self.level) and 100
-        or floor(UnitXP('player') / UnitXPMax('player') * 100)
-      desc = L['completion_ding']:format(percent)
+
     elseif self.action == 'home' then
       --desc = self:IsComplete() and L["completion_(done)"] --L["stepgoal_home"]:format(self.param)
     elseif self.action == 'fpath' then

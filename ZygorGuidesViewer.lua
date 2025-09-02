@@ -1387,11 +1387,37 @@ function me:UpdateFrame(full, onupdate)
                 end
               end
 
+              if self.CurrentGuide then
+
+                local stepnum,stepdata
+
+                local firststep = (showallsteps or self.CurrentStepNum) or 1
+                firststep=max(1,firststep)
+                local laststep = showallsteps and #self.CurrentGuide.steps or self.CurrentStepNum+self.db.profile.showcountsteps-1
+                laststep=min(laststep,#self.CurrentGuide.steps)
+                local diff = #self.CurrentGuide.steps - laststep
+                if ZGV.db.profile.showcountsteps > 1 then
+                  if laststep == #self.CurrentGuide.steps then
+                    laststep = min(laststep,#self.CurrentGuide.steps) - diff - 1
+                  end
+                end
+
+                local stickies
+                if  not self.db.profile.showallsteps then
+                  stickies,changed = self:GetStickiesAt(firststep,laststep)
+                
+                  if changed then
+                    self:SendMessage("ZGV_STEP_CHANGED",num)
+                  end
+                end
+                self.CurrentStickies = stickies
+              end
+
               local stickySep = nil
 
               if stepdata.stickies then
                 for i, sticky in ipairs(stepdata.stickies) do
-                  if sticky:AreRequirementsMet() then
+                  if sticky:AreRequirementsMet() and sticky:CanBeSticky() and not sticky:IsComplete() then
                     for i, goal in ipairs(sticky.goals) do
                       if goal:GetStatus() ~= 'hidden' then
                         if stickySep == nil then
@@ -5033,6 +5059,34 @@ function me.gradient3(perc, ar, ag, ab, br, bg, bb, cr, cg, cb, middle)
       return br + (cr - br) * perc, bg + (cg - bg) * perc, bb + (cb - bb) * perc
     end
   end
+end
+
+local getstickies_temp={}
+function ZGV:GetStickiesAt(stepnum,laststepnum) -- was stepnum,show_complete but second param was no longer used
+  --ZGV:Debug(tostring(stepnum).." "..tostring(laststepnum))
+	local laststepnum = laststepnum or stepnum
+	local changed = false
+  
+	for _,stickystep in ipairs(getstickies_temp) do
+		if stickystep:IsComplete() or not stickystep:CanBeSticky() then
+			changed = true
+		end
+	end
+
+	stepnum = stepnum or self.CurrentStepNum
+	local step = self.CurrentGuide.steps[stepnum]
+	wipe(getstickies_temp)
+  
+	if step.stickies then
+		for _,stickystep in ipairs(step.stickies) do
+      --print(stickystep.num,laststepnum,stickystep:IsComplete(),stickystep:CanBeSticky() )
+			if (stickystep.num>laststepnum) and not stickystep:IsComplete() and stickystep:CanBeSticky() then
+        
+				tinsert(getstickies_temp,stickystep)
+			end
+		end
+	end
+	return getstickies_temp,changed
 end
 
 --hooksecurefunc("WorldMapFrame_UpdateQuests",function() if not InCombatLockdown() then text=nil end end)

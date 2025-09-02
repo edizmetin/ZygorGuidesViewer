@@ -151,7 +151,7 @@ if not C_QuestLog then
   -- Get the quest log index by quest ID
   function C_QuestLog.GetQuestLogIndexByID(questID)
     for i = 1, GetNumQuestLogEntries() do
-      local _, _, _, _, _, _, _, questId = GetQuestLogTitle(i)
+      local _, _, _, _, _, _, _, _, questId = GetQuestLogTitle(i)
       if questId == questID then
         return i
       end
@@ -206,7 +206,7 @@ if not C_QuestLog then
   function C_QuestLog.GetAllQuestIDs()
     local questIDs = {}
     for i = 1, GetNumQuestLogEntries() do
-      local _, _, _, _, _, _, _, questId = GetQuestLogTitle(i)
+      local _, _, _, _, _, _, _, _, questId = GetQuestLogTitle(i)
       if questId then
         table.insert(questIDs, questId)
       end
@@ -220,7 +220,7 @@ if not C_QuestLog then
     if index then
       -- GetQuestLogTitle returns: title, level, suggestedGroup, isHeader,
       -- isCollapsed, isComplete, frequency, questID
-      local _, _, _, _, _, isComplete = GetQuestLogTitle(index)
+      local _, _, _, _, _, _, isComplete = GetQuestLogTitle(index)
       if isComplete == 1 then
         return true
       end

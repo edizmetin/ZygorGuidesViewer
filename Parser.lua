@@ -431,6 +431,8 @@ local function MakeCondition(cond, forcebool)
   return fun, err
 end
 
+local last_goal_was_text = nil
+
 --- parse ONE guide section into usable arrays.
 function me:ParseEntry(guidedata)
   text = guidedata.rawdata
@@ -940,8 +942,10 @@ function me:ParseEntry(guidedata)
         if splits[2] then
           --goal.experience = tonumber(splits[2])
           goal.level = tonumber(splits[1])
+          goal.experience = tonumber(splits[2])
         else
           goal.level = tonumber(params)
+          goal.experience = 0
         end
 
         --print(goal.level)
@@ -1176,7 +1180,7 @@ function me:ParseEntry(guidedata)
         if goal.x then
           goal.map = prevmap
         end
-
+        goal.notinsticky = true
         goal.text = (cmd == "'") and params or chunk
       end
 

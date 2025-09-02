@@ -326,7 +326,7 @@ ZygorGuidesViewer_L('Main', 'enUS', function()
     ['stepgoal_goal #'] = '%s %s',
     ['stepgoal_get'] = 'Get %s',
     ['stepgoal_get #'] = 'Get %s %s',
-    ['stepgoal_ding'] = 'You should now be level %s.|n    If not, grind a little until you are.',
+    ['stepgoal_ding'] = 'You should now be level %s with %s exp.|n    If not, grind a little until you are.',
     ['stepgoal_go to'] = 'Go to %s',
     ['stepgoal_also at'] = 'Also at %s',
     ['stepgoal_hearth to'] = 'Hearth to %s',
