@@ -612,8 +612,6 @@ function ZygorGuidesViewerFrame_OnUpdate(self, elapsed)
 	end
 	--]]
 
-
-
   if ZGV.delayFlash and ZGV.delayFlash == 2 then
     ZGV.delayFlash = 3
   end
