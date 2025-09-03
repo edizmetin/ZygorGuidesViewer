@@ -335,7 +335,9 @@ function Goal:IsComplete()
       level = ZGV.db.char.fakelevel
     end
     --print(self.level.." and "..self.experience.." were at "..tostring(xp).." and "..tostring(xp*100/(max-tonumber(self.experience))))
-    return level > tonumber(self.level) or (level == tonumber(self.level) and xp >= tonumber(self.experience)),
+    return level > tonumber(self.level) or (level == tonumber(self.level) and xp >= tonumber(
+      self.experience
+    )),
       true
   elseif self.action == 'goto' then
     local zone = GetRealZoneText()
@@ -859,7 +861,7 @@ function Goal:GetText(showcompleteness)
     end
     text = L['stepgoal_kill']:format(text)
   elseif self.action == 'ding' then
-    text = L['stepgoal_ding']:format(COLOR_NPC(self.level),COLOR_NPC(self.experience))
+    text = L['stepgoal_ding']:format(COLOR_NPC(self.level), COLOR_NPC(self.experience))
   elseif self.action == 'fpath' then
     text = L['stepgoal_fpath']:format(COLOR_LOC(self.param))
   elseif self.action == 'home' then
@@ -867,7 +869,7 @@ function Goal:GetText(showcompleteness)
   elseif self.action == 'use' then
     text = L['stepgoal_use']:format(COLOR_ITEM(self.useitem or '#' .. self.useitemid))
   elseif self.action == 'cast' then
-    text = ("Cast Spell %s"):format(COLOR_ITEM(self.castspell or '#' .. self.castspellid))
+    text = ('Cast Spell %s'):format(COLOR_ITEM(self.castspell or '#' .. self.castspellid))
   elseif self.action == 'petaction' then
     text = L['stepgoal_petaction']:format(self.petaction)
   elseif self.action == 'havebuff' then
@@ -969,7 +971,6 @@ function Goal:GetText(showcompleteness)
     end
 
     if self.action == 'ding' then
-
     elseif self.action == 'home' then
       --desc = self:IsComplete() and L["completion_(done)"] --L["stepgoal_home"]:format(self.param)
     elseif self.action == 'fpath' then
@@ -1096,14 +1097,14 @@ function Goal:Prepare()
       end
       self.macro = macro
     end
-    if self.action == "kill" then
-			ZGV:SetNextMacroButton(string.format(ZYGOR_KILL_TARGET_TEMPLATE,self.target, self.target))
-    elseif self.action == "talk" then
-      ZGV:SetNextMacroButton(string.format(ZYGOR_TALK_TARGET_TEMPLATE,self.npc, self.npc))
+    if self.action == 'kill' then
+      ZGV:SetNextMacroButton(string.format(ZYGOR_KILL_TARGET_TEMPLATE, self.target, self.target))
+    elseif self.action == 'talk' then
+      ZGV:SetNextMacroButton(string.format(ZYGOR_TALK_TARGET_TEMPLATE, self.npc, self.npc))
     elseif self.useitem then
-      ZGV:SetNextMacroButton(string.format(ZYGOR_USE_ITEM_TEMPLATE,self.useitem))
+      ZGV:SetNextMacroButton(string.format(ZYGOR_USE_ITEM_TEMPLATE, self.useitem))
     elseif self.castspell then
-      ZGV:SetNextMacroButton(string.format(ZYGOR_CAST_SPELL_TEMPLATE,self.castspell))
+      ZGV:SetNextMacroButton(string.format(ZYGOR_CAST_SPELL_TEMPLATE, self.castspell))
     end
   end
 

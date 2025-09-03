@@ -300,7 +300,7 @@ ZGV.ConditionEnv = {
   end,
 
   hasbuff = function(query, count)
-    local aura = C_UnitAuras.GetPlayerAuraBySpellID(tonumber(query))
+    local aura = ZGV.Retrofit.C_UnitAuras.GetPlayerAuraBySpellID(tonumber(query))
     if aura and (aura.applications or 0) >= (count or 0) then
       return true
     end
@@ -344,7 +344,7 @@ ZGV.ConditionEnv = {
   end,
 
   completedq = function(quest)
-    return C_QuestLog.IsQuestFlaggedCompleted(id)
+    return ZGV.Retrofit.C_QuestLog.IsQuestFlaggedCompleted(id)
   end,
 
   subzone = function(name)

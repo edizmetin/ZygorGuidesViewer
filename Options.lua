@@ -1096,7 +1096,7 @@ function me:Options_DefineOptions()
         bigStep = 1,
         width = 'single',
         order = 3.8,
-      },      
+      },
     },
   }
 
