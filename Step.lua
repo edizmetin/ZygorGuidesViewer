@@ -327,14 +327,11 @@ function Step:CanBeSticky()
   end
 
   if self.is_sticky then
-    
     -- only show step as sticky if it has no quests tied, has accept goals, or player is already on the quest
     local hasquests, onquest = false, false
 
     for _, goal in ipairs(self.goals) do
-
       if goal.questid and not goal.future then
-        
         hasquests = true
         local quest = ZGV.questsbyid[goal.questid]
         --print("Onquest? "..tostring(quest.inlog))

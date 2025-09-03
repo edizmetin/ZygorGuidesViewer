@@ -217,9 +217,7 @@ ZygorGuidesViewer_L('Main', 'enUS', function()
     ['opt_analyzereps'] = 'Detailed reputation gains',
     ['opt_analyzereps_desc'] = 'Display verbose reputation gain messages in chat, showing percentage gained and next standing.',
     ['opt_macrocount'] = 'Create Magic Macros',
-    ['opt_macrocount_desc'] = 'How many Zygor Magic Macros to select, reducing this wont delete existing macros',    
-
-
+    ['opt_macrocount_desc'] = 'How many Zygor Magic Macros to select, reducing this wont delete existing macros',
 
     -- Gold Guide options
 
