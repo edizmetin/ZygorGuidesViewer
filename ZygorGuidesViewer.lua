@@ -317,7 +317,7 @@ Z_SKIN_HOOKS = {
       'RIGHT',
       ZygorGuidesViewerFrame_Skipper_PrevButton,
       'CENTER',
-      44,
+      46,
       0
     )
     ZygorGuidesViewerFrame_Border_Gear1:SetTexture(nil)
@@ -435,7 +435,7 @@ Z_SKIN_HOOKS = {
       'CENTER',
       ZygorGuidesViewerFrame_Skipper_PrevButton,
       'CENTER',
-      17,
+      19,
       1
     )
     ZygorGuidesViewerFrame_Skipper_NextButton:ClearAllPoints()
@@ -443,7 +443,7 @@ Z_SKIN_HOOKS = {
       'RIGHT',
       ZygorGuidesViewerFrame_Skipper_PrevButton,
       'CENTER',
-      44,
+      47,
       0
     )
     ZygorGuidesViewerFrame_Skipper_PrevButton.ntx:SetTexture(SKINDIR .. '\\titlebuttons2.tga')
@@ -1233,7 +1233,7 @@ function me:UpdateLocking()
   ZygorGuidesViewerFrame_ResizerBottomRight:EnableMouse(not locked)
   ZygorGuidesViewerFrame_ResizerBottom:EnableMouse(not locked)
 
-  ZygorGuidesViewerFrameScroll:EnableMouseWheel(not locked)
+  ZygorGuidesViewerFrameScroll:EnableMouseWheel(true)
 
   if self.stepframes then
     for s, st in ipairs(self.stepframes) do
