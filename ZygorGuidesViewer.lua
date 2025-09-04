@@ -1887,13 +1887,26 @@ function me:UpdateFrame(full, onupdate)
               end
             end
 
-            if self.db.profile.disableBackDrop then
+           -- 1. Special check for the Modern skin's CURRENT step
+            if self.db.profile.skin == 'modern' and stepnum == self.CurrentStepNum then
+              frame.border:SetBackdrop({
+                edgeFile = 'Interface\\AddOns\\ZygorGuidesViewer\\Skin\\modern\\popup_border_active',
+                edgeSize = 16, 
+              })
+              frame.border:SetBackdropBorderColor(1, 1, 1, 1)
+
+            -- 2. This handles non-current steps for the Modern skin
+            elseif self.db.profile.disableBackDrop then
               frame.border:SetBackdrop(nil)
+
+            -- 3. This handles the CURRENT step for other skins
             elseif stepnum == self.CurrentStepNum then
               frame.border:SetBackdrop({
                 edgeFile = 'Interface\\Addons\\ZygorGuidesViewer\\skin\\popup_border_active',
                 edgeSize = 16,
               })
+            
+            -- 4. This handles non-current steps for other skins
             else
               frame.border:SetBackdrop({
                 edgeFile = 'Interface\\Addons\\ZygorGuidesViewer\\skin\\popup_border',
